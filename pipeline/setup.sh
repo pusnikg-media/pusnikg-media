@@ -10,4 +10,5 @@ fi
 B=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
 [ -s voices-v1.0.bin ] || curl -sSL -o voices-v1.0.bin $B/voices-v1.0.bin
 [ -s kokoro-v1.0.onnx ] || curl -sSL -o kokoro-v1.0.onnx $B/kokoro-v1.0.onnx
-python3 -c "import onnxruntime, numpy, scipy, PIL" && espeak-ng --version && echo SETUP_OK
+python3 -c "import faster_whisper" 2>/dev/null || pip install -q --break-system-packages faster-whisper
+python3 -c "import onnxruntime, numpy, scipy, PIL, faster_whisper" && espeak-ng --version && echo SETUP_OK

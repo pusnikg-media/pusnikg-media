@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Anton"; src: url("assets/fonts/Anton-Regular.ttf"); }
+      :root { --pink: #ff2e88; --yellow: #ffe600; --ink: #ffffff; --teal: #12d6df; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Anton", sans-serif; }
+      .kb { position: absolute; inset: 0; z-index: 1; transform-origin: 50% 45%; }
+      .kb video { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      /* Vice-City tint + legibility: pink/teal wash, dark top and bottom */
+      #wash { position: absolute; inset: 0; z-index: 5; pointer-events: none;
+        background: linear-gradient(180deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 48%, rgba(0,0,0,.78) 100%),
+                    linear-gradient(135deg, rgba(255,46,136,.28) 0%, rgba(18,214,223,.14) 100%); }
+      #flash { position: absolute; inset: 0; z-index: 6; background: #fff; opacity: 0; }
+      #bar-track { position: absolute; left: 60px; right: 60px; top: 176px; height: 10px; border-radius: 5px; background: rgba(255,255,255,.22); z-index: 8; }
+      #bar { width: 100%; height: 100%; border-radius: 5px; background: var(--pink); transform-origin: 0 50%; box-shadow: 0 0 18px var(--pink); }
+      #badge { position: absolute; top: 214px; left: 0; width: 1080px; text-align: center; z-index: 8; }
+      #badge span { display: inline-block; background: var(--pink); color: #fff; font-size: 60px; line-height: 1; padding: 16px 36px 18px; border-radius: 18px; letter-spacing: 2px; }
+      #hook, #date, #cta { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; z-index: 9; }
+      #hook-in { position: absolute; left: 0; top: 430px; width: 1080px; text-align: center; transform-origin: 50% 40%; }
+      #hook-num { font-size: 560px; line-height: .95; color: #fff; transform-origin: 50% 55%;
+        -webkit-text-stroke: 10px #000; paint-order: stroke fill;
+        text-shadow: 0 0 40px var(--pink), 0 0 90px var(--pink), 0 0 140px rgba(255,46,136,.7); }
+      #hook-days { font-size: 150px; line-height: 1; color: var(--yellow); -webkit-text-stroke: 8px #000; paint-order: stroke fill; margin-top: -10px; }
+      #hook-sub { font-size: 76px; line-height: 1.1; color: #fff; -webkit-text-stroke: 7px #000; paint-order: stroke fill; margin-top: 40px; }
+      #date-in { position: absolute; left: 0; top: 470px; width: 1080px; text-align: center; transform-origin: 50% 50%; }
+      #date-m { font-size: 170px; line-height: 1; color: var(--yellow); -webkit-text-stroke: 8px #000; paint-order: stroke fill; letter-spacing: 8px; }
+      #date-d { font-size: 380px; line-height: .95; color: #fff; -webkit-text-stroke: 10px #000; paint-order: stroke fill;
+        text-shadow: 0 0 40px var(--pink), 0 0 100px var(--pink); }
+      #date-y { font-size: 90px; line-height: 1; color: #fff; -webkit-text-stroke: 6px #000; paint-order: stroke fill; letter-spacing: 14px; }
+      #cta-in { position: absolute; left: 340px; top: 820px; width: 400px; padding: 26px 0 30px; text-align: center; border-radius: 26px;
+        background: var(--pink); color: #fff; font-size: 92px; line-height: 1; box-shadow: 0 0 50px rgba(255,46,136,.8); }
+      .cap { position: absolute; left: 0; top: 1150px; width: 1080px; height: 170px; z-index: 10; overflow: visible; }
+      .capin { position: absolute; left: 60px; right: 60px; top: 0; text-align: center; transform-origin: 50% 50%; white-space: nowrap; }
+      .w { display: inline-block; margin: 0 0.16em; font-size: 112px; line-height: 1.2; color: #fff;
+        -webkit-text-stroke: 9px #000; paint-order: stroke fill; text-shadow: 0 6px 18px rgba(0,0,0,.7); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="%TOTAL%" data-width="1080" data-height="1920">
+      %BODY%
+      <div id="wash"></div>
+      <div id="flash"></div>
+      <div id="bar-track"><div id="bar"></div></div>
+      <div id="badge"><span>%BADGE%</span></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      %JS%
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
