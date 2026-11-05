@@ -18,10 +18,17 @@ for i, shots in enumerate(SHOTS):
     a = wins[i][0]; b = wins[i + 1][0] if i + 1 < len(wins) else TOTAL; d = (b - a) / len(shots)
     for k, (src, ms) in enumerate(shots):
         n = len(cuts); s = a + k * d; cuts.append(s)
-        H.append(f'<div id="kb{n}" class="kb"><video id="v{n}" class="clip" src="assets/v/{src}.mp4" muted playsinline '
-                 f'data-start="{s:.3f}" data-duration="{d:.3f}" data-media-start="{ms}" data-track-index="0"></video></div>')
+        H.append(f'<div id="kb{n}" class="kb"><div id="pk{n}" class="pk"><video id="v{n}" class="clip" src="assets/v/{src}.mp4" muted playsinline '
+                 f'data-start="{s:.3f}" data-duration="{d:.3f}" data-media-start="{ms}" data-track-index="0"></video></div></div>')
         z0, z1 = (1.0, 1.12) if n % 2 == 0 else (1.12, 1.0); x1 = 30 if n % 3 == 0 else (-30 if n % 3 == 1 else 0)
         JS.append(f'tl.fromTo("#kb{n}",{{scale:{z0},x:0}},{{scale:{z1},x:{x1},duration:{d:.3f},ease:"none"}},{s:.3f});')
+# --- zoom-punch on keywords (job["punch"] = list of word stems): footage kicks to 1.14x and settles in 0.3 s
+for li, ws in enumerate(words):
+    for w in ws:
+        if any(re.sub(r"[^a-z0-9]", "", w["w"].lower()).startswith(p.lower()) for p in job.get("punch", [])):
+            t0 = wins[li][0] + w["s"]; n = max(i for i, c in enumerate(cuts) if c <= t0 + 1e-3)
+            JS.append(f'tl.fromTo("#pk{n}",{{scale:1.14}},{{scale:1,duration:0.3,ease:"power3.out"}},{t0:.3f});')
+            JS.append(f'tl.fromTo("#flash",{{opacity:0.25}},{{opacity:0,duration:0.1}},{t0:.3f});')
 # --- white flash on every cut (not the first frame)
 JS.append('tl.set("#flash",{opacity:0},0);')
 for c in cuts[1:]:

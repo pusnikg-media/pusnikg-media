@@ -9,7 +9,7 @@
 
 ## Renderer v3 HyperFrames (STANDARD seit 04.11. abends, von Steven freigegeben) – `pipeline/hyperframes/render_hf.py`
 `python3 pipeline/hyperframes/render_hf.py job.json` (Render ca. 3–4 Min, 0 Credits)
-job.json: `vo_dir`, `shots` (pro Skriptzeile Liste `{"file","start"}`, Schnitte ≤2,3 s, Dateinamen eindeutig), `day`, optional `hook_big` (Standard = day), `hook_mid` ("DAYS LEFT"), `hook_sub` (kleine Zeile, erscheint beim 3. Wort), `badge`, `card` (Slam-Karte auf ein Schlüsselwort: `{"line","word","top","big","bottom"}`, z. B. NOV/19/2026 beim Wort „November"), `music`, `music_start`, `music_db` (−9), `out`.
+job.json: `vo_dir`, `shots` (pro Skriptzeile Liste `{"file","start"}`, Schnitte ≤2,3 s, Dateinamen eindeutig), `day`, optional `hook_big` (Standard = day), `hook_mid` ("DAYS LEFT"), `hook_sub` (kleine Zeile, erscheint beim 3. Wort), `badge`, `card` (Slam-Karte auf ein Schlüsselwort: `{"line","word","top","big","bottom"}`, z. B. NOV/19/2026 beim Wort „November"), `punch` (Liste von Wortanfängen, z. B. ["downgrade","console"]: Zoom-Punch 1,14→1 + kurzer Flash auf diesen Wörtern), `music`, `music_start`, `music_db` (−9), `out`.
 Kann: wortgenaue Karaoke-Untertitel (Whisper base.en, auf echte Sprechzeit kalibriert, aktives Wort gelb + Pop), Riesen-Hook mit Pink-Glow im Frame 0, Slam-Karte, springender FOLLOW-Button auf der letzten Zeile, Ken-Burns-Zoom, Weiß-Flash pro Schnitt, Fortschrittsbalken, Stimme EQ+Kompressor, Musik geloopt + per Sidechain geduckt, −14 LUFS.
 Dateien: `words.py` (Wort-Timing), `build_cd.py` (HTML-Komposition), `cd_template.html` (Look), `gsap.min.js`.
 
