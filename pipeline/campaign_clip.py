@@ -98,7 +98,7 @@ def transcribe(wav):
         return []
     import numpy as np, scipy.io.wavfile as wavf
     _, a = wavf.read(wav); a = a.astype(np.float32) / 32768  # 16 kHz mono from ffmpeg (avoids PyAV decode issues)
-    m = WhisperModel("base.en", device="cpu", compute_type="int8")
+    m = WhisperModel(os.environ.get("WHISPER_MODEL", "small.en"), device="cpu", compute_type="int8")
     segs, _ = m.transcribe(a, word_timestamps=True, beam_size=5, vad_filter=True)
     return [(w.word.strip(), w.start, w.end) for s in segs for w in s.words if w.word.strip()]
 
@@ -122,6 +122,10 @@ def main():
     wav = os.path.join(tmp, "a.wav")
     run(["ffmpeg", "-y", "-ss", f"{s:.3f}", "-t", f"{dur:.3f}", "-i", job["src"], "-vn", "-ac", "1", "-ar", "16000", wav])
     words = transcribe(wav) if job.get("captions", True) else []
+    # manual caption fixes (Whisper mishears names): {"<word index>": "NEW"} ; "" drops the word
+    fixes = {int(k): v for k, v in job.get("fix", {}).items()}
+    words = [(fixes.get(i, w[0]), w[1], w[2]) for i, w in enumerate(words) if fixes.get(i, w[0]) != ""]
+    print("WORDS:", " ".join(w[0] for w in words))
     ovs = []
     p = os.path.join(tmp, "static.png"); static_overlay(job, vid_h).save(p); ovs.append((p, 0, dur))
     for gi, g in enumerate(groups(words)):
