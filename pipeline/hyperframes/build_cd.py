@@ -3,8 +3,26 @@ Usage: python3 build_cd.py job.json project_dir   (called by render_hf.py; clips
 import json, os, re, sys, html as _h
 job = json.load(open(sys.argv[1])); proj = sys.argv[2]
 vo, day = job["vo_dir"], job["day"]
+vo = vo if os.path.isabs(vo) else os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), vo)  # relative to job.json, not cwd
 esc = lambda x: _h.escape(str(x))
 timing = json.load(open(os.path.join(vo, "timing.json"))); words = json.load(open(os.path.join(vo, "words.json")))
+def die(msg): sys.exit("BUILD FAIL: " + msg)
+if len(job["shots"]) != len(timing):
+    die(f'job["shots"] has {len(job["shots"])} entries but the script has {len(timing)} lines (need one shot list per line)')
+if len(words) != len(timing) or any(len(w) != len(t["text"].split()) for w, t in zip(words, timing)):
+    die("words.json does not match timing.json (stale from an older script?) - delete vo_dir/words.json and rerun")
+for i, line in enumerate(job["shots"]):
+    if not line: die(f"shots[{i}] is empty - every script line needs at least one clip")
+for i, ws in enumerate(words):
+    if not ws: die(f"script line {i} has no words")
+CAP_W = 960  # .capin width (1080 - 2*60); nowrap text wider than this overflows to the right
+try:
+    from PIL import ImageFont
+    _ANTON = ImageFont.truetype(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "fonts", "Anton-Regular.ttf"), 100)
+    em = lambda t: _ANTON.getlength(t) / 100  # real Anton advance width in em
+except Exception:
+    em = lambda t: 0.47 * len(t)
+clean = lambda w: re.sub(r"^[^\w$#%@&]+|[.,!?;:\"\u201c\u201d]+$", "", w)  # keep inner punctuation: $69.99 stays $69.99
 GAP, TAIL = 0.22, 0.6
 wins, t = [], 0.0
 for i, ln in enumerate(timing):
@@ -23,10 +41,13 @@ for i, shots in enumerate(SHOTS):
         z0, z1 = (1.0, 1.12) if n % 2 == 0 else (1.12, 1.0); x1 = 30 if n % 3 == 0 else (-30 if n % 3 == 1 else 0)
         JS.append(f'tl.fromTo("#kb{n}",{{scale:{z0},x:0}},{{scale:{z1},x:{x1},duration:{d:.3f},ease:"none"}},{s:.3f});')
 # --- zoom-punch on keywords (job["punch"] = list of word stems): footage kicks to 1.14x and settles in 0.3 s
+PUNCH = [p for p in (re.sub(r"[^a-z0-9]", "", str(x).lower()) for x in job.get("punch", [])) if p]  # "" would punch every word
+for p in PUNCH:
+    if not any(re.sub(r"[^a-z0-9]", "", w["w"].lower()).startswith(p) for ws in words for w in ws): print(f"WARN: punch {p!r} matches no word")
 for li, ws in enumerate(words):
     for w in ws:
-        if any(re.sub(r"[^a-z0-9]", "", w["w"].lower()).startswith(p.lower()) for p in job.get("punch", [])):
-            t0 = wins[li][0] + w["s"]; n = max(i for i, c in enumerate(cuts) if c <= t0 + 1e-3)
+        if any(re.sub(r"[^a-z0-9]", "", w["w"].lower()).startswith(p) for p in PUNCH):
+            t0 = wins[li][0] + w["s"]; n = max((i for i, c in enumerate(cuts) if c <= t0 + 1e-3), default=0)
             JS.append(f'tl.fromTo("#pk{n}",{{scale:1.14}},{{scale:1,duration:0.3,ease:"power3.out"}},{t0:.3f});')
             JS.append(f'tl.fromTo("#flash",{{opacity:0.25}},{{opacity:0,duration:0.1}},{t0:.3f});')
 # --- white flash on every cut (not the first frame)
@@ -46,8 +67,12 @@ JS += ['tl.fromTo("#hook-num",{scale:1.25},{scale:1,duration:0.35,ease:"back.out
 # --- optional big card (e.g. a date) slammed in on a keyword: job["card"] = {"line","word","top","big","bottom"}
 card = job.get("card")
 if card:
-    li = card["line"]; ws = words[li]
-    ts = wins[li][0] + next((w["s"] for w in ws if w["w"].lower().strip(".,!?").startswith(card["word"].lower())), ws[0]["s"])
+    li = card["line"]
+    if not isinstance(li, int) or not 0 <= li < len(words): die(f'card.line {li!r} out of range 0..{len(words) - 1}')
+    ws = words[li]; key = re.sub(r"[^a-z0-9]", "", str(card["word"]).lower())
+    hit = [w["s"] for w in ws if key and re.sub(r"[^a-z0-9]", "", w["w"].lower()).startswith(key)]
+    if not hit: print(f'WARN: card word {card["word"]!r} not in line {li} - card starts on the first word')
+    ts = wins[li][0] + (hit[0] if hit else ws[0]["s"])
     de = wins[li + 1][0] if li + 1 < len(wins) else TOTAL
     H.append(f'<div id="date" class="clip" data-start="{ts:.3f}" data-duration="{de-ts:.3f}" data-track-index="3"><div id="date-in">'
              f'<div id="date-m">{esc(card.get("top", ""))}</div><div id="date-d">{esc(card["big"])}</div><div id="date-y">{esc(card.get("bottom", ""))}</div></div></div>')
@@ -79,9 +104,13 @@ for li in range(1, len(timing)):
     for gi, g in enumerate(groups):
         gs = a + ws[g[0]]["s"] - 0.06
         ge = (a + ws[groups[gi + 1][0]]["s"] - 0.06) if gi + 1 < len(groups) else min(line_end, a + ws[g[-1]]["e"] + 0.45)
-        spans = "".join(f'<span id="w{gid}_{k}" class="w">{re.sub(r"[.,!?]", "", ws[j]["w"]).upper()}</span>' for k, j in enumerate(g))
-        chars = sum(len(re.sub(r"[.,!?]", "", ws[j]["w"])) for j in g) + 1.2 * (len(g) - 1)
+        ge = max(ge, gs + 0.1)
+        txt = [clean(ws[j]["w"]).upper() for j in g]
+        spans = "".join(f'<span id="w{gid}_{k}" class="w">{esc(t)}</span>' for k, t in enumerate(txt))
+        chars = sum(len(t) for t in txt) + 1.2 * (len(g) - 1)
         fs = int(min(112, 930 / (chars * 0.47 * 1.12)))  # Anton ~0.47 em per caps char, room for the 1.12 pop
+        need = sum(em(t) for t in txt) + 0.32 * len(txt) + 0.12 * max(em(t) for t in txt)  # glyphs + .16em margins + active-word pop
+        fs = min(fs, int((CAP_W - 20) / need))  # wide glyphs (W, M, $) could overflow the frame: shrink only, never grow
         spans = spans.replace('class="w"', f'class="w" style="font-size:{fs}px"')
         H.append(f'<div id="cap{gid}" class="clip cap" data-start="{gs:.3f}" data-duration="{ge-gs:.3f}" data-track-index="4">'
                  f'<div id="capin{gid}" class="capin">{spans}</div></div>')

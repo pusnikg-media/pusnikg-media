@@ -117,6 +117,10 @@ def main():
     job = json.load(open(sys.argv[1])); tmp = tempfile.mkdtemp(prefix="cc_")
     s, e = float(job["start"]), float(job["end"]); dur = e - s
     if dur < 10.5: sys.exit("clip must be >10 s (campaign minimum is 10 s)")
+    if not os.path.exists(job["src"]): sys.exit(f"FAIL: src missing {job['src']}")
+    pr = json.loads(run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_type", "-of", "json", job["src"]]))
+    if "audio" not in {x.get("codec_type") for x in pr.get("streams", [])}: sys.exit("FAIL: src has no audio stream (campaign clips keep the trailer audio)")
+    if e > float(pr["format"]["duration"]) + 0.1: sys.exit(f"FAIL: end {e} s > source length {float(pr['format']['duration']):.2f} s")
     z = job.get("zoom", 1.35)
     fw = int(W * z) // 2 * 2; fh = int(fw * 9 / 16) // 2 * 2; vid_h = fh
     wav = os.path.join(tmp, "a.wav")

@@ -124,9 +124,21 @@ def phrases(text, maxw=3):
 
 
 def main():
-    job = json.load(open(sys.argv[1]))
+    if len(sys.argv) < 2: sys.exit(__doc__)
+    jp = os.path.abspath(sys.argv[1]); job = json.load(open(jp)); base = os.path.dirname(jp)
+    ap = lambda p: p if os.path.isabs(p) else os.path.join(base, p)  # paths relative to job.json, like render_hf.py
+    job["vo_dir"], job["out"] = ap(job["vo_dir"]), ap(job["out"])
+    if job.get("music"): job["music"] = ap(job["music"])
+    for line in job["shots"]:
+        for c in line: c["file"] = ap(c["file"])
     tmp = tempfile.mkdtemp(prefix="rc_")
     timing = json.load(open(os.path.join(job["vo_dir"], "timing.json")))
+    for ln in timing:
+        if not os.path.exists(ln["file"]): ln["file"] = os.path.join(job["vo_dir"], os.path.basename(ln["file"]))
+    if len(job["shots"]) != len(timing) or not all(job["shots"]):
+        sys.exit(f'FAIL: job["shots"] has {len(job["shots"])} lists for {len(timing)} script lines (one non-empty list per line)')
+    job.setdefault("badge", f"GTA 6 \u2022 DAY {job.get('day', '')}".strip())
+    job.setdefault("hook", f"{job.get('day', '')} DAYS LEFT".strip())
     gap, tail, max_shot = job.get("gap", 0.22), job.get("tail", 0.6), job.get("max_shot", 2.3)
     t, wins = 0.0, []
     for i, ln in enumerate(timing):

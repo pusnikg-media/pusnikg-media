@@ -4,8 +4,13 @@
 3. `python3 pipeline/tts.py script.txt vo am_puck 1.0` (Stimme: Kokoro am_puck, nie schneller als 1.0)
 4. `python3 pipeline/music.py <sek> music.wav <seed>` (eigene Synthwave-Musik, lizenzfrei)
 5. `job.json` (timing, music, out, day_label, hook, big, big_sub, cta) → `python3 pipeline/render.py job.json`
-6. QA: ffprobe (h264+aac, 1080x1920), ebur128 ≈ -14 LUFS, kein Silence > 1 s, Frame 0 zeigt Hook
+6. QA: `python3 pipeline/qa.py out.mp4` (ffprobe h264+aac 1080x1920, ebur128 ≈ -14 LUFS, kein Silence > 1 s, 3 Frames als PNG – Frame 0 zeigt Hook)
 7. MP4 nach `shorts/` committen + pushen → URL: https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/<datei>.mp4
+
+## Preflight + QA (seit 07.11., spart Render-Zeit und Tokens)
+- `python3 pipeline/preflight.py job.json` → `PREFLIGHT_OK …` oder `PREFLIGHT_FAIL` + genaue Liste (Exit 1). Prüft timing.json/WAVs, Anzahl `shots` = Skriptzeilen, jeder Clip existiert, dekodiert und ist lang genug für `start` + Slot (sonst friert das Bild ein), Musik, `card.line`/`card.word`, `punch`, Länge 18–35 s. Läuft automatisch am Anfang von `render_hf.py`.
+- `python3 pipeline/qa.py out.mp4` → `QA_OK …` oder `QA_FAIL` + Liste (Exit 1): h264 1080x1920 + aac, A/V-Länge gleich, 18–35 s, −16…−12 LUFS, keine Stille > 1 s, kein Standbild > 2,5 s, Frame 0 nicht schwarz. Legt `out_qa_0.png`, `out_qa_mid.png`, `out_qa_end.png` neben das Video → diese 3 Bilder ansehen.
+- Alle Pfade in job.json sind relativ zum job.json-Ordner. tts.py löscht ein altes `words.json`; Fehler enden immer mit `FAIL…`/`… FAIL` statt mit einem kaputten Video.
 
 ## Renderer v3 HyperFrames (STANDARD seit 04.11. abends, von Steven freigegeben) – `pipeline/hyperframes/render_hf.py`
 `python3 pipeline/hyperframes/render_hf.py job.json` (Render ca. 3–4 Min, 0 Credits)
