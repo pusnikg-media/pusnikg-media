@@ -1,5 +1,5 @@
 # Pusnik G Short-Pipeline (0 €)
-1. `bash pipeline/setup.sh`
+1. `bash pipeline/setup.sh` (v2 seit 07.11.: espeak-ng per apt statt aus Quellcode, ca. 20 s)
 2. `script.txt` – ein Satz pro Zeile (Englisch, letzte Zeile = CTA)
 3. `python3 pipeline/tts.py script.txt vo am_puck 1.0` (Stimme: Kokoro am_puck, nie schneller als 1.0)
 4. `python3 pipeline/music.py <sek> music.wav <seed>` (eigene Synthwave-Musik, lizenzfrei)

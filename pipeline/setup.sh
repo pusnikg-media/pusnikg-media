@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
-# One-time setup per fresh session (~3 min): espeak-ng from source + Kokoro ONNX model from GitHub releases.
+# One-time setup per fresh session (~1-2 min). Only standard package installs + model data files:
+#   espeak-ng from the Ubuntu package archive (apt), faster-whisper from PyPI (pip),
+#   Kokoro ONNX model + voices as data files (no code) from the kokoro-onnx GitHub release.
+# v2 (07.11.): no more cloning/compiling espeak-ng from source - scheduled runs block "code from external".
 set -e
 mkdir -p /home/claude/tts && cd /home/claude/tts
 if ! command -v espeak-ng >/dev/null; then
-  [ -d src-espeak ] || git clone -q --depth 1 https://github.com/espeak-ng/espeak-ng src-espeak
-  cd src-espeak && cmake -B build -DCMAKE_BUILD_TYPE=Release -DUSE_MBROLA=OFF -DUSE_LIBSONIC=OFF -DUSE_LIBPCAUDIO=OFF -DUSE_ASYNC=OFF -DCMAKE_INSTALL_PREFIX=/usr/local >/dev/null \
-    && cmake --build build -j8 >/dev/null && cmake --install build >/dev/null && cd ..
+  export DEBIAN_FRONTEND=noninteractive
+  apt-get install -y -q espeak-ng >/dev/null 2>&1 || { apt-get update -q >/dev/null && apt-get install -y -q espeak-ng >/dev/null; }
 fi
 B=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
 [ -s voices-v1.0.bin ] || curl -sSL -o voices-v1.0.bin $B/voices-v1.0.bin
