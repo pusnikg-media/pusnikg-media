@@ -11,18 +11,88 @@
   "Follow for more GTA 6."
  ],
  "shots": [
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/138588.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/51587.mp4", "start": 1}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/1042.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/190487.mp4", "start": 1}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/239125.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/137388.mp4", "start": 2}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/224729.mp4", "start": 3}, {"url": "https://storage.orshot.com/stock/pixabay/video/104490.mp4", "start": 2}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/135658.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/109458.mp4", "start": 3}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/205873.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/110933.mp4", "start": 1}]
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/138588.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/51587.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/1042.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/190487.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/239125.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/137388.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/224729.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/104490.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/135658.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/109458.mp4",
+    "start": 3
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/205873.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/283523.mp4",
+    "start": 1
+   }
+  ]
  ],
- "music": {"url": "https://cdn.orshot.com/library/music/e8303a87-ce50-48d4-82b3-549a1bd2fe0e.m4a", "start": 2, "db": -9, "title": "Deep house (Orshot)"},
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/e8303a87-ce50-48d4-82b3-549a1bd2fe0e.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Deep house (Orshot)"
+ },
  "hook_big": "DON'T",
  "hook_mid": "RUSH IT",
  "hook_sub": "UNPOPULAR OPINION",
  "badge": "GTA 6 • LAUNCH WEEK",
- "card": {"line": 1, "word": "weekend", "top": "13 YEARS", "big": "48H", "bottom": "TO FINISH IT?"},
- "punch": ["rush", "weekend", "explore", "breathe"]
+ "card": {
+  "line": 1,
+  "word": "weekend",
+  "top": "13 YEARS",
+  "big": "48H",
+  "bottom": "TO FINISH IT?"
+ },
+ "punch": [
+  "rush",
+  "weekend",
+  "explore",
+  "breathe"
+ ]
 }
