@@ -12,8 +12,14 @@ def consider(spec, src):
     name = re.sub(r"[^a-z0-9-]", "", spec.get("name") or "")
     if not name or name in seen: return
     seen.add(name)
-    if os.path.exists(f"shorts/{name}.json") and not spec.get("force"):
-        return
+    prev = {}
+    if os.path.exists(f"shorts/{name}.json"):
+        try: prev = json.load(open(f"shorts/{name}.json"))
+        except Exception: prev = {}
+    if prev.get("ok") and not spec.get("force"): return
+    if not prev.get("ok") and prev.get("attempts", 1) >= 3 and not spec.get("force"):
+        print(f"gave up: {name} (3 failed attempts)", file=sys.stderr); return
+    spec["_attempt"] = (prev.get("attempts", 0) + 1) if prev and not prev.get("ok") else 1
     p = f"/home/runner/jobs_in/{name}.json"; json.dump(spec, open(p, "w"), ensure_ascii=False)
     pending.append(p); print(f"pending: {name} ({src})", file=sys.stderr)
 

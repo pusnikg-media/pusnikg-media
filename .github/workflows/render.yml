@@ -46,7 +46,7 @@ jobs:
             /home/runner/tts
             ~/.cache/huggingface
             ~/.cache/pip
-          key: models-kokoro1-whisperbase-v1
+          key: models-kokoro1-whisperbase-v2
       - name: Install tools
         if: steps.collect.outputs.n != '0'
         run: |
@@ -55,8 +55,17 @@ jobs:
           pip install -q onnxruntime numpy scipy pillow faster-whisper
           mkdir -p "$KOKORO_DIR"
           B=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
-          [ -s "$KOKORO_DIR/voices-v1.0.bin" ] || curl -sSL -o "$KOKORO_DIR/voices-v1.0.bin" $B/voices-v1.0.bin
-          [ -s "$KOKORO_DIR/kokoro-v1.0.onnx" ] || curl -sSL -o "$KOKORO_DIR/kokoro-v1.0.onnx" $B/kokoro-v1.0.onnx
+          get() {  # file url min_bytes: re-download until the size is plausible (a cut-off download broke run 1)
+            for i in 1 2 3; do
+              [ -f "$1" ] && [ "$(stat -c%s "$1")" -ge "$3" ] && return 0
+              rm -f "$1"; curl -fsSL --retry 3 -o "$1" "$2" || true
+            done
+            [ -f "$1" ] && [ "$(stat -c%s "$1")" -ge "$3" ] || { echo "MODEL DOWNLOAD FAIL $2"; ls -la "$KOKORO_DIR"; exit 1; }
+          }
+          get "$KOKORO_DIR/voices-v1.0.bin" $B/voices-v1.0.bin 20000000
+          get "$KOKORO_DIR/kokoro-v1.0.onnx" $B/kokoro-v1.0.onnx 300000000
+          python3 -c "import onnxruntime as o;o.InferenceSession('$KOKORO_DIR/kokoro-v1.0.onnx',providers=['CPUExecutionProvider']);print('KOKORO_OK')" || { rm -f "$KOKORO_DIR/kokoro-v1.0.onnx"; exit 1; }
+          ls -la "$KOKORO_DIR"
           espeak-ng --version && ffmpeg -version | head -1
       - name: Render, publish results
         if: steps.collect.outputs.n != '0'
@@ -79,6 +88,8 @@ jobs:
           for p in r.get("pngs", []):
               dst = "shorts/qa/" + os.path.basename(p); shutil.copy(p, dst); urls.setdefault("pngs", []).append(f"{raw}/{dst}")
           r["urls"] = urls; r["name"] = name
+          try: r["attempts"] = json.load(open(f"/home/runner/jobs_in/{name}.json")).get("_attempt", 1)
+          except Exception: r["attempts"] = 1
           r.pop("video", None); r.pop("pngs", None)
           json.dump(r, open(f"shorts/{name}.json", "w"), indent=1, ensure_ascii=False)
           print(("RENDER_OK " if r.get("ok") else "RENDER_FAIL ") + name + " " + str(r.get("error", "")))
