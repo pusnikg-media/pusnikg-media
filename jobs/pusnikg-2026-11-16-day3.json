@@ -1,0 +1,98 @@
+{
+ "name": "pusnikg-2026-11-16-day3",
+ "date": "2026-11-16",
+ "day": 3,
+ "script": [
+  "Vice City is back, and it's been twenty four years.",
+  "The original came out in twenty oh two, on the PS2.",
+  "Neon, palm trees, speedboats, back then it felt like the future.",
+  "Now it's a whole state, Leonida, and Vice City is just the start.",
+  "Did you play the original Vice City?",
+  "Follow for day two."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/363515.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/384705.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/380316.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/385523.mp4",
+    "start": 0
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/275362.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/300433.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/85012.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/137389.mp4",
+    "start": 3
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/378015.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/312517.mp4",
+    "start": 0
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/65563.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/38371.mp4",
+    "start": 1
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/36a24af1-e177-4fe1-98c4-f077e049756c.m4a",
+  "start": 2.308,
+  "db": -9,
+  "title": "Synthwave (Orshot)"
+ },
+ "hook_big": "3",
+ "hook_mid": "DAYS LEFT",
+ "hook_sub": "WE'RE GOING BACK",
+ "badge": "GTA 6 • DAY 3",
+ "card": {
+  "line": 1,
+  "word": "twenty",
+  "top": "VICE CITY",
+  "big": "2002",
+  "bottom": "ON PS2"
+ },
+ "punch": [
+  "back",
+  "neon",
+  "leonida",
+  "start"
+ ]
+}

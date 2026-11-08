@@ -1,0 +1,98 @@
+{
+ "name": "pusnikg-2026-11-13-day6",
+ "date": "2026-11-13",
+ "day": 6,
+ "script": [
+  "My theory, GTA 6 is building up to a betrayal.",
+  "Lucia and Jason are a modern Bonnie and Clyde, and we know how that story ended.",
+  "Rockstar has never been afraid of a dark ending.",
+  "So enjoy the honeymoon phase, because I don't think it lasts.",
+  "Ride or die till the end, or betrayal?",
+  "Follow for day five."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/85370.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/120382.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/5278.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/19627.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/340967.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/360387.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/200479.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/197549.mp4",
+    "start": 3
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/276544.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/231994.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/220940.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/87884.mp4",
+    "start": 2
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/556d12eb-941d-47b7-8898-9db110315509.m4a",
+  "start": 5.333,
+  "db": -9,
+  "title": "Cinematic tension (Orshot)"
+ },
+ "hook_big": "6",
+ "hook_mid": "DAYS LEFT",
+ "hook_sub": "MY THEORY",
+ "badge": "GTA 6 • DAY 6",
+ "card": {
+  "line": 1,
+  "word": "bonnie",
+  "top": "OUTLAWS",
+  "big": "1934",
+  "bottom": "DIDN'T END WELL"
+ },
+ "punch": [
+  "betrayal",
+  "bonnie",
+  "dark",
+  "honeymoon"
+ ]
+}

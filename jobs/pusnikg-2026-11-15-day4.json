@@ -1,0 +1,98 @@
+{
+ "name": "pusnikg-2026-11-15-day4",
+ "date": "2026-11-15",
+ "day": 4,
+ "script": [
+  "Once GTA 6 drops, the internet turns into a spoiler minefield.",
+  "Story clips, endings, big twists, they'll be all over your feed.",
+  "So mute the keywords now, Lucia, Jason, ending, on every app you use.",
+  "Thirteen years of waiting, don't let a random clip ruin it.",
+  "Are you going in completely blind?",
+  "Follow for day three."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/169445.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/37782.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/202987.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/3180.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/61298.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/304045.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/135138.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/45242.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/26793.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/354315.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/379666.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/385115.mp4",
+    "start": 3
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/a686cab9-6980-4bb8-8f2f-a9406024eb18.m4a",
+  "start": 4,
+  "db": -9,
+  "title": "Breaking alert (Orshot)"
+ },
+ "hook_big": "4",
+ "hook_mid": "DAYS LEFT",
+ "hook_sub": "SPOILER WARNING",
+ "badge": "GTA 6 • DAY 4",
+ "card": {
+  "line": 2,
+  "word": "mute",
+  "top": "MUTE",
+  "big": "NOW",
+  "bottom": "THE KEYWORDS"
+ },
+ "punch": [
+  "spoiler",
+  "mute",
+  "ruin",
+  "blind"
+ ]
+}

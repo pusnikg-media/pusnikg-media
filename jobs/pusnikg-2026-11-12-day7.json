@@ -1,0 +1,98 @@
+{
+ "name": "pusnikg-2026-11-12-day7",
+ "date": "2026-11-12",
+ "day": 7,
+ "script": [
+  "Calling it now, GTA 6 will have the best soundtrack in GTA history.",
+  "Trailer one ran on Tom Petty, trailer two on the Pointer Sisters.",
+  "Rockstar picks songs that make you feel something, not random playlists.",
+  "Imagine cruising Vice City at sunset with the radio up, that's the moment.",
+  "What song do you want on the radio?",
+  "Follow for day six."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/1630.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/362326.mp4",
+    "start": 0
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/38388.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/57307.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/1258.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/123072.mp4",
+    "start": 3
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/375662.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/315528.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/354317.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/81676.mp4",
+    "start": 0
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/51587.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/90458.mp4",
+    "start": 2
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/d53414e6-81f1-4df6-89e0-559892015c0a.m4a",
+  "start": 1.875,
+  "db": -9,
+  "title": "Festival EDM (Orshot)"
+ },
+ "hook_big": "7",
+ "hook_mid": "DAYS LEFT",
+ "hook_sub": "ONE WEEK LEFT",
+ "badge": "GTA 6 • DAY 7",
+ "card": {
+  "line": 3,
+  "word": "radio",
+  "top": "TURN IT UP",
+  "big": "RADIO",
+  "bottom": "SUNSET DRIVE"
+ },
+ "punch": [
+  "soundtrack",
+  "petty",
+  "pointer",
+  "sunset"
+ ]
+}

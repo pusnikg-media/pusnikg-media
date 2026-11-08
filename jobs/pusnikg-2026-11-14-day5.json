@@ -1,0 +1,98 @@
+{
+ "name": "pusnikg-2026-11-14-day5",
+ "date": "2026-11-14",
+ "day": 5,
+ "script": [
+  "Plot twist, the GTA 6 box doesn't even have a disc inside.",
+  "The physical edition is just a download code, so everyone downloads on launch night.",
+  "Millions of people hitting download at once, the servers are going to feel it.",
+  "That's why pre-loading now is the smartest move you can make.",
+  "Digital, or are you buying the box anyway?",
+  "Follow for day four."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/326954.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/379012.mp4",
+    "start": 0
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/68978.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/345428.mp4",
+    "start": 0
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/380334.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/380332.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/265236.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/136541.mp4",
+    "start": 0
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/82515.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/180776.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/216724.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/383651.mp4",
+    "start": 0
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/e23130f8-d9fe-424e-a6ed-ae435631625e.m4a",
+  "start": 1.875,
+  "db": -9,
+  "title": "Cyber dark (Orshot)"
+ },
+ "hook_big": "5",
+ "hook_mid": "DAYS LEFT",
+ "hook_sub": "PLOT TWIST",
+ "badge": "GTA 6 • DAY 5",
+ "card": {
+  "line": 1,
+  "word": "physical",
+  "top": "BOX VERSION",
+  "big": "CODE",
+  "bottom": "NO DISC INSIDE"
+ },
+ "punch": [
+  "disc",
+  "code",
+  "millions",
+  "servers"
+ ]
+}
