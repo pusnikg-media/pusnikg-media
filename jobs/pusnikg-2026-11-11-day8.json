@@ -1,0 +1,28 @@
+{
+ "name": "pusnikg-2026-11-11-day8",
+ "date": "2026-11-11",
+ "day": 8,
+ "script": [
+  "Thirteen years, that's how long we've waited for a new GTA.",
+  "GTA Five dropped in September twenty thirteen, on the PS3.",
+  "Kids who played it in middle school are paying their own rent now.",
+  "No game has ever carried this much hype, and honestly, it's earned it.",
+  "How old were you when GTA Five came out?",
+  "Follow for day seven."
+ ],
+ "shots": [
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/34499.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/3019.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/71287.mp4", "start": 0}, {"url": "https://storage.orshot.com/stock/pixabay/video/37585.mp4", "start": 2}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/313987.mp4", "start": 0}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/187509.mp4", "start": 0}, {"url": "https://storage.orshot.com/stock/pixabay/video/187511.mp4", "start": 0}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/106316.mp4", "start": 5}, {"url": "https://storage.orshot.com/stock/pixabay/video/89894.mp4", "start": 8}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/190482.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/190484.mp4", "start": 2}]
+ ],
+ "music": {"url": "https://cdn.orshot.com/library/music/93310cf0-e89c-4525-95ee-77199e84c957.m4a", "start": 1.714, "db": -9, "title": "Esports hype (Orshot)"},
+ "hook_big": "13",
+ "hook_mid": "YEARS",
+ "hook_sub": "OF WAITING",
+ "badge": "GTA 6 • DAY 8",
+ "card": {"line": 1, "word": "september", "top": "SEPT", "big": "2013", "bottom": "GTA V ON PS3"},
+ "punch": ["thirteen", "rent", "hype"]
+}

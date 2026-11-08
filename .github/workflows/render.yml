@@ -1,67 +1,54 @@
 # Pusnik G render farm (free GitHub runner, public repo).
-# The scheduled producer opens an issue titled "render <date>" whose body contains the job spec in a ```json block
-# (format: pipeline/gh_render.py). This workflow renders the short, commits it to shorts/ and comments
-# RENDER_OK + the raw URLs (or RENDER_FAIL + the reason) on the issue, then closes it.
-# Why: scheduled Claude sessions are not allowed to run downloaded code - the runner does it instead.
+# Scheduled Claude sessions may not run downloaded code - this runner does the rendering instead.
+# Jobs: jobs/<name>.json in the repo (format: pipeline/gh_render.py), optionally job-*.json in the public
+# Drive folder (vars.DRIVE_FOLDER). Result per job: shorts/<name>.mp4, shorts/qa/<name>_qa_*.png and
+# shorts/<name>.json ({"ok", "urls", "error", ...}); the producer polls the raw URL of that json.
 name: render
 on:
-  issues:
-    types: [opened]
+  push:
+    branches: [main]
+    paths: ["jobs/**", ".github/workflows/render.yml", "pipeline/**"]
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
-    inputs:
-      spec_path:
-        description: "repo path of a spec.json to render (manual rerun)"
-        required: true
 permissions:
   contents: write
-  issues: write
 concurrency:
   group: render
   cancel-in-progress: false
 jobs:
   render:
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      (startsWith(github.event.issue.title, 'render ') &&
-       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 150
     env:
       KOKORO_DIR: /home/runner/tts
-      GH_TOKEN: ${{ github.token }}
+      DRIVE_FOLDER: ${{ vars.DRIVE_FOLDER }}
     steps:
       - uses: actions/checkout@v4
-      - name: Read job spec
-        env:
-          BODY: ${{ github.event.issue.body }}
-          SPEC_PATH: ${{ github.event.inputs.spec_path }}
+      - name: Collect pending jobs
+        id: collect
         run: |
-          mkdir -p /home/runner/work_short
-          if [ -n "$SPEC_PATH" ]; then cp "$SPEC_PATH" /home/runner/work_short/spec.json; else
-            python3 - <<'EOF'
-          import json, os, re
-          b = os.environ.get("BODY", "")
-          m = re.search(r"```(?:json)?\s*(\{.*\})\s*```", b, re.S) or re.search(r"(\{.*\})", b, re.S)
-          spec = json.loads(m.group(1))
-          json.dump(spec, open("/home/runner/work_short/spec.json", "w"), indent=1, ensure_ascii=False)
-          print("spec ok:", spec.get("date"), "day", spec.get("day"), len(spec.get("script", [])), "lines")
-          EOF
-          fi
+          python3 pipeline/gh_jobs.py > /home/runner/pending.json
+          cat /home/runner/pending.json
+          echo "n=$(python3 -c 'import json;print(len(json.load(open("/home/runner/pending.json"))))')" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
+        if: steps.collect.outputs.n != '0'
         with:
           node-version: 22
       - uses: actions/setup-python@v5
+        if: steps.collect.outputs.n != '0'
         with:
           python-version: "3.12"
-          cache: pip
-          cache-dependency-path: .github/workflows/render.yml
       - uses: actions/cache@v4
+        if: steps.collect.outputs.n != '0'
         with:
           path: |
             /home/runner/tts
             ~/.cache/huggingface
+            ~/.cache/pip
           key: models-kokoro1-whisperbase-v1
       - name: Install tools
+        if: steps.collect.outputs.n != '0'
         run: |
           sudo apt-get update -q >/dev/null
           sudo apt-get install -y -q espeak-ng ffmpeg >/dev/null
@@ -71,46 +58,32 @@ jobs:
           [ -s "$KOKORO_DIR/voices-v1.0.bin" ] || curl -sSL -o "$KOKORO_DIR/voices-v1.0.bin" $B/voices-v1.0.bin
           [ -s "$KOKORO_DIR/kokoro-v1.0.onnx" ] || curl -sSL -o "$KOKORO_DIR/kokoro-v1.0.onnx" $B/kokoro-v1.0.onnx
           espeak-ng --version && ffmpeg -version | head -1
-      - name: Render
-        id: render
-        run: python3 pipeline/gh_render.py /home/runner/work_short/spec.json /home/runner/work_short
-        continue-on-error: true
-      - name: Commit, comment, close
-        if: always()
+      - name: Render, publish results
+        if: steps.collect.outputs.n != '0'
         run: |
-          python3 - <<'EOF' > /home/runner/comment.md
-          import json, os, shutil, subprocess
-          W = "/home/runner/work_short"
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          RAW="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main"
+          for spec in $(python3 -c 'import json;print(" ".join(json.load(open("/home/runner/pending.json"))))'); do
+            name=$(basename "$spec" .json); W="/home/runner/work_$name"
+            echo "::group::render $name"
+            python3 pipeline/gh_render.py "$spec" "$W" || true
+            echo "::endgroup::"
+            python3 - "$W" "$name" "$RAW" <<'EOF'
+          import json, os, shutil, sys
+          W, name, raw = sys.argv[1:4]
           try: r = json.load(open(f"{W}/result.json"))
-          except Exception: r = {"ok": False, "error": "no result.json (render step crashed - see Actions log)", "log": []}
-          raw = "https://raw.githubusercontent.com/" + os.environ["GITHUB_REPOSITORY"] + "/main/"
-          urls = {}
-          os.makedirs("shorts/qa", exist_ok=True)
+          except Exception: r = {"ok": False, "error": "no result.json - renderer crashed, see Actions log", "log": []}
+          os.makedirs("shorts/qa", exist_ok=True); urls = {}
           if r.get("video") and os.path.exists(r["video"]):
-              dst = "shorts/" + os.path.basename(r["video"]); shutil.copy(r["video"], dst); urls["video"] = raw + dst
+              shutil.copy(r["video"], f"shorts/{name}.mp4"); urls["video"] = f"{raw}/shorts/{name}.mp4"
           for p in r.get("pngs", []):
-              dst = "shorts/qa/" + os.path.basename(p); shutil.copy(p, dst); urls.setdefault("pngs", []).append(raw + dst)
-          r["urls"] = urls
-          head = "RENDER_OK" if r.get("ok") else "RENDER_FAIL"
-          print(head)
-          print()
-          if urls.get("video"): print("Video:", urls["video"])
-          for u in urls.get("pngs", []): print("QA frame:", u)
-          if not r.get("ok"): print("Error:", r.get("error", "?"))
-          print()
-          print("```json")
-          print(json.dumps({k: v for k, v in r.items() if k != "log"}, indent=1, ensure_ascii=False)[:6000])
-          print("```")
-          print("<details><summary>log</summary>\n\n```\n" + "\n".join(r.get("log", []))[-5000:] + "\n```\n</details>")
+              dst = "shorts/qa/" + os.path.basename(p); shutil.copy(p, dst); urls.setdefault("pngs", []).append(f"{raw}/{dst}")
+          r["urls"] = urls; r["name"] = name
+          r.pop("video", None); r.pop("pngs", None)
+          json.dump(r, open(f"shorts/{name}.json", "w"), indent=1, ensure_ascii=False)
+          print(("RENDER_OK " if r.get("ok") else "RENDER_FAIL ") + name + " " + str(r.get("error", "")))
           EOF
-          cat /home/runner/comment.md | head -20
-          if [ -n "$(git status --porcelain shorts)" ]; then
-            git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
-            git add shorts && git commit -q -m "short: ${{ github.event.issue.title || github.event.inputs.spec_path }}"
-            for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
-          fi
-          if [ "${{ github.event_name }}" = "issues" ]; then
-            gh issue comment ${{ github.event.issue.number }} --body-file /home/runner/comment.md
-            gh issue close ${{ github.event.issue.number }}
-          fi
-          grep -q '^RENDER_OK' /home/runner/comment.md
+            git add shorts
+            git commit -q -m "short: $name" || true
+            for i in 1 2 3 4; do git fetch -q --depth=20 origin main && git rebase -q origin/main && git push -q origin HEAD:main && break; sleep 7; done
+          done
