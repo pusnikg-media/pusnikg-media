@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "pˈeɪɪŋ ðɛɹ ˈoʊn ɹˈɛnt nˈaʊ.\n3: 4.38s  nˈoʊ ɡˈeɪm hɐz ˈɛvɚ kˈæɹid ðɪs mˈʌtʃ hˈaɪp, ænd ˈɑːnɪstli, ɪts ˈɜːnd ɪt.\n4: 3.15s  hˌaʊ ˈoʊld wɜː juː wɛn dʒˌiːtˌiːˈeɪ fˈaɪv kˈeɪm ˈaʊt?\n5: 1.85s  fˈɑːloʊ fɔːɹ dˈeɪ sˈɛvən.\nTTS_OK 6 lines 22.45s\n\u001b[0;93m2026-11-08 10:32:03.866391856 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at \"/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171\" because filename \"5620e0c7-8062-4dce-aeb7-520c7ef76171\" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+\u001b[m",
+  "in@1.65 September@1.95 twenty@2.24 thirteen,@2.61 on@3.41 the@3.49 PS3.@3.57\nKids@0.23 who@0.60 played@0.77 it@1.00 in@1.16 middle@1.24 school@1.37 are@1.68 paying@2.05 their@2.24 own@2.53 rent@2.75 now.@2.94\nNo@0.22 game@0.52 has@0.74 ever@0.93 carried@1.18 this@1.44 much@1.68 hype,@1.87 and@2.45 honestly,@2.49 it's@3.09 earned@3.20 it.@3.35\nHow@0.23 old@0.49 were@0.68 you@0.82 when@0.95 GTA@1.18 Five@1.38 came@1.97 out?@2.14\nFollow@0.25 for@0.62 day@0.79 seven.@0.92\nWORDS_OK 6 lines\n\nTOTAL 24.15 shots 14 captions 19\nRENDER_OK /home/runner/work_pusnikg-test-drive/pusnikg-test-drive.mp4 24.15s",
+  "QA_OK 24.15s -14.3 LUFS frames: /home/runner/work_pusnikg-test-drive/pusnikg-test-drive_qa_0.png /home/runner/work_pusnikg-test-drive/pusnikg-test-drive_qa_mid.png /home/runner/work_pusnikg-test-drive/pusnikg-test-drive_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 24.15,
+ "music": "https://cdn.orshot.com/library/music/93310cf0-e89c-4525-95ee-77199e84c957.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-test-drive.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-test-drive_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-test-drive_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-test-drive_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-test-drive",
+ "attempts": 1
+}
