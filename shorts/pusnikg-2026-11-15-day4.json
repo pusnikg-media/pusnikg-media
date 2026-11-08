@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "lˈuːʃə, dʒˈeɪsən, ˈɛndɪŋ, ˌɔn ˈɛvɹi ˈæp juː jˈuːz.\n3: 3.75s  θˈɜːtiːn jˈɪɹz ʌv wˈeɪɾɪŋ, dˈoʊnt lˈɛt ɐ ɹˈændəm klˈɪp ɹˈuːɪn ɪt.\n4: 2.48s  ɑːɹ juː ɡˌoʊɪŋ ɪn kəmplˈiːtli blˈaɪnd?\n5: 1.90s  fˈɑːloʊ fɔːɹ dˈeɪ θɹˈiː.\nTTS_OK 6 lines 22.25s\n\u001b[0;93m2026-11-08 09:30:02.066983195 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at \"/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171\" because filename \"5620e0c7-8062-4dce-aeb7-520c7ef76171\" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+\u001b[m",
+  "ps,@0.55 endings,@1.11 big@1.61 twists,@1.75 they'll@2.40 be@2.46 all@2.58 over@2.76 your@2.98 feed.@3.08\nSo@0.22 mute@0.52 the@0.67 keywords@0.81 now,@1.13 Lucia,@1.64 Jason,@2.18 ending,@2.71 on@3.24 every@3.28 app@3.52 you@3.76 use.@3.95\nThirteen@0.23 years@0.71 of@0.92 waiting,@1.11 don't@1.65 let@1.80 a@1.89 random@1.97 clip@2.18 ruin@2.51 it.@2.81\nAre@0.22 you@0.50 going@0.62 in@0.84 completely@1.07 blind?@1.41\nFollow@0.25 for@0.66 day@0.83 three.@0.98\nWORDS_OK 6 lines\n\nTOTAL 23.95 shots 16 captions 21\nRENDER_OK /home/runner/work_pusnikg-2026-11-15-day4/pusnikg-2026-11-15-day4.mp4 23.95s",
+  "QA_OK 23.95s -14.3 LUFS frames: /home/runner/work_pusnikg-2026-11-15-day4/pusnikg-2026-11-15-day4_qa_0.png /home/runner/work_pusnikg-2026-11-15-day4/pusnikg-2026-11-15-day4_qa_mid.png /home/runner/work_pusnikg-2026-11-15-day4/pusnikg-2026-11-15-day4_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 23.95,
+ "music": "https://cdn.orshot.com/library/music/a686cab9-6980-4bb8-8f2f-a9406024eb18.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-15-day4.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-15-day4_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-15-day4_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-15-day4_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-15-day4",
+ "attempts": 1
+}
