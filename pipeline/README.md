@@ -23,3 +23,9 @@ Dateien: `words.py` (Wort-Timing), `build_cd.py` (HTML-Komposition), `cd_templat
 job.json: `vo_dir` (tts.py-Ordner), `shots` (pro Skriptzeile Liste von `{"file","start"}`), `music` (Datei, geloopt), `music_start` (Intro überspringen, s), `music_db` (Standard −12, wird unter der Stimme automatisch abgesenkt), `badge` ("GTA 6 • DAY X"), `hook` (max. 6 Wörter), `out`, optional `gap` 0.22, `tail` 0.6, `max_shot` 2.3.
 Kann: Anton-Font (pipeline/fonts), Karaoke-Untertitel (aktives Wort gelb), weißer Flash bei jedem Schnitt, pinker Fortschrittsbalken, automatische Schnitte ≤2,3 s mit wechselndem Zoom/Pan, Stimme EQ+Kompressor, Musik per Sidechain geduckt.
 Musik: jeden Tag ein anderer Track – benutzte Tracks in `pipeline/music_log.txt` (Datum | Titel | Quelle) eintragen und vorher prüfen.
+
+## Render-Farm (STANDARD seit 08.11.) – GitHub Action `.github/workflows/render.yml`
+Geplante Claude-Läufe dürfen keinen heruntergeladenen Code ausführen (Sicherheitsprüfung, gestoppt am 07./08.11.). Deshalb rendert ein kostenloser GitHub-Runner:
+- Auftrag = JSON im Format von `pipeline/gh_render.py` (script, shots mit Clip-URLs, music, hook_*, badge, card, punch). Quellen: `jobs/<name>.json` im Repo (im Chat angelegt) oder `job-<name>.json` im Drive-Ordner „Pusnik G Render-Aufträge" (ID 1sZgGx8xmJ5OX5UcGUhZn9u_UzenRGYwF, muss „Jeder mit dem Link" lesbar sein; vom geplanten Produzenten angelegt).
+- Die Action läuft bei Push auf jobs/ und alle 15 Min (Cron), rendert offene Aufträge (TTS → HyperFrames v3, Fallback v2 → qa.py) und committet `shorts/<name>.mp4`, `shorts/qa/<name>_qa_*.png` und das Ergebnis `shorts/<name>.json` ({ok, urls.video, urls.pngs, error, attempts}). Fehlgeschlagene Aufträge werden bis zu 3-mal wiederholt.
+- Der Produzent liest nur noch: `https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/<name>.json`, lädt Video + PNGs, prüft und plant in Metricool ein.

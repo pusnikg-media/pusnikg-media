@@ -22,7 +22,7 @@ jobs:
     timeout-minutes: 150
     env:
       KOKORO_DIR: /home/runner/tts
-      DRIVE_FOLDER: ${{ vars.DRIVE_FOLDER }}
+      DRIVE_FOLDER: ${{ vars.DRIVE_FOLDER || '1sZgGx8xmJ5OX5UcGUhZn9u_UzenRGYwF' }}
     steps:
       - uses: actions/checkout@v4
       - name: Collect pending jobs
