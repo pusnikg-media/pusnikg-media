@@ -25,6 +25,8 @@ jobs:
       DRIVE_FOLDER: ${{ vars.DRIVE_FOLDER || '1sZgGx8xmJ5OX5UcGUhZn9u_UzenRGYwF' }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main  # always the newest state (a push run would otherwise see an old commit and redo finished shorts)
       - name: Collect pending jobs
         id: collect
         run: |
@@ -72,29 +74,34 @@ jobs:
         run: |
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
           RAW="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main"
+          done_ok() { git fetch -q --depth=1 origin main && git show "origin/main:shorts/$1.json" 2>/dev/null | python3 -c "import json,sys;sys.exit(0 if json.load(sys.stdin).get('ok') else 1)"; }
           for spec in $(python3 -c 'import json;print(" ".join(json.load(open("/home/runner/pending.json"))))'); do
-            name=$(basename "$spec" .json); W="/home/runner/work_$name"
+            name=$(basename "$spec" .json); W="/home/runner/work_$name"; O="/home/runner/out_$name"
+            if done_ok "$name"; then echo "skip $name (already rendered by another run)"; continue; fi
             echo "::group::render $name"
             python3 pipeline/gh_render.py "$spec" "$W" || true
             echo "::endgroup::"
-            python3 - "$W" "$name" "$RAW" <<'EOF'
+            python3 - "$W" "$name" "$RAW" "$O" <<'EOF'
           import json, os, shutil, sys
-          W, name, raw = sys.argv[1:4]
+          W, name, raw, O = sys.argv[1:5]
           try: r = json.load(open(f"{W}/result.json"))
           except Exception: r = {"ok": False, "error": "no result.json - renderer crashed, see Actions log", "log": []}
-          os.makedirs("shorts/qa", exist_ok=True); urls = {}
+          os.makedirs(f"{O}/shorts/qa", exist_ok=True); urls = {}
           if r.get("video") and os.path.exists(r["video"]):
-              shutil.copy(r["video"], f"shorts/{name}.mp4"); urls["video"] = f"{raw}/shorts/{name}.mp4"
+              shutil.copy(r["video"], f"{O}/shorts/{name}.mp4"); urls["video"] = f"{raw}/shorts/{name}.mp4"
           for p in r.get("pngs", []):
-              dst = "shorts/qa/" + os.path.basename(p); shutil.copy(p, dst); urls.setdefault("pngs", []).append(f"{raw}/{dst}")
+              b = os.path.basename(p); shutil.copy(p, f"{O}/shorts/qa/{b}"); urls.setdefault("pngs", []).append(f"{raw}/shorts/qa/{b}")
           r["urls"] = urls; r["name"] = name
           try: r["attempts"] = json.load(open(f"/home/runner/jobs_in/{name}.json")).get("_attempt", 1)
           except Exception: r["attempts"] = 1
           r.pop("video", None); r.pop("pngs", None)
-          json.dump(r, open(f"shorts/{name}.json", "w"), indent=1, ensure_ascii=False)
+          json.dump(r, open(f"{O}/shorts/{name}.json", "w"), indent=1, ensure_ascii=False)
           print(("RENDER_OK " if r.get("ok") else "RENDER_FAIL ") + name + " " + str(r.get("error", "")))
           EOF
-            git add shorts
-            git commit -q -m "short: $name" || true
-            for i in 1 2 3 4; do git fetch -q --depth=20 origin main && git rebase -q origin/main && git push -q origin HEAD:main && break; sleep 7; done
+            for i in 1 2 3 4 5; do  # publish on top of the newest main; never rebase (no conflicts possible)
+              git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+              if done_ok "$name"; then echo "skip publish $name (already there)"; break; fi
+              cp -r "$O/shorts/." shorts/ && git add shorts && git commit -q -m "short: $name" && git push -q origin HEAD:main && { echo "PUBLISHED $name"; break; }
+              echo "push retry $i"; sleep 8
+            done
           done
