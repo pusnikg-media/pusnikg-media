@@ -1,0 +1,28 @@
+{
+ "name": "pusnikg-2026-11-17-day2",
+ "date": "2026-11-17",
+ "day": 2,
+ "script": [
+  "Two days left, so when can you actually play GTA 6?",
+  "Rockstar hasn't confirmed a time, but store listings point to midnight, local time.",
+  "That means New Zealand starts first, and the rest of the world follows hour by hour.",
+  "Pre-load it now, so you're playing the second it unlocks.",
+  "Are you staying up for midnight?",
+  "Follow for day one."
+ ],
+ "shots": [
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/265236.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/55760.mp4", "start": 2}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/8897.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/15615.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/48597.mp4", "start": 0}, {"url": "https://storage.orshot.com/stock/pixabay/video/27168.mp4", "start": 3}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/180776.mp4", "start": 0}, {"url": "https://storage.orshot.com/stock/pixabay/video/86462.mp4", "start": 2}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/346879.mp4", "start": 0}, {"url": "https://storage.orshot.com/stock/pixabay/video/190485.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/9473.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/75456.mp4", "start": 2}]
+ ],
+ "music": {"url": "https://cdn.orshot.com/library/music/0565f704-b2e2-4cdd-843a-06f349748e10.m4a", "start": 1.818, "db": -9, "title": "Victory (Orshot)"},
+ "hook_big": "2",
+ "hook_mid": "DAYS LEFT",
+ "hook_sub": "UNLOCK TIME",
+ "badge": "GTA 6 • DAY 2",
+ "card": {"line": 1, "word": "midnight", "top": "UNLOCK", "big": "00:00", "bottom": "NOT CONFIRMED"},
+ "punch": ["play", "midnight", "first", "unlocks"]
+}

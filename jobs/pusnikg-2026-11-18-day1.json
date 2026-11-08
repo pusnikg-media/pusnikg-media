@@ -1,0 +1,28 @@
+{
+ "name": "pusnikg-2026-11-18-day1",
+ "date": "2026-11-18",
+ "day": 1,
+ "script": [
+  "One day left, so who's calling in sick tomorrow?",
+  "Thirteen years of trailers, rumors and delays, and it's finally real.",
+  "Charge the controller, clear the storage, tell your boss nothing.",
+  "Tomorrow, the whole internet moves to Leonida, and nobody is coming back.",
+  "Are you taking the day off?",
+  "Follow for launch day."
+ ],
+ "shots": [
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/345996.mp4", "start": 0}, {"url": "https://storage.orshot.com/stock/pixabay/video/42408.mp4", "start": 2}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/26452.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/41865.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/26619.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/215751.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/202825.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/6474.mp4", "start": 3}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/151297.mp4", "start": 0}, {"url": "https://storage.orshot.com/stock/pixabay/video/180777.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/57676.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/19627.mp4", "start": 2}]
+ ],
+ "music": {"url": "https://cdn.orshot.com/library/music/a3f5a892-77bf-404a-ae95-1599233f5fa9.m4a", "start": 2.791, "db": -9, "title": "Drum and bass (Orshot)"},
+ "hook_big": "1",
+ "hook_mid": "DAY LEFT",
+ "hook_sub": "WHO'S CALLING IN SICK?",
+ "badge": "GTA 6 • DAY 1",
+ "card": {"line": 1, "word": "real", "top": "NOVEMBER", "big": "19", "bottom": "IT'S REAL"},
+ "punch": ["sick", "real", "charge", "boss", "leonida"]
+}

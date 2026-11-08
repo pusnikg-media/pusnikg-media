@@ -1,0 +1,28 @@
+{
+ "name": "pusnikg-2026-11-21-launch2",
+ "date": "2026-11-21",
+ "day": -2,
+ "script": [
+  "Launch week question, we need to settle this, Jason or Lucia?",
+  "Jason is the calm one who just wants an easy life.",
+  "Lucia came out of prison ready to fight for everything.",
+  "Honestly, the duo only works because they're so different.",
+  "Team Jason or team Lucia?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/5278.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/152798.mp4", "start": 2}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/23678.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/46637.mp4", "start": 2}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/20112.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/20109.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/243647.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/167889.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/42410.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/190488.mp4", "start": 1}],
+  [{"url": "https://storage.orshot.com/stock/pixabay/video/190483.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/135797.mp4", "start": 3}]
+ ],
+ "music": {"url": "https://cdn.orshot.com/library/music/0884579d-8174-4e27-92da-dc00cf3fd4a0.m4a", "start": 2.667, "db": -9, "title": "Motivational (Orshot)"},
+ "hook_big": "WHO?",
+ "hook_mid": "JASON",
+ "hook_sub": "OR LUCIA?",
+ "badge": "GTA 6 • LAUNCH WEEK",
+ "card": {"line": 1, "word": "easy", "top": "JASON", "big": "EASY", "bottom": "LIFE WANTED"},
+ "punch": ["jason", "lucia", "prison", "different"]
+}
