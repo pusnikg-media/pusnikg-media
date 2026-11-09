@@ -53,6 +53,27 @@ def duration(f):
     except (ValueError, IndexError): return 0.0
 
 
+BLUR_MIN = 15.0  # median Laplacian variance at 270x480; calibrated 09.11. on day 7: bokeh clip 6.6, soft concert 18, sharp 400-1600
+
+
+def sharpness(path, start=0.0, n=5):
+    """Median Laplacian variance of n grayscale frames (higher = sharper); 1e9 if it can't be measured."""
+    try:
+        import numpy as np
+        d = duration(path); span = max(d - start, 0.5); vals = []
+        for k in range(n):
+            t = min(start + span * (k + 0.5) / n, max(d - 0.1, 0))
+            r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t:.2f}", "-i", path, "-frames:v", "1", "-vf",
+                                "scale=270:480:force_original_aspect_ratio=increase,crop=270:480,format=gray",
+                                "-f", "rawvideo", "-"], capture_output=True, timeout=60).stdout
+            if len(r) != 270 * 480: continue
+            g = np.frombuffer(r, np.uint8).reshape(480, 270).astype(np.float32)
+            vals.append(float((g[:-2, 1:-1] + g[2:, 1:-1] + g[1:-1, :-2] + g[1:-1, 2:] - 4 * g[1:-1, 1:-1]).var()))
+        return float(np.median(vals)) if vals else 1e9
+    except Exception as e:
+        log(f"WARN sharpness check skipped: {e}"); return 1e9
+
+
 def main():
     spec = json.load(open(sys.argv[1]))
     for k in ("script", "shots"):
@@ -78,6 +99,11 @@ def main():
                     files[u] = None; log(f"WARN clip dropped (line {i}): {u[:120]} - {e}")
             if files[u]: keep.append({"file": files[u][0], "dur": files[u][1], "start": float(c.get("start", 0) or 0)})
         if not keep: finish(False, error=f"script line {i} has no downloadable clip")
+        if len(keep) > 1:  # drop out-of-focus clips (day 7 had a full-frame bokeh shot) while the line keeps another one
+            sharp = [c for c in keep if sharpness(c["file"], c["start"]) >= BLUR_MIN]
+            for c in keep:
+                if c not in sharp: log(f"WARN clip dropped as blurry (line {i}): {os.path.basename(c['file'])}")
+            keep = sharp or keep
         shots.append(keep)
     music = spec.get("music") or {}
     mpath = None

@@ -64,7 +64,7 @@ H.append(f'<div id="hook" class="clip" data-start="0" data-duration="{he:.3f}" d
          f'<div id="hook-sub">{esc(job.get("hook_sub", ""))}</div></div></div>')
 JS += ['tl.fromTo("#hook-num",{scale:1.25},{scale:1,duration:0.35,ease:"back.out(2)"},0);',
        'tl.fromTo("#hook-days",{y:0},{y:0,duration:0.01},0);',
-       f'tl.fromTo("#hook-sub",{{opacity:0,y:30}},{{opacity:1,y:0,duration:0.18,ease:"power3.out"}},{w0[min(2, len(w0) - 1)]["s"]:.3f});',
+       'tl.fromTo("#hook-sub",{y:14,scale:0.96},{y:0,scale:1,duration:0.25,ease:"power3.out"},0);',  # topic readable in frame 0 (TikTok swipes within 1-3 s)
        f'tl.fromTo("#hook-in",{{scale:1}},{{scale:0.9,opacity:0,duration:0.16,ease:"power2.in"}},{he-0.17:.3f});']
 # --- optional big card (e.g. a date) slammed in on a keyword: job["card"] = {"line","word","top","big","bottom"}
 card = job.get("card")
@@ -111,7 +111,7 @@ for li in range(1, len(timing)):
         spans = "".join(f'<span id="w{gid}_{k}" class="w">{esc(t)}</span>' for k, t in enumerate(txt))
         chars = sum(len(t) for t in txt) + 1.2 * (len(g) - 1)
         fs = int(min(112, 930 / (chars * 0.47 * 1.12)))  # Anton ~0.47 em per caps char, room for the 1.12 pop
-        need = sum(em(t) for t in txt) + 0.32 * len(txt) + 0.12 * max(em(t) for t in txt)  # glyphs + .16em margins + active-word pop
+        need = sum(em(t) for t in txt) + 0.48 * len(txt) + 0.12 * max(em(t) for t in txt)  # glyphs + .24em margins + active-word pop
         fs = min(fs, int((CAP_W - 20) / need))  # wide glyphs (W, M, $) could overflow the frame: shrink only, never grow
         spans = spans.replace('class="w"', f'class="w" style="font-size:{fs}px"')
         H.append(f'<div id="cap{gid}" class="clip cap" data-start="{gs:.3f}" data-duration="{ge-gs:.3f}" data-track-index="4">'
