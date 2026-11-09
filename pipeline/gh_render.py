@@ -144,7 +144,7 @@ def main():
     job = {"vo_dir": "vo", "shots": jshots, "day": spec.get("day", ""), "out": name + ".mp4",
            "music": mpath, "music_start": float(music.get("start", 0) or 0) if music.get("url") and mpath and not mpath.endswith("music.wav") else 0,
            "music_db": float(music.get("db", -9) or -9)}
-    for k in ("hook_big", "hook_mid", "hook_sub", "badge", "card", "punch"):
+    for k in ("hook_big", "hook_mid", "hook_sub", "badge", "card", "punch", "qa_range"):
         if spec.get(k) not in (None, "", []): job[k] = spec[k]
     if "badge" not in job and spec.get("day") not in (None, "", 0): job["badge"] = f"GTA 6 • DAY {spec['day']}"
     jp = os.path.join(WORK, "job.json"); json.dump(job, open(jp, "w"), indent=1, ensure_ascii=False)
@@ -162,7 +162,8 @@ def main():
         log(out[-1000:])
         if rc: finish(False, error="both renderers failed", detail=out[-1500:])
     video = os.path.join(WORK, name + ".mp4")
-    rc, out = sh(["python3", os.path.join(HERE, "qa.py"), video], 600)
+    qr = [str(x) for x in (spec.get("qa_range") or [])][:2]  # e.g. TikTok cut 8-20 s (default 18-35 s)
+    rc, out = sh(["python3", os.path.join(HERE, "qa.py"), video, *qr], 600)
     log(out[-1200:])
     pngs = [os.path.join(WORK, f"{name}_qa_{t}.png") for t in ("0", "mid", "end")]
     if rc: finish(False, error="QA failed", detail=out[-1500:], video=video, pngs=[p for p in pngs if os.path.exists(p)], renderer=renderer)

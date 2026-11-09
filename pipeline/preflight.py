@@ -57,8 +57,9 @@ def main():
     for i, ln in enumerate(timing):
         wins.append((t, t + ln.get("dur", 0))); t += ln.get("dur", 0) + (GAP if i < len(timing) - 1 else 0)
     total = t + TAIL
-    if timing and not MIN_S <= total <= MAX_S:
-        P.append(f"length: {total:.1f} s outside {MIN_S:.0f}-{MAX_S:.0f} s - shorten/lengthen the script")
+    lo, hi = (job.get("qa_range") or [MIN_S, MAX_S])[:2]  # TikTok cut: 8-20 s
+    if timing and not float(lo) <= total <= float(hi):
+        P.append(f"length: {total:.1f} s outside {float(lo):.0f}-{float(hi):.0f} s - shorten/lengthen the script")
     stems, cache = {}, {}
     for i, line in enumerate(shots):
         if not isinstance(line, list) or not line:

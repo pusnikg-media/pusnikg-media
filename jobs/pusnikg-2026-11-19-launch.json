@@ -11,18 +11,94 @@
   "Follow for more GTA 6."
  ],
  "shots": [
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/32826.mp4", "start": 3}, {"url": "https://storage.orshot.com/stock/pixabay/video/32005.mp4", "start": 2}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/1630.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/162670.mp4", "start": 1}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/348275.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/172144.mp4", "start": 2}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/89894.mp4", "start": 3}, {"url": "https://storage.orshot.com/stock/pixabay/video/152184.mp4", "start": 1}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/15876.mp4", "start": 1}, {"url": "https://storage.orshot.com/stock/pixabay/video/6456.mp4", "start": 2}],
-  [{"url": "https://storage.orshot.com/stock/pixabay/video/216724.mp4", "start": 2}, {"url": "https://storage.orshot.com/stock/pixabay/video/190486.mp4", "start": 1}]
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/32826.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/32005.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/1630.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/162670.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/348275.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/172144.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/89894.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/152184.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/15876.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/6456.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/216724.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/190486.mp4",
+    "start": 1
+   }
+  ]
  ],
- "music": {"url": "https://cdn.orshot.com/library/music/a87dcb77-29b7-492f-b705-e9eb4cf0b757.m4a", "start": 2.4, "db": -9, "title": "Inspiring build (Orshot)"},
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/a87dcb77-29b7-492f-b705-e9eb4cf0b757.m4a",
+  "start": 2.4,
+  "db": -9,
+  "title": "Inspiring build (Orshot)"
+ },
  "hook_big": "OUT",
  "hook_mid": "NOW",
  "hook_sub": "13 YEARS. IT'S HERE.",
  "badge": "GTA 6 • LAUNCH DAY",
- "card": {"line": 1, "word": "first", "top": "TRAILER 1", "big": "2023", "bottom": "TO LAUNCH DAY"},
- "punch": ["finally", "delays", "sleep", "spoilers"]
+ "card": {
+  "line": 1,
+  "word": "first",
+  "top": "TRAILER 1",
+  "big": "2023",
+  "bottom": "TO LAUNCH DAY"
+ },
+ "punch": [
+  "finally",
+  "delays",
+  "sleep",
+  "spoilers"
+ ],
+ "tiktok_lines": [
+  0,
+  2,
+  4,
+  5
+ ]
 }
