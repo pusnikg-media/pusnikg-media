@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  " bˈæk, ænd ɪts bˌɪn twˈɛnti fˈoːɹ jˈɪɹz.\n1: 4.25s  nˈiːɑːn, pˈɑːm tɹˈiːz, spˈiːdboʊts, bˈæk ðˈɛn ɪt fˈɛlt lˈaɪk ðə fjˈuːtʃɚ.\n2: 2.48s  dˈɪd juː plˈeɪ ðɪ ɚɹˈɪdʒɪnəl vˈaɪs sˈɪɾi?\n3: 1.82s  fˈɑːloʊ fɔːɹ dˈeɪ tˈuː.\nTTS_OK 4 lines 11.78s\n\u001b[0;93m2026-11-09 09:25:19.712044836 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at \"/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171\" because filename \"5620e0c7-8062-4dce-aeb7-520c7ef76171\" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+\u001b[m",
+  "PREFLIGHT_OK 4 lines, 8 shots, 13.03 s\nVice@0.23 City@0.54 is@0.82 back,@1.01 and@1.48 it's@1.52 been@1.64 twenty@1.76 four@1.99 years.@2.29\nNeon,@0.22 palm@0.92 trees,@1.08 speedboats,@1.62 back@2.22 then@2.38 it@2.60 felt@2.70 like@2.86 the@3.06 future.@3.20\nDid@0.22 you@0.48 play@0.58 the@0.75 original@0.91 Vice@1.25 City?@1.50\nFollow@0.25 for@0.64 day@0.81 two.@0.94\nWORDS_OK 4 lines\n\nTOTAL 13.035 shots 8 captions 10\nRENDER_OK /home/runner/work_pusnikg-2026-11-16-day3-tt/pusnikg-2026-11-16-day3-tt.mp4 13.04s",
+  "QA_OK 13.04s -14.2 LUFS frames: /home/runner/work_pusnikg-2026-11-16-day3-tt/pusnikg-2026-11-16-day3-tt_qa_0.png /home/runner/work_pusnikg-2026-11-16-day3-tt/pusnikg-2026-11-16-day3-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-16-day3-tt/pusnikg-2026-11-16-day3-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 13.04,
+ "music": "https://cdn.orshot.com/library/music/36a24af1-e177-4fe1-98c4-f077e049756c.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-16-day3-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-16-day3-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-16-day3-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-16-day3-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-16-day3-tt",
+ "attempts": 1
+}
