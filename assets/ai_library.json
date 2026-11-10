@@ -1,0 +1,27 @@
+{
+ "release": "ai-library",
+ "items": [
+  {
+   "id": "city01a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "skyline",
+    "sunset",
+    "aerial",
+    "palms"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city01a.mp4",
+   "duration": 5.03,
+   "prompt": "Drone flight over a palm-lined coastal city at sunset, glass skyscrapers glowing pink and orange, ocean on the right, slow forward glide.",
+   "saved": "2026-11-10"
+  }
+ ],
+ "counts": {
+  "video": 1,
+  "image": 0,
+  "music": 0
+ },
+ "failed": 0
+}
