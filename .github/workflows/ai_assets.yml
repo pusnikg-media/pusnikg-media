@@ -40,7 +40,7 @@ jobs:
           done
       - name: Update assets/ai_library.json
         run: |
-          [ -s /home/runner/ai_out/new_entries.json ] || exit 0
+          python3 -c 'import json,sys;sys.exit(0 if json.load(open("/home/runner/ai_out/new_entries.json")) else 1)' 2>/dev/null || { echo "no new entries"; exit 0; }
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
           for i in 1 2 3 4 5; do  # merge onto the newest main; never rebase
             git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
