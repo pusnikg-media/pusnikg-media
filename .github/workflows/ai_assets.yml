@@ -1,0 +1,66 @@
+# Pusnik G AI library: saves generated clips (Higgsfield trial) permanently.
+# A Claude session appends {"id","url","model"} to assets/ai_queue.json -> this workflow downloads each new url,
+# normalizes it (video 1080x1920 h264, image jpg, music m4a), uploads it to the release "ai-library" and lists it
+# in assets/ai_library.json (stable URL + tags). Render jobs can use those URLs like any stock clip.
+name: ai-assets
+on:
+  push:
+    branches: [main]
+    paths: ["assets/ai_queue.json", ".github/workflows/ai_assets.yml", "pipeline/ai_assets.py"]
+  schedule:
+    - cron: "23 */2 * * *"  # fallback if a push run was skipped
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ai-assets
+  cancel-in-progress: false
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Install ffmpeg
+        run: sudo apt-get update -q >/dev/null && sudo apt-get install -y -q ffmpeg >/dev/null
+      - name: Download and normalize
+        run: python3 pipeline/ai_assets.py /home/runner/ai_out
+      - name: Upload to release ai-library
+        run: |
+          shopt -s nullglob; files=(/home/runner/ai_out/files/*)
+          [ ${#files[@]} -eq 0 ] && { echo "nothing new"; exit 0; }
+          gh release view ai-library >/dev/null 2>&1 || gh release create ai-library --title "AI clip library" \
+            --notes "Generated Pusnik G clips (Higgsfield trial Nov 2026). Index: assets/ai_library.json"
+          for f in "${files[@]}"; do
+            for i in 1 2 3; do gh release upload ai-library "$f" --clobber && break; echo "upload retry $i"; sleep 5; done
+          done
+      - name: Update assets/ai_library.json
+        run: |
+          [ -s /home/runner/ai_out/new_entries.json ] || exit 0
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          for i in 1 2 3 4 5; do  # merge onto the newest main; never rebase
+            git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+            python3 - <<'EOF'
+          import json, os
+          p = "assets/ai_library.json"; new = json.load(open("/home/runner/ai_out/new_entries.json"))
+          if not new: raise SystemExit(0)
+          lib = json.load(open(p)) if os.path.exists(p) else {"release": "ai-library", "items": []}
+          by = {e["id"]: e for e in lib.get("items", [])}
+          for n in new:
+              if n.get("url") or not by.get(n["id"], {}).get("url"): by[n["id"]] = n
+          lib["items"] = sorted(by.values(), key=lambda e: e["id"])
+          lib["counts"] = {k: sum(1 for e in lib["items"] if e.get("kind") == k and e.get("url")) for k in ("video", "image", "music")}
+          lib["failed"] = sum(1 for e in lib["items"] if e.get("error"))
+          os.makedirs("assets", exist_ok=True); json.dump(lib, open(p, "w"), indent=1, ensure_ascii=False)
+          print("LIBRARY", lib["counts"], "failed", lib["failed"])
+          EOF
+            git add assets/ai_library.json
+            git diff --cached --quiet && { echo "library unchanged"; break; }
+            git commit -q -m "ai-library: $(python3 -c 'import json;print(sum(1 for n in json.load(open("/home/runner/ai_out/new_entries.json")) if n.get("url")))') new" \
+              && git push -q origin HEAD:main && { echo "PUSHED"; break; }
+            echo "push retry $i"; sleep 8
+          done

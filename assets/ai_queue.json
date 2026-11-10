@@ -1,0 +1,4 @@
+{
+    "note": "Claude appends {id,url,model} here after each Higgsfield generation; workflow ai-assets saves them to assets/ai_library.json",
+    "items": []
+}
