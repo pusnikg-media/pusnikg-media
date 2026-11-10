@@ -1,4 +1,11 @@
 {
     "note": "Claude appends {id,url,model} here after each Higgsfield generation; workflow ai-assets saves them to assets/ai_library.json",
-    "items": []
+    "items": [
+        {
+            "id": "city01a",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261110_194935_2b45a7a7-a38b-4e0a-aac7-ced431a1d7a8.mp4",
+            "model": "seedance_2_0",
+            "kind": "video"
+        }
+    ]
 }
