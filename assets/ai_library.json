@@ -145,6 +145,37 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "city04a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "beachfront",
+    "art-deco",
+    "day",
+    "palms"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city04a.mp4",
+   "duration": 15.03,
+   "prompt": "Pastel art-deco hotels with neon tubes along a sunny beachfront street, palm trees swaying, smooth sideways tracking shot.",
+   "saved": "2026-11-11"
+  },
+  {
+   "id": "fx01a",
+   "kind": "video",
+   "category": "fx",
+   "tags": [
+    "light-streaks",
+    "abstract",
+    "transition"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/fx01a.mp4",
+   "duration": 15.03,
+   "prompt": "Pink and teal neon light streaks rushing past the camera, abstract, fast forward motion.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "img01",
    "kind": "image",
    "category": "still",
@@ -272,6 +303,20 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img10",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "beach",
+    "lifeguard"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img10.jpg",
+   "duration": 0.04,
+   "prompt": "Colorful lifeguard tower on an empty beach at sunrise.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -296,12 +341,25 @@
    "duration": 60.0,
    "prompt": "Instrumental high-energy drift phonk with distorted bass, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
    "saved": "2026-11-11"
+  },
+  {
+   "id": "mus03",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "trap"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus03.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental hard trap beat, dark piano, rolling hi-hats, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
+   "saved": "2026-11-11"
   }
  ],
  "counts": {
-  "video": 9,
-  "image": 9,
-  "music": 2
+  "video": 11,
+  "image": 10,
+  "music": 3
  },
  "failed": 0
 }
