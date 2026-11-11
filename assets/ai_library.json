@@ -137,12 +137,25 @@
    "duration": 0.04,
    "prompt": "Hands holding an unbranded game controller, TV glow, dark room.",
    "saved": "2026-11-11"
+  },
+  {
+   "id": "mus01",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "phonk"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus01.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental dark drift phonk, cowbell melody, heavy 808, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
+   "saved": "2026-11-11"
   }
  ],
  "counts": {
   "video": 5,
   "image": 4,
-  "music": 0
+  "music": 1
  },
  "failed": 0
 }
