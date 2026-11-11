@@ -198,6 +198,24 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_195411_fe0280b3-94d1-450f-a11e-12898e216279.mp4",
       "model": "seedance_2_0",
       "kind": "video"
+    },
+    {
+      "id": "game02b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_212343_78ed1aa4-47a4-4d06-bc9c-eb053914a1f4.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "img13",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_212346_aada141e-8e52-42ef-9350-f81be04a0628.png",
+      "model": "nano_banana_pro",
+      "kind": "image"
+    },
+    {
+      "id": "mus07",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_222323_6e24697f-dc3d-48d7-af57-0f2bbb5b7cf4.wav",
+      "model": "seed_audio",
+      "kind": "music"
     }
   ]
 }
