@@ -1,0 +1,12 @@
+# Manual health check: can a runner install the render tools right now? (Actions -> tools-check -> Run workflow)
+name: tools-check
+on:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg + espeak-ng
+        run: bash pipeline/install_tools.sh espeak

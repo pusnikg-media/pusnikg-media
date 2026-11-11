@@ -28,22 +28,7 @@ jobs:
       - name: Install ffmpeg
         timeout-minutes: 10
         run: |
-          # 11.11.: ubuntu-latest moved to Ubuntu 26 ("resolute"), whose apt mirrors were unreachable -> apt hung 60 min.
-          # Pinned ubuntu-24.04, hard timeouts, and a static ffmpeg from GitHub as fallback.
-          export DEBIAN_FRONTEND=noninteractive
-          A="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 -o DPkg::Lock::Timeout=60"
-          ff_static() {
-            command -v ffmpeg >/dev/null && return 0
-            echo "apt had no ffmpeg - using static build"
-            curl -fsSL --retry 3 --max-time 300 -o /tmp/ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz
-            sudo tar -xJf /tmp/ff.tar.xz -C /opt && sudo ln -sf /opt/ffmpeg-master-latest-linux64-gpl/bin/ff* /usr/local/bin/
-          }
-          if ! command -v ffmpeg >/dev/null; then
-            timeout 240 sudo -E apt-get $A update -q >/dev/null || true
-            timeout 300 sudo -E apt-get $A install -y -q ffmpeg >/dev/null || true
-          fi
-          ff_static
-          ffmpeg -version | head -1
+          bash pipeline/install_tools.sh || exit 1  # no apt dependency for ffmpeg; see script header
       - name: Download and normalize
         run: python3 pipeline/ai_assets.py /home/runner/ai_out
       - name: Upload to release ai-library
