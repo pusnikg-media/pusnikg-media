@@ -156,6 +156,30 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_181008_50f729b6-2b47-4910-8818-7578ecad520f.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "game01a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_182355_ed16daf0-4781-4339-8bcb-9591e7812b8a.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "mus05",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_190957_ba9fe96b-e1ad-44eb-95b6-d557991d58de.wav",
+      "model": "seed_audio",
+      "kind": "music"
+    },
+    {
+      "id": "mus10",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_161121_460ecf62-2e93-4c17-a359-83a577e7376b.wav",
+      "model": "seed_audio",
+      "kind": "music"
+    },
+    {
+      "id": "city01b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261110_192716_d8b9d58e-cbc0-456f-aa32-2a25b0858be1.mp4",
+      "model": "seedance_2_0_mini",
+      "kind": "video"
     }
   ]
 }
