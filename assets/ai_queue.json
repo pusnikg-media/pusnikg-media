@@ -1,23 +1,35 @@
 {
-    "note": "Claude appends {id,url,model} here after each Higgsfield generation; workflow ai-assets saves them to assets/ai_library.json",
-    "items": [
-        {
-            "id": "city01a",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261110_194935_2b45a7a7-a38b-4e0a-aac7-ced431a1d7a8.mp4",
-            "model": "seedance_2_0",
-            "kind": "video"
-        },
-        {
-            "id": "beach02a",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_033003_0916a02a-54e1-48a3-b2fc-15b8f4395ca4.mp4",
-            "model": "seedance_2_0",
-            "kind": "video"
-        },
-        {
-            "id": "img02",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_033004_439d4fa9-9b47-434d-ba95-714abd60fc48.png",
-            "model": "nano_banana_2",
-            "kind": "image"
-        }
-    ]
+  "note": "Claude appends {id,url,model} here after each Higgsfield generation; workflow ai-assets saves them to assets/ai_library.json",
+  "items": [
+    {
+      "id": "city01a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261110_194935_2b45a7a7-a38b-4e0a-aac7-ced431a1d7a8.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "beach02a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_033003_0916a02a-54e1-48a3-b2fc-15b8f4395ca4.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "img02",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_033004_439d4fa9-9b47-434d-ba95-714abd60fc48.png",
+      "model": "nano_banana_2",
+      "kind": "image"
+    },
+    {
+      "id": "car01a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_062638_d7787322-bd26-4877-8b8f-73c7eba6753f.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "img01",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_062640_7dc8e200-6115-4018-9f7c-a4b305652be7.png",
+      "model": "nano_banana_2",
+      "kind": "image"
+    }
+  ]
 }
