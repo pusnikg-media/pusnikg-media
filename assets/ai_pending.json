@@ -1,14 +1,20 @@
 {
   "jobs": [
     {
-      "id": "img12",
-      "job_id": "64b9fab9-f35f-4af6-8e0e-cad030dfea93",
+      "id": "game02b",
+      "job_id": "78ed1aa4-47a4-4d06-bc9c-eb053914a1f4",
+      "kind": "video",
+      "model": "seedance_2_0"
+    },
+    {
+      "id": "img13",
+      "job_id": "aada141e-8e52-42ef-9350-f81be04a0628",
       "kind": "image",
       "model": "nano_banana_pro"
     },
     {
-      "id": "mus06",
-      "job_id": "72c5ae30-edb6-4ade-8c86-5cf8d8eee931",
+      "id": "mus07",
+      "job_id": "ca3f83ea-1c0e-45b7-b0cd-30cd97f42a88",
       "kind": "music",
       "model": "seed_audio"
     }
