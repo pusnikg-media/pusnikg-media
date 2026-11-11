@@ -113,6 +113,38 @@
    "saved": "2026-11-10"
   },
   {
+   "id": "city02a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "skyline",
+    "night",
+    "neon",
+    "water"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city02a.mp4",
+   "duration": 10.03,
+   "prompt": "Night skyline with neon reflections shimmering on calm bay water, slow push-in from the water.",
+   "saved": "2026-11-11"
+  },
+  {
+   "id": "city03a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "street",
+    "night",
+    "neon",
+    "rain"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city03a.mp4",
+   "duration": 15.03,
+   "prompt": "Street-level neon boulevard at night, wet asphalt reflecting pink and teal signs, light rain, slow dolly forward at knee height.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "img01",
    "kind": "image",
    "category": "still",
@@ -198,6 +230,34 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img07",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "airboat",
+    "swamp"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img07.jpg",
+   "duration": 0.04,
+   "prompt": "Airboat in a misty swamp at dawn.",
+   "saved": "2026-11-11"
+  },
+  {
+   "id": "img08",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "duo",
+    "silhouettes"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img08.jpg",
+   "duration": 0.04,
+   "prompt": "Man and woman silhouettes in front of a burning car at night, backs to camera.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -209,12 +269,25 @@
    "duration": 60.0,
    "prompt": "Instrumental dark drift phonk, cowbell melody, heavy 808, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
    "saved": "2026-11-11"
+  },
+  {
+   "id": "mus02",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "drift"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus02.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental high-energy drift phonk with distorted bass, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
+   "saved": "2026-11-11"
   }
  ],
  "counts": {
-  "video": 7,
-  "image": 6,
-  "music": 1
+  "video": 9,
+  "image": 8,
+  "music": 2
  },
  "failed": 0
 }
