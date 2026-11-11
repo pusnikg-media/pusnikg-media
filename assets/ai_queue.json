@@ -6,6 +6,18 @@
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261110_194935_2b45a7a7-a38b-4e0a-aac7-ced431a1d7a8.mp4",
             "model": "seedance_2_0",
             "kind": "video"
+        },
+        {
+            "id": "beach02a",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_033003_0916a02a-54e1-48a3-b2fc-15b8f4395ca4.mp4",
+            "model": "seedance_2_0",
+            "kind": "video"
+        },
+        {
+            "id": "img02",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_033004_439d4fa9-9b47-434d-ba95-714abd60fc48.png",
+            "model": "nano_banana_2",
+            "kind": "image"
         }
     ]
 }
