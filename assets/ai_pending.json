@@ -1,5 +1,12 @@
 {
-  "jobs": [],
+  "jobs": [
+    {
+      "id": "game01a",
+      "job_id": "ed16daf0-4781-4339-8bcb-9591e7812b8a",
+      "kind": "video",
+      "model": "seedance_2_0"
+    }
+  ],
   "fails": {},
   "skip": []
 }

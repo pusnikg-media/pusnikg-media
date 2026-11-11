@@ -120,6 +120,30 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_152338_ffb912a1-c979-48da-9bfd-2ff7ae3a2433.png",
       "model": "nano_banana_2",
       "kind": "image"
+    },
+    {
+      "id": "city04a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_153854_ad874c3d-9dac-4625-9079-2ffcecc1e54e.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "mus03",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_151134_df42cfe8-7955-4c3c-b71f-dc4df70cddf6.wav",
+      "model": "seed_audio",
+      "kind": "music"
+    },
+    {
+      "id": "img10",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_163936_075dc7d7-dc10-40f7-913f-d373e89016e9.png",
+      "model": "nano_banana_2",
+      "kind": "image"
+    },
+    {
+      "id": "fx01a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_171151_bae0bd65-c60d-43f6-ba35-ee253c176787.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
     }
   ]
 }
