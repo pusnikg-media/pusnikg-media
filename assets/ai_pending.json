@@ -5,6 +5,12 @@
       "job_id": "64b9fab9-f35f-4af6-8e0e-cad030dfea93",
       "kind": "image",
       "model": "nano_banana_pro"
+    },
+    {
+      "id": "mus06",
+      "job_id": "72c5ae30-edb6-4ade-8c86-5cf8d8eee931",
+      "kind": "music",
+      "model": "seed_audio"
     }
   ],
   "fails": {},
