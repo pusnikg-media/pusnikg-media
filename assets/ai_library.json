@@ -258,6 +258,20 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img09",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "mansion",
+    "pool"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img09.jpg",
+   "duration": 0.04,
+   "prompt": "Luxury mansion with infinity pool at dusk.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -286,7 +300,7 @@
  ],
  "counts": {
   "video": 9,
-  "image": 8,
+  "image": 9,
   "music": 2
  },
  "failed": 0
