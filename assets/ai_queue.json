@@ -60,6 +60,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_112450_7114d83a-862a-4490-b763-761802ddc00e.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "img05",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_105550_c70cccda-9f17-4dba-b3e8-3f571719620c.png",
+      "model": "nano_banana_2",
+      "kind": "image"
     }
   ]
 }
