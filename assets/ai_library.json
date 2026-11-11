@@ -169,6 +169,20 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img06",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "police",
+    "lights"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img06.jpg",
+   "duration": 0.04,
+   "prompt": "Red and blue police lights reflected on a wet street at night.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -184,7 +198,7 @@
  ],
  "counts": {
   "video": 6,
-  "image": 5,
+  "image": 6,
   "music": 1
  },
  "failed": 0
