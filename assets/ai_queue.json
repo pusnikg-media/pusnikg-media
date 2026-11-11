@@ -30,6 +30,18 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_062640_7dc8e200-6115-4018-9f7c-a4b305652be7.png",
       "model": "nano_banana_2",
       "kind": "image"
+    },
+    {
+      "id": "car02a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_080512_d04f46ed-9497-44bf-8dc5-df5fc51705d8.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "img03",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_080516_d75d50e0-8ca4-4b58-a88e-0f07e200fd4e.png",
+      "model": "seedream_v5_pro",
+      "kind": "image"
     }
   ]
 }
