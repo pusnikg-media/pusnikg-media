@@ -18,6 +18,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "car01a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "sports-car",
+    "coast",
+    "sunset",
+    "driving"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car01a.mp4",
+   "duration": 5.03,
+   "prompt": "Sleek unbadged exotic sports car cruising along an ocean coastal road at sunset, tracking shot from the side.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -32,6 +48,21 @@
    "duration": 5.03,
    "prompt": "Drone flight over a palm-lined coastal city at sunset, glass skyscrapers glowing pink and orange, ocean on the right, slow forward glide.",
    "saved": "2026-11-10"
+  },
+  {
+   "id": "img01",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "sports-car",
+    "neon",
+    "night"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img01.jpg",
+   "duration": 0.04,
+   "prompt": "Unbadged exotic sports car parked under pink neon at night, wet ground reflections.",
+   "saved": "2026-11-11"
   },
   {
    "id": "img02",
@@ -49,8 +80,8 @@
   }
  ],
  "counts": {
-  "video": 2,
-  "image": 1,
+  "video": 3,
+  "image": 2,
   "music": 0
  },
  "failed": 0
