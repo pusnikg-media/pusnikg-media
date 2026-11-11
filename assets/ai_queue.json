@@ -54,6 +54,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_092319_89a2c983-2bae-41bc-a29b-2e6dbc06f35e.png",
       "model": "nano_banana_2",
       "kind": "image"
+    },
+    {
+      "id": "mus01",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_112450_7114d83a-862a-4490-b763-761802ddc00e.wav",
+      "model": "seed_audio",
+      "kind": "music"
     }
   ]
 }

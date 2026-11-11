@@ -11,12 +11,6 @@
       "job_id": "c70cccda-9f17-4dba-b3e8-3f571719620c",
       "kind": "image",
       "model": "nano_banana_pro"
-    },
-    {
-      "id": "mus01",
-      "job_id": "7114d83a-862a-4490-b763-761802ddc00e",
-      "kind": "music",
-      "model": "seed_audio"
     }
   ],
   "fails": {},
