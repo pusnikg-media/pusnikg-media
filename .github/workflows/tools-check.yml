@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install ffmpeg + espeak-ng
-        run: bash pipeline/install_tools.sh espeak
+        run: SKIP_APT=1 bash pipeline/install_tools.sh espeak

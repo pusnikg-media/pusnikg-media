@@ -19,14 +19,18 @@ if ! command -v ffmpeg >/dev/null; then
 fi
 
 if [ -n "$NEED_ESPEAK" ] && ! command -v espeak-ng >/dev/null; then
+  [ -n "${SKIP_APT:-}" ] || {
   timeout 120 sudo -E apt-get "${A[@]}" update -q >/dev/null 2>&1
   timeout 180 sudo -E apt-get "${A[@]}" install -y -q --no-install-recommends espeak-ng >/dev/null 2>&1
+  }
   if ! command -v espeak-ng >/dev/null; then
     echo "apt failed - installing espeak-ng from conda-forge"
     MM=https://github.com/mamba-org/micromamba-releases/releases/latest/download/micromamba-linux-64
-    curl -fsSL --retry 3 --max-time 120 -o "$HOME/micromamba" "$MM" && chmod +x "$HOME/micromamba" \
-      && timeout 600 "$HOME/micromamba" create -y -q -r "$HOME/mamba" -p "$HOME/espeak" -c conda-forge espeak-ng \
-      && sudo ln -sf "$HOME/espeak/bin/espeak-ng" /usr/local/bin/espeak-ng
+    curl -fsSL --retry 3 --max-time 120 -o "$HOME/micromamba" "$MM" && chmod +x "$HOME/micromamba"
+    timeout 600 "$HOME/micromamba" create -y -r "$HOME/mamba" -p "$HOME/espeak" -c conda-forge espeak-ng 2>&1 | tail -15
+    ls -la "$HOME/espeak/bin" 2>&1 | head -20
+    E=$(ls "$HOME"/espeak/bin/espeak-ng* "$HOME"/espeak/bin/espeak 2>/dev/null | head -1)
+    [ -n "$E" ] && sudo ln -sf "$E" /usr/local/bin/espeak-ng
   fi
 fi
 
