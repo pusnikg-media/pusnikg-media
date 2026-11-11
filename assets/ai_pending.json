@@ -1,18 +1,5 @@
 {
-  "jobs": [
-    {
-      "id": "car03a",
-      "job_id": "e40235b2-51c4-4b8a-82f2-bdee707e94a5",
-      "kind": "video",
-      "model": "seedance_2_0"
-    },
-    {
-      "id": "img04",
-      "job_id": "89a2c983-2bae-41bc-a29b-2e6dbc06f35e",
-      "kind": "image",
-      "model": "nano_banana_pro"
-    }
-  ],
+  "jobs": [],
   "fails": {},
   "skip": []
 }
