@@ -14,4 +14,4 @@ jobs:
             echo "$u -> $(curl -s -o /dev/null -m 20 -w '%{http_code} %{time_total}s' "$u" || echo TIMEOUT)"
           done
       - name: Install ffmpeg + espeak-ng
-        run: SKIP_APT=1 bash pipeline/install_tools.sh espeak
+        run: bash pipeline/install_tools.sh espeak
