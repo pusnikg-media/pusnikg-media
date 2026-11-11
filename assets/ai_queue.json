@@ -72,6 +72,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_105547_9db495a3-b7ca-4526-9ac6-2f5d11b5005a.mp4",
       "model": "seedance_2_0",
       "kind": "video"
+    },
+    {
+      "id": "img06",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_120007_db454427-15a5-4a50-a77b-aca0b32029b7.png",
+      "model": "nano_banana_2",
+      "kind": "image"
     }
   ]
 }
