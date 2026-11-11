@@ -66,6 +66,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "car04a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "police",
+    "chase",
+    "night",
+    "lights"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car04a.mp4",
+   "duration": 10.03,
+   "prompt": "Generic police cruiser without markings, red and blue lights flashing, chasing a car at night, motion blur, side tracking shot.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -167,7 +183,7 @@
   }
  ],
  "counts": {
-  "video": 5,
+  "video": 6,
   "image": 5,
   "music": 1
  },
