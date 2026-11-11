@@ -1,12 +1,6 @@
 {
   "jobs": [
     {
-      "id": "city03a",
-      "job_id": "97e37bb4-3d55-41ed-b571-3a57acd59a2a",
-      "kind": "video",
-      "model": "seedance_2_0"
-    },
-    {
       "id": "img09",
       "job_id": "ffb912a1-c979-48da-9bfd-2ff7ae3a2433",
       "kind": "image",

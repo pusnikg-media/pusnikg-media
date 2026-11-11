@@ -108,6 +108,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_144003_2369dca5-6e39-48e4-adcd-b805286fc69c.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "city03a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_142310_97e37bb4-3d55-41ed-b571-3a57acd59a2a.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
     }
   ]
 }
