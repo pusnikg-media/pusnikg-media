@@ -82,6 +82,21 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "car06a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "convertible",
+    "palms",
+    "day"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car06a.mp4",
+   "duration": 10.03,
+   "prompt": "Convertible driving down a sunny palm-lined boulevard, camera behind the car.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -197,7 +212,7 @@
   }
  ],
  "counts": {
-  "video": 6,
+  "video": 7,
   "image": 6,
   "music": 1
  },
