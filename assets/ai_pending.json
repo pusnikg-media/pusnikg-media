@@ -1,12 +1,5 @@
 {
-  "jobs": [
-    {
-      "id": "img09",
-      "job_id": "ffb912a1-c979-48da-9bfd-2ff7ae3a2433",
-      "kind": "image",
-      "model": "nano_banana_pro"
-    }
-  ],
+  "jobs": [],
   "fails": {},
   "skip": []
 }
