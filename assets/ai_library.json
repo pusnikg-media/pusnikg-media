@@ -34,6 +34,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "car02a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "drift",
+    "night",
+    "neon",
+    "smoke"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car02a.mp4",
+   "duration": 5.03,
+   "prompt": "Unbadged sports car drifting through an empty parking lot at night, tire smoke lit by pink neon, low wide angle.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -77,11 +93,25 @@
    "duration": 0.04,
    "prompt": "Coastal skyline at sunset with palm silhouettes in the foreground.",
    "saved": "2026-11-11"
+  },
+  {
+   "id": "img03",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "cash",
+    "pile"
+   ],
+   "model": "seedream_v5_pro",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img03.jpg",
+   "duration": 0.04,
+   "prompt": "Huge pile of banknotes on a table lit by a single neon lamp.",
+   "saved": "2026-11-11"
   }
  ],
  "counts": {
-  "video": 3,
-  "image": 2,
+  "video": 4,
+  "image": 3,
   "music": 0
  },
  "failed": 0
