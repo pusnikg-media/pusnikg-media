@@ -2,6 +2,22 @@
  "release": "ai-library",
  "items": [
   {
+   "id": "beach02a",
+   "kind": "video",
+   "category": "beach",
+   "tags": [
+    "speedboat",
+    "ocean",
+    "spray",
+    "action"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach02a.mp4",
+   "duration": 5.03,
+   "prompt": "Speedboat racing across turquoise water throwing white spray, aerial tracking shot.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -16,11 +32,25 @@
    "duration": 5.03,
    "prompt": "Drone flight over a palm-lined coastal city at sunset, glass skyscrapers glowing pink and orange, ocean on the right, slow forward glide.",
    "saved": "2026-11-10"
+  },
+  {
+   "id": "img02",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "skyline",
+    "sunset"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img02.jpg",
+   "duration": 0.04,
+   "prompt": "Coastal skyline at sunset with palm silhouettes in the foreground.",
+   "saved": "2026-11-11"
   }
  ],
  "counts": {
-  "video": 1,
-  "image": 0,
+  "video": 2,
+  "image": 1,
   "music": 0
  },
  "failed": 0
