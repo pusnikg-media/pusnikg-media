@@ -317,6 +317,20 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img11",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "game-case",
+    "shelf"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img11.jpg",
+   "duration": 0.04,
+   "prompt": "Unbranded video game cases on a store shelf under neon light.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -354,12 +368,25 @@
    "duration": 60.0,
    "prompt": "Instrumental hard trap beat, dark piano, rolling hi-hats, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
    "saved": "2026-11-11"
+  },
+  {
+   "id": "mus04",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "dark-synth"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus04.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental dark synthwave, pulsing arpeggios, retro drums, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
+   "saved": "2026-11-11"
   }
  ],
  "counts": {
   "video": 11,
-  "image": 10,
-  "music": 3
+  "image": 11,
+  "music": 4
  },
  "failed": 0
 }
