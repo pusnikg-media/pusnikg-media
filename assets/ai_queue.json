@@ -84,6 +84,18 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_120439_5d0fd2f1-c80a-4976-b95b-ac3d6e7dad6e.mp4",
       "model": "seedance_2_0",
       "kind": "video"
+    },
+    {
+      "id": "img07",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_130127_2a213547-73f2-4eb8-b1eb-e2bbed28075b.png",
+      "model": "nano_banana_2",
+      "kind": "image"
+    },
+    {
+      "id": "city02a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_131206_a5abe9b4-2e14-4b4b-8327-9c80c582041d.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
     }
   ]
 }
