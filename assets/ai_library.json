@@ -207,6 +207,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "game02a",
+   "kind": "video",
+   "category": "gaming",
+   "tags": [
+    "gamer",
+    "couch",
+    "tv",
+    "night"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game02a.mp4",
+   "duration": 15.03,
+   "prompt": "Silhouette of a gamer on a couch in front of a big glowing TV late at night, room lit blue and pink, wide shot from behind.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "img01",
    "kind": "image",
    "category": "still",
@@ -362,6 +378,20 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img12",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "midnight-launch",
+    "crowd"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img12.jpg",
+   "duration": 0.04,
+   "prompt": "Crowd waiting outside a glowing game store at night, faces not visible.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -427,6 +457,19 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "mus06",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "aggressive"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus06.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental aggressive electronic beat, big drops, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus10",
    "kind": "music",
    "category": "music",
@@ -441,9 +484,9 @@
   }
  ],
  "counts": {
-  "video": 13,
-  "image": 11,
-  "music": 6
+  "video": 14,
+  "image": 12,
+  "music": 7
  },
  "failed": 0
 }
