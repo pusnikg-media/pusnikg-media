@@ -139,6 +139,20 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img05",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "clock",
+    "midnight"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img05.jpg",
+   "duration": 0.04,
+   "prompt": "Analog clock at one minute to midnight, dramatic light.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -154,7 +168,7 @@
  ],
  "counts": {
   "video": 5,
-  "image": 4,
+  "image": 5,
   "music": 1
  },
  "failed": 0
