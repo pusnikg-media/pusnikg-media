@@ -2,7 +2,7 @@
 # Install ffmpeg (+ espeak-ng with arg "espeak") on a GitHub runner WITHOUT depending on Ubuntu's apt mirrors.
 # Why (11.11.2026): apt mirrors were unreachable from GitHub runners; apt-get hung until the job timeout
 # (ai-assets ran into its 60-min limit twice). Now: static ffmpeg from GitHub; espeak-ng via apt with short
-# timeouts, falling back to conda-forge (micromamba). Never hangs longer than ~15 min, fails loudly instead.
+# timeouts, falling back to independent Ubuntu mirrors. Never hangs longer than ~15 min, fails loudly instead.
 # Usage: bash pipeline/install_tools.sh [espeak]
 set -u
 NEED_ESPEAK=${1:-}
@@ -24,13 +24,16 @@ if [ -n "$NEED_ESPEAK" ] && ! command -v espeak-ng >/dev/null; then
   timeout 180 sudo -E apt-get "${A[@]}" install -y -q --no-install-recommends espeak-ng >/dev/null 2>&1
   }
   if ! command -v espeak-ng >/dev/null; then
-    echo "apt failed - installing espeak-ng from conda-forge"
-    MM=https://github.com/mamba-org/micromamba-releases/releases/latest/download/micromamba-linux-64
-    curl -fsSL --retry 3 --max-time 120 -o "$HOME/micromamba" "$MM" && chmod +x "$HOME/micromamba"
-    timeout 600 "$HOME/micromamba" create -y -r "$HOME/mamba" -p "$HOME/espeak" -c conda-forge espeak-ng 2>&1 | tail -15
-    ls -la "$HOME/espeak/bin" 2>&1 | head -20
-    E=$(ls "$HOME"/espeak/bin/espeak-ng* "$HOME"/espeak/bin/espeak 2>/dev/null | head -1)
-    [ -n "$E" ] && sudo ln -sf "$E" /usr/local/bin/espeak-ng
+    # runner's default mirrors (azure/security.ubuntu.com) hung on 11.11. -> try independent Ubuntu mirrors
+    CS=$(. /etc/os-release && echo "$VERSION_CODENAME")
+    for M in http://mirrors.kernel.org/ubuntu http://mirror.math.princeton.edu/pub/ubuntu http://ftp.uni-stuttgart.de/ubuntu http://archive.ubuntu.com/ubuntu; do
+      echo "apt default mirrors failed - trying $M"
+      echo "deb $M $CS main universe" | sudo tee /etc/apt/alt.list >/dev/null
+      ALT=(-o Dir::Etc::sourcelist=/etc/apt/alt.list -o Dir::Etc::sourceparts=- -o APT::Get::List-Cleanup=0)
+      timeout 90 sudo -E apt-get "${A[@]}" "${ALT[@]}" update -q >/dev/null 2>&1 || continue
+      timeout 150 sudo -E apt-get "${A[@]}" "${ALT[@]}" install -y -q --no-install-recommends espeak-ng >/dev/null 2>&1
+      command -v espeak-ng >/dev/null && { echo "espeak-ng from $M"; break; }
+    done
   fi
 fi
 

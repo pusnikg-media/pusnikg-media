@@ -8,5 +8,10 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+      - name: Mirror reachability
+        run: |
+          for u in http://azure.archive.ubuntu.com/ubuntu/ http://archive.ubuntu.com/ubuntu/ http://security.ubuntu.com/ubuntu/ http://mirrors.kernel.org/ubuntu/ http://mirror.math.princeton.edu/pub/ubuntu/ http://ftp.uni-stuttgart.de/ubuntu/; do
+            echo "$u -> $(curl -s -o /dev/null -m 20 -w '%{http_code} %{time_total}s' "$u" || echo TIMEOUT)"
+          done
       - name: Install ffmpeg + espeak-ng
         run: SKIP_APT=1 bash pipeline/install_tools.sh espeak
