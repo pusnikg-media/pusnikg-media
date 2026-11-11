@@ -113,6 +113,22 @@
    "saved": "2026-11-10"
   },
   {
+   "id": "city01b",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "skyline",
+    "sunset",
+    "aerial",
+    "palms"
+   ],
+   "model": "seedance_2_0_mini",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city01b.mp4",
+   "duration": 5.03,
+   "prompt": "Drone flight over a palm-lined coastal city at sunset, glass skyscrapers glowing pink and orange, ocean on the right, high orbit around the tallest tower.",
+   "saved": "2026-11-11"
+  },
+  {
    "id": "city02a",
    "kind": "video",
    "category": "city",
@@ -173,6 +189,21 @@
    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/fx01a.mp4",
    "duration": 15.03,
    "prompt": "Pink and teal neon light streaks rushing past the camera, abstract, fast forward motion.",
+   "saved": "2026-11-11"
+  },
+  {
+   "id": "game01a",
+   "kind": "video",
+   "category": "gaming",
+   "tags": [
+    "controller",
+    "hands",
+    "dark-room"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game01a.mp4",
+   "duration": 15.03,
+   "prompt": "Hands gripping an unbranded black game controller, screen glow lighting the hands, dark room, close-up from the side.",
    "saved": "2026-11-11"
   },
   {
@@ -381,12 +412,38 @@
    "duration": 60.0,
    "prompt": "Instrumental dark synthwave, pulsing arpeggios, retro drums, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
    "saved": "2026-11-11"
+  },
+  {
+   "id": "mus05",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "cinematic-hiphop"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus05.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental cinematic hip hop, strings and boom-bap drums, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 1",
+   "saved": "2026-11-11"
+  },
+  {
+   "id": "mus10",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "trap"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus10.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental hard trap beat, dark piano, rolling hi-hats, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
+   "saved": "2026-11-11"
   }
  ],
  "counts": {
-  "video": 11,
+  "video": 13,
   "image": 11,
-  "music": 4
+  "music": 6
  },
  "failed": 0
 }
