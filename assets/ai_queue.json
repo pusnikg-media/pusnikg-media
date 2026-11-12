@@ -294,6 +294,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_052326_9985d3d7-76e4-40e0-8d6d-1be06f36861c.mp4",
       "model": "seedance_2_0",
       "kind": "video"
+    },
+    {
+      "id": "img18",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_062324_12b403fa-92d2-4326-a1e3-1e9f3ad628d9.png",
+      "model": "nano_banana_pro",
+      "kind": "image"
     }
   ]
 }

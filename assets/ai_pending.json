@@ -1,28 +1,24 @@
 {
   "jobs": [
     {
-      "id": "img18",
-      "job_id": "12b403fa-92d2-4326-a1e3-1e9f3ad628d9",
-      "kind": "image",
-      "model": "nano_banana_pro"
-    },
-    {
       "id": "heist08a",
       "job_id": "c0026442-823a-482f-bab2-bca0921f7cf6",
       "kind": "video",
       "model": "seedance_2_0"
     },
     {
-      "id": "mus14",
-      "job_id": "ac2159c2-a4e3-4069-a4cf-e52d459c5aa4",
-      "kind": "music",
-      "model": "seed_audio"
+      "id": "img19",
+      "job_id": "465e852e-a488-4ee2-af1d-304e6ef9c9a9",
+      "kind": "image",
+      "model": "nano_banana_pro"
     }
   ],
   "fails": {
     "mus08": 1,
     "mus11": 1,
-    "mus14": 1
+    "mus14": 2
   },
-  "skip": []
+  "skip": [
+    "mus14"
+  ]
 }
