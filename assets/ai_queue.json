@@ -318,6 +318,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_092317_285fa2b2-d4a5-4f3c-9606-836d66829098.mp4",
       "model": "seedance_2_0",
       "kind": "video"
+    },
+    {
+      "id": "img20",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_102358_4745bc7e-76ff-4cee-8bef-32eb080931cf.png",
+      "model": "nano_banana_2",
+      "kind": "image"
     }
   ]
 }

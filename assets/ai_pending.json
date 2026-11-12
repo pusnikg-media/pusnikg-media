@@ -1,12 +1,6 @@
 {
   "jobs": [
     {
-      "id": "img20",
-      "job_id": "4745bc7e-76ff-4cee-8bef-32eb080931cf",
-      "kind": "image",
-      "model": "nano_banana_pro"
-    },
-    {
       "id": "time02a",
       "job_id": "1f7e9221-50c6-4a7d-a233-aa20a48a2035",
       "kind": "video",
