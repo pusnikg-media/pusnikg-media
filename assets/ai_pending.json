@@ -1,12 +1,5 @@
 {
-  "jobs": [
-    {
-      "id": "beach03a",
-      "job_id": "e61a7690-21f7-468a-b78c-5d012422ed1d",
-      "kind": "video",
-      "model": "seedance_2_0"
-    }
-  ],
+  "jobs": [],
   "fails": {
     "mus08": 1,
     "mus11": 1,
