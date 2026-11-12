@@ -302,6 +302,21 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "heist08a",
+   "kind": "video",
+   "category": "heist",
+   "tags": [
+    "money-rain",
+    "slow-motion",
+    "neon"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist08a.mp4",
+   "duration": 15.03,
+   "prompt": "Cash raining down in slow motion in front of a neon backdrop, close-up.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "img01",
    "kind": "image",
    "category": "still",
@@ -725,7 +740,7 @@
   }
  ],
  "counts": {
-  "video": 19,
+  "video": 20,
   "image": 18,
   "music": 13
  },
