@@ -14,11 +14,13 @@
     },
     {
       "id": "mus08",
-      "job_id": "20f7ad05-b623-41dd-8d2f-a14f3d8d1c84",
+      "job_id": "0ccef804-d8a1-4f93-9352-5eb57ae6761d",
       "kind": "music",
       "model": "seed_audio"
     }
   ],
-  "fails": {},
+  "fails": {
+    "mus08": 1
+  },
   "skip": []
 }
