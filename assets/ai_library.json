@@ -482,6 +482,20 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "img16",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "highway",
+    "night"
+   ],
+   "model": "nano_banana_pro",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img16.jpg",
+   "duration": 0.04,
+   "prompt": "Elevated highway with light trails at night.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -610,12 +624,25 @@
    "duration": 60.0,
    "prompt": "Instrumental hard trap beat, dark piano, rolling hi-hats, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
    "saved": "2026-11-11"
+  },
+  {
+   "id": "mus11",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "dark-synth"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus11.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental dark synthwave, pulsing arpeggios, retro drums, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
+   "saved": "2026-11-12"
   }
  ],
  "counts": {
   "video": 17,
-  "image": 15,
-  "music": 10
+  "image": 16,
+  "music": 11
  },
  "failed": 0
 }
