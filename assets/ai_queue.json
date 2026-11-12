@@ -300,6 +300,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_062324_12b403fa-92d2-4326-a1e3-1e9f3ad628d9.png",
       "model": "nano_banana_pro",
       "kind": "image"
+    },
+    {
+      "id": "heist08a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_072326_c0026442-823a-482f-bab2-bca0921f7cf6.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
     }
   ]
 }
