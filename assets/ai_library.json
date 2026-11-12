@@ -34,6 +34,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "beach03a",
+   "kind": "video",
+   "category": "beach",
+   "tags": [
+    "yacht",
+    "party",
+    "sunset",
+    "silhouettes"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach03a.mp4",
+   "duration": 15.03,
+   "prompt": "Yacht party at sunset, faceless silhouettes dancing on deck, slow orbit around the yacht.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "car01a",
    "kind": "video",
    "category": "cars",
@@ -1169,7 +1185,7 @@
   }
  ],
  "counts": {
-  "video": 43,
+  "video": 44,
   "image": 20,
   "music": 13
  },
