@@ -216,6 +216,24 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_222323_6e24697f-dc3d-48d7-af57-0f2bbb5b7cf4.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "game04a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_232321_09bcaf2e-39fa-4e61-a1c5-b229ea176532.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "img14",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261111_232322_0ed28829-9ba1-4aaa-a9de-27f421cfb999.png",
+      "model": "nano_banana_2",
+      "kind": "image"
+    },
+    {
+      "id": "mus08",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_002423_0ccef804-d8a1-4f93-9352-5eb57ae6761d.wav",
+      "model": "seed_audio",
+      "kind": "music"
     }
   ]
 }
