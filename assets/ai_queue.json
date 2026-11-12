@@ -264,6 +264,18 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_032340_5ae8392c-fd41-4632-b821-2c521bfa4244.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "heist03a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_032333_2a3980a2-128f-4954-9149-ada07e2ca035.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
+    },
+    {
+      "id": "mus12",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_042413_7e7023c8-2f76-4ab2-bb68-cb0784ff6d63.wav",
+      "model": "seed_audio",
+      "kind": "music"
     }
   ]
 }
