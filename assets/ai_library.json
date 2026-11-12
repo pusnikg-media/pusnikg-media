@@ -751,10 +751,25 @@
    "duration": 60.0,
    "prompt": "Instrumental aggressive electronic beat, big drops, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
    "saved": "2026-11-12"
+  },
+  {
+   "id": "time01a",
+   "kind": "video",
+   "category": "time",
+   "tags": [
+    "clock",
+    "midnight",
+    "countdown"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time01a.mp4",
+   "duration": 15.03,
+   "prompt": "Close-up of an analog clock ticking toward midnight, dramatic side light, static close-up.",
+   "saved": "2026-11-12"
   }
  ],
  "counts": {
-  "video": 20,
+  "video": 21,
   "image": 19,
   "music": 13
  },
