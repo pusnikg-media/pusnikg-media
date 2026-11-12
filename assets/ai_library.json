@@ -271,6 +271,22 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "heist03a",
+   "kind": "video",
+   "category": "heist",
+   "tags": [
+    "duo",
+    "silhouettes",
+    "fire",
+    "night"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist03a.mp4",
+   "duration": 15.03,
+   "prompt": "Man and woman as silhouettes walking away from a burning car at night, backs to the camera, wide shot.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "img01",
    "kind": "image",
    "category": "still",
@@ -637,12 +653,25 @@
    "duration": 60.0,
    "prompt": "Instrumental dark synthwave, pulsing arpeggios, retro drums, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
    "saved": "2026-11-12"
+  },
+  {
+   "id": "mus12",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "cinematic-hiphop"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus12.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental cinematic hip hop, strings and boom-bap drums, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
+   "saved": "2026-11-12"
   }
  ],
  "counts": {
-  "video": 17,
+  "video": 18,
   "image": 16,
-  "music": 11
+  "music": 12
  },
  "failed": 0
 }
