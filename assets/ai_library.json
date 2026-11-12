@@ -452,6 +452,20 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "img15",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "helicopter",
+    "searchlight"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img15.jpg",
+   "duration": 0.04,
+   "prompt": "Helicopter searchlight beam over dark rooftops.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -556,6 +570,19 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "mus09",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "drift"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus09.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental high-energy drift phonk with distorted bass, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "mus10",
    "kind": "music",
    "category": "music",
@@ -571,8 +598,8 @@
  ],
  "counts": {
   "video": 16,
-  "image": 14,
-  "music": 9
+  "image": 15,
+  "music": 10
  },
  "failed": 0
 }
