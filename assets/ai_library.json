@@ -239,6 +239,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "game04a",
+   "kind": "video",
+   "category": "gaming",
+   "tags": [
+    "midnight-launch",
+    "line",
+    "store",
+    "crowd"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game04a.mp4",
+   "duration": 15.03,
+   "prompt": "Long line of excited people outside a game store at night, midnight launch atmosphere, faces not visible, slow tracking along the line.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "img01",
    "kind": "image",
    "category": "still",
@@ -422,6 +438,20 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "img14",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "vault",
+    "bank"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img14.jpg",
+   "duration": 0.04,
+   "prompt": "Open bank vault with golden light.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -513,6 +543,19 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "mus08",
+   "kind": "music",
+   "category": "music",
+   "tags": [
+    "phonk"
+   ],
+   "model": "seed_audio",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus08.m4a",
+   "duration": 60.0,
+   "prompt": "Instrumental dark drift phonk, cowbell melody, heavy 808, no vocals, no lyrics, 60 seconds, seamless loop, mixed loud and clean for a vertical gaming short, variation 2",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "mus10",
    "kind": "music",
    "category": "music",
@@ -527,9 +570,9 @@
   }
  ],
  "counts": {
-  "video": 15,
-  "image": 13,
-  "music": 8
+  "video": 16,
+  "image": 14,
+  "music": 9
  },
  "failed": 0
 }
