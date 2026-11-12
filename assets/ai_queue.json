@@ -234,6 +234,18 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_002423_0ccef804-d8a1-4f93-9352-5eb57ae6761d.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "img15",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_012537_008a9181-1db0-44a2-af14-52009b91c887.png",
+      "model": "nano_banana_2",
+      "kind": "image"
+    },
+    {
+      "id": "mus09",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_012543_4db07b1e-2d6d-4ff1-a7d7-04b04cd30ac8.wav",
+      "model": "seed_audio",
+      "kind": "music"
     }
   ]
 }
