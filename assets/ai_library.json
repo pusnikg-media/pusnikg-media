@@ -255,6 +255,22 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "heist01a",
+   "kind": "video",
+   "category": "heist",
+   "tags": [
+    "cash",
+    "duffel",
+    "trunk",
+    "close-up"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist01a.mp4",
+   "duration": 15.03,
+   "prompt": "Duffel bag full of cash being zipped shut in a car trunk at night, close-up from above.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "img01",
    "kind": "image",
    "category": "still",
@@ -597,7 +613,7 @@
   }
  ],
  "counts": {
-  "video": 16,
+  "video": 17,
   "image": 15,
   "music": 10
  },
