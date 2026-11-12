@@ -1,8 +1,8 @@
 {
   "jobs": [
     {
-      "id": "wild01a",
-      "job_id": "f2c9d9f7-39b3-47bf-bfd9-06624190fa17",
+      "id": "beach01a",
+      "job_id": "24e6f2df-6fcd-451e-896b-a4214efc7c94",
       "kind": "video",
       "model": "seedance_2_0"
     }
