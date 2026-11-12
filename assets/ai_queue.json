@@ -252,6 +252,18 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_012535_dcdd2a22-ccaa-4073-86f3-4f45b4e22e49.mp4",
       "model": "seedance_2_0",
       "kind": "video"
+    },
+    {
+      "id": "img16",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_023002_60453c0e-9182-4dfa-9b6d-94d69cba7948.png",
+      "model": "nano_banana_pro",
+      "kind": "image"
+    },
+    {
+      "id": "mus11",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_032340_5ae8392c-fd41-4632-b821-2c521bfa4244.wav",
+      "model": "seed_audio",
+      "kind": "music"
     }
   ]
 }
