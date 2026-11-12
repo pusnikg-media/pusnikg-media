@@ -246,6 +246,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_012543_4db07b1e-2d6d-4ff1-a7d7-04b04cd30ac8.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "heist01a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_012535_dcdd2a22-ccaa-4073-86f3-4f45b4e22e49.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
     }
   ]
 }
