@@ -584,6 +584,20 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "img20",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "art-deco",
+    "beachfront"
+   ],
+   "model": "nano_banana_2",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img20.jpg",
+   "duration": 0.04,
+   "prompt": "Pastel art-deco hotels with neon at dusk.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -770,7 +784,7 @@
  ],
  "counts": {
   "video": 21,
-  "image": 19,
+  "image": 20,
   "music": 13
  },
  "failed": 0
