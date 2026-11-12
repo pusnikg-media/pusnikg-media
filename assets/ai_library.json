@@ -50,6 +50,21 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "beach05a",
+   "kind": "video",
+   "category": "beach",
+   "tags": [
+    "jetski",
+    "yacht",
+    "action"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach05a.mp4",
+   "duration": 15.03,
+   "prompt": "Two jet skis racing past a luxury yacht, aerial tracking shot.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "car01a",
    "kind": "video",
    "category": "cars",
@@ -1185,7 +1200,7 @@
   }
  ],
  "counts": {
-  "video": 44,
+  "video": 45,
   "image": 20,
   "music": 13
  },
