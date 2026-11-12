@@ -780,10 +780,26 @@
    "duration": 15.03,
    "prompt": "Close-up of an analog clock ticking toward midnight, dramatic side light, static close-up.",
    "saved": "2026-11-12"
+  },
+  {
+   "id": "time02a",
+   "kind": "video",
+   "category": "time",
+   "tags": [
+    "fireworks",
+    "skyline",
+    "night",
+    "celebration"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time02a.mp4",
+   "duration": 15.03,
+   "prompt": "Fireworks exploding over a coastal skyline at night, wide shot from the water.",
+   "saved": "2026-11-12"
   }
  ],
  "counts": {
-  "video": 21,
+  "video": 22,
   "image": 20,
   "music": 13
  },
