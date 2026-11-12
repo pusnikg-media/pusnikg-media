@@ -767,6 +767,344 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "s3d_car_chase_pink",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "sports-car",
+    "sunset",
+    "driving",
+    "neon"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_chase_pink.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): unbadged neon sports car driving down the avenue.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_car_coast_white",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "sports-car",
+    "coast",
+    "ocean",
+    "sunset"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_coast_white.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): unbadged neon sports car driving down the avenue.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_car_front_dusk",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "sports-car",
+    "dusk",
+    "headlights",
+    "driving"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_front_dusk.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): unbadged neon sports car driving down the avenue.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_car_low_night",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "sports-car",
+    "night",
+    "low-angle",
+    "neon"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_low_night.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): unbadged neon sports car driving down the avenue.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_car_rear_night",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "sports-car",
+    "night",
+    "neon",
+    "driving"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_rear_night.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): unbadged neon sports car driving down the avenue.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_city_aerial",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "skyline",
+    "sunset",
+    "aerial",
+    "flyover"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_aerial.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): flight down a neon avenue with palm trees and a striped sun.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_city_night",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "skyline",
+    "night",
+    "neon",
+    "street",
+    "drive"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_night.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): flight down a neon avenue with palm trees and a striped sun.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_city_rise",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "skyline",
+    "dusk",
+    "reveal",
+    "neon"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_rise.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): flight down a neon avenue with palm trees and a striped sun.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_city_sunset",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "skyline",
+    "sunset",
+    "neon",
+    "street",
+    "drive"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_sunset.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): flight down a neon avenue with palm trees and a striped sun.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_coast_sunset",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "coast",
+    "ocean",
+    "sunset",
+    "palms",
+    "drive"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_coast_sunset.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): flight down a neon avenue with palm trees and a striped sun.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_count_1",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "countdown",
+    "number",
+    "day1"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_count_1.mp4",
+   "duration": 5.0,
+   "prompt": "Original 3D scene (Three.js): neon tunnel, giant number flies into the camera (lands at 0.5 s).",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_count_2",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "countdown",
+    "number",
+    "day2"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_count_2.mp4",
+   "duration": 5.0,
+   "prompt": "Original 3D scene (Three.js): neon tunnel, giant number flies into the camera (lands at 0.5 s).",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_count_3",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "countdown",
+    "number",
+    "day3"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_count_3.mp4",
+   "duration": 5.0,
+   "prompt": "Original 3D scene (Three.js): neon tunnel, giant number flies into the camera (lands at 0.5 s).",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_count_4",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "countdown",
+    "number",
+    "day4"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_count_4.mp4",
+   "duration": 5.0,
+   "prompt": "Original 3D scene (Three.js): neon tunnel, giant number flies into the camera (lands at 0.5 s).",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_count_5",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "countdown",
+    "number",
+    "day5"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_count_5.mp4",
+   "duration": 5.0,
+   "prompt": "Original 3D scene (Three.js): neon tunnel, giant number flies into the camera (lands at 0.5 s).",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_count_nov19",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "countdown",
+    "date",
+    "launch"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_count_nov19.mp4",
+   "duration": 5.0,
+   "prompt": "Original 3D scene (Three.js): neon tunnel, giant number flies into the camera (lands at 0.5 s).",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_count_today",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "countdown",
+    "launch",
+    "today"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_count_today.mp4",
+   "duration": 5.0,
+   "prompt": "Original 3D scene (Three.js): neon tunnel, giant number flies into the camera (lands at 0.5 s).",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_tunnel_pink",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "tunnel",
+    "neon",
+    "abstract",
+    "hook-background"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_pink.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): flight through a neon tunnel, no text - background for the hook.",
+   "saved": "2026-11-12"
+  },
+  {
+   "id": "s3d_tunnel_teal",
+   "kind": "video",
+   "category": "3d",
+   "tags": [
+    "3d",
+    "tunnel",
+    "neon",
+    "abstract",
+    "hook-background"
+   ],
+   "model": "threejs",
+   "rev": 1,
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_teal.mp4",
+   "duration": 6.0,
+   "prompt": "Original 3D scene (Three.js): flight through a neon tunnel, no text - background for the hook.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "time01a",
    "kind": "video",
    "category": "time",
@@ -815,7 +1153,7 @@
   }
  ],
  "counts": {
-  "video": 23,
+  "video": 42,
   "image": 20,
   "music": 13
  },
