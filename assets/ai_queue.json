@@ -288,6 +288,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_052331_9785150f-50c5-4415-8883-9378e73ce9e1.wav",
       "model": "seed_audio",
       "kind": "music"
+    },
+    {
+      "id": "heist05a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_052326_9985d3d7-76e4-40e0-8d6d-1be06f36861c.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
     }
   ]
 }
