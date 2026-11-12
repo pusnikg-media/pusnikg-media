@@ -1,0 +1,76 @@
+# Pusnik G own 3D footage: renders the Three.js scenes in pipeline/scenes3d (clips.json) with headless Chrome on a free
+# runner and stores them like the Higgsfield clips: release "ai-library" + assets/ai_library.json (category "3d").
+# Runs when pipeline/scenes3d changes; only clips that are missing or have a higher "rev" in clips.json are rendered.
+name: scenes3d
+on:
+  push:
+    branches: [main]
+    paths: ["pipeline/scenes3d/**", ".github/workflows/scenes3d.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ai-assets   # same group as ai-assets: both write assets/ai_library.json
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 170
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Pending clips
+        id: p
+        run: |
+          ids=$(python3 pipeline/scenes3d/library.py pending); echo "pending: $ids"; echo "ids=$ids" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        if: steps.p.outputs.ids != ''
+        with:
+          node-version: 22
+      - name: Install tools
+        if: steps.p.outputs.ids != ''
+        timeout-minutes: 15
+        run: |
+          bash pipeline/install_tools.sh || exit 1
+          cd pipeline/scenes3d && npm install --no-audit --no-fund
+          google-chrome --version
+      - name: Render
+        if: steps.p.outputs.ids != ''
+        run: |
+          cd pipeline/scenes3d
+          node render.mjs clips.json /home/runner/s3d_out --only "${{ steps.p.outputs.ids }}" --scale 0.75 || echo "some clips failed"
+          python3 library.py entries /home/runner/s3d_out
+      - name: Upload to release ai-library
+        if: steps.p.outputs.ids != ''
+        run: |
+          shopt -s nullglob; files=(/home/runner/s3d_out/*.mp4)
+          [ ${#files[@]} -eq 0 ] && { echo "S3D FAIL: nothing rendered"; exit 1; }
+          gh release view ai-library >/dev/null 2>&1 || gh release create ai-library --title "AI clip library" --notes "Pusnik G clip library. Index: assets/ai_library.json"
+          for f in "${files[@]}"; do
+            for i in 1 2 3; do gh release upload ai-library "$f" --clobber && break; echo "upload retry $i"; sleep 5; done
+          done
+      - name: Update assets/ai_library.json
+        if: steps.p.outputs.ids != ''
+        run: |
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          for i in 1 2 3 4 5; do  # merge onto the newest main; never rebase
+            git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+            python3 - <<'PY'
+          import json, os
+          p = "assets/ai_library.json"; new = json.load(open("/home/runner/s3d_out/new_entries.json"))
+          lib = json.load(open(p)) if os.path.exists(p) else {"release": "ai-library", "items": []}
+          by = {e["id"]: e for e in lib.get("items", [])}
+          for n in new: by[n["id"]] = n
+          lib["items"] = sorted(by.values(), key=lambda e: e["id"])
+          lib["counts"] = {k: sum(1 for e in lib["items"] if e.get("kind") == k and e.get("url")) for k in ("video", "image", "music")}
+          json.dump(lib, open(p, "w"), indent=1, ensure_ascii=False)
+          print("LIBRARY", lib["counts"])
+          PY
+            git add assets/ai_library.json
+            git diff --cached --quiet && { echo "library unchanged"; break; }
+            git commit -q -m "ai-library: 3d scenes" && git push -q origin HEAD:main && { echo "PUSHED"; break; }
+            echo "push retry $i"; sleep 8
+          done
