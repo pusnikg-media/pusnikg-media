@@ -796,10 +796,26 @@
    "duration": 15.03,
    "prompt": "Fireworks exploding over a coastal skyline at night, wide shot from the water.",
    "saved": "2026-11-12"
+  },
+  {
+   "id": "wild01a",
+   "kind": "video",
+   "category": "wild",
+   "tags": [
+    "airboat",
+    "swamp",
+    "dawn",
+    "mist"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/wild01a.mp4",
+   "duration": 15.03,
+   "prompt": "Airboat speeding through a misty everglades swamp at dawn, tracking shot from the side.",
+   "saved": "2026-11-12"
   }
  ],
  "counts": {
-  "video": 22,
+  "video": 23,
   "image": 20,
   "music": 13
  },
