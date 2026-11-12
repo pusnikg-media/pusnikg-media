@@ -324,6 +324,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_102358_4745bc7e-76ff-4cee-8bef-32eb080931cf.png",
       "model": "nano_banana_2",
       "kind": "image"
+    },
+    {
+      "id": "time02a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3LvaW9j23xidpA4NcopthsccEuT/hf_20261112_112334_1f7e9221-50c6-4a7d-a233-aa20a48a2035.mp4",
+      "model": "seedance_2_0",
+      "kind": "video"
     }
   ]
 }
