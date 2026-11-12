@@ -570,6 +570,20 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "img19",
+   "kind": "image",
+   "category": "still",
+   "tags": [
+    "gamer",
+    "couch"
+   ],
+   "model": "nano_banana_pro",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/img19.jpg",
+   "duration": 0.04,
+   "prompt": "Gamer silhouette on a couch in front of a glowing TV.",
+   "saved": "2026-11-12"
+  },
+  {
    "id": "mus01",
    "kind": "music",
    "category": "music",
@@ -741,7 +755,7 @@
  ],
  "counts": {
   "video": 20,
-  "image": 18,
+  "image": 19,
   "music": 13
  },
  "failed": 0
