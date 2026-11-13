@@ -175,6 +175,21 @@
    "saved": "2026-11-13"
   },
   {
+   "id": "car08a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "motorbike",
+    "bridge",
+    "dusk"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car08a.mp4",
+   "duration": 15.03,
+   "prompt": "Motorbike speeding across a long bridge at dusk, city lights behind, side tracking shot.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -1231,7 +1246,7 @@
   }
  ],
  "counts": {
-  "video": 47,
+  "video": 48,
   "image": 20,
   "music": 13
  },
