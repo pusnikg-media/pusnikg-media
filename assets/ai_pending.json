@@ -1,5 +1,12 @@
 {
-  "jobs": [],
+  "jobs": [
+    {
+      "id": "car08a",
+      "job_id": "be45ad43-5b29-4791-8da6-64ad7731d0e4",
+      "kind": "video",
+      "model": "seedance_2_0"
+    }
+  ],
   "fails": {
     "mus08": 1,
     "mus11": 1,
