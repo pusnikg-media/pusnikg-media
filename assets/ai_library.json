@@ -285,6 +285,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "city05a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "traffic",
+    "dusk",
+    "timelapse",
+    "highway"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city05a.mp4",
+   "duration": 15.03,
+   "prompt": "Hyperlapse of glowing traffic light trails on an elevated highway at dusk, city skyline behind, wide static framing.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "fx01a",
    "kind": "video",
    "category": "fx",
@@ -1261,7 +1277,7 @@
   }
  ],
  "counts": {
-  "video": 49,
+  "video": 50,
   "image": 20,
   "music": 13
  },
