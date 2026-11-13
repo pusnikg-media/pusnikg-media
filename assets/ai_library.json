@@ -159,6 +159,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "car07a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "pov",
+    "tunnel",
+    "speed",
+    "neon"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car07a.mp4",
+   "duration": 15.03,
+   "prompt": "First-person dashboard view of a car speeding through a neon-lit tunnel, steady forward motion.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -1215,7 +1231,7 @@
   }
  ],
  "counts": {
-  "video": 46,
+  "video": 47,
   "image": 20,
   "music": 13
  },
