@@ -363,6 +363,22 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "fx02a",
+   "kind": "video",
+   "category": "fx",
+   "tags": [
+    "retro",
+    "synthwave",
+    "palms",
+    "glitch"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/fx02a.mp4",
+   "duration": 15.03,
+   "prompt": "Retro synthwave scene, neon palm silhouettes against a striped sunset with subtle VHS glitch, slow push.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "game01a",
    "kind": "video",
    "category": "gaming",
@@ -1324,7 +1340,7 @@
   }
  ],
  "counts": {
-  "video": 53,
+  "video": 54,
   "image": 20,
   "music": 13
  },
