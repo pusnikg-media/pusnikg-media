@@ -445,6 +445,7 @@
    "kind": "video",
    "category": "gaming",
    "tags": [
+    "do-not-use",
     "midnight-launch",
     "line",
     "store",
@@ -453,7 +454,7 @@
    "model": "seedance_2_0",
    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game04a.mp4",
    "duration": 15.03,
-   "prompt": "Long line of excited people outside a game store at night, midnight launch atmosphere, faces not visible, slow tracking along the line.",
+   "prompt": "DO NOT USE (console logo visible on the wall). Long line of excited people outside a game store at night, midnight launch atmosphere, faces not visible, slow tracking along the line.",
    "saved": "2026-11-12"
   },
   {
