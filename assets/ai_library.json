@@ -301,6 +301,22 @@
    "saved": "2026-11-13"
   },
   {
+   "id": "city06a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "rooftop",
+    "night",
+    "pool",
+    "luxury"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city06a.mp4",
+   "duration": 15.03,
+   "prompt": "Rooftop infinity pool at night overlooking an illuminated skyline, light haze, slow push over the water.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "fx01a",
    "kind": "video",
    "category": "fx",
@@ -1277,7 +1293,7 @@
   }
  ],
  "counts": {
-  "video": 50,
+  "video": 51,
   "image": 20,
   "music": 13
  },
