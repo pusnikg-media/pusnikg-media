@@ -317,6 +317,21 @@
    "saved": "2026-11-13"
   },
   {
+   "id": "city07a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "downtown",
+    "golden-hour",
+    "tower"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city07a.mp4",
+   "duration": 15.03,
+   "prompt": "Downtown at golden hour, glass tower reflecting the sun, low-angle tilt up the facade.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "fx01a",
    "kind": "video",
    "category": "fx",
@@ -1293,7 +1308,7 @@
   }
  ],
  "counts": {
-  "video": 51,
+  "video": 52,
   "image": 20,
   "music": 13
  },
