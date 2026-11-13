@@ -1,0 +1,105 @@
+{
+ "name": "pusnikg-2026-11-21-launch2-ai",
+ "date": "2026-11-21",
+ "day": -2,
+ "script": [
+  "Launch week question, we need to settle this, Jason or Lucia?",
+  "Jason is the calm one who just wants an easy life.",
+  "Lucia came out of prison ready to fight for everything.",
+  "Honestly, the duo only works because they're so different.",
+  "Team Jason or team Lucia?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_pink.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist03a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car06a.mp4",
+    "start": 4
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city06a.mp4",
+    "start": 6
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist01a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car04a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist03a.mp4",
+    "start": 7
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car03a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car02a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist08a.mp4",
+    "start": 6
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_low_night.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_sunset.mp4",
+    "start": 0
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/0884579d-8174-4e27-92da-dc00cf3fd4a0.m4a",
+  "start": 2.667,
+  "db": -9,
+  "title": "Motivational (Orshot)"
+ },
+ "hook_big": "WHO?",
+ "hook_mid": "JASON",
+ "hook_sub": "OR LUCIA?",
+ "badge": "GTA 6 • LAUNCH WEEK",
+ "card": {
+  "line": 1,
+  "word": "easy",
+  "top": "JASON",
+  "big": "EASY",
+  "bottom": "LIFE WANTED"
+ },
+ "punch": [
+  "jason",
+  "lucia",
+  "prison",
+  "different"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  2,
+  4,
+  5
+ ]
+}

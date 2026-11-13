@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-20-launch1-ai",
+ "date": "2026-11-20",
+ "day": -1,
+ "script": [
+  "Unpopular opinion, don't rush through GTA 6.",
+  "We waited thirteen years, finishing it in one weekend makes no sense.",
+  "Do the side stuff, explore Leonida, let the story breathe.",
+  "The best Rockstar moments happen when you're not chasing the next mission.",
+  "Are you rushing the story or taking it slow?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_teal.mp4",
+    "start": 0.5
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city07a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/wild01a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach01a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach03a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car09a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach05a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist05a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car08a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city04a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_coast_white.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city02a.mp4",
+    "start": 4
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/e8303a87-ce50-48d4-82b3-549a1bd2fe0e.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Deep house (Orshot)"
+ },
+ "hook_big": "DON'T",
+ "hook_mid": "RUSH IT",
+ "hook_sub": "UNPOPULAR OPINION",
+ "badge": "GTA 6 • LAUNCH WEEK",
+ "card": {
+  "line": 1,
+  "word": "weekend",
+  "top": "13 YEARS",
+  "big": "48H",
+  "bottom": "TO FINISH IT?"
+ },
+ "punch": [
+  "rush",
+  "weekend",
+  "explore",
+  "breathe"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}

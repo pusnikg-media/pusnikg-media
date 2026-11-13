@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-17-day2-ai",
+ "date": "2026-11-17",
+ "day": 2,
+ "script": [
+  "Two days left, so when can you actually play GTA 6?",
+  "Rockstar hasn't confirmed a time, but store listings point to midnight, local time.",
+  "That means New Zealand starts first, and the rest of the world follows hour by hour.",
+  "Pre-load it now, so you're playing the second it unlocks.",
+  "Are you staying up for midnight?",
+  "Follow for day one."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_pink.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time01a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game05a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city02a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time02a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city05a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game02a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game01a.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city03a.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time01a.mp4",
+    "start": 7
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_night.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car07a.mp4",
+    "start": 1
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://cdn.orshot.com/library/music/0565f704-b2e2-4cdd-843a-06f349748e10.m4a",
+  "start": 1.818,
+  "db": -9,
+  "title": "Victory (Orshot)"
+ },
+ "hook_big": "2",
+ "hook_mid": "DAYS LEFT",
+ "hook_sub": "WHEN CAN YOU PLAY?",
+ "badge": "GTA 6 • DAY 2",
+ "card": {
+  "line": 1,
+  "word": "midnight",
+  "top": "UNLOCK",
+  "big": "00:00",
+  "bottom": "NOT CONFIRMED"
+ },
+ "punch": [
+  "play",
+  "midnight",
+  "first",
+  "unlocks"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}
