@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "ɹts fˈɜːst, ænd ðə ɹˈɛst ʌvðə wˈɜːld fˈɑːloʊz ˈaʊɚ baɪ ˈaʊɚ.\n3: 3.42s  pɹˈiːlˈoʊd ɪt nˈaʊ, sˌoʊ jʊɹ plˈeɪɪŋ ðə sˈɛkənd ɪɾ ʌnlˈɑːks.\n4: 2.10s  ɑːɹ juː stˈeɪɪŋ ˌʌp fɔːɹ mˈɪdnaɪt?\n5: 1.80s  fˈɑːloʊ fɔːɹ dˈeɪ wˌʌn.\nTTS_OK 6 lines 22.15s\n\u001b[0;93m2026-11-13 21:08:41.936013039 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at \"/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171\" because filename \"5620e0c7-8062-4dce-aeb7-520c7ef76171\" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+\u001b[m",
+  "store@2.39 listings@2.59 point@2.84 to@3.26 midnight,@3.49 local@4.14 time.@4.26\nThat@0.23 means@0.53 New@0.70 Zealand@0.96 starts@1.26 first,@1.55 and@2.33 the@2.38 rest@2.46 of@2.62 the@2.82 world@2.92 follows@3.16 hour@3.59 by@3.95 hour.@4.18\nPre-load@0.23 it@0.76 now,@0.94 so@1.36 you're@1.45 playing@1.57 the@1.81 second@2.02 it@2.32 unlocks.@2.45\nAre@0.22 you@0.51 staying@0.62 up@0.86 for@1.11 midnight?@1.26\nFollow@0.25 for@0.65 day@0.82 one.@0.96\nWORDS_OK 6 lines\n\nTOTAL 23.85 shots 16 captions 19\nRENDER_OK /home/runner/work_pusnikg-2026-11-17-day2-ai/pusnikg-2026-11-17-day2-ai.mp4 23.85s",
+  "QA_OK 23.85s -14.2 LUFS frames: /home/runner/work_pusnikg-2026-11-17-day2-ai/pusnikg-2026-11-17-day2-ai_qa_0.png /home/runner/work_pusnikg-2026-11-17-day2-ai/pusnikg-2026-11-17-day2-ai_qa_mid.png /home/runner/work_pusnikg-2026-11-17-day2-ai/pusnikg-2026-11-17-day2-ai_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 23.85,
+ "music": "https://cdn.orshot.com/library/music/0565f704-b2e2-4cdd-843a-06f349748e10.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-17-day2-ai.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-17-day2-ai_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-17-day2-ai_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-17-day2-ai_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-17-day2-ai",
+ "attempts": 1
+}
