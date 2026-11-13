@@ -332,6 +332,22 @@
    "saved": "2026-11-13"
   },
   {
+   "id": "city08a",
+   "kind": "video",
+   "category": "city",
+   "tags": [
+    "storm",
+    "night",
+    "lightning",
+    "skyline"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city08a.mp4",
+   "duration": 15.03,
+   "prompt": "Thunderstorm with lightning bolts over a coastal skyline at night, wide locked-off shot.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "fx01a",
    "kind": "video",
    "category": "fx",
@@ -1308,7 +1324,7 @@
   }
  ],
  "counts": {
-  "video": 52,
+  "video": 53,
   "image": 20,
   "music": 13
  },
