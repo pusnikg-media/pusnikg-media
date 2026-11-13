@@ -1,12 +1,5 @@
 {
-  "jobs": [
-    {
-      "id": "city05a",
-      "job_id": "48dcabc6-7a5d-4a0b-8568-b1d829c1b3cf",
-      "kind": "video",
-      "model": "seedance_2_0"
-    }
-  ],
+  "jobs": [],
   "fails": {
     "mus08": 1,
     "mus11": 1,
