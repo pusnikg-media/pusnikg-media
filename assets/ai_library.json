@@ -129,6 +129,21 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "car05a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "garage",
+    "headlights",
+    "close-up"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car05a.mp4",
+   "duration": 15.03,
+   "prompt": "Headlights of a dark sports car flicking on in a dark garage, engine revving, dust in the light beams, front close-up.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "car06a",
    "kind": "video",
    "category": "cars",
@@ -1200,7 +1215,7 @@
   }
  ],
  "counts": {
-  "video": 45,
+  "video": 46,
   "image": 20,
   "music": 13
  },
