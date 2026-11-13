@@ -190,6 +190,21 @@
    "saved": "2026-11-13"
   },
   {
+   "id": "car09a",
+   "kind": "video",
+   "category": "cars",
+   "tags": [
+    "jump",
+    "slow-motion",
+    "backroad"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car09a.mp4",
+   "duration": 15.03,
+   "prompt": "Muscle car jumping over a hill on a dusty swamp backroad, slow motion dust, low side angle.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "city01a",
    "kind": "video",
    "category": "city",
@@ -1246,7 +1261,7 @@
   }
  ],
  "counts": {
-  "video": 48,
+  "video": 49,
   "image": 20,
   "music": 13
  },
