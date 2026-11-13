@@ -457,6 +457,21 @@
    "saved": "2026-11-12"
   },
   {
+   "id": "game05a",
+   "kind": "video",
+   "category": "gaming",
+   "tags": [
+    "rgb",
+    "setup",
+    "monitors"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game05a.mp4",
+   "duration": 15.03,
+   "prompt": "Dark gaming room with RGB lighting and monitors glowing, slow dolly toward the desk.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "heist01a",
    "kind": "video",
    "category": "heist",
@@ -1355,7 +1370,7 @@
   }
  ],
  "counts": {
-  "video": 55,
+  "video": 56,
   "image": 20,
   "music": 13
  },
