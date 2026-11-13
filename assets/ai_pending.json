@@ -1,12 +1,5 @@
 {
-  "jobs": [
-    {
-      "id": "car05a",
-      "job_id": "9a580235-d64d-4ea6-b2c5-67b880ffa838",
-      "kind": "video",
-      "model": "seedance_2_0"
-    }
-  ],
+  "jobs": [],
   "fails": {
     "mus08": 1,
     "mus11": 1,
