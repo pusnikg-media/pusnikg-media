@@ -426,6 +426,21 @@
    "saved": "2026-11-11"
   },
   {
+   "id": "game03a",
+   "kind": "video",
+   "category": "gaming",
+   "tags": [
+    "unboxing",
+    "game-case",
+    "close-up"
+   ],
+   "model": "seedance_2_0",
+   "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game03a.mp4",
+   "duration": 15.03,
+   "prompt": "Hands tearing the plastic wrap off an unbranded video game case, close-up, top-down view.",
+   "saved": "2026-11-13"
+  },
+  {
    "id": "game04a",
    "kind": "video",
    "category": "gaming",
@@ -1340,7 +1355,7 @@
   }
  ],
  "counts": {
-  "video": 54,
+  "video": 55,
   "image": 20,
   "music": 13
  },
