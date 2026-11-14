@@ -2,7 +2,7 @@
  "ok": false,
  "name": "tjr1",
  "sig": "92db03af81f3",
- "attempts": 2,
+ "attempts": 3,
  "source": "https://www.youtube.com/watch?v=vA1xHnsfq0c",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr1/scan/scan.json",
  "clips": [],
