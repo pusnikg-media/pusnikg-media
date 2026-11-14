@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "name": "jason2",
+ "sig": "f20744e2b701",
+ "attempts": 1,
+ "source": "https://www.twitch.tv/jasontheween/clip/SmallGiftedEggDBstyle-CITrdSLuwsxVx7Uj",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason2/scan/scan.json",
+ "clips": [],
+ "phase": "scanned"
+}

@@ -1,0 +1,40 @@
+{
+ "duration": 30.01,
+ "width": 854,
+ "height": 480,
+ "fps": 30.0,
+ "mode": "full",
+ "regions": [],
+ "cuts": [
+  20.8
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 7.26,
+   "text": "be my whole fucking flow word for word bar for bar oh bro listen"
+  },
+  {
+   "s": 8.89,
+   "e": 13.01,
+   "text": "there's a bunch of options in the group chat I picked one hi"
+  },
+  {
+   "s": 17.97,
+   "e": 25.67,
+   "text": "I'm Lexi hi I'm Camilla hi I'm Kendall hi I'm Savannah ha ha I'm going"
+  }
+ ],
+ "candidates": [
+  {
+   "a": 0,
+   "b": 13.31,
+   "len": 13.3,
+   "score": 0.594,
+   "cuts": 0,
+   "text": "be my whole fucking flow word for word bar for bar oh bro listen there's a bunch of options in the group chat I picked one hi",
+   "sheet": "cand_00.jpg"
+  }
+ ],
+ "source": "https://www.twitch.tv/jasontheween/clip/SmallGiftedEggDBstyle-CITrdSLuwsxVx7Uj"
+}
