@@ -3,5 +3,44 @@
  "source": "https://drive.google.com/file/d/1gqPN52avNPIzO4B_RmKrTAcHPsU-luTt/view",
  "layout": "full",
  "track": true,
- "min_len": 15
+ "min_len": 15,
+ "fix": {
+  "mokey": "lowkey",
+  "fucking": "f*cking",
+  "shit": "sh*t",
+  "Shit": "Sh*t",
+  "bitch": "b*tch"
+ },
+ "clips": [
+  {
+   "id": "A_reveal",
+   "a": 886.6,
+   "b": 924.6,
+   "title": "TJR GIFTS HIS BROTHER A CAR"
+  },
+  {
+   "id": "B_plan",
+   "a": 598.4,
+   "b": 622.8,
+   "title": "HIS BROTHER HAS NO IDEA"
+  },
+  {
+   "id": "C_brother",
+   "a": 669.9,
+   "b": 695.9,
+   "title": "TJR ON HIS OLDER BROTHER"
+  },
+  {
+   "id": "D_test",
+   "a": 221.0,
+   "b": 244.9,
+   "title": "TJR TESTS A $200K SUV"
+  },
+  {
+   "id": "E_seats",
+   "a": 181.6,
+   "b": 210.4,
+   "title": "THIS BACK SEAT IS INSANE"
+  }
+ ]
 }
