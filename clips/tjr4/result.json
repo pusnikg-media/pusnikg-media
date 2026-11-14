@@ -1,10 +1,71 @@
 {
  "ok": true,
  "name": "tjr4",
- "sig": "714aaebea4f1",
+ "sig": "42422961a0a9",
  "attempts": 1,
  "source": "https://drive.google.com/file/d/1gqPN52avNPIzO4B_RmKrTAcHPsU-luTt/view",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/scan/scan.json",
- "clips": [],
- "phase": "scanned"
+ "clips": [
+  {
+   "id": "A_reveal",
+   "ok": true,
+   "seconds": 38.0,
+   "title": "TJR GIFTS HIS BROTHER A CAR",
+   "file": "tjr4_A_reveal.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/qa/tjr4_A_reveal.jpg",
+   "layout": "full",
+   "tracked": true,
+   "sig": "5c36e7ac85ff",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/tjr4_A_reveal.mp4"
+  },
+  {
+   "id": "B_plan",
+   "ok": true,
+   "seconds": 24.42,
+   "title": "HIS BROTHER HAS NO IDEA",
+   "file": "tjr4_B_plan.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/qa/tjr4_B_plan.jpg",
+   "layout": "full",
+   "tracked": true,
+   "sig": "5c0dadf91f74",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/tjr4_B_plan.mp4"
+  },
+  {
+   "id": "C_brother",
+   "ok": true,
+   "seconds": 26.0,
+   "title": "TJR ON HIS OLDER BROTHER",
+   "file": "tjr4_C_brother.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/qa/tjr4_C_brother.jpg",
+   "layout": "full",
+   "tracked": true,
+   "sig": "b57bdd43e870",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/tjr4_C_brother.mp4"
+  },
+  {
+   "id": "D_test",
+   "ok": true,
+   "seconds": 23.92,
+   "title": "TJR TESTS A $200K SUV",
+   "file": "tjr4_D_test.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/qa/tjr4_D_test.jpg",
+   "layout": "full",
+   "tracked": true,
+   "sig": "681e2ba6372e",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/tjr4_D_test.mp4"
+  },
+  {
+   "id": "E_seats",
+   "ok": true,
+   "seconds": 28.83,
+   "title": "THIS BACK SEAT IS INSANE",
+   "file": "tjr4_E_seats.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/qa/tjr4_E_seats.jpg",
+   "layout": "full",
+   "tracked": true,
+   "sig": "ecf92995dade",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr4/tjr4_E_seats.mp4"
+  }
+ ],
+ "phase": "rendered"
 }
