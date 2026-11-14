@@ -5,5 +5,13 @@
  "track": true,
  "min_len": 15,
  "sections": true,
- "hot_k": 24
+ "hot_k": 24,
+ "clips": [
+  {
+   "id": "A_cards",
+   "a": 19901.5,
+   "b": 19921.5,
+   "title": "TJR OPENS POKEMON CARDS"
+  }
+ ]
 }
