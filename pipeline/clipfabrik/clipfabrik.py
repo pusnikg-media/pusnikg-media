@@ -24,6 +24,7 @@ v3 (IRL, 14.11.): optional job fields
   max_height  download height for stream URLs (default 1080; 720 for streams > 3 h)
   hot_k     number of loud "hotspot" regions examined in long sources (default 14)
   source can also be a stream/VOD page (Twitch, Kick, YouTube, TikTok, X, Rumble) -> downloaded with yt-dlp
+  or a direct .m3u8 playlist (Kick VODs: use the API field "source"; the kick.com/<name>/videos/<uuid> page fails with NOT_FOUND).
   (scan phase at 480p, render phase at max_height; same VOD = same timestamps).
   Sources longer than 15 min are scanned in "hotspot" mode: per-second loudness against a rolling 3-min baseline
   (shouts, laughter, crowd) + YouTube "most replayed" heatmap when yt-dlp provides one -> only those regions are
@@ -62,7 +63,8 @@ STREAM_HOSTS = ("twitch.tv", "kick.com", "youtube.com", "youtu.be", "tiktok.com"
 
 
 def is_stream(url):
-    host = (urllib.parse.urlparse(str(url)).hostname or "").lower()
+    u = urllib.parse.urlparse(str(url)); host = (u.hostname or "").lower()
+    if u.path.lower().endswith(".m3u8"): return True  # direct HLS playlist, e.g. Kick VOD "source" from kick.com/api/v2/channels/<name>/videos
     return any(host == h or host.endswith("." + h) for h in STREAM_HOSTS)
 
 
