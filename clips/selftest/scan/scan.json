@@ -1,0 +1,59 @@
+{
+ "duration": 17.41,
+ "width": 1080,
+ "height": 1920,
+ "fps": 30.0,
+ "cuts": [
+  2.6,
+  4.4,
+  6.33,
+  8.3,
+  10.13,
+  10.17,
+  11.97,
+  12.57,
+  13.2,
+  14.43,
+  15.93,
+  15.97
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.2,
+   "text": "Launch week, question, we need to settle this, Jason or Lucia."
+  },
+  {
+   "s": 4.66,
+   "e": 7.34,
+   "text": "Jason is the calm one who just wants an easy life."
+  },
+  {
+   "s": 8.64,
+   "e": 10.92,
+   "text": "Lucia came out of prison ready to fight for everything."
+  },
+  {
+   "s": 12.28,
+   "e": 13.46,
+   "text": "Team Jason or Team Lucia."
+  },
+  {
+   "s": 14.64,
+   "e": 16.04,
+   "text": "Follow for more GTA 6."
+  }
+ ],
+ "candidates": [
+  {
+   "a": 0,
+   "b": 16.34,
+   "len": 16.3,
+   "score": 0.824,
+   "cuts": 12,
+   "text": "Launch week, question, we need to settle this, Jason or Lucia. Jason is the calm one who just wants an easy life. Lucia came out of prison ready to fight for everything. Team Jason or Team Lucia. Follow for more GTA 6.",
+   "sheet": "cand_00.jpg"
+  }
+ ],
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-21-launch2-ai-tt.mp4"
+}
