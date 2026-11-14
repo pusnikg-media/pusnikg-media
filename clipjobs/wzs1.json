@@ -1,0 +1,16 @@
+{
+ "name": "wzs1",
+ "source": "https://drive.google.com/file/d/1TLSsGrY77rtIapZJBore-z0NyNjNUynT/view",
+ "pill": "Season 1 out now",
+ "logo": "assets/logos/warzone_white.png",
+ "logo_w": 380,
+ "min_len": 10,
+ "clips": [
+  {"id": "A_hajin", "a": 2.0, "b": 23.39, "title": "WARZONE SEASON 1: HAJIN", "captions": false},
+  {"id": "B_drop", "a": 23.39, "b": 46.71, "title": "WARZONE: DROPPING INTO HAJIN", "captions": false},
+  {"id": "C_close", "a": 46.71, "b": 70.19, "title": "SEASON 1 TRAILER: CLOSE QUARTERS", "captions": false},
+  {"id": "D_night", "a": 70.19, "b": 92.21, "title": "WARZONE: SEASON 1 TRAILER", "captions": false},
+  {"id": "E_map", "a": 92.21, "b": 116.03, "title": "HAJIN: NEW WARZONE MAP", "captions": false},
+  {"id": "F_free", "a": 116.03, "b": 139.97, "title": "WARZONE SEASON 1: ALL FREE", "captions": false}
+ ]
+}
