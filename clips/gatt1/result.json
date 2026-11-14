@@ -1,0 +1,10 @@
+{
+ "ok": false,
+ "name": "gatt1",
+ "sig": "7d1f1d8ed75e",
+ "attempts": 1,
+ "source": "https://kick.com/gattouz0/videos/4222baae-1a49-4dbb-9749-012aecd3c2e1",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/gatt1/scan/scan.json",
+ "clips": [],
+ "error": "yt-dlp could not download https://kick.com/gattouz0/videos/4222baae-1a49-4dbb-9749-012aecd3c2e1: tries 5 --fragment-retries 10 --concurrent-fragments 8 -f bv*[height<=480]+ba/b[height<=480]/bv*+ba/b --merge-output-format mp4 --write-info-json -o /home/runner\nWARNING: [kick:vod] The extractor is attempting impersonation, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: [kick:vod] 4222baae-1a49-4dbb-9749-012aecd3c2e1: NOT_FOUND: Requested resource not found\n"
+}
