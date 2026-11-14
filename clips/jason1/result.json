@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "name": "jason1",
+ "sig": "dc077ffa9376",
+ "attempts": 1,
+ "source": "https://www.twitch.tv/jasontheween/clip/GrossElatedButterflyOptimizePrime-OVPwN5_b-36rGxnE",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason1/scan/scan.json",
+ "clips": [],
+ "phase": "scanned"
+}

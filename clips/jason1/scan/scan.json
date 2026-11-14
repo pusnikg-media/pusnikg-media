@@ -1,0 +1,41 @@
+{
+ "duration": 16.6,
+ "width": 854,
+ "height": 480,
+ "fps": 30.0,
+ "mode": "full",
+ "regions": [],
+ "cuts": [
+  9.23,
+  11.23
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 1.92,
+   "text": "Here we fucking go"
+  },
+  {
+   "s": 3.0,
+   "e": 5.92,
+   "text": "Let's get a quick scroll while Fortnite launches"
+  },
+  {
+   "s": 7.26,
+   "e": 10.1,
+   "text": "Gonna go on reels bro, shit, way more peak, way more peak"
+  }
+ ],
+ "candidates": [
+  {
+   "a": 0,
+   "b": 10.4,
+   "len": 10.4,
+   "score": 0.586,
+   "cuts": 1,
+   "text": "Here we fucking go Let's get a quick scroll while Fortnite launches Gonna go on reels bro, shit, way more peak, way more peak",
+   "sheet": "cand_00.jpg"
+  }
+ ],
+ "source": "https://www.twitch.tv/jasontheween/clip/GrossElatedButterflyOptimizePrime-OVPwN5_b-36rGxnE"
+}
