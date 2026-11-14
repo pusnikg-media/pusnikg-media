@@ -1,0 +1,9 @@
+{
+ "name": "tjr3",
+ "source": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/pxBLwzfUfRgD/2026/11/6/13/3/aop2wqcWL2xe/media/hls/master.m3u8",
+ "layout": "full",
+ "track": true,
+ "min_len": 15,
+ "sections": true,
+ "hot_k": 24
+}

@@ -21,7 +21,9 @@ job.json (clipjobs/<name>.json in the repo or clipjob-<name>.json in the Drive f
 v3 (IRL, 14.11.): optional job fields
   layout    "framed" (default: blurred fill + sharp centre 1080x1200) or "full" (full-screen 9:16 crop, for IRL streams)
   track     true = the crop follows the biggest face (OpenCV, smoothed with a dead zone; falls back to the centre)
-  max_height  download height for stream URLs (default 1080; 720 for streams > 3 h)
+  max_height  download height for stream URLs (default 1080)
+  sections  streams > 3 h (or "sections": true): scan at 360p, and the render phase downloads only each clip's seconds
+            (frame-accurate from the HLS playlist) instead of the whole VOD -> 12 h Kick/Twitch streams fit the runner
   hot_k     number of loud "hotspot" regions examined in long sources (default 14)
   source can also be a stream/VOD page (Twitch, Kick, YouTube, TikTok, X, Rumble) -> downloaded with yt-dlp
   or a direct .m3u8 playlist (Kick VODs: use the API field "source"; the kick.com/<name>/videos/<uuid> page fails with NOT_FOUND).
@@ -84,6 +86,31 @@ def ytdlp(url, tmp, height):
     try: info = json.load(open(base + ".info.json"))
     except Exception: info = {}
     return vids[0], probe(vids[0]), info
+
+
+def remote_dur(url):
+    """Duration of a stream/VOD in s without downloading it (0 if unknown)."""
+    try:
+        d = float(json.loads(run(["yt-dlp", "-J", "--no-playlist", url], timeout=300).stdout).get("duration") or 0)
+        if d: return d
+    except Exception: pass
+    if urllib.parse.urlparse(url).path.lower().endswith(".m3u8"):
+        try: return float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", url], timeout=300).stdout.strip() or 0)
+        except Exception: pass
+    return 0.0
+
+
+def fetch_section(url, a, b, height, dst):
+    """Frame-accurate piece [a, b] of a muxed HLS VOD (Kick, Twitch) at <= height, re-encoded near-lossless.
+    Long streams (12 h) never get downloaded in full for rendering - only the seconds each clip needs."""
+    try:
+        v = [l for l in run(["yt-dlp", "-g", "--no-playlist", "-f", f"b[height<={height}]/b", url], timeout=300).stdout.split("\n") if l.startswith("http")]
+    except Fail as e:
+        raise Fail(f"no stream URL for {url[:100]}: {str(e)[-300:]}")
+    if len(v) != 1: raise Fail("section download needs a single muxed stream (Kick/Twitch VOD): " + url[:100])
+    run(["ffmpeg", "-y", "-v", "error", "-ss", f"{a:.3f}", "-i", v[0], "-t", f"{b - a:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "15",
+         "-c:a", "aac", "-b:a", "192k", "-avoid_negative_ts", "make_zero", dst], timeout=1800)
+    return probe(dst)
 
 
 def download(url, dst):
@@ -542,22 +569,25 @@ def run_job(spec_path, root, src=None):
     res = {"ok": False, "name": name, "sig": jsig, "attempts": prev.get("attempts", 0) + 1 if prev.get("sig") == jsig else 1,
            "source": job.get("source"), "scan": f"{RAW}/clips/{name}/scan/scan.json", "clips": []}
     try:
-        heat = None; url = str(job.get("source", ""))
-        if not src and is_stream(url):  # VOD page: 480p is enough for the scan, renders get max_height
-            h = 480
+        heat = None; url = str(job.get("source", "")); sect = False
+        try: old = json.load(open(os.path.join(sc, "scan.json")))
+        except Exception: old = {}
+        have_scan = old.get("source") == job.get("source") and os.path.exists(os.path.join(sc, "words.json"))
+        if not src and is_stream(url):  # VOD page: low resolution is enough for the scan, renders get max_height
+            d_ = remote_dur(url); long_ = bool(job.get("sections", d_ > 3 * 3600))  # > 3 h: scan at 360p, render clip sections only
+            h = 360 if long_ else 480
             if job.get("clips"):
-                h = int(job.get("max_height", 0) or 0)
-                if not h:
-                    try: d_ = float(json.loads(run(["yt-dlp", "-J", "--no-playlist", url], timeout=300).stdout).get("duration") or 0)
-                    except Exception: d_ = 0
-                    h = 720 if d_ > 3 * 3600 else 1080  # runner disk: a 1080p 4 h VOD would not fit
-            src, p, info = ytdlp(url, tmp, h); heat = info.get("heatmap")
+                h = int(job.get("max_height", 0) or 0) or 1080
+                sect = long_ and have_scan
+            if sect:
+                p = {"dur": float(old.get("duration") or d_), "w": old.get("width"), "h": old.get("height"), "fps": old.get("fps") or 30, "audio": True}
+            else:
+                if job.get("clips") and long_: h = min(h, 720)  # no scan yet + long stream: full download must fit the runner disk
+                src, p, info = ytdlp(url, tmp, h); heat = info.get("heatmap")
         elif not src:
             src = os.path.join(tmp, "source.mp4"); p = download(url, src)
         else: p = probe(src)
-        try: old = json.load(open(os.path.join(sc, "scan.json")))
-        except Exception: old = {}
-        if old.get("source") != job.get("source") or not os.path.exists(os.path.join(sc, "words.json")):
+        if not have_scan:
             for f in os.listdir(sc): os.remove(os.path.join(sc, f))
             scan(src, sc, lo=float(job.get("min_len", 10)), model=job.get("whisper", "small.en"), heat=heat, hot_k=int(job.get("hot_k", 14)))
             d = json.load(open(os.path.join(sc, "scan.json"))); d["source"] = job.get("source")
@@ -575,7 +605,15 @@ def run_job(spec_path, root, src=None):
             if d and d.get("sig") == csig and os.path.exists(os.path.join(out, d["file"])):
                 res["clips"].append(d); continue
             try:
-                r = render_clip(job, c, src, p, words, out, tmp); r["sig"] = csig
+                if sect:  # long stream: fetch only this clip (+3 s margin) and render it on its own timeline
+                    a0 = max(0.0, float(c["a"]) - 3); seg = os.path.join(tmp, f"sec_{c['id']}.mp4")
+                    ps = fetch_section(url, a0, min(float(c["b"]) + 3, p["dur"]), h, seg)
+                    c2 = dict(c, a=float(c["a"]) - a0, b=float(c["b"]) - a0)
+                    w2 = [dict(w, s=round(w["s"] - a0, 3), e=round(w["e"] - a0, 3)) for w in words if a0 <= w["s"] and w["e"] <= float(c["b"]) + 3]
+                    r = render_clip(job, c2, seg, ps, w2, out, tmp); os.remove(seg)
+                else:
+                    r = render_clip(job, c, src, p, words, out, tmp)
+                r["sig"] = csig
                 r["url"] = f"{RAW}/clips/{name}/{r['file']}"; r["qa"] = f"{RAW}/clips/{name}/{r['qa']}"
             except Exception as e:
                 r = {"id": c["id"], "ok": False, "error": str(e)[-600:]}
