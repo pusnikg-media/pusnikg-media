@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "name": "wzs1",
+ "sig": "3faa0773ef2b",
+ "attempts": 1,
+ "source": "https://drive.google.com/file/d/1TLSsGrY77rtIapZJBore-z0NyNjNUynT/view",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/scan/scan.json",
+ "clips": [],
+ "phase": "scanned"
+}
