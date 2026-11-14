@@ -1,10 +1,23 @@
 {
  "ok": true,
  "name": "tjr3",
- "sig": "7cd14bbc1553",
+ "sig": "58f3aebf998c",
  "attempts": 1,
  "source": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/pxBLwzfUfRgD/2026/11/6/13/3/aop2wqcWL2xe/media/hls/master.m3u8",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr3/scan/scan.json",
- "clips": [],
- "phase": "scanned"
+ "clips": [
+  {
+   "id": "A_cards",
+   "ok": true,
+   "seconds": 20.0,
+   "title": "TJR OPENS POKEMON CARDS",
+   "file": "tjr3_A_cards.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr3/qa/tjr3_A_cards.jpg",
+   "layout": "full",
+   "tracked": true,
+   "sig": "814d08810dff",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr3/tjr3_A_cards.mp4"
+  }
+ ],
+ "phase": "rendered"
 }
