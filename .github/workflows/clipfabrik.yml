@@ -1,6 +1,7 @@
 # Clipfabrik: campaign footage -> finished 9:16 clips on a free runner (scheduled Claude runs may not execute code).
 # Jobs: clipjobs/<name>.json in the repo or clipjob-<name>.json in the public Drive folder (format: pipeline/clipfabrik/clipfabrik.py).
 # Phase 1 (job without "clips"): transcript + candidates + contact sheets -> clips/<name>/scan/.
+# v3: source may be a Twitch/Kick/YouTube VOD page (yt-dlp), long sources get a hotspot scan, layout full + face tracking.
 # Phase 2 (job with "clips"): renders them -> clips/<name>/<name>_<id>.mp4 + clips/<name>/result.json (the agent polls its raw URL).
 name: clipfabrik
 on:
@@ -18,7 +19,7 @@ concurrency:
 jobs:
   clips:
     runs-on: ubuntu-24.04
-    timeout-minutes: 120
+    timeout-minutes: 300  # v3: multi-hour VODs (download + hotspot scan)
     env:
       DRIVE_FOLDER: ${{ vars.DRIVE_FOLDER || '1sZgGx8xmJ5OX5UcGUhZn9u_UzenRGYwF' }}
     steps:
@@ -41,13 +42,14 @@ jobs:
           path: |
             ~/.cache/huggingface
             ~/.cache/pip
-          key: clipfabrik-whisper-small-v1
+          key: clipfabrik-whisper-small-v3
       - name: Install tools
         if: steps.p.outputs.n != '0'
         timeout-minutes: 20
         run: |
           bash pipeline/install_tools.sh || exit 1
-          pip install -q numpy scipy pillow faster-whisper
+          pip install -q numpy scipy pillow faster-whisper yt-dlp "opencv-python-headless<5"
+          yt-dlp --version; df -h / | tail -1
           ffmpeg -version | head -1
           ffmpeg -hide_banner -filters | grep -q subtitles || { echo "ffmpeg without libass"; exit 1; }
       - name: Scan, render, publish
