@@ -1,17 +1,23 @@
 {
- "ok": false,
+ "ok": true,
  "name": "jason3",
- "sig": "957e79aadcac",
- "attempts": 2,
+ "sig": "b3212e4e174c",
+ "attempts": 1,
  "source": "https://www.twitch.tv/jasontheween/clip/CharmingLaconicSkirretAliens-n9j6gYZbcoF1almK",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason3/scan/scan.json",
  "clips": [
   {
    "id": "A_watch",
-   "ok": false,
-   "error": "title too long (45 chars): 'JASONTHEWEEN: LACY BREAKS HIS EXPENSIVE WATCH'"
+   "ok": true,
+   "seconds": 60.0,
+   "title": "LACY BREAKS HIS EXPENSIVE WATCH",
+   "file": "jason3_A_watch.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason3/qa/jason3_A_watch.jpg",
+   "layout": "full",
+   "tracked": true,
+   "sig": "99ba36dcda79",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason3/jason3_A_watch.mp4"
   }
  ],
- "phase": "rendered",
- "error": "failed clips: A_watch"
+ "phase": "rendered"
 }
