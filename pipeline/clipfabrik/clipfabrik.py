@@ -10,6 +10,8 @@ job.json (clipjobs/<name>.json in the repo or clipjob-<name>.json in the Drive f
   name      short id, e.g. "mw4dmz" -> results in clips/<name>/
   source    URL of the official footage (GitHub release asset, public Drive file link or any direct https URL)
   pill      optional yellow line under the title (e.g. a mandatory campaign sentence)
+  logo      optional watermark PNG (repo path like assets/logos/warzone_white.png, or https URL), drawn on every clip;
+            logo_w width in px (default 380), logo_pos "video_bottom" (default, inside the picture) or "video_top"
   fix       optional {"heard": "Correct"} for names whisper mishears (matched per word, punctuation kept)
   whisper   optional model (default small.en)
   min_len   shortest allowed clip in s (default 10 - most campaigns demand >= 10 s)
@@ -148,7 +150,31 @@ def pfont(size):
     raise Fail("no font found")
 
 
-def overlay(title, pill, path):
+def load_logo(src, root):
+    """Campaign logo as RGBA image (repo-relative path or https URL); None if no logo."""
+    if not src: return None
+    from PIL import Image
+    import io, urllib.request
+    if re.match(r"https?://", src):
+        data = urllib.request.urlopen(urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()
+        return Image.open(io.BytesIO(data)).convert("RGBA")
+    path = src if os.path.isabs(src) else os.path.join(root, src)
+    if not os.path.exists(path): raise Fail(f"logo not found: {src}")
+    return Image.open(path).convert("RGBA")
+
+
+def paste_logo(img, logo, width, y_top=None, y_bottom=None):
+    """Logo centred horizontally (clear of TikTok's side buttons) with a soft dark halo so it reads on bright footage."""
+    from PIL import Image, ImageFilter
+    lw = int(width); lh = int(logo.height * lw / logo.width); lg = logo.resize((lw, lh), Image.LANCZOS)
+    x = (W - lw) // 2; y = int(y_top if y_top is not None else y_bottom - lh)
+    halo = Image.new("RGBA", img.size, (0, 0, 0, 0)); a = lg.split()[3].point(lambda v: min(255, int(v * 0.85)))
+    halo.paste(Image.new("RGBA", lg.size, (0, 0, 0, 255)), (x, y), a)
+    halo = halo.filter(ImageFilter.GaussianBlur(14))
+    img.alpha_composite(halo); img.alpha_composite(lg, (x, y))
+
+
+def overlay(title, pill, path, logo=None, logo_w=380, logo_pos="video_bottom", fg=(400, 1200)):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
     fs = 118
@@ -171,6 +197,9 @@ def overlay(title, pill, path):
         d.rounded_rectangle([px, 306, px + pw + 56, 376], radius=16, fill=(255, 230, 0, 255))
         bb = d.textbbox((0, 0), pill, font=pf)
         d.text((px + 28, 341 - (bb[1] + bb[3]) / 2), pill, font=pf, fill=(0, 0, 0, 255))
+    if logo is not None:
+        if logo_pos == "video_top": paste_logo(img, logo, logo_w, y_top=fg[0] + 34)
+        else: paste_logo(img, logo, logo_w, y_bottom=fg[0] + fg[1] - 40)
     img.save(path)
 
 
@@ -234,10 +263,12 @@ def check_clips(job, dur):
 def render_clip(job, c, src, p, words, out, tmp):
     a, b = float(c["a"]), min(float(c["b"]), p["dur"]); dur = b - a; cid = c["id"]
     title = str(c["title"]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
-    ov = os.path.join(tmp, cid + ".png"); sub = os.path.join(tmp, cid + ".ass"); overlay(title, pill, ov)
+    ov = os.path.join(tmp, cid + ".png"); sub = os.path.join(tmp, cid + ".ass")
     caps = c.get("captions", True) and bool(words); n = 0
     fg_h = FG_H if not c.get("wide") else int(W / (0.75 * p["w"] / p["h"]) / 2) * 2  # wide: 75 % of the source width visible
     fg_h = min(fg_h, FG_H); fg_y = FG_Y + (FG_H - fg_h) // 2
+    overlay(title, pill, ov, logo=job.get("_logo_img"), logo_w=int(c.get("logo_w", job.get("logo_w", 380))),
+            logo_pos=c.get("logo_pos", job.get("logo_pos", "video_bottom")), fg=(fg_y, fg_h))
     cw = min(p["w"], int(p["h"] * W / fg_h / 2) * 2); ch = min(p["h"], int(cw * fg_h / W / 2) * 2)  # also fits portrait sources
     if caps: n = ass(words, a, b, sub, job.get("fix") or {}, margin_v=H - (fg_y + fg_h) + 130)
     fps = min(60, max(24, round(p["fps"])))
@@ -267,7 +298,8 @@ def sig(*parts):
 
 
 def job_sig(job):
-    return sig(job.get("source"), job.get("pill"), job.get("fix"), job.get("clips"), job.get("min_len"))
+    return sig(job.get("source"), job.get("pill"), job.get("fix"), job.get("clips"), job.get("min_len"),
+               *([job.get("logo"), job.get("logo_w"), job.get("logo_pos")] if job.get("logo") else []))
 
 
 def pending(root, outdir):
@@ -328,9 +360,11 @@ def run_job(spec_path, root, src=None):
         words = json.load(open(os.path.join(sc, "words.json")))
         errs = check_clips(job, p["dur"])
         if errs: raise Fail("job rejected: " + "; ".join(errs))
+        job["_logo_img"] = load_logo(job.get("logo"), root)
         done = {c["id"]: c for c in prev.get("clips", []) if c.get("ok")}
         for c in job.get("clips", []):
-            csig = sig(job.get("source"), c.get("pill", job.get("pill")), job.get("fix"), c)
+            csig = sig(job.get("source"), c.get("pill", job.get("pill")), job.get("fix"), c,
+                       *([job.get("logo"), job.get("logo_w"), job.get("logo_pos")] if job.get("logo") else []))
             d = done.get(c["id"])
             if d and d.get("sig") == csig and os.path.exists(os.path.join(out, d["file"])):
                 res["clips"].append(d); continue
@@ -362,6 +396,7 @@ if __name__ == "__main__":
         elif len(a) >= 3 and a[0] == "scan": scan(a[1], a[2], *(float(x) if i else int(x) for i, x in enumerate(a[3:6])))
         elif len(a) == 5 and a[0] == "render":
             job = json.load(open(a[1])); p = probe(a[2]); os.makedirs(a[4], exist_ok=True)
+            job["_logo_img"] = load_logo(job.get("logo"), os.getcwd())
             errs = check_clips(job, p["dur"])
             if errs: raise Fail("; ".join(errs))
             for c in job["clips"]: render_clip(job, c, a[2], p, json.load(open(a[3])), a[4], a[4])
