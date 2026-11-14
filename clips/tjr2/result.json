@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "name": "tjr2",
+ "sig": "cd91f6870298",
+ "attempts": 1,
+ "source": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/pxBLwzfUfRgD/2026/11/11/14/10/CDhQR4hNEbTA/media/hls/master.m3u8",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr2/scan/scan.json",
+ "clips": [],
+ "phase": "scanned"
+}

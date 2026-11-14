@@ -1,0 +1,769 @@
+{
+ "duration": 4616.45,
+ "width": 852,
+ "height": 480,
+ "fps": 30.0,
+ "mode": "hotspots",
+ "regions": [
+  {
+   "a": 3691.0,
+   "b": 3761.0,
+   "peak": 3725.0,
+   "hype": 30.0
+  },
+  {
+   "a": 3384.0,
+   "b": 3454.0,
+   "peak": 3428.0,
+   "hype": 28.62
+  },
+  {
+   "a": 3537.0,
+   "b": 3607.0,
+   "peak": 3574.0,
+   "hype": 27.83
+  },
+  {
+   "a": 3785.0,
+   "b": 3855.0,
+   "peak": 3829.0,
+   "hype": 26.5
+  },
+  {
+   "a": 3615.0,
+   "b": 3685.0,
+   "peak": 3659.0,
+   "hype": 26.11
+  },
+  {
+   "a": 3879.0,
+   "b": 3949.0,
+   "peak": 3914.0,
+   "hype": 22.44
+  },
+  {
+   "a": 4473.0,
+   "b": 4543.0,
+   "peak": 4516.0,
+   "hype": 22.29
+  },
+  {
+   "a": 3949.0,
+   "b": 4019.0,
+   "peak": 3978.0,
+   "hype": 20.16
+  },
+  {
+   "a": 4047.0,
+   "b": 4117.0,
+   "peak": 4091.0,
+   "hype": 16.88
+  },
+  {
+   "a": 3173.0,
+   "b": 3243.0,
+   "peak": 3216.0,
+   "hype": 13.71
+  },
+  {
+   "a": 3464.0,
+   "b": 3534.0,
+   "peak": 3508.0,
+   "hype": 13.5
+  },
+  {
+   "a": 1618.0,
+   "b": 1688.0,
+   "peak": 1645.0,
+   "hype": 13.01
+  },
+  {
+   "a": 3070.0,
+   "b": 3140.0,
+   "peak": 3114.0,
+   "hype": 12.13
+  },
+  {
+   "a": 2723.0,
+   "b": 2793.0,
+   "peak": 2763.0,
+   "hype": 11.01
+  }
+ ],
+ "cuts": [],
+ "sentences": [
+  {
+   "s": 3724.71,
+   "e": 3726.53,
+   "text": "I know it's going to go down, bro."
+  },
+  {
+   "s": 3389.14,
+   "e": 3389.9,
+   "text": "Please,"
+  },
+  {
+   "s": 3390.84,
+   "e": 3391.08,
+   "text": "no."
+  },
+  {
+   "s": 3392.04,
+   "e": 3393.74,
+   "text": "Are you joking right now?"
+  },
+  {
+   "s": 3394.16,
+   "e": 3396.92,
+   "text": "Are you actually trying to make a joke out of me, Nasdaq?"
+  },
+  {
+   "s": 3397.3,
+   "e": 3398.86,
+   "text": "Are you actually trying to make a joke out of me?"
+  },
+  {
+   "s": 3399.06,
+   "e": 3401.02,
+   "text": "Dump this, dump this shit."
+  },
+  {
+   "s": 3401.6,
+   "e": 3402.9,
+   "text": "Dump this shit, please."
+  },
+  {
+   "s": 3403.54,
+   "e": 3405.52,
+   "text": "I'm fucking begging you."
+  },
+  {
+   "s": 3414.29,
+   "e": 3416.07,
+   "text": "Actually begging you."
+  },
+  {
+   "s": 3419.16,
+   "e": 3421.4,
+   "text": "Don't, no, no, no, no."
+  },
+  {
+   "s": 3421.46,
+   "e": 3422.64,
+   "text": "I hate the way that this looks."
+  },
+  {
+   "s": 3423.04,
+   "e": 3424.38,
+   "text": "Yes, go down, bro."
+  },
+  {
+   "s": 3424.92,
+   "e": 3426.26,
+   "text": "We literally just inverse the gap."
+  },
+  {
+   "s": 3426.34,
+   "e": 3427.6,
+   "text": "Just go down, go down."
+  },
+  {
+   "s": 3427.6,
+   "e": 3428.78,
+   "text": "Don't go up anymore!"
+  },
+  {
+   "s": 3562.58,
+   "e": 3563.78,
+   "text": "There's no way"
+  },
+  {
+   "s": 3565.08,
+   "e": 3567.76,
+   "text": "There's zero fucking way, bro"
+  },
+  {
+   "s": 3569.33,
+   "e": 3571.31,
+   "text": "There's zero way"
+  },
+  {
+   "s": 3573.62,
+   "e": 3576.56,
+   "text": "There's no chance in hell, bro"
+  },
+  {
+   "s": 3580.37,
+   "e": 3581.89,
+   "text": "Bro, there's no way."
+  },
+  {
+   "s": 3581.93,
+   "e": 3585.11,
+   "text": "I just lost a hundred forty thousand dollars on this shit, bro"
+  },
+  {
+   "s": 3602.65,
+   "e": 3604.97,
+   "text": "There's actually no way, bro"
+  },
+  {
+   "s": 3803.7,
+   "e": 3804.26,
+   "text": "Bro,"
+  },
+  {
+   "s": 3807.74,
+   "e": 3808.56,
+   "text": "there's no way"
+  },
+  {
+   "s": 3814.03,
+   "e": 3815.91,
+   "text": "there's actually no way"
+  },
+  {
+   "s": 3828.04,
+   "e": 3830.02,
+   "text": "there's actually no way"
+  },
+  {
+   "s": 3629.51,
+   "e": 3631.61,
+   "text": "There's legitimately no way"
+  },
+  {
+   "s": 3652.22,
+   "e": 3655.6,
+   "text": "Bro, there's just there's literally no fucking way."
+  },
+  {
+   "s": 3655.66,
+   "e": 3656.44,
+   "text": "I know for a fact."
+  },
+  {
+   "s": 3656.44,
+   "e": 3657.22,
+   "text": "It's gonna go down."
+  },
+  {
+   "s": 3657.98,
+   "e": 3660.9,
+   "text": "I Know for an absolute fact, it's going to go down."
+  },
+  {
+   "s": 3660.98,
+   "e": 3662.24,
+   "text": "It's going to take out those lows"
+  },
+  {
+   "s": 3670.52,
+   "e": 3671.44,
+   "text": "Okay, well"
+  },
+  {
+   "s": 3672.42,
+   "e": 3673.68,
+   "text": "What I can do."
+  },
+  {
+   "s": 3674.1,
+   "e": 3675.24,
+   "text": "Oh my god."
+  },
+  {
+   "s": 3675.24,
+   "e": 3678.12,
+   "text": "I'm actually sick to my stomach about this shit, bro."
+  },
+  {
+   "s": 3683.78,
+   "e": 3684.98,
+   "text": "I'm sick to my fuck"
+  },
+  {
+   "s": 3879.0,
+   "e": 3880.8,
+   "text": "75 racks on"
+  },
+  {
+   "s": 3888.32,
+   "e": 3893.28,
+   "text": "a bank holiday by the way on a bank holiday by the way on a bank holiday, by the way"
+  },
+  {
+   "s": 3894.53,
+   "e": 3909.17,
+   "text": "Because we I just know this shit needs to go down, bro I swear to God if this if this stops me out, I'm actually gonna like lose my lose my brain, bro I'm genuinely going to lose my brain, bro I'm"
+  },
+  {
+   "s": 3913.62,
+   "e": 3917.14,
+   "text": "actually gonna lose my mind if this if this gets stopped out, bro"
+  },
+  {
+   "s": 3920.21,
+   "e": 3924.09,
+   "text": "If this gets stopped out, I genuinely lose my shit"
+  },
+  {
+   "s": 3935.64,
+   "e": 3943.76,
+   "text": "this is stop -loss right here there's no way there's actually no fucking way"
+  },
+  {
+   "s": 4501.5,
+   "e": 4505.76,
+   "text": "my god no it's"
+  },
+  {
+   "s": 4516.83,
+   "e": 4519.51,
+   "text": "over it's fucking over bro it's"
+  },
+  {
+   "s": 4531.73,
+   "e": 4533.53,
+   "text": "fucking over bro i"
+  },
+  {
+   "s": 4534.91,
+   "e": 4536.29,
+   "text": "already know it bro it's over"
+  },
+  {
+   "s": 4539.07,
+   "e": 4542.4,
+   "text": "just fucking like 200"
+  },
+  {
+   "s": 3951.58,
+   "e": 3955.16,
+   "text": "Brother please all I ask is that you take out these hourly lows"
+  },
+  {
+   "s": 3956.54,
+   "e": 3962.96,
+   "text": "There's no way there's no way there's actually no way in hell There's no way in hell that I lose a hun."
+  },
+  {
+   "s": 3963.12,
+   "e": 3964.96,
+   "text": "There's no way that I lose $200 ,000"
+  },
+  {
+   "s": 3967.6,
+   "e": 3969.0,
+   "text": "On a fucking bank holiday."
+  },
+  {
+   "s": 3969.0,
+   "e": 3972.58,
+   "text": "Just trying to fucking Short the Nasdaq bro."
+  },
+  {
+   "s": 3977.15,
+   "e": 3978.25,
+   "text": "There's no way bro."
+  },
+  {
+   "s": 3978.27,
+   "e": 3983.93,
+   "text": "If it hits this red line I'm just I'm just ending stream bro, and it's and it's and it's done bro, cuz I can't I can't do this, bro"
+  },
+  {
+   "s": 3986.64,
+   "e": 3987.82,
+   "text": "Okay, just deep breaths"
+  },
+  {
+   "s": 4075.11,
+   "e": 4084.17,
+   "text": "Please bro, just please bro, I'm begging you, just don't do this to me, just don't do this to me bro, not today like"
+  },
+  {
+   "s": 3173.0,
+   "e": 3174.64,
+   "text": "you it's"
+  },
+  {
+   "s": 3177.26,
+   "e": 3192.06,
+   "text": "fucking over bro 70 racks down the fucking drain bro it's fucking over it's just fucking over bro it's fucking over $70 ,000 a hundred fucking thousand dollars down the absolute fucking drain bro fuck this damn game bro I"
+  },
+  {
+   "s": 3208.99,
+   "e": 3218.71,
+   "text": "beg of you I beg of you I will be your slave forever Nasdaq I will be I will be your slave forever, Nasdaq."
+  },
+  {
+   "s": 3223.16,
+   "e": 3226.04,
+   "text": "Please, Nasdaq, I will be your slave."
+  },
+  {
+   "s": 3227.52,
+   "e": 3230.92,
+   "text": "I will be your humanoid slave forever, Nasdaq."
+  },
+  {
+   "s": 3236.8,
+   "e": 3238.76,
+   "text": "I will do whatever you need, Nasdaq, please."
+  },
+  {
+   "s": 1618.18,
+   "e": 1619.34,
+   "text": "Short that shit."
+  },
+  {
+   "s": 1620.08,
+   "e": 1620.96,
+   "text": "In video,"
+  },
+  {
+   "s": 1621.84,
+   "e": 1622.56,
+   "text": "short that shit."
+  },
+  {
+   "s": 1625.97,
+   "e": 1627.93,
+   "text": "In video, we're shorting that shit."
+  },
+  {
+   "s": 1628.63,
+   "e": 1630.95,
+   "text": "This is the stops, this is stops, this is stops."
+  },
+  {
+   "s": 1631.35,
+   "e": 1632.93,
+   "text": "Like, yeah, dead ass right there."
+  },
+  {
+   "s": 1633.83,
+   "e": 1634.93,
+   "text": "Short that shit, bitch."
+  },
+  {
+   "s": 1635.39,
+   "e": 1635.79,
+   "text": "Dump it."
+  },
+  {
+   "s": 1638.52,
+   "e": 1639.32,
+   "text": "Dump it, please."
+  },
+  {
+   "s": 1643.24,
+   "e": 1644.0,
+   "text": "Dump it, please."
+  },
+  {
+   "s": 1644.82,
+   "e": 1645.94,
+   "text": "Good boy."
+  },
+  {
+   "s": 1647.6,
+   "e": 1649.4,
+   "text": "Just dump it down to this gap, right?"
+  },
+  {
+   "s": 1650.1,
+   "e": 1651.8,
+   "text": "We filled previous day gap."
+  },
+  {
+   "s": 1651.8,
+   "e": 1657.26,
+   "text": "let's go to let's let's refill on the gap that we just put in right what"
+  },
+  {
+   "s": 1660.08,
+   "e": 1664.42,
+   "text": "the hell no no"
+  },
+  {
+   "s": 1671.36,
+   "e": 1675.0,
+   "text": "no hell no hell no hell no come"
+  },
+  {
+   "s": 1681.94,
+   "e": 1683.54,
+   "text": "on dump that shit bro"
+  },
+  {
+   "s": 3071.32,
+   "e": 3072.7,
+   "text": "Fucking dump it!"
+  },
+  {
+   "s": 3074.14,
+   "e": 3074.6,
+   "text": "Dump it!"
+  },
+  {
+   "s": 3074.9,
+   "e": 3075.14,
+   "text": "No!"
+  },
+  {
+   "s": 3075.74,
+   "e": 3077.52,
+   "text": "Oh my god, I'm actually going to tweak."
+  },
+  {
+   "s": 3077.76,
+   "e": 3078.7,
+   "text": "I'm actually going to tweak."
+  },
+  {
+   "s": 3078.96,
+   "e": 3080.12,
+   "text": "I'm actually going to tweak."
+  },
+  {
+   "s": 3080.54,
+   "e": 3084.9,
+   "text": "I'm actually going to tweak the fuck out if this gets stopped out, bro."
+  },
+  {
+   "s": 3087.11,
+   "e": 3087.91,
+   "text": "There's no way."
+  },
+  {
+   "s": 3089.71,
+   "e": 3091.09,
+   "text": "There's no way, bro."
+  },
+  {
+   "s": 3091.33,
+   "e": 3093.45,
+   "text": "I'm actually going to lose my shit, bro."
+  },
+  {
+   "s": 3093.89,
+   "e": 3094.19,
+   "text": "Dump it."
+  },
+  {
+   "s": 3094.77,
+   "e": 3095.97,
+   "text": "There's no way, bro."
+  },
+  {
+   "s": 3096.49,
+   "e": 3097.77,
+   "text": "There's no way, bro."
+  },
+  {
+   "s": 3097.77,
+   "e": 3100.89,
+   "text": "there's a new way reverse"
+  },
+  {
+   "s": 3111.2,
+   "e": 3112.62,
+   "text": "please oh"
+  },
+  {
+   "s": 3115.18,
+   "e": 3117.6,
+   "text": "my god fuck you fuck"
+  },
+  {
+   "s": 3119.77,
+   "e": 3121.39,
+   "text": "you fuck this game fuck this"
+  },
+  {
+   "s": 2723.0,
+   "e": 2726.08,
+   "text": "Please don't do this to me."
+  },
+  {
+   "s": 2730.42,
+   "e": 2731.74,
+   "text": "I'm begging you."
+  },
+  {
+   "s": 2741.15,
+   "e": 2742.55,
+   "text": "Don't do this to me"
+  },
+  {
+   "s": 2744.25,
+   "e": 2748.45,
+   "text": "Nasdaq, I promise you this is the last thing that you want to do."
+  },
+  {
+   "s": 2748.75,
+   "e": 2749.49,
+   "text": "Fuck me."
+  },
+  {
+   "s": 2749.51,
+   "e": 2750.55,
+   "text": "Yes is going higher"
+  },
+  {
+   "s": 2756.48,
+   "e": 2757.92,
+   "text": "Don't do this to me, bro."
+  },
+  {
+   "s": 2757.92,
+   "e": 2760.8,
+   "text": "We were up 68k at one point, please, bro"
+  },
+  {
+   "s": 2762.6,
+   "e": 2763.32,
+   "text": "Please bro."
+  },
+  {
+   "s": 2763.32,
+   "e": 2765.36,
+   "text": "You don't want to go fucking higher, bro."
+  },
+  {
+   "s": 2765.4,
+   "e": 2766.62,
+   "text": "I'm telling you right now."
+  },
+  {
+   "s": 2766.62,
+   "e": 2768.06,
+   "text": "You do not want to go higher"
+  },
+  {
+   "s": 2769.1,
+   "e": 2775.18,
+   "text": "okay this is where stop -loss is don't do this to me don't do this to me don't do this to me"
+  },
+  {
+   "s": 2777.46,
+   "e": 2791.34,
+   "text": "brother Nasdaq don't do this to me don't do this to me oh my god bro don't do this to me bro dump it now dump it now"
+  }
+ ],
+ "candidates": [
+  {
+   "a": 2757.77,
+   "b": 2775.48,
+   "len": 17.7,
+   "score": 1.496,
+   "cuts": 0,
+   "text": "We were up 68k at one point, please, bro Please bro. You don't want to go fucking higher, bro. I'm telling you right now. You do not want to go higher okay this is where stop -loss is don't do this to me don't do this to me don't do this to me",
+   "hype": 11.01,
+   "peak_in": true,
+   "sheet": "cand_00.jpg"
+  },
+  {
+   "a": 3208.84,
+   "b": 3226.34,
+   "len": 17.5,
+   "score": 1.614,
+   "cuts": 0,
+   "text": "beg of you I beg of you I will be your slave forever Nasdaq I will be I will be your slave forever, Nasdaq. Please, Nasdaq, I will be your slave.",
+   "hype": 13.71,
+   "peak_in": true,
+   "sheet": "cand_01.jpg"
+  },
+  {
+   "a": 3390.69,
+   "b": 3405.82,
+   "len": 15.1,
+   "score": 2.286,
+   "cuts": 0,
+   "text": "no. Are you joking right now? Are you actually trying to make a joke out of me, Nasdaq? Are you actually trying to make a joke out of me? Dump this, dump this shit. Dump this shit, please. I'm fucking begging you.",
+   "hype": 28.62,
+   "peak_in": false,
+   "sheet": "cand_02.jpg"
+  },
+  {
+   "a": 3569.18,
+   "b": 3585.41,
+   "len": 16.2,
+   "score": 2.413,
+   "cuts": 0,
+   "text": "There's zero way There's no chance in hell, bro Bro, there's no way. I just lost a hundred forty thousand dollars on this shit, bro",
+   "hype": 27.83,
+   "peak_in": true,
+   "sheet": "cand_03.jpg"
+  },
+  {
+   "a": 3652.07,
+   "b": 3671.74,
+   "len": 19.7,
+   "score": 2.226,
+   "cuts": 0,
+   "text": "Bro, there's just there's literally no fucking way. I know for a fact. It's gonna go down. I Know for an absolute fact, it's going to go down. It's going to take out those lows Okay, well",
+   "hype": 26.11,
+   "peak_in": true,
+   "sheet": "cand_04.jpg"
+  },
+  {
+   "a": 3716.0,
+   "b": 3733.0,
+   "len": 17.0,
+   "score": 2.15,
+   "cuts": 0,
+   "text": "I know it's going to go down, bro.",
+   "hype": 30.0,
+   "peak_in": true,
+   "sheet": "cand_05.jpg"
+  },
+  {
+   "a": 3813.88,
+   "b": 3830.32,
+   "len": 16.4,
+   "score": 2.152,
+   "cuts": 0,
+   "text": "there's actually no way there's actually no way",
+   "hype": 26.5,
+   "peak_in": true,
+   "sheet": "cand_06.jpg"
+  },
+  {
+   "a": 3894.38,
+   "b": 3909.47,
+   "len": 15.1,
+   "score": 2.02,
+   "cuts": 0,
+   "text": "Because we I just know this shit needs to go down, bro I swear to God if this if this stops me out, I'm actually gonna like lose my lose my brain, bro I'm genuinely going to lose my brain, bro I'm",
+   "hype": 22.44,
+   "peak_in": false,
+   "sheet": "cand_07.jpg"
+  },
+  {
+   "a": 3956.39,
+   "b": 3972.88,
+   "len": 16.5,
+   "score": 1.805,
+   "cuts": 0,
+   "text": "There's no way there's no way there's actually no way in hell There's no way in hell that I lose a hun. There's no way that I lose $200 ,000 On a fucking bank holiday. Just trying to fucking Short the Nasdaq bro.",
+   "hype": 20.16,
+   "peak_in": false,
+   "sheet": "cand_08.jpg"
+  },
+  {
+   "a": 4501.35,
+   "b": 4519.81,
+   "len": 18.5,
+   "score": 1.944,
+   "cuts": 0,
+   "text": "my god no it's over it's fucking over bro it's",
+   "hype": 22.29,
+   "peak_in": true,
+   "sheet": "cand_09.jpg"
+  }
+ ],
+ "source": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/pxBLwzfUfRgD/2026/11/11/14/10/CDhQR4hNEbTA/media/hls/master.m3u8"
+}
