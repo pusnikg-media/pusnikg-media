@@ -1,0 +1,72 @@
+# Clipfabrik: campaign footage -> finished 9:16 clips on a free runner (scheduled Claude runs may not execute code).
+# Jobs: clipjobs/<name>.json in the repo or clipjob-<name>.json in the public Drive folder (format: pipeline/clipfabrik/clipfabrik.py).
+# Phase 1 (job without "clips"): transcript + candidates + contact sheets -> clips/<name>/scan/.
+# Phase 2 (job with "clips"): renders them -> clips/<name>/<name>_<id>.mp4 + clips/<name>/result.json (the agent polls its raw URL).
+name: clipfabrik
+on:
+  push:
+    branches: [main]
+    paths: ["clipjobs/**", "pipeline/clipfabrik/**", ".github/workflows/clipfabrik.yml"]
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: clipfabrik
+  cancel-in-progress: false
+jobs:
+  clips:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      DRIVE_FOLDER: ${{ vars.DRIVE_FOLDER || '1sZgGx8xmJ5OX5UcGUhZn9u_UzenRGYwF' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Pending jobs
+        id: p
+        run: |
+          python3 pipeline/clipfabrik/clipfabrik.py pending . /home/runner/clipjobs_in > /home/runner/pending.json
+          cat /home/runner/pending.json
+          echo "n=$(python3 -c 'import json;print(len(json.load(open("/home/runner/pending.json"))))')" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@v5
+        if: steps.p.outputs.n != '0'
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        if: steps.p.outputs.n != '0'
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: clipfabrik-whisper-small-v1
+      - name: Install tools
+        if: steps.p.outputs.n != '0'
+        timeout-minutes: 20
+        run: |
+          bash pipeline/install_tools.sh || exit 1
+          pip install -q numpy scipy pillow faster-whisper
+          ffmpeg -version | head -1
+          ffmpeg -hide_banner -filters | grep -q subtitles || { echo "ffmpeg without libass"; exit 1; }
+      - name: Scan, render, publish
+        if: steps.p.outputs.n != '0'
+        run: |
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          for spec in $(python3 -c 'import json;print(" ".join(json.load(open("/home/runner/pending.json"))))'); do
+            name=$(basename "$spec" .json); O="/home/runner/cf_out_$name"
+            echo "::group::clipfabrik $name"
+            python3 pipeline/clipfabrik/clipfabrik.py run "$spec" . || true
+            echo "::endgroup::"
+            [ -f "clips/$name/result.json" ] || continue
+            rm -rf "$O"; mkdir -p "$O"; cp -r "clips/$name/." "$O/"
+            for i in 1 2 3 4 5; do  # publish on top of the newest main (render.yml pushes too); the job's folder is replaced as a whole
+              git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+              rm -rf "clips/$name"; mkdir -p "clips/$name"; cp -r "$O/." "clips/$name/"
+              git add -A "clips/$name"
+              git diff --cached --quiet && { echo "nothing new for $name"; break; }
+              git commit -q -m "clipfabrik: $name" && git push -q origin HEAD:main && { echo "PUBLISHED $name"; break; }
+              echo "push retry $i"; sleep 8
+            done
+          done
