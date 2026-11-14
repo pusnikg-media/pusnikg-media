@@ -1,7 +1,7 @@
 {
  "ok": true,
  "name": "jason3",
- "sig": "b3212e4e174c",
+ "sig": "4f6f2207473a",
  "attempts": 1,
  "source": "https://www.twitch.tv/jasontheween/clip/CharmingLaconicSkirretAliens-n9j6gYZbcoF1almK",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason3/scan/scan.json",
@@ -15,7 +15,7 @@
    "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason3/qa/jason3_A_watch.jpg",
    "layout": "full",
    "tracked": true,
-   "sig": "99ba36dcda79",
+   "sig": "083d1a03d82f",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason3/jason3_A_watch.mp4"
   }
  ],
