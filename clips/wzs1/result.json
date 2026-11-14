@@ -1,10 +1,71 @@
 {
  "ok": true,
  "name": "wzs1",
- "sig": "3faa0773ef2b",
+ "sig": "e4c928b7a9cd",
  "attempts": 1,
  "source": "https://drive.google.com/file/d/1TLSsGrY77rtIapZJBore-z0NyNjNUynT/view",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/scan/scan.json",
- "clips": [],
- "phase": "scanned"
+ "clips": [
+  {
+   "id": "A_hajin",
+   "ok": true,
+   "seconds": 21.39,
+   "title": "WARZONE SEASON 1: HAJIN",
+   "file": "wzs1_A_hajin.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/qa/wzs1_A_hajin.jpg",
+   "sig": "4a8dd0d59a40",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/wzs1_A_hajin.mp4"
+  },
+  {
+   "id": "B_drop",
+   "ok": true,
+   "seconds": 23.32,
+   "title": "WARZONE: DROPPING INTO HAJIN",
+   "file": "wzs1_B_drop.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/qa/wzs1_B_drop.jpg",
+   "sig": "d680188eeab8",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/wzs1_B_drop.mp4"
+  },
+  {
+   "id": "C_close",
+   "ok": true,
+   "seconds": 23.48,
+   "title": "SEASON 1 TRAILER: CLOSE QUARTERS",
+   "file": "wzs1_C_close.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/qa/wzs1_C_close.jpg",
+   "sig": "c69856e470e4",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/wzs1_C_close.mp4"
+  },
+  {
+   "id": "D_night",
+   "ok": true,
+   "seconds": 22.03,
+   "title": "WARZONE: SEASON 1 TRAILER",
+   "file": "wzs1_D_night.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/qa/wzs1_D_night.jpg",
+   "sig": "a18521b2e6c6",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/wzs1_D_night.mp4"
+  },
+  {
+   "id": "E_map",
+   "ok": true,
+   "seconds": 23.83,
+   "title": "HAJIN: NEW WARZONE MAP",
+   "file": "wzs1_E_map.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/qa/wzs1_E_map.jpg",
+   "sig": "6d57226dee1d",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/wzs1_E_map.mp4"
+  },
+  {
+   "id": "F_free",
+   "ok": true,
+   "seconds": 23.94,
+   "title": "WARZONE SEASON 1: ALL FREE",
+   "file": "wzs1_F_free.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/qa/wzs1_F_free.jpg",
+   "sig": "88e3e5fa9faf",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/wzs1/wzs1_F_free.mp4"
+  }
+ ],
+ "phase": "rendered"
 }
