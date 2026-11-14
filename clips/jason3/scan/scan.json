@@ -1,0 +1,132 @@
+{
+ "duration": 60.01,
+ "width": 854,
+ "height": 480,
+ "fps": 30.0,
+ "mode": "full",
+ "regions": [],
+ "cuts": [],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.5,
+   "text": "Remove the links on the Rolex if you want."
+  },
+  {
+   "s": 2.5,
+   "e": 3.78,
+   "text": "Oh yeah, that's true, you could do that too."
+  },
+  {
+   "s": 4.02,
+   "e": 4.5,
+   "text": "I mean, the rich one?"
+  },
+  {
+   "s": 5.08,
+   "e": 6.44,
+   "text": "Yeah, because I might just go that, bro."
+  },
+  {
+   "s": 6.88,
+   "e": 9.66,
+   "text": "Well, if you go that, that plain face looks so tough with this."
+  },
+  {
+   "s": 10.34,
+   "e": 11.78,
+   "text": "Bro, if you go that, let me just..."
+  },
+  {
+   "s": 11.78,
+   "e": 12.32,
+   "text": "Bro, come on, bro."
+  },
+  {
+   "s": 12.66,
+   "e": 13.9,
+   "text": "You W -Mans, bro."
+  },
+  {
+   "s": 14.14,
+   "e": 15.3,
+   "text": "Bro, you got a promise."
+  },
+  {
+   "s": 15.74,
+   "e": 16.28,
+   "text": "I promise to die, bro."
+  },
+  {
+   "s": 16.42,
+   "e": 16.9,
+   "text": "I promise to die."
+  },
+  {
+   "s": 17.58,
+   "e": 18.44,
+   "text": "I swear to God."
+  },
+  {
+   "s": 18.56,
+   "e": 19.44,
+   "text": "Just have a lot of money in this one."
+  },
+  {
+   "s": 19.66,
+   "e": 20.34,
+   "text": "I will pay..."
+  },
+  {
+   "s": 20.34,
+   "e": 21.58,
+   "text": "You know I can pay for it, bro."
+  },
+  {
+   "s": 22.02,
+   "e": 25.78,
+   "text": "No, I know, but I would hate to even have to like put you in that scenario, you know what I mean?"
+  },
+  {
+   "s": 26.18,
+   "e": 26.44,
+   "text": "No, no, no."
+  },
+  {
+   "s": 26.5,
+   "e": 26.98,
+   "text": "How's it gonna lose it?"
+  },
+  {
+   "s": 52.8,
+   "e": 54.98,
+   "text": "It's gonna be on me the whole night"
+  },
+  {
+   "s": 56.98,
+   "e": 59.6,
+   "text": "Holy shit, dude."
+  }
+ ],
+ "candidates": [
+  {
+   "a": 0,
+   "b": 15.6,
+   "len": 15.6,
+   "score": 0.605,
+   "cuts": 0,
+   "text": "Remove the links on the Rolex if you want. Oh yeah, that's true, you could do that too. I mean, the rich one? Yeah, because I might just go that, bro. Well, if you go that, that plain face looks so tough with this. Bro, if you go that, let me just... Bro, come on, bro. You W -Mans, bro. Bro, you got a promise.",
+   "sheet": "cand_00.jpg"
+  },
+  {
+   "a": 15.59,
+   "b": 27.28,
+   "len": 11.7,
+   "score": 0.539,
+   "cuts": 0,
+   "text": "I promise to die, bro. I promise to die. I swear to God. Just have a lot of money in this one. I will pay... You know I can pay for it, bro. No, I know, but I would hate to even have to like put you in that scenario, you know what I mean? No, no, no. How's it gonna lose it?",
+   "sheet": "cand_01.jpg"
+  }
+ ],
+ "source": "https://www.twitch.tv/jasontheween/clip/CharmingLaconicSkirretAliens-n9j6gYZbcoF1almK"
+}

@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "name": "jason3",
+ "sig": "6138dd94c034",
+ "attempts": 1,
+ "source": "https://www.twitch.tv/jasontheween/clip/CharmingLaconicSkirretAliens-n9j6gYZbcoF1almK",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jason3/scan/scan.json",
+ "clips": [],
+ "phase": "scanned"
+}
