@@ -3,5 +3,8 @@
  "source": "https://www.twitch.tv/jasontheween/clip/CharmingLaconicSkirretAliens-n9j6gYZbcoF1almK",
  "layout": "full",
  "track": true,
- "min_len": 10
+ "min_len": 10,
+ "clips": [
+  {"id": "A_watch", "a": 0.0, "b": 60.0, "title": "JASONTHEWEEN: LACY BREAKS HIS EXPENSIVE WATCH"}
+ ]
 }
