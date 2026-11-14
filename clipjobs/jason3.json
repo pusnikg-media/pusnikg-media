@@ -5,6 +5,13 @@
  "track": true,
  "min_len": 10,
  "clips": [
-  {"id": "A_watch", "a": 0.0, "b": 60.0, "title": "JASONTHEWEEN: LACY BREAKS HIS EXPENSIVE WATCH"}
+  {
+   "id": "A_watch",
+   "a": 0.0,
+   "b": 60.0,
+   "title": "LACY BREAKS HIS EXPENSIVE WATCH",
+   "pill": "JasonTheWeen",
+   "rev": 1
+  }
  ]
 }
