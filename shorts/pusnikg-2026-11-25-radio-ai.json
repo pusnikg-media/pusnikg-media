@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 4.72s  ʌnpˈɑːpjʊlɚɹ əpˈɪniən, ðə ɹˈeɪdɪˌoʊ ɪz hˈæf ʌv ˈɛvɹi dʒˌiːtˌiːˈeɪ ɡˈeɪm.\n1: 4.92s  nˈoʊbɑːdi ɹᵻmˈɛmbɚz ɐ mˈɪʃən æz klˈɪɹli æz ðə sˈɔŋ ðæt plˈeɪd ɔnðə wˈeɪ ðˈɛɹ.\n2: 3.45s  sˌoʊ plˈiːz dˈoʊnt mjˈuːt ɪt ænd pˌʊt jʊɹ ˈoʊn plˈeɪlɪst ˈɔn.\n3: 5.15s  fˈaɪnd wˈʌn stˈeɪʃən, stˈɪk wɪð ɪt, ænd ɪt bɪkˌʌmz ðə sˈaʊnd ʌv jʊɹ hˈoʊl plˈeɪθɹuː.\n4: 2.33s  ɹˈeɪdɪˌoʊ ˈɔn, ɔːɹ jʊɹ ˈoʊn mjˈuːzɪk?\n5: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 6 lines 22.95s",
+  "the@2.53 song@2.67 that@2.90 played@3.15 on@3.37 the@3.60 way@3.71 there.@3.83\nSo@0.20 please@0.48 don't@0.72 mute@1.05 it@1.19 and@1.37 put@1.61 your@1.73 own@1.89 playlist@2.08 on.@2.34\nFind@0.25 one@0.70 station,@0.86 stick@1.55 with@1.75 it,@2.02 and@2.48 it@2.54 becomes@2.62 the@2.89 sound@3.19 of@3.54 your@3.72 whole@3.82 playthrough.@3.98\nRadio@0.23 on,@0.69 or@1.16 your@1.22 own@1.32 music?@1.44\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 6 lines\n\nTOTAL 24.65 shots 18 captions 19\nRENDER_OK /home/runner/work_pusnikg-2026-11-25-radio-ai/pusnikg-2026-11-25-radio-ai.mp4 24.65s",
+  "QA_OK 24.65s -13.5 LUFS frames: /home/runner/work_pusnikg-2026-11-25-radio-ai/pusnikg-2026-11-25-radio-ai_qa_0.png /home/runner/work_pusnikg-2026-11-25-radio-ai/pusnikg-2026-11-25-radio-ai_qa_mid.png /home/runner/work_pusnikg-2026-11-25-radio-ai/pusnikg-2026-11-25-radio-ai_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 24.65,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus07.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-25-radio-ai.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-25-radio-ai_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-25-radio-ai_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-25-radio-ai_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-25-radio-ai",
+ "attempts": 1
+}
