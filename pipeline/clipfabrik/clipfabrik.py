@@ -31,6 +31,11 @@ v3 (IRL, 14.11.): optional job fields
   Sources longer than 15 min are scanned in "hotspot" mode: per-second loudness against a rolling 3-min baseline
   (shouts, laughter, crowd) + YouTube "most replayed" heatmap when yt-dlp provides one -> only those regions are
   transcribed -> candidates carry "hype" (dB above baseline). scan.json gets "mode": "hotspots" + "regions".
+v4 (15.11.): retention edits, per clip or per job
+  hook      clip only: [s, e] (source seconds, 0.8-5 s) = that moment is shown FIRST as a teaser, then a white flash and the
+            clip from "a". "auto" = the loudest moment after the first 5 s, snapped to whole words (none if nothing stands out).
+  zoom      true/false: quick 8 % zoom punches on the loudest moments (laughs, shouts), at most one per 4 s.
+            Default: on for layout "full", off for "framed".
 Result: clips/<name>/result.json {"ok", "sig", "attempts", "clips": [{"id", "ok", "url", "seconds", "title"}], "error"}.
 Layout 1080x1920: blurred fill, sharp centre crop 1080x1200 at y=400, title (+ pill) on top, karaoke captions (libass)."""
 import glob, hashlib, json, math, os, re, subprocess, sys, urllib.parse
@@ -401,6 +406,12 @@ def check_clips(job, dur):
         elif b - a < lo: errs.append(f"{cid}: {b - a:.1f} s is shorter than min_len {lo:g} s")
         elif b - a > 180: errs.append(f"{cid}: longer than 180 s")
         if not str(c.get("title", "")).strip(): errs.append(f"{cid}: title missing")
+        hk = c.get("hook")
+        if hk not in (None, False, "auto"):
+            try:
+                hs, he = float(hk[0]), float(hk[1])
+                if not (0 <= hs < he <= dur + 0.05 and 0.8 <= he - hs <= 5): errs.append(f"{cid}: hook must be 0.8-5 s inside the source")
+            except Exception: errs.append(f'{cid}: hook must be [start, end] or "auto"')
     return errs
 
 
@@ -461,13 +472,60 @@ def x_expr(keys):
     return e
 
 
+def energy(src, a, dur, step=0.1):
+    """RMS in dB every `step` s of [a, a+dur] (smoothed over 0.3 s); empty array without audio."""
+    import numpy as np
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{a:.3f}", "-t", f"{dur:.3f}", "-i", src, "-vn", "-ac", "1", "-ar", "8000",
+                        "-f", "s16le", "-"], capture_output=True, timeout=600)
+    n = int(8000 * step); k = len(r.stdout) // 2 // n
+    if k < 10: return np.zeros(0, dtype=np.float32)
+    x = np.frombuffer(r.stdout[:k * n * 2], np.int16).astype(np.float32).reshape(k, n) / 32768
+    db = 20 * np.log10(np.sqrt((x ** 2).mean(1)) + 1e-5)
+    return np.convolve(db, np.ones(3) / 3, mode="same").astype(np.float32)
+
+
+def punch_times(db, step=0.1, every=4.0, lead=1.2, tail=1.0, min_db=6.0):
+    """Moments (s) that stand out >= min_db above the clip's median loudness: best first, >= 3 s apart, max one per `every` s."""
+    import numpy as np
+    if not len(db): return []
+    ex = db - float(np.median(db)); dur = len(db) * step; out = []
+    for i in np.argsort(-ex):
+        t = float(i) * step
+        if ex[i] < min_db or len(out) >= max(1, int(dur / every)): break
+        if t < lead or t > dur - tail or any(abs(t - o) < 3.0 for o in out): continue
+        out.append(round(t, 2))
+    return sorted(out)
+
+
+def zoom_expr(times, amount=0.08):
+    """ffmpeg expression in t: 1 + quick punch-ins (0.12 s in, hold, 0.35 s out) at the given moments."""
+    return "1" + "".join(f"+{amount}*clip(min((t-{max(t0 - 0.1, 0):.2f})/0.12,({t0 + 0.85:.2f}-t)/0.35),0,1)" for t0 in times)
+
+
+def auto_hook(db, words, a, b, step=0.1, min_db=5.0):
+    """Loudest moment after the first 5 s of the clip, snapped to whole words -> [s, e] in source seconds, or None."""
+    import numpy as np
+    if len(db) < int(8 / step): return None
+    ex = db - float(np.median(db)); lo = int(5 / step); hi = len(db) - int(1 / step)
+    if hi <= lo: return None
+    i = lo + int(np.argmax(ex[lo:hi]))
+    if ex[i] < min_db: return None
+    pk = a + i * step
+    ws = [w for w in words if w["e"] > pk - 0.9 and w["s"] < pk + 1.3 and w["s"] >= a and w["e"] <= b]
+    s, e = (ws[0]["s"] - 0.05, ws[-1]["e"] + 0.12) if ws else (pk - 0.8, pk + 1.2)
+    if not 1.2 <= e - s <= 3.4: s, e = pk - 0.8, pk + 1.2
+    s, e = max(s, a), min(e, b)
+    return [round(s, 2), round(e, 2)] if e - s >= 1.0 else None
+
+
 def render_clip(job, c, src, p, words, out, tmp):
-    a, b = float(c["a"]), min(float(c["b"]), p["dur"]); dur = b - a; cid = c["id"]
+    a, b = float(c["a"]), min(float(c["b"]), p["dur"]); cid = c["id"]
     title = str(c["title"]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
     layout = c.get("layout", job.get("layout", "framed")); track = c.get("track", job.get("track", False))
     full = layout == "full"
-    ov = os.path.join(tmp, cid + ".png"); sub = os.path.join(tmp, cid + ".ass")
-    caps = c.get("captions", True) and bool(words); n = 0
+    zoom = bool(c.get("zoom", job.get("zoom", full))) and p["audio"]
+    ov = os.path.join(tmp, cid + ".png")
+    caps = c.get("captions", True) and bool(words)
     if full:  # whole frame 9:16 out of the source, captions in the lower third
         ch = p["h"] // 2 * 2; cw = min(p["w"], int(ch * W / H / 2) * 2); ch = min(ch, int(cw * H / W / 2) * 2)
         fg_y, fg_h = 0, H; mv = 520
@@ -478,40 +536,67 @@ def render_clip(job, c, src, p, words, out, tmp):
         mv = H - (fg_y + fg_h) + 130
     overlay(title, pill, ov, logo=job.get("_logo_img"), logo_w=int(c.get("logo_w", job.get("logo_w", 380))),
             logo_pos=c.get("logo_pos", job.get("logo_pos", "video_bottom")), fg=(fg_y, fg_h), shade=full)
-    keys = face_track(src, a, dur, p, cw) if track else None
-    xpos = f":x='{x_expr(keys)}':y={(p['h'] - ch) // 2}" if keys else ""
-    if caps: n = ass(words, a, b, sub, job.get("fix") or {}, margin_v=mv)
     fps = min(60, max(24, round(p["fps"])))
-    dst = os.path.join(out, f"{job['name']}_{cid}.mp4")
-    if full:
-        fl = f"[0:v]crop={cw}:{ch}{xpos},scale={W}:{H}:flags=lanczos,setsar=1[v1];[v1][1:v]overlay=0:0[v2];[v2]"
-    else:
-        fl = (f"[0:v]split=2[b0][f0];"
-              f"[b0]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,scale={W}:{H},eq=brightness=-0.22:saturation=1.1[bg];"
-              f"[f0]crop={cw}:{ch}{xpos},scale={W}:{fg_h}:flags=lanczos[fg];"
-              f"[bg][fg]overlay=0:{fg_y}[v1];[v1][1:v]overlay=0:0[v2];[v2]")
-    fl += (f"subtitles={sub}:fontsdir={FONTS}," if caps and n else "") + f"fps={fps},format=yuv420p[v]"
-    amap = ["-an"]
-    if p["audio"]:
-        fl += f";[0:a]afade=t=in:d=0.12,afade=t=out:st={dur - 0.35:.2f}:d=0.35[a]"
-        amap = ["-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
-    run(["ffmpeg", "-y", "-v", "error", "-ss", f"{a:.3f}", "-t", f"{dur:.3f}", "-i", src, "-i", ov, "-filter_complex", fl,
-         "-map", "[v]", *amap, "-t", f"{dur:.3f}", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
-         "-maxrate", "9M", "-bufsize", "18M", "-movflags", "+faststart", dst])
+    db = energy(src, a, b - a) if p["audio"] and (zoom or c.get("hook") == "auto") else []
+    hook = c.get("hook")
+    if hook == "auto": hook = auto_hook(db, words, a, b)
+    if hook and not p["audio"]: hook = None
+    parts = ([("hook", float(hook[0]), float(hook[1]))] if hook else []) + [("main", a, b)]
+    stats = {"groups": 0, "tracked": False, "punches": 0}; files = []
+    for tag, pa, pb in parts:
+        dur = pb - pa; sub = os.path.join(tmp, f"{cid}_{tag}.ass"); n = 0
+        keys = face_track(src, pa, dur, p, cw) if track else None
+        xpos = f":x='{x_expr(keys)}':y={(p['h'] - ch) // 2}" if keys else ""
+        if caps: n = ass(words, pa, pb, sub, job.get("fix") or {}, margin_v=mv)
+        pts = punch_times(db) if zoom and tag == "main" else []
+        zw, zh = (W, H) if full else (W, fg_h)
+        zf = (f",scale=w='2*trunc({zw}*({zoom_expr(pts)})/2)':h='2*trunc({zh}*({zoom_expr(pts)})/2)':eval=frame:flags=bilinear,"
+              f"crop={zw}:{zh}:x='(iw-ow)/2':y='(ih-oh)*0.42'") if pts else ""
+        if full:
+            fl = f"[0:v]crop={cw}:{ch}{xpos},scale={W}:{H}:flags=lanczos{zf},setsar=1[v1];[v1][1:v]overlay=0:0[v2];[v2]"
+        else:
+            fl = (f"[0:v]split=2[b0][f0];"
+                  f"[b0]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,scale={W}:{H},eq=brightness=-0.22:saturation=1.1[bg];"
+                  f"[f0]crop={cw}:{ch}{xpos},scale={W}:{fg_h}:flags=lanczos{zf}[fg];"
+                  f"[bg][fg]overlay=0:{fg_y}[v1];[v1][1:v]overlay=0:0[v2];[v2]")
+        fl += (f"subtitles={sub}:fontsdir={FONTS}," if caps and n else "") + f"fps={fps},format=yuv420p"
+        if hook and tag == "main": fl += ",fade=t=in:st=0:d=0.14:color=white"  # flash cut from the teaser into the clip
+        fl += "[v]"
+        amap = ["-an"]
+        if p["audio"]:
+            fi, fo = (0.04, 0.08) if tag == "hook" else ((0.08 if hook else 0.12), 0.35)
+            fl += f";[0:a]afade=t=in:d={fi},afade=t=out:st={dur - fo:.2f}:d={fo}[a]"
+            amap = ["-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
+        pf = os.path.join(tmp, f"{cid}_{tag}.mp4") if len(parts) > 1 else os.path.join(out, f"{job['name']}_{cid}.mp4")
+        q = ["-preset", "veryfast", "-crf", "14"] if len(parts) > 1 else ["-preset", "medium", "-crf", "19", "-maxrate", "9M", "-bufsize", "18M"]
+        run(["ffmpeg", "-y", "-v", "error", "-ss", f"{pa:.3f}", "-t", f"{dur:.3f}", "-i", src, "-i", ov, "-filter_complex", fl,
+             "-map", "[v]", *amap, "-t", f"{dur:.3f}", "-c:v", "libx264", *q, "-movflags", "+faststart", pf])
+        files.append(pf)
+        if tag == "main": stats.update(groups=n, tracked=bool(keys), punches=len(pts))
+    dst = os.path.join(out, f"{job['name']}_{cid}.mp4"); total = sum(pb - pa for _, pa, pb in parts)
+    if len(files) > 1:  # teaser + clip -> one file (re-encode once: exact A/V sync at the join)
+        ins = sum([["-i", f] for f in files], [])
+        cf = "".join(f"[{i}:v][{i}:a]" for i in range(len(files))) + f"concat=n={len(files)}:v=1:a=1[v][a]"
+        run(["ffmpeg", "-y", "-v", "error", *ins, "-filter_complex", cf, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium",
+             "-crf", "19", "-maxrate", "9M", "-bufsize", "18M", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", dst])
+        for f in files: os.remove(f)
     q = probe(dst)
-    if (q["w"], q["h"]) != (W, H) or abs(q["dur"] - dur) > 0.6: raise Fail(f"{cid}: output check failed {q}")
+    if (q["w"], q["h"]) != (W, H) or abs(q["dur"] - total) > 0.6: raise Fail(f"{cid}: output check failed {q}")
     png = os.path.join(out, "qa", f"{job['name']}_{cid}.jpg"); os.makedirs(os.path.dirname(png), exist_ok=True)
-    run(["ffmpeg", "-y", "-v", "error", "-ss", f"{dur * 0.4:.2f}", "-i", dst, "-frames:v", "1", "-vf", "scale=540:-2", "-q:v", "4", png])
-    print(f"CLIP_OK {dst} {dur:.1f}s caption groups {n} layout {layout} tracked {bool(keys)}")
-    return {"id": cid, "ok": True, "seconds": round(q["dur"], 2), "title": title, "file": os.path.basename(dst), "qa": "qa/" + os.path.basename(png),
-            "layout": layout, "tracked": bool(keys)}
+    run(["ffmpeg", "-y", "-v", "error", "-ss", f"{total * 0.4:.2f}", "-i", dst, "-frames:v", "1", "-vf", "scale=540:-2", "-q:v", "4", png])
+    print(f"CLIP_OK {dst} {total:.1f}s caption groups {stats['groups']} layout {layout} tracked {stats['tracked']} "
+          f"punches {stats['punches']} hook {hook}")
+    r = {"id": cid, "ok": True, "seconds": round(q["dur"], 2), "title": title, "file": os.path.basename(dst), "qa": "qa/" + os.path.basename(png),
+         "layout": layout, "tracked": stats["tracked"], "punches": stats["punches"]}
+    if hook: r["hook"] = [round(float(hook[0]), 2), round(float(hook[1]), 2)]
+    return r
 
 
 def sig(*parts):
     return hashlib.sha1(json.dumps(parts, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:12]
 
 
-V3_KEYS = ("layout", "track", "max_height", "hot_k")
+V3_KEYS = ("layout", "track", "max_height", "hot_k", "zoom")
 
 
 def v3(job):
@@ -600,16 +685,20 @@ def run_job(spec_path, root, src=None):
         for c in job.get("clips", []):
             csig = sig(job.get("source"), c.get("pill", job.get("pill")), job.get("fix"), c,
                        *([job.get("logo"), job.get("logo_w"), job.get("logo_pos")] if job.get("logo") else []),
-                       *v3({k: job[k] for k in ("layout", "track") if k in job}))
+                       *v3({k: job[k] for k in ("layout", "track", "zoom") if k in job}))
             d = done.get(c["id"])
             if d and d.get("sig") == csig and os.path.exists(os.path.join(out, d["file"])):
                 res["clips"].append(d); continue
             try:
                 if sect:  # long stream: fetch only this clip (+3 s margin) and render it on its own timeline
-                    a0 = max(0.0, float(c["a"]) - 3); seg = os.path.join(tmp, f"sec_{c['id']}.mp4")
-                    ps = fetch_section(url, a0, min(float(c["b"]) + 3, p["dur"]), h, seg)
+                    hk = c.get("hook") if isinstance(c.get("hook"), (list, tuple)) else None
+                    lo_ = min(float(c["a"]), float(hk[0])) if hk else float(c["a"]); hi_ = max(float(c["b"]), float(hk[1])) if hk else float(c["b"])
+                    if hi_ - lo_ > 300: raise Fail(f"{c['id']}: hook is more than 5 min away from the clip (long-stream mode)")
+                    a0 = max(0.0, lo_ - 3); seg = os.path.join(tmp, f"sec_{c['id']}.mp4")
+                    ps = fetch_section(url, a0, min(hi_ + 3, p["dur"]), h, seg)
                     c2 = dict(c, a=float(c["a"]) - a0, b=float(c["b"]) - a0)
-                    w2 = [dict(w, s=round(w["s"] - a0, 3), e=round(w["e"] - a0, 3)) for w in words if a0 <= w["s"] and w["e"] <= float(c["b"]) + 3]
+                    if hk: c2["hook"] = [float(hk[0]) - a0, float(hk[1]) - a0]
+                    w2 = [dict(w, s=round(w["s"] - a0, 3), e=round(w["e"] - a0, 3)) for w in words if a0 <= w["s"] and w["e"] <= hi_ + 3]
                     r = render_clip(job, c2, seg, ps, w2, out, tmp); os.remove(seg)
                 else:
                     r = render_clip(job, c, src, p, words, out, tmp)

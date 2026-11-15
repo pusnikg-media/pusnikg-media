@@ -1,0 +1,49 @@
+# Livewatch v0 (prototype): "almost live" clipping. While a channel from plan/livewatch.json is live, this runner records it,
+# spots loud stand-out moments and publishes a finished 9:16 clip to clips/live-<channel>/ a few minutes later (+ inbox.json).
+# Switched off by default: plan/livewatch.json {"enabled": false}. Details: pipeline/clipfabrik/livewatch.py
+name: livewatch
+on:
+  schedule:
+    - cron: "11,31,51 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: livewatch
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - name: Enabled?
+        id: c
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/plan/livewatch.json" -o lw.json || echo '{}' > lw.json
+          echo "go=$(python3 -c 'import json;c=json.load(open("lw.json"));print("run" if c.get("enabled") and c.get("channels") else "skip")')" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        if: steps.c.outputs.go == 'run'
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        if: steps.c.outputs.go == 'run'
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        if: steps.c.outputs.go == 'run'
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: clipfabrik-whisper-small-v3
+      - name: Install tools
+        if: steps.c.outputs.go == 'run'
+        timeout-minutes: 20
+        run: |
+          bash pipeline/install_tools.sh || exit 1
+          pip install -q numpy scipy pillow faster-whisper yt-dlp curl_cffi "opencv-python-headless<5"
+      - name: Watch
+        if: steps.c.outputs.go == 'run'
+        run: |
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          python3 pipeline/clipfabrik/livewatch.py watch .

@@ -39,3 +39,14 @@ Kampagnen-Footage → fertige 9:16-Clips (nur Originalton), ohne dass ein Claude
 - **v3 IRL (14.11.):** `source` darf auch eine VOD-Seite sein (Twitch, Kick, YouTube, TikTok, X, Rumble) → yt-dlp (Scan in 480p, Render in `max_height`, Standard 1080p, ab 3 h 720p). YouTube blockt Cloud-Server oft → dann Drive-/Direktlink nehmen.
   Quellen > 15 Min: Hotspot-Scan – Lautstärke-Spitzen gegen den gleitenden 3-Min-Grundpegel (Schreien, Lachen, Menge) + YouTube-„Most replayed“, nur diese Stellen werden transkribiert. scan.json: `mode: hotspots`, `regions`, Kandidaten mit `hype` (dB über Grundpegel) und `peak_in`. `hot_k` = Anzahl Stellen (Standard 14).
   `layout: "full"` = Vollbild-9:16 (ohne Unschärferand, Titel oben mit dunklem Verlauf, Untertitel unteres Drittel); `track: true` = Ausschnitt folgt dem größten Gesicht (OpenCV, ruhige Kamera mit Totzone; ohne Gesicht Mitte). Beides auch pro Clip. IRL-Standard: `"layout": "full", "track": true`.
+
+## Clipfabrik v4 (15.11.) – Hook zuerst + Auto-Zoom
+- `"hook": [s, e]` pro Clip (Quell-Sekunden, 0,8–5 s): dieser Moment läuft als Teaser VOR dem Clip, dann Weiß-Blitz und der Clip ab `a`. `"hook": "auto"` nimmt die lauteste Stelle nach den ersten 5 s (an Wortgrenzen; nichts, wenn nichts heraussticht). Besser: den stärksten Satz aus scan.json von Hand als `[s, e]` setzen.
+- `"zoom": true/false` (Auftrag oder Clip): kurze 8-%-Zoom-Stöße auf die lautesten Momente (höchstens einer pro 4 s). Standard: an bei `layout: "full"`, aus bei `framed`.
+- result.json pro Clip: `punches` (Anzahl Zoom-Stöße), `hook` (benutzter Teaser).
+
+## Livewatch v0 (15.11., Prototyp) – `.github/workflows/livewatch.yml`, `pipeline/clipfabrik/livewatch.py`
+„Fast live“: Läuft ein Kanal aus `plan/livewatch.json` gerade, nimmt der Runner den Stream in 60-s-Stücken auf, misst die Lautstärke gegen die letzten 10 Min und rendert bei einem klaren Ausreißer (`min_hype` dB, Standard 9) sofort einen 9:16-Clip → `clips/live-<kanal>/` + `inbox.json` (`url`, `qa`, `auto_title`, `said`, `hype`, `posted`). Clip liegt ca. 3–6 Min nach dem Moment im Repo.
+- Einschalten: `plan/livewatch.json` → `"enabled": true`, `"channels": [{"name","url" (Kick/Twitch-Kanalseite),"min_hype":9,"per_hour":3,"max_clips":8,"height":720,"layout":"full","track":true,"fix":{}}]`. Die Action startet alle 20 Min, läuft bis 5,5 h am Stück und hört auf, wenn der Stream endet.
+- Gepostet wird hier NICHT (keine Plattform-Schlüssel auf dem Runner): ein Agent liest inbox.json, sieht das QA-Bild an, schreibt Titel/Caption und postet über vidIQ.
+- Getestet: Erkennung + Schnitt + Render per `livewatch.py simulate` (künstlicher Stream). Ungetestet: echte Live-Aufnahme (Kick/Twitch) auf dem Runner. Jeder Clip vergrößert das Repo (~10 MB) → `max_clips` klein halten.
