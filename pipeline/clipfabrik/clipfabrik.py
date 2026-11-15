@@ -516,7 +516,7 @@ def face_track(src, a, dur, p, cw, step=0.5):
 def facecam_rect(src, a, dur, p, spec="auto"):
     """Facecam area in source px (3:2), or None. spec = [x, y, w, h] fractions, or "auto": the small face that stays put."""
     def fit(cx, cy, w):
-        w = min(max(w, 0.16 * p["w"]), p["w"], p["h"] * 1.5); h = w / 1.5
+        w = min(max(w, 0.22 * p["w"]), p["w"], p["h"] * 1.5); h = w / 1.5
         x = min(max(cx - w / 2, 0), p["w"] - w); y = min(max(cy - h / 2, 0), p["h"] - h)
         return [int(x) // 2 * 2, int(y) // 2 * 2, int(w) // 2 * 2, int(h) // 2 * 2]
     if isinstance(spec, (list, tuple)) and len(spec) == 4:
@@ -527,20 +527,24 @@ def facecam_rect(src, a, dur, p, spec="auto"):
     except ImportError: return None
     sw = 960; sh = max(2, int(round(p["h"] * sw / p["w"] / 2)) * 2); k = p["w"] / sw
     r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{a:.3f}", "-t", f"{dur:.3f}", "-i", src, "-an",
-                        "-vf", f"fps={12 / max(dur, 1):.4f},scale={sw}:{sh},format=gray", "-f", "rawvideo", "-"], capture_output=True, timeout=600)
+                        "-vf", f"fps={24 / max(dur, 1):.4f},scale={sw}:{sh},format=gray", "-f", "rawvideo", "-"], capture_output=True, timeout=600)
     nf = len(r.stdout) // (sw * sh)
     if not nf: return None
     cc = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    pc = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_profileface.xml")  # streamers look at their second screen a lot
     if cc.empty(): return None
     det = []
     for g in np.frombuffer(r.stdout[:nf * sw * sh], np.uint8).reshape(nf, sh, sw):
         det += [(x + w / 2, y + h / 2, w) for (x, y, w, h) in cc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
+        if not pc.empty():
+            det += [(x + w / 2, y + h / 2, w) for (x, y, w, h) in pc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
+            det += [(sw - (x + w / 2), y + h / 2, w) for (x, y, w, h) in pc.detectMultiScale(cv2.flip(g, 1), 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
     if len(det) < 3: return None
     d = np.array(det); med = np.median(d, axis=0)
     near = d[(abs(d[:, 0] - med[0]) < 0.08 * sw) & (abs(d[:, 1] - med[1]) < 0.12 * sh)]  # a facecam does not move
-    if len(near) < max(3, 0.4 * nf): return None
+    if len(near) < max(3, 0.2 * nf): return None
     cx, cy, fw = np.median(near, axis=0)
-    return fit(cx * k, (cy + 0.25 * fw) * k, 3.2 * fw * k)
+    return fit(cx * k, (cy + 0.3 * fw) * k, 4.4 * fw * k)
 
 
 def x_expr(keys):

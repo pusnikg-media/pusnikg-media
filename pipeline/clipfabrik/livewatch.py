@@ -168,7 +168,11 @@ def loop(ch, root, rec, alive, push, t_end, chat=None):
             cr, cp = chat.peak(len(db)) if chat else (0.0, None)
             print(f"min {done:3d} hype {hype:4.1f} peak {peak} chat x{cr} at {cp}")
             if chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
-                if cp is not None and cr >= min_chat: peak, hype = max(cp, 0), max(hype, min_hype)
+                if cp is not None and cr >= min_chat:
+                    # chat reacts late (stream delay + typing, often 5-20 s): the moment is the loudest second in the 25 s before the burst
+                    w0 = max(cp - 21, 0); seg_ = db[w0:cp + 5]
+                    lag = (cp + 4) - (w0 + max(range(len(seg_)), key=seg_.__getitem__)) if seg_ else 0
+                    peak, hype = (max(cp + 4 - lag, 0) if seg_ else max(cp, 0)), max(hype, min_hype); print(f"   chat burst x{cr}: moment {lag:.0f} s before the chat peak")
                 elif not (cp is not None and cr >= 1.4 and peak is not None and abs(cp - peak) < 30): peak = None
             if peak is not None and hype >= min_hype and len(db) - peak >= 12 and peak - last > 90 and len(recent) < per_hour and len(clips) < max_clips:
                 stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
