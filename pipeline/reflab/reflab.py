@@ -67,12 +67,20 @@ def fetch(url, tmp):
 def reddit(subs, problems, n=12):
     """Top posts of the week per subreddit (public listing, no login): title, score, comments, link, start of the text."""
     import urllib.request
-    out = {}
+    out = {}; ua = "pusnikg-reflab/0.1 (weekly research, read-only)"; tok = None
+    cid, sec = os.environ.get("REDDIT_ID", ""), os.environ.get("REDDIT_SECRET", "")
+    if cid and sec:  # official API (free "script" app): the anonymous listing is blocked on cloud servers (403, 15.11.2026)
+        try:
+            import base64
+            rq = urllib.request.Request("https://www.reddit.com/api/v1/access_token", data=b"grant_type=client_credentials",
+                                        headers={"User-Agent": ua, "Authorization": "Basic " + base64.b64encode(f"{cid}:{sec}".encode()).decode()})
+            tok = json.loads(urllib.request.urlopen(rq, timeout=30).read())["access_token"]
+        except Exception as e: problems.append(f"reddit login failed ({str(e)[-100:]})")
     for sub in subs:
-        got = None
-        for host in ("https://www.reddit.com", "https://old.reddit.com"):
+        got = None; err = ""
+        for host in (("https://oauth.reddit.com",) if tok else ("https://www.reddit.com", "https://old.reddit.com")):
             try:
-                rq = urllib.request.Request(f"{host}/r/{sub}/top/.json?t=week&limit={n}", headers={"User-Agent": "pusnikg-reflab/0.1 (weekly research, read-only)"})
+                rq = urllib.request.Request(f"{host}/r/{sub}/top/.json?t=week&limit={n}", headers=dict({"User-Agent": ua}, **({"Authorization": "Bearer " + tok} if tok else {})))
                 d = json.loads(urllib.request.urlopen(rq, timeout=30).read().decode("utf-8", "replace"))
                 got = [{"title": x["data"].get("title", "")[:200], "score": x["data"].get("score"), "comments": x["data"].get("num_comments"),
                         "url": "https://www.reddit.com" + x["data"].get("permalink", ""), "link": x["data"].get("url_overridden_by_dest"),

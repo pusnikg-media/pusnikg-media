@@ -36,6 +36,9 @@ jobs:
           bash pipeline/install_tools.sh || exit 1
           pip install -q numpy scipy pillow faster-whisper yt-dlp curl_cffi
       - name: Analyse and publish
+        env:
+          REDDIT_ID: ${{ secrets.REDDIT_ID }}
+          REDDIT_SECRET: ${{ secrets.REDDIT_SECRET }}
         run: |
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
           python3 pipeline/reflab/reflab.py run . || true
