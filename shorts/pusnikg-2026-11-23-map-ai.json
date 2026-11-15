@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "nd nˈoʊbɑːdi wˈɑːtʃɪŋ.\n3: 4.72s  ænd ðə swˈɑːmps ʌv ɡɹˈæsɹɪvɚz lˈʊk lˈaɪk ðə plˈeɪs wˌɛɹ θˈɪŋz ɡˌoʊ ɹˈɔŋ fˈæst.\n4: 2.50s  vˈaɪs sˈɪɾi, ðə kˈiːz, ɔːɹ ðə swˈɑːmps?\n5: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 6 lines 23.15s\n\u001b[0;93m2026-11-15 14:16:10.030561928 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at \"/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171\" because filename \"5620e0c7-8062-4dce-aeb7-520c7ef76171\" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+\u001b[m",
+  "aches,@2.54 and@2.97 traffic.@3.03\nBut@0.24 I'd@0.54 head@0.70 straight@0.82 for@1.14 the@1.42 Leonida@1.52 Keys,@1.86 small@2.62 islands,@2.86 boats,@3.58 and@4.02 nobody@4.06 watching.@4.28\nAnd@0.23 the@0.51 swamps@0.61 of@0.97 Grassrivers@1.09 look@1.65 like@1.95 the@2.15 place@2.28 where@2.48 things@2.78 go@3.02 wrong@3.30 fast.@3.52\nVice@0.23 City,@0.54 the@0.92 Keys,@0.96 or@1.30 the@1.38 swamps?@1.48\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 6 lines\n\nTOTAL 24.85 shots 16 captions 19\nRENDER_OK /home/runner/work_pusnikg-2026-11-23-map-ai/pusnikg-2026-11-23-map-ai.mp4 24.85s",
+  "QA_OK 24.85s -14.2 LUFS frames: /home/runner/work_pusnikg-2026-11-23-map-ai/pusnikg-2026-11-23-map-ai_qa_0.png /home/runner/work_pusnikg-2026-11-23-map-ai/pusnikg-2026-11-23-map-ai_qa_mid.png /home/runner/work_pusnikg-2026-11-23-map-ai/pusnikg-2026-11-23-map-ai_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 24.85,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus04.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-23-map-ai.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-23-map-ai_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-23-map-ai_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-23-map-ai_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-23-map-ai",
+ "attempts": 1
+}
