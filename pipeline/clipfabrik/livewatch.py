@@ -151,9 +151,23 @@ def publish(root, name, entry, push):
     print("WARN push failed for", entry["id"])
 
 
+def save_calib(root, ch, data, push):
+    """Calibration run ("log_only": true): no clips, only what was measured -> clips/live-<name>/calib.json."""
+    name = "live-" + re.sub(r"[^a-z0-9-]", "", ch["name"].lower()); d = os.path.join(root, "clips", name); os.makedirs(d, exist_ok=True)
+    json.dump(data, open(os.path.join(d, "calib.json"), "w"), indent=1)
+    if not push: return
+    g = lambda *a: subprocess.run(["git", "-C", root, *a], capture_output=True, text=True)
+    g("add", "-A", f"clips/{name}"); g("commit", "-q", "-m", f"livewatch: calibration {name} ({len(data['events'])} events)")
+    for i in range(3):
+        if g("pull", "-q", "--rebase", "origin", "main").returncode == 0 and g("push", "-q", "origin", "HEAD:main").returncode == 0: return
+        time.sleep(6)
+
+
 def loop(ch, root, rec, alive, push, t_end, chat=None):
     """Shared by watch and simulate: rec = folder that fills with %05d.ts pieces, alive() = recorder still running."""
     db, segs, done, clips, last = [], {}, 0, [], -999.0; t0 = 0.0
+    dry = bool(ch.get("log_only")); cal = {"channel": ch["name"], "started": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+                                           "minutes": [], "events": []}
     min_chat = float(ch.get("min_chat", 2.5))
     min_hype = float(ch.get("min_hype", 9)); per_hour = int(ch.get("per_hour", 3)); max_clips = int(ch.get("max_clips", 8))
     while time.time() < t_end:
@@ -165,16 +179,21 @@ def loop(ch, root, rec, alive, push, t_end, chat=None):
             done += 1
             hype, peak = find_peak(db)
             recent = [c for c in clips if c > len(db) - 3600]
-            cr, cp = chat.peak(len(db)) if chat else (0.0, None)
+            cr, cp = chat.peak(len(db)) if chat else (0.0, None); lag = None; kind = "loud"
+            cal["minutes"].append({"min": done, "hype": round(hype, 1), "chat": cr, "msgs": sum(chat.n.get(k, 0) for k in range(len(db) - 60, len(db))) if chat else None})
             print(f"min {done:3d} hype {hype:4.1f} peak {peak} chat x{cr} at {cp}")
             if chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
                 if cp is not None and cr >= min_chat:
                     # chat reacts late (stream delay + typing, often 5-20 s): the moment is the loudest second in the 25 s before the burst
                     w0 = max(cp - 21, 0); seg_ = db[w0:cp + 5]
-                    lag = (cp + 4) - (w0 + max(range(len(seg_)), key=seg_.__getitem__)) if seg_ else 0
+                    lag = (cp + 4) - (w0 + max(range(len(seg_)), key=seg_.__getitem__)) if seg_ else 0; kind = "chat"
                     peak, hype = (max(cp + 4 - lag, 0) if seg_ else max(cp, 0)), max(hype, min_hype); print(f"   chat burst x{cr}: moment {lag:.0f} s before the chat peak")
                 elif not (cp is not None and cr >= 1.4 and peak is not None and abs(cp - peak) < 30): peak = None
-            if peak is not None and hype >= min_hype and len(db) - peak >= 12 and peak - last > 90 and len(recent) < per_hour and len(clips) < max_clips:
+            if dry:
+                if peak is not None and hype >= min_hype and len(db) - peak >= 12 and peak - last > 90:
+                    cal["events"].append({"min": done, "pos": int(peak), "kind": kind, "hype": round(hype, 1), "chat": cr, "lag": lag}); last = peak
+                if done % 20 == 0: save_calib(root, ch, cal, push)
+            elif peak is not None and hype >= min_hype and len(db) - peak >= 12 and peak - last > 90 and len(recent) < per_hour and len(clips) < max_clips:
                 stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
                 try:
                     entry, name = make_clip(ch, root, segs, t0, peak, hype, stamp); entry["chat"] = cr; publish(root, name, entry, push)
@@ -186,6 +205,7 @@ def loop(ch, root, rec, alive, push, t_end, chat=None):
                 except OSError: pass
         if not run and done >= len(files): break
         time.sleep(1 if not push else 20)
+    if dry: save_calib(root, ch, cal, push); return len(cal["events"])
     return len(clips)
 
 

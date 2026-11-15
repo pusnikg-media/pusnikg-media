@@ -1,160 +1,120 @@
 {
- "enabled": false,
- "max_minutes": 330,
- "note": "AUS. Test 15.11.2026 bestanden (Twitch: forsen live erkannt, 3 Clips je ca. 1 Min nach dem Moment, Chat-Signal läuft). Einschalten: enabled true und in channels NUR Streamer mit laufender Kampagne lassen. Kick ist ungetestet (keiner war live).",
+ "enabled": true,
+ "until": "2026-11-15T20:03:45Z",
+ "max_minutes": 150,
+ "note": "EICHLAUF 15.11.2026 abends: nur messen (log_only), keine Clips. Endet von selbst zum Zeitpunkt 'until'. Danach enabled false setzen und channels auf Kampagnen-Streamer beschränken.",
  "channels": [
   {
    "name": "kaicenat",
    "url": "https://www.twitch.tv/kaicenat",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "jynxzi",
    "url": "https://www.twitch.tv/jynxzi",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "caseoh",
    "url": "https://www.twitch.tv/caseoh_",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "jasontheween",
    "url": "https://www.twitch.tv/jasontheween",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "lacy",
    "url": "https://www.twitch.tv/lacy",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "stableronaldo",
    "url": "https://www.twitch.tv/stableronaldo",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "plaqueboymax",
    "url": "https://www.twitch.tv/plaqueboymax",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "agent00",
    "url": "https://www.twitch.tv/agent00",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "xqc",
-   "url": "https://kick.com/xqc",
+   "url": "https://www.twitch.tv/xqc",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
-  },
-  {
-   "name": "adinross",
-   "url": "https://kick.com/adinross",
-   "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
-  },
-  {
-   "name": "n3on",
-   "url": "https://kick.com/n3on",
-   "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
-  },
-  {
-   "name": "forsen",
-   "url": "https://www.twitch.tv/forsen",
-   "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "zackrawrr",
    "url": "https://www.twitch.tv/zackrawrr",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
+  },
+  {
+   "name": "hasanabi",
+   "url": "https://www.twitch.tv/hasanabi",
+   "min_hype": 6,
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "summit1g",
    "url": "https://www.twitch.tv/summit1g",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
    "name": "tarik",
    "url": "https://www.twitch.tv/tarik",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   },
   {
-   "name": "papaplatte",
-   "url": "https://www.twitch.tv/papaplatte",
+   "name": "forsen",
+   "url": "https://www.twitch.tv/forsen",
    "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
-  },
-  {
-   "name": "eslcs",
-   "url": "https://www.twitch.tv/eslcs",
-   "min_hype": 6,
-   "per_hour": 6,
-   "max_clips": 2,
-   "height": 720,
-   "min_chat": 2.5
+   "min_chat": 2.5,
+   "height": 480,
+   "log_only": true
   }
  ]
 }

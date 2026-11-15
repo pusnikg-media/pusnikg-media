@@ -20,7 +20,7 @@ jobs:
         id: c
         run: |
           curl -fsSL "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/plan/livewatch.json" -o lw.json || echo '{}' > lw.json
-          echo "go=$(python3 -c 'import json;c=json.load(open("lw.json"));print("run" if c.get("enabled") and c.get("channels") else "skip")')" >> "$GITHUB_OUTPUT"
+          echo "go=$(python3 -c 'import json;c=json.load(open("lw.json"));import datetime as D;u=c.get("until");ok=c.get("enabled") and c.get("channels") and (not u or D.datetime.now(D.timezone.utc)<D.datetime.fromisoformat(u.replace("Z","+00:00")));print("run" if ok else "skip")')" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
         if: steps.c.outputs.go == 'run'
         with:
