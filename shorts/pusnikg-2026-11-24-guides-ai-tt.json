@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 4.78s  hˈɑːt tˈeɪk, klˈoʊs ðə dʒˌiːtˌiːˈeɪ sˈɪks ɡˈaɪdz ænd stˈɑːp wˈɑːtʃɪŋ wˈɔːkθɹuːz.\n1: 5.40s  ðə bˈɛst pˈɑːɹt əvə nˈuː dʒˌiːtˌiːˈeɪ ɪz ɡˌɛɾɪŋ lˈɔst ænd fˈaɪndɪŋ θˈɪŋz baɪ ˈæksɪdənt.\n2: 2.62s  ɡˈaɪdz ˈɔn, ɔːɹ fˈɪɡjɚɹ ɪɾ ˈaʊt joːɹsˈɛlf?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 15.18s",
+  "PREFLIGHT_OK 4 lines, 12 shots, 16.44 s\nHot@0.23 take,@0.53 close@0.95 the@1.07 GTA@1.27 6@1.50 guides@2.07 and@2.36 stop@2.66 watching@2.89 walkthroughs.@3.33\nThe@0.22 best@0.48 part@0.64 of@0.90 a@1.05 new@1.13 GTA@1.29 is@1.71 getting@2.25 lost@2.44 and@2.84 finding@3.18 things@3.44 by@3.85 accident.@4.11\nGuides@0.23 on,@0.61 or@1.07 figure@1.13 it@1.35 out@1.55 yourself?@1.65\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 16.435 shots 12 captions 10\nRENDER_OK /home/runner/work_pusnikg-2026-11-24-guides-ai-tt/pusnikg-2026-11-24-guides-ai-tt.mp4 16.44s",
+  "QA_OK 16.43s -14.2 LUFS frames: /home/runner/work_pusnikg-2026-11-24-guides-ai-tt/pusnikg-2026-11-24-guides-ai-tt_qa_0.png /home/runner/work_pusnikg-2026-11-24-guides-ai-tt/pusnikg-2026-11-24-guides-ai-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-24-guides-ai-tt/pusnikg-2026-11-24-guides-ai-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 16.43,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus05.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-24-guides-ai-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-24-guides-ai-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-24-guides-ai-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-24-guides-ai-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-24-guides-ai-tt",
+ "attempts": 1
+}
