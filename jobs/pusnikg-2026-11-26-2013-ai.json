@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-26-2013-ai",
+ "date": "2026-11-26",
+ "day": -7,
+ "script": [
+  "GTA 5 came out in September twenty thirteen, think about that.",
+  "Thirteen years, three console generations, and we were all still playing it.",
+  "That's why this launch feels different, most of us grew up between two GTA games.",
+  "So whatever you think of GTA 6, don't rush it, the next one is far away.",
+  "Where were you in twenty thirteen?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_teal.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car07a.mp4",
+    "start": 4.0
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time01a.mp4",
+    "start": 3.9
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game01a.mp4",
+    "start": 5.2
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game02b.mp4",
+    "start": 10.0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game02a.mp4",
+    "start": 3.1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city07a.mp4",
+    "start": 2.0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_rise.mp4",
+    "start": 1.1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game05a.mp4",
+    "start": 3.0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/fx01a.mp4",
+    "start": 0.8
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time02a.mp4",
+    "start": 2.5
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city08a.mp4",
+    "start": 2.3
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus03.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Hard trap (eigene Bibliothek)"
+ },
+ "hook_big": "2013",
+ "hook_mid": "TO 2026",
+ "hook_sub": "WHERE WERE YOU?",
+ "badge": "GTA 6 • WEEK 2",
+ "card": {
+  "line": 1,
+  "word": "Thirteen",
+  "top": "GTA 5 TO 6",
+  "big": "13",
+  "bottom": "YEARS APART"
+ },
+ "punch": [
+  "thirteen",
+  "generations",
+  "grew",
+  "rush"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}

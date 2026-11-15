@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-24-guides-ai",
+ "date": "2026-11-24",
+ "day": -5,
+ "script": [
+  "Hot take, close the GTA 6 guides and stop watching walkthroughs.",
+  "The best part of a new GTA is getting lost and finding things by accident.",
+  "A guide turns that into a checklist, and checklists are work.",
+  "You can optimize everything on your second playthrough.",
+  "Guides on, or figure it out yourself?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_teal.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_pink.mp4",
+    "start": 1.0
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car01a.mp4",
+    "start": 0.5
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_chase_pink.mp4",
+    "start": 1.2
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game01a.mp4",
+    "start": 5.9
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game05a.mp4",
+    "start": 5.9
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game02a.mp4",
+    "start": 9.7
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game02b.mp4",
+    "start": 2.2
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_night.mp4",
+    "start": 0.8
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city03a.mp4",
+    "start": 1.0
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_sunset.mp4",
+    "start": 1.2
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_coast_sunset.mp4",
+    "start": 0.6
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus05.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Cinematic hip hop (eigene Bibliothek)"
+ },
+ "hook_big": "NO",
+ "hook_mid": "GUIDES",
+ "hook_sub": "PLAY GTA 6 BLIND",
+ "badge": "GTA 6 • WEEK 1",
+ "card": {
+  "line": 2,
+  "word": "checklist",
+  "top": "A GUIDE IS",
+  "big": "WORK",
+  "bottom": "NOT AN ADVENTURE"
+ },
+ "punch": [
+  "guides",
+  "lost",
+  "checklist",
+  "second"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}

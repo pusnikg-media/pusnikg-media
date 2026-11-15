@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-25-radio-ai",
+ "date": "2026-11-25",
+ "day": -6,
+ "script": [
+  "Unpopular opinion, the radio is half of every GTA game.",
+  "Nobody remembers a mission as clearly as the song that played on the way there.",
+  "So please don't mute it and put your own playlist on.",
+  "Find one station, stick with it, and it becomes the sound of your whole playthrough.",
+  "Radio on, or your own music?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_pink.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_teal.mp4",
+    "start": 1.1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car06a.mp4",
+    "start": 4.9
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/fx02a.mp4",
+    "start": 2.5
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city05a.mp4",
+    "start": 1.1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_front_dusk.mp4",
+    "start": 0.9
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_coast_white.mp4",
+    "start": 0.8
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car01a.mp4",
+    "start": 0.5
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car02a.mp4",
+    "start": 0.5
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_chase_pink.mp4",
+    "start": 0.7
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_night.mp4",
+    "start": 0.6
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/time02a.mp4",
+    "start": 3.7
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus07.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Bass house (eigene Bibliothek)"
+ },
+ "hook_big": "RADIO",
+ "hook_mid": "ON OR OFF?",
+ "hook_sub": "DON'T MUTE GTA 6",
+ "badge": "GTA 6 • WEEK 1",
+ "card": {
+  "line": 3,
+  "word": "station",
+  "top": "PICK ONE",
+  "big": "RADIO",
+  "bottom": "AND STICK TO IT"
+ },
+ "punch": [
+  "radio",
+  "song",
+  "mute",
+  "station"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}
