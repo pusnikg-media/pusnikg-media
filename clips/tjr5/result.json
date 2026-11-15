@@ -1,10 +1,75 @@
 {
  "ok": true,
  "name": "tjr5",
- "sig": "3a1fe317eb1a",
+ "sig": "d64a705d8016",
  "attempts": 1,
  "source": "https://drive.google.com/file/d/1zk-CyDKnOhqpgqwLvcYfuUBO26MGZnBW/view",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/scan/scan.json",
- "clips": [],
- "phase": "scanned"
+ "clips": [
+  {
+   "id": "A_key",
+   "ok": true,
+   "seconds": 19.71,
+   "title": "TJR GETS A BROKE CAR",
+   "file": "tjr5_A_key.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/qa/tjr5_A_key.jpg",
+   "layout": "full",
+   "tracked": true,
+   "punches": 2,
+   "hook": [
+    164.6,
+    167.45
+   ],
+   "sig": "021037dd304e",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/tjr5_A_key.mp4"
+  },
+  {
+   "id": "B_seat",
+   "ok": true,
+   "seconds": 19.71,
+   "title": "NO AUTOMATIC SEATS?!",
+   "file": "tjr5_B_seat.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/qa/tjr5_B_seat.jpg",
+   "layout": "full",
+   "tracked": true,
+   "punches": 2,
+   "hook": [
+    319.3,
+    322.3
+   ],
+   "sig": "2035786150bf",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/tjr5_B_seat.mp4"
+  },
+  {
+   "id": "C_worst",
+   "ok": true,
+   "seconds": 17.12,
+   "title": "WORST DAY OF HIS LIFE",
+   "file": "tjr5_C_worst.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/qa/tjr5_C_worst.jpg",
+   "layout": "full",
+   "tracked": true,
+   "punches": 1,
+   "sig": "e368bb45cf0f",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/tjr5_C_worst.mp4"
+  },
+  {
+   "id": "E_outro",
+   "ok": true,
+   "seconds": 19.0,
+   "title": "TJR AFTER 24H BEING BROKE",
+   "file": "tjr5_E_outro.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/qa/tjr5_E_outro.jpg",
+   "layout": "full",
+   "tracked": true,
+   "punches": 2,
+   "hook": [
+    1738.3,
+    1741.6
+   ],
+   "sig": "fd40bfd2864d",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/tjr5_E_outro.mp4"
+  }
+ ],
+ "phase": "rendered"
 }
