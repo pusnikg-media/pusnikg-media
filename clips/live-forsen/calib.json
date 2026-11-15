@@ -121,6 +121,126 @@
    "hype": 11.4,
    "chat": 1.62,
    "msgs": 49
+  },
+  {
+   "min": 21,
+   "hype": 12.9,
+   "chat": 1.68,
+   "msgs": 99
+  },
+  {
+   "min": 22,
+   "hype": 13.6,
+   "chat": 1.78,
+   "msgs": 57
+  },
+  {
+   "min": 23,
+   "hype": 16.1,
+   "chat": 2.25,
+   "msgs": 154
+  },
+  {
+   "min": 24,
+   "hype": 16.4,
+   "chat": 2.19,
+   "msgs": 163
+  },
+  {
+   "min": 25,
+   "hype": 14.9,
+   "chat": 2.67,
+   "msgs": 102
+  },
+  {
+   "min": 26,
+   "hype": 18.9,
+   "chat": 2.72,
+   "msgs": 135
+  },
+  {
+   "min": 27,
+   "hype": 19.0,
+   "chat": 3.58,
+   "msgs": 132
+  },
+  {
+   "min": 28,
+   "hype": 18.8,
+   "chat": 3.26,
+   "msgs": 167
+  },
+  {
+   "min": 29,
+   "hype": 18.6,
+   "chat": 2.93,
+   "msgs": 207
+  },
+  {
+   "min": 30,
+   "hype": 21.9,
+   "chat": 2.67,
+   "msgs": 166
+  },
+  {
+   "min": 31,
+   "hype": 22.0,
+   "chat": 2.3,
+   "msgs": 92
+  },
+  {
+   "min": 32,
+   "hype": 23.2,
+   "chat": 2.24,
+   "msgs": 63
+  },
+  {
+   "min": 33,
+   "hype": 22.4,
+   "chat": 1.9,
+   "msgs": 48
+  },
+  {
+   "min": 34,
+   "hype": 21.2,
+   "chat": 1.62,
+   "msgs": 93
+  },
+  {
+   "min": 35,
+   "hype": 20.2,
+   "chat": 2.04,
+   "msgs": 82
+  },
+  {
+   "min": 36,
+   "hype": 19.4,
+   "chat": 2.43,
+   "msgs": 64
+  },
+  {
+   "min": 37,
+   "hype": 19.5,
+   "chat": 2.32,
+   "msgs": 103
+  },
+  {
+   "min": 38,
+   "hype": 18.3,
+   "chat": 2.39,
+   "msgs": 61
+  },
+  {
+   "min": 39,
+   "hype": 16.7,
+   "chat": 2.75,
+   "msgs": 93
+  },
+  {
+   "min": 40,
+   "hype": 16.8,
+   "chat": 2.75,
+   "msgs": 97
   }
  ],
  "events": [
@@ -163,6 +283,46 @@
    "hype": 13.2,
    "chat": 1.86,
    "lag": null
+  },
+  {
+   "min": 25,
+   "pos": 1477,
+   "kind": "chat",
+   "hype": 14.9,
+   "chat": 2.67,
+   "lag": 8
+  },
+  {
+   "min": 27,
+   "pos": 1588,
+   "kind": "chat",
+   "hype": 19.0,
+   "chat": 3.58,
+   "lag": 17
+  },
+  {
+   "min": 32,
+   "pos": 1753,
+   "kind": "loud",
+   "hype": 23.2,
+   "chat": 2.24,
+   "lag": null
+  },
+  {
+   "min": 34,
+   "pos": 1864,
+   "kind": "loud",
+   "hype": 21.2,
+   "chat": 1.62,
+   "lag": null
+  },
+  {
+   "min": 39,
+   "pos": 2288,
+   "kind": "chat",
+   "hype": 16.7,
+   "chat": 2.75,
+   "lag": 13
   }
  ]
 }
