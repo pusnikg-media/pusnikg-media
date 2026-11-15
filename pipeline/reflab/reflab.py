@@ -6,7 +6,7 @@ a small report + picture sheets that Claude can look at in chat. No videos are s
   python3 reflab.py measure FILE [FILE...]   prints the same metrics for local files (our own clips, for comparison)
 
 plan/reflab.json: {"accounts": ["https://www.tiktok.com/@name", "https://www.youtube.com/@name/shorts"], "urls": ["<single video link>"],
-                   "scan": 15 (newest videos looked at per account), "top": 3 (most-viewed of those analysed), "ours": ["clips/tjr5"]}
+                   "scan": 15 (newest videos looked at per account), "top": 3 (most-viewed of those analysed), "ours": ["clips/tjr5"], "reddit": ["LivestreamFail", "GTA6"]}
 Metrics per video: seconds, views/likes (when the platform tells), cuts_per_10s, first_cut_s, speech_starts_s, words_per_s,
 first_words (what is said in the first 3 s = the hook), quiet_share (seconds 12 dB under the median), and two sheets:
 <id>_hook.jpg (first 3 s, 4 pictures per second) and <id>_flow.jpg (12 pictures across the video)."""
@@ -64,6 +64,26 @@ def fetch(url, tmp):
     return v[0], info, ""
 
 
+def reddit(subs, problems, n=12):
+    """Top posts of the week per subreddit (public listing, no login): title, score, comments, link, start of the text."""
+    import urllib.request
+    out = {}
+    for sub in subs:
+        got = None
+        for host in ("https://www.reddit.com", "https://old.reddit.com"):
+            try:
+                rq = urllib.request.Request(f"{host}/r/{sub}/top/.json?t=week&limit={n}", headers={"User-Agent": "pusnikg-reflab/0.1 (weekly research, read-only)"})
+                d = json.loads(urllib.request.urlopen(rq, timeout=30).read().decode("utf-8", "replace"))
+                got = [{"title": x["data"].get("title", "")[:200], "score": x["data"].get("score"), "comments": x["data"].get("num_comments"),
+                        "url": "https://www.reddit.com" + x["data"].get("permalink", ""), "link": x["data"].get("url_overridden_by_dest"),
+                        "text": (x["data"].get("selftext") or "")[:600]} for x in d["data"]["children"]]
+                break
+            except Exception as e: err = str(e)[-120:]
+        if got is None: problems.append(f"reddit r/{sub}: not readable from the runner ({err})")
+        else: out[sub] = got
+    return out
+
+
 def summary(rows):
     out = {}
     for k in ("seconds", "cuts_per_10s", "first_cut_s", "speech_starts_s", "words_per_s", "quiet_share"):
@@ -96,6 +116,7 @@ def run(root):
         for j, f in enumerate(sorted(glob.glob(os.path.join(root, d, "*.mp4")))[:6]):
             try: m = measure(f, out, "o%02d" % len(rep["ours"]), model); m["file"] = os.path.relpath(f, root); rep["ours"].append(m)
             except Exception as e: rep["problems"].append(f"{f}: {str(e)[-150:]}")
+    rep["reddit"] = reddit(c.get("reddit", []), rep["problems"])
     rep["median_refs"] = summary(rep["refs"]); rep["median_ours"] = summary(rep["ours"])
     json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1, ensure_ascii=False)
     print("REFLAB_OK refs", len(rep["refs"]), "ours", len(rep["ours"]), "problems", len(rep["problems"]))

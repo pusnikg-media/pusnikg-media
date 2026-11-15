@@ -1,7 +1,5 @@
 {
  "accounts": [
-  "https://www.tiktok.com/tag/kaicenatclips",
-  "https://www.tiktok.com/tag/streamerclips",
   "https://www.tiktok.com/@anythingclips1",
   "https://www.tiktok.com/@coreclippzz_",
   "https://www.tiktok.com/@iklippedu",
@@ -21,5 +19,12 @@
   "clips/tjr5"
  ],
  "max": 24,
- "note": "IRL/Streamer: anythingclips1 bis lanetachisme. Gaming (Facecam + Gameplay): clipuniversehqq bis silencedbeargames. Quelle: vidIQ-Ausreißer-Suche 15.11.2026. Die zwei tag-Einträge testen, ob Hashtag-Seiten ohne Login lesbar sind (steht sonst unter problems)."
+ "note": "IRL/Streamer: anythingclips1 bis lanetachisme. Gaming (Facecam + Gameplay): clipuniversehqq bis silencedbeargames. Quelle: vidIQ-Ausreißer-Suche 15.11.2026. Hashtag-Seiten gehen nicht (yt-dlp: broken). reddit = Top-Beiträge der Woche pro Subreddit.",
+ "reddit": [
+  "LivestreamFail",
+  "GTA6",
+  "NewTubers",
+  "Tiktokhelp",
+  "ClaudeAI"
+ ]
 }
