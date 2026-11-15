@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "ɔːzɪŋ kˈeɪɑːs?\n1: 5.50s  aɪ θˈɪŋk ðə ɹˈaɪt ˈænsɚɹ ɪz stˈoːɹi fˈɜːst, bɪkˈʌz ɐ ɹˈɑːkstɑːɹ stˈoːɹi ˈoʊnli hˈɪts wˈʌns.\n2: 2.33s  stˈoːɹi fˈɜːst ɔːɹ kˈeɪɑːs fˈɜːst?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 15.30s\n\u001b[0;93m2026-11-15 14:13:41.560753327 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at \"/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171\" because filename \"5620e0c7-8062-4dce-aeb7-520c7ef76171\" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+\u001b[m",
+  "PREFLIGHT_OK 4 lines, 12 shots, 16.56 s\nBe@0.23 honest,@0.52 are@1.06 you@1.15 playing@1.27 the@1.52 GTA@1.75 6@1.96 story@2.54 or@2.91 just@3.35 causing@3.58 chaos?@3.98\nI@0.22 think@0.50 the@0.68 right@0.80 answer@0.98 is@1.41 story@1.63 first,@1.83 because@2.64 a@2.74 Rockstar@2.86 story@3.32 only@3.82 hits@4.07 once.@4.39\nStory@0.23 first@0.58 or@0.85 chaos@1.02 first?@1.25\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 16.56 shots 12 captions 10\nRENDER_OK /home/runner/work_pusnikg-2026-11-22-story-ai-tt/pusnikg-2026-11-22-story-ai-tt.mp4 16.56s",
+  "QA_OK 16.56s -14.0 LUFS frames: /home/runner/work_pusnikg-2026-11-22-story-ai-tt/pusnikg-2026-11-22-story-ai-tt_qa_0.png /home/runner/work_pusnikg-2026-11-22-story-ai-tt/pusnikg-2026-11-22-story-ai-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-22-story-ai-tt/pusnikg-2026-11-22-story-ai-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 16.56,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus01.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-22-story-ai-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-22-story-ai-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-22-story-ai-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-22-story-ai-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-22-story-ai-tt",
+ "attempts": 1
+}
