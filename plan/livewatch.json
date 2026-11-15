@@ -1,7 +1,7 @@
 {
- "enabled": true,
- "max_minutes": 25,
- "note": "TEST 15.11.2026: prüft der Reihe nach, wer live ist, und beobachtet den ersten Treffer 40 Min. Danach wieder enabled false.",
+ "enabled": false,
+ "max_minutes": 330,
+ "note": "AUS. Test 15.11.2026 bestanden (Twitch: forsen live erkannt, 3 Clips je ca. 1 Min nach dem Moment, Chat-Signal läuft). Einschalten: enabled true und in channels NUR Streamer mit laufender Kampagne lassen. Kick ist ungetestet (keiner war live).",
  "channels": [
   {
    "name": "kaicenat",
