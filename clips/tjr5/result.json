@@ -1,7 +1,7 @@
 {
  "ok": true,
  "name": "tjr5",
- "sig": "d64a705d8016",
+ "sig": "a9de6b2c3868",
  "attempts": 1,
  "source": "https://drive.google.com/file/d/1zk-CyDKnOhqpgqwLvcYfuUBO26MGZnBW/view",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/scan/scan.json",
@@ -69,6 +69,19 @@
    ],
    "sig": "fd40bfd2864d",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/tjr5_E_outro.mp4"
+  },
+  {
+   "id": "N_worst",
+   "ok": true,
+   "seconds": 17.12,
+   "title": "TJR SAYS A DAY WITHOUT WORK WAS THE WORS",
+   "file": "tjr5_N_worst.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/qa/tjr5_N_worst.jpg",
+   "layout": "native",
+   "tracked": false,
+   "punches": 0,
+   "sig": "ec2ac63c4710",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/tjr5/tjr5_N_worst.mp4"
   }
  ],
  "phase": "rendered"
