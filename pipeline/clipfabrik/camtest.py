@@ -50,7 +50,7 @@ def main(root):
                 except Exception as ex: cam = None; print("ERR", ex)
                 name = f"{ch}_{n}.jpg"; ok = sheet(v[0], p, dur, cam, os.path.join(out, name))
                 rep.append({"channel": ch, "url": url, "title": (e.get("title") or "")[:70], "size": f"{p['w']}x{p['h']}", "seconds": round(p["dur"], 1),
-                            "cam": cam, "cam_frac": [round(cam[0] / p["w"], 3), round(cam[1] / p["h"], 3), round(cam[2] / p["w"], 3), round(cam[3] / p["h"], 3)] if cam else None,
+                            "cam": cam, "mode": getattr(cf.facecam_rect, "last", None), "cam_frac": [round(cam[0] / p["w"], 3), round(cam[1] / p["h"], 3), round(cam[2] / p["w"], 3), round(cam[3] / p["h"], 3)] if cam else None,
                             "sheet": f"{cf.RAW}/clips/camtest/{name}" if ok else None})
                 print(rep[-1])
     json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1, ensure_ascii=False)

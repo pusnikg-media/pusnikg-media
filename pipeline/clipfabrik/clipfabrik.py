@@ -533,8 +533,8 @@ def facecam_rect(src, a, dur, p, spec="auto"):
     cc = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
     pc = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_profileface.xml")  # streamers look at their second screen a lot
     if cc.empty(): return None
-    det = []
-    for g in np.frombuffer(r.stdout[:nf * sw * sh], np.uint8).reshape(nf, sh, sw):
+    det = []; F = np.frombuffer(r.stdout[:nf * sw * sh], np.uint8).reshape(nf, sh, sw); facecam_rect.last = None
+    for g in F:
         det += [(x + w / 2, y + h / 2, w) for (x, y, w, h) in cc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
         if not pc.empty():
             det += [(x + w / 2, y + h / 2, w) for (x, y, w, h) in pc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
@@ -544,7 +544,41 @@ def facecam_rect(src, a, dur, p, spec="auto"):
     near = d[(abs(d[:, 0] - med[0]) < 0.08 * sw) & (abs(d[:, 1] - med[1]) < 0.12 * sh)]  # a facecam does not move
     if len(near) < max(3, 0.2 * nf): return None
     cx, cy, fw = np.median(near, axis=0)
-    return fit(cx * k, (cy + 0.3 * fw) * k, 4.4 * fw * k)
+    # camtest 15.11.2026 (16 real Twitch clips): the place was right in 13, but a poster on the wall counted as a face and the box
+    # was cut around the face instead of along the cam's own border. So: (1) a real face changes between frames, a picture does not
+    fx0, fx1 = max(int(cx - fw / 2), 0), min(int(cx + fw / 2), sw); fy0, fy1 = max(int(cy - fw / 2), 0), min(int(cy + fw / 2), sh)
+    if nf >= 4 and fx1 - fx0 > 4 and fy1 - fy0 > 4:
+        mot = float(np.median(np.abs(np.diff(F[:, fy0:fy1, fx0:fx1].astype(np.int16), axis=0)).mean(axis=(1, 2))))
+        if mot < 1.5: facecam_rect.last = f"static face ({mot:.1f})"; return None
+    # (2) the cam's border is an edge that is there in EVERY frame; gameplay edges come and go -> low percentile over time
+    try:
+        Fi = F.astype(np.int16)
+        ex = np.percentile(np.abs(np.diff(Fi, axis=2)), 25, axis=0); ey = np.percentile(np.abs(np.diff(Fi, axis=1)), 25, axis=0)
+
+        def edge(prof, lo, hi, limit):
+            """Strongest lasting edge in [lo, hi); the picture's own edge counts when the range runs into it."""
+            lo_, hi_ = max(int(lo), 0), min(int(hi), len(prof))
+            if hi_ - lo_ >= 3:
+                i = lo_ + int(np.argmax(prof[lo_:hi_])); base = float(np.median(prof)) + 1e-6
+                if prof[i] >= max(6.0, 3.0 * base): return i + 1
+            if lo < 2: return 0
+            if hi > limit - 2: return limit
+            return None
+        r0, r1 = max(int(cy - 0.8 * fw), 0), min(int(cy + 1.2 * fw), sh)
+        px = ex[r0:r1].mean(axis=0)
+        L = edge(px, cx - 3.6 * fw, cx - 0.6 * fw, sw); R = edge(px, cx + 0.6 * fw, cx + 3.6 * fw, sw)
+        if L is not None and R is not None and R - L >= 1.6 * fw:
+            py = ey[:, max(L + 2, 0):max(R - 2, L + 3)].mean(axis=1)
+            T = edge(py, cy - 2.6 * fw, cy - 0.6 * fw, sh); B = edge(py, cy + 0.8 * fw, cy + 3.4 * fw, sh)
+            if T is not None and B is not None and B - T >= 1.4 * fw:
+                w = min(R - L, (B - T) * 1.5)
+                if w >= 1.8 * fw:
+                    h = w / 1.5; x = min(max(cx - w / 2, L), R - w); y = min(max(cy + 0.15 * fw - h / 2, T), B - h)
+                    facecam_rect.last = "border"
+                    return [int(x * k) // 2 * 2, int(y * k) // 2 * 2, int(w * k) // 2 * 2, int(h * k) // 2 * 2]
+    except Exception as e: print("WARN facecam border:", str(e)[-200:])
+    facecam_rect.last = "face"
+    return fit(cx * k, (cy + 0.3 * fw) * k, min(4.4 * fw, 0.42 * sw) * k)
 
 
 def x_expr(keys):
