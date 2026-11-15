@@ -1,4 +1,4 @@
-# Zahlen – Stand 15.11.2026 21:57 (Europe/Berlin)
+# Zahlen – Stand 15.11.2026 21:59 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
@@ -8,37 +8,37 @@ Posts gezählt: 80 · Views gesamt: 48.219 · Zuwachs 24 h: 0
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
 | 2026-11-15 | tiktok | Warzone just landed in Korea. Hajin is the new m | 138 | – | – | 0 | Warzone S1 |
-| 2026-11-15 | youtube | GTA 6: Bigger Map or a City That Feels Alive? #s | 49 | – | – | – |  |
-| 2026-11-15 | youtube | GTA 6 Map Size Is the Wrong Question #shorts | 291 | – | – | – |  |
-| 2026-11-15 | youtube | 18 Days Until GTA 6 – Here's What We Know #short | 1.100 | – | – | – |  |
-| 2026-11-15 | youtube | A Giant Iron Bar Floating Through a Nebula? | 885 | – | – | – |  |
-| 2026-11-15 | youtube | The First Giant Stars After the Big Bang Were No | 1.500 | – | – | – |  |
-| 2026-11-15 | youtube | Auroras Aren’t Just Green — Here’s Why the Sky C | 116 | – | – | – |  |
-| 2026-11-15 | youtube | Auroras Aren’t Supposed to Be Here | 950 | – | – | – |  |
-| 2026-11-15 | youtube | This Is the Future of Our Sun (Helix Nebula) | 1.900 | – | – | – |  |
-| 2026-11-15 | youtube | This Planet Has Rings Bigger Than a Solar System | 1.300 | – | – | – |  |
-| 2026-11-15 | youtube | KELT-9b: The Planet That Is Evaporating and Leav | 331 | – | – | – |  |
-| 2026-11-15 | youtube | The Fastest Spinning Star Ever Discovered (716 R | 1.100 | – | – | – |  |
-| 2026-11-15 | youtube | ROXs 42Bb – The Planet That Almost Became a Star | 2.400 | – | – | – |  |
-| 2026-11-15 | youtube | This Star Shouldn’t Look Like This | 1.700 | – | – | – |  |
-| 2026-11-15 | youtube | You Are Moving Faster Than You Think | 19 | – | – | – |  |
-| 2026-11-15 | youtube | Your Body Is Not Solid — You Are Made of Empty S | 175 | – | – | – |  |
-| 2026-11-15 | youtube | Your Body Is Made of the Universe | 303 | – | – | – |  |
-| 2026-11-15 | youtube | The Oldest Light in the Universe | 1.500 | – | – | – |  |
-| 2026-11-15 | youtube | Invisible Particles Are Passing Through You Righ | 64 | – | – | – |  |
-| 2026-11-15 | youtube | The Coldest State of Matter Ever Created / Bose– | 309 | – | – | – |  |
-| 2026-11-15 | youtube | The Darkest Planet Ever Discovered / TrES-2b | 1.600 | – | – | – |  |
-| 2026-11-15 | youtube | One Hour Here… Seven Years Out There / Time Near | 1.400 | – | – | – |  |
-| 2026-11-15 | youtube | When Two Real Black Holes Collided / GW150914 | 2.400 | – | – | – |  |
-| 2026-11-15 | youtube | Two Neutron Stars Just Collided — And We Actuall | 2.900 | – | – | – |  |
+| 2026-11-15 | tiktok | GTA 6 spoilers will be everywhere at launch, so  | 263 | – | – | 3 |  |
+| 2026-11-15 | youtube | Do This Before GTA 6 Spoilers Hit #shorts | 756 | – | – | 21 |  |
+| 2026-11-15 | tiktok | Primary objective in MW4 DMZ: the vault. Get in, | 242 | – | – | 1 | MW4 DMZ |
+| 2026-11-14 | tiktok | We're not the only ones heading into XO1. Rogue  | 254 | – | 254 | 0 | MW4 DMZ |
+| 2026-11-14 | youtube | The GTA 6 Box Has No Disc Inside #shorts | 20 | – | 19 | 0 |  |
+| 2026-11-14 | tiktok | GTA 6 physical edition has no disc, just a downl | 378 | – | 376 | 1 |  |
+| 2026-11-14 | tiktok | MW4 DMZ sends us into Blacksite XO1 and this bri | 277 | – | 276 | 8 | MW4 DMZ |
+| 2026-11-11 | youtube | 13 Years of Waiting for GTA 6 #shorts | 216 | – | – | 6 |  |
+| 2026-11-11 | tiktok | GTA 6 release is almost here, 13 years after GTA | 258 | – | – | 8 |  |
+| 2026-11-10 | youtube | Lionel Rafale's Story / Virtua Fighter Crossroad | 20 | – | – | 1 | SEGA Virtua Fighter |
+| 2026-11-10 | tiktok | A city you've never seen A story you've never he | 243 | – | – | 2 | SEGA Virtua Fighter |
+| 2026-11-10 | youtube | GTA 6 Pre-Load Is Live: 212 GB #shorts | 2 | – | – | 0 |  |
+| 2026-11-10 | tiktok | GTA 6 preload is live and needs up to 212 GB. Ho | 357 | – | – | 3 |  |
+| 2026-11-09 | youtube | Virtua Fighter Crossroads: Lionel Rafale | 4 | – | – | 0 | SEGA Virtua Fighter |
+| 2026-11-09 | tiktok | A city you've never seen A story you've never he | 257 | – | – | 1 | SEGA Virtua Fighter |
+| 2026-11-09 | youtube | GTA 6 Will Be the Biggest Launch in History #sho | 353 | – | – | 7 |  |
+| 2026-11-09 | tiktok | 90 million trailer views in one day and GTA 5 st | 267 | – | – | 10 |  |
+| 2026-11-08 | youtube | There's a New Rival for Cielo / Virtua Fighter C | 947 | – | – | 5 | SEGA Virtua Fighter |
+| 2026-11-08 | tiktok | A city you've never seen A story you've never he | 256 | – | – | 2 | SEGA Virtua Fighter |
+| 2026-11-08 | youtube | GTA 6 Won't Get Downgraded. Here's Why #shorts | 1.342 | – | – | 21 |  |
+| 2026-11-08 | tiktok | Rockstar says GTA 6's second trailer was capture | 355 | – | – | 22 |  |
+| 2026-11-07 | tiktok | A city you've never seen A story you've never he | 258 | – | – | 1 | SEGA Virtua Fighter |
+| 2026-11-07 | youtube | Lionel Rafale vs Cielo / Virtua Fighter Crossroa | 1.279 | – | – | 7 | SEGA Virtua Fighter |
 
 ## Pusnik IRL
-Posts gezählt: 4 · Views gesamt: 1.069 · Zuwachs 24 h: 0
+Posts gezählt: 4 · Views gesamt: 1.070 · Zuwachs 24 h: 0
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
 | 2026-11-15 | youtube | TJR Gifts His Brother A Car 😳 #TJR #shorts | 1 | – | – | 0 | TJR |
-| 2026-11-15 | tiktok | TJR surprised his brother with a brand new car a | 217 | – | – | 9 | TJR |
+| 2026-11-15 | tiktok | TJR surprised his brother with a brand new car a | 218 | – | – | 9 | TJR |
 | 2026-11-14 | youtube | Lacy breaks his expensive watch 😭 #JasonTheWeen  | 2 | – | 2 | 0 | JasonTheWeen |
 | 2026-11-14 | tiktok | Lacy breaks his expensive watch on JasonTheWeen' | 849 | – | 849 | 5 | JasonTheWeen |
 
@@ -46,7 +46,7 @@ Posts gezählt: 4 · Views gesamt: 1.069 · Zuwachs 24 h: 0
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
 | Warzone S1 | 1 | 138 | 138 | – |
-| TJR | 2 | 218 | 217 | 0 von 2 |
+| TJR | 2 | 219 | 218 | 0 von 2 |
 | MW4 DMZ | 3 | 773 | 277 | – |
 | JasonTheWeen | 2 | 851 | 849 | – |
 | SEGA Virtua Fighter | 8 | 3.264 | 1.279 | – |
