@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 4.78s  hˈɑːt tˈeɪk, klˈoʊs ðə dʒˌiːtˌiːˈeɪ sˈɪks ɡˈaɪdz ænd stˈɑːp wˈɑːtʃɪŋ wˈɔːkθɹuːz.\n1: 5.40s  ðə bˈɛst pˈɑːɹt əvə nˈuː dʒˌiːtˌiːˈeɪ ɪz ɡˌɛɾɪŋ lˈɔst ænd fˈaɪndɪŋ θˈɪŋz baɪ ˈæksɪdənt.\n2: 3.83s  ɐ ɡˈaɪd tˈɜːnz ðæt ˌɪntʊ ɐ tʃˈɛklɪst, ænd tʃˈɛklɪsts ɑːɹ wˈɜːk.\n3: 3.50s  juː kæn ˈɑːptɪmˌaɪz ˈɛvɹɪθˌɪŋ ˌɔn jʊɹ sˈɛkənd plˈeɪθɹuː.\n4: 2.62s  ɡˈaɪdz ˈɔn, ɔːɹ fˈɪɡjɚɹ ɪɾ ˈaʊt joːɹsˈɛlf?\n5: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 6 lines 22.50s",
+  "f@0.90 a@1.05 new@1.13 GTA@1.29 is@1.71 getting@2.25 lost@2.44 and@2.84 finding@3.18 things@3.44 by@3.85 accident.@4.11\nA@0.22 guide@0.47 turns@0.69 that@0.98 into@1.25 a@1.43 checklist,@1.56 and@2.26 checklists@2.30 are@2.71 work.@2.87\nYou@0.22 can@0.53 optimize@0.63 everything@1.00 on@1.63 your@2.02 second@2.14 playthrough.@2.43\nGuides@0.23 on,@0.61 or@1.07 figure@1.13 it@1.35 out@1.55 yourself?@1.65\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 6 lines\n\nTOTAL 24.2 shots 16 captions 17\nRENDER_OK /home/runner/work_pusnikg-2026-11-24-guides-ai/pusnikg-2026-11-24-guides-ai.mp4 24.20s",
+  "QA_OK 24.20s -14.1 LUFS frames: /home/runner/work_pusnikg-2026-11-24-guides-ai/pusnikg-2026-11-24-guides-ai_qa_0.png /home/runner/work_pusnikg-2026-11-24-guides-ai/pusnikg-2026-11-24-guides-ai_qa_mid.png /home/runner/work_pusnikg-2026-11-24-guides-ai/pusnikg-2026-11-24-guides-ai_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 24.2,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus05.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-24-guides-ai.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-24-guides-ai_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-24-guides-ai_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-24-guides-ai_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-24-guides-ai",
+ "attempts": 1
+}
