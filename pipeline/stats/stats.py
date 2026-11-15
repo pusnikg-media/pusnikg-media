@@ -119,7 +119,6 @@ def update(posts, hist, cfg, t=None):
         h = hist.setdefault(p["url"], {"pub": p.get("published"), "pts": []})
         if p.get("published"): h["pub"] = p["published"]
         elif h.get("pub"): p["published"] = h["pub"]
-        elif h["pts"]: p["published"] = h["pts"][0][0]                                   # no date from the platform: first time we saw it
         prev = h["pts"][-1][1] if h["pts"] else None
         if not h["pts"] or (t - parse(h["pts"][-1][0])).total_seconds() >= 3 * 3600: h["pts"].append([iso(t), p["views"]])
         else: h["pts"][-1][1] = p["views"]
