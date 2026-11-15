@@ -168,7 +168,7 @@ def loop(ch, root, rec, alive, push, t_end, chat=None):
     db, segs, done, clips, last = [], {}, 0, [], -999.0; t0 = 0.0
     dry = bool(ch.get("log_only")); cal = {"channel": ch["name"], "started": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
                                            "minutes": [], "events": []}
-    min_chat = float(ch.get("min_chat", 2.5))
+    min_chat = float(ch.get("min_chat", 3.0)); co_chat = float(ch.get("co_chat", 2.0))  # calibrated 15.11.2026 (98 min, 2 channels): 2.5/1.4 fired every 4.6 min
     min_hype = float(ch.get("min_hype", 9)); per_hour = int(ch.get("per_hour", 3)); max_clips = int(ch.get("max_clips", 8))
     while time.time() < t_end:
         files = sorted(glob.glob(os.path.join(rec, "*.ts"))); run = alive()
@@ -184,11 +184,11 @@ def loop(ch, root, rec, alive, push, t_end, chat=None):
             print(f"min {done:3d} hype {hype:4.1f} peak {peak} chat x{cr} at {cp}")
             if chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
                 if cp is not None and cr >= min_chat:
-                    # chat reacts late (stream delay + typing, often 5-20 s): the moment is the loudest second in the 25 s before the burst
-                    w0 = max(cp - 21, 0); seg_ = db[w0:cp + 5]
+                    # chat reacts late (stream delay + typing, measured 7-25 s, median 17): the moment is the loudest second in the 32 s before the burst
+                    w0 = max(cp - 28, 0)  # measured lags 7-25 s (median 17), 25 was the old cap; seg_ = db[w0:cp + 5]
                     lag = (cp + 4) - (w0 + max(range(len(seg_)), key=seg_.__getitem__)) if seg_ else 0; kind = "chat"
                     peak, hype = (max(cp + 4 - lag, 0) if seg_ else max(cp, 0)), max(hype, min_hype); print(f"   chat burst x{cr}: moment {lag:.0f} s before the chat peak")
-                elif not (cp is not None and cr >= 1.4 and peak is not None and abs(cp - peak) < 30): peak = None
+                elif not (cp is not None and cr >= co_chat and peak is not None and abs(cp - peak) < 30): peak = None
             if dry:
                 if peak is not None and hype >= min_hype and len(db) - peak >= 12 and peak - last > 90:
                     cal["events"].append({"min": done, "pos": int(peak), "kind": kind, "hype": round(hype, 1), "chat": cr, "lag": lag}); last = peak
