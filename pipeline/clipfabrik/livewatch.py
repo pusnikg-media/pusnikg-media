@@ -82,11 +82,17 @@ def make_clip(ch, root, segs, t0, peak, hype, stamp):
     for w in re.sub(r"[^A-Za-z0-9' ]", "", said).upper().split():
         if len(title) + len(w) + 1 > 26: break
         title = (title + " " + w).strip()
-    job = {"name": name, "layout": ch.get("layout", "full"), "track": ch.get("track", True), "fix": ch.get("fix") or {}, "_logo_img": None}
-    clip = {"id": stamp, "a": round(a, 2), "b": round(b, 2), "title": title or "LIVE MOMENT"}
-    r = cf.render_clip(job, clip, raw, p, words, out, tmp); os.remove(raw)
+    # v0.2 (15.11.): viral style = whole picture + one sentence. The preview only quotes what was said; the agent writes the real
+    # context sentence and re-renders through the Clipfabrik from the RAW moment (kept as raw_<stamp>.mp4, source of a clipjob).
+    quote = ('"' + title.capitalize() + '"') if title else "Live moment"
+    job = {"name": name, "layout": ch.get("layout", "native"), "fix": ch.get("fix") or {}, "_logo_img": None}
+    clip = {"id": stamp, "a": round(a, 2), "b": round(b, 2), "caption": quote}
+    r = cf.render_clip(job, clip, raw, p, words, out, tmp)
+    rawname = f"raw_{stamp}.mp4"
+    cf.run(["ffmpeg", "-y", "-v", "error", "-i", raw, "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
+            os.path.join(out, rawname)]); os.remove(raw)
     return {"id": stamp, "at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"), "channel": ch["name"],
-            "hype": round(hype, 1), "seconds": r["seconds"], "auto_title": clip["title"], "said": " ".join(w["w"] for w in words if a <= w["s"] <= b)[:500],
+            "hype": round(hype, 1), "seconds": r["seconds"], "quote": quote, "a": clip["a"], "b": clip["b"], "raw": f"{cf.RAW}/clips/{name}/{rawname}", "said": " ".join(w["w"] for w in words if a <= w["s"] <= b)[:500],
             "url": f"{cf.RAW}/clips/{name}/{r['file']}", "qa": f"{cf.RAW}/clips/{name}/{r['qa']}", "posted": False}, name
 
 

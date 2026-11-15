@@ -1,5 +1,95 @@
 {
- "enabled": false,
- "max_minutes": 330,
- "channels": []
+ "enabled": true,
+ "max_minutes": 40,
+ "note": "TEST 15.11.2026: prüft der Reihe nach, wer live ist, und beobachtet den ersten Treffer 40 Min. Danach wieder enabled false.",
+ "channels": [
+  {
+   "name": "kaicenat",
+   "url": "https://www.twitch.tv/kaicenat",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "jynxzi",
+   "url": "https://www.twitch.tv/jynxzi",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "caseoh",
+   "url": "https://www.twitch.tv/caseoh_",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "jasontheween",
+   "url": "https://www.twitch.tv/jasontheween",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "lacy",
+   "url": "https://www.twitch.tv/lacy",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "stableronaldo",
+   "url": "https://www.twitch.tv/stableronaldo",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "plaqueboymax",
+   "url": "https://www.twitch.tv/plaqueboymax",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "agent00",
+   "url": "https://www.twitch.tv/agent00",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "xqc",
+   "url": "https://kick.com/xqc",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "adinross",
+   "url": "https://kick.com/adinross",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "n3on",
+   "url": "https://kick.com/n3on",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  }
+ ]
 }
