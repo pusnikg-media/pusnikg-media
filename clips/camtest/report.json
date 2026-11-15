@@ -7,15 +7,16 @@
   "seconds": 23.8,
   "cam": [
    0,
-   290,
-   642,
-   428
+   328,
+   536,
+   358
   ],
+  "mode": "face",
   "cam_frac": [
    0.0,
-   0.403,
-   0.502,
-   0.594
+   0.456,
+   0.419,
+   0.497
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/jynxzi_0.jpg"
  },
@@ -26,16 +27,17 @@
   "size": "1280x720",
   "seconds": 16.0,
   "cam": [
-   458,
-   172,
-   820,
-   546
+   792,
+   332,
+   488,
+   324
   ],
+  "mode": "border",
   "cam_frac": [
-   0.358,
-   0.239,
-   0.641,
-   0.758
+   0.619,
+   0.461,
+   0.381,
+   0.45
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/jynxzi_1.jpg"
  },
@@ -51,6 +53,7 @@
    434,
    288
   ],
+  "mode": "face",
   "cam_frac": [
    0.0,
    0.136,
@@ -71,6 +74,7 @@
    362,
    242
   ],
+  "mode": "face",
   "cam_frac": [
    0.0,
    0.158,
@@ -81,43 +85,7 @@
  },
  {
   "channel": "tarik",
-  "url": "https://www.twitch.tv/tarik/clip/WiseAbstemiousJaguarRlyTho-R_YvxLgOyEGdPSOE",
-  "title": "back like we never left",
-  "size": "1280x720",
-  "seconds": 41.4,
-  "cam": [
-   48,
-   76,
-   340,
-   226
-  ],
-  "cam_frac": [
-   0.037,
-   0.106,
-   0.266,
-   0.314
-  ],
-  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/tarik_0.jpg"
- },
- {
-  "channel": "tarik",
-  "url": "https://www.twitch.tv/tarik/clip/FlaccidPhilanthropicStorkPeteZarollTie-PA-jEenRFIjTEbC-",
-  "title": "fr?",
-  "size": "1280x720",
-  "seconds": 6.8,
-  "cam": [
-   0,
-   72,
-   340,
-   226
-  ],
-  "cam_frac": [
-   0.0,
-   0.1,
-   0.266,
-   0.314
-  ],
-  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/tarik_1.jpg"
+  "error": "no clips"
  },
  {
   "channel": "summit1g",
@@ -126,16 +94,17 @@
   "size": "1280x720",
   "seconds": 21.0,
   "cam": [
-   968,
-   86,
-   310,
-   206
+   960,
+   72,
+   320,
+   212
   ],
+  "mode": "border",
   "cam_frac": [
-   0.756,
-   0.119,
-   0.242,
-   0.286
+   0.75,
+   0.1,
+   0.25,
+   0.294
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/summit1g_0.jpg"
  },
@@ -145,18 +114,9 @@
   "title": "The real Issue in WOW Forever PVP",
   "size": "1280x720",
   "seconds": 40.7,
-  "cam": [
-   0,
-   422,
-   304,
-   202
-  ],
-  "cam_frac": [
-   0.0,
-   0.586,
-   0.237,
-   0.281
-  ],
+  "cam": null,
+  "mode": "static face (1.0)",
+  "cam_frac": null,
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/summit1g_1.jpg"
  },
  {
@@ -166,16 +126,17 @@
   "size": "1280x720",
   "seconds": 60.0,
   "cam": [
-   36,
-   460,
-   280,
-   186
+   72,
+   488,
+   208,
+   138
   ],
+  "mode": "border",
   "cam_frac": [
-   0.028,
-   0.639,
-   0.219,
-   0.258
+   0.056,
+   0.678,
+   0.163,
+   0.192
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/timthetatman_0.jpg"
  },
@@ -186,16 +147,17 @@
   "size": "1280x720",
   "seconds": 60.0,
   "cam": [
-   30,
-   458,
-   280,
-   186
+   44,
+   484,
+   254,
+   168
   ],
+  "mode": "border",
   "cam_frac": [
-   0.023,
-   0.636,
-   0.219,
-   0.258
+   0.034,
+   0.672,
+   0.198,
+   0.233
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/timthetatman_1.jpg"
  },
@@ -206,16 +168,17 @@
   "size": "1280x720",
   "seconds": 30.0,
   "cam": [
-   0,
-   258,
-   434,
-   288
+   18,
+   312,
+   224,
+   148
   ],
+  "mode": "border",
   "cam_frac": [
-   0.0,
-   0.358,
-   0.339,
-   0.4
+   0.014,
+   0.433,
+   0.175,
+   0.206
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/nickmercs_0.jpg"
  },
@@ -226,16 +189,17 @@
   "size": "1280x720",
   "seconds": 60.0,
   "cam": [
-   874,
-   270,
-   366,
-   244
+   1000,
+   276,
+   260,
+   172
   ],
+  "mode": "border",
   "cam_frac": [
-   0.683,
-   0.375,
-   0.286,
-   0.339
+   0.781,
+   0.383,
+   0.203,
+   0.239
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/nickmercs_1.jpg"
  },
@@ -246,16 +210,17 @@
   "size": "1280x720",
   "seconds": 17.5,
   "cam": [
-   0,
-   492,
-   340,
-   226
+   42,
+   574,
+   208,
+   138
   ],
+  "mode": "border",
   "cam_frac": [
-   0.0,
-   0.683,
-   0.266,
-   0.314
+   0.033,
+   0.797,
+   0.163,
+   0.192
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/shroud_0.jpg"
  },
@@ -266,16 +231,17 @@
   "size": "1280x720",
   "seconds": 20.0,
   "cam": [
-   0,
-   488,
-   346,
-   230
+   12,
+   574,
+   208,
+   138
   ],
+  "mode": "border",
   "cam_frac": [
-   0.0,
-   0.678,
-   0.27,
-   0.319
+   0.009,
+   0.797,
+   0.163,
+   0.192
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/shroud_1.jpg"
  },
@@ -286,16 +252,17 @@
   "size": "1280x720",
   "seconds": 14.0,
   "cam": [
-   0,
-   112,
-   342,
-   228
+   44,
+   140,
+   222,
+   148
   ],
+  "mode": "border",
   "cam_frac": [
-   0.0,
-   0.156,
-   0.267,
-   0.317
+   0.034,
+   0.194,
+   0.173,
+   0.206
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_0.jpg"
  },
@@ -306,16 +273,17 @@
   "size": "1280x720",
   "seconds": 58.2,
   "cam": [
-   8,
-   216,
-   302,
-   200
+   50,
+   240,
+   196,
+   130
   ],
+  "mode": "border",
   "cam_frac": [
-   0.006,
-   0.3,
-   0.236,
-   0.278
+   0.039,
+   0.333,
+   0.153,
+   0.181
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_1.jpg"
  }
