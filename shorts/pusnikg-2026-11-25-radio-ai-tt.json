@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 4.72s  ʌnpˈɑːpjʊlɚɹ əpˈɪniən, ðə ɹˈeɪdɪˌoʊ ɪz hˈæf ʌv ˈɛvɹi dʒˌiːtˌiːˈeɪ ɡˈeɪm.\n1: 4.92s  nˈoʊbɑːdi ɹᵻmˈɛmbɚz ɐ mˈɪʃən æz klˈɪɹli æz ðə sˈɔŋ ðæt plˈeɪd ɔnðə wˈeɪ ðˈɛɹ.\n2: 2.33s  ɹˈeɪdɪˌoʊ ˈɔn, ɔːɹ jʊɹ ˈoʊn mjˈuːzɪk?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 14.35s",
+  "PREFLIGHT_OK 4 lines, 12 shots, 15.61 s\nUnpopular@0.22 opinion,@0.82 the@1.72 radio@1.76 is@2.10 half@2.39 of@2.63 every@2.81 GTA@3.11 game.@3.39\nNobody@0.23 remembers@0.66 a@1.08 mission@1.31 as@1.60 clearly@1.90 as@2.17 the@2.53 song@2.67 that@2.90 played@3.15 on@3.37 the@3.60 way@3.71 there.@3.83\nRadio@0.23 on,@0.69 or@1.16 your@1.22 own@1.32 music?@1.44\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 15.61 shots 12 captions 10\nRENDER_OK /home/runner/work_pusnikg-2026-11-25-radio-ai-tt/pusnikg-2026-11-25-radio-ai-tt.mp4 15.61s",
+  "QA_OK 15.61s -13.6 LUFS frames: /home/runner/work_pusnikg-2026-11-25-radio-ai-tt/pusnikg-2026-11-25-radio-ai-tt_qa_0.png /home/runner/work_pusnikg-2026-11-25-radio-ai-tt/pusnikg-2026-11-25-radio-ai-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-25-radio-ai-tt/pusnikg-2026-11-25-radio-ai-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 15.61,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus07.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-25-radio-ai-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-25-radio-ai-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-25-radio-ai-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-25-radio-ai-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-25-radio-ai-tt",
+ "attempts": 1
+}
