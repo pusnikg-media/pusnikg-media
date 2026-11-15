@@ -555,21 +555,25 @@ def facecam_rect(src, a, dur, p, spec="auto"):
         Fi = F.astype(np.int16)
         ex = np.percentile(np.abs(np.diff(Fi, axis=2)), 25, axis=0); ey = np.percentile(np.abs(np.diff(Fi, axis=1)), 25, axis=0)
 
-        def edge(prof, lo, hi, limit):
-            """Strongest lasting edge in [lo, hi); the picture's own edge counts when the range runs into it."""
+        def edge(prof, lo, hi, limit, outer):
+            """Lasting edge in [lo, hi): of the strong ones the one farthest from the face (outer = -1 towards 0, +1 towards the end) -
+            the room behind the streamer has lasting edges too, the cam's border lies outside them (camtest run 2).
+            The picture's own edge counts when the range runs into it."""
             lo_, hi_ = max(int(lo), 0), min(int(hi), len(prof))
             if hi_ - lo_ >= 3:
-                i = lo_ + int(np.argmax(prof[lo_:hi_])); base = float(np.median(prof)) + 1e-6
-                if prof[i] >= max(6.0, 3.0 * base): return i + 1
+                seg = prof[lo_:hi_]; base = float(np.median(prof)) + 1e-6; top = float(seg.max())
+                if top >= max(6.0, 3.0 * base):
+                    idx = np.nonzero(seg >= max(6.0, 3.0 * base, 0.6 * top))[0]
+                    return lo_ + int(idx[0] if outer < 0 else idx[-1]) + 1
             if lo < 2: return 0
             if hi > limit - 2: return limit
             return None
         r0, r1 = max(int(cy - 0.8 * fw), 0), min(int(cy + 1.2 * fw), sh)
         px = ex[r0:r1].mean(axis=0)
-        L = edge(px, cx - 3.6 * fw, cx - 0.6 * fw, sw); R = edge(px, cx + 0.6 * fw, cx + 3.6 * fw, sw)
+        L = edge(px, cx - 3.6 * fw, cx - 0.6 * fw, sw, -1); R = edge(px, cx + 0.6 * fw, cx + 3.6 * fw, sw, 1)
         if L is not None and R is not None and R - L >= 1.6 * fw:
             py = ey[:, max(L + 2, 0):max(R - 2, L + 3)].mean(axis=1)
-            T = edge(py, cy - 2.6 * fw, cy - 0.6 * fw, sh); B = edge(py, cy + 0.8 * fw, cy + 3.4 * fw, sh)
+            T = edge(py, cy - 2.6 * fw, cy - 0.6 * fw, sh, -1); B = edge(py, cy + 0.8 * fw, cy + 3.4 * fw, sh, 1)
             if T is not None and B is not None and B - T >= 1.4 * fw:
                 w = min(R - L, (B - T) * 1.5)
                 if w >= 1.8 * fw:
