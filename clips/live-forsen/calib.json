@@ -1,0 +1,168 @@
+{
+ "channel": "forsen",
+ "started": "2026-11-15T17:22:08+00:00",
+ "minutes": [
+  {
+   "min": 1,
+   "hype": 0.0,
+   "chat": 0.0,
+   "msgs": 145
+  },
+  {
+   "min": 2,
+   "hype": 0.0,
+   "chat": 0.0,
+   "msgs": 134
+  },
+  {
+   "min": 3,
+   "hype": 10.7,
+   "chat": 1.94,
+   "msgs": 96
+  },
+  {
+   "min": 4,
+   "hype": 9.5,
+   "chat": 1.74,
+   "msgs": 139
+  },
+  {
+   "min": 5,
+   "hype": 10.5,
+   "chat": 1.8,
+   "msgs": 89
+  },
+  {
+   "min": 6,
+   "hype": 10.6,
+   "chat": 1.74,
+   "msgs": 132
+  },
+  {
+   "min": 7,
+   "hype": 10.7,
+   "chat": 1.71,
+   "msgs": 49
+  },
+  {
+   "min": 8,
+   "hype": 10.4,
+   "chat": 1.93,
+   "msgs": 114
+  },
+  {
+   "min": 9,
+   "hype": 9.9,
+   "chat": 2.08,
+   "msgs": 41
+  },
+  {
+   "min": 10,
+   "hype": 10.1,
+   "chat": 2.08,
+   "msgs": 91
+  },
+  {
+   "min": 11,
+   "hype": 11.8,
+   "chat": 1.72,
+   "msgs": 115
+  },
+  {
+   "min": 12,
+   "hype": 11.7,
+   "chat": 2.62,
+   "msgs": 162
+  },
+  {
+   "min": 13,
+   "hype": 11.5,
+   "chat": 2.52,
+   "msgs": 128
+  },
+  {
+   "min": 14,
+   "hype": 11.0,
+   "chat": 2.74,
+   "msgs": 86
+  },
+  {
+   "min": 15,
+   "hype": 12.4,
+   "chat": 2.31,
+   "msgs": 137
+  },
+  {
+   "min": 16,
+   "hype": 12.5,
+   "chat": 2.23,
+   "msgs": 129
+  },
+  {
+   "min": 17,
+   "hype": 13.2,
+   "chat": 1.86,
+   "msgs": 91
+  },
+  {
+   "min": 18,
+   "hype": 13.5,
+   "chat": 2.0,
+   "msgs": 93
+  },
+  {
+   "min": 19,
+   "hype": 11.1,
+   "chat": 1.5,
+   "msgs": 92
+  },
+  {
+   "min": 20,
+   "hype": 11.4,
+   "chat": 1.62,
+   "msgs": 49
+  }
+ ],
+ "events": [
+  {
+   "min": 3,
+   "pos": 29,
+   "kind": "loud",
+   "hype": 10.7,
+   "chat": 1.94,
+   "lag": null
+  },
+  {
+   "min": 7,
+   "pos": 295,
+   "kind": "loud",
+   "hype": 10.7,
+   "chat": 1.71,
+   "lag": null
+  },
+  {
+   "min": 9,
+   "pos": 437,
+   "kind": "loud",
+   "hype": 9.9,
+   "chat": 2.08,
+   "lag": null
+  },
+  {
+   "min": 11,
+   "pos": 647,
+   "kind": "loud",
+   "hype": 11.8,
+   "chat": 1.72,
+   "lag": null
+  },
+  {
+   "min": 17,
+   "pos": 888,
+   "kind": "loud",
+   "hype": 13.2,
+   "chat": 1.86,
+   "lag": null
+  }
+ ]
+}
