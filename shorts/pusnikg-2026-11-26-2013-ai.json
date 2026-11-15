@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 4.90s  dʒˌiːtˌiːˈeɪ fˈaɪv kˈeɪm ˈaʊt ɪn sɛptˈɛmbɚ twˈɛnti θˈɜːtiːn, θˈɪŋk ɐbˌaʊt ðˈæt.\n1: 4.80s  θˈɜːtiːn jˈɪɹz, θɹˈiː kˈɑːnsoʊl dʒˌɛnɚɹˈeɪʃənz, ænd wiː wɜːɹ ˈɔːl stˈɪl plˈeɪɪŋ ɪt.\n2: 5.60s  ðæts wˌaɪ ðɪs lˈɑːntʃ fˈiːlz dˈɪfɹənt, mˈoʊst əv ˌʌs ɡɹˈuː ˌʌp bᵻtwˌiːn tˈuː dʒˌiːtˌiːˈeɪ ɡˈeɪmz.\n3: 5.20s  sˌoʊ wʌtˈɛvɚ juː θˈɪŋk ʌv dʒˌiːtˌiːˈeɪ sˈɪks, dˈoʊnt ɹˈʌʃ ɪt, ðə nˈɛkst wˈʌn ɪz fˈɑːɹ ɐwˈeɪ.\n4: 2.10s  wˌɛɹ wɜː juː ɪn twˈɛnti θˈɜːtiːn?\n5: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 6 lines 24.98s",
+  "still@3.19 playing@3.44 it.@3.75\nThat's@0.23 why@0.66 this@0.80 launch@1.02 feels@1.26 different,@1.58 most@2.33 of@2.50 us@2.68 grew@2.78 up@3.02 between@3.22 two@3.53 GTA@3.79 games.@4.13\nSo@0.22 whatever@0.52 you@0.70 think@1.02 of@1.22 GTA@1.36 6,@1.60 don't@2.44 rush@2.67 it,@2.83 the@3.27 next@3.33 one@3.49 is@3.71 far@3.81 away.@4.05\nWhere@0.22 were@0.54 you@0.64 in@0.77 twenty@0.88 thirteen?@1.05\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 6 lines\n\nTOTAL 26.675 shots 20 captions 20\nRENDER_OK /home/runner/work_pusnikg-2026-11-26-2013-ai/pusnikg-2026-11-26-2013-ai.mp4 26.68s",
+  "QA_OK 26.68s -14.3 LUFS frames: /home/runner/work_pusnikg-2026-11-26-2013-ai/pusnikg-2026-11-26-2013-ai_qa_0.png /home/runner/work_pusnikg-2026-11-26-2013-ai/pusnikg-2026-11-26-2013-ai_qa_mid.png /home/runner/work_pusnikg-2026-11-26-2013-ai/pusnikg-2026-11-26-2013-ai_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 26.68,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus03.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-26-2013-ai.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-26-2013-ai_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-26-2013-ai_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-26-2013-ai_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-26-2013-ai",
+ "attempts": 1
+}
