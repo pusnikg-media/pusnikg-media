@@ -59,3 +59,17 @@ Befund Reflab (16 virale Streamer-Clips kleiner Clipper-Konten, 80 Tsd.–5,6 Mi
 - `"layout": "native"` (Auftrag oder Clip): ganzes Bild, nichts abgeschnitten; Wort-Untertitel nur mit `"captions": true`, Zoom nur mit `"zoom": true`.
 - `"caption": "<Kontextsatz>"` pro Clip (max. 3 Zeilen, ca. 95 Zeichen, Emojis erlaubt): ersetzt den großen Titel; `title` darf dann fehlen. Geht auch mit `framed` und `full`.
 - `"layout": "split"` (Gaming mit Facecam): Gesicht oben (1080x720), Gameplay-Mitte unten (1080x1200), Kontextsatz auf der Naht. `"facecam": "auto"` (sucht das kleine Gesicht, das an einer Stelle bleibt) oder `[x, y, b, h]` als Anteile des Bildes (0–1) – beim Ansehen der cand-Bilder ablesen ist sicherer als auto. Ohne Facecam fällt der Clip auf `native` zurück. Mechanik getestet, automatische Erkennung an echtem Stream-Material noch nicht.
+
+## Zahlen-Sammler „stats“ v1 (15.11.) – `.github/workflows/stats.yml`, `pipeline/stats/stats.py`
+Sammelt dreimal täglich (ca. 06:20, 12:20, 17:20 Berliner Zeit) und bei Änderung von `plan/stats.json` die öffentlichen Views aller eigenen Posts – ohne Login, ohne API-Schlüssel, ohne Credits. YouTube: RSS-Feed des Kanals (genaue Views + Likes der neuesten 15 öffentlichen Videos) plus Shorts-Reiter per yt-dlp (ältere Videos, gerundet, ohne Datum). TikTok: Profil per yt-dlp (Views, Likes, Kommentare, Shares). Instagram geht ohne Login nicht → Agenten nehmen `vidiq_instagram_owner_insights` (0 Credits).
+- Ausgabe: `stats/latest.md` (für Agenten, klein), `stats/latest.json` (alles), `stats/history.json` (Messpunkte pro Post, 45 Tage).
+- Pro Post: `views`, `plus_24h` (Zuwachs seit der Messung vor ca. einem Tag), `views_24h` / `views_72h` (Stand einen bzw. drei Tage nach Veröffentlichung), `campaign`, `min_views`, `reached`.
+- `alerts` / Abschnitt „Schwelle erreicht“: Kampagnen-Clip hat seit dem letzten Lauf die Auszahlungsschwelle überschritten (einmalig).
+- `plan/stats.json`: Konten (`youtube` = Kanal-ID, `tiktok` = Name ohne @) und Kampagnen (`match` = Wörter in Titel/Beschreibung, `min_views`). Neue Kampagne = eine Zeile dort.
+- Privat eingeplante YouTube-Videos tauchen nicht auf. Selbsttest: `python3 pipeline/stats/stats.py selftest` (läuft bei jedem Action-Lauf mit).
+
+## Stand-Datei für alle Agenten – `plan/team_state.md` (15.11.)
+Eine Quelle für den Projektstand (Werkzeuge, Kampagnen, Postzeiten, Clip-Stil, TikTok-Einstellungen, Experimente). Analyst, Stratege und Clipping-Agent lesen sie als ersten Schritt; bei Widerspruch gilt die Datei. Ändert sich etwas (neue Kampagne, neue Schicht, neues Werkzeug): NUR diese Datei anpassen, nicht jeden Aufgabentext.
+
+## Livewatch – Eichung 15.11.
+98 Minuten gemessen (forsen 78, zackrawrr 20): Der Chat reagiert 7–25 s nach dem Moment (Median 17 s). Mit den alten Schwellen (2,5 / 1,4) gab es alle 4,6 Minuten einen Treffer – zu viel. Neu: `min_chat` 3,0 (Chat-Ausbruch allein), `co_chat` 2,0 (Lautstärke-Spitze braucht doppeltes Chat-Tempo), Rückblick-Fenster 28 s. Ergibt bei den Messdaten ca. 3 Treffer pro Stunde. Mit den neuen Werten noch kein Live-Lauf.
