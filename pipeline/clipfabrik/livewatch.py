@@ -55,6 +55,45 @@ def find_peak(db, win=20, base=600):
     return best, (len(db) - n + bt if bt is not None else None)
 
 
+class Chat:
+    """Twitch chat speed, read anonymously (no login, read-only): messages per second since the recording started.
+    A burst of chat messages is the classic sign that something clip-worthy just happened - louder is not always funnier."""
+    def __init__(self, channel):
+        import threading
+        self.t0 = time.time(); self.n = {}; self.ok = False; self.ch = channel.lower()
+        threading.Thread(target=self.run, daemon=True).start()
+
+    def run(self):
+        import socket
+        while True:
+            try:
+                so = socket.create_connection(("irc.chat.twitch.tv", 6667), timeout=30); so.settimeout(330)
+                so.sendall(f"NICK justinfan{int(time.time()) % 89999 + 10000}\r\nJOIN #{self.ch}\r\n".encode()); buf = b""
+                while True:
+                    d = so.recv(4096)
+                    if not d: break
+                    buf += d; lines = buf.split(b"\r\n"); buf = lines.pop()
+                    for l in lines:
+                        if l.startswith(b"PING"): so.sendall(b"PONG :tmi.twitch.tv\r\n")
+                        elif b" PRIVMSG #" in l:
+                            k = int(time.time() - self.t0); self.n[k] = self.n.get(k, 0) + 1; self.ok = True
+            except Exception as e:
+                print("chat reconnect:", str(e)[-80:])
+            time.sleep(5)
+
+    def peak(self, upto, win=15, base=600):
+        """(ratio, position): busiest 15 s of the newest 3 minutes against the median 15 s of the last 10 minutes."""
+        import numpy as np
+        if not self.ok or upto < 150: return 0.0, None
+        lo = max(0, upto - base); c = np.array([self.n.get(k, 0) for k in range(lo, upto)], dtype=np.float32)
+        w = np.convolve(c, np.ones(win), mode="valid")
+        if len(w) < 60: return 0.0, None
+        med = float(np.median(w))
+        if med < 3: return 0.0, None  # chat too quiet to say anything
+        k0 = max(0, len(w) - 180); i = k0 + int(np.argmax(w[k0:]))
+        return round(float(w[i]) / med, 2), lo + i - 4  # people type a few seconds after the moment
+
+
 def cut(segs, t0, a, b, dst):
     """Seconds [a, b] of the recording (segment i holds [t0 + i*SEG, ...)) -> one mp4."""
     i0, i1 = int((a - t0) // SEG), int((b - t0) // SEG); files = [segs[i] for i in range(i0, i1 + 1) if i in segs]
@@ -112,9 +151,10 @@ def publish(root, name, entry, push):
     print("WARN push failed for", entry["id"])
 
 
-def loop(ch, root, rec, alive, push, t_end):
+def loop(ch, root, rec, alive, push, t_end, chat=None):
     """Shared by watch and simulate: rec = folder that fills with %05d.ts pieces, alive() = recorder still running."""
     db, segs, done, clips, last = [], {}, 0, [], -999.0; t0 = 0.0
+    min_chat = float(ch.get("min_chat", 2.5))
     min_hype = float(ch.get("min_hype", 9)); per_hour = int(ch.get("per_hour", 3)); max_clips = int(ch.get("max_clips", 8))
     while time.time() < t_end:
         files = sorted(glob.glob(os.path.join(rec, "*.ts"))); run = alive()
@@ -125,11 +165,15 @@ def loop(ch, root, rec, alive, push, t_end):
             done += 1
             hype, peak = find_peak(db)
             recent = [c for c in clips if c > len(db) - 3600]
-            print(f"min {done:3d} hype {hype:4.1f} peak {peak}")
+            cr, cp = chat.peak(len(db)) if chat else (0.0, None)
+            print(f"min {done:3d} hype {hype:4.1f} peak {peak} chat x{cr} at {cp}")
+            if chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
+                if cp is not None and cr >= min_chat: peak, hype = max(cp, 0), max(hype, min_hype)
+                elif not (cp is not None and cr >= 1.4 and peak is not None and abs(cp - peak) < 30): peak = None
             if peak is not None and hype >= min_hype and len(db) - peak >= 12 and peak - last > 90 and len(recent) < per_hour and len(clips) < max_clips:
                 stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
                 try:
-                    entry, name = make_clip(ch, root, segs, t0, peak, hype, stamp); publish(root, name, entry, push)
+                    entry, name = make_clip(ch, root, segs, t0, peak, hype, stamp); entry["chat"] = cr; publish(root, name, entry, push)
                     clips.append(peak); last = peak
                 except Exception as e:
                     print("WARN clip failed:", str(e)[-300:]); last = peak
@@ -150,7 +194,8 @@ def watch(root):
         for f in glob.glob(os.path.join(rec, "*.ts")): os.remove(f)
         pr = subprocess.Popen(["ffmpeg", "-v", "error", "-i", hls, "-c", "copy", "-f", "segment", "-segment_time", str(SEG), "-reset_timestamps", "1",
                                os.path.join(rec, "%05d.ts")])
-        try: n = loop(ch, root, rec, lambda: pr.poll() is None, True, t_end)
+        m = re.search(r"twitch\.tv/([A-Za-z0-9_]+)", ch["url"]); chat = Chat(m.group(1)) if m else None
+        try: n = loop(ch, root, rec, lambda: pr.poll() is None, True, t_end, chat)
         finally: pr.terminate()
         print(f"LIVEWATCH_DONE {ch['name']} clips {n}"); return
     print("LIVEWATCH_IDLE")

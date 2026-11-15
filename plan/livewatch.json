@@ -1,6 +1,6 @@
 {
  "enabled": true,
- "max_minutes": 40,
+ "max_minutes": 25,
  "note": "TEST 15.11.2026: prüft der Reihe nach, wer live ist, und beobachtet den ersten Treffer 40 Min. Danach wieder enabled false.",
  "channels": [
   {
@@ -9,7 +9,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "jynxzi",
@@ -17,7 +18,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "caseoh",
@@ -25,7 +27,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "jasontheween",
@@ -33,7 +36,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "lacy",
@@ -41,7 +45,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "stableronaldo",
@@ -49,7 +54,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "plaqueboymax",
@@ -57,7 +63,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "agent00",
@@ -65,7 +72,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "xqc",
@@ -73,7 +81,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "adinross",
@@ -81,7 +90,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "n3on",
@@ -89,7 +99,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "forsen",
@@ -97,7 +108,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "zackrawrr",
@@ -105,7 +117,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "summit1g",
@@ -113,7 +126,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "tarik",
@@ -121,7 +135,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "papaplatte",
@@ -129,7 +144,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   },
   {
    "name": "eslcs",
@@ -137,7 +153,8 @@
    "min_hype": 6,
    "per_hour": 6,
    "max_clips": 2,
-   "height": 720
+   "height": 720,
+   "min_chat": 2.5
   }
  ]
 }
