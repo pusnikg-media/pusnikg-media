@@ -1,0 +1,16 @@
+{
+ "note": "Zahlen-Sammler (pipeline/stats/stats.py, Action 'stats'). Liest öffentliche View-Zahlen der eigenen Konten ohne Login und ohne Credits. campaigns: 'match' = Wörter, von denen eines in Titel/Beschreibung stehen muss (klein geschrieben); min_views = Auszahlungsschwelle pro Clip (null = unbekannt).",
+ "accounts": [
+  {"name": "Pusnik G", "youtube": "UCdDdmDm4ojr_G_oY_JiJ6BA", "tiktok": "pusnikg"},
+  {"name": "Pusnik IRL", "youtube": "UC-jebjWjMe7FsqpHsbqFCMQ", "tiktok": "pusnikirl"}
+ ],
+ "campaigns": [
+  {"name": "TJR", "match": ["#tjr"], "min_views": 5000},
+  {"name": "Warzone S1", "match": ["#warzone"], "min_views": null},
+  {"name": "MW4 DMZ", "match": ["#mw4", "#dmz"], "min_views": null},
+  {"name": "SEGA Virtua Fighter", "match": ["virtua fighter", "#virtuafighter"], "min_views": null},
+  {"name": "JasonTheWeen", "match": ["#jasontheween"], "min_views": null}
+ ],
+ "scan": 40,
+ "keep_days": 45
+}
