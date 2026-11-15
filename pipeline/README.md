@@ -53,3 +53,8 @@ Kampagnen-Footage → fertige 9:16-Clips (nur Originalton), ohne dass ein Claude
 
 ## Reflab v0 (15.11.) – `.github/workflows/reflab.yml`, `pipeline/reflab/reflab.py`
 Schaut sich ohne vidIQ-Credits an, was woanders funktioniert: holt pro Referenz-Konto aus `plan/reflab.json` die meistgesehenen der neuesten Shorts (yt-dlp), misst den Schnitt (Länge, Schnitte pro 10 s, erster Schnitt, wann gesprochen wird, Wörter pro s, die ersten Worte = Hook) und legt `refs/latest/report.json` + kleine Bildstreifen ab (`rXX_hook.jpg` = erste 3 s, `rXX_flow.jpg` = ganzer Clip). Eigene Clips (`ours`) werden zum Vergleich mitgemessen (`median_refs` gegen `median_ours`). Es werden keine fremden Videos gespeichert. Läuft montags und bei Änderung von `plan/reflab.json` (Konto oder einzelnen Link unter `urls` eintragen). `problems` zeigt, welche Plattform den Runner blockt.
+
+## Clipfabrik v5 (15.11.) – Stil „native“ aus dem Reflab
+Befund Reflab (16 virale Streamer-Clips kleiner Clipper-Konten, 80 Tsd.–5,6 Mio. Views): fast alle zeigen das GANZE Originalbild (16:9 mittig im Hochformat), EINEN Kontextsatz als weißen Kasten mit schwarzer Schrift direkt über dem Bild (normale Schreibweise, 1–2 Wörter groß, Emojis, Name des Streamers zuerst), Originalton, keine Wort-Untertitel, keine Zooms, 0 Schnitte im Median, 10–38 s (Median 17 s).
+- `"layout": "native"` (Auftrag oder Clip): ganzes Bild, nichts abgeschnitten; Wort-Untertitel nur mit `"captions": true`, Zoom nur mit `"zoom": true`.
+- `"caption": "<Kontextsatz>"` pro Clip (max. 3 Zeilen, ca. 95 Zeichen, Emojis erlaubt): ersetzt den großen Titel; `title` darf dann fehlen. Geht auch mit `framed` und `full`.

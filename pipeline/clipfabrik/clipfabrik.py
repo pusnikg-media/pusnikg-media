@@ -36,6 +36,12 @@ v4 (15.11.): retention edits, per clip or per job
             clip from "a". "auto" = the loudest moment after the first 5 s, snapped to whole words (none if nothing stands out).
   zoom      true/false: quick 8 % zoom punches on the loudest moments (laughs, shouts), at most one per 4 s.
             Default: on for layout "full", off for "framed".
+v5 (15.11., from the reference lab: viral streamer clips keep the ORIGINAL framing and one context sentence in a white box)
+  layout    "native" = the whole source picture (e.g. 16:9) in the middle of a blurred 9:16 frame, nothing cropped away,
+            no karaoke captions unless the clip sets "captions": true, no zoom unless "zoom": true.
+  caption   clip only: one context sentence in normal spelling, e.g. "Lacy did NOT expect Rug to DANCE on his stream 😭"
+            (max 3 lines, ~95 characters; emojis are drawn when the runner has a colour emoji font). Drawn as a white box
+            with black text right above the picture (layout native/framed) or at the top (full). Replaces the big title.
 Result: clips/<name>/result.json {"ok", "sig", "attempts", "clips": [{"id", "ok", "url", "seconds", "title"}], "error"}.
 Layout 1080x1920: blurred fill, sharp centre crop 1080x1200 at y=400, title (+ pill) on top, karaoke captions (libass)."""
 import glob, hashlib, json, math, os, re, subprocess, sys, urllib.parse
@@ -318,7 +324,49 @@ def paste_logo(img, logo, width, y_top=None, y_bottom=None):
     img.alpha_composite(halo); img.alpha_composite(lg, (x, y))
 
 
-def overlay(title, pill, path, logo=None, logo_w=380, logo_pos="video_bottom", fg=(400, 1200), shade=False):
+EMOJI_FONTS = ["/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", "/usr/share/fonts/noto/NotoColorEmoji.ttf"]
+
+
+def is_emoji(ch):
+    o = ord(ch); return o >= 0x1F000 or 0x2600 <= o <= 0x27BF or o in (0x2B50, 0x2B55, 0x203C, 0x2049)
+
+
+def caption_box(img, text, bottom, size=46, maxw=900):
+    """TikTok-style label: white rounded box, black bold text, centred, its lower edge at `bottom`. Up to 3 lines."""
+    from PIL import Image, ImageDraw, ImageFont
+    d = ImageDraw.Draw(img); f = pfont(size); ef = None
+    for p_ in EMOJI_FONTS:
+        try: ef = ImageFont.truetype(p_, 109); break
+        except OSError: pass
+    text = "".join(c for c in text if c not in "\ufe0f\u200d")
+    if ef is None: text = re.sub(r"\s+", " ", "".join(c for c in text if not is_emoji(c))).strip()
+    wlen = lambda t: sum(size * 1.08 if is_emoji(c) else d.textlength(c, font=f) for c in t)
+    lines, cur = [], ""
+    for w in text.split():
+        t = (cur + " " + w).strip()
+        if wlen(t) <= maxw or not cur: cur = t
+        else: lines.append(cur); cur = w
+    if cur: lines.append(cur)
+    if len(lines) > 3 or any(wlen(l) > maxw + 40 for l in lines): raise Fail(f"caption too long ({len(text)} chars, max ~95): {text!r}")
+    lh = int(size * 1.28); bw = int(max(wlen(l) for l in lines)) + 52; bh = lh * len(lines) + 30
+    x0 = (W - bw) // 2; y0 = int(bottom - bh)
+    d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], radius=22, fill=(255, 255, 255, 255))
+    for i, l in enumerate(lines):
+        x = (W - wlen(l)) / 2; y = y0 + 15 + i * lh
+        for c in l:
+            if is_emoji(c):
+                try:
+                    g = Image.new("RGBA", (136, 128), (0, 0, 0, 0)); ImageDraw.Draw(g).text((0, 0), c, font=ef, embedded_color=True)
+                    bb = g.getbbox()
+                    if bb: g = g.crop(bb).resize((size, size), Image.LANCZOS); img.alpha_composite(g, (int(x + size * 0.04), int(y + size * 0.14)))
+                except Exception: pass
+                x += size * 1.08
+            else:
+                d.text((x, y), c, font=f, fill=(0, 0, 0, 255)); x += d.textlength(c, font=f)
+    return y0
+
+
+def overlay(title, pill, path, logo=None, logo_w=380, logo_pos="video_bottom", fg=(400, 1200), shade=False, caption=None, cap_bottom=None):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     if shade:  # full-screen layout: dark top gradient keeps the title readable on bright IRL footage
@@ -326,6 +374,10 @@ def overlay(title, pill, path, logo=None, logo_w=380, logo_pos="video_bottom", f
         for y in range(H): g.putpixel((0, y), int(170 * max(0.0, 1 - y / 520)))
         img.putalpha(g.resize((W, H)))
     d = ImageDraw.Draw(img)
+    if caption:  # context sentence instead of the big title (reference-lab style)
+        caption_box(img, caption, cap_bottom if cap_bottom is not None else 330)
+        if logo is not None: paste_logo(img, logo, logo_w, y_bottom=fg[0] + fg[1] - 40)
+        img.save(path); return
     fs = 118
     while fs > 56 and d.textlength(title, font=ImageFont.truetype(ANTON, fs)) > W - 110: fs -= 2
     f = ImageFont.truetype(ANTON, fs); tw = d.textlength(title, font=f)
@@ -405,7 +457,7 @@ def check_clips(job, dur):
         if not 0 <= a < b <= dur + 0.05: errs.append(f"{cid}: {a}-{b} outside the source (0-{dur:.1f} s)")
         elif b - a < lo: errs.append(f"{cid}: {b - a:.1f} s is shorter than min_len {lo:g} s")
         elif b - a > 180: errs.append(f"{cid}: longer than 180 s")
-        if not str(c.get("title", "")).strip(): errs.append(f"{cid}: title missing")
+        if not str(c.get("title", "")).strip() and not str(c.get("caption", "")).strip(): errs.append(f"{cid}: title (or caption) missing")
         hk = c.get("hook")
         if hk not in (None, False, "auto"):
             try:
@@ -520,13 +572,17 @@ def auto_hook(db, words, a, b, step=0.1, min_db=5.0):
 
 def render_clip(job, c, src, p, words, out, tmp):
     a, b = float(c["a"]), min(float(c["b"]), p["dur"]); cid = c["id"]
-    title = str(c["title"]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
+    capt = str(c.get("caption") or "").strip()
+    title = str(c.get("title") or capt[:40]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
     layout = c.get("layout", job.get("layout", "framed")); track = c.get("track", job.get("track", False))
-    full = layout == "full"
+    full = layout == "full"; native = layout == "native"
     zoom = bool(c.get("zoom", job.get("zoom", full))) and p["audio"]
     ov = os.path.join(tmp, cid + ".png")
-    caps = c.get("captions", True) and bool(words)
-    if full:  # whole frame 9:16 out of the source, captions in the lower third
+    caps = c.get("captions", not native) and bool(words)
+    if native:  # whole picture, nothing cropped away (how viral streamer clips are posted)
+        fg_h = min(FG_H, int(W * p["h"] / p["w"] / 2) * 2); fg_y = (H - fg_h) // 2
+        cw = p["w"] // 2 * 2; ch = min(p["h"], int(cw * fg_h / W / 2) * 2); mv = H - (fg_y + fg_h) + 60
+    elif full:  # whole frame 9:16 out of the source, captions in the lower third
         ch = p["h"] // 2 * 2; cw = min(p["w"], int(ch * W / H / 2) * 2); ch = min(ch, int(cw * H / W / 2) * 2)
         fg_y, fg_h = 0, H; mv = 520
     else:
@@ -535,7 +591,8 @@ def render_clip(job, c, src, p, words, out, tmp):
         cw = min(p["w"], int(p["h"] * W / fg_h / 2) * 2); ch = min(p["h"], int(cw * fg_h / W / 2) * 2)  # also fits portrait sources
         mv = H - (fg_y + fg_h) + 130
     overlay(title, pill, ov, logo=job.get("_logo_img"), logo_w=int(c.get("logo_w", job.get("logo_w", 380))),
-            logo_pos=c.get("logo_pos", job.get("logo_pos", "video_bottom")), fg=(fg_y, fg_h), shade=full)
+            logo_pos=c.get("logo_pos", job.get("logo_pos", "video_bottom")), fg=(fg_y, fg_h), shade=full and not capt,
+            caption=capt or None, cap_bottom=None if full else fg_y - 18)
     fps = min(60, max(24, round(p["fps"])))
     db = energy(src, a, b - a) if p["audio"] and (zoom or c.get("hook") == "auto") else []
     hook = c.get("hook")
