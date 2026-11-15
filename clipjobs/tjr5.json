@@ -12,6 +12,45 @@
   "Fuck": "F*ck",
   "shit": "sh*t",
   "Shit": "Sh*t",
-  "bitch": "b*tch"
- }
+  "bitch": "b*tch",
+  "ass": "a*s"
+ },
+ "clips": [
+  {
+   "id": "A_key",
+   "a": 154.5,
+   "b": 171.3,
+   "title": "TJR GETS A BROKE CAR",
+   "hook": [
+    164.6,
+    167.45
+   ]
+  },
+  {
+   "id": "B_seat",
+   "a": 313.4,
+   "b": 330.1,
+   "title": "NO AUTOMATIC SEATS?!",
+   "hook": [
+    319.3,
+    322.3
+   ]
+  },
+  {
+   "id": "C_worst",
+   "a": 970.6,
+   "b": 987.7,
+   "title": "WORST DAY OF HIS LIFE"
+  },
+  {
+   "id": "E_outro",
+   "a": 1731.2,
+   "b": 1746.9,
+   "title": "TJR AFTER 24H BEING BROKE",
+   "hook": [
+    1738.3,
+    1741.6
+   ]
+  }
+ ]
 }
