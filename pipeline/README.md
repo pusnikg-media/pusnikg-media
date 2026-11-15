@@ -73,3 +73,11 @@ Eine Quelle für den Projektstand (Werkzeuge, Kampagnen, Postzeiten, Clip-Stil, 
 
 ## Livewatch – Eichung 15.11.
 98 Minuten gemessen (forsen 78, zackrawrr 20): Der Chat reagiert 7–25 s nach dem Moment (Median 17 s). Mit den alten Schwellen (2,5 / 1,4) gab es alle 4,6 Minuten einen Treffer – zu viel. Neu: `min_chat` 3,0 (Chat-Ausbruch allein), `co_chat` 2,0 (Lautstärke-Spitze braucht doppeltes Chat-Tempo), Rückblick-Fenster 28 s. Ergibt bei den Messdaten ca. 3 Treffer pro Stunde. Mit den neuen Werten noch kein Live-Lauf.
+
+## Facecam-Erkennung für `layout: split` – Test 15.11. (`pipeline/clipfabrik/camtest.py`, Action `camtest`, von Hand startbar)
+16 echte Twitch-Clips der Woche von 8 Gaming-Streamern (jynxzi, caseoh_, tarik, summit1g, timthetatman, nickmercs, shroud, xqc). `"facecam": "auto"` fand in 13 von 16 die richtige Stelle. Nach drei Läufen verbessert:
+- Der Ausschnitt folgt jetzt dem Rahmen der Facecam (äußerste Kante, die in jedem Bild da ist) statt einem festen Kasten ums Gesicht → kein Gameplay mehr im Gesichts-Feld (11 von 16 Clips im Modus „border").
+- Ohne erkennbaren Rahmen (dunkle Cam, freigestellter Streamer): Kasten ums Gesicht, höchstens 42 % der Bildbreite.
+- Ein Gesicht, das sich zwischen den Bildern nicht verändert (Poster, Standbild), wird verworfen → Clip fällt auf `native` zurück.
+- Bekannte Grenzen: Poster-Gesicht, vor dem jemand durchs Bild läuft, zählt noch als Facecam; bei zwei Gesichtern im Bild gewinnt das frontalere. Deshalb weiter jedes QA-Bild ansehen und im Zweifel `"facecam": [x, y, b, h]` setzen.
+- Neuer Test: `plan/camtest.json` (Kanäle) ändern oder die Action starten; Ergebnis `clips/camtest/report.json` + Bildstreifen mit eingezeichnetem Kasten.

@@ -576,7 +576,7 @@ def facecam_rect(src, a, dur, p, spec="auto"):
             T = edge(py, cy - 2.6 * fw, cy - 0.6 * fw, sh, -1); B = edge(py, cy + 0.8 * fw, cy + 3.4 * fw, sh, 1)
             if T is not None and B is not None and B - T >= 1.4 * fw:
                 w = min(R - L, (B - T) * 1.5)
-                if w >= 1.8 * fw:
+                if 1.8 * fw <= w <= 4.6 * fw:  # wider = not a cam border but something behind a cut-out streamer (camtest run 3)
                     h = w / 1.5; x = min(max(cx - w / 2, L), R - w); y = min(max(cy + 0.15 * fw - h / 2, T), B - h)
                     facecam_rect.last = "border"
                     return [int(x * k) // 2 * 2, int(y * k) // 2 * 2, int(w * k) // 2 * 2, int(h * k) // 2 * 2]
