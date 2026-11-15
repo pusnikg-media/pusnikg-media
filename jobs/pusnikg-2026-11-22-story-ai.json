@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-22-story-ai",
+ "date": "2026-11-22",
+ "day": -3,
+ "script": [
+  "Be honest, are you playing the GTA 6 story or just causing chaos?",
+  "I think the right answer is story first, because a Rockstar story only hits once.",
+  "The chaos will still be there in ten years, we all know that.",
+  "But the first time through those missions, you only get that once.",
+  "Story first or chaos first?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_teal.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car07a.mp4",
+    "start": 2.3
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist03a.mp4",
+    "start": 0.9
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/heist05a.mp4",
+    "start": 7.4
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car04a.mp4",
+    "start": 0.5
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car03a.mp4",
+    "start": 4.0
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city01a.mp4",
+    "start": 0.5
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city01b.mp4",
+    "start": 0.6
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city03a.mp4",
+    "start": 4.8
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_night.mp4",
+    "start": 1.1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_low_night.mp4",
+    "start": 1.3
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_rear_night.mp4",
+    "start": 0.9
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus01.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Dark drift phonk (eigene Bibliothek)"
+ },
+ "hook_big": "STORY",
+ "hook_mid": "OR CHAOS?",
+ "hook_sub": "HOW DO YOU PLAY?",
+ "badge": "GTA 6 • WEEK 1",
+ "card": {
+  "line": 1,
+  "word": "once",
+  "top": "STORY HITS",
+  "big": "ONCE",
+  "bottom": "PLAY IT FIRST"
+ },
+ "punch": [
+  "story",
+  "chaos",
+  "once",
+  "missions"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}

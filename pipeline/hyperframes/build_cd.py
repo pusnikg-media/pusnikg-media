@@ -59,8 +59,9 @@ JS.append(f'tl.fromTo("#bar",{{scaleX:0}},{{scaleX:1,duration:{TOTAL},ease:"none
 he = wins[0][1] + GAP; w0 = words[0]
 _hb = str(job.get("hook_big", day)).upper()
 HOOK_FS = int(min(560, 780 / max(em(_hb) * 1.04, 0.01)))  # 780 px: frame 0 starts at scale 1.25 (thumbnail!)  # words like "DON'T" or "WHO?" at 560px ran off the frame
+MID_FS = int(min(150, (CAP_W - 40) / max(em(str(job.get("hook_mid", "DAYS LEFT"))), 0.1)))  # long yellow lines shrink instead of overflowing
 H.append(f'<div id="hook" class="clip" data-start="0" data-duration="{he:.3f}" data-track-index="2"><div id="hook-in">'
-         f'<div id="hook-num" style="font-size:{HOOK_FS}px">{esc(job.get("hook_big", day))}</div><div id="hook-days">{esc(job.get("hook_mid", "DAYS LEFT"))}</div>'
+         f'<div id="hook-num" style="font-size:{HOOK_FS}px">{esc(job.get("hook_big", day))}</div><div id="hook-days" style="font-size:{MID_FS}px">{esc(job.get("hook_mid", "DAYS LEFT"))}</div>'
          f'<div id="hook-sub">{esc(job.get("hook_sub", ""))}</div></div></div>')
 JS += ['tl.fromTo("#hook-num",{scale:1.25},{scale:1,duration:0.35,ease:"back.out(2)"},0);',
        'tl.fromTo("#hook-days",{y:0},{y:0,duration:0.01},0);',

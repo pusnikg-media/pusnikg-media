@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-23-map-ai",
+ "date": "2026-11-23",
+ "day": -4,
+ "script": [
+  "Leonida is huge, so where are you actually going first?",
+  "Vice City is the obvious pick, neon, beaches, and traffic.",
+  "But I'd head straight for the Leonida Keys, small islands, boats, and nobody watching.",
+  "And the swamps of Grassrivers look like the place where things go wrong fast.",
+  "Vice City, the Keys, or the swamps?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_tunnel_pink.mp4",
+    "start": 0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_aerial.mp4",
+    "start": 0.9
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_sunset.mp4",
+    "start": 1.1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_city_rise.mp4",
+    "start": 1.0
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach02a.mp4",
+    "start": 0.6
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach05a.mp4",
+    "start": 2.8
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/wild01a.mp4",
+    "start": 9.8
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city08a.mp4",
+    "start": 6.1
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_coast_sunset.mp4",
+    "start": 1.4
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city01b.mp4",
+    "start": 0.6
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/s3d_car_front_dusk.mp4",
+    "start": 1.0
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car08a.mp4",
+    "start": 7.2
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus04.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Dark synthwave (eigene Bibliothek)"
+ },
+ "hook_big": "WHERE",
+ "hook_mid": "FIRST?",
+ "hook_sub": "VICE CITY OR THE KEYS?",
+ "badge": "GTA 6 • WEEK 1",
+ "card": {
+  "line": 2,
+  "word": "Keys",
+  "top": "LEONIDA",
+  "big": "KEYS",
+  "bottom": "ISLANDS + BOATS"
+ },
+ "punch": [
+  "leonida",
+  "vice",
+  "keys",
+  "swamps"
+ ],
+ "tiktok_lines": [
+  0,
+  2,
+  4,
+  5
+ ]
+}
