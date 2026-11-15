@@ -90,6 +90,54 @@
    "per_hour": 6,
    "max_clips": 2,
    "height": 720
+  },
+  {
+   "name": "forsen",
+   "url": "https://www.twitch.tv/forsen",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "zackrawrr",
+   "url": "https://www.twitch.tv/zackrawrr",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "summit1g",
+   "url": "https://www.twitch.tv/summit1g",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "tarik",
+   "url": "https://www.twitch.tv/tarik",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "papaplatte",
+   "url": "https://www.twitch.tv/papaplatte",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
+  },
+  {
+   "name": "eslcs",
+   "url": "https://www.twitch.tv/eslcs",
+   "min_hype": 6,
+   "per_hour": 6,
+   "max_clips": 2,
+   "height": 720
   }
  ]
 }

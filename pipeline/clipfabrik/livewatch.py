@@ -33,7 +33,8 @@ def live_url(url, height):
         r = subprocess.run(["yt-dlp", "-g", "--no-playlist", "-f", f"b[height<={height}]/b", url], capture_output=True, text=True, timeout=120)
     except Exception: return None
     u = [l for l in r.stdout.split("\n") if l.startswith("http")]
-    return u[0] if r.returncode == 0 and u else None
+    if r.returncode == 0 and u: return u[0]
+    print("   ", (r.stderr.strip().split("\n") or [""])[-1][:160]); return None  # why not: offline, blocked, login wall ...
 
 
 def seg_db(path):
