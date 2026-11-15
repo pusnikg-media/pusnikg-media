@@ -27,17 +27,17 @@
   "size": "1280x720",
   "seconds": 16.0,
   "cam": [
-   792,
-   332,
-   488,
-   324
+   532,
+   190,
+   746,
+   496
   ],
   "mode": "border",
   "cam_frac": [
-   0.619,
-   0.461,
-   0.381,
-   0.45
+   0.416,
+   0.264,
+   0.583,
+   0.689
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/jynxzi_1.jpg"
  },
@@ -85,7 +85,45 @@
  },
  {
   "channel": "tarik",
-  "error": "no clips"
+  "url": "https://www.twitch.tv/tarik/clip/WiseAbstemiousJaguarRlyTho-R_YvxLgOyEGdPSOE",
+  "title": "back like we never left",
+  "size": "1280x720",
+  "seconds": 41.4,
+  "cam": [
+   84,
+   88,
+   252,
+   168
+  ],
+  "mode": "border",
+  "cam_frac": [
+   0.066,
+   0.122,
+   0.197,
+   0.233
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/tarik_0.jpg"
+ },
+ {
+  "channel": "tarik",
+  "url": "https://www.twitch.tv/tarik/clip/FlaccidPhilanthropicStorkPeteZarollTie-PA-jEenRFIjTEbC-",
+  "title": "fr?",
+  "size": "1280x720",
+  "seconds": 6.8,
+  "cam": [
+   86,
+   90,
+   248,
+   166
+  ],
+  "mode": "border",
+  "cam_frac": [
+   0.067,
+   0.125,
+   0.194,
+   0.231
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/tarik_1.jpg"
  },
  {
   "channel": "summit1g",
@@ -94,17 +132,17 @@
   "size": "1280x720",
   "seconds": 21.0,
   "cam": [
-   960,
+   958,
    72,
    320,
-   212
+   214
   ],
   "mode": "border",
   "cam_frac": [
-   0.75,
+   0.748,
    0.1,
    0.25,
-   0.294
+   0.297
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/summit1g_0.jpg"
  },
@@ -126,17 +164,17 @@
   "size": "1280x720",
   "seconds": 60.0,
   "cam": [
-   72,
+   64,
    488,
-   208,
-   138
+   226,
+   150
   ],
   "mode": "border",
   "cam_frac": [
-   0.056,
+   0.05,
    0.678,
-   0.163,
-   0.192
+   0.177,
+   0.208
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/timthetatman_0.jpg"
  },
@@ -147,17 +185,17 @@
   "size": "1280x720",
   "seconds": 60.0,
   "cam": [
-   44,
-   484,
-   254,
-   168
+   38,
+   476,
+   268,
+   178
   ],
   "mode": "border",
   "cam_frac": [
-   0.034,
-   0.672,
-   0.198,
-   0.233
+   0.03,
+   0.661,
+   0.209,
+   0.247
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/timthetatman_1.jpg"
  },
@@ -168,17 +206,17 @@
   "size": "1280x720",
   "seconds": 30.0,
   "cam": [
-   18,
-   312,
-   224,
-   148
+   8,
+   298,
+   266,
+   176
   ],
   "mode": "border",
   "cam_frac": [
-   0.014,
-   0.433,
-   0.175,
-   0.206
+   0.006,
+   0.414,
+   0.208,
+   0.244
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/nickmercs_0.jpg"
  },
@@ -191,15 +229,15 @@
   "cam": [
    1000,
    276,
-   260,
-   172
+   262,
+   174
   ],
   "mode": "border",
   "cam_frac": [
    0.781,
    0.383,
-   0.203,
-   0.239
+   0.205,
+   0.242
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/nickmercs_1.jpg"
  },
@@ -210,17 +248,17 @@
   "size": "1280x720",
   "seconds": 17.5,
   "cam": [
-   42,
+   40,
    574,
-   208,
-   138
+   210,
+   140
   ],
   "mode": "border",
   "cam_frac": [
-   0.033,
+   0.031,
    0.797,
-   0.163,
-   0.192
+   0.164,
+   0.194
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/shroud_0.jpg"
  },
@@ -231,17 +269,17 @@
   "size": "1280x720",
   "seconds": 20.0,
   "cam": [
-   12,
+   10,
    574,
-   208,
-   138
+   210,
+   140
   ],
   "mode": "border",
   "cam_frac": [
-   0.009,
+   0.008,
    0.797,
-   0.163,
-   0.192
+   0.164,
+   0.194
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/shroud_1.jpg"
  },
@@ -252,17 +290,17 @@
   "size": "1280x720",
   "seconds": 14.0,
   "cam": [
-   44,
-   140,
-   222,
-   148
+   14,
+   130,
+   252,
+   168
   ],
   "mode": "border",
   "cam_frac": [
-   0.034,
-   0.194,
-   0.173,
-   0.206
+   0.011,
+   0.181,
+   0.197,
+   0.233
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_0.jpg"
  },
@@ -273,17 +311,17 @@
   "size": "1280x720",
   "seconds": 58.2,
   "cam": [
-   50,
-   240,
-   196,
-   130
+   24,
+   232,
+   220,
+   146
   ],
   "mode": "border",
   "cam_frac": [
-   0.039,
-   0.333,
-   0.153,
-   0.181
+   0.019,
+   0.322,
+   0.172,
+   0.203
   ],
   "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_1.jpg"
  }
