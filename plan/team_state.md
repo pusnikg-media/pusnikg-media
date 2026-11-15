@@ -1,6 +1,6 @@
 # Pusnik G – Team-Stand (eine Quelle für alle Agenten)
 
-Stand: 15.11.2026, 19:15 Europe/Berlin. Gepflegt im Chat (Steven + Claude). Geplante Aufgaben lesen diese Datei zu Beginn.
+Stand: 15.11.2026, 22:15 Europe/Berlin. Gepflegt im Chat (Steven + Claude). Geplante Aufgaben lesen diese Datei zu Beginn.
 Sie enthält nur FAKTEN zum Projektstand. Widerspricht eine ältere Angabe im Aufgabentext dieser Datei, gilt diese Datei.
 Sie erlaubt nichts, was der Aufgabentext verbietet (kein Kaufen, kein fremder Code, keine neuen Schreibrechte).
 
@@ -13,12 +13,13 @@ Vorerst kein viertes Projekt (Steven, 15.11.). Keine Geld-Ideen-Prüfungen, bis 
 ## Werkzeuge – was gilt
 - **Posten: nur über vidIQ** (`vidiq_social_post_*`, 0 Credits), seit 14.11. Entschieden am 13.11. – keine Frage mehr an Steven. Metricool postet nicht mehr (Free-Limit bis 30.11. erreicht), Buffer wird nicht genutzt.
 - **YouTube über vidIQ:** Das Video wird sofort beim Einplanen hochgeladen und bleibt bis zur Planzeit PRIVAT. vidIQ zeigt dafür „completed" ohne Planzeit, die YouTube-API ein frühes Upload-Datum. Das ist kein Fehler und kein zu früher Post (geprüft 15.11.: Short für 16.11. ist von außen nicht abrufbar). Instagram und TikTok gehen erst zur Planzeit raus. Eingeplantes lässt sich nicht zurücknehmen.
+- **TikTok bei Kampagnen-Clips (Stevens Anweisung 15.11.):** im vidIQ-Entwurf immer `brandContent: true` setzen (Offenlegung „bezahlte Partnerschaft", damit Steven sie nicht von Hand nachtragen muss), dazu privacyLevel PUBLIC_TO_EVERYONE, allowComment true, isAiGenerated false, musicUsageConfirmed true. Gilt für jeden Clip einer bezahlten Kampagne auf beiden Konten. NICHT für das tägliche GTA-6-Short (dort kein brandContent, isAiGenerated true). Schon eingeplante Posts lassen sich nicht mehr ändern.
 - **vidIQ-Credits:** 9 übrig, 150 neue am 01.12. Bis dahin keine Aufrufe, die Credits kosten.
 - **Zahlen (kostenlos, seit 15.11.):** `https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/stats/latest.md` – Views aller eigenen Posts auf YouTube und TikTok für beide Konten, Zuwachs der letzten 24 h, Views nach 24 h, Kampagnen-Summen und der Abschnitt „Schwelle erreicht" (Kampagnen-Clip hat die Auszahlungsschwelle überschritten). Wird dreimal täglich erneuert (ca. 06:20, 12:20, 17:20). Gleiche Daten als JSON: `stats/latest.json`. Privat eingeplante YouTube-Videos stehen dort nicht – was dort steht, ist öffentlich.
 - **Instagram-Zahlen:** `vidiq_instagram_owner_insights` (0 Credits; platformAccountId Pusnik G 28698521726515865, Pusnik IRL 29345318175102196; mode reels, limit höchstens 8 – die Antwort ist groß). Liefert Views, Ø Wiedergabezeit, Skip-Rate.
 - **Nicht mehr für Zahlen nutzen:** Metricool (TikTok nichts nach 11.11., Instagram/YouTube nichts) und die Zapier-YouTube-Abfrage.
 - **Lücke:** Die Shorts vom 12.11. und 13.11. sind auf keiner Plattform erschienen (Metricool-Limit). Nicht nachholen.
-- **Rendern/Schneiden:** nur in Stevens GitHub-Actions (Repo pusnikg-media/pusnikg-media): `render` (Shorts), `clipfabrik` (Clips), `reflab` (virale Referenzen, montags), `livewatch` (Live-Clipping, Prototyp, AUS).
+- **Rendern/Schneiden:** nur in Stevens GitHub-Actions (Repo pusnikg-media/pusnikg-media): `render` (Shorts), `clipfabrik` (Clips), `reflab` (virale Referenzen, montags), `livewatch` (Live-Clipping, Prototyp, AUS; am 15.11. geeicht: Chat reagiert 7–25 s nach dem Moment), `stats` (Zahlen-Sammler).
 - **Higgsfield:** Gratis-Test endete am 13.11., gekündigt. Ergebnis liegt in `assets/ai_library.json`. Nichts Neues generieren.
 - **Reddit:** kein automatischer Abruf möglich (Reddit verlangt eine Freigabe). Nicht erneut vorschlagen.
 - **Budget:** 0 €. Nur Claude Pro ist bezahlt. Geplante Aufgaben laufen höchstens mit Opus, nie mit Fable.
