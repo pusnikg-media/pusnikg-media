@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 4.90s  dʒˌiːtˌiːˈeɪ fˈaɪv kˈeɪm ˈaʊt ɪn sɛptˈɛmbɚ twˈɛnti θˈɜːtiːn, θˈɪŋk ɐbˌaʊt ðˈæt.\n1: 4.80s  θˈɜːtiːn jˈɪɹz, θɹˈiː kˈɑːnsoʊl dʒˌɛnɚɹˈeɪʃənz, ænd wiː wɜːɹ ˈɔːl stˈɪl plˈeɪɪŋ ɪt.\n2: 2.10s  wˌɛɹ wɜː juː ɪn twˈɛnti θˈɜːtiːn?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 14.18s",
+  "PREFLIGHT_OK 4 lines, 12 shots, 15.44 s\nGTA@0.23 5@0.57 came@1.34 out@1.55 in@1.86 September@2.05 twenty@2.34 thirteen,@2.74 think@3.49 about@3.56 that.@3.79\nThirteen@0.24 years,@0.73 three@1.27 console@1.41 generations,@1.78 and@2.78 we@2.81 were@2.93 all@3.04 still@3.19 playing@3.44 it.@3.75\nWhere@0.22 were@0.54 you@0.64 in@0.77 twenty@0.88 thirteen?@1.05\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 15.435 shots 12 captions 9\nRENDER_OK /home/runner/work_pusnikg-2026-11-26-2013-ai-tt/pusnikg-2026-11-26-2013-ai-tt.mp4 15.44s",
+  "QA_OK 15.44s -14.5 LUFS frames: /home/runner/work_pusnikg-2026-11-26-2013-ai-tt/pusnikg-2026-11-26-2013-ai-tt_qa_0.png /home/runner/work_pusnikg-2026-11-26-2013-ai-tt/pusnikg-2026-11-26-2013-ai-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-26-2013-ai-tt/pusnikg-2026-11-26-2013-ai-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 15.44,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus03.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-26-2013-ai-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-26-2013-ai-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-26-2013-ai-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-26-2013-ai-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-26-2013-ai-tt",
+ "attempts": 1
+}
