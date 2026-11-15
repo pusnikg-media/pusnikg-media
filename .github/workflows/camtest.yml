@@ -1,0 +1,41 @@
+# Camtest: checks the automatic facecam detection of the Clipfabrik on real Twitch clips (plan/camtest.json). Sheets only, no videos.
+name: camtest
+on:
+  push:
+    branches: [main]
+    paths: ["plan/camtest.json", "pipeline/clipfabrik/camtest.py"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: camtest
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            plan
+            pipeline
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run
+        run: |
+          bash pipeline/install_tools.sh || exit 1
+          pip install -q numpy pillow yt-dlp "opencv-python-headless<5"
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          python3 pipeline/clipfabrik/camtest.py . || true
+          [ -f clips/camtest/report.json ] || exit 0
+          O=/home/runner/ct; rm -rf "$O"; mkdir -p "$O"; cp -r clips/camtest/. "$O/"
+          for i in 1 2 3 4; do
+            git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+            git sparse-checkout add clips/camtest; rm -rf clips/camtest; mkdir -p clips/camtest; cp -r "$O/." clips/camtest/
+            git add -A --sparse clips/camtest; git diff --cached --quiet && break
+            git commit -q -m "camtest: report" && git push -q origin HEAD:main && { echo PUBLISHED; break; }
+            sleep 8
+          done
