@@ -1,0 +1,17 @@
+{
+ "name": "tjr5",
+ "source": "https://drive.google.com/file/d/1zk-CyDKnOhqpgqwLvcYfuUBO26MGZnBW/view",
+ "layout": "full",
+ "track": true,
+ "min_len": 15,
+ "hot_k": 18,
+ "fix": {
+  "fucking": "f*cking",
+  "Fucking": "F*cking",
+  "fuck": "f*ck",
+  "Fuck": "F*ck",
+  "shit": "sh*t",
+  "Shit": "Sh*t",
+  "bitch": "b*tch"
+ }
+}
