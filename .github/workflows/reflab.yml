@@ -1,0 +1,50 @@
+# Reflab v0: measures how the most-viewed recent shorts of the reference accounts in plan/reflab.json are edited
+# (cuts, hook timing, speech rate) and writes refs/latest/report.json + small picture sheets. No videos are stored.
+name: reflab
+on:
+  push:
+    branches: [main]
+    paths: ["plan/reflab.json", "pipeline/reflab/**", ".github/workflows/reflab.yml"]
+  schedule:
+    - cron: "23 3 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: reflab
+  cancel-in-progress: false
+jobs:
+  refs:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: clipfabrik-whisper-small-v3
+      - name: Install tools
+        timeout-minutes: 20
+        run: |
+          bash pipeline/install_tools.sh || exit 1
+          pip install -q numpy scipy pillow faster-whisper yt-dlp curl_cffi
+      - name: Analyse and publish
+        run: |
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          python3 pipeline/reflab/reflab.py run . || true
+          [ -f refs/latest/report.json ] || exit 0
+          O=/home/runner/refs_out; rm -rf "$O"; mkdir -p "$O"; cp -r refs/latest/. "$O/"
+          for i in 1 2 3 4; do
+            git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+            rm -rf refs/latest; mkdir -p refs/latest; cp -r "$O/." refs/latest/
+            git add -A refs/latest; git diff --cached --quiet && break
+            git commit -q -m "reflab: report" && git push -q origin HEAD:main && { echo PUBLISHED; break; }
+            sleep 8
+          done
