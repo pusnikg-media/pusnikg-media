@@ -1,0 +1,135 @@
+{
+ "refs": [
+  {
+   "seconds": 15.0,
+   "size": "1080x1920",
+   "cuts_per_10s": 0.0,
+   "first_cut_s": null,
+   "quiet_share": 0.05,
+   "speech_starts_s": null,
+   "words_per_s": 0.0,
+   "first_words": "",
+   "hook_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/r00_hook.jpg",
+   "flow_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/r00_flow.jpg",
+   "url": "https://www.tiktok.com/@ishowspeed/video/7461283703050833194",
+   "account": "https://www.tiktok.com/@ishowspeed",
+   "views": 381500000,
+   "likes": 32200000,
+   "title": "#ishowspeed ",
+   "caption": "#ishowspeed "
+  },
+  {
+   "seconds": 14.8,
+   "size": "1080x1920",
+   "cuts_per_10s": 0.0,
+   "first_cut_s": null,
+   "quiet_share": 0.0,
+   "speech_starts_s": 0.46,
+   "words_per_s": 0.94,
+   "first_words": "I love you, fascist, I love",
+   "hook_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/r01_hook.jpg",
+   "flow_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/r01_flow.jpg",
+   "url": "https://www.tiktok.com/@ishowspeed/video/7414531895909731626",
+   "account": "https://www.tiktok.com/@ishowspeed",
+   "views": 326000000,
+   "likes": 26000000,
+   "title": "#ishowspeed ",
+   "caption": "#ishowspeed "
+  },
+  {
+   "seconds": 13.5,
+   "size": "1080x1920",
+   "cuts_per_10s": 0.0,
+   "first_cut_s": null,
+   "quiet_share": 0.03,
+   "speech_starts_s": 3.24,
+   "words_per_s": 2.6,
+   "first_words": "",
+   "hook_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/r02_hook.jpg",
+   "flow_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/r02_flow.jpg",
+   "url": "https://www.tiktok.com/@ishowspeed/video/7567543028659785015",
+   "account": "https://www.tiktok.com/@ishowspeed",
+   "views": 317900000,
+   "likes": 26700000,
+   "title": "#ishowspeed ",
+   "caption": "#ishowspeed "
+  }
+ ],
+ "ours": [
+  {
+   "seconds": 19.7,
+   "size": "1080x1920",
+   "cuts_per_10s": 4.6,
+   "first_cut_s": 2.83,
+   "quiet_share": 0.0,
+   "speech_starts_s": 0.0,
+   "words_per_s": 3.3,
+   "first_words": "No automatic door. That's how you know, I'm out of touch. This",
+   "hook_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o00_hook.jpg",
+   "flow_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o00_flow.jpg",
+   "file": "clips/tjr5/tjr5_A_key.mp4"
+  },
+  {
+   "seconds": 19.7,
+   "size": "1080x1920",
+   "cuts_per_10s": 1.5,
+   "first_cut_s": 3.04,
+   "quiet_share": 0.01,
+   "speech_starts_s": 0.0,
+   "words_per_s": 3.45,
+   "first_words": "Are they just doing that to like rub it into my face right now?",
+   "hook_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o01_hook.jpg",
+   "flow_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o01_flow.jpg",
+   "file": "clips/tjr5/tjr5_B_seat.mp4"
+  },
+  {
+   "seconds": 17.1,
+   "size": "1080x1920",
+   "cuts_per_10s": 0.0,
+   "first_cut_s": null,
+   "quiet_share": 0.01,
+   "speech_starts_s": 0.05,
+   "words_per_s": 3.74,
+   "first_words": "Um today's honest have been like the worst day of my life. I",
+   "hook_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o02_hook.jpg",
+   "flow_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o02_flow.jpg",
+   "file": "clips/tjr5/tjr5_C_worst.mp4"
+  },
+  {
+   "seconds": 19.0,
+   "size": "1080x1920",
+   "cuts_per_10s": 0.5,
+   "first_cut_s": 3.33,
+   "quiet_share": 0.05,
+   "speech_starts_s": 0.0,
+   "words_per_s": 3.63,
+   "first_words": "I saw my day and saw how horrible it",
+   "hook_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o03_hook.jpg",
+   "flow_sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/refs/latest/o03_flow.jpg",
+   "file": "clips/tjr5/tjr5_E_outro.mp4"
+  }
+ ],
+ "problems": [
+  "https://www.tiktok.com/@kaicenat: no listing (ERROR: [tiktok:user] kaicenat: This account does not have any videos posted)",
+  "https://www.youtube.com/shorts/hXfa4yBnxn8: download failed (w-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies)",
+  "https://www.youtube.com/shorts/viaYaCOTOzc: download failed (w-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies)",
+  "https://www.youtube.com/shorts/vTl4-LaJnTM: download failed (w-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies)"
+ ],
+ "median_refs": {
+  "seconds": 14.8,
+  "cuts_per_10s": 0.0,
+  "speech_starts_s": 1.85,
+  "words_per_s": 0.94,
+  "quiet_share": 0.03,
+  "n": 3
+ },
+ "median_ours": {
+  "seconds": 19.35,
+  "cuts_per_10s": 1.0,
+  "first_cut_s": 3.04,
+  "speech_starts_s": 0.0,
+  "words_per_s": 3.54,
+  "quiet_share": 0.01,
+  "n": 4
+ }
+}
