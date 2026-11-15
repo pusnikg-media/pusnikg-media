@@ -39,6 +39,9 @@ v4 (15.11.): retention edits, per clip or per job
 v5 (15.11., from the reference lab: viral streamer clips keep the ORIGINAL framing and one context sentence in a white box)
   layout    "native" = the whole source picture (e.g. 16:9) in the middle of a blurred 9:16 frame, nothing cropped away,
             no karaoke captions unless the clip sets "captions": true, no zoom unless "zoom": true.
+  layout    "split" = gaming clips with a facecam: streamer's face on top (1080x720), gameplay below (1080x1200), caption on the
+            seam. "facecam": "auto" (default; finds the small face that stays in one place) or [x, y, w, h] as fractions of the
+            source frame (0-1). No facecam found -> falls back to "native".
   caption   clip only: one context sentence in normal spelling, e.g. "Lacy did NOT expect Rug to DANCE on his stream 😭"
             (max 3 lines, ~95 characters; emojis are drawn when the runner has a colour emoji font). Drawn as a white box
             with black text right above the picture (layout native/framed) or at the top (full). Replaces the big title.
@@ -510,6 +513,36 @@ def face_track(src, a, dur, p, cw, step=0.5):
     return [(round(i * step, 2), round(min(max(c - cw / 2, 0), p["w"] - cw), 1)) for i, c in enumerate(cam)]
 
 
+def facecam_rect(src, a, dur, p, spec="auto"):
+    """Facecam area in source px (3:2), or None. spec = [x, y, w, h] fractions, or "auto": the small face that stays put."""
+    def fit(cx, cy, w):
+        w = min(max(w, 0.16 * p["w"]), p["w"], p["h"] * 1.5); h = w / 1.5
+        x = min(max(cx - w / 2, 0), p["w"] - w); y = min(max(cy - h / 2, 0), p["h"] - h)
+        return [int(x) // 2 * 2, int(y) // 2 * 2, int(w) // 2 * 2, int(h) // 2 * 2]
+    if isinstance(spec, (list, tuple)) and len(spec) == 4:
+        x, y, w, h = (float(v) for v in spec)
+        return fit((x + w / 2) * p["w"], (y + h / 2) * p["h"], max(w * p["w"], h * p["h"] * 1.5))
+    try:
+        import cv2, numpy as np
+    except ImportError: return None
+    sw = 960; sh = max(2, int(round(p["h"] * sw / p["w"] / 2)) * 2); k = p["w"] / sw
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{a:.3f}", "-t", f"{dur:.3f}", "-i", src, "-an",
+                        "-vf", f"fps={12 / max(dur, 1):.4f},scale={sw}:{sh},format=gray", "-f", "rawvideo", "-"], capture_output=True, timeout=600)
+    nf = len(r.stdout) // (sw * sh)
+    if not nf: return None
+    cc = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    if cc.empty(): return None
+    det = []
+    for g in np.frombuffer(r.stdout[:nf * sw * sh], np.uint8).reshape(nf, sh, sw):
+        det += [(x + w / 2, y + h / 2, w) for (x, y, w, h) in cc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
+    if len(det) < 3: return None
+    d = np.array(det); med = np.median(d, axis=0)
+    near = d[(abs(d[:, 0] - med[0]) < 0.08 * sw) & (abs(d[:, 1] - med[1]) < 0.12 * sh)]  # a facecam does not move
+    if len(near) < max(3, 0.4 * nf): return None
+    cx, cy, fw = np.median(near, axis=0)
+    return fit(cx * k, (cy + 0.25 * fw) * k, 3.2 * fw * k)
+
+
 def x_expr(keys):
     """[(t, x)] -> ffmpeg expression in t (piecewise linear, holds collapsed). Single-quoted inside the filtergraph."""
     pts = [keys[0]]
@@ -575,11 +608,15 @@ def render_clip(job, c, src, p, words, out, tmp):
     capt = str(c.get("caption") or "").strip()
     title = str(c.get("title") or capt[:40]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
     layout = c.get("layout", job.get("layout", "framed")); track = c.get("track", job.get("track", False))
-    full = layout == "full"; native = layout == "native"
+    cam = facecam_rect(src, a, b - a, p, c.get("facecam", job.get("facecam", "auto"))) if layout == "split" else None
+    if layout == "split" and not cam: layout = "native"; print(f"WARN {cid}: no facecam found - layout native")
+    full = layout == "full"; native = layout == "native"; split = layout == "split"
     zoom = bool(c.get("zoom", job.get("zoom", full))) and p["audio"]
     ov = os.path.join(tmp, cid + ".png")
-    caps = c.get("captions", not native) and bool(words)
-    if native:  # whole picture, nothing cropped away (how viral streamer clips are posted)
+    caps = c.get("captions", not (native or split)) and bool(words); capb = None
+    if split:  # facecam 1080x720 on top, gameplay 1080x1200 (centre of the picture) below
+        fg_y, fg_h = 720, 1200; ch = p["h"] // 2 * 2; cw = min(p["w"], int(ch * W / fg_h / 2) * 2); mv = 150; capb = 786; track = False
+    elif native:  # whole picture, nothing cropped away (how viral streamer clips are posted)
         fg_h = min(FG_H, int(W * p["h"] / p["w"] / 2) * 2); fg_y = (H - fg_h) // 2
         cw = p["w"] // 2 * 2; ch = min(p["h"], int(cw * fg_h / W / 2) * 2); mv = H - (fg_y + fg_h) + 60
     elif full:  # whole frame 9:16 out of the source, captions in the lower third
@@ -592,7 +629,7 @@ def render_clip(job, c, src, p, words, out, tmp):
         mv = H - (fg_y + fg_h) + 130
     overlay(title, pill, ov, logo=job.get("_logo_img"), logo_w=int(c.get("logo_w", job.get("logo_w", 380))),
             logo_pos=c.get("logo_pos", job.get("logo_pos", "video_bottom")), fg=(fg_y, fg_h), shade=full and not capt,
-            caption=capt or None, cap_bottom=None if full else fg_y - 18)
+            caption=capt or None, cap_bottom=capb if split else (None if full else fg_y - 18))
     fps = min(60, max(24, round(p["fps"])))
     db = energy(src, a, b - a) if p["audio"] and (zoom or c.get("hook") == "auto") else []
     hook = c.get("hook")
@@ -609,7 +646,10 @@ def render_clip(job, c, src, p, words, out, tmp):
         zw, zh = (W, H) if full else (W, fg_h)
         zf = (f",scale=w='2*trunc({zw}*({zoom_expr(pts)})/2)':h='2*trunc({zh}*({zoom_expr(pts)})/2)':eval=frame:flags=bilinear,"
               f"crop={zw}:{zh}:x='(iw-ow)/2':y='(ih-oh)*0.42'") if pts else ""
-        if full:
+        if split:
+            fl = (f"[0:v]split=2[c0][g0];[c0]crop={cam[2]}:{cam[3]}:{cam[0]}:{cam[1]},scale={W}:720:flags=lanczos,setsar=1[top];"
+                  f"[g0]crop={cw}:{ch},scale={W}:{fg_h}:flags=lanczos{zf},setsar=1[bot];[top][bot]vstack[v1];[v1][1:v]overlay=0:0[v2];[v2]")
+        elif full:
             fl = f"[0:v]crop={cw}:{ch}{xpos},scale={W}:{H}:flags=lanczos{zf},setsar=1[v1];[v1][1:v]overlay=0:0[v2];[v2]"
         else:
             fl = (f"[0:v]split=2[b0][f0];"
@@ -653,7 +693,7 @@ def sig(*parts):
     return hashlib.sha1(json.dumps(parts, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:12]
 
 
-V3_KEYS = ("layout", "track", "max_height", "hot_k", "zoom")
+V3_KEYS = ("layout", "track", "max_height", "hot_k", "zoom", "facecam")
 
 
 def v3(job):
@@ -742,7 +782,7 @@ def run_job(spec_path, root, src=None):
         for c in job.get("clips", []):
             csig = sig(job.get("source"), c.get("pill", job.get("pill")), job.get("fix"), c,
                        *([job.get("logo"), job.get("logo_w"), job.get("logo_pos")] if job.get("logo") else []),
-                       *v3({k: job[k] for k in ("layout", "track", "zoom") if k in job}))
+                       *v3({k: job[k] for k in ("layout", "track", "zoom", "facecam") if k in job}))
             d = done.get(c["id"])
             if d and d.get("sig") == csig and os.path.exists(os.path.join(out, d["file"])):
                 res["clips"].append(d); continue

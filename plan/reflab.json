@@ -1,30 +1,25 @@
 {
  "accounts": [
+  "https://www.tiktok.com/tag/kaicenatclips",
+  "https://www.tiktok.com/tag/streamerclips",
   "https://www.tiktok.com/@anythingclips1",
   "https://www.tiktok.com/@coreclippzz_",
   "https://www.tiktok.com/@iklippedu",
   "https://www.tiktok.com/@detrclipz",
   "https://www.tiktok.com/@onlyclipiing",
+  "https://www.tiktok.com/@doomclippr",
+  "https://www.tiktok.com/@lanetachisme",
   "https://www.tiktok.com/@clipuniversehqq",
-  "https://www.tiktok.com/@doomclippr"
+  "https://www.tiktok.com/@the_bird_0f_hermes",
+  "https://www.tiktok.com/@kittyarcade75",
+  "https://www.tiktok.com/@silencedbeargames"
  ],
- "urls": [
-  "https://www.tiktok.com/@anythingclips1/video/7702935787347676437",
-  "https://www.tiktok.com/@coreclippzz_/video/7705637942420573453",
-  "https://www.tiktok.com/@iklippedu/video/7705938521072110861",
-  "https://www.tiktok.com/@lanetachisme/video/7704959254809120030",
-  "https://www.tiktok.com/@detrclipz/video/7707141914734103838",
-  "https://www.tiktok.com/@onlyclipiing/video/7702292023797239073",
-  "https://www.tiktok.com/@clipuniversehqq/video/7705339063120907551",
-  "https://www.tiktok.com/@doomclippr/video/7707864926542499086",
-  "https://www.tiktok.com/@the_bird_0f_hermes/video/7698395582464871693",
-  "https://www.tiktok.com/@kittyarcade75/video/7701772869121969422"
- ],
- "scan": 15,
- "top": 1,
+ "urls": [],
+ "scan": 12,
+ "top": 2,
  "ours": [
   "clips/tjr5"
  ],
- "max": 17,
- "note": "Konten und Links aus der vidIQ-Ausreißer-Suche vom 15.11.2026 (Streamer-Clips, kleine Clipper-Konten mit viralen Treffern)"
+ "max": 24,
+ "note": "IRL/Streamer: anythingclips1 bis lanetachisme. Gaming (Facecam + Gameplay): clipuniversehqq bis silencedbeargames. Quelle: vidIQ-Ausreißer-Suche 15.11.2026. Die zwei tag-Einträge testen, ob Hashtag-Seiten ohne Login lesbar sind (steht sonst unter problems)."
 }
