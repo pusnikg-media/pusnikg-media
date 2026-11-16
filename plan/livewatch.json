@@ -1,6 +1,8 @@
 {
- "enabled": false,
- "note": "AUS. Eichlauf 15.11.2026 ausgewertet (98 Min, forsen + zackrawrr): Chat reagiert 7-25 s nach dem Moment (Median 17 s). Neue Standardwerte im Code: min_chat 3.0 (Chat-Ausbruch allein), co_chat 2.0 (Lautstaerke braucht mindestens doppeltes Chat-Tempo). Einschalten: enabled true und in channels NUR Streamer mit laufender Kampagne, z. B. {\"name\":\"kaicenat\",\"url\":\"https://www.twitch.tv/kaicenat\",\"height\":720}.",
+ "enabled": true,
+ "note": "AN seit 16.11.2026 fuer Kampagne Jason Pool (Reach): NUR twitch.tv/jasontheween, KEIN Kick. Standardwerte min_chat 3.0 / co_chat 2.0 (aus Eichlauf 15.11., Lautstaerke-Schwelle min_hype 9). Fuer IRL noch nicht kalibriert.",
  "max_minutes": 150,
- "channels": []
+ "channels": [
+  {"name": "jasontheween", "url": "https://www.twitch.tv/jasontheween", "height": 720}
+ ]
 }
