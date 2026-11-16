@@ -57,7 +57,7 @@ Schaut sich ohne vidIQ-Credits an, was woanders funktioniert: holt pro Referenz-
 ## Clipfabrik v5 (15.11.) – Stil „native“ aus dem Reflab
 Befund Reflab (16 virale Streamer-Clips kleiner Clipper-Konten, 80 Tsd.–5,6 Mio. Views): fast alle zeigen das GANZE Originalbild (16:9 mittig im Hochformat), EINEN Kontextsatz als weißen Kasten mit schwarzer Schrift direkt über dem Bild (normale Schreibweise, 1–2 Wörter groß, Emojis, Name des Streamers zuerst), Originalton, keine Wort-Untertitel, keine Zooms, 0 Schnitte im Median, 10–38 s (Median 17 s).
 - `"layout": "native"` (Auftrag oder Clip): ganzes Bild, nichts abgeschnitten; Wort-Untertitel nur mit `"captions": true`, Zoom nur mit `"zoom": true`.
-- `"caption": "<Kontextsatz>"` pro Clip (max. 3 Zeilen, ca. 95 Zeichen, Emojis erlaubt): ersetzt den großen Titel; `title` darf dann fehlen. Geht auch mit `framed` und `full`.
+- `"caption": "<Kontextsatz>"` pro Clip (Emojis erlaubt): ersetzt den großen Titel; `title` darf dann fehlen. Geht auch mit `framed` und `full`. Seit 16.11. (Reel-Scout: 5 von 6 viralen Personen-Clips) ist der Satz ein ganzer Erzählsatz mit 9–15 Wörtern, Name zuerst, Ende „… 😭“. Der Kasten passt sich an: bis ca. 75 Zeichen 46 px, danach 42/38 px, höchstens 4 Zeilen (ca. 150 Zeichen), Zeilen werden gleich lang umbrochen.
 - `"layout": "split"` (Gaming mit Facecam): Gesicht oben (1080x720), Gameplay-Mitte unten (1080x1200), Kontextsatz auf der Naht. `"facecam": "auto"` (sucht das kleine Gesicht, das an einer Stelle bleibt) oder `[x, y, b, h]` als Anteile des Bildes (0–1) – beim Ansehen der cand-Bilder ablesen ist sicherer als auto. Ohne Facecam fällt der Clip auf `native` zurück. Mechanik getestet, automatische Erkennung an echtem Stream-Material noch nicht.
 
 ## Zahlen-Sammler „stats“ v1 (15.11.) – `.github/workflows/stats.yml`, `pipeline/stats/stats.py`
@@ -81,3 +81,11 @@ Eine Quelle für den Projektstand (Werkzeuge, Kampagnen, Postzeiten, Clip-Stil, 
 - Ein Gesicht, das sich zwischen den Bildern nicht verändert (Poster, Standbild), wird verworfen → Clip fällt auf `native` zurück.
 - Bekannte Grenzen: Poster-Gesicht, vor dem jemand durchs Bild läuft, zählt noch als Facecam; bei zwei Gesichtern im Bild gewinnt das frontalere. Deshalb weiter jedes QA-Bild ansehen und im Zweifel `"facecam": [x, y, b, h]` setzen.
 - Neuer Test: `plan/camtest.json` (Kanäle) ändern oder die Action starten; Ergebnis `clips/camtest/report.json` + Bildstreifen mit eingezeichnetem Kasten.
+
+## Kampagnen-Radar (seit 16.11.2026)
+- `pipeline/kampagnen/kampagnen.py`, Action `kampagnen` (05:27, 11:27, 17:27 UTC und bei Änderung von `plan/kampagnen.json`). Liest die öffentliche Discover-Seite von Content Rewards und die Seite jeder Kampagne – ohne Login, ohne Claude-Kontingent.
+- Ergebnis: `campaigns/latest.md` (kurz: unsere Kampagnen mit Rest-Budget, beste offene Kampagnen je Konto, Pools, Neues), `campaigns/latest.json` (alles inkl. Briefing-Punkte `brief`), `campaigns/state.json` (Verlauf).
+- Pro Kampagne: Rate pro 1.000 Views, freies Budget, in 24 h ausgezahlte Dollar (= es werden wirklich Clips angenommen), Clipper-Zahl, Plattformen, Kategorie, `views_needed` (Mindest-Auszahlung ÷ Rate = Views bis zum ersten Geld), Hinweise (US-Publikum verlangt, Logo-Pflicht, Material liegt bei, versteckte Regeln).
+- Aussortiert wird nach festen Regeln: Glücksspiel/18+, nicht englisch, Musik, Rate unter `min_rate`, Topf unter `min_left`. Zuordnung Pusnik G / Pusnik IRL / Sonstige über Kategorie und Schlüsselwörter (oben im Skript, per `plan/kampagnen.json` überschreibbar).
+- Neue Kampagne beigetreten: Zeile unter `joined` in `plan/kampagnen.json` (`match` = Teil des Titels, `account`). Dann steht sie unter „Unsere Kampagnen" mit Warnung, wenn der Topf leer läuft.
+- Die Regeln ersetzen das Lesen des Briefings nicht. Beitreten kann nur Steven.

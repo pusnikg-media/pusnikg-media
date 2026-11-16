@@ -1,0 +1,13 @@
+{
+ "note": "Kampagnen-Radar (pipeline/kampagnen/kampagnen.py, Action kampagnen). joined: Kampagnen, denen Steven beigetreten ist (match = Teil des Titels, account = Konto) - der Radar zeigt deren Rest-Budget und warnt, wenn der Topf leer wird. ignore: Titel-Teile oder IDs, die nie vorgeschlagen werden sollen. Weitere Stellschrauben (min_rate, min_left, max_views_needed, block_words, accounts) stehen mit ihren Standardwerten oben im Skript. Ergebnis: campaigns/latest.md",
+ "joined": [
+  {"match": "TJR $50,000", "account": "Pusnik IRL"},
+  {"match": "$9,000 Jason Pool", "account": "Pusnik IRL"},
+  {"match": "Warzone Season 1 Clipping", "account": "Pusnik G"},
+  {"match": "MW4 DMZ Intel Briefing Clipping", "account": "Pusnik G"}
+ ],
+ "ignore": ["Preme"],
+ "min_rate": 0.5,
+ "min_left": 300,
+ "max_views_needed": 10000
+}

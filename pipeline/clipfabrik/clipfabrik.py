@@ -334,23 +334,39 @@ def is_emoji(ch):
     o = ord(ch); return o >= 0x1F000 or 0x2600 <= o <= 0x27BF or o in (0x2B50, 0x2B55, 0x203C, 0x2049)
 
 
-def caption_box(img, text, bottom, size=46, maxw=900):
-    """TikTok-style label: white rounded box, black bold text, centred, its lower edge at `bottom`. Up to 3 lines."""
+def caption_wrap(d, text, f, size, maxw):
+    """Greedy wrap, then pull the lines to similar widths (a last line with one lonely word looks cheap)."""
+    wlen = lambda t: sum(size * 1.08 if is_emoji(c) else d.textlength(c, font=f) for c in t)
+    def wrap(mw):
+        lines, cur = [], ""
+        for w in text.split():
+            t = (cur + " " + w).strip()
+            if wlen(t) <= mw or not cur: cur = t
+            else: lines.append(cur); cur = w
+        return lines + ([cur] if cur else [])
+    lines = wrap(maxw); n = len(lines)
+    if n > 1:
+        for mw in range(int(maxw * 0.62), int(maxw), 20):  # narrowest width that keeps the same number of lines
+            alt = wrap(mw)
+            if len(alt) == n and max(wlen(l) for l in alt) <= maxw: lines = alt; break
+    return lines, wlen
+
+
+def caption_box(img, text, bottom, size=46, maxw=920):
+    """TikTok-style label: white rounded box, black bold text, centred, its lower edge at `bottom`.
+    Short labels: 46 px, up to 3 lines. A whole story sentence (9-15 words, reel-scout 16.11.2026): shrinks to 42/38 px, up to 4 lines."""
     from PIL import Image, ImageDraw, ImageFont
-    d = ImageDraw.Draw(img); f = pfont(size); ef = None
+    d = ImageDraw.Draw(img); ef = None
     for p_ in EMOJI_FONTS:
         try: ef = ImageFont.truetype(p_, 109); break
         except OSError: pass
     text = "".join(c for c in text if c not in "\ufe0f\u200d")
     if ef is None: text = re.sub(r"\s+", " ", "".join(c for c in text if not is_emoji(c))).strip()
-    wlen = lambda t: sum(size * 1.08 if is_emoji(c) else d.textlength(c, font=f) for c in t)
-    lines, cur = [], ""
-    for w in text.split():
-        t = (cur + " " + w).strip()
-        if wlen(t) <= maxw or not cur: cur = t
-        else: lines.append(cur); cur = w
-    if cur: lines.append(cur)
-    if len(lines) > 3 or any(wlen(l) > maxw + 40 for l in lines): raise Fail(f"caption too long ({len(text)} chars, max ~95): {text!r}")
+    for size, maxl in ((size, 3), (42, 3), (38, 4)):
+        f = pfont(size); lines, wlen = caption_wrap(d, text, f, size, maxw)
+        if len(lines) <= maxl and all(wlen(l) <= maxw + 40 for l in lines): break
+    else:
+        raise Fail(f"caption too long ({len(text)} chars, max ~150 / 4 lines): {text!r}")
     lh = int(size * 1.28); bw = int(max(wlen(l) for l in lines)) + 52; bh = lh * len(lines) + 30
     x0 = (W - bw) // 2; y0 = int(bottom - bh)
     d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], radius=22, fill=(255, 255, 255, 255))
