@@ -154,8 +154,10 @@ def parse_detail(page):
         d["category"] = next((t for t in tk[last + 1:last + 4] if not t.startswith("[")), "")
     for i, t in enumerate(tk):
         if t == "Per 1K views" and i and i + 1 < len(tk):
-            name = tk[i - 1].lower(); r = money(tk[i + 1]); pr = {"rate": r}
-            for j in range(i + 2, min(i + 7, len(tk) - 1)):
+            name = tk[i - 1].lower(); k0 = i + 2 if tk[i + 1] in ("Up to", "From") and i + 2 < len(tk) else i + 1  # "Up to $2.00" = by country
+            pr = {"rate": money(tk[k0]) if "$" in tk[k0] else None}
+            if k0 != i + 1: pr["up_to"] = True
+            for j in range(k0 + 1, min(k0 + 6, len(tk) - 1)):
                 if tk[j] == "Min payout": pr["min_payout"] = money(tk[j + 1])
                 if tk[j] == "Max payout": pr["max_payout"] = money(tk[j + 1])
             d["platform_rates"][name] = pr
@@ -163,6 +165,12 @@ def parse_detail(page):
             d["spent"], d["budget"] = money(tk[i + 2]), money(tk[i + 4])
         elif t == "Pool" and i + 1 < len(tk) and tk[i + 1].startswith("$"):
             d["pool"], d["budget"] = True, money(tk[i + 1])
+        elif t == "Pay by viewer country":
+            part = []
+            for x in tk[i + 1:i + 10]:
+                if x in ("Budget", "Pool", "Reference materials", "Brief"): break
+                if not x.startswith("["): part.append(x)
+            d["by_country"] = " ".join(part)[:160]
         elif t == "Reference materials" and i + 1 < len(tk):
             d["files"] = int(money(tk[i + 1]) or 0)
         elif t == "Content requirements" and i + 1 < len(tk):
@@ -215,6 +223,8 @@ def judge(c, cfg):
     if m: flags.append(f"Publikum: {m.group(1) or m.group(2)} % USA/Tier 1 verlangt")
     m = re.search(r"(?:min(?:imum)?\.?|at least)\s*([\d.,]+[km]?)\s*followers", text)
     if m: flags.append(f"Mindest-Follower: {m.group(1)}")
+    if c.get("by_country"): flags.append(f"Bezahlung hängt vom Zuschauerland ab ({c['by_country'][:90]})")
+    if re.search(r"pre-?approv|application requires|apply (?:first|to join)", text): flags.append("Bewerbung/Vorab-Freigabe nötig")
     if re.search(r"logo|watermark", text): flags.append("Logo/Wasserzeichen Pflicht")
     if re.search(r"#ad\b|paid partnership", text): flags.append("#Ad/Offenlegung Pflicht")
     if c.get("files"): flags.append(f"Material liegt bei ({c['files']} Dateien)")
@@ -366,6 +376,9 @@ def selftest():
     assert d["description"].startswith('Clip the "official"') and d["status"] == "Accepting clips" and d["launched"] == "4 days ago", d
     assert d["platforms"] == ["tiktok", "instagram"] and d["category"] == "Gaming" and d["platform_rates"]["tiktok"] == {"rate": 1.0, "min_payout": 10.0, "max_payout": 350.0}, d
     assert (d["spent"], d["budget"], d["files"], d["views"]) == (46.0, 8500.0, 2, 57000) and d["brief"] == ["Keep the logo on screen", "Vertical 9:16"], d
+    d2 = parse_detail(page.replace("<span>$1.00</span><span>Min payout</span>", "<span>Up to</span><span>$2.00</span><span>Min payout</span>")
+                      .replace("<span>Budget</span>", "<span>Pay by viewer country</span><span>India</span><span>Not paid</span><span>Budget</span>"))
+    assert d2["platform_rates"]["tiktok"] == {"rate": 2.0, "up_to": True, "min_payout": 10.0, "max_payout": 350.0} and d2["by_country"] == "India Not paid" and d2["budget"] == 8500.0, d2
     c = judge(dict(a, **d, title="FaZe Tournament", rate=1.0), DEFAULTS)
     assert c["account"] == "Pusnik G" and c["ok"] and c["views_needed"] == 10000 and any("Publikum: 60" in f for f in c["flags"]) and any("Logo" in f for f in c["flags"]), c
     g = judge(dict(a, description="Clip our Stake casino stream", category="Entertainment"), DEFAULTS)

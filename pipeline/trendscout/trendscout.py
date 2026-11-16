@@ -5,6 +5,7 @@ Sources (all public, read-only, nothing is posted or liked, our social accounts 
   reddit  - top posts of the day per subreddit (Atom feed; order = rank, the feed carries no scores)
   kick    - most viewed clips of the day per streamer + overall (public clip API, incl. direct video URL)
   youtube - recent uploads of watched channels with view counts (channel feed) -> views per hour
+  news    - RSS feeds of gaming news sites, filtered by key words (GTA 6 launch radar); a story several sites report ranks first
 
 Writes trends/latest.md (short, for agents), trends/latest.json (full) and trends/seen.json (what was already listed,
 so new items get a NEW mark). Config: plan/trendscout.json.
@@ -28,6 +29,7 @@ DEFAULTS = {
     "reddit": [{"sub": "LivestreamFail", "area": "irl", "top": 12}, {"sub": "GTA6", "area": "gaming", "top": 8}],
     "kick": {"channels": [], "per_channel": 4, "overall": 8, "min_views": 300},
     "youtube": [],
+    "news": {"feeds": [], "words": ["gta", "grand theft auto", "rockstar"], "top": 10, "max_age_hours": 30},
     "max_age_hours": 36,
 }
 
@@ -172,6 +174,70 @@ def youtube(cfg, max_age, errors):
     return out[:12]
 
 
+# ---------- news ----------
+STOP = set("the a an of to in on for and or is are was be with at by from as it its this that new gta vi 6 grand theft auto rockstar games game "
+           "how what why when will has have you your can here everything need know about after before just more first all get gets".split())
+
+
+def rfc_ts(s):
+    s = (s or "").strip()
+    try:
+        from email.utils import parsedate_to_datetime
+        t = parsedate_to_datetime(s)
+        return t if t.tzinfo else t.replace(tzinfo=D.timezone.utc)
+    except Exception:  # noqa: BLE001
+        return ts(s)
+
+
+def key_words(title):
+    return {w for w in re.findall(r"[a-z0-9']+", title.lower()) if w not in STOP and len(w) > 2}
+
+
+def parse_news(xml, name, words, max_age):
+    out = []
+    for e in re.split(r"<item[ >]|<entry[ >]", xml)[1:]:
+        m = re.search(r"<title[^>]*>(.*?)</title>", e, re.S)
+        if not m:
+            continue
+        title = html.unescape(html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", m.group(1)))).strip()
+        title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", title))
+        low = " " + title.lower() + " "
+        if not any(re.search(r"(?<![a-z])" + re.escape(w) + r"(?![a-z])", low) for w in words):
+            continue
+        link = re.search(r"<link[^>]*href=\"([^\"]+)\"", e) or re.search(r"<link[^>]*>\s*(?:<!\[CDATA\[)?\s*(https?://[^<\]\s]+)", e)
+        when = re.search(r"<pubDate>(.*?)</pubDate>|<published>(.*?)</published>|<updated>(.*?)</updated>|<dc:date>(.*?)</dc:date>", e, re.S)
+        a = age_h(rfc_ts(next((g for g in when.groups() if g), "")) if when else None)
+        if a is None or a > max_age or a < -2:
+            continue
+        url = html.unescape(link.group(1)) if link else ""
+        out.append({"src": "news", "area": "gaming", "site": name, "title": title, "page": url, "age_h": max(a, 0.0),
+                    "id": "n:" + re.sub(r"[^a-z0-9]+", "-", title.lower())[:60]})
+    return out
+
+
+def news(cfg, errors):
+    got, words = [], [w.lower() for w in cfg.get("words", [])]
+    for f in cfg.get("feeds", []):
+        try:
+            got += parse_news(get(f["url"], tries=2), f.get("name", f["url"]), words, float(cfg.get("max_age_hours", 30)))
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"news {f.get('name', f.get('url'))}: {e}")
+        time.sleep(0.5)
+    # one story reported by several sites = one line; the more sites, the bigger the story
+    got.sort(key=lambda x: x["age_h"]); groups = []
+    for x in got:
+        kw = key_words(x["title"])
+        for g in groups:
+            if x["site"] not in g["sites"] and len(kw & g["kw"]) >= max(2, min(3, min(len(kw), len(g["kw"])) // 2)):
+                g["sites"].append(x["site"]); g["kw"] |= kw; break
+            if x["site"] in g["sites"] and x["id"] == g["id"]:
+                break
+        else:
+            groups.append(dict(x, sites=[x["site"]], kw=kw))
+    groups.sort(key=lambda g: (-len(g["sites"]), g["age_h"]))
+    return [{k: v for k, v in g.items() if k != "kw"} for g in groups[:int(cfg.get("top", 10))]]
+
+
 # ---------- output ----------
 def cut(s, n):
     s = re.sub(r"\s+", " ", s or "").replace("|", "/")
@@ -181,7 +247,7 @@ def cut(s, n):
 def render(items, errors, seen):
     new = lambda x: "NEW " if x["id"] not in seen else ""  # noqa: E731
     L = [f"# Trendscout – {now().strftime('%d.%m.%Y %H:%M')} UTC", "",
-         "Automatisch gesammelt (Reddit, Kick, YouTube-Feeds), ohne Login/Credits. NEW = beim letzten Lauf noch nicht dabei.", ""]
+         "Automatisch gesammelt (Reddit, Kick, YouTube-Feeds, Gaming-News), ohne Login/Credits. NEW = beim letzten Lauf noch nicht dabei.", ""]
     for area, head in (("irl", "IRL / Streamer"), ("gaming", "Gaming / GTA 6")):
         rd = [x for x in items if x["src"] == "reddit" and x["area"] == area]
         for sub in dict.fromkeys(x["sub"] for x in rd):
@@ -193,6 +259,11 @@ def render(items, errors, seen):
         L += ["## Kick – meistgesehene Clips (24–36 h)", "W = beobachteter Kampagnen-Streamer. `video` in latest.json ist direkt als Clipfabrik-`source` nutzbar.", ""]
         L += [f"- {new(x)}{'W ' if x.get('watched') else ''}{x['channel']}: „{cut(x['title'], 60)}“ – {x['views']} Views, {x['dur']} s, "
               f"{x['category']}{', 18+' if x['mature'] else ''} → {x['page']}" for x in kk] + [""]
+    nn = [x for x in items if x["src"] == "news"]
+    if nn:
+        L += ["## GTA-6-News (letzte 30 h, Gaming-Newsseiten)", "Mehrere Quellen = große Geschichte. Für Shorts nur Fakten verwenden, die im verlinkten Artikel stehen; Leaks/Gerüchte als solche benennen.", ""]
+        L += [f"- {new(x)}{'[' + str(len(x['sites'])) + ' Quellen] ' if len(x['sites']) > 1 else ''}{cut(x['title'], 120)} – {', '.join(x['sites'][:4])}, "
+              f"vor {x['age_h']:.0f} h → {x['page']}" for x in nn] + [""]
     yy = [x for x in items if x["src"] == "youtube"]
     if yy:
         L += ["## YouTube – beobachtete Kanäle (Views pro Stunde)", ""]
@@ -208,7 +279,8 @@ def run(root):
     if os.path.exists(p):
         cfg.update({k: v for k, v in json.load(open(p, encoding="utf-8")).items() if k in DEFAULTS})
     errors, max_age = [], float(cfg["max_age_hours"])
-    items = reddit(cfg["reddit"], errors) + kick(cfg["kick"], max_age, errors) + youtube(cfg["youtube"], max_age, errors)
+    items = (reddit(cfg["reddit"], errors) + kick(cfg["kick"], max_age, errors) + youtube(cfg["youtube"], max_age, errors)
+             + news(cfg["news"], errors))
     out = os.path.join(root, "trends")
     os.makedirs(out, exist_ok=True)
     sp = os.path.join(out, "seen.json")
@@ -246,7 +318,17 @@ def selftest():
           f'<published>{t}</published><media:statistics views="1000"/></entry></feed>')
     y = parse_youtube(yx, "ch", "gaming", 72)
     assert y[0]["per_h"] == 200 and "/shorts/V1" in y[0]["page"] and y[0]["title"] == "T & t", y
-    md = render(r + [dict(k[0], watched=True)] + y, ["kick x: HTTP 403"], {"r:1abc": "x"})
+    t2 = (now() - D.timedelta(hours=3)).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    nx = (f'<rss><item><title><![CDATA[GTA 6 Map Size Revealed &amp; It&#8217;s Huge]]></title><link>https://a.example/x</link><pubDate>{t2}</pubDate></item>'
+          f'<item><title>Stargate news</title><link>https://a.example/y</link><pubDate>{t2}</pubDate></item>'
+          f'<item><title>Old GTA 6 story</title><link>https://a.example/z</link><pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate></item></rss>')
+    n = parse_news(nx, "A", ["gta", "rockstar"], 30)
+    assert len(n) == 1 and n[0]["title"] == "GTA 6 Map Size Revealed & It\u2019s Huge" and n[0]["page"] == "https://a.example/x" and 2.9 <= n[0]["age_h"] <= 3.1, n
+    ax = f'<feed><entry><title>Rockstar reveals GTA 6 map size</title><link rel="alternate" href="https://b.example/q"/><updated>{t}</updated></entry></feed>'
+    n2 = parse_news(ax, "B", ["gta"], 30)
+    assert n2 and n2[0]["page"] == "https://b.example/q" and key_words(n[0]["title"]) & key_words(n2[0]["title"]) >= {"map", "size"}, n2
+    md = render(r + [dict(k[0], watched=True)] + y + [dict(n[0], sites=["A", "B"])], ["kick x: HTTP 403"], {"r:1abc": "x"})
+    assert "[2 Quellen] GTA 6 Map Size" in md, md
     assert "NEW W a" in md and "1. Streamer" in md and "Nicht erreichbar" in md, md
     print("selftest ok")
 

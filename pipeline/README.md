@@ -89,3 +89,8 @@ Eine Quelle für den Projektstand (Werkzeuge, Kampagnen, Postzeiten, Clip-Stil, 
 - Aussortiert wird nach festen Regeln: Glücksspiel/18+, nicht englisch, Musik, Rate unter `min_rate`, Topf unter `min_left`. Zuordnung Pusnik G / Pusnik IRL / Sonstige über Kategorie und Schlüsselwörter (oben im Skript, per `plan/kampagnen.json` überschreibbar).
 - Neue Kampagne beigetreten: Zeile unter `joined` in `plan/kampagnen.json` (`match` = Teil des Titels, `account`). Dann steht sie unter „Unsere Kampagnen" mit Warnung, wenn der Topf leer läuft.
 - Die Regeln ersetzen das Lesen des Briefings nicht. Beitreten kann nur Steven.
+
+## Trendscout v2 – GTA-6-News (seit 16.11.2026)
+- `plan/trendscout.json` → `news`: RSS-Feeds (`feeds`: name, url), Schlüsselwörter (`words`), `top`, `max_age_hours`. Gleiche Meldung auf mehreren Seiten wird zu einer Zeile „[n Quellen]" zusammengefasst und steht oben.
+- `youtube`: offizieller Rockstar-Kanal eingetragen (neue Trailer/Videos mit Views pro Stunde).
+- Nicht eingebaut: Google News (Feed nur für private, nicht-kommerzielle Nutzung erlaubt) und Twitch-Clip-Ranglisten (nur über Twitchs interne Schnittstelle erreichbar).

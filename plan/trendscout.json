@@ -1,11 +1,83 @@
 {
- "note": "Trendscout-Quellen. reddit: Top des Tages je Subreddit. kick.channels: Slugs der Streamer mit laufender Kampagne (z. B. \"adinross\"). youtube: [{\"id\": \"UC...\", \"name\": \"...\", \"area\": \"gaming|irl\"}] fuer Vorbild-Kanaele. Ergebnis: trends/latest.md",
+ "note": "Trendscout-Quellen. reddit: Top des Tages je Subreddit. kick.channels: Slugs der Streamer mit laufender Kampagne (z. B. \"adinross\"). youtube: [{\"id\": \"UC...\", \"name\": \"...\", \"area\": \"gaming|irl\"}] fuer Vorbild-Kanaele. news: RSS-Feeds von Gaming-Newsseiten, gefiltert nach words (GTA-6-Launch-Radar); nach dem Launch-Monat ggf. words anpassen. Ergebnis: trends/latest.md",
  "reddit": [
-  {"sub": "LivestreamFail", "area": "irl", "top": 12},
-  {"sub": "GTA6", "area": "gaming", "top": 8},
-  {"sub": "GTA", "area": "gaming", "top": 5}
+  {
+   "sub": "LivestreamFail",
+   "area": "irl",
+   "top": 12
+  },
+  {
+   "sub": "GTA6",
+   "area": "gaming",
+   "top": 8
+  },
+  {
+   "sub": "GTA",
+   "area": "gaming",
+   "top": 5
+  }
  ],
- "kick": {"channels": [], "per_channel": 4, "overall": 8, "min_views": 300},
- "youtube": [],
- "max_age_hours": 36
+ "kick": {
+  "channels": [],
+  "per_channel": 4,
+  "overall": 8,
+  "min_views": 300
+ },
+ "youtube": [
+  {
+   "id": "UC6VcWc1rAoWdBCM0JxrRQ3A",
+   "name": "Rockstar Games",
+   "area": "gaming"
+  }
+ ],
+ "max_age_hours": 36,
+ "news": {
+  "feeds": [
+   {
+    "name": "RockstarINTEL",
+    "url": "https://rockstarintel.com/feed/"
+   },
+   {
+    "name": "GameSpot",
+    "url": "https://www.gamespot.com/feeds/news/"
+   },
+   {
+    "name": "Eurogamer",
+    "url": "https://www.eurogamer.net/feed"
+   },
+   {
+    "name": "IGN",
+    "url": "https://feeds.feedburner.com/ign/all"
+   },
+   {
+    "name": "PC Gamer",
+    "url": "https://www.pcgamer.com/rss/"
+   },
+   {
+    "name": "VGC",
+    "url": "https://www.videogameschronicle.com/feed/"
+   },
+   {
+    "name": "Kotaku",
+    "url": "https://kotaku.com/rss"
+   },
+   {
+    "name": "Polygon",
+    "url": "https://www.polygon.com/rss/index.xml"
+   },
+   {
+    "name": "Insider Gaming",
+    "url": "https://insider-gaming.com/feed/"
+   }
+  ],
+  "words": [
+   "gta",
+   "grand theft auto",
+   "rockstar",
+   "vice city",
+   "leonida"
+  ],
+  "top": 10,
+  "max_age_hours": 30
+ }
 }
