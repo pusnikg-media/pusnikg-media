@@ -51,6 +51,13 @@ Kampagnen-Footage → fertige 9:16-Clips (nur Originalton), ohne dass ein Claude
 - Gepostet wird hier NICHT (keine Plattform-Schlüssel auf dem Runner): ein Agent liest inbox.json, sieht das QA-Bild an, schreibt Titel/Caption und postet über vidIQ.
 - Getestet: Erkennung + Schnitt + Render per `livewatch.py simulate` (künstlicher Stream). Ungetestet: echte Live-Aufnahme (Kick/Twitch) auf dem Runner. Jeder Clip vergrößert das Repo (~10 MB) → `max_clips` klein halten.
 
+## Clipfabrik v6 (16.11.2026) – `crop`, `check` (Jason-Kampagne) – `pipeline/clipfabrik/framecheck.py`
+- `crop: 0.17` (Job oder Clip; Zahl = oberer Anteil, oder `{top,bottom,left,right}`): schneidet den Streifen weg, bevor irgendetwas anderes passiert (eingebrannter Twitch-Chat + Zähler). Der Chat-Block reicht bei Jason bis ca. 15,8 % hinab (23 Rohclips gemessen) – 0,15 lässt die unterste Zeile angeschnitten stehen, daher `irl` = 0,17. Danach normales Layout (native/framed/full/split) auf 1080x1920.
+- `check: true` (oder `{"face": {min_w,min_share,max_gap}|false, "tiles": bool, "logo": bool}`): Clip wird **vor** dem Rendern verworfen (`rejected: …`), wenn (a) ein Gesicht >= 7 % der Bildbreite in < 45 % der Zeit sichtbar ist oder > 6 s am Stück fehlt, (b) das Bild ein Multi-Fenster-Layout ist (dauerhafte gerade Kanten, > 30 % schwarz). **Warnung, nie Verwerfen** (`warnings` in `result.json`): statische Overlays/Wasserzeichen, große Schriftzüge. Haar-Kaskaden: schwach bei Mützen/abgewandtem Kopf, sagt nicht WER das Gesicht ist.
+- **Logos auf Kleidung, Schildern, Lanyards, Spielgeräten sind nicht erkennbar.** Bei Kampagnen ohne Logos jeden Clip von Hand ansehen (6–8 Frames).
+- Livewatch-Profil `irl` setzt `crop 0.17` + `check true`; der Vergleichslauf `legacy` bleibt ohne.
+- Testläufe: `livewatch-replay` hat die Eingaben `ref` (Branch-Code) und `push_branch` (Ergebnisse auf Wegwerf-Branch statt `main`, danach Branch löschen).
+
 ## Reflab v0 (15.11.) – `.github/workflows/reflab.yml`, `pipeline/reflab/reflab.py`
 Schaut sich ohne vidIQ-Credits an, was woanders funktioniert: holt pro Referenz-Konto aus `plan/reflab.json` die meistgesehenen der neuesten Shorts (yt-dlp), misst den Schnitt (Länge, Schnitte pro 10 s, erster Schnitt, wann gesprochen wird, Wörter pro s, die ersten Worte = Hook) und legt `refs/latest/report.json` + kleine Bildstreifen ab (`rXX_hook.jpg` = erste 3 s, `rXX_flow.jpg` = ganzer Clip). Eigene Clips (`ours`) werden zum Vergleich mitgemessen (`median_refs` gegen `median_ours`). Es werden keine fremden Videos gespeichert. Läuft montags und bei Änderung von `plan/reflab.json` (Konto oder einzelnen Link unter `urls` eintragen). `problems` zeigt, welche Plattform den Runner blockt.
 
