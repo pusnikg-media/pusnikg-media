@@ -1,0 +1,2 @@
+{"name": "golden", "source": "https://example.com/golden.mp4", "pill": "Official footage", "layout": "native", "min_len": 10,
+ "fix": {"fuck": "f*ck"}, "clips": [{"id": "A", "a": 10.0, "b": 25.0, "caption": "Lacy did NOT expect this... 😭", "hook": [12.0, 14.0]}]}
