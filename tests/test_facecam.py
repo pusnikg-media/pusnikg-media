@@ -105,7 +105,7 @@ def ffmpeg_calls(cf, src, tmp, layout, monkeypatch):
     out = str(tmp / "out"); os.makedirs(out)
     job = {"name": "t", "min_len": 3, "clips": [dict({"id": "x", "a": 0.5, "b": 4.5, "title": "TEST TITLE", "layout": layout}, **({"caption": CAPTION} if layout == "native" else {}))]}
     cf.render_clip(job, job["clips"][0], src, cf.probe(src), WORDS, out, str(tmp))
-    norm = lambda x: x.replace(str(tmp), "<TMP>").replace(src, "<SRC>").replace(os.path.abspath(cf.FONTS), "<FONTS>")
+    norm = lambda x: x.replace(str(tmp), "<TMP>").replace(src, "<SRC>").replace(ROOT, "<REPO>")
     return [[norm(x) for x in c] for c in calls]
 
 
