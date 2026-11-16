@@ -352,7 +352,7 @@ def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False):
     dry = bool(ch.get("log_only")); cal = {"channel": ch["name"], "started": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
                                            "minutes": [], "events": []}
     min_chat = float(ch.get("min_chat", 3.0)); co_chat = float(ch.get("co_chat", 2.0))  # calibrated 15.11.2026 (98 min, 2 channels): 2.5/1.4 fired every 4.6 min
-    alert_max = int(ch.get("alert_max", 3))
+    alert_max = int(ch.get("alert_max", 3)); warm = int(ch.get("warmup_s", 480))  # no clip in the first 8 min of a recording (chat/loudness baseline still forming)
     min_hype = float(ch.get("min_hype", 9)); per_hour = int(ch.get("per_hour", 3)); max_clips = int(ch.get("max_clips", 8))
     while time.time() < t_end:
         files = sorted(glob.glob(os.path.join(rec, "*.ts"))); run = alive()
@@ -366,6 +366,8 @@ def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False):
             cr, cp = chat.peak(len(db)) if chat else (0.0, None); lag = None; kind = "loud"
             cal["minutes"].append({"min": done, "hype": round(hype, 1), "chat": cr, "msgs": sum(chat.n.get(k, 0) for k in range(len(db) - 60, len(db))) if chat else None})
             print(f"min {done:3d} hype {hype:4.1f} peak {peak} chat x{cr} at {cp}")
+            if len(db) < warm and not ch.get("legacy"):  # live test 16.11.: 3 clips in the first 9 min (baseline of the young recording is unstable, expected ~0.5 at 3/h)
+                hype, peak, cr, cp = 0.0, None, 0.0, None
             if chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
                 al, us = chat.alert_near(cp) if (cp is not None and cr >= min_chat) else (0, 0)
                 if cp is not None and cr >= min_chat and not chat.legacy and al >= alert_max and al >= 0.25 * us:
