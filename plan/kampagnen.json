@@ -8,7 +8,7 @@
  ],
  "ignore": ["Preme"],
  "accounts": {
-  "Pusnik G": {"categories": ["gaming", "gta", "esports", "video game"], "weak_categories": [], "words": ["call of duty", "warzone", "modern warfare", "mw4", "black ops", "gta", "grand theft auto", "fortnite", "roblox", "minecraft", "valorant", "apex legends", "esports", "gameplay", "video game", "faze", "gaming", "speedrun", "gta 6", "gta6", "gta vi", "grand theft auto vi", "grand theft auto 6", "rockstar", "vice city", "leonida", "jason and lucia", "take-two"]},
+  "Pusnik G": {"categories": ["gaming", "gta", "esports", "video game"], "weak_categories": [], "words": ["call of duty", "warzone", "modern warfare", "mw4", "black ops", "gta", "grand theft auto", "fortnite", "roblox", "minecraft", "valorant", "apex legends", "esports", "gameplay", "video game", "faze", "gaming", "speedrun", "gta 6", "gta6", "gta vi", "grand theft auto vi", "grand theft auto 6", "rockstar games", "vice city", "leonida", "jason and lucia", "take-two"]},
   "Pusnik IRL": {"categories": ["streamer", "twitch", "kick", "youtuber", "content creator", "celebrity", "personal brand", "podcast", "comedy", "fan page", "vlog"], "weak_categories": ["entertainment", "lifestyle", "sports"], "words": ["stream", "streamer", "irl", "vlog", "podcast", "twitch", "youtuber", "his content", "her content", "'s content", "reaction", "interview", "host", "creator", "episode"]}
  },
  "min_rate": 0.5,

@@ -703,10 +703,10 @@ def render_clip(job, c, src, p, words, out, tmp):
     caps = c.get("captions", not (native or split)) and bool(words); capb = None
     if split:  # facecam 1080x720 on top, gameplay 1080x1200 (centre of the picture) below
         fg_y, fg_h = 720, 1200; ch = p["h"] // 2 * 2; cw = min(p["w"], int(ch * W / fg_h / 2) * 2); mv = 150; capb = 786; track = False
-        gx = (p["w"] - cw) // 2 // 2 * 2  # gameplay window: centre of the picture, nudged sideways so no strip of the cam stays in it (tarik test 16.11.)
+        gx = (p["w"] - cw) // 2 // 2 * 2  # gameplay window: centre of the picture, nudged sideways (at most 20 %) when that clears the cam completely (tarik test 16.11.)
         if cam[0] + cam[2] > gx and cam[0] < gx + cw:
-            gx = min(max(gx, cam[0] + cam[2]), p["w"] - cw) if cam[0] + cam[2] / 2 < p["w"] / 2 else max(min(gx, cam[0] - cw), 0)
-            gx = gx // 2 * 2
+            g2 = cam[0] + cam[2] if cam[0] + cam[2] / 2 < p["w"] / 2 else cam[0] - cw
+            if 0 <= g2 <= p["w"] - cw and abs(g2 - gx) <= 0.2 * cw: gx = g2 // 2 * 2
     elif native:  # whole picture, nothing cropped away (how viral streamer clips are posted)
         fg_h = min(FG_H, int(W * p["h"] / p["w"] / 2) * 2); fg_y = (H - fg_h) // 2
         cw = p["w"] // 2 * 2; ch = min(p["h"], int(cw * fg_h / W / 2) * 2); mv = H - (fg_y + fg_h) + 60
