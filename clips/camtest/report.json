@@ -1,0 +1,205 @@
+[
+ {
+  "channel": "summit1g",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "sodapoppin",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "buddha",
+  "error": "no clips"
+ },
+ {
+  "channel": "tfue",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "ramee",
+  "error": "no clips"
+ },
+ {
+  "channel": "kyle",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "xqc",
+  "url": "https://www.twitch.tv/xqc/clip/EagerMagnificentOpossumRaccAttack-Z_1cH-jBbf9w3u7C",
+  "title": "Splat",
+  "game": "Grand Theft Auto V",
+  "size": "1280x720",
+  "seconds": 14.0,
+  "v2": [
+   0.011,
+   0.181,
+   0.197,
+   0.233
+  ],
+  "v2_mode": "border",
+  "v1": [
+   0.011,
+   0.181,
+   0.197,
+   0.233
+  ],
+  "v1_mode": "border",
+  "clusters": [
+   {
+    "cx": 113.25,
+    "cy": 152.5,
+    "w": 58.5,
+    "cov": 1.0,
+    "n": 34,
+    "mot": 7.927,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 630.5,
+    "cy": 60.5,
+    "w": 27.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 51.165,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 201.0,
+    "cy": 413.0,
+    "w": 48.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 30.52,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 734.5,
+    "cy": 59.5,
+    "w": 59.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 34.658,
+    "side": true,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_0.jpg"
+ },
+ {
+  "channel": "xqc",
+  "url": "https://www.twitch.tv/xqc/clip/ResourcefulBlazingKumquatPraiseIt-dbnC1oRVhIZpi3Bp",
+  "title": "Raia the Brick Boi",
+  "game": "Grand Theft Auto V",
+  "size": "1280x720",
+  "seconds": 58.2,
+  "v2": [
+   0.019,
+   0.322,
+   0.172,
+   0.203
+  ],
+  "v2_mode": "border",
+  "v1": [
+   0.019,
+   0.322,
+   0.172,
+   0.203
+  ],
+  "v1_mode": "border",
+  "clusters": [
+   {
+    "cx": 120.5,
+    "cy": 222.75,
+    "w": 51.5,
+    "cov": 0.875,
+    "n": 34,
+    "mot": 22.596,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 64.75,
+    "cy": 496.25,
+    "w": 35.5,
+    "cov": 0.083,
+    "n": 4,
+    "mot": 6.019,
+    "side": true,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_1.jpg"
+ },
+ {
+  "channel": "lirik",
+  "url": "https://www.twitch.tv/lirik/clip/CrypticCredulousGrasshopperPRChase-KmDC4QUwZSpGPmMl",
+  "title": "GTA Online / Rob Run",
+  "game": "Just Chatting",
+  "size": "1280x720",
+  "seconds": 58.3,
+  "v2": null,
+  "v2_mode": "no side face",
+  "v1": null,
+  "v1_mode": "static face (0.7)",
+  "clusters": [
+   {
+    "cx": 501.0,
+    "cy": 205.0,
+    "w": 46.0,
+    "cov": 0.125,
+    "n": 3,
+    "mot": 0.996,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 21.0,
+    "cy": 495.0,
+    "w": 28.0,
+    "cov": 0.125,
+    "n": 3,
+    "mot": 0.0,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 810.5,
+    "cy": 74.5,
+    "w": 65.0,
+    "cov": 0.875,
+    "n": 21,
+    "mot": 0.743,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 221.0,
+    "cy": 191.0,
+    "w": 64.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 2.441,
+    "side": true,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/lirik_0.jpg"
+ },
+ {
+  "channel": "lirik",
+  "url": "https://www.twitch.tv/lirik/clip/FlirtyRelentlessArugulaPJSalt-idI_PHtT42qiCZ_J",
+  "title": "More Rob Run / GTA Discussion",
+  "game": "Just Chatting",
+  "size": "1280x720",
+  "seconds": 60.0,
+  "v2": null,
+  "v2_mode": null,
+  "v1": null,
+  "v1_mode": null,
+  "clusters": [],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/lirik_1.jpg"
+ }
+]
