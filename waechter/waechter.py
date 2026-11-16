@@ -159,6 +159,25 @@ def check_einreichen(root, cfg, now, st, blind):
     return out
 
 
+def check_slots_live(root, cfg, now, st, blind):
+    """Postplan (plan/postplan.json, vom Clipping-Agenten): Slot längst vorbei, aber kein Post desselben Kontos/derselben Plattform
+    innerhalb ±14 Min in den Zahlen -> der Clip ist nicht rausgegangen. Nur YouTube/TikTok (Instagram ist unsichtbar); erst zwei Stunden
+    nach der Planzeit UND wenn die Zahlen danach gemessen wurden (wie beim Tages-Short)."""
+    out, upd = [], parse((st or {}).get("updated"))
+    plan = jl(os.path.join(root, "plan", "postplan.json"), {}) or {}
+    if not upd: return out
+    for s in plan.get("slots", []):
+        if not s.get("datum") or s["datum"] < cfg["seit"]: continue
+        t0 = at_berlin(s["datum"], s["zeit"]).astimezone(UTC); due = t0 + dt.timedelta(hours=cfg.get("slot_karenz_stunden", 2))
+        if now < due or upd < due: continue
+        for plat in s.get("plattformen", []):
+            if plat not in ("youtube", "tiktok") or (s["konto"], plat) in blind: continue
+            hit = [p for p in st["posts"] if p["account"] == s["konto"] and p["platform"] == plat and p.get("published")
+                   and abs((parse(p["published"]) - t0).total_seconds()) <= 14 * 60]
+            if not hit: out.append(P("kampagne", f"live:{s['datum']}:{s['zeit']}:{s['konto']}:{plat}", f"{s['kampagne']} „{s.get('titel', s.get('clip', ''))}“ ({s['konto']}) war für {s['datum'][8:]}.{s['datum'][5:7]}. {s['zeit']} auf {plat} geplant, ist in den Zahlen aber nicht live."))
+    return out
+
+
 def check_kampagnen(root, cfg, now, st, blind):
     out, today = [], local(now).date().isoformat()
     for k in cfg["kampagnen"]:
@@ -190,12 +209,12 @@ def evaluate(root, cfg, now, runs, repo_mb=None, fresh=lambda p: False):
     else: unsicher.append("Action-Status nicht abgefragt")
     probs += check_render(root, now, fresh) + check_clipjobs(root, fresh) + check_repo(cfg, repo_mb)
     if st:
-        probs += check_short(root, cfg, now, st, blind) + check_postzeit(cfg, now, st) + check_einreichen(root, cfg, now, st, blind) + check_kampagnen(root, cfg, now, st, blind)
+        probs += check_short(root, cfg, now, st, blind) + check_postzeit(cfg, now, st) + check_einreichen(root, cfg, now, st, blind) + check_kampagnen(root, cfg, now, st, blind) + check_slots_live(root, cfg, now, st, blind)
     return [p for p in probs if not ignored(p, cfg)], unsicher
 
 
 def markdown(probs, unsicher, now):
-    L = [f"# Alarme – Stand {local(now):%d.%m.%Y %H:%M} (Europe/Berlin)", "", f"stand_utc: {now:%Y-%m-%dT%H:%M:%SZ}  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)", "", "Vom Wächter (2× täglich, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.", ""]
+    L = [f"# Alarme – Stand {local(now):%d.%m.%Y %H:%M} (Europe/Berlin)", "", f"stand_utc: {now:%Y-%m-%dT%H:%M:%SZ}  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)", "", "Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.", ""]
     if not probs: L += ["**Keine offenen Probleme.**", ""]
     for g in dict.fromkeys(p.group for p in probs):
         L += [f"## {TITEL.get(g, g)}"] + [f"- {p.text}" for p in probs if p.group == g] + [""]

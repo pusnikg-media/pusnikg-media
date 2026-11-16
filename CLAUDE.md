@@ -44,11 +44,11 @@ Gaming-Shorts-Kanal "Pusnik G" (YT Shorts, TikTok, Reels) + Clipping-Kampagnen (
 |---|---|---|
 | `render` | alle 15 Min + Push `jobs/`, `pipeline/` | `shorts/<name>.*` (3 Versuche, dann gibt sie **still** auf) |
 | `clipfabrik` | :07/:37 + Push `clipjobs/`, `pipeline/clipfabrik/` | `clips/<name>/…` (max. 4 Aufträge/Lauf; Drive-Ordner `clipjob-*.json` wird per Regex gelesen) |
-| `stats` | 05:17, 11:17, 16:17 | `stats/latest.*` (Berlin 06:17, 12:17, 17:17 – **vor** dem 18:00-Post) |
+| `stats` | 05:17, 11:17, 16:17, 19:17 | `stats/latest.*` (Berlin 06:17, 12:17, 17:17 – **vor** dem 18:00-Post –, 20:17 danach) |
 | `trendscout` | 04:43, 10:43, 15:43, 19:43 | `trends/latest.*` (Reddit, Kick, GTA-6-News, Rockstar-YouTube) |
 | `kampagnen` | 05:27, 11:27, 17:27 | `campaigns/latest.*` |
 | `reflab` | Mo 03:23 | `refs/latest/` |
-| `waechter` | 05:47, 11:37 (+ Push auf seine Dateien) | `stats/alerts.md` + Issues „alarm"; holt vorher die Haken aus den Einreich-Issues |
+| `waechter` | 05:47, 11:37, 19:47 (+ Push auf seine Dateien) | `stats/alerts.md` + Issues „alarm"; holt vorher die Haken aus den Einreich-Issues |
 | `einreichen` | nach `stats`, 19:05, Issue-Edit, Push auf `plan/postplan.json` | Tages-Issue „Einreichen“ (Checkbox pro Clip) → `plan/eingereicht.json` |
 | `tests` | jeder Push | rot/grün |
 | `livewatch` (AUS), `livewatch-replay`, `camtest`, `ai_assets`, `scenes3d`, `tools-check` | Sonderfälle | nicht ohne Auftrag anfassen |
