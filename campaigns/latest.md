@@ -1,40 +1,44 @@
-# Kampagnen-Radar – 16.11.2026 07:54 UTC
+# Kampagnen-Radar – 16.11.2026 12:14 UTC
 
 Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl nach festen Regeln – vor dem Beitritt das Briefing lesen. Beitreten kann nur Steven. NEW = seit dem letzten Lauf neu.
 
 ## Unsere Kampagnen
 
-- **TJR $50,000 Clipping Campaign** (Pusnik IRL): 31.9K $ von 50K $ frei, 297 Clipper
+- **TJR $50,000 Clipping Campaign** (Pusnik IRL): 31.8K $ von 50K $ frei, 100 $ in 24 h ausgezahlt, 297 Clipper
 - **$9,000 Jason Pool Campaign** (Pusnik IRL): 9K $ Pool, 2400 Clipper
-- **Call of Duty - Warzone Season 1 Clipping** (Pusnik G): 2K $ von 40K $ frei, 173 Clipper
+- **Call of Duty - Warzone Season 1 Clipping** (Pusnik G): 1.1K $ von 40K $ frei, 900 $ in 24 h ausgezahlt, 172 Clipper ⚠ Topf reicht bei diesem Tempo keine 3 Tage mehr
 - **Call of Duty - MW4 DMZ Intel Briefing Clipping** (Pusnik G): 24.3K $ von 30K $ frei, 79 Clipper
 
-## Pusnik G – beste offene Kampagnen (5 passen)
+## Pusnik G – beste offene Kampagnen (6 passen)
 
-- **$8,500 FaZe Tournament Clipping Campaign** (ClippedIn) – 1 $/1K, 8.5K $ frei, Auszahlung ab 10K Views, 15 Clipper, TT/IG/YT/X, Gaming, seit 4 days ago
+- **$8,500 FaZe Tournament Clipping Campaign** (ClippedIn) – 1 $/1K, 8.4K $ frei, 27 $ in 24 h ausgezahlt, Auszahlung ab 10K Views, 15 Clipper, TT/IG/YT/X, Gaming, seit 4 days ago
   Achtung: Publikum: 60 % USA/Tier 1 verlangt; Logo/Wasserzeichen Pflicht; Material liegt bei (2 Dateien)
   FaZe Flank Invitational (Call of Duty), live on Twitch Nov 10 to 12. Clip the draft, clutch plays and reactions from the official broadcast only. FaZe Flank logo on every clip, required caption tags, 60%+ US audience. $1 CPM, up t
   https://contentrewards.com/c/campaigns/200ea21b-be80-4db8-b552-8e32b148604e
-- **Lysium/Benji Ramos Clips** (Lysium) – 1.5 $/1K, 528 $ frei, Auszahlung ab 1K Views, 51 Clipper, TT/IG/YT/X, GTA, seit 1 month ago
+- NEW **Pet Simulator 99! [ROBLOX]** (BloxClips, verifiziert) – 0.9–1 $/1K, 2.9K $ frei, Auszahlung ab 1K Views, 1400 Clipper, TT/IG/YT, Roblox, seit 4 weeks ago
+  Achtung: Material liegt bei (1 Dateien)
+  Create engaging Roblox short-form videos showcasing Pet Simulator 99’s gameplay, rare pets, exciting moments, and unique features to encourage viewers to play the game.
+  https://contentrewards.com/c/campaigns/6b341aff-816a-419d-9b6f-c4763559be12
+- **Lysium/Benji Ramos Clips** (Lysium) – 1.5 $/1K, 527 $ frei, 1 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 51 Clipper, TT/IG/YT/X, GTA, seit 1 month ago
   Achtung: Bewerbung/Vorab-Freigabe nötig; Material liegt bei (1 Dateien)
   Pushing clips of Lysium as Benji Ramos in NoPixel V or his reactions to RP moments. Find high energy, funny, unexpected, or story-driven moments with enough context to understand the scene. No drama bait. All clips require pre-app
   https://contentrewards.com/c/campaigns/6d896f33-152f-42a9-92f4-662199228349
-- **Roblox Troll Clipping | Dubbing AI** (ClipScales) – 1 $/1K, 550 $ frei, Auszahlung ab 1K Views, 64 Clipper, TT/IG/YT, Gaming, seit 1 week ago
+- **Roblox Troll Clipping | Dubbing AI** (ClipScales) – 1 $/1K, 539 $ frei, 11 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 64 Clipper, TT/IG/YT, Gaming, seit 1 week ago
   Achtung: Material liegt bei (2 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   Copy our viral formats and clip for trolling funny voice-changing moments. Blow up. Earn big.
   https://contentrewards.com/c/campaigns/0c18e861-37bc-48a0-a475-19cfac1ce1ba
+- **Roblox Anime Game | World of Stands** (ClipScales) – 0.8 $/1K, 662 $ frei, 17 $ in 24 h ausgezahlt, Auszahlung ab 2.5K Views, 93 Clipper, TT/IG/YT, Gaming, seit yesterday
+  Achtung: Material liegt bei (2 Dateien)
+  Create original, engaging Roblox short-form videos clipping World of Stands, an already popular anime game on Jojo's Bizarre Adventures. Easy Virality. Earn Big.
+  https://contentrewards.com/c/campaigns/7a166eff-fb4f-433a-8b2a-3fd9d2b9652e
 - **Roblox Content Rewards – Make Shorts, Get Paid Fast!** (GSN Clips) – 1 $/1K, 400 $ frei, Auszahlung ab 1K Views, 575 Clipper, YT, Gaming, seit 5 months ago
   Achtung: Material liegt bei (1 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   Create Roblox Content by Merging 3 Provided Clips and Voila! You're Ready to Go Viral $Super Easy$
   https://contentrewards.com/c/campaigns/5e5be7d5-2a2e-4bf1-b017-5e5d956ec269
-- **Roblox Anime Game | World of Stands** (ClipScales) – 0.8 $/1K, 679 $ frei, Auszahlung ab 2.5K Views, 93 Clipper, TT/IG/YT, Gaming, seit yesterday
-  Achtung: Material liegt bei (2 Dateien)
-  Create original, engaging Roblox short-form videos clipping World of Stands, an already popular anime game on Jojo's Bizarre Adventures. Easy Virality. Earn Big.
-  https://contentrewards.com/c/campaigns/7a166eff-fb4f-433a-8b2a-3fd9d2b9652e
 
 ## Pusnik IRL – beste offene Kampagnen (20 passen)
 
-- **Michael Sartain's Clipping Army** (Michael Sartain's Clipper Army) – 2 $/1K, 5.3K $ frei, Auszahlung ab 9.5K Views, 33 Clipper, TT/IG/YT/X, Personal Brand, seit 3 months ago
+- **Michael Sartain's Clipping Army** (Michael Sartain's Clipper Army) – 2 $/1K, 5.2K $ frei, 100 $ in 24 h ausgezahlt, Auszahlung ab 9.5K Views, 33 Clipper, TT/IG/YT/X, Personal Brand, seit 3 months ago
   Achtung: Material liegt bei (2 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.
   https://contentrewards.com/c/campaigns/86842687-ba2b-4638-a024-995dcf3d25a3
@@ -42,7 +46,7 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
   Achtung: Material liegt bei (3 Dateien)
   Clip for Let Him Mansplain, the weekly podcast asking where all the good men went! Host Lily Kate gets men to open up about dating and marriage from a Christian point of view. The goal is to help women find good men! Clip content 
   https://contentrewards.com/c/campaigns/705f6e21-38af-408c-9e55-c77e4611bf09
-- **ChainsFR: Como Se Dice Clipping** (ClipLaunch, verifiziert) – 0.5 $/1K, 6.1K $ frei, Auszahlung ab 3K Views, 63 Clipper, TT/IG/YT, YouTuber, seit 4 days ago
+- **ChainsFR: Como Se Dice Clipping** (ClipLaunch, verifiziert) – 0.5 $/1K, 6K $ frei, 100 $ in 24 h ausgezahlt, Auszahlung ab 3K Views, 63 Clipper, TT/IG/YT, YouTuber, seit 4 days ago
   Achtung: Material liegt bei (1 Dateien)
   Clip ChainsFR's new song "Como Se Dice" into funny, entertaining short-form videos that highlight how catchy and genuinely fire the track is. Use viral moments, creative edits, and humor to get people talking, sharing, and realizi
   https://contentrewards.com/c/campaigns/791ad52c-a938-48b3-8f7e-f43ca10b110c
@@ -68,11 +72,11 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
   https://contentrewards.com/c/campaigns/2ade1fa0-ef91-40c6-af02-6ec52d2f5685
 - Pools (fester Topf, wird nach Views aufgeteilt – für kleine Konten unsicher): $30,000 LACY 30 DAY CAMPAIGN (30K $, 5700 Clipper); Double Coverage Podcast (10K $, 1400 Clipper)
 
-## Sonstige (weder Gaming noch Personen-Clips, 33 offen) – nur falls ein drittes Konto dazukommt
+## Sonstige (weder Gaming noch Personen-Clips, 34 offen) – nur falls ein drittes Konto dazukommt
 
 - Daise — Dollfaces + Charm Bracelets Clipping (Clip Influence) – 2 $/1K, 8K $ frei, Entertainment
+- Mr. Pa Clipping (Clip Influence) – 1.75 $/1K, 2.5K $ frei, Entertainment
 - Fundingpips Clipping (FundingPips) – 6 $/1K, 1.9K $ frei, Technology
-- The Loaded Tea Shop (Clip Farm) – 1 $/1K, 146.8K $ frei, Entertainment
-- Backyard Breaks [Clipping Campaign] (ClipHouse) – 2 $/1K, 4.9K $ frei, Sports
-- Sherlock [UGC REPOSTING NEW PAGES] (Acrune) – 1 $/1K, 5.4K $ frei, Entertainment
-- F1 ASTON MARTIN x COINBASE (ClipHaus) – 1.5 $/1K, 5.7K $ frei, Sports
+- NEW Jo Koy: Comedy Special (Eclipse) – 2 $/1K, 16.4K $ frei, Entertainment
+- Sherlock [UGC REPOSTING NEW PAGES] (Acrune) – 1 $/1K, 5.3K $ frei, Entertainment
+- F1 ASTON MARTIN x COINBASE (ClipHaus) – 1.5 $/1K, 5.6K $ frei, Sports
