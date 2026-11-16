@@ -51,3 +51,21 @@ Vorbeugung: Di und Mi morgens die News-Zeile ansehen, denn der alte Produzent-Pr
 
 ## 6. Vorschlag gegen verspätete Crons – erledigt (nur Vorschlag)
 `plan/vorschlag-crons-2026-11-16.md`. Kern: Die Agenten starten `render`/`clipfabrik` nach einem Drive-Auftrag selbst per `workflow_dispatch` (GitHub-Konnektor, 0 €); Livewatch bekommt nach dem Launch einen Push-Auslöser; der Vorlauf ≥ 4 h bleibt. Nichts umgesetzt.
+
+## Abschluss (Stand 17.11. ca. 01:00 Berlin)
+**Erledigt:** 2, 3, 4, 5, 6. **Blockiert:** 1 (Filter; stattdessen ein Verzeichnis). Alles liegt auf Branch `claude/peaceful-pasteur-7p6hd7`, PR #16 (Entwurf). Lokal laufen 289 Tests grün, 0 übersprungen; Action `tests` auf dem Branch grün. Nichts gepostet, keine Credits, kein Trigger geändert.
+
+**Offen:**
+- Alte Prompt-Texte nicht im Repo (Filter, und sie enthalten den Nachnamen).
+- Livewatch-Fallbackschnitt an Satzgrenzen (Livewatch-Session); Werbe-Erkennung live nur prüfbar, wenn `live_url` die Media-Playlist liefert.
+- Golden-Hashes der Clip-Regression gelten nur für den lokalen ffmpeg-Build (unverändert).
+- Kick-Ersatzsignal und Cron-Vorschlag sind nur Text.
+
+**Was Steven selbst tun muss (nach Frist):**
+1. **Vor jedem Prompt-Tausch** den alten Text in der App kopieren und in Notizen sichern. Produzent erst **nach** dem Lauf Di 07:47, vor Mi 07:47.
+2. **Warzone D bis Di 17.11. 12:00** auf den Text aus `plan/prompts/warzone-erinnerungen-DEF.md` umstellen (E bis Di 19:00, F bis Mi 19:00), oder „Whop“ beim Lesen als „Content Rewards“ verstehen.
+3. **Di und Mi morgens** die News-Zeile in `trends/latest.md` ansehen (Release-Verschiebung?), **Do bis 11:30** das Runbook inkl. Pre-Mortem.
+4. Entscheiden: Dauer-Freigabe, Zusatz-Shorts nach 19:30, Deal-Radar (Gedächtnis, 15-€-Grenze, Suchmenge), Agenten starten Actions selbst (Cron-Vorschlag Punkt 1).
+5. PR #16 nach `main` übernehmen lassen (im Chat „PR 16 mergen“). Erst dann gelten die korrigierten Prompts unter der main-Adresse; bis dahin stehen sie auf dem Branch.
+
+**Nächste Session (Opus) macht weiter bei:** PR #16 mergen (falls noch nicht), danach `render`/`clipfabrik` auf main prüfen (keine `short:`/`clipfabrik:`-Neurender-Commits). Nach dem Launch Livewatch-Push-Auslöser mit Test, Messung der Donnerstag-Läufe mit `tests/livewatch_messen.py`, Antworten auf die offenen Entscheidungen einarbeiten.
