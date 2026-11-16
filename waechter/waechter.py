@@ -39,6 +39,20 @@ class P:
     def __init__(s, group, key, text): s.group, s.key, s.text = group, key, text
 
 
+def merge_slots(slots):
+    """Postplan-Slots mit gleichem Datum/Zeit/Konto/Kampagne zu EINEM Slot zusammenfassen (Plattformen vereinigt). Der Clipping-Agent kann
+    pro vidiq_social_post_publish (= pro Plattform) einen Eintrag schreiben; ohne Zusammenfassen gäbe es doppelte Issue-Zeilen."""
+    out = {}
+    for s in slots:
+        if not s.get("datum") or not s.get("zeit"): continue
+        k = (s["datum"], s["zeit"], s.get("konto"), s.get("kampagne"))
+        if k not in out: out[k] = dict(s, **({"plattformen": list(s["plattformen"])} if "plattformen" in s else {}))
+        elif "plattformen" in s:
+            have = out[k].setdefault("plattformen", [])
+            have += [pl for pl in s["plattformen"] if pl not in have]
+    return list(out.values())
+
+
 def ignored(p, cfg): return any(p.key == i["key"] or p.key.startswith(i["key"] + ":") for i in cfg.get("ignorieren", []))
 
 
@@ -166,8 +180,8 @@ def check_slots_live(root, cfg, now, st, blind):
     out, upd = [], parse((st or {}).get("updated"))
     plan = jl(os.path.join(root, "plan", "postplan.json"), {}) or {}
     if not upd: return out
-    for s in plan.get("slots", []):
-        if not s.get("datum") or s["datum"] < cfg["seit"]: continue
+    for s in merge_slots(plan.get("slots", [])):
+        if s["datum"] < cfg["seit"]: continue
         t0 = at_berlin(s["datum"], s["zeit"]).astimezone(UTC); due = t0 + dt.timedelta(hours=cfg.get("slot_karenz_stunden", 2))
         if now < due or upd < due: continue
         for plat in s.get("plattformen", []):

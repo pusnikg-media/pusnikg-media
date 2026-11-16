@@ -52,7 +52,7 @@ def match_slot(post, slots, cfg):
 
 def load_slots(root):
     j = W.jl(os.path.join(root, "plan", "postplan.json"), {}) or {}
-    return [s for s in j.get("slots", []) if s.get("datum") and s.get("zeit")]
+    return W.merge_slots(j.get("slots", []))
 
 
 def build_lines(root, cfg, day, stats):
