@@ -514,6 +514,7 @@ def face_track(src, a, dur, p, cw, step=0.5):
     Dead zone: the frame holds still until the face drifts > 15 % of the crop width from centre, then glides."""
     try:
         import cv2, numpy as np
+        if not hasattr(cv2, "CascadeClassifier"): raise ImportError("opencv >= 5 has no CascadeClassifier (workflows pin <5)")
     except ImportError:
         print("WARN opencv missing - centre crop"); return None
     if cw >= p["w"] - 2: return None
@@ -614,6 +615,7 @@ def facecam_rect(src, a, dur, p, spec="auto"):
         return fit((x + w / 2) * p["w"], (y + h / 2) * p["h"], max(w * p["w"], h * p["h"] * 1.5))
     try:
         import cv2, numpy as np
+        if not hasattr(cv2, "CascadeClassifier"): raise ImportError("opencv >= 5 has no CascadeClassifier (workflows pin <5)")
     except ImportError: return None
     sw = 960; sh = max(2, int(round(p["h"] * sw / p["w"] / 2)) * 2); k = p["w"] / sw
     r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{a:.3f}", "-t", f"{dur:.3f}", "-i", src, "-an",
