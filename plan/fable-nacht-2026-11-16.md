@@ -1,14 +1,26 @@
 # Fable-Nacht 16.11.2026 – Ergebnis
 
-Stand: 16.11. ca. 20:30 Berlin. Branch `fable-nacht`, alles nach `main` gemergt (Tests lokal 270+ grün, Action `tests` auf main grün). Nichts gepostet, keine Credits, keine Trigger geändert.
+Stand: 16.11. ca. 21:00 Berlin. Alles nach `main` gemergt (Action `tests` auf main grün, lokal 273 Tests grün). Nichts gepostet, keine Credits, kein Trigger geändert. Kleine Commits auf `fable-nacht`/`main`.
 
 ## Zusammenfassung
-- **Fertig:** Block 1 (5 Ausfälle gefunden, 3 per Code gefixt, 2 per Runbook/Prompt abgesichert), Block 3 (Clip-Regression + Review, 5 Fixes), Block 4 (Diagnose + 3 Experimente in `team_state.md`), Block 5 (6 neue Prompts + Runbook unter `plan/prompts/`). Block 2 teilweise: echter Live-Lauf auf dem Runner hat funktioniert, Verbesserungen eingebaut.
-- **Offen:** Erkennungsqualität von Livewatch ist nicht gemessen verbessert (kein Replay-Vergleich, 1 Live-Lauf); Werbepausen-Erkennung/Watchdog live ungeprüft; Kick hat kein Chat-Signal (nur Lautstärke); Golden-Hashes der Clip-Regression nur für den lokalen ffmpeg-Build (Runner prüft nur Struktur); Review-Reste unten.
+- **Fertig:**
+  - Block 1: 5 wahrscheinliche Ausfälle gefunden; Livewatch-Warten, Trendscout/Kampagnen-Publish, OpenCV-Rückfall, Wächter-nach-stats und Postplan-Regeln per Code gefixt und auf dem Runner bestätigt; Release-Check/Vorlauf per Runbook.
+  - Block 3: `tests/clip_regression.py` (Video-/Audio-Hash + Sync) und Review der Clipfabrik mit 5 behobenen Fehlern.
+  - Block 4: Zahlen-Diagnose, 3 Experimente mit Prüfer (Analyst) in `plan/team_state.md`.
+  - Block 5: 6 überarbeitete Prompts + Launch-Runbook in `plan/prompts/` (Produzent und Clipping-Agent gegengelesen).
+- **Block 2 nur teilweise:** Pipeline läuft Ende-zu-Ende live (2 Läufe auf dem Runner, 4 Clips), aber **0 von 4 Clips brauchbar** (wie schon 0 von 4 im VOD-Training davor). Am Donnerstag liefert Livewatch Kandidaten, keine postbaren Clips; jeder braucht Bildkontrolle + Kontextsatz. Detektion nicht verbessert gemessen (kein Replay-Vergleich).
+- **Offen:**
+  - Alte Prompts nicht gesichert (Subagent-Lauf vom System gestoppt) → vor dem Überschreiben selbst kopieren.
+  - Review-Reste Clipfabrik: Hochformat-Quelle wird in native/framed beschnitten; Emoji-Darstellung (Hauttöne/Flaggen); `probe()` bei `r_frame_rate 0/0`; Livewatch-Fallbackschnitt nicht an Satzgrenzen.
+  - Ohne eigenen Test: Livewatch-Aufwärmzeit, Wortsortierung der `words.json`, Inbox-Bremse nur als Funktion getestet, `loop()` nur live.
+  - Prompts: Analyst, Stratege, Deal-Radar, Reel-Scout nicht gegengelesen; Liste nicht eingearbeiteter Funde in `plan/prompts/README.md`.
+  - Livewatch: Werbepausen/Watchdog live ungeprüft; Kick ohne Chat-Signal; Golden-Hashes nur für lokalen ffmpeg-Build.
+  - Stevens Nachname stand in den neuen Prompt-Dateien und ist in der Git-Historie (öffentliches Repo) der ersten Commits; in den Dateien jetzt entfernt.
+  - vidIQ-Liste (lesend): YouTube 17.11. fehlt vermutlich nur, weil der Upload vor dem Abfragefenster lag (wie der 16.11., der laut Wächter live ist); nicht erneut geprüft.
 - **Steven muss selbst (3 Punkte):**
-  1. **Prompts am iPhone einspielen** (`plan/prompts/README.md`, ca. 2 Min je Agent; **Produzent noch heute Abend / vor Di 17.11. 07:47**, wegen Release-Check für den Launch-Short) und dabei entscheiden: (a) Dauer-Freigabe „Tages-Short + TJR/Warzone/SEGA/MW4 ohne extra ja“ bestätigen oder auf „nur mit ja“ umstellen, (b) Zusatz-Shorts nach 19:30 („Review-Roundup 2. Versuch“ Mi 18.11. 21:17, „Rekord-Check“ 20.11. 20:30) erlauben oder die zwei Trigger ändern, (c) die drei Warzone-Erinnerungen D/E/F sagen noch „Whop“ (richtig: Content Rewards).
-  2. **Donnerstag 19.11. bis 11:30** (danach 12:00–21:30 nicht erreichbar): Runbook `plan/prompts/runbook-launch-tag-2026-11-19.md`, Zeile „bis 11:30“: Release-Check (kein Delay in `trends/latest.md`?), Post 18:00 in vidIQ `scheduled`?, „Livewatch an“ nur wenn eine Kampagne/Erlaubnis für den Streamer vorliegt – dann im Chat sagen, wer.
-  3. **Einreichen abhaken** (GitHub-App, Issue „Einreichen“): die Kampagnen-Clips vom 16.11. 15:00 und ab Di jeden Morgen 09:00/09:30; die Warzone-Slots 17.11. 15:00/19:30 und 18.11. 19:30 liegen in der Schicht (30-Min-Frist nicht haltbar, Wächter-Alarm „Einreichen“ ist dort zu erwarten).
+  1. **Prompts einspielen und drei Entscheidungen im Chat** (`plan/prompts/README.md`): Analyst, Stratege, Deal-Radar, Reel-Scout, Clipping-Agent jederzeit (Analyst vor So 22.11. 18:13), **Produzent erst nach dem Lauf Di 17.11. 07:47, vor Mi 18.11. 07:47**. Entscheiden: (a) „Dauer-Freigabe gilt“ oder „nur mit ja“ (Schalter in team_state, aktuell „nicht bestätigt“), (b) Zusatz-Shorts nach 19:30 („Review-Roundup 2. Versuch“ Mi 18.11. 21:17, „Rekord-Check“ Fr 20.11. 20:30) erlauben oder abschalten, (c) die Warzone-Erinnerungen D/E/F sagen „Whop“ (richtig: Content Rewards).
+  2. **Do 19.11. bis 11:30** (danach 12:00–21:30 nicht erreichbar), Runbook Zeile „bis 11:30“: Release-Check (Verschiebung in `trends/latest.md`? dann „raus“), Post 18:00 in vidIQ `scheduled`?, „Livewatch an“ nur mit Kampagne/Erlaubnis für den Streamer.
+  3. **Einreichen abhaken** (GitHub-App, Issue „Einreichen“): ab Di jeden Morgen 09:00/09:30; die Warzone-Slots 17.11. 15:00/19:30 und 18.11. 19:30 liegen in der Schicht (30-Min-Frist nicht haltbar, Wächter-Alarm „Einreichen“ zu erwarten).
 
 ## Block 4 – Zahlen-Diagnose (fertig, Details: `plan/zahlen-diagnose-2026-11-16.md`)
 - TikTok Pusnik G: harte Decke bei ca. 250 Views (36 von 43 Posts bei 150–450, Median 258, keiner über 2.500). Uhrzeit/Format ohne erkennbaren Effekt.

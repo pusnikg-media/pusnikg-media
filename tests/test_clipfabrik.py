@@ -127,3 +127,13 @@ def test_livewatch_cut_refuses_a_recording_gap():
     lw = load("pipeline/clipfabrik/livewatch.py", "livewatch_gap")
     with pytest.raises(Exception, match="gap"):
         lw.cut({1: "/x/1.ts", 2: "/x/2.ts"}, 0.0, 50.0, 70.0, "/tmp/never.mp4")      # segment 0 missing
+
+
+def test_opencv5_without_cascade_falls_back_instead_of_crashing(cf, src_clip, monkeypatch):
+    """16.11.: opencv >= 5 hat kein CascadeClassifier -> facecam 'auto' = None (native) und face_track = None, kein Absturz."""
+    import sys, types
+    fake = types.ModuleType("cv2")                                     # ohne CascadeClassifier
+    monkeypatch.setitem(sys.modules, "cv2", fake)
+    p = cf.probe(src_clip)
+    assert cf.facecam_rect(src_clip, 0.5, 3.0, p, "auto") is None
+    assert cf.face_track(src_clip, 0.5, 3.0, p, 600) is None
