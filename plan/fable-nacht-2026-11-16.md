@@ -1,11 +1,14 @@
 # Fable-Nacht 16.11.2026 – Ergebnis
 
-Stand: laufend (wird nach jedem Block ergänzt). Branch `fable-nacht`.
+Stand: 16.11. ca. 20:30 Berlin. Branch `fable-nacht`, alles nach `main` gemergt (Tests lokal 270+ grün, Action `tests` auf main grün). Nichts gepostet, keine Credits, keine Trigger geändert.
 
-## Zusammenfassung (wird am Ende gefüllt)
-- Fertig: –
-- Offen: –
-- Steven muss selbst (max. 3): –
+## Zusammenfassung
+- **Fertig:** Block 1 (5 Ausfälle gefunden, 3 per Code gefixt, 2 per Runbook/Prompt abgesichert), Block 3 (Clip-Regression + Review, 5 Fixes), Block 4 (Diagnose + 3 Experimente in `team_state.md`), Block 5 (6 neue Prompts + Runbook unter `plan/prompts/`). Block 2 teilweise: echter Live-Lauf auf dem Runner hat funktioniert, Verbesserungen eingebaut.
+- **Offen:** Erkennungsqualität von Livewatch ist nicht gemessen verbessert (kein Replay-Vergleich, 1 Live-Lauf); Werbepausen-Erkennung/Watchdog live ungeprüft; Kick hat kein Chat-Signal (nur Lautstärke); Wächter-Lauf nach `stats` (`workflow_run`) noch nicht live gesehen; Golden-Hashes der Clip-Regression nur für den lokalen ffmpeg-Build (Runner prüft nur Struktur); Review-Reste unten.
+- **Steven muss selbst (3 Punkte):**
+  1. **Prompts am iPhone einspielen** (`plan/prompts/README.md`, ca. 2 Min je Agent; Produzent erst nach Fr 20.11. 16:47) und dabei entscheiden: (a) Dauer-Freigabe „Tages-Short + TJR/Warzone/SEGA/MW4 ohne extra ja“ bestätigen oder auf „nur mit ja“ umstellen, (b) Zusatz-Shorts nach 19:30 („Review-Roundup 2. Versuch“ heute 21:17, „Rekord-Check“ 20.11. 20:30) erlauben oder die zwei Trigger ändern, (c) die drei Warzone-Erinnerungen D/E/F sagen noch „Whop“ (richtig: Content Rewards).
+  2. **Donnerstag 19.11. bis 11:30** (danach 12:00–21:30 nicht erreichbar): Runbook `plan/prompts/runbook-launch-tag-2026-11-19.md`, Zeile „bis 11:30“: Release-Check (kein Delay in `trends/latest.md`?), Post 18:00 in vidIQ `scheduled`?, „Livewatch an“ nur wenn eine Kampagne/Erlaubnis für den Streamer vorliegt – dann im Chat sagen, wer.
+  3. **Einreichen abhaken** (GitHub-App, Issue „Einreichen“): die Kampagnen-Clips vom 16.11. 15:00 und ab Di jeden Morgen 09:00/09:30; die Warzone-Slots 17.11. 15:00/19:30 und 18.11. 19:30 liegen in der Schicht (30-Min-Frist nicht haltbar, Wächter-Alarm „Einreichen“ ist dort zu erwarten).
 
 ## Block 4 – Zahlen-Diagnose (fertig, Details: `plan/zahlen-diagnose-2026-11-16.md`)
 - TikTok Pusnik G: harte Decke bei ca. 250 Views (36 von 43 Posts bei 150–450, Median 258, keiner über 2.500). Uhrzeit/Format ohne erkennbaren Effekt.
@@ -26,3 +29,18 @@ Nicht geändert (bewusst): `|| exit 0` bei stats (Selbstheilung 4×/Tag), render
 ## Block 2 – Livewatch (teilweise)
 - Testmodus: `livewatch.yml` per `workflow_dispatch` mit `urls` (Komma-Liste), `minutes`, `profile` – ignoriert `enabled`, ändert main nicht.
 - Echtlauf 16.11. 19:45 Berlin auf dem Runner: yt-dlp erreicht Twitch, Offline-Erkennung sauber ("not currently live" für xqc, kaicenat, caseoh_, jynxzi, tarik); **kein Kanal live → keine Aufnahme getestet**. Aufnahme live bereits am 15.11. (robcdee) getestet; Werbepausen/Watchdog bleiben live ungeprüft.
+
+### Block 2 – Ergebnis Live-Lauf (Nachtrag 20:20)
+- Testlauf (Eingabe `urls`: 14 Twitch-Kanäle, 90 Min, Profil gaming) auf main: Der Runner fand **zackrawrr live**, nahm auf, erkannte 3 Treffer und rendert 3 fertige 9:16-Clips (1080x1920, Ton, 13–16 s) samt `raw_*.mp4`, QA-Bild und `inbox.json`, Veröffentlichung im Repo 6–10 Min nach Aufnahmebeginn. Pipeline Ende-zu-Ende **bestätigt** (Twitch-Zugriff, HLS-Aufnahme, Chat-IRC, Whisper, Clipfabrik, Push). Lauf danach abgebrochen, Clips gelöscht (bleiben in der Git-Historie, Repo ist öffentlich).
+- **Qualität schlecht:** 3 Clips in den ersten 9 Minuten (erwartet ca. 0,5 bei 3/h), alle drei Alltagsmomente (Browser-Fenster, Gespräch), Chat-Verhältnis x3,07–x3,77 knapp über der Schwelle 3,0. Gegenmaßnahme eingebaut: Aufwärmzeit 8 Min (`warmup_s`). Für Talk-Streams Profil `irl` (4,5/2,5) nehmen. Nicht nachgemessen.
+- Detektion gelesen: Chat-Treffer rückt den Moment um die Verzögerung zurück (lauteste Sekunde in den 28 s vor der Chat-Spitze, Schnitt −30/+12 s, gemessene Verzögerung 7–25 s → passt). Bei Chat-Treffern entscheidet nur das Chat-Verhältnis; `hype ≥ 9` wird dort auf `min_hype` gesetzt und trennt nichts. **Ohne Chat (Kick, oder IRC fällt aus) entscheidet allein die Lautstärke gegen 9 dB und die ist bei lauten Streams fast immer erfüllt → viele Fehlalarme.** Deshalb: Kick-Streamer nur mit `min_hype` 14 / `per_hour` 2 oder Twitch nutzen (Hinweis in `plan/gta6_launch.json`).
+- Neu: Wartet auf den Streamstart (v0.5), Inbox-Bremse (max. 12 ungepostete Clips pro 24 h, ca. 120 MB/Tag), Aufnahmelücke → Clip verworfen statt falscher Timecode, Aufwärmzeit, Testmodus per `workflow_dispatch`. Alles in `pipeline/README.md` („Livewatch v0.5").
+- Am Donnerstag nur noch: Streamer in `plan/livewatch.json` eintragen + `enabled: true` (+ `until`). Vorher sinnvoll: Testmodus mit dem Kanal (Workflow `livewatch`, Eingaben `urls`/`minutes`/`profile`).
+
+## Block 3 – Ergebnis
+- `tests/clip_regression.py` (+ `test_clip_regression.py`, Golden `tests/fixtures/clip_hashes.json`): 9 Layout-Fälle + Quelle ohne Ton; Hash über dekodierte Frames/Ton, Sync < 0,1 s, Frameanzahl. Vorher/Nachher: `save VORHER` → ändern → `compare VORHER`. Läuft in der Action `tests` (nur Struktur auf dem Runner-ffmpeg; Golden nur lokaler Build).
+- Review (Subagent, jeder Befund mit Experiment): **behoben** (nur NEUE Clips betroffen, `job_sig` unverändert, nichts rendert neu): (1) Livewatch-Schnitt bei Aufnahmelücke gab stillen Fehl-Timecode; (2) Schnitt mitten im Wort / Fade-out (0,35 s) fraß das letzte Wort (6 von 11 echten Agent-Clips betroffen: tjr4 D_test/E_seats, tjr5 A_key/B_seat/C_worst/E_outro) → `snap_to_words`; (3) `words.json` aus Hotspot-Scans war nicht zeitsortiert; (4) Mehrkanal-Quellen (5.1) → jetzt Stereo (`-ac 2`; Golden-Argumente angepasst, Bild-Hashes identisch); (6) `fix_word` mit Anführungszeichen/Possessiv/Groß-Klein. Ton-Bild-Sync, Untertitel-Timing, Hook-Teaser, Quelle ohne Ton, VFR, andere Seitenverhältnisse: ohne Befund.
+- **Offen (nicht behoben, belegt):** Hochformat-Quelle in `native`/`framed` wird auf die Mitte beschnitten (Doku sagt „nichts beschnitten“); `caption_box`: Hauttöne/Flaggen/ZWJ-Emojis falsch, Titel-Schrift ohne ✓★♥; `probe()` bei `r_frame_rate 0/0` falsche Fehlermeldung. **Unsicher:** Livewatch-Fallbackschnitt (`pk-16..pk+8`) nicht an Satzgrenzen; `facecam: auto` bei GTA nur mit 3 GTA-Clips belegt (Schwellen nicht nach Gefühl ändern, CLAUDE.md 13).
+
+## Block 5 – Ergebnis
+`plan/prompts/`: `produzent.md`, `clipping-agent.md`, `analyst.md`, `stratege.md`, `deal-radar.md`, `reel-scout.md`, `README.md` (Tabelle, Einspielen, Entscheidungen), `runbook-launch-tag-2026-11-19.md`. Je Datei oben „Befunde zum alten Prompt“. Wichtigste Altlasten: Freigabe-Widerspruch (CLAUDE.md „nie ohne ja“ gegen Dauer-Anweisung), Wächter-Schritt 0 fehlte, Deal-Radar schrieb ins Repo (kein Schreibrecht) und nutzte 7 Suchen/Tag, Stratege nutzte WebFetch statt Radar und Zapier für Zahlen, Experiment-2-Reste im Produzent, „Whop“ in drei Warzone-Erinnerungen, zwei Zusatz-Shorts nach 19:30. Ergänzt von mir: **Release-Check** (Verschiebung des GTA-6-Releases → kein „is out“-Short) im Produzent und im Runbook. Kein Trigger geändert.
