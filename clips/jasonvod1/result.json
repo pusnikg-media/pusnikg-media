@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "name": "jasonvod1",
+ "sig": "37b02618cb95",
+ "attempts": 1,
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/raw_20261116-123357.mp4",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jasonvod1/scan/scan.json",
+ "clips": [
+  {
+   "id": "A",
+   "ok": true,
+   "seconds": 17.5,
+   "title": "JASONTHEWEEN FLIPS THROUGH A PHOTO BOOK",
+   "file": "jasonvod1_A.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jasonvod1/qa/jasonvod1_A.jpg",
+   "layout": "native",
+   "tracked": false,
+   "punches": 0,
+   "caption": "JasonTheWeen flips through a photo book at TwitchCon and finds a picture he has NEVER seen... 😭📸",
+   "sig": "80b979f9a924",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/jasonvod1/jasonvod1_A.mp4"
+  }
+ ],
+ "phase": "rendered"
+}
