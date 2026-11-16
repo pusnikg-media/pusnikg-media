@@ -1,0 +1,59 @@
+# Wächter: vergleicht Geplantes mit dem, was live ist, prüft die Actions und die Kampagnen-Einreichung (0 Credits).
+# Ergebnis: stats/alerts.md (nur offene Probleme) + GitHub-Issue mit Label "alarm" pro Problemgruppe (kein Duplikat, schließt sich selbst).
+# Auf main (Zeitplan, von Hand, Push) = echt. Auf anderen Branches = Trockenlauf (nur ins Log, keine Datei, keine Issues).
+# Zeiten (UTC): 05:47 vor dem Produzenten (07:47 Berlin), 11:37 nach stats/kampagnen und vor dem Clipping-Agenten (12:47 Berlin).
+name: waechter
+on:
+  push:
+    paths: ["waechter/**", "plan/waechter.json", "plan/eingereicht.json", ".github/workflows/waechter.yml"]
+  schedule:
+    - cron: "47 5 * * *"
+    - cron: "37 11 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+  actions: read
+concurrency:
+  group: waechter
+  cancel-in-progress: false
+jobs:
+  waechter:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /plan/
+            /jobs/
+            /clipjobs/
+            /shorts/*.json
+            /clips/*/result.json
+            /stats/latest.json
+            /stats/alerts.md
+            /trends/latest.json
+            /campaigns/latest.json
+            /waechter/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Wächter
+        run: |
+          if [ "${{ github.ref }}" != "refs/heads/main" ]; then
+            python3 waechter/waechter.py --root . --dry; exit 0
+          fi
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          python3 waechter/waechter.py --root .   # Fehler (z. B. Issues) lassen den Lauf rot enden
+          cp stats/alerts.md /home/runner/alerts.md
+          for i in 1 2 3 4 5; do   # auf den neuesten main legen (viele Actions pushen)
+            git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+            mkdir -p stats && cp /home/runner/alerts.md stats/alerts.md
+            git add stats/alerts.md; git diff --cached --quiet && { echo "alerts.md unveraendert"; break; }
+            git commit -q -m "waechter: alerts" && git push -q origin HEAD:main && { echo PUBLISHED; break; }
+            echo "push retry $i"; sleep 8
+          done

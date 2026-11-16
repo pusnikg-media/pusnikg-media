@@ -1,0 +1,47 @@
+# Smoke-Tests bei jedem Push (und Pull Request). ROT = der Push gilt als kaputt (siehe CLAUDE.md "Tests").
+# Offline, ohne Credits, < 2 Min. Daten-Pushes (clips/, stats/, ...) lösen nichts aus.
+name: tests
+on:
+  push:
+    paths-ignore: ["clips/**", "stats/**", "shorts/**", "trends/**", "campaigns/**", "refs/**", "**.md"]
+  pull_request:
+    paths-ignore: ["clips/**", "stats/**", "shorts/**", "trends/**", "campaigns/**", "refs/**", "**.md"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /pipeline/
+            /plan/
+            /jobs/
+            /clipjobs/
+            /shorts/*.json
+            /clips/*/result.json
+            /stats/latest.json
+            /trends/latest.json
+            /campaigns/latest.json
+            /assets/logos/
+            /tests/
+            /waechter/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tools
+        run: |
+          bash pipeline/install_tools.sh || exit 1
+          ffmpeg -hide_banner -filters | grep -q " subtitles " || { echo "ffmpeg without libass"; exit 1; }
+          pip install -q pytest jsonschema pillow numpy scipy
+      - name: Tests
+        run: python3 -m pytest tests -q -p no:cacheprovider

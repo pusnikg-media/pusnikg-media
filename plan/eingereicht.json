@@ -1,0 +1,6 @@
+{
+ "note": "Notiz des Clipping-Agenten: Welche Kampagnen-Posts sind bei Content Rewards EINGEREICHT (binnen 30 Min nach Veröffentlichung)? Pro Post eine Zeile unter 'eingereicht': die Post-URL (oder nur die Video-ID) so, wie sie in stats/latest.md/latest.json steht. Kein Einreichen nötig (z. B. Post gelöscht, Kampagne zu Ende): Zeile unter 'nicht_noetig'. Der Wächter meldet jeden Kampagnen-Post ab 'seit', der in keiner der beiden Listen steht. Älteres wird nicht gemeldet.",
+ "seit": "2026-11-16",
+ "eingereicht": [],
+ "nicht_noetig": []
+}

@@ -1,0 +1,86 @@
+{
+ "note": "Konfig des Wächters (waechter/waechter.py, Action 'waechter'). Fakten stehen hier, nicht im Code. Neue Kampagne = Zeile unter 'kampagnen'. Ausnahmen = Zeile unter 'ignorieren' (mit Grund).",
+ "seit": "2026-11-16",
+ "postzeit_ende": "19:30",
+ "tagesshort": {
+  "konto": "Pusnik G",
+  "von": "17:30",
+  "bis": "18:45",
+  "plattformen": [
+   "youtube",
+   "tiktok"
+  ],
+  "karenz_stunden": 2
+ },
+ "max_alter_stunden": {
+  "stats": 16,
+  "trends": 14,
+  "campaigns": 14
+ },
+ "max_alter_actions_stunden": {
+  "stats": 16,
+  "trendscout": 12,
+  "kampagnen": 15,
+  "render": 3,
+  "clipfabrik": 6,
+  "reflab": 200
+ },
+ "einreichen_nach_minuten": 45,
+ "ignorieren": [
+  {
+   "key": "short:2026-11-12",
+   "grund": "Lücke durch Metricool-Limit, laut team_state nicht nachholen"
+  },
+  {
+   "key": "short:2026-11-13",
+   "grund": "Lücke durch Metricool-Limit, laut team_state nicht nachholen"
+  }
+ ],
+ "kampagnen": [
+  {
+   "name": "TJR",
+   "stats": "TJR",
+   "clips": [
+    "tjr3",
+    "tjr4",
+    "tjr5"
+   ],
+   "konto": "Pusnik IRL",
+   "bis": "2026-11-19",
+   "erwartet": 9,
+   "plattformen": [
+    "youtube",
+    "tiktok"
+   ]
+  },
+  {
+   "name": "COD Warzone Season 1",
+   "stats": "Warzone S1",
+   "clips": [
+    "wzs1"
+   ],
+   "konto": "Pusnik G",
+   "bis": "2026-11-18",
+   "erwartet": 6,
+   "plattformen": [
+    "tiktok"
+   ]
+  },
+  {
+   "name": "JasonTheWeen",
+   "stats": "JasonTheWeen",
+   "clips": [
+    "jason3"
+   ],
+   "konto": "Pusnik IRL",
+   "bis": null,
+   "erwartet": null,
+   "plattformen": [
+    "youtube",
+    "tiktok"
+   ]
+  }
+ ],
+ "postzeit_toleranz_min": 5,
+ "repo_mb_max": 3500
+}
