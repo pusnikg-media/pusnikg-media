@@ -48,3 +48,6 @@ Im Runbook `plan/prompts/runbook-launch-tag-2026-11-19.md` steht ein neuer Absch
 - Die Livewatch-Zeile steht unter 12:47, gemeint ist aber „vor 11:30“.
 - Ehrlich festgehalten: Bei einer Verschiebung sind Instagram und TikTok ca. 3,5 h falsch online (löschen erst ab 21:30).
 Vorbeugung: Di und Mi morgens die News-Zeile ansehen, denn der alte Produzent-Prompt hat keinen Release-Check.
+
+## 6. Vorschlag gegen verspätete Crons – erledigt (nur Vorschlag)
+`plan/vorschlag-crons-2026-11-16.md`. Kern: Die Agenten starten `render`/`clipfabrik` nach einem Drive-Auftrag selbst per `workflow_dispatch` (GitHub-Konnektor, 0 €); Livewatch bekommt nach dem Launch einen Push-Auslöser; der Vorlauf ≥ 4 h bleibt. Nichts umgesetzt.
