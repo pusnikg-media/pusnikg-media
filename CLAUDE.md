@@ -21,12 +21,12 @@ Gaming-Shorts-Kanal "Pusnik G" (YT Shorts, TikTok, Reels) + Clipping-Kampagnen (
 
 # Landkarte (Stand 16.11.2026 – neue Session: erst `stats/alerts.md`, dann dieses Blatt, dann `plan/team_state.md`; `pipeline/README.md` nur für Details)
 ## Arbeitsregeln fürs Repo
-- **Tests:** `python3 -m pytest tests -q` (~40 s; braucht ffmpeg, pytest, jsonschema, pillow, numpy, scipy). Action `tests` läuft bei jedem Push (Daten-Pushes ausgenommen). **Rot = Push gilt als kaputt → sofort beheben, nichts Neues obendrauf.** Neuer Fix an Clipfabrik/Stats/Plan-Dateien = Test dazu.
+- **Tests:** `python3 -m pytest tests -q` (~2 Min; braucht ffmpeg, pytest, jsonschema, pillow, numpy, scipy; die Haar-Gesichtstests in `test_facecam.py` brauchen zusätzlich `opencv-python-headless` + `scikit-image` und **überspringen sich still ohne sie**). Action `tests` läuft bei jedem Push (Daten-Pushes ausgenommen). **Rot = Push gilt als kaputt → sofort beheben, nichts Neues obendrauf.** Neuer Fix an Clipfabrik/Stats/Plan-Dateien = Test dazu.
 - **Git:** Nie `git add -A` (im Repo liegen `__pycache__/*.pyc`) – Pfade einzeln. `main` bewegt sich minütlich (Livewatch, Actions): vor Push `git fetch origin main && git merge origin/main`, nie force/rebase.
 - **Ändern/Rendern nur über Actions.** Claude-Läufe führen keinen heruntergeladenen Code aus. `render.yml` startet bei JEDEM Push auf `pipeline/**` – Änderungen dort bewusst machen.
 - **Livewatch/JasonTheWeen** (`pipeline/clipfabrik/livewatch.py`, `plan/livewatch.json`, `plan/jason*.json`, `clips/live-*`) gehört einer eigenen Session: nicht anfassen, außer Steven sagt es.
 - **Alarm-Pflicht:** `stats/alerts.md` ist Schritt 0 für Analyst und Clipping-Agent (Wächter, siehe unten). Offene Punkte dort zuerst.
-- Advisor: `.claude/settings.json` → `advisorModel` (Fable läuft nur bis 16.11. → auf `opus` stellen, sobald Fable weg ist).
+- Advisor: `.claude/settings.json` → `advisorModel` (steht seit 16.11. auf `opus`).
 ## Wo liegt was
 | Pfad | Zweck |
 |---|---|
