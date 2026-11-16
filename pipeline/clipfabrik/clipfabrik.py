@@ -574,28 +574,33 @@ def face_clusters(d, F, nf, sw, sh):
     return out
 
 
-def pick_face(d, F, nf, sw, sh, dbg_to=None):
-    """The facecam among all face clusters, or (None, None, None) = no cam found -> caller falls back to native (never a wrong crop).
-    GTA/RP footage (tfue test 16.11.): the player's character is a face too, and sits in the middle of the picture, while a facecam is
-    pinned to a side. So: a cam cluster must (1) cover >= 20 % of the frames, (2) move (a poster or a frozen character does not),
-    (3) sit in the left/right third (centre x outside 0.36-0.64 of the width), (4) have a face no wider than 10 % of the picture width
-    (camtest 16.11.: a 'face' of 12 % in a minimap / building corner was no cam; real cams measured 3-6 %; a face that big means a fullscreen
-    cam or a texture - native is the safe layout), and (5) not be one of several equally strong side clusters (then we cannot tell which
-    is the cam). Among the rest the one seen most often wins."""
-    cl = face_clusters(d, F, nf, sw, sh)
+def choose_face(cl, nf, sw, dbg_to=None):
+    """Selection rules on face clusters (dicts from face_clusters) -> (cx, cy, w) or (None, None, None). Pure, so camtest reports can be replayed."""
     for c in cl:
         c["side"] = c["cx"] < 0.36 * sw or c["cx"] > 0.64 * sw
-        c["small"] = c["w"] <= 0.10 * sw
+        c["small"] = c["w"] <= 0.10 * sw or (c["w"] <= 0.13 * sw and c["cov"] >= 0.6)    # jynxzi: a big cam face (11 %) seen in 70 % of the frames is real; sykkuno's 12 % corner 'face' (50 %) was not
         c["ok"] = c["cov"] >= max(3 / max(nf, 1), 0.2) and (c["mot"] is None or c["mot"] >= 1.5) and c["side"] and c["small"]
     if dbg_to is not None: dbg_to.dbg = [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in c.items() if k != "rows"} for c in cl]
     ok = sorted((c for c in cl if c["ok"]), key=lambda c: -c["cov"])
     if not ok:
         if dbg_to is not None: dbg_to.last = "no side face" if cl else None
         return None, None, None
-    if len(ok) > 1 and ok[1]["cov"] > 0.8 * ok[0]["cov"] and abs(ok[1]["cx"] - ok[0]["cx"]) > 0.15 * sw:
+    if len(ok) > 1 and ok[1]["cov"] > 0.6 * ok[0]["cov"] and abs(ok[1]["cx"] - ok[0]["cx"]) > 0.15 * sw:
         if dbg_to is not None: dbg_to.last = "ambiguous (two side faces)"
         return None, None, None
     c = ok[0]; return c["cx"], c["cy"], c["w"]
+
+
+def pick_face(d, F, nf, sw, sh, dbg_to=None):
+    """The facecam among all face clusters, or (None, None, None) = no cam found -> caller falls back to native (never a wrong crop).
+    GTA/RP footage (tfue test 16.11.): the player's character is a face too, and sits in the middle of the picture, while a facecam is
+    pinned to a side. So a cam cluster must (1) cover >= 20 % of the frames, (2) move (a poster or a frozen character does not),
+    (3) sit in the left/right third (centre x outside 0.36-0.64 of the width), (4) have a face no wider than 10 % of the picture width
+    (13 % if seen in >= 60 % of the frames; camtest 16.11.: a 12 % 'face' in a minimap corner was no cam, real cams measured 3-11 %;
+    a face that big means a fullscreen cam or a texture - native is the safe layout), and (5) not be one of several comparably strong
+    side clusters (a second cam / guest / false hit at > 60 % of the best one: we cannot tell which is the streamer's cam, native is safe).
+    Among the rest the one seen most often wins. Measured 16.11. on 37 real Twitch clips: see pipeline/README.md."""
+    return choose_face(face_clusters(d, F, nf, sw, sh), nf, sw, dbg_to)
 
 
 def facecam_rect(src, a, dur, p, spec="auto"):

@@ -126,3 +126,15 @@ def test_other_layouts_ffmpeg_args_unchanged(cf, src_clip, tmp_path, monkeypatch
     got = ffmpeg_calls(cf, src_clip, tmp_path, layout, monkeypatch)
     gold = json.load(open(os.path.join(os.path.dirname(__file__), "fixtures", "ffmpeg_args_golden.json")))
     assert got == gold[layout]
+
+
+# ---- Wiedergabe echter Camtest-Messungen (16.11., 37 Twitch-Clips; Soll = Sicht auf die Kontaktbögen) ----
+REAL = json.load(open(os.path.join(os.path.dirname(__file__), "fixtures", "camtest_clusters.json")))
+
+
+@pytest.mark.parametrize("m", REAL, ids=lambda m: f"{m['channel']}-{m['title'][:12]}")
+def test_replay_real_clusters(cf, m):
+    """Cluster aus echten Clips durch die Auswahlregeln: Cam gefunden, wo eine ist; sonst None (native). Ändert man Schwellen, entscheidet diese Liste."""
+    cx, cy, w = cf.choose_face([dict(c) for c in m["clusters"]], 24, 960)
+    # "later" = die Auswahl lässt den Kandidaten durch (lacy, Just Chatting: großes Gesicht bei x 0.65), erst die Regel 'kein Rahmen + Bildmitte' in facecam_rect verwirft ihn
+    assert (cx is not None) == (m["expect"] in ("cam", "later")), m
