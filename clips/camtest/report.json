@@ -54,13 +54,8 @@
   "game": "Just Chatting",
   "size": "1280x720",
   "seconds": 60.0,
-  "v2": [
-   0.444,
-   0.208,
-   0.419,
-   0.497
-  ],
-  "v2_mode": "face",
+  "v2": null,
+  "v2_mode": "face without border near the centre",
   "v1": [
    0.438,
    0.208,
@@ -77,7 +72,8 @@
     "n": 31,
     "mot": 50.699,
     "side": true,
-    "ok": true
+    "small": false,
+    "ok": false
    },
    {
     "cx": 415.5,
@@ -87,6 +83,7 @@
     "n": 2,
     "mot": 42.539,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -97,6 +94,7 @@
     "n": 7,
     "mot": 39.063,
     "side": true,
+    "small": true,
     "ok": true
    },
    {
@@ -107,6 +105,7 @@
     "n": 2,
     "mot": 33.565,
     "side": true,
+    "small": false,
     "ok": false
    },
    {
@@ -117,6 +116,7 @@
     "n": 1,
     "mot": 56.006,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -127,6 +127,7 @@
     "n": 1,
     "mot": 77.528,
     "side": false,
+    "small": false,
     "ok": false
    },
    {
@@ -137,6 +138,7 @@
     "n": 1,
     "mot": 24.794,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -147,6 +149,7 @@
     "n": 1,
     "mot": 43.973,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -157,6 +160,7 @@
     "n": 1,
     "mot": 63.982,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -167,6 +171,7 @@
     "n": 1,
     "mot": 23.76,
     "side": false,
+    "small": false,
     "ok": false
    },
    {
@@ -177,6 +182,7 @@
     "n": 1,
     "mot": 19.879,
     "side": false,
+    "small": false,
     "ok": false
    },
    {
@@ -187,6 +193,7 @@
     "n": 1,
     "mot": 25.418,
     "side": false,
+    "small": true,
     "ok": false
    }
   ],
@@ -212,6 +219,7 @@
     "n": 1,
     "mot": 54.773,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -222,6 +230,7 @@
     "n": 2,
     "mot": 55.876,
     "side": true,
+    "small": false,
     "ok": false
    },
    {
@@ -232,6 +241,7 @@
     "n": 2,
     "mot": 42.646,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -242,6 +252,7 @@
     "n": 1,
     "mot": 51.286,
     "side": false,
+    "small": false,
     "ok": false
    },
    {
@@ -252,6 +263,7 @@
     "n": 2,
     "mot": 58.579,
     "side": false,
+    "small": false,
     "ok": false
    },
    {
@@ -262,6 +274,7 @@
     "n": 1,
     "mot": 32.059,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -272,6 +285,7 @@
     "n": 1,
     "mot": 65.49,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -282,6 +296,7 @@
     "n": 1,
     "mot": 63.126,
     "side": true,
+    "small": false,
     "ok": false
    },
    {
@@ -292,6 +307,7 @@
     "n": 1,
     "mot": 35.4,
     "side": true,
+    "small": true,
     "ok": false
    }
   ],
@@ -327,6 +343,7 @@
     "n": 1,
     "mot": 20.486,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -337,6 +354,7 @@
     "n": 10,
     "mot": 17.233,
     "side": true,
+    "small": true,
     "ok": true
    },
    {
@@ -347,6 +365,7 @@
     "n": 8,
     "mot": 34.031,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -357,6 +376,7 @@
     "n": 1,
     "mot": 20.316,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -367,6 +387,7 @@
     "n": 5,
     "mot": 34.055,
     "side": false,
+    "small": false,
     "ok": false
    },
    {
@@ -377,6 +398,7 @@
     "n": 1,
     "mot": 19.183,
     "side": false,
+    "small": false,
     "ok": false
    },
    {
@@ -387,6 +409,7 @@
     "n": 1,
     "mot": 20.495,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -397,6 +420,7 @@
     "n": 1,
     "mot": 20.316,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -407,6 +431,7 @@
     "n": 5,
     "mot": 20.212,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -417,6 +442,7 @@
     "n": 1,
     "mot": 25.047,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -427,6 +453,7 @@
     "n": 1,
     "mot": 9.647,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -437,6 +464,7 @@
     "n": 1,
     "mot": 35.747,
     "side": true,
+    "small": false,
     "ok": false
    }
   ],
@@ -449,13 +477,8 @@
   "game": "Grand Theft Auto V",
   "size": "1280x720",
   "seconds": 43.2,
-  "v2": [
-   0.58,
-   0.0,
-   0.419,
-   0.497
-  ],
-  "v2_mode": "face",
+  "v2": null,
+  "v2_mode": "no side face",
   "v1": null,
   "v1_mode": null,
   "clusters": [
@@ -467,6 +490,7 @@
     "n": 2,
     "mot": 8.531,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -477,7 +501,8 @@
     "n": 12,
     "mot": 12.457,
     "side": true,
-    "ok": true
+    "small": false,
+    "ok": false
    },
    {
     "cx": 647.75,
@@ -487,6 +512,7 @@
     "n": 2,
     "mot": 31.521,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -497,6 +523,7 @@
     "n": 1,
     "mot": 6.048,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -507,6 +534,7 @@
     "n": 3,
     "mot": 31.04,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -517,6 +545,7 @@
     "n": 3,
     "mot": 30.045,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -527,6 +556,7 @@
     "n": 2,
     "mot": 14.971,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -537,6 +567,7 @@
     "n": 2,
     "mot": 12.676,
     "side": true,
+    "small": true,
     "ok": false
    }
   ],
@@ -549,13 +580,8 @@
   "game": "Grand Theft Auto V",
   "size": "1280x720",
   "seconds": 26.8,
-  "v2": [
-   0.58,
-   0.0,
-   0.419,
-   0.497
-  ],
-  "v2_mode": "face",
+  "v2": null,
+  "v2_mode": "no side face",
   "v1": null,
   "v1_mode": null,
   "clusters": [
@@ -567,7 +593,8 @@
     "n": 6,
     "mot": 24.223,
     "side": true,
-    "ok": true
+    "small": false,
+    "ok": false
    },
    {
     "cx": 287.5,
@@ -577,6 +604,7 @@
     "n": 1,
     "mot": 43.343,
     "side": true,
+    "small": false,
     "ok": false
    },
    {
@@ -587,6 +615,7 @@
     "n": 4,
     "mot": 39.899,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -597,6 +626,7 @@
     "n": 1,
     "mot": 45.053,
     "side": false,
+    "small": true,
     "ok": false
    },
    {
@@ -607,6 +637,7 @@
     "n": 1,
     "mot": 35.11,
     "side": true,
+    "small": true,
     "ok": false
    },
    {
@@ -617,6 +648,7 @@
     "n": 1,
     "mot": 60.791,
     "side": false,
+    "small": false,
     "ok": false
    }
   ],
@@ -652,6 +684,7 @@
     "n": 48,
     "mot": 4.332,
     "side": true,
+    "small": true,
     "ok": true
    }
   ],
@@ -687,6 +720,7 @@
     "n": 48,
     "mot": 6.59,
     "side": true,
+    "small": true,
     "ok": true
    },
    {
@@ -697,6 +731,7 @@
     "n": 1,
     "mot": 0.776,
     "side": true,
+    "small": true,
     "ok": false
    }
   ],
