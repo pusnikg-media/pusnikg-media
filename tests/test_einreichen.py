@@ -45,12 +45,12 @@ def test_unticked_posts_alarm(tmp_path):
 
 def test_nearest_slot_separates_0900_and_0930(tmp_path):
     ps = [post("tiktok", "a0900", "2026-11-17T08:00:02Z", "TJR", "Pusnik IRL"), post("tiktok", "b0930", "2026-11-17T08:30:02Z", "TJR", "Pusnik IRL")]
-    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 11, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:b0930"]
+    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 20, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:b0930"]
 
 
 def test_wrong_account_or_campaign_not_cleared(tmp_path):
     ps = [post("tiktok", "x1", "2026-11-17T08:00:02Z", "TJR", "Pusnik G")]
-    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 11, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:x1"]
+    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 20, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:x1"]
 
 
 def test_post_ids_in_file_still_count(tmp_path):
@@ -157,3 +157,32 @@ def test_postplan_is_consistent_with_repo():
         assert cid in [c["id"] for c in res["clips"]], f"{s['clip']} nicht gerendert"
     for konto in konten:                                                                                   # höchstens 2 pro Konto und Tag
         for d in {s["datum"] for s in plan}: assert sum(1 for s in plan if s["konto"] == konto and s["datum"] == d) <= 2, (konto, d)
+
+
+# ---------- Postplan gegen Live: Slot nicht rausgegangen ----------
+def live_keys(root, now=NOW, blind=()):
+    st = W.jl(os.path.join(root, "stats/latest.json")); return sorted(p.key for p in W.check_slots_live(root, REAL, now, st, set(blind)))
+
+
+FULL = FOUR + [post("youtube", "y19irl", "2026-11-16T18:00:25Z", "TJR", "Pusnik IRL")]                  # alle YouTube/TikTok-Posts der vier Slots
+
+
+def test_slots_live_all_present(tmp_path):
+    assert live_keys(repo(tmp_path, FULL, {})) == []
+
+
+def test_slot_missing_on_platform_is_reported(tmp_path):
+    root = repo(tmp_path, [p for p in FULL if p["id"] != "t19irl"], {})
+    assert live_keys(root) == ["live:2026-11-16:19:00:Pusnik IRL:tiktok"]
+
+
+def test_slot_not_judged_early_or_with_old_numbers(tmp_path):
+    early = dt.datetime(2026, 11, 16, 15, 30, tzinfo=dt.timezone.utc)                           # 16:30 Berlin: 15:00-Slots noch keine 2 h alt
+    assert live_keys(repo(tmp_path, [], {}, updated="2026-11-16T15:20:00Z"), now=early) == []
+    assert live_keys(repo(tmp_path / "b", [], {}, updated="2026-11-16T12:27:00Z"), now=NOW) == []   # Zahlen vor der Planzeit gemessen
+
+
+def test_slot_blind_platform_and_instagram_skipped(tmp_path):
+    root = repo(tmp_path, [], {}, slots=[{"datum": "2026-11-16", "zeit": "15:00", "konto": "Pusnik IRL", "kampagne": "TJR", "clip": "tjr5/A_key", "plattformen": ["tiktok", "instagram", "youtube"]}])
+    assert live_keys(root) == ["live:2026-11-16:15:00:Pusnik IRL:tiktok", "live:2026-11-16:15:00:Pusnik IRL:youtube"]
+    assert live_keys(root, blind=[("Pusnik IRL", "tiktok")]) == ["live:2026-11-16:15:00:Pusnik IRL:youtube"]

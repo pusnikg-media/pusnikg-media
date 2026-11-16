@@ -6,7 +6,7 @@ on:
     branches: [main]
     paths: ["plan/stats.json", "pipeline/stats/**", ".github/workflows/stats.yml"]
   schedule:
-    - cron: "17 5,11,16 * * *"
+    - cron: "17 5,11,16,19 * * *"
   workflow_dispatch:
 permissions:
   contents: write

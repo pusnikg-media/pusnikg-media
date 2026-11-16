@@ -552,6 +552,57 @@ def face_track(src, a, dur, p, cw, step=0.5):
     return [(round(i * step, 2), round(min(max(c - cw / 2, 0), p["w"] - cw), 1)) for i, c in enumerate(cam)]
 
 
+FACECAM_PICK = "v2"   # "v1" = old median-of-everything pick (camtest compares both)
+
+
+def face_clusters(d, F, nf, sw, sh):
+    """d rows (cx, cy, w, frame). Greedy clusters of detections that sit in one place -> list of dicts
+    {cx, cy, w, cov (share of frames with a hit), mot (median frame-to-frame change inside the box; a picture or a still character ~0)}."""
+    import numpy as np
+    cl = []
+    for row in d:
+        for c in cl:
+            if abs(row[0] - c["cx"]) < 0.06 * sw and abs(row[1] - c["cy"]) < 0.09 * sh: c["rows"].append(row); c["cx"], c["cy"] = np.mean([r[:2] for r in c["rows"]], axis=0); break
+        else: cl.append({"cx": row[0], "cy": row[1], "rows": [row]})
+    out = []
+    for c in cl:
+        R = np.array(c["rows"]); cx, cy, fw = np.median(R[:, :3], axis=0); mot = None
+        x0, x1, y0, y1 = max(int(cx - fw / 2), 0), min(int(cx + fw / 2), sw), max(int(cy - fw / 2), 0), min(int(cy + fw / 2), sh)
+        if nf >= 4 and x1 - x0 > 4 and y1 - y0 > 4:
+            mot = float(np.median(np.abs(np.diff(F[:, y0:y1, x0:x1].astype(np.int16), axis=0)).mean(axis=(1, 2))))
+        out.append({"cx": float(cx), "cy": float(cy), "w": float(fw), "cov": len(set(R[:, 3].tolist())) / max(nf, 1), "n": len(R), "mot": mot})
+    return out
+
+
+def choose_face(cl, nf, sw, dbg_to=None):
+    """Selection rules on face clusters (dicts from face_clusters) -> (cx, cy, w) or (None, None, None). Pure, so camtest reports can be replayed."""
+    for c in cl:
+        c["side"] = c["cx"] < 0.36 * sw or c["cx"] > 0.64 * sw
+        c["small"] = c["w"] <= 0.10 * sw or (c["w"] <= 0.13 * sw and c["cov"] >= 0.6)    # jynxzi: a big cam face (11 %) seen in 70 % of the frames is real; sykkuno's 12 % corner 'face' (50 %) was not
+        c["ok"] = c["cov"] >= max(3 / max(nf, 1), 0.2) and (c["mot"] is None or c["mot"] >= 1.5) and c["side"] and c["small"]
+    if dbg_to is not None: dbg_to.dbg = [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in c.items() if k != "rows"} for c in cl]
+    ok = sorted((c for c in cl if c["ok"]), key=lambda c: -c["cov"])
+    if not ok:
+        if dbg_to is not None: dbg_to.last = "no side face" if cl else None
+        return None, None, None
+    if len(ok) > 1 and ok[1]["cov"] > 0.6 * ok[0]["cov"] and abs(ok[1]["cx"] - ok[0]["cx"]) > 0.15 * sw:
+        if dbg_to is not None: dbg_to.last = "ambiguous (two side faces)"
+        return None, None, None
+    c = ok[0]; return c["cx"], c["cy"], c["w"]
+
+
+def pick_face(d, F, nf, sw, sh, dbg_to=None):
+    """The facecam among all face clusters, or (None, None, None) = no cam found -> caller falls back to native (never a wrong crop).
+    GTA/RP footage (tfue test 16.11.): the player's character is a face too, and sits in the middle of the picture, while a facecam is
+    pinned to a side. So a cam cluster must (1) cover >= 20 % of the frames, (2) move (a poster or a frozen character does not),
+    (3) sit in the left/right third (centre x outside 0.36-0.64 of the width), (4) have a face no wider than 10 % of the picture width
+    (13 % if seen in >= 60 % of the frames; camtest 16.11.: a 12 % 'face' in a minimap corner was no cam, real cams measured 3-11 %;
+    a face that big means a fullscreen cam or a texture - native is the safe layout), and (5) not be one of several comparably strong
+    side clusters (a second cam / guest / false hit at > 60 % of the best one: we cannot tell which is the streamer's cam, native is safe).
+    Among the rest the one seen most often wins. Measured 16.11. on 37 real Twitch clips: see pipeline/README.md."""
+    return choose_face(face_clusters(d, F, nf, sw, sh), nf, sw, dbg_to)
+
+
 def facecam_rect(src, a, dur, p, spec="auto"):
     """Facecam area in source px (3:2), or None. spec = [x, y, w, h] fractions, or "auto": the small face that stays put."""
     def fit(cx, cy, w):
@@ -572,17 +623,22 @@ def facecam_rect(src, a, dur, p, spec="auto"):
     cc = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
     pc = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_profileface.xml")  # streamers look at their second screen a lot
     if cc.empty(): return None
-    det = []; F = np.frombuffer(r.stdout[:nf * sw * sh], np.uint8).reshape(nf, sh, sw); facecam_rect.last = None
-    for g in F:
-        det += [(x + w / 2, y + h / 2, w) for (x, y, w, h) in cc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
+    det = []; F = np.frombuffer(r.stdout[:nf * sw * sh], np.uint8).reshape(nf, sh, sw); facecam_rect.last = None; facecam_rect.dbg = []
+    for fi, g in enumerate(F):
+        det += [(x + w / 2, y + h / 2, w, fi) for (x, y, w, h) in cc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
         if not pc.empty():
-            det += [(x + w / 2, y + h / 2, w) for (x, y, w, h) in pc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
-            det += [(sw - (x + w / 2), y + h / 2, w) for (x, y, w, h) in pc.detectMultiScale(cv2.flip(g, 1), 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
+            det += [(x + w / 2, y + h / 2, w, fi) for (x, y, w, h) in pc.detectMultiScale(g, 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
+            det += [(sw - (x + w / 2), y + h / 2, w, fi) for (x, y, w, h) in pc.detectMultiScale(cv2.flip(g, 1), 1.1, 5, minSize=(sh // 24, sh // 24)) if w < 0.2 * sw]
     if len(det) < 3: return None
-    d = np.array(det); med = np.median(d, axis=0)
-    near = d[(abs(d[:, 0] - med[0]) < 0.08 * sw) & (abs(d[:, 1] - med[1]) < 0.12 * sh)]  # a facecam does not move
-    if len(near) < max(3, 0.2 * nf): return None
-    cx, cy, fw = np.median(near, axis=0)
+    d = np.array(det)
+    if FACECAM_PICK == "v2":
+        cx, cy, fw = pick_face(d, F, nf, sw, sh, facecam_rect)
+        if cx is None: return None
+    else:  # v1 (camtest 15.11./16.11.): the median of ALL detections; with a game character in the picture it lands between character and cam
+        med = np.median(d[:, :3], axis=0)
+        near = d[(abs(d[:, 0] - med[0]) < 0.08 * sw) & (abs(d[:, 1] - med[1]) < 0.12 * sh)]  # a facecam does not move
+        if len(near) < max(3, 0.2 * nf): return None
+        cx, cy, fw = np.median(near[:, :3], axis=0)
     # camtest 15.11.2026 (16 real Twitch clips): the place was right in 13, but a poster on the wall counted as a face and the box
     # was cut around the face instead of along the cam's own border. So: (1) a real face changes between frames, a picture does not
     fx0, fx1 = max(int(cx - fw / 2), 0), min(int(cx + fw / 2), sw); fy0, fy1 = max(int(cy - fw / 2), 0), min(int(cy + fw / 2), sh)
@@ -626,6 +682,8 @@ def facecam_rect(src, a, dur, p, spec="auto"):
                     facecam_rect.last = "border"
                     return [int(x * k) // 2 * 2, int(y * k) // 2 * 2, int(w * k) // 2 * 2, int(h * k) // 2 * 2]
     except Exception as e: print("WARN facecam border:", str(e)[-200:])
+    if FACECAM_PICK == "v2" and 0.30 * sw <= cx <= 0.70 * sw:  # no border found AND not at a side: nothing marks this as a cam (camtest 16.11.)
+        facecam_rect.last = "face without border near the centre"; return None
     facecam_rect.last = "face"
     return fit(cx * k, (cy + 0.3 * fw) * k, min(4.4 * fw, 0.42 * sw) * k)
 

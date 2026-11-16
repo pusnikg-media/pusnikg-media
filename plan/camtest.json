@@ -1,1 +1,1 @@
-{"note": "Testlauf Facecam-Erkennung. Push auf diese Datei startet die Action camtest.", "channels": ["jynxzi", "caseoh_", "tarik", "summit1g", "timthetatman", "nickmercs", "shroud", "xqc"], "per": 2}
+{"note": "Regressionslauf Facecam v2 (nicht nur GTA). Push auf diese Datei startet die Action camtest (nur main); auf Branches per workflow_dispatch.", "channels": ["ninja", "nadeshot", "tarik", "nickmercs", "symfuhny", "shroud", "sypherpk", "tfue", "timthetatman", "jynxzi", "caseoh_", "xqc", "valkyrae"], "per": 2, "scan": 12, "gta_only": false, "range": "7d"}

@@ -1,7 +1,7 @@
 # Wächter: vergleicht Geplantes mit dem, was live ist, prüft die Actions und die Kampagnen-Einreichung (0 Credits).
 # Ergebnis: stats/alerts.md (nur offene Probleme) + GitHub-Issue mit Label "alarm" pro Problemgruppe (kein Duplikat, schließt sich selbst).
 # Auf main (Zeitplan, von Hand, Push) = echt. Auf anderen Branches = Trockenlauf (nur ins Log, keine Datei, keine Issues).
-# Zeiten (UTC): 05:47 vor dem Produzenten (07:47 Berlin), 11:37 nach stats/kampagnen und vor dem Clipping-Agenten (12:47 Berlin).
+# Zeiten (UTC): 05:47 vor dem Produzenten (07:47 Berlin), 11:37 nach stats/kampagnen und vor dem Clipping-Agenten (12:47 Berlin), 19:47 nach dem Abend-Stats-Lauf (19:17).
 name: waechter
 on:
   push:
@@ -9,6 +9,7 @@ on:
   schedule:
     - cron: "47 5 * * *"
     - cron: "37 11 * * *"
+    - cron: "47 19 * * *"          # 20:47 Berlin: nach dem 18:00-Short und dem 19:17-Stats-Lauf (Tages-Short/Slots am selben Abend beurteilen)
   workflow_dispatch:
 permissions:
   contents: write

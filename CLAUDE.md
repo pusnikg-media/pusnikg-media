@@ -44,11 +44,11 @@ Gaming-Shorts-Kanal "Pusnik G" (YT Shorts, TikTok, Reels) + Clipping-Kampagnen (
 |---|---|---|
 | `render` | alle 15 Min + Push `jobs/`, `pipeline/` | `shorts/<name>.*` (3 Versuche, dann gibt sie **still** auf) |
 | `clipfabrik` | :07/:37 + Push `clipjobs/`, `pipeline/clipfabrik/` | `clips/<name>/…` (max. 4 Aufträge/Lauf; Drive-Ordner `clipjob-*.json` wird per Regex gelesen) |
-| `stats` | 05:17, 11:17, 16:17 | `stats/latest.*` (Berlin 06:17, 12:17, 17:17 – **vor** dem 18:00-Post) |
+| `stats` | 05:17, 11:17, 16:17, 19:17 | `stats/latest.*` (Berlin 06:17, 12:17, 17:17 – **vor** dem 18:00-Post –, 20:17 danach) |
 | `trendscout` | 04:43, 10:43, 15:43, 19:43 | `trends/latest.*` (Reddit, Kick, GTA-6-News, Rockstar-YouTube) |
 | `kampagnen` | 05:27, 11:27, 17:27 | `campaigns/latest.*` |
 | `reflab` | Mo 03:23 | `refs/latest/` |
-| `waechter` | 05:47, 11:37 (+ Push auf seine Dateien) | `stats/alerts.md` + Issues „alarm"; holt vorher die Haken aus den Einreich-Issues |
+| `waechter` | 05:47, 11:37, 19:47 (+ Push auf seine Dateien) | `stats/alerts.md` + Issues „alarm"; holt vorher die Haken aus den Einreich-Issues |
 | `einreichen` | nach `stats`, 19:05, Issue-Edit, Push auf `plan/postplan.json` | Tages-Issue „Einreichen“ (Checkbox pro Clip) → `plan/eingereicht.json` |
 | `tests` | jeder Push | rot/grün |
 | `livewatch` (AUS), `livewatch-replay`, `camtest`, `ai_assets`, `scenes3d`, `tools-check` | Sonderfälle | nicht ohne Auftrag anfassen |
@@ -63,11 +63,14 @@ Geplante Claude-Aufgaben (keine Actions): Produzent 07:47, Clipping-Agent 12:47,
 3. **Postzeiten:** Tages-Short 18:00. Kampagnen-Clips höchstens 2 pro Konto/Tag, nie um 18:00, **nie nach 19:30 (Europe/Berlin)**. Woche 16.–22.11. nur 09:00/09:30 (Spätschicht). Veröffentlichen nur mit Stevens „ja". YouTube über vidIQ: sofort hochgeladen, bis zur Planzeit PRIVAT (kein Fehler).
 4. **TikTok bei Kampagnen-Clips:** vidIQ-Entwurf immer `brandContent: true`, `privacyLevel: PUBLIC_TO_EVERYONE`, `allowComment: true`, `isAiGenerated: false`, `musicUsageConfirmed: true`. Tages-Short: **kein** brandContent, `isAiGenerated: true`. Genau 5 Hashtags.
 5. **Nur vidIQ postet** (`vidiq_social_post_*`, 0 Credits). Metricool/Buffer/Zapier-YouTube nicht. vidIQ-Credits 9 bis 01.12.: nichts, was Credits kostet. Higgsfield gekündigt.
-6. **Einreichen** bei Content Rewards binnen 30 Min nach Veröffentlichung (Whop nur Auszahlung). Steven hakt es im Tages-Issue „Einreichen“ ab (Aktion `einreichen`, Quelle `plan/postplan.json` – neue Kampagnen-Clips dort eintragen, sonst fehlt die Vorab-Zeile); die Aktion schreibt `plan/eingereicht.json` (`slots`), nicht von Hand ändern. Haken sind monoton (nie zurück). Issues/`workflow_run` laufen nur auf `main` – dort nach jeder Änderung einmal `einreichen` per Hand starten und prüfen.
+6. **Einreichen** bei Content Rewards binnen 30 Min nach Veröffentlichung (Whop nur Auszahlung). Steven hakt es im Tages-Issue „Einreichen“ ab (Aktion `einreichen`, Quelle `plan/postplan.json` – neue Kampagnen-Clips dort eintragen, sonst fehlt die Vorab-Zeile; der Clipping-Agent darf dort noch nicht schreiben); die Aktion schreibt `plan/eingereicht.json` (`slots`), nicht von Hand ändern. Haken sind monoton (nie zurück). Issues/`workflow_run` laufen nur auf `main` – dort nach jeder Änderung einmal `einreichen` per Hand starten und prüfen.
 7. **Stats-Lücken:** Instagram fehlt (→ `vidiq_instagram_owner_insights`, 0 Credits); privat geplante YouTube-Videos fehlen; Kampagnen-Zuordnung nur per Hashtag in `stats.json`; `min_views` meist `null`.
-8. **Clip-Stil:** `layout: native` + EIN Kontextsatz (`caption`, 9–15 Wörter, Name zuerst, „…" + 1–2 Emojis), Originalton, 10–35 s. `split`: bei GTA-Material `facecam` von Hand `[x,y,b,h]` setzen (`auto` nimmt Spielfiguren), sonst fällt der Clip **still** auf `native` zurück (Prüfen: `layout` in `result.json`).
+8. **Clip-Stil:** `layout: native` + EIN Kontextsatz (`caption`, 9–15 Wörter, Name zuerst, „…" + 1–2 Emojis), Originalton, 10–35 s. `split`: `facecam: auto` (v2, seit 16.11.) nimmt nur Gesichter am linken/rechten Rand und fällt sonst **still** auf `native` zurück (Prüfen: `layout` in `result.json`; kleine Stichprobe, 5 GTA-RP-Clips) – bei GTA-6-Clips QA-Bild ansehen, im Zweifel `facecam` von Hand `[x,y,b,h]`.
 9. **Quellen:** YouTube-Links werden von Cloud-Servern oft geblockt → Drive-/Direktlink (Steven lädt in den Drive-Ordner „Pusnik G Render-Aufträge", „Jeder mit dem Link"). GTA-6-Kampagnen nur mit Rechteinhaber/Partner. Preme/Drake und Gattouz: nicht machen.
 10. **Pushes:** Livewatch pusht alle 1–2 Min inkl. `raw_*.mp4` (Repo wächst, Wächter prüft die Größe). Bot-Pushes lösen keine Tests aus.
 11. **Nicht getestet** (nur im Action-Log sichtbar): Whisper, Kokoro-TTS, HyperFrames-Render (`npx`), `facecam: auto`/`track` (braucht OpenCV), echte Netzabfragen (Drive, Reddit, Kick, TikTok, Content Rewards).
+12. **Branch-Tests mit Actions:** `issues:`/`workflow_run:`/`schedule` laufen nur auf `main`; `camtest` und `einreichen` auf Branches per `workflow_dispatch` (nehmen den Code des Branches). `camtest` schreibt `clips/camtest/` (Kontaktbögen fremder Streamer) nach **main** – danach Ordner löschen. Golden-Dateien in `tests/fixtures/` ohne absolute Pfade (Repo-Wurzel → `<REPO>`), sonst rot auf dem Runner.
+13. **Facecam-Schwellen** nicht nach Gefühl ändern: erst `plan/camtest.json` + Action `camtest`, dann Messwerte in `tests/fixtures/camtest_clusters.json` ergänzen (`test_replay_real_clusters` ist die Messlatte).
+
 ## Wächter (`waechter/waechter.py`, `plan/waechter.json`)
 Vergleicht `jobs/*.json`, `clips/*/result.json`, Kampagnen-Posts mit `stats/latest.json`; prüft Alter von stats/trends/campaigns, den letzten Lauf der Actions, 19:30-Regel, Einreich-Notiz, Repo-Größe. Unlesbare Plattform = ein „Daten"-Alarm statt „nicht live"; ein Tag wird erst 2 h nach der Planzeit beurteilt. **`stand_utc` in `alerts.md` älter als ca. 15 h = Wächter tot → melden, „Keine offenen Probleme" nicht trauen.** Von Hand/lokal: `python3 waechter/waechter.py --dry --no-api`. Ausnahme eintragen: `plan/waechter.json` → `ignorieren`. Details: `claude/haertung-stand.md`.

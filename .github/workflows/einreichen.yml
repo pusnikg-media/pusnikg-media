@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}   # main bei allen echten Triggern; Branch-Läufe (Test von Hand) sehen so ihren eigenen Code
           sparse-checkout: |
             /plan/
             /waechter/
@@ -46,7 +46,8 @@ jobs:
             python3 waechter/einreichen.py --root . --dry; exit 0
           fi
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
-          python3 waechter/einreichen.py --root . | tee /home/runner/out.txt
+          python3 waechter/einreichen.py --root . > /home/runner/out.txt || { cat /home/runner/out.txt; exit 1; }   # kein | tee: Abstürze sollen rot enden
+          cat /home/runner/out.txt
           grep -q '^CHANGED' /home/runner/out.txt || exit 0
           cp plan/eingereicht.json /home/runner/eingereicht.json
           for i in 1 2 3 4 5; do   # auf den neuesten main legen (viele Actions pushen)

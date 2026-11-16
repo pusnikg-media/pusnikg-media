@@ -42,6 +42,6 @@ jobs:
         run: |
           bash pipeline/install_tools.sh || exit 1
           ffmpeg -hide_banner -filters | grep -q " subtitles " || { echo "ffmpeg without libass"; exit 1; }
-          pip install -q pytest jsonschema pillow numpy scipy
+          pip install -q pytest jsonschema pillow numpy scipy "opencv-python-headless<5" scikit-image
       - name: Tests
         run: python3 -m pytest tests -q -p no:cacheprovider
