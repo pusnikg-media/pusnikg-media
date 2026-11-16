@@ -8,6 +8,9 @@ writes title/caption and posts through vidIQ.
   python3 livewatch.py check REPO_ROOT           prints "run" when enabled and a channel is configured, else "skip"
   python3 livewatch.py watch REPO_ROOT           the watcher (used by .github/workflows/livewatch.yml)
   python3 livewatch.py simulate FILE REPO_ROOT   same detection + rendering on a local file (test without a live stream)
+  python3 livewatch.py replay VOD_URL START MINUTES REPO_ROOT [min_chat]
+                                                 VOD mode (v0.3, 16.11.): plays MINUTES of a past Twitch VOD from second START as if it were live -
+                                                 audio from the VOD, chat from the Twitch chat replay (GQL, anonymous), same detection, same clips
 
 plan/livewatch.json:
   {"enabled": false, "max_minutes": 330, "channels": [
@@ -92,6 +95,35 @@ class Chat:
         if med < 3: return 0.0, None  # chat too quiet to say anything
         k0 = max(0, len(w) - 180); i = k0 + int(np.argmax(w[k0:]))
         return round(float(w[i]) / med, 2), lo + i - 4  # people type a few seconds after the moment
+
+
+class ReplayChat(Chat):
+    """Chat of a past Twitch VOD (GQL "VideoCommentsByOffsetOrCursor", anonymous): n[k] = messages in second k of the recording
+    (recording second 0 = VOD second `start`). Same interface as Chat, so the detection code does not know the difference."""
+    HASH = "b70a3591ff0f4e0313d126c6a1502d79a1c02baebb288227c582044aa76adf6a"
+
+    def __init__(self, vid, start, dur):
+        self.n = {}; self.ok = False; self.ch = "vod" + str(vid); self.total = 0
+        import urllib.request
+        end = start + dur; offs = int(start); seen = set(); tries = 0  # cursor paging fails the integrity check, offset paging works (~58 msgs per call)
+        while offs < end and tries < 3000:
+            body = json.dumps([{"operationName": "VideoCommentsByOffsetOrCursor", "variables": {"videoID": str(vid), "contentOffsetSeconds": int(offs)},
+                                "extensions": {"persistedQuery": {"version": 1, "sha256Hash": self.HASH}}}]).encode()
+            try:
+                r = urllib.request.Request("https://gql.twitch.tv/gql", body, {"Client-ID": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"})
+                c = json.load(urllib.request.urlopen(r, timeout=30))[0]["data"]["video"]["comments"]
+                ed = c["edges"] or []
+            except Exception as e:
+                tries += 20; print("chat replay retry:", str(e)[-80:]); time.sleep(3); continue
+            tries += 1; last = offs
+            for e in ed:
+                nd = e["node"]; o = nd["contentOffsetSeconds"]; last = max(last, o)
+                if nd["id"] in seen: continue
+                seen.add(nd["id"])
+                if start <= o < end: k = int(o - start); self.n[k] = self.n.get(k, 0) + 1; self.total += 1
+            if not ed: offs += 30
+            else: offs = last if last > offs else offs + 1
+        self.ok = self.total > 0; print(f"chat replay: {self.total} messages in {dur} s ({tries} requests)")
 
 
 def cut(segs, t0, a, b, dst):
@@ -227,6 +259,25 @@ def watch(root):
     print("LIVEWATCH_IDLE")
 
 
+def replay(vod, start, minutes, root, min_chat=None):
+    """VOD mode: a past Twitch VOD is played through the live detection. Audio = VOD (HLS, read faster than real time),
+    chat = chat replay. Clips land in clips/live-<channel>/ exactly like live clips, and are pushed one by one."""
+    m = re.search(r"videos/(\d+)", vod); assert m, "VOD url needs /videos/<id>"
+    c = cfg(root); ch = dict((c.get("channels") or [{}])[0]); ch.setdefault("name", "jasontheween")
+    ch = {"min_hype": 9, "layout": "native", "per_hour": 8, "max_clips": 8, **ch}
+    if min_chat: ch["min_chat"] = float(min_chat)
+    ch.pop("log_only", None); dur = int(minutes) * 60
+    hls = live_url(vod, int(ch.get("height", 720)))
+    if not hls: print("VOD not readable"); return
+    rec = os.path.join(os.environ.get("RUNNER_TEMP", "/tmp"), "lw_rec"); os.makedirs(rec, exist_ok=True)
+    for f in glob.glob(os.path.join(rec, "*.ts")): os.remove(f)
+    cf.run(["ffmpeg", "-y", "-v", "error", "-ss", str(int(start)), "-i", hls, "-t", str(dur), "-c", "copy", "-f", "segment", "-segment_time", str(SEG),
+            "-reset_timestamps", "1", os.path.join(rec, "%05d.ts")], timeout=3600)
+    print("VOD recorded:", len(glob.glob(os.path.join(rec, "*.ts"))), "pieces")
+    chat = ReplayChat(m.group(1), int(start), dur)
+    n = loop(ch, root, rec, lambda: False, True, time.time() + 3 * 3600, chat); print(f"LIVEWATCH_DONE replay {ch['name']} clips {n}")
+
+
 def simulate(src, root):
     rec = "/tmp/lw_sim"; os.makedirs(rec, exist_ok=True)
     for f in glob.glob(os.path.join(rec, "*.ts")): os.remove(f)
@@ -241,4 +292,5 @@ if __name__ == "__main__":
         c = cfg(a[1]); print("run" if c.get("enabled") and c.get("channels") else "skip")
     elif len(a) == 2 and a[0] == "watch": watch(a[1])
     elif len(a) == 3 and a[0] == "simulate": simulate(a[1], a[2])
+    elif len(a) in (5, 6) and a[0] == "replay": replay(a[1], a[2], a[3], a[4], a[5] if len(a) == 6 else None)
     else: sys.exit(__doc__)

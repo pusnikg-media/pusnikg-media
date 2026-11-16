@@ -46,4 +46,4 @@ jobs:
         if: steps.c.outputs.go == 'run'
         run: |
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
-          python3 pipeline/clipfabrik/livewatch.py watch .
+          python3 -u pipeline/clipfabrik/livewatch.py watch .
