@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}   # main bei allen echten Triggern; Branch-Läufe (Test von Hand) sehen so ihren eigenen Code
           sparse-checkout: |
             /plan/
             /waechter/
