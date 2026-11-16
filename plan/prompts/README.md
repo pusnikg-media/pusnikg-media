@@ -4,7 +4,7 @@ Nur Entwürfe in Dateien. **Kein Trigger wurde geändert.** Die Dateien liegen e
 
 | Agent | Datei | Trigger-ID | Modell | Zeit (Berlin) | Was Steven tun muss |
 |---|---|---|---|---|---|
-| Produzent | `produzent.md` | `trig_01FXCTY479wKaQEJi6nqm3V3` | opus-5-5 | täglich 07:47 | Prompt ersetzen **erst nach Fr 20.11. 16:47** (letzter Einmal-Lauf, der ihn liest); vorher Freigabe-Frage klären |
+| Produzent | `produzent.md` | `trig_01FXCTY479wKaQEJi6nqm3V3` | opus-5-5 | täglich 07:47 | Prompt ersetzen **VOR Di 17.11. 07:47** (dann plant er den Launch-Short für den 19.11. und braucht den Release-Check; vidIQ-Stand 16.11. abends: 19.–21.11. noch nicht eingeplant); Nummerierung/Name bleiben, die Einmal-Trigger sind nicht betroffen |
 | Clipping-Agent | `clipping-agent.md` | `trig_015qi8bkxadQcVD1dcgDpAtY` | sonnet-5-5 | täglich 12:47 | Prompt ersetzen (jederzeit); Freigabe-Frage bestätigen; ab dann bei „wartet auf ja“-Clips im Chat „ja <Clip>“ schreiben |
 | Analyst | `analyst.md` | `trig_01UUXKPpHRXUTBvCcNnmJHR6` | sonnet-5-5 | So 18:13 | nur Prompt ersetzen |
 | Stratege | `stratege.md` | `trig_01DXNeBeF98XGq1oPTUSGb4Q` | opus-5-5 | So 19:41 | nur Prompt ersetzen (vor So 22.11.) |
@@ -15,7 +15,7 @@ Nur Entwürfe in Dateien. **Kein Trigger wurde geändert.** Die Dateien liegen e
 1. Datei auf github.com (Safari) oder in der GitHub-App öffnen -> „Raw“/Text ansehen.
 2. Den Text ZWISCHEN den `~~~~`-Zeilen markieren und kopieren (nicht die `~~~~` selbst).
 3. Claude-App/claude.ai -> Routinen/Geplante Aufgaben -> Aufgabe des Agenten öffnen -> Prompt komplett ersetzen -> Speichern. Name, Zeit, Modell, Konnektoren NICHT ändern.
-4. Reihenfolge: die anderen fünf jederzeit; **Produzent erst nach Fr 20.11. 16:47** (die Einmal-Trigger „Review-Roundup“, „Leonida-Karte“, „Rekord-Check“ lesen seinen Prompt per `list_triggers`; der neue Text behält Namen und Schrittnummern, die Wartezeit ist nur Vorsicht). Kein Prompt ändert Zeit, Modell oder Konnektoren.
+4. Reihenfolge: die anderen fünf jederzeit; **Produzent VOR Di 17.11. 07:47** (er plant immer den ersten Tag ohne 18:00-Post, also am 17.11. den 19.11.; ohne neuen Prompt gibt es dafür keinen Release-Check). Die Einmal-Trigger „Review-Roundup“, „Leonida-Karte“, „Rekord-Check“ lesen seinen Prompt per `list_triggers`; der neue Text behält Namen und TEIL-/Schrittnummern (Release-Check steht als „SCHRITT 0c“), sie sind nicht betroffen. Kein Prompt ändert Zeit, Modell oder Konnektoren.
 
 Hinweis: Die Länge des Routinen-Prompt-Felds ist nicht geprüft; der Clipping-Agent-Prompt (ca. 20 KB) ist länger als der alte. Lässt die App das Einfügen nicht zu, melden – dann wird er gekürzt.
 
