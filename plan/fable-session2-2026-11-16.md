@@ -28,3 +28,16 @@ Geprüft: Analyst, Stratege, Deal-Radar, Reel-Scout gegen Inhaltsregeln, Zeiten/
 - **Tests:** 6 neue in `tests/test_clipfabrik.py`; die 5 Verhaltens-Tests sind mit dem alten Code rot. Gesamt lokal **279 grün, 0 übersprungen** (OpenCV installiert).
 - **`tests/clip_regression.py compare VORHER`: GLEICH (alle Hashes identisch).** Bestehende Clips und Layouts sind unverändert, `job_sig` ist unberührt, nichts rendert neu.
 - Nicht angefasst: Livewatch-Fallbackschnitt (`pk-16..pk+8`) an Satzgrenzen (gehört der Livewatch-Session).
+
+## 4. Livewatch offline abgesichert – erledigt (`livewatch.py` unverändert)
+- **Neue Tests `tests/test_livewatch_offline.py` (10, alle grün, ohne Netz):**
+  - Der AdWatch-Thread liest eine echte Playlist-Datei, die von live → Werbung → live wechselt. Er meldet genau einen Bereich und sperrt Kandidaten darin. Kein Absturz bei nicht erreichbarer Playlist.
+  - Watchdog: Hängt ffmpeg, wird es nach `stall` beendet und mit der Stücknummer der Stream-Zeit neu gestartet. Nach `max_restarts` gibt der Watchdog auf. Endet ffmpeg, startet er sofort neu. Ist der Stream beim Neustart offline, endet die Aufnahme.
+  - `loop()` Ende-zu-Ende auf einer synthetischen 6-Min-Aufnahme: Der laute Moment bei 250 s wird genau ein Kandidat. Liegt er in einer Werbepause, entsteht kein Clip. Fehlt ein Stück (Recorder-Neustart), bleibt der Moment bei ~250 s (Zeit bleibt treu).
+- **Befunde (nicht geändert, nur Statistik):** (1) Derselbe Werbe-Moment wird in jeder Folgeminute erneut gezählt (`skipped ad` 2 statt 1). (2) Ein Stück, das länger als 60 s ist (Keyframe-Abstand > 60 s), verschiebt die Zeitachse um den Überhang. Bei Twitch (Keyframe 2 s) ist das unkritisch. (3) Werbe-Erkennung setzt voraus, dass `live_url` die **Media-Playlist** liefert, denn eine Master-Playlist trägt keine Werbe-Marker. Das ist offline nicht prüfbar; am Donnerstag im Log nach „ad break started“ schauen.
+- **Messskript `tests/livewatch_messen.py`:** liest das Action-Log eines livewatch-Laufs und listet jeden Kandidaten mit Minute, Position, Art (chat/laut), hype, Chat-Faktor, Ergebnis und Grund (Aufwärmzeit, unter Schwelle, ohne Chat-Bestätigung, Werbepause, Alert-Kette, zu wenig Sprache, Abstand/Limit, Clip). Mit `bewertung.json` (`{"kanal:pos": true}` = postbar) kommt die **Trefferquote je Art** dazu. Damit wird Donnerstag messbar: Kandidaten, Clips, postbar. 2 Tests.
+- **Vorschlag Kick ohne Chat-Signal (nicht umgesetzt):**
+  1. **Zuschauer-Clips als Signal:** Kick listet öffentlich die neuesten Clips eines Kanals (der Trendscout liest Kick-Clips schon). Erstellt ein Zuschauer einen Clip, wurde ein Moment von einem Menschen ausgewählt. Den Kanal alle 2–3 Min abfragen; jeder neue Clip wird Kandidat am Clip-Startpunkt. Das ist das stärkste Ersatzsignal.
+  2. **Kick-Chat lesen:** Der Kick-Chat ist öffentlich über einen Websocket (Pusher) lesbar, ohne Login. Erst prüfen, ob das ohne Anmeldung und regelkonform geht; dann wäre es dasselbe Chat-Signal wie bei Twitch.
+  3. **Bis dahin nur Lautstärke strenger:** `min_hype` 14, `per_hour` 2, dazu Pflicht „Sprache im Schnitt“ (gibt es schon) und eine Dauer-Bedingung (≥ 3 s über der Grundlinie statt einer einzelnen Spitze), damit Musik- und Effekt-Spitzen wegfallen.
+  Empfehlung für Donnerstag: Kick-Streamer nur mit Variante 3, besser einen Twitch-Kanal nehmen.
