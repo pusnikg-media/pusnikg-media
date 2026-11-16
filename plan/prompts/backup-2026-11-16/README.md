@@ -34,3 +34,5 @@ Hinweis: Die TJR-Erinnerungen sagen „jetzt bei Content Rewards einreichen“, 
 
 ### Aus / abgelaufen (nicht gesichert, keine Wirkung mehr)
 Ausgeschaltete Dauer-Aufgaben: Higgsfield-Generator (`trig_01LfNQheKQF9ao8mrnkwcHGQ`), Produzent (Puck-Stimme) (`trig_01N9qrfezsk1tno499TWanaZ`), Produzent (inkl. Trend-Scout) (`trig_014bEyNgPdwXe3wEX1p64oSe`), Community (`trig_013s4TxJhmqKz1yhKhLjexUk`), Trend-Scout (`trig_01FrDQNSrJuN26Xi4GfA9c3v`). Dazu ca. 30 abgefeuerte Einmal-Erinnerungen (SEGA, MW4, Warzone A–C, TJR A/B, Fable-Sessions, Scan-Prüfungen …).
+
+Nachtrag: Die vollständigen alten Texte stehen noch in den `list_triggers`-Antworten dieser Session (https://claude.ai/code/session_01TnYkY8Kjf9JTqX3Y93NDme) und bis zum Tausch in den Aufgaben selbst.

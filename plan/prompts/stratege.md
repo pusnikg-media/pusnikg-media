@@ -10,6 +10,7 @@ Trigger: `trig_01DXNeBeF98XGq1oPTUSGb4Q`, Name „Pusnik G Stratege“, Modell o
 5. **Vorrat-Fenster:** Der Repo-Plan endet 26.11.; ab 27.11. erwartet der Wächter täglich ein Short (`plan/waechter.json` -> `tagesshort.taeglich_ab`). Der Sonntag 22.11. ist der letzte Lauf vor dem Ende des Plans: Vorrat für 27.11.–30.11. muss dann im Playbook stehen. Neu: explizit.
 6. **Experiment:** Abschnitt „Experiment“ wird nicht mehr gelesen (ausgesetzt) – war schon im alten Prompt ausgenommen, bleibt.
 7. Whop/Content Rewards: „beitreten … Drive-Ordner“ korrekt; Konten/IDs: keine falschen Namen. Keine Metricool-/Higgsfield-Reste.
+8. **Gegenlesen Session 2 (16.11. nachts):** kein eindeutiger Fehler. Geprüft: Hashtags genau 5 (#gta6tips ab Release, passt zum Produzenten), Vorrat-Fenster deckt am 22.11. den 23.–30.11. ab (Wächter erwartet ab 27.11. täglich), der Produzent liest den Abschnitt „Vorrat“, kein Posten, kein Repo-Schreiben, keine Credits.
 
 ## Neuer Prompt (komplett kopieren)
 ~~~~

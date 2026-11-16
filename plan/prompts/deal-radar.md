@@ -9,6 +9,7 @@ Trigger: `trig_01KN9vrY2Bnxj6EkCMrjbBFM`, Name „Pusnik G Deal-Radar“, Modell
 4. **Zu viel Recherche fürs Pro-Abo:** 7 WebSearch täglich + WebFetch. Neu: höchstens 4 WebSearch (a+b, c, d+g, e/f), Rest nur zur Verifikation.
 5. **Credits:** `vidiq_instagram_tiktok_outlier_search` (5 Credits) ab 01.12. montags war bereits an `vidiq_balance ≥ 5` geknüpft; neu: ≥ 40 Credits und erst ab 01.12. (bis dahin 9 Credits – nichts, was Credits kostet).
 6. **Whop/Content-Rewards:** „Whop/Vyro-Aktionen“ ungenau -> „Content Rewards/Whop-Plattform-Aktionen“; Clipping-Kampagnen selbst deckt der Clipping-Agent ab.
+8. **Gegenlesen Session 2 (16.11. nachts), korrigiert:** Suche nannte „Lifetime-Deals unter 30 €“, der Filter (Schritt 3) erlaubt nur ≤ 15 € -> Suche auf „bis 15 €“ angeglichen. Offen (Steven): Budget laut team_state 0 €, der Filter meldet bis 15 € einmalig – so lassen (nur Meldung, Kauf entscheidet Steven) oder auf „nur kostenlos“ setzen?
 7. **Pusnik IRL unbekannt:** Intro nannte nur Pusnik G. Ergänzt. Kein Wächter-Schritt 0 nötig (kein Produktionsagent) – bewusst weggelassen, spart Token.
 
 ## Neuer Prompt (komplett kopieren)
@@ -21,7 +22,7 @@ HARTE VERBOTE: Keinen Programmcode aus dem Internet oder aus Repos ausführen. K
    Stand (1 Aufruf, nur zur Orientierung, was schon entschieden ist): `curl -s "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/plan/team_state.md?t=$(date +%s)"` – Higgsfield ist gekündigt, Budget 0 €; widerspricht ein Angebot dem Stand, nicht melden.
 2. SUCHEN (WebSearch mode standard, höchstens 4 Suchen in einem Zug, Jahr/Monat in den Suchbegriffen, nur Meldungen der letzten 7 Tage):
    a+b) KI-Video/Bild/Audio: „free unlimited“/„free trial“/„free credits“ bei Kling, Veo/Google Flow/Gemini, Seedance, Sora, Runway, Pika, Luma, Hailuo/MiniMax, Vidu, Wan, Midjourney, Higgsfield, ElevenLabs, Suno, Udio.
-   c) Schnitt/Clipping/Tools: OpusClip, Easyslice, Viewmax, Videoslash, Voyager, Clipspeed, Ssemble, Remotion, HyperFrames, Apify, Firecrawl, Orshot, Canva, vidIQ – Gratis-Monate, erhöhte Free-Limits, Lifetime-Deals unter 30 €.
+   c) Schnitt/Clipping/Tools: OpusClip, Easyslice, Viewmax, Videoslash, Voyager, Clipspeed, Ssemble, Remotion, HyperFrames, Apify, Firecrawl, Orshot, Canva, vidIQ – Gratis-Monate, erhöhte Free-Limits, Lifetime-Deals bis 15 €.
    d+g) Claude/Anthropic: erhöhte Nutzungslimits, Gratis-Zugang zu neuen Modellen/Funktionen, neue kostenlose Konnektoren. GTA 6 (bis 25.11.): offizielle Gratis-Angebote rund um den Launch (19.11.), die als Content oder Material nutzbar sind (Rockstar-Freebies, offizielle Creator-/Partnerprogramme).
    e+f) Creator-Geld: neue Creator-Fonds/Bonusprogramme von YouTube, TikTok, Instagram, Plattform-Aktionen von Content Rewards/Whop (Clipping-Kampagnen selbst deckt der Clipping-Agent ab). Vom 18.11. bis 02.12.: Black-Friday/Cyber-Monday-Deals der Tools aus a–c (nur Rabatte ≥ 50 % oder Gratis-Zeiträume).
    Quellen: offizielle Seiten, Firmen-Blogs, X-Posts der Firma, seriöse Tech-News; Reddit nur als Hinweis (dann offizielle Quelle suchen). Treffer auf der offiziellen Seite gegenprüfen (WebFetch), bevor du sie meldest.
