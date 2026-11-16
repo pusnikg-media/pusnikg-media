@@ -434,8 +434,8 @@ class Recorder:
         if self.pr and self.pr.poll() is None: self.pr.terminate()
 
 
-def watch(root):
-    c = cfg(root); t_end = time.time() + 60 * int(c.get("max_minutes", 330))
+def watch_once(root, c, t_end):
+    """One pass over the channels: records the first one that is live and returns True when it was watched, False when all are offline."""
     for ch in c.get("channels", []):
         rec = os.path.join(os.environ.get("RUNNER_TEMP", "/tmp"), "lw_rec"); os.makedirs(rec, exist_ok=True)
         for f in glob.glob(os.path.join(rec, "*.ts")): os.remove(f)
@@ -446,7 +446,24 @@ def watch(root):
         ads = AdWatch(lambda: rc.hls, rc.t_start) if m else None  # ad markers exist on Twitch HLS only
         try: n = loop(ch, root, rec, rc.alive, True, t_end, chat, ads)
         finally: rc.stop()
-        print(f"LIVEWATCH_DONE {ch['name']} clips {n}"); return
+        print(f"LIVEWATCH_DONE {ch['name']} clips {n}"); return True
+    return False
+
+
+def watch(root, sleep=time.sleep, now=time.time, watcher=None):
+    """v0.5 (16.11.): while every channel is offline, ask again every `poll_seconds` (default 90) until `max_minutes` / `until` run out.
+    Before: one offline pass ended the run and the next scheduled start came 20 min to 3 h later (GitHub delays crons), so a stream start went unseen."""
+    c = cfg(root); t_end = now() + 60 * int(c.get("max_minutes", 330)); wait = max(30, int(c.get("poll_seconds", 90)))
+    until = None
+    try:
+        if c.get("until"): until = datetime.datetime.fromisoformat(str(c["until"]).replace("Z", "+00:00")).timestamp()
+    except Exception: until = None
+    watcher = watcher or watch_once
+    while True:
+        if watcher(root, c, t_end): return
+        stop = t_end if until is None else min(t_end, until)
+        if now() + wait >= stop: break
+        sleep(wait)
     print("LIVEWATCH_IDLE")
 
 

@@ -10,6 +10,9 @@ on:
     - cron: "47 5 * * *"
     - cron: "37 11 * * *"
     - cron: "47 19 * * *"          # 20:47 Berlin: nach dem 18:00-Short und dem 19:17-Stats-Lauf (Tages-Short/Slots am selben Abend beurteilen)
+  workflow_run:                    # GitHub delays crons by 50-90 min (measured 13.-16.11.): judge right after every stats run, not only at the cron times
+    workflows: [stats]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: write

@@ -109,3 +109,48 @@ def test_speech_rate(lw):
     words = [{"w": "x", "s": float(i)} for i in range(10)]
     assert lw.speech_rate(words, 0, 10) == 1.0
     assert lw.speech_rate(words, 20, 30) == 0.0         # Geh-/Fahr-Szene ohne Sprache
+
+
+# --- v0.5: wait for the stream instead of ending the run when every channel is offline -------------------------------------
+def _cfg_root(tmp_path, **kw):
+    import json
+    (tmp_path / "plan").mkdir()
+    (tmp_path / "plan" / "livewatch.json").write_text(json.dumps({"enabled": True, "channels": [{"name": "x", "url": "https://www.twitch.tv/x"}], **kw}))
+    return str(tmp_path)
+
+
+class Clock:
+    def __init__(self): self.t = 1000.0; self.sleeps = []
+    def now(self): return self.t
+    def sleep(self, s): self.sleeps.append(s); self.t += s
+
+
+def test_watch_waits_until_stream_starts(lw, tmp_path):
+    root = _cfg_root(tmp_path, max_minutes=60, poll_seconds=60); clk = Clock(); calls = []
+    def watcher(r, c, t_end):
+        calls.append(clk.t); return len(calls) == 4          # offline three times, live on the 4th look
+    lw.watch(root, sleep=clk.sleep, now=clk.now, watcher=watcher)
+    assert len(calls) == 4 and clk.sleeps == [60, 60, 60]
+
+
+def test_watch_gives_up_when_time_is_over(lw, tmp_path):
+    root = _cfg_root(tmp_path, max_minutes=5, poll_seconds=60); clk = Clock(); calls = []
+    lw.watch(root, sleep=clk.sleep, now=clk.now, watcher=lambda r, c, t: calls.append(1) or False)
+    assert 4 <= len(calls) <= 6 and clk.t - 1000 <= 5 * 60
+
+
+def test_watch_respects_until(lw, tmp_path):
+    import datetime
+    root = _cfg_root(tmp_path, max_minutes=300, poll_seconds=60, until="2026-11-19T20:00:00Z"); clk = Clock()
+    clk.t = datetime.datetime(2026, 11, 19, 19, 57, tzinfo=datetime.timezone.utc).timestamp(); t0 = clk.t
+    lw.watch(root, sleep=clk.sleep, now=clk.now, watcher=lambda r, c, t: False)
+    assert clk.t - t0 <= 3 * 60
+
+
+def test_watch_once_offline_returns_false(lw, tmp_path, monkeypatch):
+    class R:
+        def __init__(self, ch, rec): pass
+        def start(self, n): return False
+    monkeypatch.setattr(lw, "Recorder", R)
+    root = _cfg_root(tmp_path)
+    assert lw.watch_once(root, lw.cfg(root), 9e12) is False

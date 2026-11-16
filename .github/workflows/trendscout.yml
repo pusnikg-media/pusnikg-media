@@ -33,10 +33,15 @@ jobs:
           pip install -q curl_cffi
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
           python3 pipeline/trendscout/trendscout.py selftest
-          for i in 1 2 3 4; do
+          # scrape ONCE (a run takes 3 min), then only the publish step is retried (v16.11. night: the old loop re-scraped on every push collision, 11.7 of 15 min)
+          python3 pipeline/trendscout/trendscout.py run . || exit 0
+          git add -A trends; git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          OUT=/home/runner/out_trends; rm -rf "$OUT"; mkdir -p "$OUT"; cp -r trends/. "$OUT/"
+          for i in 1 2 3 4 5 6; do  # publish on top of the newest main (many bots push); the folder is replaced as a whole, no rebase
             git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
-            python3 pipeline/trendscout/trendscout.py run . || exit 0
-            git add -A trends; git diff --cached --quiet && break
-            git commit -q -m "trendscout: update" && git push -q origin HEAD:main && { echo PUBLISHED; break; }
-            sleep 8
+            rm -rf trends; mkdir -p trends; cp -r "$OUT/." trends/
+            git add -A trends; git diff --cached --quiet && { echo "nothing new"; exit 0; }
+            git commit -q -m "trendscout: update" && git push -q origin HEAD:main && { echo PUBLISHED; exit 0; }
+            echo "push retry $i"; sleep 8
           done
+          echo "::error::trendscout: push failed after 6 tries"; exit 1
