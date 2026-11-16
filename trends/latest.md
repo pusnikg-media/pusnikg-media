@@ -1,60 +1,60 @@
-# Trendscout – 16.11.2026 11:49 UTC
+# Trendscout – 16.11.2026 16:56 UTC
 
 Automatisch gesammelt (Reddit, Kick, YouTube-Feeds, Gaming-News), ohne Login/Credits. NEW = beim letzten Lauf noch nicht dabei.
 
 ## GTA-6-News (letzte 30 h, Gaming-Newsseiten)
 Mehrere Quellen = große Geschichte. Für Shorts nur Fakten verwenden, die im verlinkten Artikel stehen; Leaks/Gerüchte als solche benennen.
 
-- NEW New GTA VI Update Released And Not Everyone Has Gotten It, Here’s Why – RockstarINTEL, vor 1 h → https://rockstarintel.com/new-gta-vi-update-released-and-not-everyone-has-gotten-it-heres-why/
-- NEW Gangland Tales From the Frontline of Rockstar's Real-Life Grand Theft Auto Research – IGN, vor 2 h → https://www.ign.com/articles/rockstars-real-life-grand-theft-auto-research
-- NEW How to Play GTA 6 Early on XBOX With New Zealand Trick—All Time Zones, Explained – Insider Gaming, vor 4 h → https://insider-gaming.com/how-to-play-gta-6-early-xbox-new-zealand-trick/
-- NEW How to Play GTA 6 Early on PS5 With New Zealand Trick—All Time Zones, Explained – Insider Gaming, vor 4 h → https://insider-gaming.com/how-to-gta-6-early-new-zealand-trick-playstation-5/
-- Is GTA 6 Out Now? Grand Theft Auto 6 Launch Day Tracker – Insider Gaming, vor 4 h → https://insider-gaming.com/is-gta-6-out-now-launch-day-tracker/
-- GTA 6's Jason and Lucia Will Start as Small-Time Criminals Who Have to Work Up to High-Value Jobs – IGN, vor 16 h → https://www.ign.com/articles/gta-6s-jason-and-lucia-will-start-as-small-time-criminals-who-have-to-work-up-to-high-value-jobs
-- GTA VI Game Length Potentially Leaked By Reviewer – RockstarINTEL, vor 17 h → https://rockstarintel.com/gta-vi-game-length-potentially-leaked-by-reviewer/
-- EA Adds 'Don't Delete' Message to Madden NFL 27 in Bid to Keep Players From Making Room Ahead of GTA 6 – IGN, vor 18 h → https://www.ign.com/articles/ea-adds-dont-delete-message-to-madden-nfl-27-in-bid-to-keep-players-from-making-room-ahead-of-gta-6
-- The latest GTA 6 leak comes in the form of a 34-song tracklist for GTA 6: The Album, featuring Dua Lipa, Lana Del Rey, … – Eurogamer, vor 22 h → https://www.eurogamer.net/gta-6-tracklist-leak
-- What's the best GTA? – Eurogamer, vor 26 h → https://www.eurogamer.net/the-big-question-whats-the-best-gta
+- NEW [2 Quellen] NBA 2K27 is getting a Vice City Edition, as well as numerous GTA 6 themed items in Season 3 – VGC, GameSpot, vor 0 h → https://www.videogameschronicle.com/news/nba-2k27-is-getting-a-vice-city-edition-as-well-as-numerous-gta-6-themed-items-in-season-3/
+- NEW [2 Quellen] GTA VI Hacker Pleads Guilty To All Crimes – RockstarINTEL, Insider Gaming, vor 2 h → https://rockstarintel.com/gta-vi-hacker-pleads-guilty-to-all-crimes/
+- NEW Rockstar Could Have Released GTA 6 Sooner As GTA 5.5, But “You Have To Take Big Swings” – GameSpot, vor 0 h → https://www.gamespot.com/articles/rockstar-could-have-released-gta-6-sooner-as-gta-5-5-but-you-have-to-take-big-swings/
+- NEW Escape from Tarkov Joins The GTA 6 Action With a New Campaign – Insider Gaming, vor 0 h → https://insider-gaming.com/escape-from-tarkov-gta-6-hype-new-campaign/
+- NEW Xbox Shows Off Alligator-Themed Controller Before GTA 6 Release – Insider Gaming, vor 1 h → https://insider-gaming.com/xbox-alligator-controller-gta-6/
+- NEW The 2026 Game Awards Nominations Will Spoil GTA 6 Reviews – Polygon, vor 1 h → https://www.polygon.com/gta-6-goty-nominations/
+- NEW GTA 6's Official First Updates Are Great News For Fans – Polygon, vor 2 h → https://www.polygon.com/gta-6-nov-13-patch-102-what-is-download-size-ps5-xbox/
+- NEW UK Politician Downplays Fears Around GTA 6 Content For Kids, Says She's More Concerned About The Amount of Time They'll… – IGN, vor 2 h → https://www.ign.com/articles/uk-politician-downplays-fears-around-gta-6-content-for-kids-says-shes-more-concerned-about-the-amount-of-time-theyll-likely-play-it
+- NEW GTA 6 ‘Physical Copy Code Flaw’ Controversy, Explained – Insider Gaming, vor 2 h → https://insider-gaming.com/gta-6-physical-copy-code-flaw/
+- NEW We Got A Grand Theft At Disney World Before GTA 6 – GameSpot, vor 2 h → https://www.gamespot.com/articles/we-got-a-grand-theft-at-disney-world-before-gta-6/
 
 ## IRL / Streamer – Reddit r/LivestreamFail (Top des Tages, nach Rang)
 1. A police officer noticed itsjaytwyne alone in a parking lot at 3 AM while going through a mental health crisi… → https://v.redd.it/yy9cs8cebu1i1
-2. Blou and Zias Admit They Got Cooked by QT After She Reveals Streamer Awards Votes Amid Rigging Claims → https://v.redd.it/03frx9lg3s1i1
-3. YouTuber basically homeless accused of talking with minors on Snapchat
-4. xQc throws the game (literally) → https://v.redd.it/7bsvg80z5s1i1
-5. Lirik takes a break from mowing → https://v.redd.it/o23atr4ktt1i1
-6. Streamer "Aesdr" offered a drunk man $20 to fight someone, unaware that he was carrying a knife on him → https://v.redd.it/b1pmlkqqrt1i1
-7. Nattynatt (lol player) traumatizes his roommate (duo pov) → https://v.redd.it/34jixkauqr1i1
-8. Forsen casts Expecto Patronum to save Harry Potter → https://v.redd.it/893x9m0srw1i1
-9. Sunglitters: rogue PVP in WOW → https://v.redd.it/etcqronlqs1i1
-10. NymN gets haunted by Forsen → https://v.redd.it/ps5dle19fs1i1
-11. They got him → https://v.redd.it/9y1qp1748x1i1
-12. NEW SoulTravels Detained in Miami → https://v.redd.it/tm9nmgdl7x1i1
+2. YouTuber basically homeless accused of talking with minors on Snapchat
+3. NEW Twitch makes huge ad change so streamers can make more money while playing GTA 6
+4. Lirik takes a break from mowing → https://v.redd.it/o23atr4ktt1i1
+5. Streamer "Aesdr" offered a drunk man $20 to fight someone, unaware that he was carrying a knife on him → https://v.redd.it/b1pmlkqqrt1i1
+6. Forsen casts Expecto Patronum to save Harry Potter → https://v.redd.it/893x9m0srw1i1
+7. They got him → https://v.redd.it/9y1qp1748x1i1
+8. NEW Streamer 米芹 completed a 620km cycling race in 32 hours, despite being involved in a serious accident right at… → https://www.twitch.tv/michelia3/clip/CautiousPopularPieRitzMitz-dwUwHQcYfHPKbZ7M
+9. SoulTravels Detained in Miami → https://v.redd.it/tm9nmgdl7x1i1
+10. Forsen's got your nose → https://www.twitch.tv/forsen/clip/TangibleHonestStarlingCorgiDerp-49JilbM8fzn44oym
+11. NEW PUNKCAFE → https://www.twitch.tv/videos/2683994649
+12. NEW tos - ChrisJupiter on Twitch → https://www.twitch.tv/chrisjupiter/clip/InexpensiveSingleButterflyBlargNaut-WueNJBrnbZIV6G_8?range=7d
 
 ## Gaming / GTA 6 – Reddit r/GTA6 (Top des Tages, nach Rang)
-1. No words needed. Enjoy the fuck out of this game. We made it.
-2. Inside Rockstar and Take Two headquarters as we speak: → https://v.redd.it/imwgyegagt1i1
-3. GTA 6 Jason and Lucia artwork at Rockstar North
-4. NEW Final 3 days, take care of yourselves.
-5. Yeah I'm not playing any other game for a long time.
-6. The PS5 Pro is ready for maximum image quality!
-7. we have no idea what we’re in for
-8. GTA 6 Jason and Lucia artwork at Rockstar North got Completed
+1. NEW WE LOVE TO SEE IT
+2. Final 3 days, take care of yourselves.
+3. Inside Rockstar and Take Two headquarters as we speak: → https://v.redd.it/imwgyegagt1i1
+4. The PS5 Pro is ready for maximum image quality!
+5. GTA 6 Jason and Lucia artwork at Rockstar North got Completed
+6. NEW One thing about the map that keeps me wondering
+7. NEW New GTA VI patch is live, check your consoles!
+8. NEW 3 insiders hyping GTA 6
 
 ## Gaming / GTA 6 – Reddit r/GTA (Top des Tages, nach Rang)
-1. The way I see it, actually…
-2. The glow down should be studied
-3. If you know you know → https://v.redd.it/w83mbiilzt1i1
-4. My girl chose the best hotel before our week-long cruise embarking from Miami, FL
-5. 3, 3:33:33
+1. The glow down should be studied
+2. The way I see it, actually…
+3. NEW I can see it a mile away
+4. If you know you know → https://v.redd.it/w83mbiilzt1i1
+5. My girl chose the best hotel before our week-long cruise embarking from Miami, FL
 
 ## Kick – meistgesehene Clips (24–36 h)
 W = beobachteter Kampagnen-Streamer. `video` in latest.json ist direkt als Clipfabrik-`source` nutzbar.
 
-- lainelly: „LMOAOOAA“ – 10920 Views, 31 s, Grand Theft Auto V (GTA) → https://kick.com/lainelly/clips/clip_01M7EW8W6PQQ526WFEC5Y56J52
-- westcol: „se salio la teta jajajajajaj“ – 4047 Views, 30 s, Special Events → https://kick.com/westcol/clips/clip_01M7ERC8WA67K4S1X8VS1WRXKX
-- harry: „gangsta speedy“ – 3085 Views, 73 s, Grand Theft Auto V (GTA) → https://kick.com/harry/clips/clip_01M7GM7JQVZQAJ963RR74RY7WE
-- greatwhitemike: „GWM 2 FOR 1“ – 2762 Views, 69 s, Just Sleeping, 18+ → https://kick.com/greatwhitemike/clips/clip_01M7G2DPFSQR0GMTVB4VQ7J2KC
-- greatwhitemike: „Mike's reaction to Ozemi arrested over his drink“ – 2625 Views, 131 s, Just Sleeping, 18+ → https://kick.com/greatwhitemike/clips/clip_01M7G25P1J88YDFDBNH33DAHN4
-- greatwhitemike: „Mike Absolutely smashed“ – 2365 Views, 22 s, Just Sleeping, 18+ → https://kick.com/greatwhitemike/clips/clip_01M7EG87ZPBVN7N5M06W6XJ8Z7
-- shoovy: „LEAKED?“ – 1592 Views, 17 s, IRL → https://kick.com/shoovy/clips/clip_01M7EMCW031Y61EKJHHHX48P48
-- NEW jollyirl: „Real Talk with @jomommaIRL @M1keDanger and Jolly“ – 1571 Views, 152 s, IRL, 18+ → https://kick.com/jollyirl/clips/clip_01M7HW7AMDFQ1JXZMQTDT3EVVT
+- lainelly: „LMOAOOAA“ – 11064 Views, 31 s, Grand Theft Auto V (GTA) → https://kick.com/lainelly/clips/clip_01M7EW8W6PQQ526WFEC5Y56J52
+- harry: „gangsta speedy“ – 4053 Views, 73 s, Grand Theft Auto V (GTA) → https://kick.com/harry/clips/clip_01M7GM7JQVZQAJ963RR74RY7WE
+- jollyirl: „Real Talk with @jomommaIRL @M1keDanger and Jolly“ – 3250 Views, 152 s, IRL, 18+ → https://kick.com/jollyirl/clips/clip_01M7HW7AMDFQ1JXZMQTDT3EVVT
+- greatwhitemike: „GWM 2 FOR 1“ – 2820 Views, 69 s, Just Sleeping, 18+ → https://kick.com/greatwhitemike/clips/clip_01M7G2DPFSQR0GMTVB4VQ7J2KC
+- greatwhitemike: „Mike's reaction to Ozemi arrested over his drink“ – 2690 Views, 131 s, Just Sleeping, 18+ → https://kick.com/greatwhitemike/clips/clip_01M7G25P1J88YDFDBNH33DAHN4
+- NEW jollyirl: „Lol“ – 1674 Views, 79 s, IRL, 18+ → https://kick.com/jollyirl/clips/clip_01M7HT0M39VD7V9VXNDPD6VV79
+- NEW jollyirl: „lol“ – 1642 Views, 54 s, IRL, 18+ → https://kick.com/jollyirl/clips/clip_01M7HVECNVMF923HJ6CE1E6FZY
+- NEW pajalock: „xD“ – 1579 Views, 116 s, Just Chatting, 18+ → https://kick.com/pajalock/clips/clip_01M7GH5FFW4R55C0QS65SVQ47Q
