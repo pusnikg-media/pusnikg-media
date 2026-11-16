@@ -19,6 +19,11 @@ Ziel: Repo so absichern, dass Sonnet (+ Opus-Advisor) ab 17.11. sicher und spars
 - **Ausnahme:** `plan/waechter.json` → `ignorieren` (`key` = Alarm-Kennung, z. B. `short:2026-11-12` oder `einreichen:tiktok:<id>`, mit `grund`). 12.11. und 13.11. sind schon drin.
 - **Neue Kampagne:** Zeile in `plan/waechter.json` → `kampagnen` (`stats` = Name wie in `plan/stats.json`, `clips` = Ordner in `clips/`, `erwartet`, `bis`).
 
+## Verifikation (16.11., 14:00 Berlin)
+- Lokal 158 Tests grün (~40 s); Action `tests` auf dem Runner grün (~1 Min) für Branch `haertung`; Merge nach `main` (75d3e4a).
+- Wächter: Trockenlauf auf `haertung` grün (echte API: Actions-Status, Repo-Größe lesbar). Echtlauf auf `main` (Push-Trigger + von Hand per workflow_dispatch) grün: Label `alarm` angelegt, `stats/alerts.md` auf main committet („Keine offenen Probleme", `stand_utc` gesetzt), kein Issue nötig.
+- **Nicht live getestet:** Issue anlegen/aktualisieren/schließen gegen die echte GitHub-API (es gab kein Problem; nur mit gefälschtem GH-Client getestet). Der erste echte Alarm ist der Praxistest – danach Issue-Text prüfen.
+
 ## Advisor-Befunde 1 (Architektur) – die 5 riskantesten Stellen
 Status: ✅ abgedeckt (Wächter/Test), ⚠️ nur gemeldet, ❌ offen.
 1. **Grün bei Fehlern** (`|| true` in render/clipfabrik, `|| exit 0` in stats/kampagnen; Aufgeben nach 3 Versuchen ohne Meldung): ✅ Wächter liest `ok`/`attempts` der Ergebnis-JSONs (`render:*`, `clipjob:*`) und den Lauf-Status der Actions; Tests dokumentieren das stille Aufgeben. ❌ Die Workflows selbst unverändert (bewusst).
