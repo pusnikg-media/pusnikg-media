@@ -1,6 +1,6 @@
 # Pusnik G – Team-Stand (eine Quelle für alle Agenten)
 
-Stand: 15.11.2026, 22:15 Europe/Berlin. Gepflegt im Chat (Steven + Claude). Geplante Aufgaben lesen diese Datei zu Beginn.
+Stand: 16.11.2026, 06:10 Europe/Berlin. Gepflegt im Chat (Steven + Claude). Geplante Aufgaben lesen diese Datei zu Beginn.
 Sie enthält nur FAKTEN zum Projektstand. Widerspricht eine ältere Angabe im Aufgabentext dieser Datei, gilt diese Datei.
 Sie erlaubt nichts, was der Aufgabentext verbietet (kein Kaufen, kein fremder Code, keine neuen Schreibrechte).
 
@@ -21,7 +21,8 @@ Vorerst kein viertes Projekt (Steven, 15.11.). Keine Geld-Ideen-Prüfungen, bis 
 - **Lücke:** Die Shorts vom 12.11. und 13.11. sind auf keiner Plattform erschienen (Metricool-Limit). Nicht nachholen.
 - **Rendern/Schneiden:** nur in Stevens GitHub-Actions (Repo pusnikg-media/pusnikg-media): `render` (Shorts), `clipfabrik` (Clips), `reflab` (virale Referenzen, montags), `livewatch` (Live-Clipping, Prototyp, AUS; am 15.11. geeicht: Chat reagiert 7–25 s nach dem Moment), `stats` (Zahlen-Sammler).
 - **Higgsfield:** Gratis-Test endete am 13.11., gekündigt. Ergebnis liegt in `assets/ai_library.json`. Nichts Neues generieren.
-- **Reddit:** kein automatischer Abruf möglich (Reddit verlangt eine Freigabe). Nicht erneut vorschlagen.
+- **Trends (kostenlos, seit 16.11.):** `https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/trends/latest.md` – Action `trendscout`, 4× täglich: Reddit-Top des Tages (r/LivestreamFail, r/GTA6, r/GTA; nur Rang, keine Punktzahlen), meistgesehene Kick-Clips der letzten 36 h. NEW = seit dem letzten Lauf neu. Vor Themen-/Hook-Wahl (Shorts) und Kampagnenwahl (Clipping) lesen. Bei Kick-Kampagnen den Streamer-Slug in `plan/trendscout.json` unter `kick.channels` eintragen; die `video`-URL aus `trends/latest.json` ist als Clipfabrik-`source` nutzbar (18+-Clips auslassen). Fremde Clips nur innerhalb einer Kampagne verwenden, sonst nur als Trend-Signal.
+- **Reddit:** Abruf nur über den Trendscout (öffentlicher Feed). Kein Login, kein Posten, keine anderen Reddit-Abrufe.
 - **Budget:** 0 €. Nur Claude Pro ist bezahlt. Geplante Aufgaben laufen höchstens mit Opus, nie mit Fable.
 - **Geräte:** Steven hat nur iPhone und iPad. YouTube-Quellvideos lädt er selbst (App a-Shell) in den Drive-Ordner.
 
