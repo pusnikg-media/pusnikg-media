@@ -286,5 +286,21 @@
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-125257.jpg",
   "posted": false,
   "chat": 3.66
+ },
+ {
+  "id": "20261116-125400",
+  "at": "2026-11-16T12:55:21+00:00",
+  "channel": "jasontheween",
+  "hype": 20.3,
+  "seconds": 24.0,
+  "quote": "\"Hey\"",
+  "a": 14,
+  "b": 38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/raw_20261116-125400.mp4",
+  "said": "some. I got it in a minute. All right, boys. All right, boys. Hey. TwitchCon hoodie. Whoo. Hey.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/live-jasontheween_20261116-125400.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-125400.jpg",
+  "posted": false,
+  "chat": 4.0
  }
 ]
