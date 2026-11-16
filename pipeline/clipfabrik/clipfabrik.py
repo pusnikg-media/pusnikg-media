@@ -45,7 +45,8 @@ v5 (15.11., from the reference lab: viral streamer clips keep the ORIGINAL frami
   caption   clip only: one context sentence in normal spelling, e.g. "Lacy did NOT expect Rug to DANCE on his stream 😭"
             (max 3 lines, ~95 characters; emojis are drawn when the runner has a colour emoji font). Drawn as a white box
             with black text right above the picture (layout native/framed) or at the top (full). Replaces the big title.
-Result: clips/<name>/result.json {"ok", "sig", "attempts", "clips": [{"id", "ok", "url", "seconds", "title"}], "error"}.
+Result: clips/<name>/result.json {"ok", "sig", "attempts", "clips": [{"id", "ok", "url", "seconds", "title", "caption", "hints"}], "error"}.
+"hints" = soft style checks of the caption (too short, no emoji, two sentences ...) - the clip is rendered anyway.
 Layout 1080x1920: blurred fill, sharp centre crop 1080x1200 at y=400, title (+ pill) on top, karaoke captions (libass)."""
 import glob, hashlib, json, math, os, re, subprocess, sys, urllib.parse
 
@@ -332,6 +333,28 @@ EMOJI_FONTS = ["/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", "/usr/share/
 
 def is_emoji(ch):
     o = ord(ch); return o >= 0x1F000 or 0x2600 <= o <= 0x27BF or o in (0x2B50, 0x2B55, 0x203C, 0x2049)
+
+
+def caption_hints(text, seconds=None):
+    """Soft checks against the house style of viral clip captions (reel-scout 16.11.2026). Hints only - nothing fails.
+    The agent reads them in result.json ("hints") and fixes the job once if a hint is justified."""
+    t = re.sub(r"\s+", " ", text or "").strip(); h = []
+    if not t: return h
+    words = [w for w in re.findall(r"[A-Za-z0-9$'’%.,-]+", t) if re.search(r"[A-Za-z0-9]", w)]
+    emo = [c for c in t if is_emoji(c)]
+    if len(words) < 8: h.append(f"Kontextsatz hat nur {len(words)} Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern")
+    if len(words) > 17: h.append(f"Kontextsatz hat {len(words)} Wörter – auf höchstens 15 kürzen")
+    if not emo: h.append("kein Emoji am Ende (üblich: 😭 😂 👀 💰)")
+    elif len(emo) > 3: h.append("mehr als 3 Emojis")
+    elif not is_emoji(t.replace("\ufe0f", "")[-1]): h.append("Emoji gehört ans Satzende")
+    if "..." not in t and "…" not in t: h.append("Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)")
+    caps = [w for w in words if len(w) > 2 and w.isupper() and re.search(r"[A-Z]", w)]
+    if len(caps) > 3: h.append(f"{len(caps)} Wörter in Großbuchstaben – höchstens 1–2 (das überraschende Wort)")
+    if t.isupper(): h.append("alles in Großbuchstaben – normale Schreibweise verwenden")
+    if words and not words[0][0].isupper(): h.append("Satz beginnt nicht mit dem Namen")
+    if re.search(r"[.!?] +[A-Z]", re.sub(r"\.\.\.|…", "", t)): h.append("zwei Sätze – nur EIN Satz")
+    if seconds is not None and seconds > 40: h.append(f"Clip dauert {seconds:.0f} s – virale Clips liegen bei 10–38 s")
+    return h
 
 
 def caption_wrap(d, text, f, size, maxw):
@@ -744,6 +767,9 @@ def render_clip(job, c, src, p, words, out, tmp):
     r = {"id": cid, "ok": True, "seconds": round(q["dur"], 2), "title": title, "file": os.path.basename(dst), "qa": "qa/" + os.path.basename(png),
          "layout": layout, "tracked": stats["tracked"], "punches": stats["punches"]}
     if hook: r["hook"] = [round(float(hook[0]), 2), round(float(hook[1]), 2)]
+    if capt:
+        r["caption"] = capt; hints = caption_hints(capt, q["dur"])
+        if hints: r["hints"] = hints; print(f"HINT {cid}: " + "; ".join(hints))
     return r
 
 
