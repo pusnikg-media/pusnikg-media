@@ -113,6 +113,8 @@ def make_clip(ch, root, segs, t0, peak, hype, stamp):
     words = []
     try: words = cf.transcribe(cf.audio16k(raw, tmp), ch.get("whisper", "small.en")) if p["audio"] else []
     except Exception as e: print("WARN no transcript:", str(e)[-200:])
+    inwin = [w for w in words if pk - 20 <= w["s"] <= pk + 8]
+    if len(inwin) < 12: raise cf.Fail(f"too little speech around the moment ({len(inwin)} words): ad break / music / silence")  # v0.3 16.11.: Twitch ad break fired the chat+loud signal
     sents = cf.sentences(words)
     cands = [c for c in cf.candidates(sents, [], p["dur"], 6, 12, 34) if c["a"] <= pk <= c["b"]] if sents else []
     if cands: c = max(cands, key=lambda x: x["score"]); a, b = c["a"], c["b"]
