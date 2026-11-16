@@ -46,5 +46,21 @@
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-121740.jpg",
   "posted": false,
   "chat": 2.81
+ },
+ {
+  "id": "20261116-122624",
+  "at": "2026-11-16T12:27:16+00:00",
+  "channel": "jasontheween",
+  "hype": 27.1,
+  "seconds": 17.01,
+  "quote": "\"December 5th\"",
+  "a": 0.0,
+  "b": 17.01,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/raw_20261116-122624.mp4",
+  "said": "December 4th! December 5th! Me, Los Polos, Jinxy, and Joe Bart will be doing a Vegas stream.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/live-jasontheween_20261116-122624.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-122624.jpg",
+  "posted": false,
+  "chat": 2.75
  }
 ]
