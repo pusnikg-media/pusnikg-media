@@ -1,15 +1,15 @@
-# Zahlen – Stand 16.11.2026 20:43 (Europe/Berlin)
+# Zahlen – Stand 16.11.2026 21:11 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 46.948 · Zuwachs 24 h: 459
+Posts gezählt: 80 · Views gesamt: 46.998 · Zuwachs 24 h: 459
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
-| 2026-11-16 | tiktok | Close quarters in the Warzone Season 1 trailer.  | 80 | – | – | 0 | Warzone S1 |
+| 2026-11-16 | tiktok | Close quarters in the Warzone Season 1 trailer.  | 92 | – | – | 0 | Warzone S1 |
 | 2026-11-16 | youtube | GTA 6 Vice City Is Back After 24 Years #shorts | 9 | – | – | 1 |  |
-| 2026-11-16 | tiktok | GTA 6 Vice City is back, 24 years after the orig | 212 | – | – | 3 |  |
+| 2026-11-16 | tiktok | GTA 6 Vice City is back, 24 years after the orig | 250 | – | – | 3 |  |
 | 2026-11-16 | tiktok | Dropping into Hajin straight from the sky. Where | 244 | – | – | 2 | Warzone S1 |
 | 2026-11-15 | tiktok | Warzone just landed in Korea. Hajin is the new m | 244 | 106 | – | 0 | Warzone S1 |
 | 2026-11-15 | tiktok | GTA 6 spoilers will be everywhere at launch, so  | 267 | 4 | 267 | 3 |  |
@@ -33,14 +33,14 @@ Posts gezählt: 80 · Views gesamt: 46.948 · Zuwachs 24 h: 459
 | 2026-11-08 | tiktok | A city you've never seen A story you've never he | 256 | 0 | – | 2 | SEGA Virtua Fighter |
 
 ## Pusnik IRL
-Posts gezählt: 8 · Views gesamt: 1.427 · Zuwachs 24 h: 18
+Posts gezählt: 8 · Views gesamt: 1.442 · Zuwachs 24 h: 18
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
 | 2026-11-16 | youtube | TJR's Brother Has No Idea 🤫 #TJR #shorts | 0 | – | – | 0 | TJR |
-| 2026-11-16 | tiktok | TJR's brother has no idea what is about to happe | 98 | – | – | 1 | TJR |
+| 2026-11-16 | tiktok | TJR's brother has no idea what is about to happe | 109 | – | – | 1 | TJR |
 | 2026-11-16 | youtube | TJR Swaps His Life For A Broke Car #shorts | 0 | – | – | 0 | TJR |
-| 2026-11-16 | tiktok | TJR swaps his life for a day and gets handed the | 241 | – | – | 4 | TJR |
+| 2026-11-16 | tiktok | TJR swaps his life for a day and gets handed the | 245 | – | – | 4 | TJR |
 | 2026-11-15 | youtube | TJR Gifts His Brother A Car 😳 #TJR #shorts | 1 | 0 | – | 0 | TJR |
 | 2026-11-15 | tiktok | TJR surprised his brother with a brand new car a | 236 | 18 | – | 9 | TJR |
 | 2026-11-14 | youtube | Lacy breaks his expensive watch 😭 #JasonTheWeen  | 2 | 0 | 2 | 0 | JasonTheWeen |
@@ -49,8 +49,8 @@ Posts gezählt: 8 · Views gesamt: 1.427 · Zuwachs 24 h: 18
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Warzone S1 | 3 | 568 | 244 | – |
-| TJR | 6 | 576 | 241 | 0 von 6 |
+| Warzone S1 | 3 | 580 | 244 | – |
+| TJR | 6 | 591 | 245 | 0 von 6 |
 | MW4 DMZ | 3 | 777 | 277 | – |
 | JasonTheWeen | 2 | 851 | 849 | – |
 | SEGA Virtua Fighter | 8 | 3.265 | 1.279 | – |
