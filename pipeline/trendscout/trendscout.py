@@ -248,6 +248,11 @@ def render(items, errors, seen):
     new = lambda x: "NEW " if x["id"] not in seen else ""  # noqa: E731
     L = [f"# Trendscout – {now().strftime('%d.%m.%Y %H:%M')} UTC", "",
          "Automatisch gesammelt (Reddit, Kick, YouTube-Feeds, Gaming-News), ohne Login/Credits. NEW = beim letzten Lauf noch nicht dabei.", ""]
+    nn = [x for x in items if x["src"] == "news"]
+    if nn:
+        L += ["## GTA-6-News (letzte 30 h, Gaming-Newsseiten)", "Mehrere Quellen = große Geschichte. Für Shorts nur Fakten verwenden, die im verlinkten Artikel stehen; Leaks/Gerüchte als solche benennen.", ""]
+        L += [f"- {new(x)}{'[' + str(len(x['sites'])) + ' Quellen] ' if len(x['sites']) > 1 else ''}{cut(x['title'], 120)} – {', '.join(x['sites'][:4])}, "
+              f"vor {x['age_h']:.0f} h → {x['page']}" for x in nn] + [""]
     for area, head in (("irl", "IRL / Streamer"), ("gaming", "Gaming / GTA 6")):
         rd = [x for x in items if x["src"] == "reddit" and x["area"] == area]
         for sub in dict.fromkeys(x["sub"] for x in rd):
@@ -259,11 +264,6 @@ def render(items, errors, seen):
         L += ["## Kick – meistgesehene Clips (24–36 h)", "W = beobachteter Kampagnen-Streamer. `video` in latest.json ist direkt als Clipfabrik-`source` nutzbar.", ""]
         L += [f"- {new(x)}{'W ' if x.get('watched') else ''}{x['channel']}: „{cut(x['title'], 60)}“ – {x['views']} Views, {x['dur']} s, "
               f"{x['category']}{', 18+' if x['mature'] else ''} → {x['page']}" for x in kk] + [""]
-    nn = [x for x in items if x["src"] == "news"]
-    if nn:
-        L += ["## GTA-6-News (letzte 30 h, Gaming-Newsseiten)", "Mehrere Quellen = große Geschichte. Für Shorts nur Fakten verwenden, die im verlinkten Artikel stehen; Leaks/Gerüchte als solche benennen.", ""]
-        L += [f"- {new(x)}{'[' + str(len(x['sites'])) + ' Quellen] ' if len(x['sites']) > 1 else ''}{cut(x['title'], 120)} – {', '.join(x['sites'][:4])}, "
-              f"vor {x['age_h']:.0f} h → {x['page']}" for x in nn] + [""]
     yy = [x for x in items if x["src"] == "youtube"]
     if yy:
         L += ["## YouTube – beobachtete Kanäle (Views pro Stunde)", ""]
