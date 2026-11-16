@@ -1,0 +1,91 @@
+{
+ "bb58263f44 ffmpeg version 6.1.1-3ubuntu5 Copyright ": {
+  "framed": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "framed",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "8a13f1b58916cd94"
+  },
+  "full": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "full",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "585cb9626f8b9c70"
+  },
+  "full_track": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "full",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "76352876c8a438fb"
+  },
+  "native": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "native",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "44a221a69b5dbe9d"
+  },
+  "native_captions": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "native",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "14b19623d8fca56b"
+  },
+  "native_hook": {
+   "adur": 5.013,
+   "audio": "428426d180549baf",
+   "frames": 125,
+   "layout": "native",
+   "sync_ok": true,
+   "vdur": 5.0,
+   "video": "94015d02ded0c355"
+  },
+  "native_special": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "native",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "ce58d4c4375e4d0b"
+  },
+  "no_audio_source": {
+   "audio": null,
+   "frames": 100,
+   "layout": "native",
+   "video": "44a221a69b5dbe9d"
+  },
+  "split": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "split",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "d10f0929bbed8916"
+  },
+  "split_auto_nocam": {
+   "adur": 4.011,
+   "audio": "82549f3eaf03ec1d",
+   "frames": 100,
+   "layout": "native",
+   "sync_ok": true,
+   "vdur": 4.0,
+   "video": "44a221a69b5dbe9d"
+  }
+ }
+}
