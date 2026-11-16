@@ -1,205 +1,705 @@
 [
  {
-  "channel": "summit1g",
-  "error": "no GTA clip in range"
- },
- {
-  "channel": "sodapoppin",
-  "error": "no GTA clip in range"
- },
- {
-  "channel": "buddha",
+  "channel": "mizkif",
   "error": "no clips"
+ },
+ {
+  "channel": "hasanabi",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "esfandtv",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "toast",
+  "error": "no clips"
+ },
+ {
+  "channel": "ludwig",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "cyr",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "tarik",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "nickmercs",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "timthetatman",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "shroud",
+  "error": "no GTA clip in range"
+ },
+ {
+  "channel": "sypherpk",
+  "error": "no GTA clip in range"
  },
  {
   "channel": "tfue",
   "error": "no GTA clip in range"
  },
  {
-  "channel": "ramee",
-  "error": "no clips"
- },
- {
-  "channel": "kyle",
-  "error": "no GTA clip in range"
- },
- {
-  "channel": "xqc",
-  "url": "https://www.twitch.tv/xqc/clip/EagerMagnificentOpossumRaccAttack-Z_1cH-jBbf9w3u7C",
-  "title": "Splat",
-  "game": "Grand Theft Auto V",
-  "size": "1280x720",
-  "seconds": 14.0,
-  "v2": [
-   0.011,
-   0.181,
-   0.197,
-   0.233
-  ],
-  "v2_mode": "border",
-  "v1": [
-   0.011,
-   0.181,
-   0.197,
-   0.233
-  ],
-  "v1_mode": "border",
-  "clusters": [
-   {
-    "cx": 113.25,
-    "cy": 152.5,
-    "w": 58.5,
-    "cov": 1.0,
-    "n": 34,
-    "mot": 7.927,
-    "side": true,
-    "ok": true
-   },
-   {
-    "cx": 630.5,
-    "cy": 60.5,
-    "w": 27.0,
-    "cov": 0.042,
-    "n": 1,
-    "mot": 51.165,
-    "side": true,
-    "ok": false
-   },
-   {
-    "cx": 201.0,
-    "cy": 413.0,
-    "w": 48.0,
-    "cov": 0.042,
-    "n": 1,
-    "mot": 30.52,
-    "side": true,
-    "ok": false
-   },
-   {
-    "cx": 734.5,
-    "cy": 59.5,
-    "w": 59.0,
-    "cov": 0.042,
-    "n": 1,
-    "mot": 34.658,
-    "side": true,
-    "ok": false
-   }
-  ],
-  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_0.jpg"
- },
- {
-  "channel": "xqc",
-  "url": "https://www.twitch.tv/xqc/clip/ResourcefulBlazingKumquatPraiseIt-dbnC1oRVhIZpi3Bp",
-  "title": "Raia the Brick Boi",
-  "game": "Grand Theft Auto V",
-  "size": "1280x720",
-  "seconds": 58.2,
-  "v2": [
-   0.019,
-   0.322,
-   0.172,
-   0.203
-  ],
-  "v2_mode": "border",
-  "v1": [
-   0.019,
-   0.322,
-   0.172,
-   0.203
-  ],
-  "v1_mode": "border",
-  "clusters": [
-   {
-    "cx": 120.5,
-    "cy": 222.75,
-    "w": 51.5,
-    "cov": 0.875,
-    "n": 34,
-    "mot": 22.596,
-    "side": true,
-    "ok": true
-   },
-   {
-    "cx": 64.75,
-    "cy": 496.25,
-    "w": 35.5,
-    "cov": 0.083,
-    "n": 4,
-    "mot": 6.019,
-    "side": true,
-    "ok": false
-   }
-  ],
-  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/xqc_1.jpg"
- },
- {
-  "channel": "lirik",
-  "url": "https://www.twitch.tv/lirik/clip/CrypticCredulousGrasshopperPRChase-KmDC4QUwZSpGPmMl",
-  "title": "GTA Online / Rob Run",
+  "channel": "lacy",
+  "url": "https://www.twitch.tv/lacy/clip/CuriousTolerantDeerTBCheesePull-ovNl9Etr9PaO9O3p",
+  "title": "Dan Clancy told Lacy that Twitch already fixed the AD Rev for GTA 6 an",
   "game": "Just Chatting",
   "size": "1280x720",
-  "seconds": 58.3,
-  "v2": null,
-  "v2_mode": "no side face",
-  "v1": null,
-  "v1_mode": "static face (0.7)",
+  "seconds": 60.0,
+  "v2": [
+   0.444,
+   0.208,
+   0.419,
+   0.497
+  ],
+  "v2_mode": "face",
+  "v1": [
+   0.438,
+   0.208,
+   0.419,
+   0.497
+  ],
+  "v1_mode": "face",
   "clusters": [
    {
-    "cx": 501.0,
-    "cy": 205.0,
-    "w": 46.0,
-    "cov": 0.125,
-    "n": 3,
-    "mot": 0.996,
+    "cx": 628.5,
+    "cy": 211.5,
+    "w": 121.0,
+    "cov": 0.917,
+    "n": 31,
+    "mot": 50.699,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 415.5,
+    "cy": 56.5,
+    "w": 84.0,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 42.539,
     "side": false,
     "ok": false
    },
    {
-    "cx": 21.0,
-    "cy": 495.0,
-    "w": 28.0,
-    "cov": 0.125,
-    "n": 3,
-    "mot": 0.0,
+    "cx": 320.5,
+    "cy": 168.5,
+    "w": 56.0,
+    "cov": 0.292,
+    "n": 7,
+    "mot": 39.063,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 720.75,
+    "cy": 207.25,
+    "w": 154.5,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 33.565,
     "side": true,
     "ok": false
    },
    {
-    "cx": 810.5,
-    "cy": 74.5,
-    "w": 65.0,
-    "cov": 0.875,
-    "n": 21,
-    "mot": 0.743,
-    "side": true,
-    "ok": false
-   },
-   {
-    "cx": 221.0,
-    "cy": 191.0,
-    "w": 64.0,
+    "cx": 400.5,
+    "cy": 205.5,
+    "w": 91.0,
     "cov": 0.042,
     "n": 1,
-    "mot": 2.441,
+    "mot": 56.006,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 416.0,
+    "cy": 336.0,
+    "w": 116.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 77.528,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 645.0,
+    "cy": 317.0,
+    "w": 26.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 24.794,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 120.0,
+    "cy": 387.0,
+    "w": 60.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 43.973,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 424.0,
+    "cy": 506.0,
+    "w": 56.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 63.982,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 558.5,
+    "cy": 187.5,
+    "w": 107.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 23.76,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 547.0,
+    "cy": 237.0,
+    "w": 114.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 19.879,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 487.5,
+    "cy": 461.5,
+    "w": 47.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 25.418,
+    "side": false,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/lacy_0.jpg"
+ },
+ {
+  "channel": "kaicenat",
+  "url": "https://www.twitch.tv/kaicenat/clip/FlaccidFrigidKoalaPipeHype-dkDLOpffddV2sebF",
+  "title": "где жрачка",
+  "game": "Grand Theft Auto V",
+  "size": "1280x720",
+  "seconds": 10.9,
+  "v2": null,
+  "v2_mode": "no side face",
+  "v1": null,
+  "v1_mode": null,
+  "clusters": [
+   {
+    "cx": 453.5,
+    "cy": 153.5,
+    "w": 71.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 54.773,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 691.0,
+    "cy": 421.0,
+    "w": 116.0,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 55.876,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 832.25,
+    "cy": 93.75,
+    "w": 47.5,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 42.646,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 593.5,
+    "cy": 355.5,
+    "w": 181.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 51.286,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 613.0,
+    "cy": 301.0,
+    "w": 152.0,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 58.579,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 839.0,
+    "cy": 480.0,
+    "w": 82.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 32.059,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 678.0,
+    "cy": 509.0,
+    "w": 42.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 65.49,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 627.5,
+    "cy": 226.5,
+    "w": 127.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 63.126,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 754.0,
+    "cy": 470.0,
+    "w": 42.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 35.4,
     "side": true,
     "ok": false
    }
   ],
-  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/lirik_0.jpg"
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/kaicenat_0.jpg"
  },
  {
-  "channel": "lirik",
-  "url": "https://www.twitch.tv/lirik/clip/FlirtyRelentlessArugulaPJSalt-idI_PHtT42qiCZ_J",
-  "title": "More Rob Run / GTA Discussion",
-  "game": "Just Chatting",
+  "channel": "kaicenat",
+  "url": "https://www.twitch.tv/kaicenat/clip/PuzzledLongAntelopeDxAbomb-G8QCjK1905yV3xMQ",
+  "title": "Funny gta 5",
+  "game": "Grand Theft Auto V",
   "size": "1280x720",
-  "seconds": 60.0,
-  "v2": null,
-  "v2_mode": null,
+  "seconds": 10.8,
+  "v2": [
+   0.0,
+   0.253,
+   0.219,
+   0.258
+  ],
+  "v2_mode": "face",
+  "v1": [
+   0.3,
+   0.033,
+   0.419,
+   0.497
+  ],
+  "v1_mode": "face",
+  "clusters": [
+   {
+    "cx": 403.0,
+    "cy": 286.0,
+    "w": 72.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 20.486,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 85.5,
+    "cy": 199.0,
+    "w": 27.0,
+    "cov": 0.375,
+    "n": 10,
+    "mot": 17.233,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 508.75,
+    "cy": 109.0,
+    "w": 95.0,
+    "cov": 0.292,
+    "n": 8,
+    "mot": 34.031,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 578.0,
+    "cy": 145.0,
+    "w": 48.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 20.316,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 413.5,
+    "cy": 133.5,
+    "w": 105.0,
+    "cov": 0.208,
+    "n": 5,
+    "mot": 34.055,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 613.0,
+    "cy": 260.0,
+    "w": 140.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 19.183,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 593.5,
+    "cy": 489.5,
+    "w": 61.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 20.495,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 726.0,
+    "cy": 36.0,
+    "w": 58.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 20.316,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 679.5,
+    "cy": 114.5,
+    "w": 48.0,
+    "cov": 0.167,
+    "n": 5,
+    "mot": 20.212,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 711.0,
+    "cy": 203.0,
+    "w": 56.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 25.047,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 154.5,
+    "cy": 306.5,
+    "w": 61.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 9.647,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 302.5,
+    "cy": 145.5,
+    "w": 135.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 35.747,
+    "side": true,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/kaicenat_1.jpg"
+ },
+ {
+  "channel": "sykkuno",
+  "url": "https://www.twitch.tv/sykkuno/clip/HealthyGlamorousPancakeOhMyDog-t8R-vnUpZYgzm8Jz",
+  "title": "Yuno bought Catherine a new car",
+  "game": "Grand Theft Auto V",
+  "size": "1280x720",
+  "seconds": 43.2,
+  "v2": [
+   0.58,
+   0.0,
+   0.419,
+   0.497
+  ],
+  "v2_mode": "face",
   "v1": null,
   "v1_mode": null,
-  "clusters": [],
-  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/lirik_1.jpg"
+  "clusters": [
+   {
+    "cx": 66.75,
+    "cy": 143.25,
+    "w": 53.5,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 8.531,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 883.25,
+    "cy": 82.75,
+    "w": 115.5,
+    "cov": 0.5,
+    "n": 12,
+    "mot": 12.457,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 647.75,
+    "cy": 135.25,
+    "w": 32.5,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 31.521,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 631.5,
+    "cy": 261.5,
+    "w": 73.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 6.048,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 502.0,
+    "cy": 133.0,
+    "w": 41.0,
+    "cov": 0.125,
+    "n": 3,
+    "mot": 31.04,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 417.5,
+    "cy": 131.5,
+    "w": 41.0,
+    "cov": 0.042,
+    "n": 3,
+    "mot": 30.045,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 102.5,
+    "cy": 204.5,
+    "w": 53.0,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 14.971,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 791.5,
+    "cy": 113.5,
+    "w": 50.0,
+    "cov": 0.083,
+    "n": 2,
+    "mot": 12.676,
+    "side": true,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/sykkuno_0.jpg"
+ },
+ {
+  "channel": "sykkuno",
+  "url": "https://www.twitch.tv/sykkuno/clip/AgitatedPoisedAirGuitarKippa-W2t_DELpJ7QfuMhP",
+  "title": "tai ming",
+  "game": "Grand Theft Auto V",
+  "size": "1280x720",
+  "seconds": 26.8,
+  "v2": [
+   0.58,
+   0.0,
+   0.419,
+   0.497
+  ],
+  "v2_mode": "face",
+  "v1": null,
+  "v1_mode": null,
+  "clusters": [
+   {
+    "cx": 884.25,
+    "cy": 90.0,
+    "w": 112.5,
+    "cov": 0.25,
+    "n": 6,
+    "mot": 24.223,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 287.5,
+    "cy": 94.5,
+    "w": 123.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 43.343,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 475.75,
+    "cy": 254.75,
+    "w": 59.0,
+    "cov": 0.083,
+    "n": 4,
+    "mot": 39.899,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 480.0,
+    "cy": 371.0,
+    "w": 84.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 45.053,
+    "side": false,
+    "ok": false
+   },
+   {
+    "cx": 128.0,
+    "cy": 89.0,
+    "w": 58.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 35.11,
+    "side": true,
+    "ok": false
+   },
+   {
+    "cx": 489.5,
+    "cy": 443.5,
+    "w": 143.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 60.791,
+    "side": false,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/sykkuno_1.jpg"
+ },
+ {
+  "channel": "valkyrae",
+  "url": "https://www.twitch.tv/valkyrae/clip/AlertScrumptiousTomatoStrawBeary-MRKpH6lODMM4082c",
+  "title": "I need a favor",
+  "game": "Grand Theft Auto V",
+  "size": "1280x720",
+  "seconds": 57.9,
+  "v2": [
+   0.041,
+   0.233,
+   0.134,
+   0.158
+  ],
+  "v2_mode": "border",
+  "v1": [
+   0.041,
+   0.233,
+   0.134,
+   0.158
+  ],
+  "v1_mode": "border",
+  "clusters": [
+   {
+    "cx": 85.75,
+    "cy": 164.5,
+    "w": 40.0,
+    "cov": 1.0,
+    "n": 48,
+    "mot": 4.332,
+    "side": true,
+    "ok": true
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/valkyrae_0.jpg"
+ },
+ {
+  "channel": "valkyrae",
+  "url": "https://www.twitch.tv/valkyrae/clip/TriumphantBreakableOkapiSpicyBoy-zxaBDotucQ1cJ0G6",
+  "title": "Sneaky Calling Ray Out",
+  "game": "Grand Theft Auto V",
+  "size": "1280x720",
+  "seconds": 60.0,
+  "v2": [
+   0.0,
+   0.211,
+   0.177,
+   0.208
+  ],
+  "v2_mode": "border",
+  "v1": [
+   0.0,
+   0.211,
+   0.177,
+   0.208
+  ],
+  "v1_mode": "border",
+  "clusters": [
+   {
+    "cx": 87.0,
+    "cy": 166.0,
+    "w": 41.0,
+    "cov": 1.0,
+    "n": 48,
+    "mot": 6.59,
+    "side": true,
+    "ok": true
+   },
+   {
+    "cx": 279.0,
+    "cy": 133.0,
+    "w": 58.0,
+    "cov": 0.042,
+    "n": 1,
+    "mot": 0.776,
+    "side": true,
+    "ok": false
+   }
+  ],
+  "sheet": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/camtest/valkyrae_1.jpg"
  }
 ]
