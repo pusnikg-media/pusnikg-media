@@ -24,7 +24,7 @@ RULES = [  # (Muster in den Folgezeilen, Ergebnis, Grund)
     (re.compile(r"WARN clip failed:.*almost no speech"), "verworfen", "kaum Sprache im Schnitt"),
     (re.compile(r"WARN clip failed:.*gap"), "verworfen", "Aufnahmelücke"),
     (re.compile(r"WARN clip failed:"), "verworfen", "Fehler beim Schneiden"),
-    (re.compile(r"^PUBLISHED|WARN push failed"), "clip", "Clip erstellt"),
+    (re.compile(r"PUBLISHED|WARN push failed"), "clip", "Clip erstellt"),
 ]
 CHAT_RE = re.compile(r"chat burst x([\d.]+): moment (\d+) s before")
 

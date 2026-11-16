@@ -17,7 +17,7 @@ Geprüft: Analyst, Stratege, Deal-Radar, Reel-Scout gegen Inhaltsregeln, Zeiten/
 - Deal-Radar: Suche „unter 30 €“ und Filter „≤ 15 €“ widersprachen sich → 15 €.
 - Stratege: kein eindeutiger Fehler.
 - `plan/prompts/README.md`: Für den Produzenten standen drei verschiedene Einspieltermine (Tabelle: nach Di 07:47 / Fußnote: nach Fr 20.11. / Fable-Nacht-Nachtrag: vor Di 07:47). Jetzt gilt überall **nach dem Lauf Di 17.11. 07:47, vor Mi 18.11. 07:47**. Das passt zu Stevens Plan „ab Di 07:47“. Der Launch-Short für den 19.11. entsteht also noch mit dem alten Prompt, abgesichert durch den Release-Check im Runbook bis 11:30.
-- **Neu: `plan/prompts/warzone-erinnerungen-DEF.md`** mit fertigen Ersatztexten (Content Rewards, Issue abhaken, Schicht-Hinweis, postIds unverändert). **D bis Di 17.11. 12:00 tauschen.**
+- **Neu: `plan/prompts/warzone-erinnerungen-DEF.md`** mit fertigen Ersatztexten (Content Rewards, Issue abhaken, Schicht-Hinweis, postIds unverändert). **D und E bis Di 17.11. 12:00, F bis Mi 18.11. 12:00 tauschen** (alle feuern in der Schicht).
 **Offene Fragen (Steven):** (1) Deal-Radar darf bis 15 € melden, obwohl das Budget 0 € ist: so lassen? (2) Deal-Radar mit 4 Suchen pro Tag ist für das Pro-Abo viel: auf 2–3 Tage pro Woche begrenzen? (3) Die drei Entscheidungen aus `plan/prompts/README.md` sind weiter offen (Dauer-Freigabe, Zusatz-Shorts nach 19:30, Deal-Radar-Gedächtnis).
 **Nebenbefund Produzent (nicht geändert, war schon gegengelesen):** Schritt 8 wartet höchstens 50 Min auf den Render („Action schaut alle 15 Min“). Gemessen kommt `render` aber nur etwa 1×/h, also läuft der Agent bei einem News-Short meist ins Leere und nimmt den Vorrat. Das ist sicher, aber das News-Short fällt aus. Mehr dazu in Aufgabe 6.
 
@@ -27,6 +27,7 @@ Geprüft: Analyst, Stratege, Deal-Radar, Reel-Scout gegen Inhaltsregeln, Zeiten/
 - **`probe()` bei `r_frame_rate 0/0`:** Vorher Absturz mit „float division by zero“. Jetzt `avg_frame_rate`, sonst 30 fps. Den normalen ffprobe-Aufruf habe ich nicht geändert, nur in diesem Fall kommt eine Zusatzabfrage.
 - **Tests:** 6 neue in `tests/test_clipfabrik.py`; die 5 Verhaltens-Tests sind mit dem alten Code rot. Gesamt lokal **279 grün, 0 übersprungen** (OpenCV installiert).
 - **`tests/clip_regression.py compare VORHER`: GLEICH (alle Hashes identisch).** Bestehende Clips und Layouts sind unverändert, `job_sig` ist unberührt, nichts rendert neu.
+- **Nachbesserung (Advisor):** Der erste Hochformat-Fix hätte fast quadratische Quellen in `framed` verzerrt (1000×1010 → 1080×1200). Er greift jetzt nur, wenn die Quelle höher ist als der Kasten. Neuer Test: crop- und scale-Seitenverhältnis gleich für 16:9, 9:16, 4:5 und fast quadratisch, je native und framed (8 Fälle). Regression weiter GLEICH. Sichtprüfung des Emoji-Kastens (👍🏽 🇩🇪 Familie) gemacht: jeweils ein Zeichen.
 - Nicht angefasst: Livewatch-Fallbackschnitt (`pk-16..pk+8`) an Satzgrenzen (gehört der Livewatch-Session).
 
 ## 4. Livewatch offline abgesichert – erledigt (`livewatch.py` unverändert)
@@ -35,7 +36,7 @@ Geprüft: Analyst, Stratege, Deal-Radar, Reel-Scout gegen Inhaltsregeln, Zeiten/
   - Watchdog: Hängt ffmpeg, wird es nach `stall` beendet und mit der Stücknummer der Stream-Zeit neu gestartet. Nach `max_restarts` gibt der Watchdog auf. Endet ffmpeg, startet er sofort neu. Ist der Stream beim Neustart offline, endet die Aufnahme.
   - `loop()` Ende-zu-Ende auf einer synthetischen 6-Min-Aufnahme: Der laute Moment bei 250 s wird genau ein Kandidat. Liegt er in einer Werbepause, entsteht kein Clip. Fehlt ein Stück (Recorder-Neustart), bleibt der Moment bei ~250 s (Zeit bleibt treu).
 - **Befunde (nicht geändert, nur Statistik):** (1) Derselbe Werbe-Moment wird in jeder Folgeminute erneut gezählt (`skipped ad` 2 statt 1). (2) Ein Stück, das länger als 60 s ist (Keyframe-Abstand > 60 s), verschiebt die Zeitachse um den Überhang. Bei Twitch (Keyframe 2 s) ist das unkritisch. (3) Werbe-Erkennung setzt voraus, dass `live_url` die **Media-Playlist** liefert, denn eine Master-Playlist trägt keine Werbe-Marker. Das ist offline nicht prüfbar; am Donnerstag im Log nach „ad break started“ schauen.
-- **Messskript `tests/livewatch_messen.py`:** liest das Action-Log eines livewatch-Laufs und listet jeden Kandidaten mit Minute, Position, Art (chat/laut), hype, Chat-Faktor, Ergebnis und Grund (Aufwärmzeit, unter Schwelle, ohne Chat-Bestätigung, Werbepause, Alert-Kette, zu wenig Sprache, Abstand/Limit, Clip). Mit `bewertung.json` (`{"kanal:pos": true}` = postbar) kommt die **Trefferquote je Art** dazu. Damit wird Donnerstag messbar: Kandidaten, Clips, postbar. 2 Tests.
+- **Messskript `tests/livewatch_messen.py`:** liest das Action-Log eines livewatch-Laufs und listet jeden Kandidaten mit Minute, Position, Art (chat/laut), hype, Chat-Faktor, Ergebnis und Grund (Aufwärmzeit, unter Schwelle, ohne Chat-Bestätigung, Werbepause, Alert-Kette, zu wenig Sprache, Abstand/Limit, Clip). Mit `bewertung.json` (`{"kanal:pos": true}` = postbar) kommt die **Trefferquote je Art** dazu. Damit wird Donnerstag messbar: Kandidaten, Clips, postbar. 2 Tests. **Grenzen:** nur an einem selbst geschriebenen Log und am synthetischen `loop()`-Log geprüft, nicht an einem echten Action-Log. „Abstand/Limit“ und „ohne Chat-Bestätigung“ leitet das Skript ab, sie werden nicht geloggt.
 - **Vorschlag Kick ohne Chat-Signal (nicht umgesetzt):**
   1. **Zuschauer-Clips als Signal:** Kick listet öffentlich die neuesten Clips eines Kanals (der Trendscout liest Kick-Clips schon). Erstellt ein Zuschauer einen Clip, wurde ein Moment von einem Menschen ausgewählt. Den Kanal alle 2–3 Min abfragen; jeder neue Clip wird Kandidat am Clip-Startpunkt. Das ist das stärkste Ersatzsignal.
   2. **Kick-Chat lesen:** Der Kick-Chat ist öffentlich über einen Websocket (Pusher) lesbar, ohne Login. Erst prüfen, ob das ohne Anmeldung und regelkonform geht; dann wäre es dasselbe Chat-Signal wie bei Twitch.
@@ -53,7 +54,7 @@ Vorbeugung: Di und Mi morgens die News-Zeile ansehen, denn der alte Produzent-Pr
 `plan/vorschlag-crons-2026-11-16.md`. Kern: Die Agenten starten `render`/`clipfabrik` nach einem Drive-Auftrag selbst per `workflow_dispatch` (GitHub-Konnektor, 0 €); Livewatch bekommt nach dem Launch einen Push-Auslöser; der Vorlauf ≥ 4 h bleibt. Nichts umgesetzt.
 
 ## Abschluss (Stand 17.11. ca. 01:00 Berlin)
-**Erledigt:** 2, 3, 4, 5, 6. **Blockiert:** 1 (Filter; stattdessen ein Verzeichnis). Alles liegt auf Branch `claude/peaceful-pasteur-7p6hd7`, PR #16 (Entwurf). Lokal laufen 289 Tests grün, 0 übersprungen; Action `tests` auf dem Branch grün. Nichts gepostet, keine Credits, kein Trigger geändert.
+**Erledigt:** 2, 3, 4, 5, 6. **Blockiert:** 1 (Filter; stattdessen ein Verzeichnis). Alles liegt auf Branch `claude/peaceful-pasteur-7p6hd7`, PR #16 (Entwurf). Lokal laufen 297 Tests grün, 0 übersprungen; Action `tests` auf dem Branch grün. Nichts gepostet, keine Credits, kein Trigger geändert.
 
 **Offen:**
 - Alte Prompt-Texte nicht im Repo (Filter, und sie enthalten den Nachnamen).
@@ -63,7 +64,7 @@ Vorbeugung: Di und Mi morgens die News-Zeile ansehen, denn der alte Produzent-Pr
 
 **Was Steven selbst tun muss (nach Frist):**
 1. **Vor jedem Prompt-Tausch** den alten Text in der App kopieren und in Notizen sichern. Produzent erst **nach** dem Lauf Di 07:47, vor Mi 07:47.
-2. **Warzone D bis Di 17.11. 12:00** auf den Text aus `plan/prompts/warzone-erinnerungen-DEF.md` umstellen (E bis Di 19:00, F bis Mi 19:00), oder „Whop“ beim Lesen als „Content Rewards“ verstehen.
+2. **Warzone D und E bis Di 17.11. 12:00, F bis Mi 18.11. 12:00** auf die Texte aus `plan/prompts/warzone-erinnerungen-DEF.md` umstellen, oder „Whop“ beim Lesen als „Content Rewards“ verstehen.
 3. **Di und Mi morgens** die News-Zeile in `trends/latest.md` ansehen (Release-Verschiebung?), **Do bis 11:30** das Runbook inkl. Pre-Mortem.
 4. Entscheiden: Dauer-Freigabe, Zusatz-Shorts nach 19:30, Deal-Radar (Gedächtnis, 15-€-Grenze, Suchmenge), Agenten starten Actions selbst (Cron-Vorschlag Punkt 1).
 5. PR #16 nach `main` übernehmen lassen (im Chat „PR 16 mergen“). Erst dann gelten die korrigierten Prompts unter der main-Adresse; bis dahin stehen sie auf dem Branch.

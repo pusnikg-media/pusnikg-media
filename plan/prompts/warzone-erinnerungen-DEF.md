@@ -2,7 +2,7 @@
 
 **Fehler im alten Text:** „jetzt in Whop einreichen“. Richtig ist **Content Rewards** (Whop ist nur für die Auszahlung). Außerdem fehlt „im Issue abhaken“, und „jetzt … (30 Min)“ passt nicht, weil alle drei in Stevens Spätschicht fallen (12:00–21:30 nicht erreichbar). postId und Uhrzeit bleiben gleich.
 
-**Einspielen (iPhone):** Claude-App → Geplante Aufgaben → Aufgabe öffnen → Text komplett ersetzen → Speichern. Zeit nicht ändern. **Frist: D bis Di 17.11. 12:00** (feuert 15:03), E bis Di 19:00, F bis Mi 18.11. 19:00. Wer keine Zeit hat: Erinnerung einfach so lassen und beim Lesen „Whop“ als „Content Rewards“ verstehen.
+**Einspielen (iPhone):** Claude-App → Geplante Aufgaben → Aufgabe öffnen → Text komplett ersetzen → Speichern. Zeit nicht ändern. **Frist (vor deiner Schicht): D und E bis Di 17.11. 12:00, F bis Mi 18.11. 12:00.** Wer keine Zeit hat: Erinnerung einfach so lassen und beim Lesen „Whop“ als „Content Rewards“ verstehen.
 
 ## D – `trig_01Xp6RWdqJG9hp6A97XNt68e` (Di 17.11. 15:03)
 ~~~~

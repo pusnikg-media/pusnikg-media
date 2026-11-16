@@ -208,3 +208,20 @@ def test_probe_with_0_over_0_uses_avg_frame_rate(cf, monkeypatch):
     monkeypatch.setattr(cf, "run", fake_run)
     p = cf.probe("x.mp4")
     assert p["fps"] == 25.0 and p["w"] == 1280 and p["audio"] and len(calls) == 3
+
+
+@pytest.mark.parametrize("layout", ["native", "framed"])
+@pytest.mark.parametrize("size", ["1280x720", "720x1280", "1080x1350", "1000x1010"])
+def test_crop_and_scale_keep_the_aspect_ratio(cf, tmp_path, monkeypatch, layout, size):
+    """Kein Verzerren: Seitenverhältnis von crop (Quelle) und scale (Ziel) im Vordergrund gleich (±1 %), für Quer-, Hoch-, 4:5- und fast quadratische Quellen."""
+    import re, subprocess
+    src = str(tmp_path / "s.mp4")
+    r = subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", f"testsrc2=size={size}:rate=25:duration=6", "-f", "lavfi", "-i",
+                        "sine=frequency=440:duration=6", "-c:v", "libx264", "-preset", "ultrafast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", src],
+                       capture_output=True, text=True); assert r.returncode == 0, r.stderr
+    calls = []; orig = cf.run
+    monkeypatch.setattr(cf, "run", lambda cmd, *a, **k: (calls.append(" ".join(map(str, cmd))), orig(cmd, *a, **k))[1])
+    render(cf, src, tmp_path, layout=layout, **({"caption": CAPTION} if layout == "native" else {}))
+    fc = next(c for c in calls if "[f0]crop=" in c)
+    cw, ch, sw, sh = map(int, re.search(r"\[f0\]crop=(\d+):(\d+)[^,]*,scale=(\d+):(\d+)", fc).groups())
+    assert abs((cw / ch) / (sw / sh) - 1) < 0.01, (size, layout, cw, ch, sw, sh)

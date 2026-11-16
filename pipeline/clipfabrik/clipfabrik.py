@@ -840,7 +840,8 @@ def render_clip(job, c, src, p, words, out, tmp):
         cw = min(p["w"], int(p["h"] * W / fg_h / 2) * 2); ch = min(p["h"], int(cw * fg_h / W / 2) * 2)  # also fits portrait sources
         mv = H - (fg_y + fg_h) + 130
     fg_w = W
-    if (native or layout == "framed") and p["h"] > p["w"] and not c.get("wide"):
+    if (native or layout == "framed") and p["h"] > p["w"] and p["h"] * W > p["w"] * fg_h and not c.get("wide"):
+        # only when the source is taller than the box (else the old centre crop is distortion-free; nearly square sources stay as before)
         # portrait source (phone video, 9:16 clip): show the WHOLE picture, narrower and centred, instead of cropping the middle
         # band out of it (review 16.11.: native promised "nothing cropped"). Landscape sources keep fg_w = W -> identical output.
         fg_w = min(W, int(fg_h * p["w"] / p["h"] / 2) * 2); cw = p["w"] // 2 * 2; ch = p["h"] // 2 * 2
