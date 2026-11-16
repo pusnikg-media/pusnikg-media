@@ -1,0 +1,42 @@
+# Trendscout: what is viral right now (Reddit top of day, Kick top clips, YouTube channel feeds) -> trends/latest.md + latest.json.
+# No login, no API key, no vidIQ credits, no Claude quota. Agents read trends/latest.md. Config: plan/trendscout.json
+name: trendscout
+on:
+  push:
+    branches: [main]
+    paths: ["plan/trendscout.json", "pipeline/trendscout/**", ".github/workflows/trendscout.yml"]
+  schedule:
+    - cron: "43 4,10,15,19 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: trendscout
+  cancel-in-progress: false
+jobs:
+  scout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            plan
+            pipeline/trendscout
+            trends
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect and publish
+        run: |
+          pip install -q curl_cffi
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          python3 pipeline/trendscout/trendscout.py selftest
+          for i in 1 2 3 4; do
+            git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+            python3 pipeline/trendscout/trendscout.py run . || exit 0
+            git add -A trends; git diff --cached --quiet && break
+            git commit -q -m "trendscout: update" && git push -q origin HEAD:main && { echo PUBLISHED; break; }
+            sleep 8
+          done

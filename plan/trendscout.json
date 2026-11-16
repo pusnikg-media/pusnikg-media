@@ -1,0 +1,11 @@
+{
+ "note": "Trendscout-Quellen. reddit: Top des Tages je Subreddit. kick.channels: Slugs der Streamer mit laufender Kampagne (z. B. \"adinross\"). youtube: [{\"id\": \"UC...\", \"name\": \"...\", \"area\": \"gaming|irl\"}] fuer Vorbild-Kanaele. Ergebnis: trends/latest.md",
+ "reddit": [
+  {"sub": "LivestreamFail", "area": "irl", "top": 12},
+  {"sub": "GTA6", "area": "gaming", "top": 8},
+  {"sub": "GTA", "area": "gaming", "top": 5}
+ ],
+ "kick": {"channels": [], "per_channel": 4, "overall": 8, "min_views": 300},
+ "youtube": [],
+ "max_age_hours": 36
+}
