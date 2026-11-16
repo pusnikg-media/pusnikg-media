@@ -22,7 +22,7 @@
   "trendscout": 12,
   "kampagnen": 15,
   "render": 3,
-  "clipfabrik": 3,
+  "clipfabrik": 6,
   "reflab": 200
  },
  "einreichen_nach_minuten": 45,
@@ -47,7 +47,11 @@
    ],
    "konto": "Pusnik IRL",
    "bis": "2026-11-19",
-   "erwartet": 9
+   "erwartet": 9,
+   "plattformen": [
+    "youtube",
+    "tiktok"
+   ]
   },
   {
    "name": "COD Warzone Season 1",
@@ -57,7 +61,10 @@
    ],
    "konto": "Pusnik G",
    "bis": "2026-11-18",
-   "erwartet": 6
+   "erwartet": 6,
+   "plattformen": [
+    "tiktok"
+   ]
   },
   {
    "name": "JasonTheWeen",
@@ -67,7 +74,11 @@
    ],
    "konto": "Pusnik IRL",
    "bis": null,
-   "erwartet": null
+   "erwartet": null,
+   "plattformen": [
+    "youtube",
+    "tiktok"
+   ]
   }
  ],
  "postzeit_toleranz_min": 5,

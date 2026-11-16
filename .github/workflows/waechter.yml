@@ -34,6 +34,7 @@ jobs:
             /shorts/*.json
             /clips/*/result.json
             /stats/latest.json
+            /stats/alerts.md
             /trends/latest.json
             /campaigns/latest.json
             /waechter/
@@ -47,7 +48,7 @@ jobs:
             python3 waechter/waechter.py --root . --dry; exit 0
           fi
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
-          python3 waechter/waechter.py --root . | tee /home/runner/waechter.log
+          python3 waechter/waechter.py --root .   # Fehler (z. B. Issues) lassen den Lauf rot enden
           cp stats/alerts.md /home/runner/alerts.md
           for i in 1 2 3 4 5; do   # auf den neuesten main legen (viele Actions pushen)
             git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }

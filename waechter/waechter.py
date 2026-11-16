@@ -160,7 +160,7 @@ def check_kampagnen(root, cfg, now, st, blind):
             rend += sum(1 for c in r.get("clips", []) if c.get("ok") and r.get("phase") == "rendered")
         if rend < k["erwartet"]: out.append(P("kampagne", f"kampagne:{k['name']}:render", f"{k['name']}: nur {rend} von {k['erwartet']} geplanten Clips gerendert (clips/{'/, clips/'.join(k['clips'])}/)."))
         if k.get("bis") and today > k["bis"]:
-            for plat in ("youtube", "tiktok"):
+            for plat in k.get("plattformen", ["youtube", "tiktok"]):
                 if (k["konto"], plat) in blind: continue
                 live = sum(1 for p in (st or {}).get("posts", []) if p.get("campaign") == k["stats"] and p["platform"] == plat and p["account"] == k["konto"])
                 if live < k["erwartet"]: out.append(P("kampagne", f"kampagne:{k['name']}:{plat}", f"{k['name']}: Zeitraum vorbei (bis {k['bis']}), aber nur {live} von {k['erwartet']} Clips live auf {plat}."))
@@ -186,7 +186,7 @@ def evaluate(root, cfg, now, runs, repo_mb=None, fresh=lambda p: False):
 
 
 def markdown(probs, unsicher, now):
-    L = [f"# Alarme – Stand {local(now):%d.%m.%Y %H:%M} (Europe/Berlin)", "", "Vom Wächter (2× täglich, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.", ""]
+    L = [f"# Alarme – Stand {local(now):%d.%m.%Y %H:%M} (Europe/Berlin)", "", f"stand_utc: {now:%Y-%m-%dT%H:%M:%SZ}  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)", "", "Vom Wächter (2× täglich, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.", ""]
     if not probs: L += ["**Keine offenen Probleme.**", ""]
     for g in dict.fromkeys(p.group for p in probs):
         L += [f"## {TITEL.get(g, g)}"] + [f"- {p.text}" for p in probs if p.group == g] + [""]
@@ -235,7 +235,11 @@ class GH:
         for g, ps in groups.items():
             body = f"<!-- waechter-group: {g} -->\n" + "\n".join(f"- {p.text}" for p in ps) + "\n\n_Automatisch vom Wächter (stats/alerts.md). Schließt sich selbst, sobald das Problem weg ist._"
             if g in have:
-                if (have[g].get("body") or "").strip() != body.strip(): s.call("PATCH", f"/issues/{have[g]['number']}", {"body": body})
+                old = (have[g].get("body") or "").strip()
+                if old != body.strip():
+                    new = [l for l in body.splitlines() if l.startswith("- ") and l not in old.splitlines()]
+                    if new: s.call("POST", f"/issues/{have[g]['number']}/comments", {"body": "Neu dazugekommen:\n" + "\n".join(new)})   # Kommentar = Benachrichtigung
+                    s.call("PATCH", f"/issues/{have[g]['number']}", {"body": body})
             else: s.call("POST", "/issues", {"title": "Alarm: " + TITEL.get(g, g), "body": body, "labels": ["alarm"]})
         if sicher:                                                      # bei unsicherem Lauf NIE schließen (Daten fehlten)
             for g, i in have.items():

@@ -168,3 +168,30 @@ def test_fresh_jobs_get_grace_period(tmp_path):
     json.dump({"name": "new", "source": "https://x/y.mp4", "clips": [{"id": "A", "a": 0, "b": 20, "title": "x"}]}, open(r / "clipjobs/new.json", "w"))
     assert [p.key for p in W.evaluate(str(r), CFG, NOW, None)[0]] == ["clipjob:new:fehlt"]
     assert W.evaluate(str(r), CFG, NOW, None, fresh=lambda p: p == "clipjobs/new.json")[0] == []
+
+
+def test_campaign_platforms_respected(tmp_path):
+    """Warzone läuft nur auf TikTok: fehlendes YouTube darf nach Kampagnen-Ende keinen Alarm geben."""
+    r = repo(tmp_path, SHORT_OK + [post("tiktok", f"w{i}0000000", "2026-11-17T09:00:00Z", camp="Warzone S1") for i in range(6)])
+    os.makedirs(r / "clips" / "wzs1"); json.dump({"ok": True, "phase": "rendered", "clips": [{"id": str(i), "ok": True} for i in range(6)]}, open(r / "clips/wzs1/result.json", "w"))
+    cfg = dict(CFG, kampagnen=[k for k in REAL["kampagnen"] if k["name"].startswith("COD Warzone")])
+    late = dt.datetime(2026, 11, 20, 8, 0, tzinfo=dt.timezone.utc)
+    assert not [p for p in W.evaluate(str(r), cfg, late, None)[0] if p.group == "kampagne"]
+
+
+def test_real_config_platforms_match_stats_reality():
+    assert {k["name"]: k["plattformen"] for k in REAL["kampagnen"]}["COD Warzone Season 1"] == ["tiktok"]
+
+
+def test_issue_gets_comment_when_new_problem_joins_open_group():
+    g = FakeGH([{"number": 7, "body": "<!-- waechter-group: einreichen -->\n- alt eins\n\n_x_"}])
+    g.sync_issues([W.P("einreichen", "a", "alt eins"), W.P("einreichen", "b", "neu zwei")], sicher=True)
+    c = [b for m, p, b in g.log if m == "POST" and p.endswith("/7/comments")]
+    assert len(c) == 1 and "neu zwei" in c[0]["body"] and "alt eins" not in c[0]["body"]
+    g2 = FakeGH([{"number": 7, "body": "<!-- waechter-group: einreichen -->\n- alt eins\n- alt zwei\n\n_x_"}])
+    g2.sync_issues([W.P("einreichen", "a", "alt eins")], sicher=True)           # nur etwas weggefallen: still aktualisieren, kein Kommentar
+    assert not [1 for m, p, b in g2.log if m == "POST" and "comments" in p] and [1 for m, p, b in g2.log if m == "PATCH"]
+
+
+def test_markdown_has_machine_readable_stand():
+    assert "stand_utc: 2026-11-18T05:47:00Z" in W.markdown([], [], NOW)

@@ -65,6 +65,7 @@ Keine Rückfragen an Steven, wenn die Antwort hier steht. Nachrichten kurz, auf 
 - **Einreichen:** Nach jedem Einreichen bei Content Rewards die Post-URL in `plan/eingereicht.json` unter `eingereicht` eintragen (Clip nicht nötig: unter `nicht_noetig`). Sonst steht der Clip nach 45 Minuten im Alarm. Gilt für Kampagnen-Posts ab 16.11.
 - Neue Kampagne: zusätzlich zu `plan/stats.json` und `plan/kampagnen.json` eine Zeile in `plan/waechter.json` (`kampagnen`, mit `erwartet` = geplante Clip-Zahl und `bis` = letzter Posttag).
 - GitHub-Issues mit Label „alarm" legt der Wächter selbst an und schließt sie selbst. Nicht von Hand schließen.
+- **Wächter überwachen:** Steht in `stats/alerts.md` bei `stand_utc` ein Zeitpunkt, der älter als ca. 15 Stunden ist, ist der Wächter selbst ausgefallen – dann ist „Keine offenen Probleme" wertlos. Steven melden und Action `waechter` von Hand starten lassen.
 - Tests: Action `tests` läuft bei jedem Push. Rot = Push gilt als kaputt.
 
 ## GTA-6-Launch (Donnerstag 19.11.2026, Vorbereitung 16.11.)
