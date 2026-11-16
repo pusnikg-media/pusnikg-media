@@ -1,0 +1,5189 @@
+{
+"campaigns": {
+"33c3d5a9-84a9-40c8-b6e4-9904e4816339": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+18100.0
+]
+],
+"id": "33c3d5a9-84a9-40c8-b6e4-9904e4816339",
+"url": "https://contentrewards.com/c/campaigns/33c3d5a9-84a9-40c8-b6e4-9904e4816339",
+"title": "TJR $50,000 Clipping Campaign",
+"brand": "Reach",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.75,
+"rate_max": 0.75,
+"spent": 18071.0,
+"budget": 50000.0,
+"clippers": 297,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.75,
+"min_payout": 3.75,
+"max_payout": 750.0
+},
+"instagram": {
+"rate": 0.75,
+"min_payout": 3.75,
+"max_payout": 750.0
+},
+"youtube": {
+"rate": 0.75,
+"min_payout": 3.75,
+"max_payout": 750.0
+}
+},
+"description": "Get paid to clip TJR's content. ➡️",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Streamer",
+"files": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"737afda7-f1b5-4986-932a-fb681a603cea": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1600.0
+]
+],
+"id": "737afda7-f1b5-4986-932a-fb681a603cea",
+"url": "https://contentrewards.com/c/campaigns/737afda7-f1b5-4986-932a-fb681a603cea",
+"title": "PREME TAKES OVER AREA 29 | CLUB LIVESTREAM",
+"brand": "Preme Clipping Campaign",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1604.0,
+"budget": 2000.0,
+"clippers": 335,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 0.5,
+"max_payout": 500.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 0.5,
+"max_payout": 500.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 0.5,
+"max_payout": 500.0
+},
+"x": {
+"rate": 1.0,
+"min_payout": 0.5,
+"max_payout": 500.0
+}
+},
+"description": "Get paid to clip Preme's takeover of AREA 29 in Houston! Preme brought his livestream to one of Houston's hottest nightlife spots, and we're looking for clippers to turn the wildest, funniest, and most unexpected moments into viral content!",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Entertainment",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"0b178e3c-fbd3-4294-8ded-394e3da9c62f": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [],
+"id": "0b178e3c-fbd3-4294-8ded-394e3da9c62f",
+"url": "https://contentrewards.com/c/campaigns/0b178e3c-fbd3-4294-8ded-394e3da9c62f",
+"title": "$9,000 Jason Pool Campaign",
+"brand": "Reach",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": true,
+"rate": null,
+"rate_max": null,
+"spent": null,
+"budget": 9000.0,
+"clippers": 2400,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {},
+"description": "Get paid to clip JasonTheWeen's content! twitch.tv/jasontheween tiktok.com/@jasontheween instagram.com/jasontheween",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Entertainment",
+"files": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"200ea21b-be80-4db8-b552-8e32b148604e": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+46.0
+]
+],
+"id": "200ea21b-be80-4db8-b552-8e32b148604e",
+"url": "https://contentrewards.com/c/campaigns/200ea21b-be80-4db8-b552-8e32b148604e",
+"title": "$8,500 FaZe Tournament Clipping Campaign",
+"brand": "ClippedIn",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 46.0,
+"budget": 8500.0,
+"clippers": 15,
+"age": "4d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"Only clip the official FaZe Flank Invitational broadcast (twitch.tv/faze, twitch.tv/zoomaa) or the players' own POV streams",
+"Keep the FaZe Flank Invitational logo on screen for the whole clip, never over the action",
+"Caption must include @FaZeClan @ZooMaa @TheFlank #FaZeFlankInvitational, plus featured player and team handles when shown",
+"60%+ US audience required",
+"Hook in the first second: open on the play, the pick or the reaction",
+"Every clip must be an edit, no full VODs or unedited stream segments",
+"Never make FaZe, CDL teams or players look bad, no fake results, fake drama or misleading scores",
+"Vertical 9:16, at least 7 seconds",
+"No carousels, collab posts, politics or religion",
+"Keep every clip public for at least 3 months"
+],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 350.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 350.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 350.0
+},
+"x": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 350.0
+}
+},
+"description": "FaZe Flank Invitational (Call of Duty), live on Twitch Nov 10 to 12. Clip the draft, clutch plays and reactions from the official broadcast only. FaZe Flank logo on every clip, required caption tags, 60%+ US audience. $1 CPM, up to $350 per clip. Top clippers get invited to our private team.",
+"status": "Accepting clips",
+"launched": "4 days ago",
+"category": "Gaming",
+"files": 2,
+"views": 57000,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"ac91f9d8-146d-4450-a78c-2c275eedd8f9": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+60.0
+]
+],
+"id": "ac91f9d8-146d-4450-a78c-2c275eedd8f9",
+"url": "https://contentrewards.com/c/campaigns/ac91f9d8-146d-4450-a78c-2c275eedd8f9",
+"title": "Rivet Live",
+"brand": "Rivet",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 3.0,
+"rate_max": 3.0,
+"spent": 60.0,
+"budget": 1000.0,
+"clippers": 3,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 3.0,
+"min_payout": 3.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 3.0,
+"min_payout": 3.0,
+"max_payout": 100.0
+}
+},
+"description": "cut Rivet Live recordings into 30-60s vertical clips. Each clip has ONE CTA, split 50:50: sign up for Rivet Live or download the app. Hook in 1-2s, subtitles always, TikTok-native. No match guarantees, no NSFW, no competitor digs.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Relationships & Dating",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b8cf722b-8dd2-444b-b3cc-b1a7d23104ba": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+675.0
+]
+],
+"id": "b8cf722b-8dd2-444b-b3cc-b1a7d23104ba",
+"url": "https://contentrewards.com/c/campaigns/b8cf722b-8dd2-444b-b3cc-b1a7d23104ba",
+"title": "Eneba Clipping and UGC",
+"brand": "Eneba",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.5,
+"rate_max": 3.0,
+"spent": 20.0,
+"budget": 5974.0,
+"clippers": 17,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 3.0,
+"min_payout": 3.0,
+"max_payout": 500.0
+},
+"instagram": {
+"rate": 3.0,
+"min_payout": 3.0,
+"max_payout": 500.0
+},
+"youtube": {
+"rate": 3.0,
+"min_payout": 3.0,
+"max_payout": 500.0
+}
+},
+"description": "Edit short-form videos from our supplied pack-openin footage and send viewers to ene.ba/bro to discover roPacks on Eneba. See every item and the odds upfron. 18+. Post on TikTok, Reels or Shorts with #Ad. Rea the full brief and rules before posting.",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Gaming",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"9f03e708-da0c-4ef6-992f-0c05cb56111f": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+8.0
+]
+],
+"id": "9f03e708-da0c-4ef6-992f-0c05cb56111f",
+"url": "https://contentrewards.com/c/campaigns/9f03e708-da0c-4ef6-992f-0c05cb56111f",
+"title": "The Weeknd - Hong Kong | Reactions + MV Edits",
+"brand": "Artist Influence",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 8.0,
+"budget": 1500.0,
+"clippers": 2,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+}
+},
+"description": "Get paid per view to post reaction videos to The Weeknd's Hong Kong performance on TikTok + IG. Genuine reaction or MV Edit. Must add the official sound (muted) + #TheWeeknd #fayewong. Multiple posts allowed. Read brief below. Max Pay $200+",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Music",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b25afad5-4bb6-4f26-a54b-af7e7c753782": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+0.0
+]
+],
+"id": "b25afad5-4bb6-4f26-a54b-af7e7c753782",
+"url": "https://contentrewards.com/c/campaigns/b25afad5-4bb6-4f26-a54b-af7e7c753782",
+"title": "BIIANCO - softcore_hardstyle | DropBox + Reposts",
+"brand": "Artist Influence",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 0.0,
+"budget": 1000.0,
+"clippers": 0,
+"age": "3d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 150.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 150.0
+}
+},
+"description": "Get paid per view to clip BIIANCO's \"softcore_hardstyle\" on TikTok + IG. Fast-paced edits & lyric edits using the official vertical clip, or repost edits from the repo. Soft setup, hard cut on the drop. Tag @itsbiianco. Multiple posts allowed. Read brief below. Max Payout $200+ | Pt. 1/3",
+"status": "Accepting clips",
+"launched": "3 days ago",
+"category": "Music",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"4c7d1ede-2fca-406a-971d-f651880168aa": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+245.0
+]
+],
+"id": "4c7d1ede-2fca-406a-971d-f651880168aa",
+"url": "https://contentrewards.com/c/campaigns/4c7d1ede-2fca-406a-971d-f651880168aa",
+"title": "The Weeknd - Hong Kong Performance Clipping",
+"brand": "Artist Influence",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 245.0,
+"budget": 1500.0,
+"clippers": 10,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+}
+},
+"description": "Get paid per view to clip The Weeknd's Hong Kong performance on TikTok + IG. Cut the best moments from the official performance video, hook in 2s. Must add the official sound (muted) + #TheWeeknd #fayewong. Multiple posts allowed. Read brief below. Max Pay $200+",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Music",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"14f743b2-c5ca-4f3e-8c0d-3010c485005d": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+339900.0
+]
+],
+"id": "14f743b2-c5ca-4f3e-8c0d-3010c485005d",
+"url": "https://contentrewards.com/c/campaigns/14f743b2-c5ca-4f3e-8c0d-3010c485005d",
+"title": "FR Yomi Denzel Campagne Principale",
+"brand": "Yomi Denzel Clipping",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.7,
+"rate_max": 0.7,
+"spent": 339900.0,
+"budget": 343300.0,
+"clippers": 356,
+"age": "11mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"Ne pas dénigrer l'image de Yomi Denzel et d'autres créateurs",
+"Content requirements",
+"Minimum clip length",
+"10s"
+],
+"platform_rates": {
+"instagram": {
+"rate": 0.7,
+"min_payout": 20.0,
+"max_payout": 100.0
+},
+"tiktok": {
+"rate": 0.7,
+"min_payout": 20.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 0.7,
+"min_payout": 20.0,
+"max_payout": 100.0
+},
+"facebook": {
+"rate": 0.7,
+"min_payout": 20.0,
+"max_payout": 100.0
+}
+},
+"description": "Clippe le contenu de Yomi Denzel et gagne 0,7$ pour chaque 1000 vues.",
+"status": "Accepting clips",
+"launched": "11 months ago",
+"category": "Personal Brand",
+"files": 1,
+"hidden_rules": 0,
+"views": 701400000,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"791ad52c-a938-48b3-8f7e-f43ca10b110c": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+5200.0
+]
+],
+"id": "791ad52c-a938-48b3-8f7e-f43ca10b110c",
+"url": "https://contentrewards.com/c/campaigns/791ad52c-a938-48b3-8f7e-f43ca10b110c",
+"title": "ChainsFR: Como Se Dice Clipping",
+"brand": "ClipLaunch",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.5,
+"rate_max": 0.5,
+"spent": 5210.0,
+"budget": 11250.0,
+"clippers": 63,
+"age": "4d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.5,
+"min_payout": 1.5,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 0.5,
+"min_payout": 1.5,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 1.5,
+"max_payout": 200.0
+}
+},
+"description": "Clip ChainsFR's new song \"Como Se Dice\" into funny, entertaining short-form videos that highlight how catchy and genuinely fire the track is. Use viral moments, creative edits, and humor to get people talking, sharing, and realizing this song is actually a banger. Let's make it blow up!",
+"status": "Accepting clips",
+"launched": "4 days ago",
+"category": "YouTuber",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"1db63081-715e-4e04-9b11-fbc1d4e8e700": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+395100.0
+]
+],
+"id": "1db63081-715e-4e04-9b11-fbc1d4e8e700",
+"url": "https://contentrewards.com/c/campaigns/1db63081-715e-4e04-9b11-fbc1d4e8e700",
+"title": "ForgeGUI [UNLIMITED]",
+"brand": "BloxClips",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.5,
+"spent": 395100.0,
+"budget": 416600.0,
+"clippers": 4300,
+"age": "6mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 1000.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 1000.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 1000.0
+}
+},
+"description": "Clip provided ForgeGUI footage into short-form content and get paid for the views you generate. ForgeGUI is an AI tool that helps Roblox developers create GUIs, models, thumbnails, scripts, and more.",
+"status": "Accepting clips",
+"launched": "6 months ago",
+"category": "Technology",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"f7ac5280-4d8b-4f96-9c49-351a0c1f6477": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+87.0
+]
+],
+"id": "f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
+"url": "https://contentrewards.com/c/campaigns/f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
+"title": "Jake Paul MVP x PFL Interview",
+"brand": "Clipflow",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 0.5,
+"rate_max": 0.5,
+"spent": 87.0,
+"budget": 2000.0,
+"clippers": 171,
+"age": "6d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.5,
+"min_payout": 2.5,
+"max_payout": 50.0
+},
+"instagram": {
+"rate": 0.5,
+"min_payout": 2.5,
+"max_payout": 50.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 2.5,
+"max_payout": 50.0
+},
+"x": {
+"rate": 0.5,
+"min_payout": 2.5,
+"max_payout": 50.0
+}
+},
+"description": "Jake Paul MVP x PFL Interview Clipping - Clip Jake Paul from the content folder talking about the PFL and MVP merger. - Keep Jake front and center and make the PFL x MVP merger the story of every post. - Clip moments where Jak",
+"status": "Accepting clips",
+"launched": "6 days ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"db285bc6-9a06-43ff-ae4b-4b5ebf149b8b": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+38000.0
+]
+],
+"id": "db285bc6-9a06-43ff-ae4b-4b5ebf149b8b",
+"url": "https://contentrewards.com/c/campaigns/db285bc6-9a06-43ff-ae4b-4b5ebf149b8b",
+"title": "Call of Duty - Warzone Season 1 Clipping",
+"brand": "Clipping Culture",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 38000.0,
+"budget": 40000.0,
+"clippers": 174,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": null,
+"min_payout": 5.0,
+"max_payout": 1000.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 4.0,
+"max_payout": 1000.0
+}
+},
+"description": "Clip the Warzone Season 1 Trailer and the Developer Briefing. Download both from the official content link below. Post to TikTok and/or Instagram Reels.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"67d76f53-61f1-4415-8c99-b306257220fb": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1400.0
+]
+],
+"id": "67d76f53-61f1-4415-8c99-b306257220fb",
+"url": "https://contentrewards.com/c/campaigns/67d76f53-61f1-4415-8c99-b306257220fb",
+"title": "$4,000 Iceberg Black 'WTF' Campaign",
+"brand": "ClippedIn",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1439.0,
+"budget": 4000.0,
+"clippers": 34,
+"age": "3d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 100.0
+}
+},
+"description": "Iceberg Black \"WTF\" Sound Campaign, Round 2. Edit real life or sports WTF moments to the official \"WTF\" sound, with the big moment exactly on \"WTF\". New clips only, TikTok approved first. #icebergblack in every caption. $1 CPM, up to $100 per clip. Full rules in the guidelines.",
+"status": "Accepting clips",
+"launched": "3 days ago",
+"category": "Music",
+"files": 1,
+"hidden_rules": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"e509f6d0-13bf-42bc-8450-09e12c216c33": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+85200.0
+]
+],
+"id": "e509f6d0-13bf-42bc-8450-09e12c216c33",
+"url": "https://contentrewards.com/c/campaigns/e509f6d0-13bf-42bc-8450-09e12c216c33",
+"title": "Backyard Breaks [Clipping Campaign]",
+"brand": "ClipHouse",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 85200.0,
+"budget": 90100.0,
+"clippers": 384,
+"age": "5mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"youtube": {
+"rate": 2.0,
+"min_payout": 3.0,
+"max_payout": 250.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 3.0,
+"max_payout": 250.0
+},
+"tiktok": {
+"rate": 2.0,
+"min_payout": 3.0,
+"max_payout": 250.0
+}
+},
+"description": "Download Clips from the official Clip Context Tracker sheet and post them across dedicated Backyard Breaks pages on TikTok, Instagram Reels, and/or Youtube Shorts. Focus on posting their most viral moments — big pulls, insane reactions, and the kind of hits that stop people mid-scroll. Post must be exciting, engaging, and upbeat.",
+"status": "Accepting clips",
+"launched": "5 months ago",
+"category": "Sports",
+"files": 4,
+"hidden_rules": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"cef221f8-63ce-46b6-b27b-e4145d110b62": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+356.0
+]
+],
+"id": "cef221f8-63ce-46b6-b27b-e4145d110b62",
+"url": "https://contentrewards.com/c/campaigns/cef221f8-63ce-46b6-b27b-e4145d110b62",
+"title": "J.D. Greear X Oceans.com",
+"brand": "Atlis",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 356.0,
+"budget": 1000.0,
+"clippers": 33,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 3.0,
+"max_payout": 10.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 3.0,
+"max_payout": 10.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 3.0,
+"max_payout": 10.0
+}
+},
+"description": "Join Oceans.com to clip for Pastor J.D. Greear of The Summit Church, one of the most influential Christian leaders reaching people around the world through biblical teaching and a growing digital presence. Earn $1.00 per 1,000 views by clipping and sharing his content with an additional $500 rewards",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Christian",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"188c3e39-7850-4896-94df-e7a5be0cfec3": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+23200.0
+]
+],
+"id": "188c3e39-7850-4896-94df-e7a5be0cfec3",
+"url": "https://contentrewards.com/c/campaigns/188c3e39-7850-4896-94df-e7a5be0cfec3",
+"title": "Boxabl Official Clipping",
+"brand": "Clip Farm",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 0.5,
+"rate_max": 0.5,
+"spent": 23218.0,
+"budget": 85000.0,
+"clippers": 909,
+"age": "4mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"youtube": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 500.0
+},
+"tiktok": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 500.0
+},
+"instagram": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 500.0
+},
+"x": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 500.0
+}
+},
+"description": "Boxabl makes foldable homes. They have a 20x20 foot home called the Casita that ships flat and unfolds on-site. Cool product, cool factory, cool transformation. You're clipping from a list of pre-approved YouTube videos. The footage includes Boxabl factory tours, walkthroughs from major creators like Enes Yilmazer (15M views) and Orkun Isitmak (16.3M views), Elon Musk, Airrack, Faze Rug, and content featuring big-name talent who've worked with Boxabl. Your job is to clip the best moments and post to short-form (TikTok, Instagram Reels, YouTube Shorts, and X) to drive views and brand awareness. UGC IS ALLOWED",
+"status": "Accepting clips",
+"launched": "4 months ago",
+"category": "Business",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"a1cefc3b-4533-438f-8e70-a7299550f1cf": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+5700.0
+]
+],
+"id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
+"url": "https://contentrewards.com/c/campaigns/a1cefc3b-4533-438f-8e70-a7299550f1cf",
+"title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
+"brand": "Clipping Culture",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 5676.0,
+"budget": 30000.0,
+"clippers": 79,
+"age": "6d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": null,
+"min_payout": 6.0,
+"max_payout": 1200.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 4.5,
+"max_payout": 1200.0
+}
+},
+"description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
+"status": "Accepting clips",
+"launched": "6 days ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"7a166eff-fb4f-433a-8b2a-3fd9d2b9652e": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+321.0
+]
+],
+"id": "7a166eff-fb4f-433a-8b2a-3fd9d2b9652e",
+"url": "https://contentrewards.com/c/campaigns/7a166eff-fb4f-433a-8b2a-3fd9d2b9652e",
+"title": "Roblox Anime Game | World of Stands",
+"brand": "ClipScales",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.8,
+"rate_max": 0.8,
+"spent": 321.0,
+"budget": 1000.0,
+"clippers": 93,
+"age": "1d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.8,
+"min_payout": 2.0,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 0.8,
+"min_payout": 2.0,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 0.8,
+"min_payout": 2.0,
+"max_payout": 200.0
+}
+},
+"description": "Create original, engaging Roblox short-form videos clipping World of Stands, an already popular anime game on Jojo's Bizarre Adventures. Easy Virality. Earn Big.",
+"status": "Accepting clips",
+"launched": "yesterday",
+"category": "Gaming",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"c7a8e7c2-6989-4361-914f-f9571578a9b9": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+9300.0
+]
+],
+"id": "c7a8e7c2-6989-4361-914f-f9571578a9b9",
+"url": "https://contentrewards.com/c/campaigns/c7a8e7c2-6989-4361-914f-f9571578a9b9",
+"title": "F1 ASTON MARTIN x COINBASE",
+"brand": "ClipHaus",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 9310.0,
+"budget": 15000.0,
+"clippers": 251,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 150.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 150.0
+},
+"youtube": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 150.0
+}
+},
+"description": "Clip the funniest reactions, fan challenges, and behind-the-scenes moments from an F1 superfan's COTA adventure with Dale Brisby. Make entertaining, fast-paced edits that feel like F1 fan content, not ads.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Sports",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"0c18e861-37bc-48a0-a475-19cfac1ce1ba": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+850.0
+]
+],
+"id": "0c18e861-37bc-48a0-a475-19cfac1ce1ba",
+"url": "https://contentrewards.com/c/campaigns/0c18e861-37bc-48a0-a475-19cfac1ce1ba",
+"title": "Roblox Troll Clipping | Dubbing AI",
+"brand": "ClipScales",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 850.0,
+"budget": 1350.0,
+"clippers": 64,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 300.0
+}
+},
+"description": "Copy our viral formats and clip for trolling funny voice-changing moments. Blow up. Earn big.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Gaming",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"2eae3b20-87f5-4fa2-9bc3-0c2bb62facc5": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+33700.0
+]
+],
+"id": "2eae3b20-87f5-4fa2-9bc3-0c2bb62facc5",
+"url": "https://contentrewards.com/c/campaigns/2eae3b20-87f5-4fa2-9bc3-0c2bb62facc5",
+"title": "WatchMeWin Clipping",
+"brand": "WMW CLIPPING",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 0.8,
+"rate_max": 0.8,
+"spent": 33700.0,
+"budget": 34200.0,
+"clippers": 158,
+"age": "8mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 0.8,
+"min_payout": 1.0,
+"max_payout": 50.0
+},
+"tiktok": {
+"rate": 0.5,
+"min_payout": 2.0,
+"max_payout": 50.0
+}
+},
+"description": "Clippo un nopelni 🎬💸",
+"status": "Accepting clips",
+"launched": "8 months ago",
+"category": "Entertainment",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"0afd04db-e183-4411-9957-0b890ef272b5": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+11500.0
+]
+],
+"id": "0afd04db-e183-4411-9957-0b890ef272b5",
+"url": "https://contentrewards.com/c/campaigns/0afd04db-e183-4411-9957-0b890ef272b5",
+"title": "Call of Duty MW4 عربي V2",
+"brand": "Arabic Clipping",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"x"
+],
+"pool": false,
+"rate": 3.0,
+"rate_max": 3.0,
+"spent": 11527.0,
+"budget": 26300.0,
+"clippers": 79,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 150.0
+},
+"x": {
+"rate": 3.0,
+"min_payout": 6.0,
+"max_payout": 100.0
+}
+},
+"description": "🔥 Call of Duty MW4 انضم إلى حملة كليبينغ انشر مقاطع قصيرة عن اللعبة على حساباتك، واحصل على أرباح حسب عدد المشاهدات المحتوى جاهز عليك ان تقص و تنزل فقط",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"485fd01a-6710-4cce-a0e7-723de8990827": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+409.0
+]
+],
+"id": "485fd01a-6710-4cce-a0e7-723de8990827",
+"url": "https://contentrewards.com/c/campaigns/485fd01a-6710-4cce-a0e7-723de8990827",
+"title": "Clip The Other Side of Hard with Ken Rideout",
+"brand": "RIDEOUT",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 409.0,
+"budget": 2000.0,
+"clippers": 142,
+"age": "1d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"MUST HAVE: \"The Other Side of Hard with Ken Rideout\" on screen for the full clip. Clips without it are rejected",
+"MUST BE 25 to 60 seconds. Shorter or longer clips are rejected",
+"Clip only from the two linked full episodes: Shawn Johnson East and Chris Herren",
+"Open on a confession, a hard number or a strong claim in the first 3 seconds",
+"One complete story per clip with a clear ending",
+"9:16 vertical, burned-in captions, original audio",
+"Caption must tag @ken_rideout and name the guest",
+"Do not clip ad reads or mention sponsors",
+"Do not clip anything about Larry Nassar or USA Gymnastics team doctors",
+"Captions and titles must match what the speaker said. No fake quotes or invented drama",
+"Do not present drug use as fun or cool. Chris Herren clips must read as a recovery story",
+"No health or medical claims",
+"No AI voices, reaction overlays, gameplay split screens or copyrighted music",
+"No bought views or bots. Flagged clips are rejected",
+"Creator requirements",
+"Clippers with fitness, running, sports, recovery or motivation pages. US, UK, Canada and Australia audiences."
+],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+}
+},
+"description": "Clip full episodes of The Other Side of Hard, Ken Rideout's podcast. $1 per 1,000 views on TikTok, Reels and Shorts, $10 to $100 per clip. Ken is a world champion marathoner and recovered addict who talks to Olympians, NBA players and fighters about the hardest thing they got through.",
+"status": "Accepting clips",
+"launched": "yesterday",
+"category": "Interview Podcast",
+"files": 2,
+"views": 551300,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"18496202-6029-4a29-a44c-9fc33678fcb9": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+14700.0
+]
+],
+"id": "18496202-6029-4a29-a44c-9fc33678fcb9",
+"url": "https://contentrewards.com/c/campaigns/18496202-6029-4a29-a44c-9fc33678fcb9",
+"title": "Call of Duty MW4 (en Français)",
+"brand": "French Clipping",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"x"
+],
+"pool": false,
+"rate": 3.0,
+"rate_max": 3.0,
+"spent": 14681.0,
+"budget": 23000.0,
+"clippers": 74,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 350.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 350.0
+},
+"x": {
+"rate": 3.0,
+"min_payout": 6.0,
+"max_payout": 350.0
+}
+},
+"description": "Rejoins la campagne de clipping française officielle de Call of Duty MW4🔥 Poste des clips sur MW4, et gagne de l'argent 💸",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "Entertainment",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"86842687-ba2b-4638-a024-995dcf3d25a3": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+14700.0
+]
+],
+"id": "86842687-ba2b-4638-a024-995dcf3d25a3",
+"url": "https://contentrewards.com/c/campaigns/86842687-ba2b-4638-a024-995dcf3d25a3",
+"title": "Michael Sartain's Clipping Army",
+"brand": "Michael Sartain's Clipper Army",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 14744.0,
+"budget": 20000.0,
+"clippers": 33,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"x": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 19.0,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 1.5,
+"min_payout": 15.0,
+"max_payout": 100.0
+},
+"facebook": {
+"rate": 2.0,
+"min_payout": 19.0,
+"max_payout": 200.0
+}
+},
+"description": "Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "Personal Brand",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"6590957d-cd29-4135-8483-0cda5f6ed6a8": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+572.0
+]
+],
+"id": "6590957d-cd29-4135-8483-0cda5f6ed6a8",
+"url": "https://contentrewards.com/c/campaigns/6590957d-cd29-4135-8483-0cda5f6ed6a8",
+"title": "Once Upon a Time in Texas",
+"brand": "Clouted",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.5,
+"rate_max": 0.5,
+"spent": 572.0,
+"budget": 2000.0,
+"clippers": 159,
+"age": "6d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 0.5,
+"min_payout": 0.5,
+"max_payout": 250.0
+},
+"tiktok": {
+"rate": 0.5,
+"min_payout": 0.5,
+"max_payout": 250.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 0.5,
+"max_payout": 250.0
+}
+},
+"description": "Clipping Movie Campaign",
+"status": "Accepting clips",
+"launched": "6 days ago",
+"category": "Movies & TV",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"e815a623-badd-4516-906c-b6cfce227ff9": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+4100.0
+]
+],
+"id": "e815a623-badd-4516-906c-b6cfce227ff9",
+"url": "https://contentrewards.com/c/campaigns/e815a623-badd-4516-906c-b6cfce227ff9",
+"title": "Clips Hablando - 1$ por cada 1000 visitas",
+"brand": "Carlos Esparraga Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 4073.0,
+"budget": 10000.0,
+"clippers": 28,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"El clip debe durar minimo 10 segundos.",
+"Carlos debe aparecer un 70% del video.",
+"PROHIBIDO CONECTAR INSTAGRAM CON FACEBOOK.",
+"La PRIMERA linea de la descripcion en INSTAGRAM debe ser:",
+"\"Cuenta principal: @carlos_espaarraga4\" y etiquetarlo en la publicacion.",
+"La PRIMERA linea de la descripcion en Youtube y Tiktok debe ser:",
+"\"Sigueme en Instagram: @carlos_espaarraga4 \"",
+"Queda prohibido utilizar ganchos de mujeres, humoristicos o nada que no tenga que ver con carlos.",
+"Para poder monetizar un video o un reto, tienes que estar activo en las 3 redes sociales subiendo 1 reel al dia.",
+"No se puede monetizar el mismo video mas de una vez, a menos que se haya cambiado notablemente la edicion.",
+"Hay que hacer todo lo posible por tener la maxima audiencia española, esos clips tendran prioridad a la hora de ser aceptados.",
+"Cualquier video que no encaje con la vision y valores de carlos sera rechazado y el creador sera expulsado.",
+"No se pueden resubir videos de otros creadores. Puedes utilizar la misma idea y replicarlo parecido, pero con tu propio estilo.",
+"El video no puede tener marcas de agua."
+],
+"platform_rates": {
+"tiktok": {
+"rate": 0.3,
+"min_payout": 7.5,
+"max_payout": 50.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 0.2,
+"min_payout": 5.0,
+"max_payout": 30.0
+}
+},
+"description": "Gana dinero clipeando a Carlos Esparraga.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Personal Brand",
+"files": 1,
+"views": 14200000,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3000.0
+]
+],
+"id": "7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
+"url": "https://contentrewards.com/c/campaigns/7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
+"title": "Sabri Malle Clipping",
+"brand": "Sabri Malle Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 3010.0,
+"budget": 12000.0,
+"clippers": 33,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"✅ Publica mínimo 2 videos cortos al día en todas las redes",
+"✅ Sabri tiene que aparecer hablando minimo un 75% del video.",
+"✅ El video debe durar al menos 10 segundos",
+"✅ sin marcas de agua",
+"✅ No se permiten reacciones de otras personas (Solo Sabri puede aparecer)",
+"✅ No está permitido hacer el mismo reel viral +1 vez (hay que variar)",
+"✅ No puedes resubir videos editados por otro clipper de Sabri",
+"✅ Es obligatorio subir los reels a instagram, tiktok y youtube shorts para poder monetizar.",
+"✅ Los videos deben apuntar a tráfico Español (minimo 5%)",
+"✅ Ganchos/videos con mujeres, cosas infantiles o cosas fuera de lo normal NO ESTÁN PERMITIDOS.",
+"✅ Comparte tus publicaciones en el chat del equipo todos los días.",
+"✅ No sigas a nadie en ninguna de tus cuentas, solo puedes seguir la cuenta principal: @",
+"✅ Al subir un clip en instagram etiqueta la cuenta principal de Sabri,",
+"hazlo así en la primera linea: Cuenta principal: @",
+"✅ Al subir un clip en tiktok o Youtube Shorts, etiqueta la cuenta principal de Sabri,",
+"hazlo así en la primera linea: Instagram: @",
+"✅ Di \"Buenos Días\" en el chat de Whop cada mañana para mantenerte activo.",
+"✅ Muestra actividad diaria y asiste a todas las llamadas que se hagan.",
+"✅ Debes mantener tu perfil actualizado a cualquier novedad que se anuncie de manera oficial.",
+"✅ Cada reel debe mantener un nivel mínimo de calidad, de lo contrario será rechazado"
+],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 0.2,
+"min_payout": 3.0,
+"max_payout": 30.0
+},
+"tiktok": {
+"rate": 0.5,
+"min_payout": 5.0,
+"max_payout": 60.0
+}
+},
+"description": "Gana dinero haciendo clips de Sabri Malle",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Lifestyle",
+"files": 1,
+"views": 14700000,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"2e7ca35e-4cff-4755-bae8-8f9f5d727c0b": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+2000.0
+]
+],
+"id": "2e7ca35e-4cff-4755-bae8-8f9f5d727c0b",
+"url": "https://contentrewards.com/c/campaigns/2e7ca35e-4cff-4755-bae8-8f9f5d727c0b",
+"title": "Daise — Dollfaces + Charm Bracelets Clipping",
+"brand": "Clip Influence",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 2031.0,
+"budget": 10000.0,
+"clippers": 29,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"tiktok": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+}
+},
+"description": "Get Paid $2/thousand views to clip for Daise — Dollfaces + Charm Bracelets! Create viral clips showcasing the Dollfaces + Charm Bracelets and get paid. (THEME PAGES).",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"488d8a64-6c64-446d-8038-b74001934705": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+7300.0
+]
+],
+"id": "488d8a64-6c64-446d-8038-b74001934705",
+"url": "https://contentrewards.com/c/campaigns/488d8a64-6c64-446d-8038-b74001934705",
+"title": "Mad Honey Hunters of the Himalayas – Clips",
+"brand": "NM Trade Company BV",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 7254.0,
+"budget": 9000.0,
+"clippers": 83,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 500.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 500.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 500.0
+},
+"facebook": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 500.0
+}
+},
+"description": "Post our clips of Nepal's honey hunters: men on rope ladders 200m up a cliff, harvesting wild mad honey. Best fit: documentary, rare food, expedition and travel pages. Also post our talking head clips",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Documentary",
+"files": 8,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"23022f84-5715-4ba5-a647-abc4baf4f0f8": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1800.0
+]
+],
+"id": "23022f84-5715-4ba5-a647-abc4baf4f0f8",
+"url": "https://contentrewards.com/c/campaigns/23022f84-5715-4ba5-a647-abc4baf4f0f8",
+"title": "Open Road Clipping | $5.25K Budget | $1.25 CPM",
+"brand": "Clipix",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.25,
+"rate_max": 1.25,
+"spent": 1757.0,
+"budget": 5250.0,
+"clippers": 46,
+"age": "2mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.25,
+"min_payout": 1.25,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.25,
+"min_payout": 1.25,
+"max_payout": 300.0
+}
+},
+"description": "Open Road (@openroadapp) is a drive tracker for iOS and Android, like Strava for your car. Flood TikTok and Instagram with slideshows and clips made in the provided builder. Every post should push viewers to download Open Road, and all content should feel native to the platform, not an ad.",
+"status": "Accepting clips",
+"launched": "2 months ago",
+"category": "Apps",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"7b094e71-4021-4c56-95ad-e1c0c3cd7f1a": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1100.0
+]
+],
+"id": "7b094e71-4021-4c56-95ad-e1c0c3cd7f1a",
+"url": "https://contentrewards.com/c/campaigns/7b094e71-4021-4c56-95ad-e1c0c3cd7f1a",
+"title": "META-KLAGE | $5,000 Budget | $2 CPM",
+"brand": "Clipping Outlaws",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 1085.0,
+"budget": 5000.0,
+"clippers": 43,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 200.0
+}
+},
+"description": "Facebook and Instagram tracked users across Germany for years, and German courts have started ruling in their favor. Meta-Klage checks for free if you’re owed compensation.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Politics",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"0096aee5-030a-4c0b-a180-f0edbbdc2909": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+4200.0
+]
+],
+"id": "0096aee5-030a-4c0b-a180-f0edbbdc2909",
+"url": "https://contentrewards.com/c/campaigns/0096aee5-030a-4c0b-a180-f0edbbdc2909",
+"title": "CLIP TRAXNYC YOUTUBE!",
+"brand": "TraxNYC",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 4216.0,
+"budget": 5000.0,
+"clippers": 31,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 300.0
+}
+},
+"description": "Clip the TraxNYC youtube",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Entertainment",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"2ade1fa0-ef91-40c6-af02-6ec52d2f5685": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1700.0
+]
+],
+"id": "2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
+"url": "https://contentrewards.com/c/campaigns/2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
+"title": "Lucas Clipping Cycle 2",
+"brand": "Lucas clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1725.0,
+"budget": 4900.0,
+"clippers": 26,
+"age": "2mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 150.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 150.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 150.0
+}
+},
+"description": "Clippe Lucas - créateur lifestyle luxe & mindset (Dubaï). Transforme ses vlogs, ses rushs Cannes/Côte d'Azur et ses passages où il parle en clips courts pour TikTok, Insta & YT Shorts. Payé aux vues. Comptes dédiés à son image.",
+"status": "Accepting clips",
+"launched": "2 months ago",
+"category": "Fan Page",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"29c92590-738b-4421-a675-75e5ddfe4c32": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3600.0
+]
+],
+"id": "29c92590-738b-4421-a675-75e5ddfe4c32",
+"url": "https://contentrewards.com/c/campaigns/29c92590-738b-4421-a675-75e5ddfe4c32",
+"title": "Ruben Atienza Clipping",
+"brand": "Ruben Atienza Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 3634.0,
+"budget": 4800.0,
+"clippers": 53,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"✅ Publica mínimo 2 videos cortos al día en todas las redes",
+"✅ Ruben tiene que aparecer hablando minimo un 75% del video.",
+"✅ El video debe durar al menos 10 segundos",
+"✅ sin marcas de agua",
+"✅ No se permiten reacciones de otras personas (Solo Ruben puede aparecer)",
+"✅ No está permitido hacer el mismo reel viral +1 vez (hay que variar)",
+"✅ No puedes resubir videos editados por otro clipper de Ruben",
+"✅ Es obligatorio subir los reels a instagram, tiktok y youtube shorts para poder monetizar.",
+"✅ Los videos deben apuntar a tráfico Español (minimo 5%)",
+"✅ Ganchos/videos con mujeres, cosas infantiles o cosas fuera de lo normal NO ESTÁN PERMITIDOS.",
+"✅ Comparte tus publicaciones en el chat del equipo todos los días.",
+"✅ No sigas a nadie en ninguna de tus cuentas, solo puedes seguir la cuenta principal: @Ruben.atienza",
+"✅ Al subir un clip en instagram etiqueta la cuenta principal de Ruben,",
+"hazlo así en la primera linea: Cuenta principal: @Ruben.atienza",
+"✅ Al subir un clip en tiktok o Youtube Shorts, etiqueta la cuenta principal de Ruben,",
+"hazlo así en la primera linea: Instagram: @Ruben.atienza",
+"✅ Di \"Buenos Días\" en el chat de Whop cada mañana para mantenerte activo.",
+"✅ Muestra actividad diaria y asiste a todas las llamadas que se hagan.",
+"✅ Debes mantener tu perfil actualizado a cualquier novedad que se anuncie de manera oficial.",
+"✅ Cada reel debe mantener un nivel mínimo de calidad, de lo contrario será rechazado"
+],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 0.1,
+"max_payout": 60.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 0.1,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 0.1,
+"max_payout": 50.0
+}
+},
+"description": "Gana dinero clippeando a Ruben Atienza",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Lifestyle",
+"files": 2,
+"views": 11200000,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"c0c37381-e244-4643-98bd-edbff4bc1465": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+2100.0
+]
+],
+"id": "c0c37381-e244-4643-98bd-edbff4bc1465",
+"url": "https://contentrewards.com/c/campaigns/c0c37381-e244-4643-98bd-edbff4bc1465",
+"title": "Fundingpips Clipping",
+"brand": "FundingPips",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 6.0,
+"rate_max": 6.0,
+"spent": 2061.0,
+"budget": 4000.0,
+"clippers": 1400,
+"age": "5mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 6.0,
+"min_payout": 12.0,
+"max_payout": 100.0
+},
+"tiktok": {
+"rate": 6.0,
+"min_payout": 12.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 6.0,
+"min_payout": 12.0,
+"max_payout": 100.0
+}
+},
+"description": "FundingPips was built by traders, for traders. Our core philosophy is simple: Your ideas, our risk. Now, we are giving you full access to our official content vault unlocking raw global trader interviews, platform mechanics, and deep psychological breakdowns on what it takes to master discipline, clear evaluation phases, and manage up to $300,000 across multiple simulated accounts. If you understand the psychology of the charts and know how to construct high-impact, scroll-stopping loops, we will give you the raw ammunition. Take the footage, map out aggressive cuts, and show the internet what true risk management and scaling look like. Choose your file, engineer the hook, and claim your rewards. Speed wins.",
+"status": "Accepting clips",
+"launched": "5 months ago",
+"category": "Technology",
+"files": 3,
+"hidden_rules": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1500.0
+]
+],
+"id": "5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
+"url": "https://contentrewards.com/c/campaigns/5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
+"title": "Stream House LA Clipping| $4k Budget",
+"brand": "Motion Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 1455.0,
+"budget": 4000.0,
+"clippers": 110,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 2.75,
+"max_payout": 700.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 2.75,
+"max_payout": 700.0
+},
+"youtube": {
+"rate": 1.5,
+"min_payout": 1.75,
+"max_payout": 500.0
+}
+},
+"description": "Clip for Stream House LA and post viral moments across Tiktok, Instagram and YT shorts and get paid",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"96f76f67-78be-472b-a067-58ae07e98fc9": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+672.0
+]
+],
+"id": "96f76f67-78be-472b-a067-58ae07e98fc9",
+"url": "https://contentrewards.com/c/campaigns/96f76f67-78be-472b-a067-58ae07e98fc9",
+"title": "Hunter Flynn - Roots Country Music Clipping [8455]",
+"brand": "Sound Network",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 672.0,
+"budget": 1000.0,
+"clippers": 41,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "1. Pick one direction below. 2. Pick a clip of Hunter Flynn from his content folder. 3. Add one on-screen text line from that direction’s list. 4. Post to TikTok or Instagram Reels.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Music",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b46e43fd-8879-4ce6-a0fa-167d5f3e830d": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3000.0
+]
+],
+"id": "b46e43fd-8879-4ce6-a0fa-167d5f3e830d",
+"url": "https://contentrewards.com/c/campaigns/b46e43fd-8879-4ce6-a0fa-167d5f3e830d",
+"title": "Antoine Sallis Clipping | $2 CPM | All Plats",
+"brand": "Rendr Studios",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 3000.0,
+"budget": 3300.0,
+"clippers": 195,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"tiktok": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+}
+},
+"description": "Antoine Sallis is a best-selling author, Forbes Finance Council member, TEDx speaker, and the founder of Credit Genius, an AI-powered credit and wealth platform that's changing how Americans think about money. Your job is to clip his most authoritative, high-energy moments and post them on Insta, Tiktok, FB Reels, and YT Shorts to grow his personal brand and drive followers to his page.",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "Business",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"4d8d10e9-5c4d-40f4-81b2-10acda995cb7": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+2000.0
+]
+],
+"id": "4d8d10e9-5c4d-40f4-81b2-10acda995cb7",
+"url": "https://contentrewards.com/c/campaigns/4d8d10e9-5c4d-40f4-81b2-10acda995cb7",
+"title": "Duke Dennis Spends $100k On Danesh Diamond Grillz",
+"brand": "Danesh Diamonds",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 1975.0,
+"budget": 2500.0,
+"clippers": 218,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 200.0
+}
+},
+"description": "NEW FOOTAGE ONLY. Prioritize TikTok. Clip the Danesh footage or Duke's Halloween party video, like 16:03-19:00, 23:50 or other moments. Danesh or the grillz on screen. On-screen title says what's happening. Caption: #daneshdiamonds and # everyone in it. No @. Keep it positive and natural, not promo.",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Celebrity",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"07d35069-c63d-4382-bf14-0a70921f7693": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+2000.0
+]
+],
+"id": "07d35069-c63d-4382-bf14-0a70921f7693",
+"url": "https://contentrewards.com/c/campaigns/07d35069-c63d-4382-bf14-0a70921f7693",
+"title": "Millionaire Hot Takes | Viral Clipping",
+"brand": "Crawford Legacy Group",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 2.75,
+"rate_max": 2.75,
+"spent": 2013.0,
+"budget": 2250.0,
+"clippers": 47,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"@CashOnlyJon",
+"Up to $250 Per Reel + $1,000 Bonus",
+"Create high-quality clips featuring Jonathan Crawford (@cashonlyjon).",
+"PAYMENT:",
+"$2.50 per 1,000 verified views, up to $150 per approved Reel.",
+"BONUS:",
+"First creator to reach 5 MILLION organic views on a single approved Reel wins an additional $1,000. One winner.",
+"4 REQUIREMENTS. NO EXCEPTIONS.",
+"1.",
+"TAG @cashonlyjon",
+"in BOTH your Reel and caption.",
+"2.",
+"INCLUDE \"Follow @cashonlyjon for more\"",
+"in your caption.",
+"3.",
+"KEEP LIKES VISIBLE",
+"on your posts.",
+"4.",
+"CREATE ORIGINAL, HIGH-QUALITY EDITS.",
+"No copied, recycled, or low-effort edits."
+],
+"platform_rates": {
+"instagram": {
+"rate": 2.75,
+"min_payout": 25.0,
+"max_payout": 150.0
+},
+"tiktok": {
+"rate": 2.75,
+"min_payout": 25.0,
+"max_payout": 150.0
+}
+},
+"description": "Get paid to make @CashOnlyJohn one of the most recognizable names in business, wealth, and entrepreneurship. We're rewarding creators who turn Jonathan Crawford's most powerful, entertaining, controversial, and attention-grabbing moments into viral short-form content.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Content Creator",
+"files": 4,
+"hidden_rules": 0,
+"views": 526100,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"ee00b0fb-b07e-4750-bfc8-867f01bec211": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1700.0
+]
+],
+"id": "ee00b0fb-b07e-4750-bfc8-867f01bec211",
+"url": "https://contentrewards.com/c/campaigns/ee00b0fb-b07e-4750-bfc8-867f01bec211",
+"title": "Hafid Clipping",
+"brand": "Hafid Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1691.0,
+"budget": 2300.0,
+"clippers": 44,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 200.0
+}
+},
+"description": "Clippe le contenu de Hafid (voitures, lifestyle) et sois payé aux vues : 1€ / 1000 vues sur TikTok, Instagram et YouTube Shorts. Compte dédié à son image, et en description de chaque clip tu renvoies vers sa chaîne YouTube. Le brief complet est dans les documents de référence",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entrepreneurship",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"1e8549b7-3b37-4d61-9bcb-22ae1c5005f6": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1100.0
+]
+],
+"id": "1e8549b7-3b37-4d61-9bcb-22ae1c5005f6",
+"url": "https://contentrewards.com/c/campaigns/1e8549b7-3b37-4d61-9bcb-22ae1c5005f6",
+"title": "Elliott Caldwell's Campaign 2026",
+"brand": "On Successful DNA Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 1135.0,
+"budget": 2063.0,
+"clippers": 67,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"youtube": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 75.0
+},
+"tiktok": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 75.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 75.0
+}
+},
+"description": "Clip ANY On Successful DNA episode (youtube.com/@elliottcaldwellpodcast). Post from ANY clipping page; own branding fine. Tag Elliott. Shorts, Reels, TikToks & credited YT comps count. Each clip paid once; duplicates rejected. Submit within 1 hr; views counted at 24 hrs. Rules: Start Here + Academy.",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "Business",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"722616d3-c98e-4821-810c-f2d88c0edee5": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1200.0
+]
+],
+"id": "722616d3-c98e-4821-810c-f2d88c0edee5",
+"url": "https://contentrewards.com/c/campaigns/722616d3-c98e-4821-810c-f2d88c0edee5",
+"title": "S9 Trades Clips",
+"brand": "S9Trades",
+"verified": false,
+"platforms": [
+"tiktok"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 1204.0,
+"budget": 2000.0,
+"clippers": 313,
+"age": "2mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 250.0
+}
+},
+"description": "Clip S9 Trades and get paid 1.50$ for 1k views",
+"status": "Accepting clips",
+"launched": "2 months ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"70314901-9544-4615-a37a-22e31f6b0014": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1200.0
+]
+],
+"id": "70314901-9544-4615-a37a-22e31f6b0014",
+"url": "https://contentrewards.com/c/campaigns/70314901-9544-4615-a37a-22e31f6b0014",
+"title": "Kamal Bilal Clipping - by Pervasive",
+"brand": "Pervasive Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1167.0,
+"budget": 2000.0,
+"clippers": 27,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 100.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 100.0
+}
+},
+"description": "Get paid to clip for Kamal Bilal. Join for free in Pervasive Community to access resources and campaigns:",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Personal Brand",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"5e5be7d5-2a2e-4bf1-b017-5e5d956ec269": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1600.0
+]
+],
+"id": "5e5be7d5-2a2e-4bf1-b017-5e5d956ec269",
+"url": "https://contentrewards.com/c/campaigns/5e5be7d5-2a2e-4bf1-b017-5e5d956ec269",
+"title": "Roblox Content Rewards – Make Shorts, Get Paid Fast!",
+"brand": "GSN Clips",
+"verified": false,
+"platforms": [
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1572.0,
+"budget": 2000.0,
+"clippers": 575,
+"age": "5mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"youtube": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Create Roblox Content by Merging 3 Provided Clips and Voila! You're Ready to Go Viral $Super Easy$",
+"status": "Accepting clips",
+"launched": "5 months ago",
+"category": "Gaming",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"d32a5d03-8ab1-4e9f-919b-00b4b3ade0e9": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1000.0
+]
+],
+"id": "d32a5d03-8ab1-4e9f-919b-00b4b3ade0e9",
+"url": "https://contentrewards.com/c/campaigns/d32a5d03-8ab1-4e9f-919b-00b4b3ade0e9",
+"title": "YOW x Clip Loom",
+"brand": "CLIP LOOM",
+"verified": false,
+"platforms": [
+"tiktok"
+],
+"pool": false,
+"rate": 0.9,
+"rate_max": 0.9,
+"spent": 1022.0,
+"budget": 1600.0,
+"clippers": 70,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"facebook": {
+"rate": 0.9,
+"min_payout": 1.5,
+"max_payout": 80.0
+},
+"tiktok": {
+"rate": 0.9,
+"min_payout": 1.5,
+"max_payout": 80.0
+}
+},
+"description": "Yow is a hugely popular Filipino creator and entertainer known for his viral comedy, vlogs, and entertaining lifestyle content. Optimize and amplify social clips of Yow to maximize viral brand awareness. Drive viral reach across Facebook reels by turning his raw footage into viral clips.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Comedy",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"19d077ab-9fe1-4687-aa2e-f016328d462b": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1200.0
+]
+],
+"id": "19d077ab-9fe1-4687-aa2e-f016328d462b",
+"url": "https://contentrewards.com/c/campaigns/19d077ab-9fe1-4687-aa2e-f016328d462b",
+"title": "Clips de Adriano Finucci - 1.5$ por 1000 visitas",
+"brand": "Adriano Finucci Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 1211.0,
+"budget": 1500.0,
+"clippers": 43,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.5,
+"min_payout": 2.5,
+"max_payout": 60.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 10.0,
+"max_payout": 150.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 2.5,
+"max_payout": 50.0
+}
+},
+"description": "Te vamos a pagar por cada mil vistas que consigas creando clips sobre Adriano Finucci.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Personal Brand",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"16a7f214-3e58-40e6-b4b1-b337a8dc71fc": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+778.0
+]
+],
+"id": "16a7f214-3e58-40e6-b4b1-b337a8dc71fc",
+"url": "https://contentrewards.com/c/campaigns/16a7f214-3e58-40e6-b4b1-b337a8dc71fc",
+"title": "ParlayCapital Clipping",
+"brand": "ParlayCapital Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 778.0,
+"budget": 1500.0,
+"clippers": 29,
+"age": "7mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"youtube": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+}
+},
+"description": "Clip Parlay Capital's biggest sports moments including NBA, NFL, MLB, and more. With constant budget refills and monthly bounties, there's always money on the table. Sports content is one of the easiest niches to go viral in, making this the perfect campaign whether you're just getting started or you're an experienced clipper. 📈 Join now and start earning while you're still early. 🔥",
+"status": "Accepting clips",
+"launched": "7 months ago",
+"category": "Gambling",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"25533ec6-2d77-471d-9c90-7e095b522e66": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+292.0
+]
+],
+"id": "25533ec6-2d77-471d-9c90-7e095b522e66",
+"url": "https://contentrewards.com/c/campaigns/25533ec6-2d77-471d-9c90-7e095b522e66",
+"title": "Clippe Bryan",
+"brand": "Bryan Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 292.0,
+"budget": 1450.0,
+"clippers": 29,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 8.0,
+"max_payout": 110.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 8.0,
+"max_payout": 110.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 8.0,
+"max_payout": 110.0
+}
+},
+"description": "Clippe le contenu de Bryan RGT. Poste sur TikTok, Insta ou YT Shorts depuis un compte à son image, payé aux vues.",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Business",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"2e74782d-5575-48e0-b682-4ca24aae86fe": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+199.0
+]
+],
+"id": "2e74782d-5575-48e0-b682-4ca24aae86fe",
+"url": "https://contentrewards.com/c/campaigns/2e74782d-5575-48e0-b682-4ca24aae86fe",
+"title": "Clips Lifestyle - 0,50$ por cada 1.000 views",
+"brand": "Álvaro Sánchez Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 0.5,
+"rate_max": 0.5,
+"spent": 199.0,
+"budget": 1500.0,
+"clippers": 32,
+"age": "9mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 0.5,
+"min_payout": 2.5,
+"max_payout": 200.0
+},
+"tiktok": {
+"rate": 0.25,
+"min_payout": 1.25,
+"max_payout": 200.0
+}
+},
+"description": "🎬 Clips de lifestyle de Álvaro Sánchez: coches, lujo, viajes, negocios, IA y emprendimiento. Puedes usar vídeos de stock, YouTube o Drive. ✅ Álvaro no debe hablar o debe hacerlo menos del 75 % del clip. Usa B-rolls, música, transiciones y textos atractivos. 💰 Gana 0,50 $ por cada 1.000 visitas",
+"status": "Accepting clips",
+"launched": "9 months ago",
+"category": "Business",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"461c3aeb-12e1-4719-a1a0-3a486b77778e": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+673.0
+]
+],
+"id": "461c3aeb-12e1-4719-a1a0-3a486b77778e",
+"url": "https://contentrewards.com/c/campaigns/461c3aeb-12e1-4719-a1a0-3a486b77778e",
+"title": "Momma Dee [Viral Clipping] — $1 per 1K Views",
+"brand": "ClipForge",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 673.0,
+"budget": 1000.0,
+"clippers": 64,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Turn Momma Dee’s livestream moments into viral clips! Find the funniest, most entertaining, and thought-provoking moments to create engaging short-form content that drives viewers to watch Momma Dee's daily livestream on Antoinette Media's Kick Channel.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Entertainment",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b4eb73f4-8fcf-48ef-a80c-f35472764f14": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+995.0
+]
+],
+"id": "b4eb73f4-8fcf-48ef-a80c-f35472764f14",
+"url": "https://contentrewards.com/c/campaigns/b4eb73f4-8fcf-48ef-a80c-f35472764f14",
+"title": "Dopeboyoli Clipping",
+"brand": "ViewMaxer",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.5,
+"rate_max": 0.5,
+"spent": 995.0,
+"budget": 1350.0,
+"clippers": 31,
+"age": "4mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"youtube": {
+"rate": 0.5,
+"min_payout": 0.75,
+"max_payout": 100.0
+},
+"tiktok": {
+"rate": 0.5,
+"min_payout": 0.75,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 0.5,
+"min_payout": 0.75,
+"max_payout": 100.0
+}
+},
+"description": "Dopeboyoli creates high-energy self-improvement content centered around fitness, confidence, and discipline. Through transformation videos, vlogs, pranks, gym advice, and entertaining interactions, he motivates viewers to invest in themselves and become the best version of who they can be.",
+"status": "Accepting clips",
+"launched": "4 months ago",
+"category": "Streamer",
+"files": 3,
+"hidden_rules": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"33788a7c-1680-49f3-9af2-61c68064b749": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1100.0
+]
+],
+"id": "33788a7c-1680-49f3-9af2-61c68064b749",
+"url": "https://contentrewards.com/c/campaigns/33788a7c-1680-49f3-9af2-61c68064b749",
+"title": "Mary Kutter - Damn I Love You | Multi Edit Camp",
+"brand": "Artist Influence",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1067.0,
+"budget": 1250.0,
+"clippers": 33,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 125.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 125.0
+}
+},
+"description": "Get paid per view to clip Mary Kutter’s “Damn I Love You” on TikTok + IG. Earn $1 per 1K views. This is the situationship national anthem. We’re looking for one-sided love, loving harder than you should, and staying when you know you should leave. Multiple Posts allowed, Max Payout $200+",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Music",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"e5b1e838-31d8-4a4e-9584-841c01456638": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+629.0
+]
+],
+"id": "e5b1e838-31d8-4a4e-9584-841c01456638",
+"url": "https://contentrewards.com/c/campaigns/e5b1e838-31d8-4a4e-9584-841c01456638",
+"title": "0,50$ / 1k views - Bios Zonewars Clipping",
+"brand": "UEFN Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"youtube"
+],
+"pool": false,
+"rate": 0.4,
+"rate_max": 0.4,
+"spent": 629.0,
+"budget": 1000.0,
+"clippers": 48,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.4,
+"min_payout": 1.0,
+"max_payout": 50.0
+},
+"youtube": {
+"rate": 0.4,
+"min_payout": 1.0,
+"max_payout": 50.0
+}
+},
+"description": "Get Paid to Create Content for BIOS ZONEWARS 🎥💰 Create videos about BIOS TRIO ZONEWARS and earn money from your content. MAP CODE: 4059-2791-0712 Content Requirements Videos must include the map code Content must be directly related to BIOS TRIO ZONEWARS Only content from the CURRENT version of the map is allowed No old videos No reuploads Create original content specifically for this campaign 🔐 Secret Codes Use these secrets for your videos — secret-code content performs especially well! 7821 — Pump Shotgun 6042 — Heavy Sniper Rifle 1597 — Flint-Knock Pistol 4386 — Grappler 9215 — Jules Glider 3578 — Bouncer 8643 — Thunderbolt of Zeus 4907 — Boogie Bomb 2865 — Hunting Rifle 9531 — Zapotron 1208 — Double 7754 — Bug Blaster 6381 — Exotic SlapBerry Fizz 5470 — Chains of Hades 3926 — Friend Zone Bubble 8182 — Chainsaw 2640 — Decoy 7015 — Fire Grenade 4839 — Flashbang 9362 — Lock On Pistol 2084 — Wrecker Revolver 5196 — Slapperoni Pizza 3417 — Combat SMG 6728 — Big Bush Bomb 8950 — Shadow Tracker 9993 — R",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "Gaming",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"9efb4281-815f-49ed-85a7-de73c1fb87d8": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+816.0
+]
+],
+"id": "9efb4281-815f-49ed-85a7-de73c1fb87d8",
+"url": "https://contentrewards.com/c/campaigns/9efb4281-815f-49ed-85a7-de73c1fb87d8",
+"title": "Logo Campaign",
+"brand": "Clipz Logo",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 0.25,
+"rate_max": 0.25,
+"spent": 816.0,
+"budget": 1000.0,
+"clippers": 58,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.25,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 0.25,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 0.25,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"x": {
+"rate": 0.25,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Read Requirements",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"407756b7-fee5-406b-b116-1c8eafcfac69": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+200.0
+]
+],
+"id": "407756b7-fee5-406b-b116-1c8eafcfac69",
+"url": "https://contentrewards.com/c/campaigns/407756b7-fee5-406b-b116-1c8eafcfac69",
+"title": "CIRCE by Zak Azoury — Anime / TV Edits",
+"brand": "Zak Azoury",
+"verified": false,
+"platforms": [
+"tiktok"
+],
+"pool": false,
+"rate": 0.25,
+"rate_max": 0.25,
+"spent": 200.0,
+"budget": 1000.0,
+"clippers": 117,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.25,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Edits for the song \"Circe\" by Zak Azoury Looking for: Anime Edits TV Edits Kdrama Edits The vibe of this sound is chill and beautiful, edits will perform best if they fit the lyrics and vibe of the song.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Music",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b865e0da-2b57-463f-886a-c800abd14f60": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+704.0
+]
+],
+"id": "b865e0da-2b57-463f-886a-c800abd14f60",
+"url": "https://contentrewards.com/c/campaigns/b865e0da-2b57-463f-886a-c800abd14f60",
+"title": "Post Sports Edits using \"FTW\" by Spitty",
+"brand": "Spitty",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.2,
+"rate_max": 0.2,
+"spent": 704.0,
+"budget": 1000.0,
+"clippers": 688,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.2,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 0.2,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 0.2,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Song: Spitty - FTW Song Section: 1:18 - 1:34 Lyrics: For the win For the world From the way For the win For the world From the way All sports are eligible including but not limited to football, basketball, hockey, baseball, cricket, Olympic sports, sports films, tennis, volleyball, golf.",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Sports",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"373e9c40-dfc5-4a6d-bab8-6c2f96dda100": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3200.0
+]
+],
+"id": "373e9c40-dfc5-4a6d-bab8-6c2f96dda100",
+"url": "https://contentrewards.com/c/campaigns/373e9c40-dfc5-4a6d-bab8-6c2f96dda100",
+"title": "The Loaded Tea Shop",
+"brand": "Clip Farm",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 2133.0,
+"budget": 50000.0,
+"clippers": 55,
+"age": "5d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+},
+"facebook": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+}
+},
+"description": "The Loaded Tea Shop makes loaded tea drinks. Make short clips of Michael Jackson moments. Use only our footage. Add the watermark. You earn money for every view.",
+"status": "Accepting clips",
+"launched": "5 days ago",
+"category": "Entertainment",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"c1e3c333-6cfd-45f4-a2eb-bce7348ba528": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1300.0
+]
+],
+"id": "c1e3c333-6cfd-45f4-a2eb-bce7348ba528",
+"url": "https://contentrewards.com/c/campaigns/c1e3c333-6cfd-45f4-a2eb-bce7348ba528",
+"title": "7bet Kliping",
+"brand": "Klipu Fabrika",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 0.8,
+"rate_max": 0.8,
+"spent": 1306.0,
+"budget": 1736.0,
+"clippers": 23,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.6,
+"min_payout": 2.0,
+"max_payout": 50.0
+},
+"instagram": {
+"rate": 0.8,
+"min_payout": 2.0,
+"max_payout": 50.0
+}
+},
+"description": "🟢LOGO klipošanas kampaņa. Vairāk informācija zemāk🎬",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"8be02baf-03f5-4063-a406-ca18ea3da2db": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+639.0
+]
+],
+"id": "8be02baf-03f5-4063-a406-ca18ea3da2db",
+"url": "https://contentrewards.com/c/campaigns/8be02baf-03f5-4063-a406-ca18ea3da2db",
+"title": "DeathByRomy - Body Horror",
+"brand": "Verge Records",
+"verified": false,
+"platforms": [
+"tiktok"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 639.0,
+"budget": 2500.0,
+"clippers": 37,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 350.0
+}
+},
+"description": "Pair the song \"Body Horror\" with a jarring, shocking, or supernatural scene from a popular TV show or movie . Viewers should feel that they can't possibly look away, and wonder what the soundtrack was. A comment from OP below the video tells them the song name",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Sound Campaign",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"41e9d28d-467b-43ca-89ba-3cc7d53afbd2": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+780.0
+]
+],
+"id": "41e9d28d-467b-43ca-89ba-3cc7d53afbd2",
+"url": "https://contentrewards.com/c/campaigns/41e9d28d-467b-43ca-89ba-3cc7d53afbd2",
+"title": "TopValue.fi",
+"brand": "Marketing Cohort",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 780.0,
+"budget": 1100.0,
+"clippers": 24,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 10.0,
+"max_payout": 20.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 10.0,
+"max_payout": 20.0
+}
+},
+"description": "Clip our footage into short TikTok/Reels. Show 100 FXRP bonus on signup (no KYC), 25+ networks, and ticks every 15–90 min paid as XRP rewards. Coin stays the user's. Official site only: End card with the site in the last 3 seconds. English caption",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Finance",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"6fe4c1aa-c8ca-4836-836b-01ab2540b337": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3500.0
+]
+],
+"id": "6fe4c1aa-c8ca-4836-836b-01ab2540b337",
+"url": "https://contentrewards.com/c/campaigns/6fe4c1aa-c8ca-4836-836b-01ab2540b337",
+"title": "It's Personal Podcast Clipping Campaign",
+"brand": "Tykoonclips",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 3461.0,
+"budget": 5000.0,
+"clippers": 77,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 1.5,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 2.0,
+"min_payout": 1.5,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 1.5,
+"max_payout": 100.0
+}
+},
+"description": "We're looking for clippers who can take long form interviews and turn them into scroll stopping short form content. Strong hooks, bold captions, clean edits.",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "News & Politics",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"c49840ae-ca22-4745-8a42-b675847e0355": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3200.0
+]
+],
+"id": "c49840ae-ca22-4745-8a42-b675847e0355",
+"url": "https://contentrewards.com/c/campaigns/c49840ae-ca22-4745-8a42-b675847e0355",
+"title": "Santa Cruz Medicinals Clipping",
+"brand": "VitaClips",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 3246.0,
+"budget": 11865.0,
+"clippers": 20,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 200.0
+}
+},
+"description": "Create & Post Viral Moments from Santa Cruz Medicinals New YT Content!",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Health & Wellness",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"2e7d1c92-3778-4263-9d39-cdf52e78ad01": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1600.0
+]
+],
+"id": "2e7d1c92-3778-4263-9d39-cdf52e78ad01",
+"url": "https://contentrewards.com/c/campaigns/2e7d1c92-3778-4263-9d39-cdf52e78ad01",
+"title": "Spins Kliping",
+"brand": "LKK Kliping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 0.8,
+"rate_max": 0.8,
+"spent": 1629.0,
+"budget": 1867.0,
+"clippers": 22,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.6,
+"min_payout": 1.0,
+"max_payout": 60.0
+},
+"instagram": {
+"rate": 0.8,
+"min_payout": 1.0,
+"max_payout": 80.0
+}
+},
+"description": "⚡Spins Kliping: klipo, publicē un pelni. Noteikumi pieejami zemāk 👇",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"bc8f7d6a-3a31-4a4a-88ea-bb88245e418e": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3100.0
+]
+],
+"id": "bc8f7d6a-3a31-4a4a-88ea-bb88245e418e",
+"url": "https://contentrewards.com/c/campaigns/bc8f7d6a-3a31-4a4a-88ea-bb88245e418e",
+"title": "GATTOUZ0 — OFFICIAL CLIPPING CAMPAIGN",
+"brand": "Gattouz0 - Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 0.2,
+"rate_max": 0.2,
+"spent": 3092.0,
+"budget": 5000.0,
+"clippers": 20,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.2,
+"min_payout": 20.0,
+"max_payout": 20.01
+},
+"instagram": {
+"rate": 0.2,
+"min_payout": 20.0,
+"max_payout": 20.01
+}
+},
+"description": "Get paid to turn Gattouz0's best livestream and YouTube moments into viral short-form videos! Funny reactions, crazy stories, gaming, podcasts ... English-only clips. Post on TikTok, Instagram Reels and earn rewards!",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"8219aa3d-2d55-44e1-9cc0-ac078421bd44": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+718.0
+]
+],
+"id": "8219aa3d-2d55-44e1-9cc0-ac078421bd44",
+"url": "https://contentrewards.com/c/campaigns/8219aa3d-2d55-44e1-9cc0-ac078421bd44",
+"title": "NYZ Clipping | $1K Budget | Up to $1.50 CPM",
+"brand": "Xposure",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 718.0,
+"budget": 1000.0,
+"clippers": 20,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+},
+"youtube": {
+"rate": 0.85,
+"min_payout": 0.85,
+"max_payout": 200.0
+},
+"x": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 200.0
+}
+},
+"description": "NYZ (@imnyzzz) is an entertainment streamer on Twitch who also drops YouTube videos. Turn his best moments into clips that blow up on TikTok, IG, Shorts and X. Every clip should send viewers to his Twitch to follow @imnyzzz. Quality over quantity, always. Let's expose NYZ with Xposure.",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Entertainment",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"3c3d9775-0e79-4969-bcdf-1232e0e5cfae": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+598.0
+]
+],
+"id": "3c3d9775-0e79-4969-bcdf-1232e0e5cfae",
+"url": "https://contentrewards.com/c/campaigns/3c3d9775-0e79-4969-bcdf-1232e0e5cfae",
+"title": "RIFINO Clipping Campaign",
+"brand": "CLIPO global",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 598.0,
+"budget": 1000.0,
+"clippers": 20,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.5,
+"max_payout": 100.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.5,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 2.5,
+"max_payout": 100.0
+}
+},
+"description": "Official clipping campaigns for RIFINO . We turn his long-form football analysis and “Coffee with Rifino” episodes into short viral clips, with trained clippers, dedicated pages, and transparent reporting.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Sports",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"19859ab5-057c-4cff-847c-93155c896827": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+573.0
+]
+],
+"id": "19859ab5-057c-4cff-847c-93155c896827",
+"url": "https://contentrewards.com/c/campaigns/19859ab5-057c-4cff-847c-93155c896827",
+"title": "The Chris Heyn Show Clipping",
+"brand": "Chris Heyn Jr. Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 573.0,
+"budget": 2500.0,
+"clippers": 71,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"NEWEST EPISODE - CLIP THIS ONE:",
+"youtu.be/hfaCgw_alj0",
+"Clip the best moments from the episode: funny parts, hot takes, stories, wild moments, anything that keeps people watching.",
+"Hook viewers in the first 1-2 seconds.",
+"Vertical 9:16 only.",
+"Add captions so the clip works with the sound off.",
+"You can add a video under the clip (gameplay, satisfying videos, b-roll, split screen) to keep people engaged.",
+"Keep it short and cut dead air.",
+"All footage of Chris must come from official Chris Heyn Show episodes.",
+"No reposting other creators' clips or watermarks.",
+"Post on TikTok, Instagram Reels or YouTube Shorts and submit through the campaign to get paid.",
+"Creator requirements",
+"Clippers and editors with taste. You run an aesthetic, old-money, luxury, rap or culture edit page, or you'll start a dedicated Chris Heyn clip page. You cut on the beat, grade footage dark and hazy, and can mix in vintage ads, Flash games and VHS textures without it turning into a meme. Volume and consistency win: post every clip on TikTok, Reels and Shorts."
+],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 300.0
+}
+},
+"description": "Clip the newest Chris Heyn Show episode. Find the best moments, make them engaging, and post on TikTok, Reels and Shorts. Get paid per view.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Podcasts",
+"files": 3,
+"views": 446800,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"a696e6af-18aa-4320-a61e-32e3bcf40a44": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+4800.0
+]
+],
+"id": "a696e6af-18aa-4320-a61e-32e3bcf40a44",
+"url": "https://contentrewards.com/c/campaigns/a696e6af-18aa-4320-a61e-32e3bcf40a44",
+"title": "$2 CPM new clipping niche: Payments",
+"brand": "eFlow",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 4800.0,
+"budget": 5000.0,
+"clippers": 27,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 20.0,
+"max_payout": 250.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 20.0,
+"max_payout": 250.0
+},
+"x": {
+"rate": 2.0,
+"min_payout": 20.0,
+"max_payout": 250.0
+},
+"youtube": {
+"rate": 2.0,
+"min_payout": 20.0,
+"max_payout": 250.0
+}
+},
+"description": "Payments is a fresh niche with less competition and tons of untapped stories. We provide the content, you make it viral. Post on TikTok, Reels & Shorts. $2 CPM.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Banking & Fintech",
+"files": 2,
+"hidden_rules": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"e9962d08-d9d3-4ae4-a81e-1bb85819ead3": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+623.0
+]
+],
+"id": "e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
+"url": "https://contentrewards.com/c/campaigns/e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
+"title": "WatchMeWin Clipping Portugal",
+"brand": "WMW CLIPPING PT",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 623.0,
+"budget": 2000.0,
+"clippers": 19,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 50.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 50.0
+}
+},
+"description": "Clipa e Ganha! 🎥💸",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Entertainment",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b8179d15-004e-46d1-9158-4fc5bd6c0645": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3100.0
+]
+],
+"id": "b8179d15-004e-46d1-9158-4fc5bd6c0645",
+"url": "https://contentrewards.com/c/campaigns/b8179d15-004e-46d1-9158-4fc5bd6c0645",
+"title": "Sherlock [UGC REPOSTING NEW PAGES]",
+"brand": "Acrune",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 3137.0,
+"budget": 8524.0,
+"clippers": 18,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"On screen: the search on sherlocksearch.com stays in the clip, readable. Face scan, results, reveal. The moment the search runs on sherlocksearch.com must stay on screen long enough to read.",
+"Pinned comment:",
+"Google Sherlock Search to find them!",
+"🚫 Not allowed",
+"Bought views, likes or comments, paid boosts or any bot activity. Posts with many views and few likes are rejected.",
+"Other brands or niches on your Sherlock page.",
+"Collab posts with other pages: one video, one page.",
+"Videos from outside the Creatives Bank.",
+"Creator requirements",
+"Make a",
+"new",
+"account, used only for Sherlock videos.",
+"Make it look like a real person: a clear profile photo, no Sherlock logo.",
+"Name: your own, or a theme name about strangers, POV or \"who is this\". No trailing numbers, no \"official\" or \"app\".",
+"One line plus @sherlocksearch.",
+"For example, \"website really finding them everywhere 😳 @sherlocksearch\" or \"one pic is all it takes 👇 @sherlocksearch\", “Google Sherlock Search\"",
+"If your first 9 posts all stay under 300 views, start a new page and tell your moderator"
+],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.5,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.5,
+"max_payout": 300.0
+}
+},
+"description": "CR OAuth required! Sherlock is an AI face search. Sherlock's own UGC campaign gets up to 300M views a month Your job: open a new page for Sherlock and repost videos from the Sherlock Creatives Bank every day, in the template below. Go to the Discord for details",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 2,
+"views": 4900000,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"2e3d49d5-1b66-45f7-86a0-f82cdeffc158": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+215.0
+]
+],
+"id": "2e3d49d5-1b66-45f7-86a0-f82cdeffc158",
+"url": "https://contentrewards.com/c/campaigns/2e3d49d5-1b66-45f7-86a0-f82cdeffc158",
+"title": "Shark Tank Egypt X E-stebdal || Arabic Campaign",
+"brand": "Arab Clip House",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.5,
+"rate_max": 0.5,
+"spent": 215.0,
+"budget": 1000.0,
+"clippers": 24,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 75.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 75.0
+},
+"tiktok": {
+"rate": 0.5,
+"min_payout": 1.0,
+"max_payout": 75.0
+}
+},
+"description": "Clip the best moments from estebdal's Shark Tank Egypt episode and stream. Post on TikTok with burned-in Arabic subtitles, tag @estebdal, and keep e-stebdal.com in your bio. Min 20s, vertical 9:16, 60%+ Egypt audience. $0.50 per 1K views, counted from 2K views.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Business",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"10b9e68d-6004-4730-a741-4b5b37ae0a20": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3400.0
+]
+],
+"id": "10b9e68d-6004-4730-a741-4b5b37ae0a20",
+"url": "https://contentrewards.com/c/campaigns/10b9e68d-6004-4730-a741-4b5b37ae0a20",
+"title": "John Furrier + NYSE/theCUBE",
+"brand": "ReelsBuilder",
+"verified": false,
+"platforms": [
+"tiktok",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 3400.0,
+"budget": 3500.0,
+"clippers": 26,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 150.0
+},
+"youtube": {
+"rate": 2.0,
+"min_payout": 3.0,
+"max_payout": 150.0
+},
+"x": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 150.0
+}
+},
+"description": "Amplify John Furrier’s voice through standout clips from theCUBE. Turn his sharpest insights, bold takes, and compelling conversations into engaging short-form videos that reach new audiences and strengthen his influence across tech, AI, and business.",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Technology",
+"files": 5,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"c86efdd3-c2cb-4a4f-b6a2-2c5a90b3c6fc": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+3700.0
+]
+],
+"id": "c86efdd3-c2cb-4a4f-b6a2-2c5a90b3c6fc",
+"url": "https://contentrewards.com/c/campaigns/c86efdd3-c2cb-4a4f-b6a2-2c5a90b3c6fc",
+"title": "Abby AI [SLIDESHOW]",
+"brand": "ClipGenie",
+"verified": false,
+"platforms": [
+"tiktok"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 3650.0,
+"budget": 4580.0,
+"clippers": 17,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 400.0
+}
+},
+"description": "Make TikTok slideshow content promoting the Abby AI app",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Health & Wellness",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"6d896f33-152f-42a9-92f4-662199228349": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+472.0
+]
+],
+"id": "6d896f33-152f-42a9-92f4-662199228349",
+"url": "https://contentrewards.com/c/campaigns/6d896f33-152f-42a9-92f4-662199228349",
+"title": "Lysium/Benji Ramos Clips",
+"brand": "Lysium",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 472.0,
+"budget": 1000.0,
+"clippers": 51,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"Give context to clips if possible.",
+"Give high energy moments but does not have to be loud=funny only situations.",
+"No drama baiting.",
+"Use NoPixel V Streams when clipping a GTA RP Clip.",
+"Make sure to include Lysium's stream handle in the clips.",
+"Content requirements",
+"Add link in bio",
+"twitch.tv/Lysium",
+"Drafts require pre-approval before posting"
+],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+},
+"youtube": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+},
+"x": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 150.0
+}
+},
+"description": "Pushing clips of Lysium as Benji Ramos in NoPixel V or his reactions to RP moments. Find high energy, funny, unexpected, or story-driven moments with enough context to understand the scene. No drama bait. All clips require pre-approval before posting. Application requires a video sample of your work",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "GTA",
+"files": 1,
+"hidden_rules": 0,
+"views": 412700,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b237ddaf-6320-48da-b7d7-a8d8791eb30e": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1200.0
+]
+],
+"id": "b237ddaf-6320-48da-b7d7-a8d8791eb30e",
+"url": "https://contentrewards.com/c/campaigns/b237ddaf-6320-48da-b7d7-a8d8791eb30e",
+"title": "Clips do Digui",
+"brand": "Comunidade Alpha",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 1162.0,
+"budget": 2000.0,
+"clippers": 19,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+}
+},
+"description": "Posta clipes de alta qualidade de conteúdo do Digui e recebe 1$ por cada 1.000 views qualificadas que geres.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Trading",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"f354afb5-bc73-4090-b723-35f65dbba276": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+52700.0
+]
+],
+"id": "f354afb5-bc73-4090-b723-35f65dbba276",
+"url": "https://contentrewards.com/c/campaigns/f354afb5-bc73-4090-b723-35f65dbba276",
+"title": "Topps x Clipfarm",
+"brand": "Clip Farm",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 52670.0,
+"budget": 66000.0,
+"clippers": 672,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"youtube": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 400.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 400.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 400.0
+}
+},
+"description": "Clip for Topps, the biggest name in trading cards. Cut clips from the official content bank: celebrities ripping packs (Tiffany Stratton, Rhea Ripley, Steve Aoki, Ken Griffey Jr), massive 1/1 pulls, and Fanatics Fest moments. Make card collecting unavoidable.",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "Entertainment",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"311ba494-5f1f-40d7-ade1-92607ba1df06": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+546.0
+]
+],
+"id": "311ba494-5f1f-40d7-ade1-92607ba1df06",
+"url": "https://contentrewards.com/c/campaigns/311ba494-5f1f-40d7-ade1-92607ba1df06",
+"title": "OZOLS - 30 gadi uz skatuves",
+"brand": "OFFSCRIPT",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.1,
+"rate_max": 1.1,
+"spent": 546.0,
+"budget": 1086.0,
+"clippers": 15,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.1,
+"min_payout": 3.0,
+"max_payout": 60.0
+},
+"tiktok": {
+"rate": 1.1,
+"min_payout": 3.0,
+"max_payout": 60.0
+}
+},
+"description": "5. decembrī OZOLS kāps uz Xiaomi arēnas skatuves ar 30 gadu jubilejas koncertu. Veido editus, kas stāsta OZOLA ceļu šajos 30 gados. Bez stickeriem un logo, tikai kvalitatīvi editi. Katru editu apstiprinām pirms publicēšanas.",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Music",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"ceff4682-947e-40c9-b7df-81a806c89943": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+874.0
+]
+],
+"id": "ceff4682-947e-40c9-b7df-81a806c89943",
+"url": "https://contentrewards.com/c/campaigns/ceff4682-947e-40c9-b7df-81a806c89943",
+"title": "FR Bichou Campagne Principale",
+"brand": "ZK CLIPPING",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 1.25,
+"rate_max": 1.25,
+"spent": 874.0,
+"budget": 1000.0,
+"clippers": 14,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.25,
+"min_payout": 5.0,
+"max_payout": 125.0
+},
+"x": {
+"rate": 1.1,
+"min_payout": 5.0,
+"max_payout": 125.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 125.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 5.0,
+"max_payout": 125.0
+}
+},
+"description": "🌴SPECIAL CLIPPING MIAMI & GTA 6 ! Crée des clips courts et dynamiques à partir des lives de Bichou à Miami : aventures IRL, lifestyle de luxe, humour, réactions et GTA 6. Publie les meilleurs moments sur TikTok, Reels et Shorts et sois rémunéré ! 💸",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Lifestyle",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"4479e5e2-9a00-489e-8b0c-345834f37cc7": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [],
+"id": "4479e5e2-9a00-489e-8b0c-345834f37cc7",
+"url": "https://contentrewards.com/c/campaigns/4479e5e2-9a00-489e-8b0c-345834f37cc7",
+"title": "$30,000 LACY 30 DAY CAMPAIGN",
+"brand": "Reach",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": true,
+"rate": null,
+"rate_max": null,
+"spent": null,
+"budget": 25000.0,
+"clippers": 5700,
+"age": "3w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {},
+"description": "Clip content from Lacy's social media accounts (TikTok, IG, YT) READ THE RULES AND REQUIREMENTS HERE:",
+"status": "Accepting clips",
+"launched": "3 weeks ago",
+"category": "Streamer",
+"files": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b536fdfc-4d10-4069-92ff-103b65cecdbe": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1100.0
+]
+],
+"id": "b536fdfc-4d10-4069-92ff-103b65cecdbe",
+"url": "https://contentrewards.com/c/campaigns/b536fdfc-4d10-4069-92ff-103b65cecdbe",
+"title": "Viral Clips - Streaming",
+"brand": "Johndoe Twitch Stream",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 3.0,
+"rate_max": 3.0,
+"spent": 1112.0,
+"budget": 1500.0,
+"clippers": 20,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 3.0,
+"min_payout": 3.0,
+"max_payout": 999.0
+},
+"instagram": {
+"rate": 3.0,
+"min_payout": 3.0,
+"max_payout": 999.0
+}
+},
+"description": "Clip the best moments always with * ONLY clip Miami Streams (October 2026 onwards) * a viral Caption * good edits e.g. good crop and sound effects where appropriate * twitch logo and username on video (johndoe_100x) * always tag @johndoe.100x",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Twitch",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"cc16421d-18b0-46a5-aea2-6f2f2ae370bf": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [],
+"id": "cc16421d-18b0-46a5-aea2-6f2f2ae370bf",
+"url": "https://contentrewards.com/c/campaigns/cc16421d-18b0-46a5-aea2-6f2f2ae370bf",
+"title": "Double Coverage Podcast",
+"brand": "Reach",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": true,
+"rate": null,
+"rate_max": null,
+"spent": null,
+"budget": 10000.0,
+"clippers": 1400,
+"age": "4d",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {},
+"description": "Get paid to clip content from the Double Coverage x Skip Bayless Podcast, any other double coverage content is also acceptable. Campaign ending 20th November.",
+"status": "Accepting clips",
+"launched": "4 days ago",
+"category": "Podcasts",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"60e19a6d-066c-4090-8728-02eb6bd789ef": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+510.0
+]
+],
+"id": "60e19a6d-066c-4090-8728-02eb6bd789ef",
+"url": "https://contentrewards.com/c/campaigns/60e19a6d-066c-4090-8728-02eb6bd789ef",
+"title": "Hoodrich Clipping | $1.00 CPM",
+"brand": "Hype Media",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 510.0,
+"budget": 5000.0,
+"clippers": 14,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Clip Hoodrich’s streams into engaging short-form content about credit, funding, business, and entertaining stream moments. Earn $1.00 per 1,000 verified views.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Streamer",
+"files": 3,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"816b45a1-dc3f-42b5-b41e-81a1ebf8360e": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+9700.0
+]
+],
+"id": "816b45a1-dc3f-42b5-b41e-81a1ebf8360e",
+"url": "https://contentrewards.com/c/campaigns/816b45a1-dc3f-42b5-b41e-81a1ebf8360e",
+"title": "WKWK مطعم وك الكويتي",
+"brand": "ClipHaus",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 9714.0,
+"budget": 12253.0,
+"clippers": 59,
+"age": "3mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 50.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 50.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 50.0
+}
+},
+"description": "WK is Kuwait's #1 burger brand. Bold flavors, fresh ingredients, and content that makes people want to order right now. Cut the best moments, post them across your pages, and get paid per view.",
+"status": "Accepting clips",
+"launched": "3 months ago",
+"category": "Personal Brand",
+"files": 2,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"705f6e21-38af-408c-9e55-c77e4611bf09": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+2700.0
+]
+],
+"id": "705f6e21-38af-408c-9e55-c77e4611bf09",
+"url": "https://contentrewards.com/c/campaigns/705f6e21-38af-408c-9e55-c77e4611bf09",
+"title": "Let Him Mansplain Podcast Clipping",
+"brand": "ClipLaunch",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 2686.0,
+"budget": 10500.0,
+"clippers": 51,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 0.5,
+"min_payout": 1.5,
+"max_payout": 300.0
+}
+},
+"description": "Clip for Let Him Mansplain, the weekly podcast asking where all the good men went! Host Lily Kate gets men to open up about dating and marriage from a Christian point of view. The goal is to help women find good men! Clip content that grows awareness and turns viewers into long-term fans!",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Podcasts",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"5944ed5a-9ee0-47d1-8545-2bbf614ac18b": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+7200.0
+]
+],
+"id": "5944ed5a-9ee0-47d1-8545-2bbf614ac18b",
+"url": "https://contentrewards.com/c/campaigns/5944ed5a-9ee0-47d1-8545-2bbf614ac18b",
+"title": "Mr. Pa Clipping",
+"brand": "Clip Influence",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.75,
+"rate_max": 1.75,
+"spent": 7239.0,
+"budget": 10000.0,
+"clippers": 79,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.75,
+"min_payout": 1.75,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 1.75,
+"min_payout": 1.75,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 300.0
+}
+},
+"description": "Get paid $1.75/ thousand views to clip for Mr. Pa. Goal is to drive awareness to Mr. Pa and get in-store purchases!",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"dcd13548-f5ec-4bcb-8555-a0e06b6319b8": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+733.0
+]
+],
+"id": "dcd13548-f5ec-4bcb-8555-a0e06b6319b8",
+"url": "https://contentrewards.com/c/campaigns/dcd13548-f5ec-4bcb-8555-a0e06b6319b8",
+"title": "xikers - DIENAMITE MV and Showcase Clips [8428]",
+"brand": "Sound Network",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 733.0,
+"budget": 1000.0,
+"clippers": 44,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Clip moments from the xikers \"DIENAMITE\" music video and showcase performances. Use the 3 official videos below. Post to TikTok and Instagram Reels only.",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Music",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"7ac473b4-7490-49ae-9cd7-777016da3be7": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+971.0
+]
+],
+"id": "7ac473b4-7490-49ae-9cd7-777016da3be7",
+"url": "https://contentrewards.com/c/campaigns/7ac473b4-7490-49ae-9cd7-777016da3be7",
+"title": "PopDarts [Clipping Campaign] [Target CTA]",
+"brand": "ClipHouse",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 971.0,
+"budget": 1250.0,
+"clippers": 26,
+"age": "1w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 100.0
+}
+},
+"description": "Pop Darts invented the suction-cup dart game that's gone viral worldwide. Use the most viral moments from the official Pop Darts content, think trick shots, insane moments, loud crowd reactions and highlight-reel plays, the kind of clips you already see blowing up. MUST INCLUDE TARGET CTA",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Entertainment",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"a2fb37f8-bdb4-4569-80a5-6db64613c8e6": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1800.0
+]
+],
+"id": "a2fb37f8-bdb4-4569-80a5-6db64613c8e6",
+"url": "https://contentrewards.com/c/campaigns/a2fb37f8-bdb4-4569-80a5-6db64613c8e6",
+"title": "Douxds x Manë Clipping| $3.2k Budget",
+"brand": "Motion Clipping",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 1823.0,
+"budget": 3100.0,
+"clippers": 45,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 500.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 1.5,
+"max_payout": 500.0
+}
+},
+"description": "Create engaging product slideshows featuring Douxds and Manë products, designed to grab attention and drive clicks. Post consistently across TikTok and Instagram using strong visuals, hooks, and clear CTAs.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Beauty",
+"files": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"e7b7aa0d-8d5c-460b-bb1e-803ad0492bc5": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1200.0
+]
+],
+"id": "e7b7aa0d-8d5c-460b-bb1e-803ad0492bc5",
+"url": "https://contentrewards.com/c/campaigns/e7b7aa0d-8d5c-460b-bb1e-803ad0492bc5",
+"title": "8LANCO | 2 LIVE MUSIC CAMPAIGNS",
+"brand": "ClippedIn",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.5,
+"spent": 1228.0,
+"budget": 3000.0,
+"clippers": 184,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 200.0
+},
+"tiktok": {
+"rate": 1.5,
+"min_payout": 2.0,
+"max_payout": 200.0
+}
+},
+"description": "Post edits of 8lanco’s new single Man Out of Me using his official footage from the content bank. Piano led, feels like a vintage 70s record. Use the official sound, keep 8lanco on screen for at least half the clip, and follow the guidelines. $1 CPM, up to $200 per clip.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Music",
+"files": 2,
+"hidden_rules": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"03b93a42-c89e-4f53-9885-3fbc86091867": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+1000.0
+]
+],
+"id": "03b93a42-c89e-4f53-9885-3fbc86091867",
+"url": "https://contentrewards.com/c/campaigns/03b93a42-c89e-4f53-9885-3fbc86091867",
+"title": "Zach Top | Other Side of Hurtin'",
+"brand": "The Clip Ship",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 1004.0,
+"budget": 2925.0,
+"clippers": 27,
+"age": "2mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 4.0,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 4.0,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 2.0,
+"min_payout": 4.0,
+"max_payout": 300.0
+}
+},
+"description": "The Clip Ship is paying creators for content on this campaign.",
+"status": "Accepting clips",
+"launched": "2 months ago",
+"category": "Music",
+"files": 1,
+"hidden_rules": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b16a083d-f439-4cec-a979-2df4b5fc1420": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+2500.0
+]
+],
+"id": "b16a083d-f439-4cec-a979-2df4b5fc1420",
+"url": "https://contentrewards.com/c/campaigns/b16a083d-f439-4cec-a979-2df4b5fc1420",
+"title": "TLRP Clipping | $3K Budget | $0.40 CPM",
+"brand": "Clipix",
+"verified": true,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 0.4,
+"rate_max": 0.4,
+"spent": 2472.0,
+"budget": 3080.0,
+"clippers": 321,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.4,
+"min_payout": 0.5,
+"max_payout": 225.0
+},
+"instagram": {
+"rate": 0.4,
+"min_payout": 0.5,
+"max_payout": 225.0
+},
+"youtube": {
+"rate": 0.4,
+"min_payout": 0.5,
+"max_payout": 225.0
+}
+},
+"description": "The Living Room Podcast (TLRP), hosted by Chris Wharton, explores the science of longevity and healthy living. Chop the best moments into clips and flood Instagram, TikTok, and YouTube. Every clip should send viewers to the full episodes on YouTube. Keep posts up to standard, no exceptions.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Podcasts",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"3eed4d79-3d77-4704-9356-e1da545e6043": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+694.0
+]
+],
+"id": "3eed4d79-3d77-4704-9356-e1da545e6043",
+"url": "https://contentrewards.com/c/campaigns/3eed4d79-3d77-4704-9356-e1da545e6043",
+"title": "Marc Simoncini ultimate x Virality®",
+"brand": "ViralClips",
+"verified": false,
+"platforms": [
+"instagram"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 694.0,
+"budget": 2000.0,
+"clippers": 39,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [
+"🎬 Brief de campagne – Marc Simoncini x UNBX",
+"Merci de respecter les consignes suivantes pour que vos vidéos soient validées :",
+"ONLY FRENCH ACCOUNT",
+"🇫🇷 Comptes français uniquement : les publications doivent être réalisées depuis des comptes français.",
+"📱 Instagram uniquement : les clips doivent être publiés exclusivement sur Instagram (Reels).",
+"🏷️ Tag obligatoire : mentionnez @Marc_simoncini sur chaque clip publié.",
+"🎙️ Contenu : utilisez les passages de Marc Simoncini dans le podcast UNBX qui sont en lien de cette campagne !",
+"🚫 Contenus interdits : aucun contenu raciste, haineux, discriminatoire, violent ou offensant ne sera accepté.",
+"⚠️ Toute vidéo ne respectant pas ces consignes pourra être refusée et ne sera pas comptabilisée dans la campagne."
+],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 3.0,
+"max_payout": 100.0
+}
+},
+"description": "Campagne de clipping pour Marc Simoncini",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Entertainment",
+"files": 1,
+"views": 860900,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"6711aef7-f017-4b92-a02b-2dad1e211ea9": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+895.0
+]
+],
+"id": "6711aef7-f017-4b92-a02b-2dad1e211ea9",
+"url": "https://contentrewards.com/c/campaigns/6711aef7-f017-4b92-a02b-2dad1e211ea9",
+"title": "Arabic Clipping Fundingpips",
+"brand": "FundingPips",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 5.0,
+"rate_max": 5.0,
+"spent": 895.0,
+"budget": 1000.0,
+"clippers": 293,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 5.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 5.0,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"tiktok": {
+"rate": 3.0,
+"min_payout": 6.0,
+"max_payout": 100.0
+}
+},
+"description": "هي منصة عالمية لتمويل المتداولين الموهوبين، تتيح لهم إثبات مهاراتهم واجتياز التقييمات لإدارة حسابات تداول ضخمة. انضم للحملة وقم بتحويل الفيديوهات وتحليلات التداول إلى مقاطع قصيرة منتشرة لتحقق أرباحاً مقابل المشاهدات.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Technology",
+"files": 1,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"b8042190-fb65-4e84-be25-d2a65478a35f": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+846.0
+]
+],
+"id": "b8042190-fb65-4e84-be25-d2a65478a35f",
+"url": "https://contentrewards.com/c/campaigns/b8042190-fb65-4e84-be25-d2a65478a35f",
+"title": "Duke Dennis Spends 100k on Grillz (ft. Kai Cenat)",
+"brand": "Danesh Diamonds",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.5,
+"rate_max": 1.5,
+"spent": 846.0,
+"budget": 1000.0,
+"clippers": 169,
+"age": "2w",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 200.0
+},
+"instagram": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 200.0
+},
+"youtube": {
+"rate": 1.5,
+"min_payout": 3.0,
+"max_payout": 200.0
+}
+},
+"description": "NEW FOOTAGE ONLY. Prioritize TikTok. Clip the Danesh footage or Duke's Halloween party video, like 16:03-19:00, 23:50 or other moments. Danesh or the grillz on screen. On-screen title says what's happening. Caption: #daneshdiamonds and # everyone in it. No @. Keep it positive and natural, not promo.",
+"status": "Accepting clips",
+"launched": "2 weeks ago",
+"category": "Celebrity",
+"files": 3,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"06b0dba7-cb5f-409b-a5e6-2e64824de464": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+789.0
+]
+],
+"id": "06b0dba7-cb5f-409b-a5e6-2e64824de464",
+"url": "https://contentrewards.com/c/campaigns/06b0dba7-cb5f-409b-a5e6-2e64824de464",
+"title": "Elijah Connor Clipping",
+"brand": "Digital E-Clipz",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"x"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 789.0,
+"budget": 1000.0,
+"clippers": 31,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"instagram": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 250.0
+},
+"x": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 250.0
+},
+"tiktok": {
+"rate": 1.0,
+"min_payout": 1.0,
+"max_payout": 250.0
+}
+},
+"description": "Clip and meme Elijah Connor’s funniest reactions from 99 to Beat. Lean into his viral staredown with Diddy, recreate classic memes with new footage, and turn fresh reactions into relatable meme formats across TikTok and Instagram.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 2,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+},
+"f4f0deda-83ba-4e74-86ff-830e703c3fc3": {
+"first": "2026-11-16T07:48:38+00:00",
+"hist": [
+[
+"2026-11-16T07:48:38+00:00",
+864.0
+]
+],
+"id": "f4f0deda-83ba-4e74-86ff-830e703c3fc3",
+"url": "https://contentrewards.com/c/campaigns/f4f0deda-83ba-4e74-86ff-830e703c3fc3",
+"title": "Bobby Chandler × Oceans.com",
+"brand": "Atlis",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 1.0,
+"rate_max": 1.0,
+"spent": 864.0,
+"budget": 1000.0,
+"clippers": 69,
+"age": "1mo",
+"last": "2026-11-16T07:48:38+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 1.0,
+"min_payout": 3.0,
+"max_payout": 20.0
+},
+"instagram": {
+"rate": 1.0,
+"min_payout": 3.0,
+"max_payout": 20.0
+},
+"youtube": {
+"rate": 1.0,
+"min_payout": 3.0,
+"max_payout": 20.0
+}
+},
+"description": "Join Oceans.com to clip for Bobby Chandler, one of the fastest growing preachers in the world, reaching millions through his growing social presence. Earn $1.00 per 1,000 views by clipping and sharing his content.",
+"status": "Accepting clips",
+"launched": "1 month ago",
+"category": "Entertainment",
+"files": 2,
+"hidden_rules": 4,
+"detail_at": "2026-11-16T07:48:38+00:00",
+"paid_24h": 0
+}
+}
+}
