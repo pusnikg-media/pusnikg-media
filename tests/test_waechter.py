@@ -161,3 +161,10 @@ def test_issue_sync_never_closes_when_unsure():
 def test_repo_size_alarm():
     assert W.check_repo(CFG, 1000) == [] and W.check_repo(CFG, None) == []
     assert [p.key for p in W.check_repo(CFG, 9000)] == ["repo:groesse"]
+
+
+def test_fresh_jobs_get_grace_period(tmp_path):
+    r = repo(tmp_path, SHORT_OK); os.makedirs(r / "clipjobs")
+    json.dump({"name": "new", "source": "https://x/y.mp4", "clips": [{"id": "A", "a": 0, "b": 20, "title": "x"}]}, open(r / "clipjobs/new.json", "w"))
+    assert [p.key for p in W.evaluate(str(r), CFG, NOW, None)[0]] == ["clipjob:new:fehlt"]
+    assert W.evaluate(str(r), CFG, NOW, None, fresh=lambda p: p == "clipjobs/new.json")[0] == []

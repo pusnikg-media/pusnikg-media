@@ -82,13 +82,14 @@ def check_actions(cfg, now, runs):
     return out, unsicher
 
 
-def check_render(root, now):
+def check_render(root, now, fresh=lambda p: False):
     out, today = [], local(now).date()
     by = {}
     for f in sorted(glob.glob(os.path.join(root, "jobs", "*.json"))):
         j = jl(f) or {}; d = j.get("date"); n = j.get("name") or os.path.basename(f)[:-5]
         if not d or not (today <= dt.date.fromisoformat(d) <= today + dt.timedelta(days=2)): continue
         r = jl(os.path.join(root, "shorts", n + ".json"))
+        if r is None and fresh(f"jobs/{os.path.basename(f)}"): continue          # gerade erst gepusht: die Action ist noch dran
         by.setdefault(d, []).append((n, r))
     for d, lst in sorted(by.items()):
         if any(r and r.get("ok") for _, r in lst): continue
@@ -97,12 +98,13 @@ def check_render(root, now):
     return out
 
 
-def check_clipjobs(root):
+def check_clipjobs(root, fresh=lambda p: False):
     out = []
     for f in sorted(glob.glob(os.path.join(root, "clipjobs", "*.json"))):
         j = jl(f) or {}; n = j.get("name") or os.path.basename(f)[:-5]
         if not j.get("clips"): continue
         r = jl(os.path.join(root, "clips", n, "result.json"))
+        if r is None and fresh(f"clipjobs/{os.path.basename(f)}"): continue      # gerade erst gepusht
         if r is None: out.append(P("clipjob", f"clipjob:{n}:fehlt", f"Clipfabrik-Auftrag '{n}' hat noch kein Ergebnis (clips/{n}/result.json)."))
         elif not r.get("ok"):
             bad = [c["id"] for c in r.get("clips", []) if not c.get("ok")]
@@ -171,13 +173,13 @@ def check_repo(cfg, mb):
     return [P("repo", "repo:groesse", f"Repo ist {mb:.0f} MB groß (Alarm ab {cfg['repo_mb_max']} MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.")]
 
 
-def evaluate(root, cfg, now, runs, repo_mb=None):
+def evaluate(root, cfg, now, runs, repo_mb=None, fresh=lambda p: False):
     st = jl(os.path.join(root, "stats", "latest.json"))
     probs, blind, unsicher = check_daten(root, cfg, now, st)
     if runs is not None:
         a, u = check_actions(cfg, now, runs); probs += a; unsicher += u
     else: unsicher.append("Action-Status nicht abgefragt")
-    probs += check_render(root, now) + check_clipjobs(root) + check_repo(cfg, repo_mb)
+    probs += check_render(root, now, fresh) + check_clipjobs(root, fresh) + check_repo(cfg, repo_mb)
     if st:
         probs += check_short(root, cfg, now, st, blind) + check_postzeit(cfg, now, st) + check_einreichen(root, cfg, now, st, blind) + check_kampagnen(root, cfg, now, st, blind)
     return [p for p in probs if not ignored(p, cfg)], unsicher
@@ -206,6 +208,13 @@ class GH:
             try: out[n] = s.call("GET", f"/actions/workflows/{n}.yml/runs?branch=main&per_page=10&status=completed")["workflow_runs"]
             except Exception as e: print(f"Actions-Status {n}: {e}", file=sys.stderr); out[n] = None
         return out
+
+    def fresh(s, path, hours=2):
+        """Datei in den letzten `hours` Stunden committet? (Schonfrist für frisch gepushte Aufträge; bei Fehler: nein)"""
+        try:
+            c = s.call("GET", f"/commits?path={path}&per_page=1")
+            return bool(c) and (dt.datetime.now(UTC) - parse(c[0]["commit"]["committer"]["date"])).total_seconds() < hours * 3600
+        except Exception: return False
 
     def size_mb(s):
         try: return s.call("GET", "")["size"] / 1024
@@ -242,7 +251,7 @@ def main(argv=None):
     cfg = json.load(open(os.path.join(a.root, "plan", "waechter.json")))
     gh = GH(os.environ.get("GITHUB_REPOSITORY", "pusnikg-media/pusnikg-media"), os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN"))
     runs = None if a.no_api else gh.runs(list(cfg["max_alter_actions_stunden"]))
-    probs, unsicher = evaluate(a.root, cfg, now, runs, None if a.no_api else gh.size_mb())
+    probs, unsicher = evaluate(a.root, cfg, now, runs, None if a.no_api else gh.size_mb(), (lambda p: False) if a.no_api else gh.fresh)
     if runs and any(v is None for v in runs.values()) and not a.dry:
         probs.append(P("daten", "daten:actions", "GitHub-Actions-Status war nicht lesbar – Lauf unsicher."))
     md = markdown(probs, unsicher, now); print(md)

@@ -60,6 +60,13 @@ Produzent (täglich 07:47), Clipping-Agent (täglich 12:47), Deal-Radar (täglic
 ## Arbeitsweise
 Keine Rückfragen an Steven, wenn die Antwort hier steht. Nachrichten kurz, auf Deutsch, ohne Technik. Texte für Posts auf Englisch.
 
+## Wächter und Tests (seit 16.11.2026)
+- **Schritt 0 für Analyst und Clipping-Agent:** `https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/stats/alerts.md` lesen (Action `waechter`, 2× täglich: ca. 06:47 und 12:37 Berlin, 0 Credits). Steht dort ein offenes Problem aus deinem Bereich (Tages-Short fehlt, Clip nicht gerendert/nicht live, Kampagnen-Clip nicht eingereicht, Action tot, Post nach 19:30), zuerst das melden bzw. beheben. „Nicht beurteilbar" heißt: Daten fehlten, es können Probleme fehlen.
+- **Einreichen:** Nach jedem Einreichen bei Content Rewards die Post-URL in `plan/eingereicht.json` unter `eingereicht` eintragen (Clip nicht nötig: unter `nicht_noetig`). Sonst steht der Clip nach 45 Minuten im Alarm. Gilt für Kampagnen-Posts ab 16.11.
+- Neue Kampagne: zusätzlich zu `plan/stats.json` und `plan/kampagnen.json` eine Zeile in `plan/waechter.json` (`kampagnen`, mit `erwartet` = geplante Clip-Zahl und `bis` = letzter Posttag).
+- GitHub-Issues mit Label „alarm" legt der Wächter selbst an und schließt sie selbst. Nicht von Hand schließen.
+- Tests: Action `tests` läuft bei jedem Push. Rot = Push gilt als kaputt.
+
 ## GTA-6-Launch (Donnerstag 19.11.2026, Vorbereitung 16.11.)
 - **Vorbereitet:** `plan/gta6_launch.json` (`enabled: false`, nichts liest sie automatisch): 9 Streamer-Kandidaten (Kanal, Plattform, Priorität 1–3, Größe am 16.11. geprüft, Feld `campaign` noch leer), Suchbegriffe für Content Rewards, Vorlage für den Livewatch-Eintrag. Kampagnen-Radar kennt jetzt GTA-6-Stichwörter (Vice City, Leonida, Rockstar …) und ordnet solche Kampagnen Pusnik G zu. Anleitung: `pipeline/README.md` → „Launch-Tag 19.11.".
 - **Regel:** Livewatch nur für Streamer mit aktiver Kampagne oder Erlaubnis (Feld `campaign` gefüllt). GTA-6-Kampagnen nur mit Rechteinhaber oder offiziellem Partner. Beitreten kann nur Steven. Ohne Kampagne bleiben fremde Streams nur Trend-Signal.
