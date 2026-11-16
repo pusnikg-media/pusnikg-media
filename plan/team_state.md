@@ -59,3 +59,9 @@ Produzent (täglich 07:47), Clipping-Agent (täglich 12:47), Deal-Radar (täglic
 
 ## Arbeitsweise
 Keine Rückfragen an Steven, wenn die Antwort hier steht. Nachrichten kurz, auf Deutsch, ohne Technik. Texte für Posts auf Englisch.
+
+## GTA-6-Launch (Donnerstag 19.11.2026, Vorbereitung 16.11.)
+- **Vorbereitet:** `plan/gta6_launch.json` (`enabled: false`, nichts liest sie automatisch): 9 Streamer-Kandidaten (Kanal, Plattform, Priorität 1–3, Größe am 16.11. geprüft, Feld `campaign` noch leer), Suchbegriffe für Content Rewards, Vorlage für den Livewatch-Eintrag. Kampagnen-Radar kennt jetzt GTA-6-Stichwörter (Vice City, Leonida, Rockstar …) und ordnet solche Kampagnen Pusnik G zu. Anleitung: `pipeline/README.md` → „Launch-Tag 19.11.".
+- **Regel:** Livewatch nur für Streamer mit aktiver Kampagne oder Erlaubnis (Feld `campaign` gefüllt). GTA-6-Kampagnen nur mit Rechteinhaber oder offiziellem Partner. Beitreten kann nur Steven. Ohne Kampagne bleiben fremde Streams nur Trend-Signal.
+- **Facecam-Split (`layout: split`)** ist an echtem Twitch-Material getestet (Cam links und rechts), zwei Fehler behoben; `native` unverändert. Grenze: bei GTA-Material kann `auto` eine Spielfigur statt der Facecam nehmen (tfue-Test) → für GTA-6-Clips `facecam` von Hand setzen, Livewatch bleibt `native`. Details: README „Facecam-Split – Test an echten Twitch-Clips".
+- **Offen / fehlt bis Donnerstag:** (1) eine echte Kampagne für GTA 6 oder einen Streamer (Radar beobachten, `trends/latest.md` GTA-6-News). (2) Echter Livewatch-Lauf auf Twitch/Kick mit den GTA-6-Streamern steht aus (nur `native` geeicht). (3) Plattform/Live-Status der Streamer am Donnerstag prüfen. (4) Spätschicht-Woche: Posten nur 09:00/09:30 und nur mit Stevens „ja" – Donnerstag-Clips gehen frühestens Freitag früh raus.
