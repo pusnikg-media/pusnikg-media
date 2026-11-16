@@ -20,3 +20,11 @@ Geprüft: Analyst, Stratege, Deal-Radar, Reel-Scout gegen Inhaltsregeln, Zeiten/
 - **Neu: `plan/prompts/warzone-erinnerungen-DEF.md`** mit fertigen Ersatztexten (Content Rewards, Issue abhaken, Schicht-Hinweis, postIds unverändert). **D bis Di 17.11. 12:00 tauschen.**
 **Offene Fragen (Steven):** (1) Deal-Radar darf bis 15 € melden, obwohl das Budget 0 € ist: so lassen? (2) Deal-Radar mit 4 Suchen pro Tag ist für das Pro-Abo viel: auf 2–3 Tage pro Woche begrenzen? (3) Die drei Entscheidungen aus `plan/prompts/README.md` sind weiter offen (Dauer-Freigabe, Zusatz-Shorts nach 19:30, Deal-Radar-Gedächtnis).
 **Nebenbefund Produzent (nicht geändert, war schon gegengelesen):** Schritt 8 wartet höchstens 50 Min auf den Render („Action schaut alle 15 Min“). Gemessen kommt `render` aber nur etwa 1×/h, also läuft der Agent bei einem News-Short meist ins Leere und nimmt den Vorrat. Das ist sicher, aber das News-Short fällt aus. Mehr dazu in Aufgabe 6.
+
+## 3. Clipfabrik-Reste – erledigt (mit Tests)
+- **Hochformat-Quelle** (Handy-Video, 9:16, 4:5) in `native`/`framed`: Früher wurde nur das Mittelband gezeigt, oben und unten fehlten. Jetzt wird das ganze Bild schmal und mittig gezeigt, mit Unschärfe-Hintergrund an den Seiten. Querformat bleibt exakt gleich (`fg_w = W`).
+- **Emojis:** Hautton (👍🏽), Flaggen (🇩🇪) und ZWJ-Familien wurden pro Codepunkt gezeichnet (👍 + Farbfeld, zwei Buchstabenkästen). Neu: `tokens()` fasst sie zu einem Zeichen zusammen. Ohne Shaping-Engine (raqm) zeichnet es nur das Grund-Emoji und lässt die Flagge weg. Dieselbe Zählung gilt in `caption_hints` (vorher Fehlalarm „mehr als 3 Emojis“).
+- **`probe()` bei `r_frame_rate 0/0`:** Vorher Absturz mit „float division by zero“. Jetzt `avg_frame_rate`, sonst 30 fps. Den normalen ffprobe-Aufruf habe ich nicht geändert, nur in diesem Fall kommt eine Zusatzabfrage.
+- **Tests:** 6 neue in `tests/test_clipfabrik.py`; die 5 Verhaltens-Tests sind mit dem alten Code rot. Gesamt lokal **279 grün, 0 übersprungen** (OpenCV installiert).
+- **`tests/clip_regression.py compare VORHER`: GLEICH (alle Hashes identisch).** Bestehende Clips und Layouts sind unverändert, `job_sig` ist unberührt, nichts rendert neu.
+- Nicht angefasst: Livewatch-Fallbackschnitt (`pk-16..pk+8`) an Satzgrenzen (gehört der Livewatch-Session).

@@ -71,9 +71,23 @@ def run(cmd, timeout=3600):
 def probe(src):
     r = run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,r_frame_rate:format=duration",
              "-of", "json", src])
-    d = json.loads(r.stdout); s = d["streams"][0]; n, _, m = s["r_frame_rate"].partition("/")
+    d = json.loads(r.stdout); s = d["streams"][0]
     a = run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=codec_name", "-of", "csv=p=0", src]).stdout.strip()
-    return {"w": int(s["width"]), "h": int(s["height"]), "fps": float(n) / float(m or 1), "dur": float(d["format"]["duration"]), "audio": bool(a)}
+    if frame_rate(s, None) is None:  # rare "0/0": ask for the average rate only then (keeps the usual ffprobe call unchanged)
+        s["avg_frame_rate"] = run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=avg_frame_rate",
+                                   "-of", "csv=p=0", src]).stdout.strip()
+    return {"w": int(s["width"]), "h": int(s["height"]), "fps": frame_rate(s), "dur": float(d["format"]["duration"]), "audio": bool(a)}
+
+
+def frame_rate(s, default=30.0):
+    """fps from an ffprobe stream: r_frame_rate, else avg_frame_rate, else 30. Some streams/remuxes report "0/0" - that used to
+    raise ZeroDivisionError ("float division by zero") instead of a usable value (review 16.11.)."""
+    for k in ("r_frame_rate", "avg_frame_rate"):
+        n, _, m = str(s.get(k) or "").partition("/")
+        try: f = float(n) / float(m or 1)
+        except (ValueError, ZeroDivisionError): continue
+        if 1 <= f <= 240: return f
+    return default
 
 
 STREAM_HOSTS = ("twitch.tv", "kick.com", "youtube.com", "youtu.be", "tiktok.com", "x.com", "twitter.com", "rumble.com", "instagram.com")
@@ -328,11 +342,40 @@ def paste_logo(img, logo, width, y_top=None, y_bottom=None):
     img.alpha_composite(halo); img.alpha_composite(lg, (x, y))
 
 
+try:
+    from PIL import features as _pf; RAQM = bool(_pf.check("raqm"))
+except Exception: RAQM = False
 EMOJI_FONTS = ["/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", "/usr/share/fonts/noto/NotoColorEmoji.ttf"]
 
 
 def is_emoji(ch):
     o = ord(ch); return o >= 0x1F000 or 0x2600 <= o <= 0x27BF or o in (0x2B50, 0x2B55, 0x203C, 0x2049)
+
+
+def is_mod(ch):  # skin tone modifier or tag character (subdivision flags) - belongs to the emoji before it
+    o = ord(ch); return 0x1F3FB <= o <= 0x1F3FF or 0xE0020 <= o <= 0xE007F
+
+
+def is_ri(ch):  # regional indicator - two of them form one flag
+    return 0x1F1E6 <= ord(ch) <= 0x1F1FF
+
+
+def tokens(text):
+    """Text -> list of tokens: single characters, or one whole emoji per token (base + skin tone, flag pair, ZWJ family ...).
+    Before 16.11. every code point was drawn on its own: 👍🏽 became 👍 + a brown square, 🇩🇪 two letter boxes, 👨‍👩‍👧 three people."""
+    out, i, n = [], 0, len(text)
+    while i < n:
+        ch = text[i]; i += 1
+        if ch == "\u200d": continue  # stray joiner
+        if not is_emoji(ch): out.append(ch); continue
+        t = ch
+        if is_ri(ch) and i < n and is_ri(text[i]): t += text[i]; i += 1
+        while i < n and is_mod(text[i]): t += text[i]; i += 1
+        while i + 1 < n and text[i] == "\u200d" and is_emoji(text[i + 1]):
+            t += text[i] + text[i + 1]; i += 2
+            while i < n and is_mod(text[i]): t += text[i]; i += 1
+        out.append(t)
+    return out
 
 
 def caption_hints(text, seconds=None):
@@ -341,12 +384,12 @@ def caption_hints(text, seconds=None):
     t = re.sub(r"\s+", " ", text or "").strip(); h = []
     if not t: return h
     words = [w for w in re.findall(r"[A-Za-z0-9$'’%.,-]+", t) if re.search(r"[A-Za-z0-9]", w)]
-    emo = [c for c in t if is_emoji(c)]
+    emo = [c for c in tokens(t) if is_emoji(c[0])]
     if len(words) < 8: h.append(f"Kontextsatz hat nur {len(words)} Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern")
     if len(words) > 17: h.append(f"Kontextsatz hat {len(words)} Wörter – auf höchstens 15 kürzen")
     if not emo: h.append("kein Emoji am Ende (üblich: 😭 😂 👀 💰)")
     elif len(emo) > 3: h.append("mehr als 3 Emojis")
-    elif not is_emoji(t.replace("\ufe0f", "")[-1]): h.append("Emoji gehört ans Satzende")
+    elif not is_emoji(tokens(t.replace("\ufe0f", ""))[-1][0]): h.append("Emoji gehört ans Satzende")
     if "..." not in t and "…" not in t: h.append("Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)")
     caps = [w for w in words if len(w) > 2 and w.isupper() and re.search(r"[A-Z]", w)]
     if len(caps) > 3: h.append(f"{len(caps)} Wörter in Großbuchstaben – höchstens 1–2 (das überraschende Wort)")
@@ -359,7 +402,7 @@ def caption_hints(text, seconds=None):
 
 def caption_wrap(d, text, f, size, maxw):
     """Greedy wrap, then pull the lines to similar widths (a last line with one lonely word looks cheap)."""
-    wlen = lambda t: sum(size * 1.08 if is_emoji(c) else d.textlength(c, font=f) for c in t)
+    wlen = lambda t: sum(size * 1.08 if is_emoji(c[0]) else d.textlength(c, font=f) for c in tokens(t))
     def wrap(mw):
         lines, cur = [], ""
         for w in text.split():
@@ -383,8 +426,8 @@ def caption_box(img, text, bottom, size=46, maxw=920):
     for p_ in EMOJI_FONTS:
         try: ef = ImageFont.truetype(p_, 109); break
         except OSError: pass
-    text = "".join(c for c in text if c not in "\ufe0f\u200d")
-    if ef is None: text = re.sub(r"\s+", " ", "".join(c for c in text if not is_emoji(c))).strip()
+    text = text.replace("\ufe0f", "")
+    if ef is None: text = re.sub(r"\s+", " ", "".join(c for c in tokens(text) if not is_emoji(c[0]))).strip()
     for size, maxl in ((size, 3), (42, 3), (38, 4)):
         f = pfont(size); lines, wlen = caption_wrap(d, text, f, size, maxw)
         if len(lines) <= maxl and all(wlen(l) <= maxw + 40 for l in lines): break
@@ -395,10 +438,12 @@ def caption_box(img, text, bottom, size=46, maxw=920):
     d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], radius=22, fill=(255, 255, 255, 255))
     for i, l in enumerate(lines):
         x = (W - wlen(l)) / 2; y = y0 + 15 + i * lh
-        for c in l:
-            if is_emoji(c):
+        for c in tokens(l):
+            if is_emoji(c[0]):
                 try:
-                    g = Image.new("RGBA", (136, 128), (0, 0, 0, 0)); ImageDraw.Draw(g).text((0, 0), c, font=ef, embedded_color=True)
+                    if len(c) > 1 and not RAQM: c = "" if is_ri(c[0]) else c[0]  # no shaping engine: base emoji only, flag left out
+                    g = Image.new("RGBA", (136 * (1 if len(c) < 2 else 2), 128), (0, 0, 0, 0))
+                    ImageDraw.Draw(g).text((0, 0), c, font=ef, embedded_color=True)
                     bb = g.getbbox()
                     if bb: g = g.crop(bb).resize((size, size), Image.LANCZOS); img.alpha_composite(g, (int(x + size * 0.04), int(y + size * 0.14)))
                 except Exception: pass
@@ -794,6 +839,12 @@ def render_clip(job, c, src, p, words, out, tmp):
         fg_h = min(fg_h, FG_H); fg_y = FG_Y + (FG_H - fg_h) // 2
         cw = min(p["w"], int(p["h"] * W / fg_h / 2) * 2); ch = min(p["h"], int(cw * fg_h / W / 2) * 2)  # also fits portrait sources
         mv = H - (fg_y + fg_h) + 130
+    fg_w = W
+    if (native or layout == "framed") and p["h"] > p["w"] and not c.get("wide"):
+        # portrait source (phone video, 9:16 clip): show the WHOLE picture, narrower and centred, instead of cropping the middle
+        # band out of it (review 16.11.: native promised "nothing cropped"). Landscape sources keep fg_w = W -> identical output.
+        fg_w = min(W, int(fg_h * p["w"] / p["h"] / 2) * 2); cw = p["w"] // 2 * 2; ch = p["h"] // 2 * 2
+    fg_x = (W - fg_w) // 2 // 2 * 2
     overlay(title, pill, ov, logo=job.get("_logo_img"), logo_w=int(c.get("logo_w", job.get("logo_w", 380))),
             logo_pos=c.get("logo_pos", job.get("logo_pos", "video_bottom")), fg=(fg_y, fg_h), shade=full and not capt,
             caption=capt or None, cap_bottom=capb if split else (None if full else fg_y - 18))
@@ -810,7 +861,7 @@ def render_clip(job, c, src, p, words, out, tmp):
         xpos = f":x='{x_expr(keys)}':y={(p['h'] - ch) // 2}" if keys else ""
         if caps: n = ass(words, pa, pb, sub, job.get("fix") or {}, margin_v=mv)
         pts = punch_times(db) if zoom and tag == "main" else []
-        zw, zh = (W, H) if full else (W, fg_h)
+        zw, zh = (W, H) if full else (fg_w, fg_h)
         zf = (f",scale=w='2*trunc({zw}*({zoom_expr(pts)})/2)':h='2*trunc({zh}*({zoom_expr(pts)})/2)':eval=frame:flags=bilinear,"
               f"crop={zw}:{zh}:x='(iw-ow)/2':y='(ih-oh)*0.42'") if pts else ""
         if split:
@@ -821,8 +872,8 @@ def render_clip(job, c, src, p, words, out, tmp):
         else:
             fl = (f"[0:v]split=2[b0][f0];"
                   f"[b0]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,scale={W}:{H},eq=brightness=-0.22:saturation=1.1[bg];"
-                  f"[f0]crop={cw}:{ch}{xpos},scale={W}:{fg_h}:flags=lanczos{zf}[fg];"
-                  f"[bg][fg]overlay=0:{fg_y}[v1];[v1][1:v]overlay=0:0[v2];[v2]")
+                  f"[f0]crop={cw}:{ch}{xpos},scale={fg_w}:{fg_h}:flags=lanczos{zf}[fg];"
+                  f"[bg][fg]overlay={fg_x}:{fg_y}[v1];[v1][1:v]overlay=0:0[v2];[v2]")
         fl += (f"subtitles={sub}:fontsdir={FONTS}," if caps and n else "") + f"fps={fps},format=yuv420p"
         if hook and tag == "main": fl += ",fade=t=in:st=0:d=0.14:color=white"  # flash cut from the teaser into the clip
         fl += "[v]"
