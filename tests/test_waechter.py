@@ -218,3 +218,26 @@ def test_issue_gets_comment_when_new_problem_joins_open_group():
 
 def test_markdown_has_machine_readable_stand():
     assert "stand_utc: 2026-11-18T05:47:00Z" in W.markdown([], [], NOW)
+
+
+def _plan(tmp_path, slots):
+    r = repo(tmp_path, SHORT_OK); json.dump({"slots": slots}, open(r / "plan/postplan.json", "w"))
+    probs, _ = W.evaluate(str(r), CFG, NOW, None)
+    return sorted(p.key for p in probs if p.key.startswith("plan-"))
+
+
+def _slot(datum, zeit, clip, konto="Pusnik IRL", kampagne="TJR"):
+    return {"datum": datum, "zeit": zeit, "konto": konto, "kampagne": kampagne, "clip": clip, "plattformen": ["youtube", "tiktok"]}
+
+
+def test_postplan_rules_catch_late_1800_third_and_duplicate(tmp_path):
+    slots = [_slot("2026-11-19", "09:00", "a/1"), _slot("2026-11-19", "09:30", "a/2"), _slot("2026-11-19", "19:30", "a/3"),   # drei am Tag
+             _slot("2026-11-20", "19:45", "b/1"), _slot("2026-11-20", "18:00", "b/2", konto="Pusnik G"),                       # spaet + 18:00
+             _slot("2026-11-21", "09:00", "a/1")]                                                                              # doppelter Clip
+    assert _plan(tmp_path, slots) == ["plan-1800:2026-11-20:Pusnik G", "plan-doppelt:a/1", "plan-max2:2026-11-19:Pusnik IRL", "plan-spaet:2026-11-20:19:45:Pusnik IRL"]
+
+
+def test_postplan_rules_quiet_for_valid_and_past_slots(tmp_path):
+    ok = [_slot("2026-11-19", "09:00", "a/1"), _slot("2026-11-19", "09:30", "a/2"), _slot("2026-11-19", "19:30", "z/9", konto="Pusnik G"),
+          _slot("2026-11-17", "21:00", "old/1")]                                                                               # Vergangenheit: nicht mehr beurteilen
+    assert _plan(tmp_path, ok) == []

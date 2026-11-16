@@ -197,6 +197,25 @@ def check_slots_live(root, cfg, now, st, blind):
     return out
 
 
+def check_postplan_regeln(root, now):
+    """Vorbeugend (Fable-Nacht 16.11.): Regeln auf dem PLAN, bevor etwas schiefgeht. Gilt nur fuer Slots ab heute (Berlin).
+    Kampagnen-Clip nie nach 19:30, nie um 18:00 (Tages-Short), hoechstens 2 pro Konto und Tag, derselbe Clip nicht zweimal (doppelter Post)."""
+    plan = jl(os.path.join(root, "plan", "postplan.json"), {}) or {}
+    today = f"{local(now):%Y-%m-%d}"; out, per_day, seen = [], {}, {}
+    for s in merge_slots(plan.get("slots", [])):
+        if s["datum"] < today: continue
+        who = f"{s.get('kampagne')} {s.get('clip', '')} ({s.get('konto')}) {s['datum'][8:]}.{s['datum'][5:7]}. {s['zeit']}"
+        if hhmm(s["zeit"]) > hhmm("19:30"): out.append(P("postzeit", f"plan-spaet:{s['datum']}:{s['zeit']}:{s.get('konto')}", f"Plan verletzt die 19:30-Regel: {who}."))
+        if s["zeit"] == "18:00": out.append(P("postzeit", f"plan-1800:{s['datum']}:{s.get('konto')}", f"Plan: Kampagnen-Clip um 18:00 (Slot des Tages-Shorts): {who}."))
+        per_day.setdefault((s["datum"], s.get("konto")), []).append(s)
+        if s.get("clip"): seen.setdefault(s["clip"], []).append(s)
+    for (d, konto), sl in per_day.items():
+        if len(sl) > 2: out.append(P("postzeit", f"plan-max2:{d}:{konto}", f"Plan: {len(sl)} Kampagnen-Clips am {d[8:]}.{d[5:7]}. auf {konto} (erlaubt: 2)."))
+    for clip, sl in seen.items():
+        if len(sl) > 1: out.append(P("postzeit", f"plan-doppelt:{clip}", f"Plan: Clip {clip} steht {len(sl)}x im Postplan ({', '.join(x['datum'][5:] + ' ' + x['zeit'] for x in sl)}) – doppelter Post?"))
+    return out
+
+
 def check_kampagnen(root, cfg, now, st, blind):
     out, today = [], local(now).date().isoformat()
     for k in cfg["kampagnen"]:
@@ -226,7 +245,7 @@ def evaluate(root, cfg, now, runs, repo_mb=None, fresh=lambda p: False):
     if runs is not None:
         a, u = check_actions(cfg, now, runs); probs += a; unsicher += u
     else: unsicher.append("Action-Status nicht abgefragt")
-    probs += check_render(root, now, fresh) + check_clipjobs(root, fresh) + check_repo(cfg, repo_mb)
+    probs += check_render(root, now, fresh) + check_clipjobs(root, fresh) + check_repo(cfg, repo_mb) + check_postplan_regeln(root, now)
     if st:
         probs += check_short(root, cfg, now, st, blind) + check_postzeit(cfg, now, st) + check_einreichen(root, cfg, now, st, blind) + check_kampagnen(root, cfg, now, st, blind) + check_slots_live(root, cfg, now, st, blind)
     return [p for p in probs if not ignored(p, cfg)], unsicher
