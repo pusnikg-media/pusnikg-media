@@ -222,5 +222,21 @@
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-124820.jpg",
   "posted": false,
   "chat": 3.73
+ },
+ {
+  "id": "20261116-124932",
+  "at": "2026-11-16T12:50:37+00:00",
+  "channel": "jasontheween",
+  "hype": 9.1,
+  "seconds": 15.33,
+  "quote": "\"Hey thank you man\"",
+  "a": 25.53,
+  "b": 40.86,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/raw_20261116-124932.mp4",
+  "said": "What's up? What's up, bro? I've been watching your stream. Hey, thank you, man. Oh, on the iPad. Yes. Okay. What are you talking about gang?",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/live-jasontheween_20261116-124932.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-124932.jpg",
+  "posted": false,
+  "chat": 3.88
  }
 ]
