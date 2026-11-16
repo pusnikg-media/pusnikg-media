@@ -36,5 +36,24 @@
   "peak_s": 872,
   "vod": "2926143637",
   "vod_s": 4772
+ },
+ {
+  "id": "20261116-133455",
+  "at": "2026-11-16T13:36:02+00:00",
+  "channel": "jasontheween-old",
+  "hype": 11.9,
+  "seconds": 19.15,
+  "quote": "\"It shows me that you have\"",
+  "a": 12.61,
+  "b": 31.76,
+  "raw": null,
+  "said": "I realized that nothing in life is guaranteed but it's all about how you get up and how you don't quit and how you don't give up and just like this award it shows me that you have another chance at this that if you don't quit you can and always win.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween-old/live-jasontheween-old_20261116-133455.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween-old/qa/live-jasontheween-old_20261116-133455.jpg",
+  "posted": false,
+  "chat": 3.33,
+  "peak_s": 997,
+  "vod": "2926143637",
+  "vod_s": 4897
  }
 ]
