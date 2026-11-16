@@ -185,7 +185,7 @@ def loop(ch, root, rec, alive, push, t_end, chat=None):
             if chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
                 if cp is not None and cr >= min_chat:
                     # chat reacts late (stream delay + typing, measured 7-25 s, median 17): the moment is the loudest second in the 32 s before the burst
-                    w0 = max(cp - 28, 0)  # measured lags 7-25 s (median 17), 25 was the old cap; seg_ = db[w0:cp + 5]
+                    w0 = max(cp - 28, 0); seg_ = db[w0:cp + 5]  # measured lags 7-25 s (median 17), 25 was the old cap
                     lag = (cp + 4) - (w0 + max(range(len(seg_)), key=seg_.__getitem__)) if seg_ else 0; kind = "chat"
                     peak, hype = (max(cp + 4 - lag, 0) if seg_ else max(cp, 0)), max(hype, min_hype); print(f"   chat burst x{cr}: moment {lag:.0f} s before the chat peak")
                 elif not (cp is not None and cr >= co_chat and peak is not None and abs(cp - peak) < 30): peak = None
