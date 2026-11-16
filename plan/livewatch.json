@@ -1,9 +1,8 @@
 {
- "enabled": true,
- "note": "16.11.2026 Livewatch-Test (nur Views, keine Kampagne): twitch.tv/robcdee (IRL Tokyo, Just Chatting, EN). Lauf 2: min_chat 4.5 (3.0-3.4 = nur Fehlalarme: Werbepause, Bits-Alert, Gehen). Danach wieder auf JasonTheWeen + aus.",
- "max_minutes": 85,
- "until": "2026-11-16T12:15:00Z",
+ "enabled": false,
+ "note": "AUS seit 16.11.2026 (robcdee-Test abgeschlossen, Ergebnis: claude/livewatch-stand.md). Fuer Kampagne Jason Pool (Reach): NUR twitch.tv/jasontheween, KEIN Kick. Standardwerte min_chat 3.0 / co_chat 2.0 sind fuer IRL zu locker: fuer IRL min_chat 4.5 / co_chat 2.5 nehmen.",
+ "max_minutes": 150,
  "channels": [
-  {"name": "robcdee", "url": "https://www.twitch.tv/robcdee", "height": 720, "layout": "native", "per_hour": 8, "max_clips": 10, "min_chat": 4.5, "co_chat": 2.5}
+  {"name": "jasontheween", "url": "https://www.twitch.tv/jasontheween", "height": 720}
  ]
 }
