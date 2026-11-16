@@ -89,6 +89,16 @@ def test_picker_on_synthetic_stream(cf, synth, tmp_path, kw, expect):
     else: assert cam and ((cam[0] + cam[2] / 2) < p["w"] / 2) == (expect == "left")
 
 
+def test_borderless_face_near_centre_is_not_a_cam(cf, synth, tmp_path):
+    """Gesicht ohne Rahmen bei x = 0.67 (Seitenzone, aber nah an der Mitte): nichts markiert es als Cam -> None. Dasselbe ganz am Rand: Cam."""
+    p = None
+    for x, expect_none in ((0.67, True), (0.14, False)):
+        v = synth.make(str(tmp_path / f"v{x}.mp4"), cam_at=(x, 0.7), plain=True); p = cf.probe(v)
+        cam = cf.facecam_rect(v, 0, 4, p, "auto")
+        assert (cam is None) == expect_none, (x, cam, getattr(cf.facecam_rect, "last", None), getattr(cf.facecam_rect, "dbg", None))
+    assert getattr(cf.facecam_rect, "last", None) in ("face", "border")
+
+
 def test_split_without_cam_falls_back_to_native(cf, synth, tmp_path):
     from test_clipfabrik import WORDS
     v = synth.make(str(tmp_path / "v.mp4"), centre=True); out = str(tmp_path / "out"); os.makedirs(out)

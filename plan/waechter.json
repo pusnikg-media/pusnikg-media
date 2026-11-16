@@ -23,9 +23,10 @@
   "kampagnen": 15,
   "render": 3,
   "clipfabrik": 6,
-  "reflab": 200
+  "reflab": 200,
+  "einreichen": 14
  },
- "einreichen_nach_minuten": 45,
+ "einreichen_nach_minuten": 600,
  "ignorieren": [
   {
    "key": "short:2026-11-12",

@@ -9,7 +9,7 @@ Ziel: Repo so absichern, dass Sonnet (+ Opus-Advisor) ab 17.11. sicher und spars
 | Smoke-Tests | `tests/` (≈150 Fälle, ≈40 s) | Clipfabrik-Layouts native/full/framed/split + Hook, `check_clips`, goldene `job_sig`, `pending()` + Drive-Parser (Fixture); HyperFrames-Trockenlauf (`preflight.py`, `build_cd.py`); `stats.py` (Beispielfeeds, „nichts lesbar", Teilausfall); `gh_jobs.py` (3-Versuche-Logik, Drive); JSON-Schemas; Selbsttests von kampagnen/trendscout/stats; Wächter |
 | Action `tests` | `.github/workflows/tests.yml` | bei jedem Push/PR (Daten-Pushes ausgenommen). **Rot = Push gilt als kaputt** |
 | Wächter | `waechter/waechter.py`, `plan/waechter.json`, `.github/workflows/waechter.yml` | 05:47 + 11:37 UTC → `stats/alerts.md` + Issues „alarm" |
-| Einreich-Notiz | `plan/eingereicht.json` | Clipping-Agent trägt Post-URLs ein; Wächter meldet Kampagnen-Posts ohne Eintrag nach 45 Min |
+| Einreich-Notiz | `plan/eingereicht.json` | Haken aus den Einreich-Issues (Aktion `einreichen`); Wächter meldet Kampagnen-Posts ohne Haken nach ca. 10 h |
 | Doku | `plan/team_state.md` (Abschnitt „Wächter und Tests"), `pipeline/README.md` (Metricool-Zeile korrigiert), `.gitignore` (`__pycache__`) | |
 
 ## Benutzen
@@ -44,7 +44,7 @@ Advisor-Befunde 2 (vor „fertig") – schon behoben: Sparse-Checkout enthielt `
 6. **Livewatch-Repo-Wachstum** (`raw_*.mp4`, ~10 MB pro Clip, Push alle 1–2 Min): Grenze `repo_mb_max` 3500 in `plan/waechter.json`; Aufräumen/Nicht-Committen der Rohdateien ist Sache der Livewatch-Session.
 7. **Getrackte `.pyc`-Dateien** im Git (`pipeline/**/__pycache__`, auch Livewatch): `.gitignore` steht, aber getrackte Dateien bleiben. Erst mit der Livewatch-Session klären, dann `git rm -r --cached`.
 8. ✅ **Wächter-Latenz (erledigt 16.11.):** zusätzlicher `stats`-Lauf 19:17 UTC (20:17 Berlin) und `waechter`-Lauf 19:47 UTC (20:47 Berlin): Tages-Short und Slots werden am selben Abend beurteilt. Gilt auch am Launch-Tag 19.11. um 18:00.
-9. **Schwellen geschätzt** (`plan/waechter.json`: stats 16 h, trendscout 12 h, kampagnen 15 h, render 3 h, clipfabrik 6 h, `einreichen_nach_minuten` 45). Nach einer Woche gegen Fehlalarme prüfen.
+9. **Schwellen geschätzt** (`plan/waechter.json`: stats 16 h, trendscout 12 h, kampagnen 15 h, render 3 h, clipfabrik 6 h, `einreichen_nach_minuten` 600 seit 16.11.). Nach einer Woche gegen Fehlalarme prüfen.
 10. **Nicht getestet** (nur im Action-Log): Whisper, Kokoro-TTS, HyperFrames-Render (`npx`), `track` (OpenCV; `facecam: auto` ist seit 16.11. mit synthetischem Haar-Material in `tests/test_facecam.py` abgedeckt, echte Twitch-Clips nur über `camtest`), Netzabfragen (Reddit, Kick, TikTok, Content Rewards, Drive im Betrieb), TikTok-Einstellungen `brandContent` (steht nur in Posts, nicht in `stats`).
 11. **`tests`-Action** lädt ffmpeg von GitHub (BtbN-Build, wie die anderen Actions): fällt der Download aus, wird sie rot ohne Codefehler – Log ansehen, erneut starten.
 12. **Produzent/Clipping-Agent** sind Claude-Aufgaben, keine Actions: der Wächter sieht nur ihre Ergebnisse (Renderaufträge, Posts), nicht ob sie liefen.

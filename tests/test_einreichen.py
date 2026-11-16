@@ -45,12 +45,12 @@ def test_unticked_posts_alarm(tmp_path):
 
 def test_nearest_slot_separates_0900_and_0930(tmp_path):
     ps = [post("tiktok", "a0900", "2026-11-17T08:00:02Z", "TJR", "Pusnik IRL"), post("tiktok", "b0930", "2026-11-17T08:30:02Z", "TJR", "Pusnik IRL")]
-    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 11, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:b0930"]
+    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 20, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:b0930"]
 
 
 def test_wrong_account_or_campaign_not_cleared(tmp_path):
     ps = [post("tiktok", "x1", "2026-11-17T08:00:02Z", "TJR", "Pusnik G")]
-    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 11, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:x1"]
+    assert alarms(repo(tmp_path, ps, {"slots": ["Pusnik IRL|TJR|2026-11-17|09:00"]}), now=dt.datetime(2026, 11, 17, 20, 0, tzinfo=dt.timezone.utc)) == ["einreichen:tiktok:x1"]
 
 
 def test_post_ids_in_file_still_count(tmp_path):
