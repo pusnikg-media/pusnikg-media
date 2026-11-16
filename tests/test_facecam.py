@@ -53,6 +53,14 @@ def test_frozen_face_is_not_a_cam(cf):
     assert cx is None                                                                                      # Poster/eingefrorene Figur
 
 
+def test_oversized_face_is_not_a_cam(cf):
+    """sykkuno-Fall (camtest 16.11.): Gesicht mit 12 % der Bildbreite in der Ecke (Minimap/Gebäude), keine Cam im Bild -> native."""
+    (cx, cy, w), h = pick(cf, [(883, 83, 115, 0.5)])
+    assert cx is None and h.last == "no side face"
+    (cx, cy, w), h = pick(cf, [(86, 199, 27, 0.375)])                                              # winzige echte Cam (kaicenat)
+    assert round(cx) == 86
+
+
 def test_rare_hits_are_not_a_cam(cf):
     (cx, cy, w), h = pick(cf, [(140, 420, 70, 0.1)])
     assert cx is None

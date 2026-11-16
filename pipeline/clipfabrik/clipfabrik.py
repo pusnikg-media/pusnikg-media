@@ -578,12 +578,15 @@ def pick_face(d, F, nf, sw, sh, dbg_to=None):
     """The facecam among all face clusters, or (None, None, None) = no cam found -> caller falls back to native (never a wrong crop).
     GTA/RP footage (tfue test 16.11.): the player's character is a face too, and sits in the middle of the picture, while a facecam is
     pinned to a side. So: a cam cluster must (1) cover >= 20 % of the frames, (2) move (a poster or a frozen character does not),
-    (3) sit in the left/right third (centre x outside 0.36-0.64 of the width), and (4) not be one of several equally strong side clusters
-    (then we cannot tell which is the cam). Among the rest the one seen most often wins."""
+    (3) sit in the left/right third (centre x outside 0.36-0.64 of the width), (4) have a face no wider than 10 % of the picture width
+    (camtest 16.11.: a 'face' of 12 % in a minimap / building corner was no cam; real cams measured 3-6 %; a face that big means a fullscreen
+    cam or a texture - native is the safe layout), and (5) not be one of several equally strong side clusters (then we cannot tell which
+    is the cam). Among the rest the one seen most often wins."""
     cl = face_clusters(d, F, nf, sw, sh)
     for c in cl:
         c["side"] = c["cx"] < 0.36 * sw or c["cx"] > 0.64 * sw
-        c["ok"] = c["cov"] >= max(3 / max(nf, 1), 0.2) and (c["mot"] is None or c["mot"] >= 1.5) and c["side"]
+        c["small"] = c["w"] <= 0.10 * sw
+        c["ok"] = c["cov"] >= max(3 / max(nf, 1), 0.2) and (c["mot"] is None or c["mot"] >= 1.5) and c["side"] and c["small"]
     if dbg_to is not None: dbg_to.dbg = [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in c.items() if k != "rows"} for c in cl]
     ok = sorted((c for c in cl if c["ok"]), key=lambda c: -c["cov"])
     if not ok:
@@ -674,6 +677,8 @@ def facecam_rect(src, a, dur, p, spec="auto"):
                     facecam_rect.last = "border"
                     return [int(x * k) // 2 * 2, int(y * k) // 2 * 2, int(w * k) // 2 * 2, int(h * k) // 2 * 2]
     except Exception as e: print("WARN facecam border:", str(e)[-200:])
+    if FACECAM_PICK == "v2" and 0.30 * sw <= cx <= 0.70 * sw:  # no border found AND not at a side: nothing marks this as a cam (camtest 16.11.)
+        facecam_rect.last = "face without border near the centre"; return None
     facecam_rect.last = "face"
     return fit(cx * k, (cy + 0.3 * fw) * k, min(4.4 * fw, 0.42 * sw) * k)
 
