@@ -1,8 +1,8 @@
 {
  "enabled": false,
- "note": "AUS seit 16.11.2026 (robcdee-Test abgeschlossen, Ergebnis: claude/livewatch-stand.md). Fuer Kampagne Jason Pool (Reach): NUR twitch.tv/jasontheween, KEIN Kick. Standardwerte min_chat 3.0 / co_chat 2.0 sind fuer IRL zu locker: fuer IRL min_chat 4.5 / co_chat 2.5 nehmen.",
+ "note": "AUS seit 16.11.2026. Kampagne Jason Pool (Reach, claude/jason-kampagne.md): NUR twitch.tv/jasontheween, KEIN Kick. profile irl = min_chat 4.5 / co_chat 2.5, gaming = 3.0 / 2.0 (v0.4). Details: claude/livewatch-stand.md",
  "max_minutes": 150,
  "channels": [
-  {"name": "jasontheween", "url": "https://www.twitch.tv/jasontheween", "height": 720}
+  {"name": "jasontheween", "url": "https://www.twitch.tv/jasontheween", "height": 720, "profile": "irl"}
  ]
 }

@@ -8,7 +8,8 @@ on:
       vod: {description: "Twitch VOD url", required: true}
       start: {description: "start second in the VOD", required: true, default: "3600"}
       minutes: {description: "minutes to play", required: true, default: "40"}
-      min_chat: {description: "chat burst ratio (default 3.0)", required: false, default: "4.5"}
+      min_chat: {description: "chat burst ratio (empty = profile of the channel)", required: false, default: ""}
+      compare: {description: "also run the OLD settings on the same recording (QA pictures only, dir live-<name>-old)", required: false, default: "false"}
 permissions:
   contents: write
 concurrency:
@@ -42,6 +43,7 @@ jobs:
           START: ${{ inputs.start }}
           MINUTES: ${{ inputs.minutes }}
           MINCHAT: ${{ inputs.min_chat }}
+          COMPARE: ${{ inputs.compare }}
         run: |
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
-          python3 -u pipeline/clipfabrik/livewatch.py replay "$VOD" "$START" "$MINUTES" . "$MINCHAT"
+          python3 -u pipeline/clipfabrik/livewatch.py replay "$VOD" "$START" "$MINUTES" . "$MINCHAT" $([ "$COMPARE" = "true" ] && echo compare)
