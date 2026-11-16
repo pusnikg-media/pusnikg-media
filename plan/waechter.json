@@ -82,5 +82,6 @@
   }
  ],
  "postzeit_toleranz_min": 5,
- "repo_mb_max": 3500
+ "repo_mb_max": 3500,
+ "einreichen_assignee": "pusnikg-media"
 }

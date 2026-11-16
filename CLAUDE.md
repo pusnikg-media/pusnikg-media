@@ -48,7 +48,8 @@ Gaming-Shorts-Kanal "Pusnik G" (YT Shorts, TikTok, Reels) + Clipping-Kampagnen (
 | `trendscout` | 04:43, 10:43, 15:43, 19:43 | `trends/latest.*` (Reddit, Kick, GTA-6-News, Rockstar-YouTube) |
 | `kampagnen` | 05:27, 11:27, 17:27 | `campaigns/latest.*` |
 | `reflab` | Mo 03:23 | `refs/latest/` |
-| `waechter` | 05:47, 11:37 (+ Push auf seine Dateien) | `stats/alerts.md` + Issues „alarm" |
+| `waechter` | 05:47, 11:37 (+ Push auf seine Dateien) | `stats/alerts.md` + Issues „alarm"; holt vorher die Haken aus den Einreich-Issues |
+| `einreichen` | nach `stats`, 19:05, Issue-Edit, Push auf `plan/postplan.json` | Tages-Issue „Einreichen“ (Checkbox pro Clip) → `plan/eingereicht.json` |
 | `tests` | jeder Push | rot/grün |
 | `livewatch` (AUS), `livewatch-replay`, `camtest`, `ai_assets`, `scenes3d`, `tools-check` | Sonderfälle | nicht ohne Auftrag anfassen |
 Geplante Claude-Aufgaben (keine Actions): Produzent 07:47, Clipping-Agent 12:47, Deal-Radar 05:13, Reel-Scout Mo 06:41, Analyst So 18:13, Stratege So 19:41 (Berlin).
@@ -62,7 +63,7 @@ Geplante Claude-Aufgaben (keine Actions): Produzent 07:47, Clipping-Agent 12:47,
 3. **Postzeiten:** Tages-Short 18:00. Kampagnen-Clips höchstens 2 pro Konto/Tag, nie um 18:00, **nie nach 19:30 (Europe/Berlin)**. Woche 16.–22.11. nur 09:00/09:30 (Spätschicht). Veröffentlichen nur mit Stevens „ja". YouTube über vidIQ: sofort hochgeladen, bis zur Planzeit PRIVAT (kein Fehler).
 4. **TikTok bei Kampagnen-Clips:** vidIQ-Entwurf immer `brandContent: true`, `privacyLevel: PUBLIC_TO_EVERYONE`, `allowComment: true`, `isAiGenerated: false`, `musicUsageConfirmed: true`. Tages-Short: **kein** brandContent, `isAiGenerated: true`. Genau 5 Hashtags.
 5. **Nur vidIQ postet** (`vidiq_social_post_*`, 0 Credits). Metricool/Buffer/Zapier-YouTube nicht. vidIQ-Credits 9 bis 01.12.: nichts, was Credits kostet. Higgsfield gekündigt.
-6. **Einreichen** bei Content Rewards binnen 30 Min nach Veröffentlichung (Whop nur Auszahlung). Danach Post-URL in `plan/eingereicht.json` → sonst meldet der Wächter es.
+6. **Einreichen** bei Content Rewards binnen 30 Min nach Veröffentlichung (Whop nur Auszahlung). Steven hakt es im Tages-Issue „Einreichen“ ab (Aktion `einreichen`, Quelle `plan/postplan.json` – neue Kampagnen-Clips dort eintragen, sonst fehlt die Vorab-Zeile); die Aktion schreibt `plan/eingereicht.json` (`slots`), nicht von Hand ändern. Haken sind monoton (nie zurück). Issues/`workflow_run` laufen nur auf `main` – dort nach jeder Änderung einmal `einreichen` per Hand starten und prüfen.
 7. **Stats-Lücken:** Instagram fehlt (→ `vidiq_instagram_owner_insights`, 0 Credits); privat geplante YouTube-Videos fehlen; Kampagnen-Zuordnung nur per Hashtag in `stats.json`; `min_views` meist `null`.
 8. **Clip-Stil:** `layout: native` + EIN Kontextsatz (`caption`, 9–15 Wörter, Name zuerst, „…" + 1–2 Emojis), Originalton, 10–35 s. `split`: bei GTA-Material `facecam` von Hand `[x,y,b,h]` setzen (`auto` nimmt Spielfiguren), sonst fällt der Clip **still** auf `native` zurück (Prüfen: `layout` in `result.json`).
 9. **Quellen:** YouTube-Links werden von Cloud-Servern oft geblockt → Drive-/Direktlink (Steven lädt in den Drive-Ordner „Pusnik G Render-Aufträge", „Jeder mit dem Link"). GTA-6-Kampagnen nur mit Rechteinhaber/Partner. Preme/Drake und Gattouz: nicht machen.

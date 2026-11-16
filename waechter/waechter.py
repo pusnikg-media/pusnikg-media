@@ -139,13 +139,22 @@ def check_postzeit(cfg, now, st):
 
 
 def check_einreichen(root, cfg, now, st, blind):
+    """Kampagnen-Post ohne Einreich-Nachweis. Nachweis = (a) Slot in plan/eingereicht.json `slots` ('konto|kampagne|datum|HH:MM', von der Aktion
+    `einreichen` aus den Haken im Tages-Issue geschrieben; Post wird dem nächsten Slot ±14 Min zugeordnet), (b) Post-ID/URL unter
+    `eingereicht`/`posts`, (c) `nicht_noetig`."""
     out, e = [], jl(os.path.join(root, "plan", "eingereicht.json"), {}) or {}
-    start = max(cfg["seit"], e.get("seit", cfg["seit"])); known = [str(x) for x in e.get("eingereicht", []) + e.get("nicht_noetig", [])]
+    start = max(cfg["seit"], e.get("seit", cfg["seit"])); known = [str(x) for x in e.get("eingereicht", []) + e.get("nicht_noetig", []) + e.get("posts", [])]
+    slots = []
+    for k in e.get("slots", []):
+        try: konto, kamp, datum, zeit = k.split("|"); slots.append((konto, kamp, at_berlin(datum, zeit).astimezone(UTC)))
+        except Exception: continue
+    stats_of = {k["name"]: k["stats"] for k in cfg.get("kampagnen", [])}
     for p in (st or {}).get("posts", []):
         t = parse(p.get("published"))
         if not p.get("campaign") or not t or local(t).date().isoformat() < start or (p["account"], p["platform"]) in blind: continue
         if (now - t).total_seconds() / 60 < cfg["einreichen_nach_minuten"]: continue
         if any(p["id"] in k or p["url"] in k or k in p["url"] for k in known if len(k) > 5): continue
+        if any(konto == p["account"] and stats_of.get(kamp, kamp) == p["campaign"] and abs((t - ts).total_seconds()) <= 14 * 60 for konto, kamp, ts in slots): continue
         out.append(P("einreichen", f"einreichen:{p['platform']}:{p['id']}", f"{p['campaign']} ({p['account']}, {p['platform']}, {local(t):%d.%m. %H:%M}): „{p['title'][:45]}“ – {p['url']}"))
     return out
 

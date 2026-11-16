@@ -1,0 +1,63 @@
+# Einreich-Issues (0 Credits): pro Tag ein Issue "Einreichen" mit einer Checkbox pro Kampagnen-Clip (Quelle: plan/postplan.json + stats/latest.json).
+# Steven hakt in der GitHub-App ab -> diese Aktion schreibt die Haken nach plan/eingereicht.json und schließt das Issue, wenn alles abgehakt ist.
+# Nur auf main aktiv (issues:/workflow_run:-Trigger laufen ohnehin nur dort); auf anderen Branches Trockenlauf.
+# Der Issue-Text wird nur per API gelesen und nie in Shell-Befehle eingesetzt.
+name: einreichen
+on:
+  issues:
+    types: [edited, closed, reopened]
+  workflow_run:
+    workflows: ["stats"]
+    types: [completed]
+  schedule:
+    - cron: "5 19 * * *"          # 20:05 Berlin: Issue für morgen sicher da
+  push:
+    paths: ["plan/postplan.json", "waechter/einreichen.py", ".github/workflows/einreichen.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: einreichen
+  cancel-in-progress: false
+jobs:
+  einreichen:
+    if: github.event_name != 'issues' || github.event.sender.type != 'Bot'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            /plan/
+            /waechter/
+            /stats/latest.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Einreichen
+        run: |
+          if [ "${{ github.ref }}" != "refs/heads/main" ]; then
+            python3 waechter/einreichen.py --root . --dry; exit 0
+          fi
+          git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          python3 waechter/einreichen.py --root . | tee /home/runner/out.txt
+          grep -q '^CHANGED' /home/runner/out.txt || exit 0
+          cp plan/eingereicht.json /home/runner/eingereicht.json
+          for i in 1 2 3 4 5; do   # auf den neuesten main legen (viele Actions pushen)
+            git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
+            python3 - <<'PY'
+          import json
+          mine = json.load(open("/home/runner/eingereicht.json")); cur = json.load(open("plan/eingereicht.json"))
+          for k in ("slots", "posts"): cur[k] = sorted(set(cur.get(k, [])) | set(mine.get(k, [])))   # nur hinzufügen
+          json.dump(cur, open("plan/eingereicht.json", "w"), ensure_ascii=False, indent=1); open("plan/eingereicht.json", "a").write("\n")
+          PY
+            git add plan/eingereicht.json; git diff --cached --quiet && { echo "unveraendert"; break; }
+            git commit -q -m "einreichen: Haken" && git push -q origin HEAD:main && { echo PUBLISHED; break; }
+            echo "push retry $i"; sleep 8
+          done
