@@ -1,8 +1,9 @@
 {
  "enabled": true,
- "note": "AN seit 16.11.2026 fuer Kampagne Jason Pool (Reach): NUR twitch.tv/jasontheween, KEIN Kick. Standardwerte min_chat 3.0 / co_chat 2.0 (aus Eichlauf 15.11., Lautstaerke-Schwelle min_hype 9). Fuer IRL noch nicht kalibriert.",
- "max_minutes": 150,
+ "note": "16.11.2026 Livewatch-Test (nur Views, keine Kampagne): twitch.tv/robcdee (IRL Tokyo, Just Chatting, EN). Standardwerte min_chat 3.0 / co_chat 2.0. Danach wieder auf JasonTheWeen + aus.",
+ "max_minutes": 85,
+ "until": "2026-11-16T11:55:00Z",
  "channels": [
-  {"name": "jasontheween", "url": "https://www.twitch.tv/jasontheween", "height": 720}
+  {"name": "robcdee", "url": "https://www.twitch.tv/robcdee", "height": 720, "layout": "native", "per_hour": 4, "max_clips": 6}
  ]
 }
