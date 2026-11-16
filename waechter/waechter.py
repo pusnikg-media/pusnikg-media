@@ -131,6 +131,10 @@ def check_short(root, cfg, now, st, blind, ):
     out, c = [], cfg["tagesshort"]; upd = parse((st or {}).get("updated"))
     if not upd: return out
     dates = {(jl(f) or {}).get("date") for f in glob.glob(os.path.join(root, "jobs", "*.json"))}
+    ab, bis, heute = c.get("taeglich_ab"), c.get("taeglich_bis"), local(now).date()      # ab `taeglich_ab` (bis auf Widerruf/`taeglich_bis`) wird jeden Tag ein Short erwartet, auch ohne jobs/-Auftrag
+    if ab:
+        d0 = dt.date.fromisoformat(ab)
+        dates |= {(d0 + dt.timedelta(days=i)).isoformat() for i in range((heute - d0).days + 1) if not bis or (d0 + dt.timedelta(days=i)).isoformat() <= bis}
     for d in sorted(x for x in dates if x and cfg["seit"] <= x <= local(now).date().isoformat()):
         due = at_berlin(d, "18:00") + dt.timedelta(hours=c["karenz_stunden"])
         if now < due or upd < due: continue          # erst beurteilen, wenn die Zahlen NACH der Planzeit gemessen wurden
@@ -148,7 +152,8 @@ def check_postzeit(cfg, now, st):
         t = parse(p.get("published"))
         if not t or local(t).date().isoformat() < cfg["seit"]: continue
         if hhmm(local(t).strftime("%H:%M")) > lim:
-            out.append(P("postzeit", f"postzeit:{p['platform']}:{p['id']}", f"{p['account']} {p['platform']} um {local(t):%d.%m. %H:%M} Uhr: „{p['title'][:50]}“ – {p['url']}"))
+            day, art = local(t).date().isoformat(), "kampagne" if p.get("campaign") else "short"                 # Schlüssel: postzeit:<Berlin-Datum>:<short|kampagne>:<plattform>:<id> -> `ignorieren` kann einen Tag einzeln freigeben (ID ist vorher unbekannt)
+            out.append(P("postzeit", f"postzeit:{day}:{art}:{p['platform']}:{p['id']}", f"{p['account']} {p['platform']} um {local(t):%d.%m. %H:%M} Uhr: „{p['title'][:50]}“ – {p['url']}"))
     return out
 
 

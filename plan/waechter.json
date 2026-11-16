@@ -10,7 +10,10 @@
    "youtube",
    "tiktok"
   ],
-  "karenz_stunden": 2
+  "karenz_stunden": 2,
+  "taeglich_ab": "2026-11-27",
+  "taeglich_bis": null,
+  "taeglich_note": "Ab taeglich_ab wird JEDEN Tag ein Tages-Short erwartet, auch ohne jobs/-Auftrag (der Plan endet am 26.11.). Beenden: taeglich_bis auf den letzten Tag setzen oder taeglich_ab auf null."
  },
  "max_alter_stunden": {
   "stats": 16,
@@ -35,6 +38,14 @@
   {
    "key": "short:2026-11-13",
    "grund": "Lücke durch Metricool-Limit, laut team_state nicht nachholen"
+  },
+  {
+   "key": "postzeit:2026-11-18:short",
+   "grund": "Short, nichts einzureichen (Review-Roundup 2. Versuch, 18.11. 21:17; Kampagnen-Clips nach 19:30 alarmieren weiter)"
+  },
+  {
+   "key": "postzeit:2026-11-20:short",
+   "grund": "Short, nichts einzureichen (Rekord-Check, 20.11. publishAt 20:30; Kampagnen-Clips nach 19:30 alarmieren weiter)"
   }
  ],
  "kampagnen": [

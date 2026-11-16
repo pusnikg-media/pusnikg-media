@@ -166,6 +166,17 @@ def update_day(gh, root, cfg, day, stats, ticked, issues, now):
     return fresh
 
 
+def close_old(gh, cfg, issues, ticks, handled):
+    """Offene Einreich-Issues von Tagen, die update_day nicht mehr anfasst (älter als gestern): nur schließen, wenn jede Zeile abgehakt ist
+    (Haken im Issue ∪ plan/eingereicht.json). Der Text wird NICHT neu gebaut (alte Posts können aus stats/latest.json verschwunden sein) und das Issue nie wieder geöffnet."""
+    for i in issues:
+        if i.get("state") != "open" or not is_ours(i, cfg) or DAY_RE.search(i["body"]).group(1) in handled: continue
+        fresh = gh.call("GET", f"/issues/{i['number']}")                         # unmittelbar vor dem Schreiben neu lesen
+        lines = parse_body(fresh.get("body"))
+        if fresh.get("state") == "open" and lines and all(v or k in ticks for k, v in lines.items()):
+            gh.call("POST", f"/issues/{i['number']}/comments", {"body": "Alles eingereicht ✅"}); gh.call("PATCH", f"/issues/{i['number']}", {"state": "closed", "state_reason": "completed"})
+
+
 def run(gh, root, cfg, now, mode="both"):
     """Rückgabe: True, wenn plan/eingereicht.json geändert wurde."""
     ensure_label(gh)
@@ -174,11 +185,12 @@ def run(gh, root, cfg, now, mode="both"):
     changed = write_file(root, ticks) if mode in ("sync", "both") else False
     if mode in ("update", "both"):
         stats = W.jl(os.path.join(root, "stats", "latest.json"))
-        today = W.local(now).date()
+        today = W.local(now).date(); handled = set()
         for off in (-1, 0, 1):
             day = (today + dt.timedelta(days=off)).isoformat()
             if off == -1 and not any(is_ours(i, cfg) and DAY_RE.search(i["body"]).group(1) == day for i in issues): continue
-            update_day(gh, root, cfg, day, stats, ticks, issues, now)
+            handled.add(day); update_day(gh, root, cfg, day, stats, ticks, issues, now)
+        close_old(gh, cfg, issues, ticks, handled)
     return changed
 
 
