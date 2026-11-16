@@ -270,6 +270,8 @@ def cut(segs, t0, a, b, dst):
     """Seconds [a, b] of the recording (segment i holds [t0 + i*SEG, ...)) -> one mp4."""
     i0, i1 = int((a - t0) // SEG), int((b - t0) // SEG); files = [segs[i] for i in range(i0, i1 + 1) if i in segs]
     if not files: raise cf.Fail("recording for that moment is gone")
+    if i0 not in segs or any(i not in segs for i in range(i0, i1)):  # 16.11. review: a hole shifted the timecode silently (recorder restart)
+        raise cf.Fail("recording gap at the moment")
     lst = dst + ".txt"; open(lst, "w").write("".join(f"file '{f}'\n" for f in files))
     off = a - (t0 + i0 * SEG)
     cf.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst, "-ss", f"{off:.2f}", "-t", f"{b - a:.2f}",
@@ -436,11 +438,15 @@ class Recorder:
 
 def inbox_full(root, ch):
     """Repo guard (16.11.): every clip costs ~10 MB (clip + raw moment) and the runs follow each other. More than `max_pending` (default 12)
-    entries with posted=false in clips/live-<name>/inbox.json = stop recording until the agent sets them to posted/removes them."""
+    entries (last 24 h) with posted=false in clips/live-<name>/inbox.json = stop recording until older ones age out of the 24 h window."""
     name = "live-" + re.sub(r"[^a-z0-9-]", "", ch["name"].lower())
     try: box = json.load(open(os.path.join(root, "clips", name, "inbox.json")))
     except Exception: return False
-    return sum(1 for e in box if not e.get("posted")) >= int(ch.get("max_pending", 12))
+    now = datetime.datetime.now(datetime.timezone.utc)
+    def young(e):  # only the last 24 h count: the guard frees itself, nobody has to clean up (the agent may only write clipjobs/ + postplan)
+        try: return (now - datetime.datetime.fromisoformat(e["at"])).total_seconds() < 86400
+        except Exception: return True
+    return sum(1 for e in box if not e.get("posted") and young(e)) >= int(ch.get("max_pending", 12))
 
 
 def watch_once(root, c, t_end):

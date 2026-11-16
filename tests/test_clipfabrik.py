@@ -102,3 +102,28 @@ def test_drive_folder_parser_fixture(cf, tmp_path, monkeypatch, capsys):
     cf.pending(str(root), str(tmp_path / "in"))
     out = capsys.readouterr().out.strip().splitlines()[-1]
     assert [os.path.basename(p) for p in json.loads(out)] == ["drv1.json"]
+
+
+# --- Review 16.11.2026 (Fable-Nacht): Feinfehler an Wort-/Schnittgrenzen ------------------------------------------------------
+def test_snap_to_words_never_cuts_inside_a_word(cf):
+    W = [{"w": "car.", "s": 210.0, "e": 210.44}, {"w": "next", "s": 211.0, "e": 211.3}]
+    a, b, tail = cf.snap_to_words(200.0, 210.40, 300.0, W)            # end lands inside "car." (0.04 s before its end)
+    assert b == pytest.approx(210.56) and tail == pytest.approx(0.12)
+    a, b, tail = cf.snap_to_words(210.1, 215.0, 300.0, W)             # start inside the first quarter of a word -> before the word
+    assert a == pytest.approx(209.95)
+    a, b, tail = cf.snap_to_words(210.3, 215.0, 300.0, W)             # start late in the word -> behind the word
+    assert a == pytest.approx(210.47)
+    assert cf.snap_to_words(0.0, 5.0, 300.0, [])[:2] == (0.0, 5.0)    # no words (silent source): untouched
+
+
+def test_fix_word_handles_quotes_possessive_and_case(cf):
+    fix = {"Lacey": "Lacy", "rugg": "Rug"}
+    assert [cf.fix_word(w, fix) for w in ["Lacey", '"Lacey', "Lacey's", "lacey", "(Rugg)", "Rugg…", "Lacey.", "other"]] == \
+        ["Lacy", '"Lacy', "Lacy's", "Lacy", "(Rug)", "Rug…", "Lacy.", "other"]
+
+
+def test_livewatch_cut_refuses_a_recording_gap():
+    from conftest import load
+    lw = load("pipeline/clipfabrik/livewatch.py", "livewatch_gap")
+    with pytest.raises(Exception, match="gap"):
+        lw.cut({1: "/x/1.ts", 2: "/x/2.ts"}, 0.0, 50.0, 70.0, "/tmp/never.mp4")      # segment 0 missing

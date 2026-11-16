@@ -453,7 +453,12 @@ def ts(t):
 def fix_word(w, fix):
     if w in fix: return fix[w]
     m = re.match(r"^(.*?)([.,!?;:]*)$", w)
-    return fix[m.group(1)] + m.group(2) if m.group(1) in fix else w
+    if m.group(1) in fix: return fix[m.group(1)] + m.group(2)
+    # 16.11.: leading quote/bracket, possessive 's and other capitalisation ("Lacey's", (rugg), lacey)
+    m = re.match(r"^([^\w]*)(.*?)((?:['\u2019]s)?[^\w]*)$", w)
+    low = {k.lower(): v for k, v in fix.items()}
+    if m and m.group(2).lower() in low: return m.group(1) + low[m.group(2).lower()] + m.group(3)
+    return w
 
 
 def ass(words, a, b, path, fix, margin_v=450):
@@ -750,8 +755,19 @@ def auto_hook(db, words, a, b, step=0.1, min_db=5.0):
     return [round(s, 2), round(e, 2)] if e - s >= 1.0 else None
 
 
+def snap_to_words(a, b, dur, words):
+    """Move a cut that lands INSIDE a spoken word: the start goes behind the word (or just before it when little of it would be lost),
+    the end goes 0.12 s behind the word. Returns (a, b, tail) with tail = silence after the last word before b (limits the fade-out)."""
+    for w in words or []:
+        if w["s"] < a < w["e"]: a = (w["e"] + 0.03) if a - w["s"] > 0.4 * (w["e"] - w["s"]) else max(w["s"] - 0.05, 0.0)
+        if w["s"] < b < w["e"]: b = min(w["e"] + 0.12, dur)
+    ends = [w["e"] for w in words or [] if a < w["e"] <= b]
+    return a, b, (b - max(ends) if ends else 9.0)
+
+
 def render_clip(job, c, src, p, words, out, tmp):
     a, b = float(c["a"]), min(float(c["b"]), p["dur"]); cid = c["id"]
+    a, b, tail = snap_to_words(a, b, p["dur"], words)  # 16.11.: no word cut in half at the edges, fade-out never eats the last word
     capt = str(c.get("caption") or "").strip()
     title = str(c.get("title") or capt[:40]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
     layout = c.get("layout", job.get("layout", "framed")); track = c.get("track", job.get("track", False))
@@ -812,9 +828,9 @@ def render_clip(job, c, src, p, words, out, tmp):
         fl += "[v]"
         amap = ["-an"]
         if p["audio"]:
-            fi, fo = (0.04, 0.08) if tag == "hook" else ((0.08 if hook else 0.12), 0.35)
+            fi, fo = (0.04, 0.08) if tag == "hook" else ((0.08 if hook else 0.12), min(0.35, max(0.08, tail)))
             fl += f";[0:a]afade=t=in:d={fi},afade=t=out:st={dur - fo:.2f}:d={fo}[a]"
-            amap = ["-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
+            amap = ["-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2"]
         pf = os.path.join(tmp, f"{cid}_{tag}.mp4") if len(parts) > 1 else os.path.join(out, f"{job['name']}_{cid}.mp4")
         q = ["-preset", "veryfast", "-crf", "14"] if len(parts) > 1 else ["-preset", "medium", "-crf", "19", "-maxrate", "9M", "-bufsize", "18M"]
         run(["ffmpeg", "-y", "-v", "error", "-ss", f"{pa:.3f}", "-t", f"{dur:.3f}", "-i", src, "-i", ov, "-filter_complex", fl,
@@ -826,7 +842,7 @@ def render_clip(job, c, src, p, words, out, tmp):
         ins = sum([["-i", f] for f in files], [])
         cf = "".join(f"[{i}:v][{i}:a]" for i in range(len(files))) + f"concat=n={len(files)}:v=1:a=1[v][a]"
         run(["ffmpeg", "-y", "-v", "error", *ins, "-filter_complex", cf, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium",
-             "-crf", "19", "-maxrate", "9M", "-bufsize", "18M", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", dst])
+             "-crf", "19", "-maxrate", "9M", "-bufsize", "18M", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart", dst])
         for f in files: os.remove(f)
     q = probe(dst)
     if (q["w"], q["h"]) != (W, H) or abs(q["dur"] - total) > 0.6: raise Fail(f"{cid}: output check failed {q}")
@@ -928,7 +944,7 @@ def run_job(spec_path, root, src=None):
             scan(src, sc, lo=float(job.get("min_len", 10)), model=job.get("whisper", "small.en"), heat=heat, hot_k=int(job.get("hot_k", 14)))
             d = json.load(open(os.path.join(sc, "scan.json"))); d["source"] = job.get("source")
             json.dump(d, open(os.path.join(sc, "scan.json"), "w"), indent=1, ensure_ascii=False)
-        words = json.load(open(os.path.join(sc, "words.json")))
+        words = sorted(json.load(open(os.path.join(sc, "words.json"))), key=lambda w: w["s"])  # scan_long appends region by region
         errs = check_clips(job, p["dur"])
         if errs: raise Fail("job rejected: " + "; ".join(errs))
         job["_logo_img"] = load_logo(job.get("logo"), root)

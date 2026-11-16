@@ -87,7 +87,7 @@
  ],
  "check_before_use": "Plattform und Live-Status am Donnerstag pruefen (Streamer wechseln Twitch/Kick). Am 16.11. nur Groessen-Signale geprueft (Kick-Follower, Twitch-Clip-Views der Woche), nicht Kampagne oder Erlaubnis. Entfernt nach Pruefung: sketch (keine Clips der Woche), cloakzy (kaum Reichweite). Kandidatenliste, keine Zusage der Streamer.",
  "livewatch_template": {
-  "note": "Dieser Block wird NACH Kampagne gefunden in plan/livewatch.json unter channels kopiert (name + url aus streamers, Rest wie hier). layout bleibt native: bei GTA-Streams (Spielfiguren mit Gesichtern, Test tfue 16.11.) nimmt layout split mit facecam auto teils eine Spielfigur statt der echten Cam. Split nur beim Nach-Rendern aus dem Rohmoment (raw_*.mp4) ueber die Clipfabrik mit festem facecam [x, y, b, h] (Anteile 0-1, aus dem Standbild ablesen). max_clips klein halten (je Clip ca. 10 MB im Repo). v0.5 (Fable-Nacht 16.11.): min_chat/co_chat kommen aus profile (gaming 3.0/2.0, irl 4.5/2.5), max_pending 8 = Inbox-Bremse, poll_seconds 90 = wartet auf den Streamstart. ACHTUNG Kick: Livewatch hat Chat-Signal nur fuer Twitch (twitch.tv-URL); bei Kick bleibt nur die Lautstaerke, die bei lauten Streams fast immer > min_hype ist -> fuer Kick min_hype 14 und per_hour 2 setzen oder den Streamer auf Twitch suchen. Vor dem Einschalten Testmodus nutzen (Workflow livewatch, Eingaben urls/minutes/profile).",
+  "note": "Dieser Block wird NACH Kampagne gefunden in plan/livewatch.json unter channels kopiert (name + url aus streamers, Rest wie hier). layout bleibt native: bei GTA-Streams (Spielfiguren mit Gesichtern, Test tfue 16.11.) nimmt layout split mit facecam auto teils eine Spielfigur statt der echten Cam. Split nur beim Nach-Rendern aus dem Rohmoment (raw_*.mp4) ueber die Clipfabrik mit festem facecam [x, y, b, h] (Anteile 0-1, aus dem Standbild ablesen). max_clips klein halten (je Clip ca. 10 MB im Repo). v0.5 (Fable-Nacht 16.11.): min_chat 4.5 / co_chat 2.5 bleiben wie vom Launch-Vorbereiter gesetzt (ohne Messung nicht aendern; Profil gaming waere 3.0/2.0), max_pending 8 = Inbox-Bremse (zaehlt nur Eintraege der letzten 24 h mit posted=false, laeuft von selbst wieder frei), poll_seconds 90 = wartet auf den Streamstart. ACHTUNG Kick: Livewatch hat Chat-Signal nur fuer Twitch (twitch.tv-URL); bei Kick bleibt nur die Lautstaerke, die bei lauten Streams fast immer > min_hype ist -> fuer Kick min_hype 14 und per_hour 2 setzen oder den Streamer auf Twitch suchen. Vor dem Einschalten Testmodus nutzen (Workflow livewatch, Eingaben urls/minutes/profile).",
   "min_hype": 9,
   "per_hour": 4,
   "max_clips": 10,
@@ -95,7 +95,8 @@
   "layout": "native",
   "max_pending": 8,
   "poll_seconds": 90,
-  "profile": "gaming"
+  "min_chat": 4.5,
+  "co_chat": 2.5
  },
  "campaign_search": {
   "where": "contentrewards.com/c/discover/clipping (Radar: campaigns/latest.md, 3x taeglich)",
