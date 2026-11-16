@@ -154,3 +154,15 @@ def test_watch_once_offline_returns_false(lw, tmp_path, monkeypatch):
     monkeypatch.setattr(lw, "Recorder", R)
     root = _cfg_root(tmp_path)
     assert lw.watch_once(root, lw.cfg(root), 9e12) is False
+
+
+def test_inbox_full_stops_recording(lw, tmp_path):
+    import json, os
+    root = _cfg_root(tmp_path); d = tmp_path / "clips" / "live-x"; d.mkdir(parents=True)
+    ch = {"name": "x", "url": "https://www.twitch.tv/x", "max_pending": 3}
+    assert not lw.inbox_full(root, ch)                                                   # no inbox yet
+    (d / "inbox.json").write_text(json.dumps([{"posted": False}, {"posted": True}, {"posted": False}]))
+    assert not lw.inbox_full(root, ch)                                                   # 2 unposted < 3
+    (d / "inbox.json").write_text(json.dumps([{"posted": False}] * 3))
+    assert lw.inbox_full(root, ch)
+    assert lw.watch_once(root, lw.cfg(root) | {"channels": [ch]}, 9e12) is True          # returns without touching the recorder

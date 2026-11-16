@@ -434,9 +434,19 @@ class Recorder:
         if self.pr and self.pr.poll() is None: self.pr.terminate()
 
 
+def inbox_full(root, ch):
+    """Repo guard (16.11.): every clip costs ~10 MB (clip + raw moment) and the runs follow each other. More than `max_pending` (default 12)
+    entries with posted=false in clips/live-<name>/inbox.json = stop recording until the agent sets them to posted/removes them."""
+    name = "live-" + re.sub(r"[^a-z0-9-]", "", ch["name"].lower())
+    try: box = json.load(open(os.path.join(root, "clips", name, "inbox.json")))
+    except Exception: return False
+    return sum(1 for e in box if not e.get("posted")) >= int(ch.get("max_pending", 12))
+
+
 def watch_once(root, c, t_end):
     """One pass over the channels: records the first one that is live and returns True when it was watched, False when all are offline."""
     for ch in c.get("channels", []):
+        if inbox_full(root, ch): print("LIVEWATCH_FULL", ch["name"], "- inbox has too many unposted clips, not recording"); return True
         rec = os.path.join(os.environ.get("RUNNER_TEMP", "/tmp"), "lw_rec"); os.makedirs(rec, exist_ok=True)
         for f in glob.glob(os.path.join(rec, "*.ts")): os.remove(f)
         rc = Recorder(ch, rec)
