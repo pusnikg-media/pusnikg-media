@@ -123,6 +123,29 @@ def test_live_links_filled_in_and_unplanned_post_gets_own_line_and_reopens(tmp_p
     assert any("999000111" in c[1] for c in gh.comments)                                              # Kommentar = Benachrichtigung
 
 
+def test_old_issue_ticked_after_days_still_closes(tmp_path):
+    """(f) Issue vom 16.11., erst 3 Tage später abgehakt: wird beim Abhaken geschlossen, Text bleibt unverändert; teilweise abgehakt bleibt offen."""
+    root, gh = repo(tmp_path, [], {}), FakeGH(); E.run(gh, root, REAL, NOW16)
+    num = next(i["number"] for i in gh.issues if "einreichen-day: 2026-11-16" in i["body"])
+    later = NOW16 + dt.timedelta(days=3)
+    E.run(gh, root, REAL, later); assert gh.issues[num - 1]["state"] == "open"                                 # nichts abgehakt
+    for s in SLOTS16[:3]: gh.tap(num, f"slot|{s}")
+    E.run(gh, root, REAL, later); assert gh.issues[num - 1]["state"] == "open"                                 # 3 von 4
+    before = gh.issues[num - 1]["body"]; gh.tap(num, f"slot|{SLOTS16[3]}"); tapped = gh.issues[num - 1]["body"]
+    E.run(gh, root, REAL, later)
+    i = gh.issues[num - 1]
+    assert i["state"] == "closed" and i["body"] == tapped and tapped != before                                 # Text nicht neu gebaut
+    E.run(gh, root, REAL, later); assert gh.issues[num - 1]["state"] == "closed"                               # bleibt zu
+
+
+def test_old_issue_closes_via_file_ticks_only(tmp_path):
+    root, gh = repo(tmp_path, [], {}), FakeGH(); E.run(gh, root, REAL, NOW16)
+    num = next(i["number"] for i in gh.issues if "einreichen-day: 2026-11-16" in i["body"])
+    json.dump(dict(json.load(open(os.path.join(root, "plan/eingereicht.json"))), slots=SLOTS16), open(os.path.join(root, "plan/eingereicht.json"), "w"))
+    E.run(gh, root, REAL, NOW16 + dt.timedelta(days=5))
+    assert gh.issues[num - 1]["state"] == "closed"
+
+
 def test_foreign_and_unmarked_issues_are_ignored():
     forged = {"number": 9, "state": "open", "user": {"login": "stranger"}, "body": "<!-- einreichen-day: 2026-11-16 -->\n- [x] a <!-- k:slot|Pusnik G|X|2026-11-16|15:00 -->"}
     plain = {"number": 8, "state": "open", "user": {"login": BOT}, "body": "- [x] a <!-- k:slot|Pusnik G|X|2026-11-16|15:00 -->"}
@@ -143,20 +166,47 @@ def test_write_file_only_adds(tmp_path):
 
 
 # ---------- Daten ----------
-def test_postplan_is_consistent_with_repo():
-    plan = json.load(open(os.path.join(ROOT, "plan/postplan.json")))["slots"]
-    names = {k["name"] for k in REAL["kampagnen"]}; konten = {"Pusnik G", "Pusnik IRL"}
-    seen = set()
+def check_postplan(plan, names, konten, root=ROOT, warn=None):
+    """Harte Regeln (Stevens Postregeln + Schlüssel-Eindeutigkeit); Datenlücken, die der Clipping-Agent nicht selbst schließen kann, nur als Warnung."""
+    slots = W.merge_slots(plan)
     for s in plan:
-        assert s["kampagne"] in names and s["konto"] in konten, s
+        assert s["konto"] in konten, f"unbekanntes Konto: {s}"
+        if s["kampagne"] not in names and warn is not None: warn.append(f"Kampagne '{s['kampagne']}' fehlt in plan/waechter.json (kampagnen) – Zeile ergänzen")
+    for s in slots:
         assert re.fullmatch(r"\d\d:\d\d", s["zeit"]) and s["zeit"] <= REAL["postzeit_ende"], f"nie nach 19:30: {s}"
         assert s["zeit"] != "18:00", "nie zur Short-Zeit"
-        k = (s["konto"], s["datum"], s["zeit"]); assert k not in seen, f"zwei Clips im selben Slot: {k}"; seen.add(k)
-        job, cid = s["clip"].split("/")
-        res = json.load(open(os.path.join(ROOT, "clips", job, "result.json")))
-        assert cid in [c["id"] for c in res["clips"]], f"{s['clip']} nicht gerendert"
+    for k in {(s["konto"], s["datum"], s["zeit"]) for s in slots}:
+        assert len({s["clip"] for s in plan if (s["konto"], s["datum"], s["zeit"]) == k}) == 1, f"zwei Clips im selben Slot: {k}"
     for konto in konten:                                                                                   # höchstens 2 pro Konto und Tag
-        for d in {s["datum"] for s in plan}: assert sum(1 for s in plan if s["konto"] == konto and s["datum"] == d) <= 2, (konto, d)
+        for d in {s["datum"] for s in slots}: assert sum(1 for s in slots if s["konto"] == konto and s["datum"] == d) <= 2, (konto, d)
+    for s in plan:                                                                                          # gerendert? (fehlende Ergebnisdatei = nur Warnung)
+        job, _, cid = s["clip"].partition("/"); f = os.path.join(root, "clips", job, "result.json")
+        if os.path.exists(f) and cid and warn is not None and cid not in [c["id"] for c in json.load(open(f))["clips"]]: warn.append(f"{s['clip']} nicht in {job}/result.json")
+
+
+def test_postplan_is_consistent_with_repo():
+    import warnings
+    konten = {a["name"] for a in json.load(open(os.path.join(ROOT, "plan/stats.json")))["accounts"]}
+    w = []; check_postplan(json.load(open(os.path.join(ROOT, "plan/postplan.json")))["slots"], {k["name"] for k in REAL["kampagnen"]}, konten, warn=w)
+    for m in w: warnings.warn(m)
+
+
+def test_postplan_new_agent_slots_do_not_break_tests():
+    """Neue Agent-Zeilen: neue Kampagne, noch nicht gerendert, eine Zeile pro Plattform -> nur Warnungen, kein roter Test."""
+    base = {"datum": "2026-11-20", "zeit": "09:00", "konto": "Pusnik G", "kampagne": "Neue Kampagne", "clip": "neu/A_x", "titel": "t"}
+    w = []; check_postplan([dict(base, plattformen=["tiktok"]), dict(base, plattformen=["youtube"])], {"TJR"}, {"Pusnik G"}, warn=w)
+    assert any("Neue Kampagne" in m for m in w)
+    for bad in (dict(base, zeit="19:45"), dict(base, zeit="18:00"), dict(base, konto="Fremd")):
+        with pytest.raises(AssertionError): check_postplan([bad], {"Neue Kampagne"}, {"Pusnik G"})
+    with pytest.raises(AssertionError): check_postplan([base, dict(base, clip="neu/B_y")], {"Neue Kampagne"}, {"Pusnik G"})
+
+
+def test_one_publish_per_platform_merges_to_one_issue_line(tmp_path):
+    base = {"datum": "2026-11-17", "zeit": "09:00", "konto": "Pusnik IRL", "kampagne": "TJR", "clip": "tjr6/A_x", "titel": "t"}
+    root = repo(tmp_path, [], {}, slots=[dict(base, plattformen=["tiktok"]), dict(base, plattformen=["youtube"]), dict(base, plattformen=["tiktok"])])
+    assert len(E.load_slots(root)) == 1 and E.load_slots(root)[0]["plattformen"] == ["tiktok", "youtube"]
+    lines = E.build_lines(root, REAL, "2026-11-17", None)
+    assert [l["key"] for l in lines] == ["slot|Pusnik IRL|TJR|2026-11-17|09:00"]
 
 
 # ---------- Postplan gegen Live: Slot nicht rausgegangen ----------
