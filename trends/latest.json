@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T08:05:43+00:00",
+ "at": "2026-11-16T08:08:29+00:00",
  "errors": [],
  "items": [
   {
@@ -26,7 +26,7 @@
    "link": "https://v.redd.it/03frx9lg3s1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 18.5,
+   "age_h": 18.6,
    "id": "r:1xwvkra",
    "new": false
   },
@@ -40,7 +40,7 @@
    "link": "https://yt3.googleusercontent.com/wo6Mh-bK3eJrGlhxaCnA0W_Ncku0XlDPgdiLi-BzEG3T1OhxgJkUlvVIw9E8aKDwDhh5iXNo2g=s900-c-k-c0x00ffffff-no-rj",
    "is_clip": false,
    "host": "yt3.googleusercontent.com",
-   "age_h": 5.4,
+   "age_h": 5.5,
    "id": "r:1xxe0in",
    "new": false
   },
@@ -68,7 +68,7 @@
    "link": "https://v.redd.it/7bsvg80z5s1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 18.3,
+   "age_h": 18.4,
    "id": "r:1xwvuyn",
    "new": false
   },
@@ -82,7 +82,7 @@
    "link": "https://v.redd.it/o23atr4ktt1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 12.7,
+   "age_h": 12.8,
    "id": "r:1xx44dr",
    "new": false
   },
@@ -96,7 +96,7 @@
    "link": "https://v.redd.it/34jixkauqr1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 19.7,
+   "age_h": 19.8,
    "id": "r:1xwu5mv",
    "new": false
   },
@@ -110,7 +110,7 @@
    "link": "https://v.redd.it/b1pmlkqqrt1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 12.9,
+   "age_h": 13.0,
    "id": "r:1xx3ulk",
    "new": false
   },
@@ -138,9 +138,9 @@
    "link": "https://v.redd.it/893x9m0srw1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 2.8,
+   "age_h": 2.9,
    "id": "r:1xxgzj2",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -152,7 +152,7 @@
    "link": "https://v.redd.it/ps5dle19fs1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 17.4,
+   "age_h": 17.5,
    "id": "r:1xwx2qo",
    "new": false
   },
@@ -168,7 +168,7 @@
    "host": "v.redd.it",
    "age_h": 1.3,
    "id": "r:1xxij1i",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -180,7 +180,7 @@
    "link": "",
    "is_clip": false,
    "host": "reddit.com",
-   "age_h": 15.8,
+   "age_h": 15.9,
    "id": "r:1xwzezu",
    "new": false
   },
@@ -194,7 +194,7 @@
    "link": "https://i.redd.it/w1cxejacfr1i1.gif",
    "is_clip": false,
    "host": "i.redd.it",
-   "age_h": 20.8,
+   "age_h": 20.9,
    "id": "r:1xwt02p",
    "new": false
   },
@@ -236,7 +236,7 @@
    "link": "https://i.redd.it/4k4js2h6tr1i1.jpeg",
    "is_clip": false,
    "host": "i.redd.it",
-   "age_h": 19.5,
+   "age_h": 19.6,
    "id": "r:1xwudi9",
    "new": false
   },
@@ -250,7 +250,7 @@
    "link": "https://i.redd.it/u6199oeyqr1i1.jpeg",
    "is_clip": false,
    "host": "i.redd.it",
-   "age_h": 19.7,
+   "age_h": 19.8,
    "id": "r:1xwu53f",
    "new": false
   },
@@ -266,7 +266,7 @@
    "host": "i.redd.it",
    "age_h": 10.5,
    "id": "r:1xx7frk",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -306,7 +306,7 @@
    "link": "https://v.redd.it/w83mbiilzt1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 12.2,
+   "age_h": 12.3,
    "id": "r:1xx4y3r",
    "new": false
   },
@@ -322,7 +322,7 @@
    "host": "reddit.com",
    "age_h": 4.8,
    "id": "r:1xxet5b",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -348,9 +348,9 @@
    "link": "https://i.redd.it/77ff40ginv1i1.jpeg",
    "is_clip": false,
    "host": "i.redd.it",
-   "age_h": 6.6,
+   "age_h": 6.7,
    "id": "r:1xxclcv",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
@@ -376,7 +376,7 @@
    "views": 3963,
    "per_h": 145,
    "dur": 30,
-   "age_h": 27.3,
+   "age_h": 27.4,
    "category": "Special Events",
    "page": "https://kick.com/westcol/clips/clip_01M7ERC8WA67K4S1X8VS1WRXKX",
    "video": "https://clips.kick.com/clips/65/clip_01M7ERC8WA67K4S1X8VS1WRXKX/playlist.m3u8",
@@ -390,9 +390,9 @@
    "channel": "greatwhitemike",
    "title": "GWM 2 FOR 1",
    "views": 2731,
-   "per_h": 182,
+   "per_h": 181,
    "dur": 69,
-   "age_h": 15.0,
+   "age_h": 15.1,
    "category": "Just Sleeping",
    "page": "https://kick.com/greatwhitemike/clips/clip_01M7G2DPFSQR0GMTVB4VQ7J2KC",
    "video": "https://clips.kick.com/clips/f2/clip_01M7G2DPFSQR0GMTVB4VQ7J2KC/playlist.m3u8",
@@ -437,8 +437,8 @@
    "area": "irl",
    "channel": "harry",
    "title": "gangsta speedy",
-   "views": 2296,
-   "per_h": 232,
+   "views": 2306,
+   "per_h": 233,
    "dur": 73,
    "age_h": 9.9,
    "category": "Grand Theft Auto V (GTA)",
@@ -453,10 +453,10 @@
    "area": "irl",
    "channel": "aloskegang",
    "title": "ALOSKE KABA ET",
-   "views": 1514,
+   "views": 1515,
    "per_h": 86,
    "dur": 12,
-   "age_h": 17.6,
+   "age_h": 17.7,
    "category": "IRL",
    "page": "https://kick.com/aloskegang/clips/clip_01M7FSPDH587NCCD6ECJFE9EYT",
    "video": "https://clips.kick.com/clips/35/clip_01M7FSPDH587NCCD6ECJFE9EYT/playlist.m3u8",
@@ -469,7 +469,7 @@
    "area": "irl",
    "channel": "shoovy",
    "title": "LEAKED?",
-   "views": 1423,
+   "views": 1424,
    "per_h": 50,
    "dur": 17,
    "age_h": 28.5,
@@ -478,7 +478,7 @@
    "video": "https://clips.kick.com/clips/9b/clip_01M7EMCW031Y61EKJHHHX48P48/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7EMCW031Y61EKJHHHX48P48",
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -486,13 +486,13 @@
    "site": "Eurogamer",
    "title": "The latest GTA 6 leak comes in the form of a 34-song tracklist for GTA 6: The Album, featuring Dua Lipa, Lana Del Rey, Rina Sawayama, and more",
    "page": "https://www.eurogamer.net/gta-6-tracklist-leak",
-   "age_h": 18.0,
+   "age_h": 18.1,
    "id": "n:the-latest-gta-6-leak-comes-in-the-form-of-a-34-song-trackli",
    "sites": [
     "Eurogamer",
     "PC Gamer"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -505,7 +505,7 @@
    "sites": [
     "IGN"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -518,7 +518,7 @@
    "sites": [
     "RockstarINTEL"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -526,12 +526,12 @@
    "site": "IGN",
    "title": "EA Adds 'Don't Delete' Message to Madden NFL 27 in Bid to Keep Players From Making Room Ahead of GTA 6",
    "page": "https://www.ign.com/articles/ea-adds-dont-delete-message-to-madden-nfl-27-in-bid-to-keep-players-from-making-room-ahead-of-gta-6",
-   "age_h": 14.7,
+   "age_h": 14.8,
    "id": "n:ea-adds-don-t-delete-message-to-madden-nfl-27-in-bid-to-keep",
    "sites": [
     "IGN"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -544,7 +544,7 @@
    "sites": [
     "Insider Gaming"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -557,7 +557,7 @@
    "sites": [
     "Eurogamer"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -570,7 +570,7 @@
    "sites": [
     "Insider Gaming"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -583,7 +583,7 @@
    "sites": [
     "GameSpot"
    ],
-   "new": true
+   "new": false
   }
  ]
 }
