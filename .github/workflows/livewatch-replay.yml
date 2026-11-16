@@ -9,11 +9,13 @@ on:
       start: {description: "start second in the VOD", required: true, default: "3600"}
       minutes: {description: "minutes to play", required: true, default: "40"}
       min_chat: {description: "chat burst ratio (empty = profile of the channel)", required: false, default: ""}
+      ref: {description: "branch whose code to run (empty = main)", required: false, default: ""}
+      push_branch: {description: "write the clips to this throw-away branch instead of main (empty = main)", required: false, default: ""}
       compare: {description: "also run the OLD settings on the same recording (QA pictures only, dir live-<name>-old)", required: false, default: "false"}
 permissions:
   contents: write
 concurrency:
-  group: livewatch
+  group: livewatch${{ inputs.push_branch && format('-{0}', inputs.push_branch) || '' }}   # test runs with their own branch may run side by side
   cancel-in-progress: false
 jobs:
   replay:
@@ -22,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ inputs.ref || 'main' }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -44,6 +46,7 @@ jobs:
           MINUTES: ${{ inputs.minutes }}
           MINCHAT: ${{ inputs.min_chat }}
           COMPARE: ${{ inputs.compare }}
+          LW_PUSH_BRANCH: ${{ inputs.push_branch }}
         run: |
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
           python3 -u pipeline/clipfabrik/livewatch.py replay "$VOD" "$START" "$MINUTES" . "$MINCHAT" $([ "$COMPARE" = "true" ] && echo compare)

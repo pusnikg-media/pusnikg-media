@@ -45,10 +45,19 @@ v5 (15.11., from the reference lab: viral streamer clips keep the ORIGINAL frami
   caption   clip only: one context sentence in normal spelling, e.g. "Lacy did NOT expect Rug to DANCE on his stream 😭"
             (max 3 lines, ~95 characters; emojis are drawn when the runner has a colour emoji font). Drawn as a white box
             with black text right above the picture (layout native/framed) or at the top (full). Replaces the big title.
+v6 (16.11., IRL campaigns - see framecheck.py): optional, per job or per clip
+  crop      0.15 = cut the top 15 % off the source BEFORE anything else (burned-in Twitch chat + counters), or {"top","bottom","left","right"}
+            as shares 0-0.5. The rest is scaled to 1080x1920 like any source (native: whole cropped picture, framed/full/split as usual).
+  check     true = look at the source frames before rendering: "Jason in the picture" (a face >= 7 % of the width in >= 45 % of the time, no gap
+            > 6 s), no multi-window layout -> clip rejected (error "rejected: ..."); plus WARNINGS (result "warnings") for static overlays and
+            big lettering. Or {"face": bool|{min_w,min_share,max_gap}, "tiles": bool, "logo": bool}. Logos on clothes / signs cannot be found:
+            every clip of a no-logo campaign still needs a look by hand.
 Result: clips/<name>/result.json {"ok", "sig", "attempts", "clips": [{"id", "ok", "url", "seconds", "title", "caption", "hints"}], "error"}.
 "hints" = soft style checks of the caption (too short, no emoji, two sentences ...) - the clip is rendered anyway.
 Layout 1080x1920: blurred fill, sharp centre crop 1080x1200 at y=400, title (+ pill) on top, karaoke captions (libass)."""
 import glob, hashlib, json, math, os, re, subprocess, sys, urllib.parse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import framecheck
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONTS = os.path.join(HERE, "..", "fonts")
@@ -748,8 +757,40 @@ def auto_hook(db, words, a, b, step=0.1, min_db=5.0):
     return [round(s, 2), round(e, 2)] if e - s >= 1.0 else None
 
 
+def render_cropped(job, c, src, p, words, out, tmp, crop):
+    """crop option: re-encode just this clip's seconds (hook + clip, 1 s margin) with the strip cut off, then render from that file.
+    Times, hook and words move by the offset; the check (face / windows / overlays) runs on the CROPPED picture."""
+    x, y, cw, ch = framecheck.crop_rect(crop, p["w"], p["h"])
+    hk = c.get("hook") if isinstance(c.get("hook"), (list, tuple)) else None
+    lo = max(0.0, min(float(c["a"]), float(hk[0]) if hk else 1e9) - 1.0); hi = min(p["dur"], max(float(c["b"]), float(hk[1]) if hk else 0.0) + 1.0)
+    seg = os.path.join(tmp, f"crop_{c['id']}.mkv")
+    af = ["-c:a", "copy"] if p.get("audio") else ["-an"]
+    run(["ffmpeg", "-y", "-v", "error", "-ss", f"{lo:.3f}", "-t", f"{hi - lo:.3f}", "-i", src, "-vf", f"crop={cw}:{ch}:{x}:{y},setsar=1",
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "12", *af, seg])
+    q = probe(seg); q["fps"] = p.get("fps") or q.get("fps") or 30
+    c2 = dict(c, a=float(c["a"]) - lo, b=float(c["b"]) - lo, _cropped=True, crop=None)
+    if hk: c2["hook"] = [float(hk[0]) - lo, float(hk[1]) - lo]
+    w2 = [dict(w, s=round(w["s"] - lo, 3), e=round(w["e"] - lo, 3)) for w in words if lo <= w["s"] and w["e"] <= hi]
+    try:
+        r = render_clip(dict(job, crop=None), c2, seg, q, w2, out, tmp)
+    finally:
+        if os.path.exists(seg): os.remove(seg)
+    r["crop"] = [round(v, 3) for v in crop]
+    return r
+
+
 def render_clip(job, c, src, p, words, out, tmp):
+    crop = framecheck.norm_crop(c.get("crop", job.get("crop")))
+    if crop and not c.get("_cropped"):  # v6: cut the strip off first (own intermediate file), then run the normal pipeline on it
+        return render_cropped(job, c, src, p, words, out, tmp, crop)
     a, b = float(c["a"]), min(float(c["b"]), p["dur"]); cid = c["id"]
+    chk = c.get("check", job.get("check"))
+    warns = []
+    if chk and p.get("w") and not c.get("_checked"):
+        res = framecheck.check_clip(src, a, b, chk)
+        if not res["ok"]: raise Fail(f"{cid}: rejected: " + "; ".join(res["reasons"]))
+        warns = res["warnings"]
+        for w_ in warns: print(f"WARN {cid}: {w_}")
     capt = str(c.get("caption") or "").strip()
     title = str(c.get("title") or capt[:40]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
     layout = c.get("layout", job.get("layout", "framed")); track = c.get("track", job.get("track", False))
@@ -835,6 +876,7 @@ def render_clip(job, c, src, p, words, out, tmp):
     r = {"id": cid, "ok": True, "seconds": round(q["dur"], 2), "title": title, "file": os.path.basename(dst), "qa": "qa/" + os.path.basename(png),
          "layout": layout, "tracked": stats["tracked"], "punches": stats["punches"]}
     if hook: r["hook"] = [round(float(hook[0]), 2), round(float(hook[1]), 2)]
+    if warns: r["warnings"] = warns
     if capt:
         r["caption"] = capt; hints = caption_hints(capt, q["dur"])
         if hints: r["hints"] = hints; print(f"HINT {cid}: " + "; ".join(hints))
@@ -845,7 +887,7 @@ def sig(*parts):
     return hashlib.sha1(json.dumps(parts, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:12]
 
 
-V3_KEYS = ("layout", "track", "max_height", "hot_k", "zoom", "facecam")
+V3_KEYS = ("layout", "track", "max_height", "hot_k", "zoom", "facecam", "crop", "check")
 
 
 def v3(job):
@@ -934,7 +976,7 @@ def run_job(spec_path, root, src=None):
         for c in job.get("clips", []):
             csig = sig(job.get("source"), c.get("pill", job.get("pill")), job.get("fix"), c,
                        *([job.get("logo"), job.get("logo_w"), job.get("logo_pos")] if job.get("logo") else []),
-                       *v3({k: job[k] for k in ("layout", "track", "zoom", "facecam") if k in job}))
+                       *v3({k: job[k] for k in ("layout", "track", "zoom", "facecam", "crop", "check") if k in job}))
             d = done.get(c["id"])
             if d and d.get("sig") == csig and os.path.exists(os.path.join(out, d["file"])):
                 res["clips"].append(d); continue

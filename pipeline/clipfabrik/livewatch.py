@@ -64,7 +64,8 @@ def find_peak(db, win=20, base=600):
     return best, (len(db) - n + bt if bt is not None else None)
 
 
-PROFILES = {"irl": {"min_chat": 4.5, "co_chat": 2.5}, "gaming": {"min_chat": 3.0, "co_chat": 2.0}}
+# irl (16.11. v0.5): the burned-in Twitch chat + counter reach down to ~15.8 % of the picture (measured on 23 Jason clips) -> crop 0.17; check = "Jason in the picture" / no multi-window layout / overlay warning
+PROFILES = {"irl": {"min_chat": 4.5, "co_chat": 2.5, "crop": 0.17, "check": True}, "gaming": {"min_chat": 3.0, "co_chat": 2.0}}
 
 
 def with_profile(ch):
@@ -301,7 +302,7 @@ def make_clip(ch, root, segs, t0, peak, hype, stamp):
     # v0.2 (15.11.): viral style = whole picture + one sentence. The preview only quotes what was said; the agent writes the real
     # context sentence and re-renders through the Clipfabrik from the RAW moment (kept as raw_<stamp>.mp4, source of a clipjob).
     quote = ('"' + title.capitalize() + '"') if title else "Live moment"
-    job = {"name": name, "layout": ch.get("layout", "native"), "fix": ch.get("fix") or {}, "_logo_img": None}
+    job = {"name": name, "layout": ch.get("layout", "native"), "fix": ch.get("fix") or {}, "_logo_img": None, "crop": None if ch.get("legacy") else ch.get("crop"), "check": None if ch.get("legacy") else ch.get("check")}  # legacy = old settings, no new filters
     clip = {"id": stamp, "a": round(a, 2), "b": round(b, 2), "caption": quote}
     r = cf.render_clip(job, clip, raw, p, words, out, tmp)
     rawname = f"raw_{stamp}.mp4"
@@ -323,8 +324,11 @@ def publish(root, name, entry, push):
     if not push: return
     g = lambda *a: subprocess.run(["git", "-C", root, *a], capture_output=True, text=True)
     g("add", "-A", f"clips/{name}"); g("commit", "-q", "-m", f"livewatch: {name} {entry['id']} (hype {entry['hype']})")
+    br = os.environ.get("LW_PUSH_BRANCH", "").strip()  # test runs (16.11.): results go to a throw-away branch, never to main (and never main's code to main)
     for i in range(4):
-        if g("pull", "-q", "--rebase", "origin", "main").returncode == 0 and g("push", "-q", "origin", "HEAD:main").returncode == 0:
+        if br and br != "main":
+            if g("push", "-q", "origin", f"HEAD:refs/heads/{br}").returncode == 0: print("PUBLISHED (branch " + br + ")", entry["url"].replace("/main/", f"/{br}/")); return
+        elif g("pull", "-q", "--rebase", "origin", "main").returncode == 0 and g("push", "-q", "origin", "HEAD:main").returncode == 0:
             print("PUBLISHED", entry["url"]); return
         time.sleep(6)
     print("WARN push failed for", entry["id"])
