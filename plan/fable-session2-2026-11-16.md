@@ -41,3 +41,10 @@ Geprüft: Analyst, Stratege, Deal-Radar, Reel-Scout gegen Inhaltsregeln, Zeiten/
   2. **Kick-Chat lesen:** Der Kick-Chat ist öffentlich über einen Websocket (Pusher) lesbar, ohne Login. Erst prüfen, ob das ohne Anmeldung und regelkonform geht; dann wäre es dasselbe Chat-Signal wie bei Twitch.
   3. **Bis dahin nur Lautstärke strenger:** `min_hype` 14, `per_hour` 2, dazu Pflicht „Sprache im Schnitt“ (gibt es schon) und eine Dauer-Bedingung (≥ 3 s über der Grundlinie statt einer einzelnen Spitze), damit Musik- und Effekt-Spitzen wegfallen.
   Empfehlung für Donnerstag: Kick-Streamer nur mit Variante 3, besser einen Twitch-Kanal nehmen.
+
+## 5. Pre-Mortem Donnerstag – erledigt
+Im Runbook `plan/prompts/runbook-launch-tag-2026-11-19.md` steht ein neuer Abschnitt „Pre-Mortem“: drei Fälle mit geprüfter Wirkung und je einer Ein-Satz-Anweisung für Steven (Cron 90 Min zu spät / Release verschoben / Livewatch 0 Kandidaten), dazu drei Lücken:
+- Livewatch hat keinen Push-Auslöser, also braucht der erste Lauf einen Handstart.
+- Die Livewatch-Zeile steht unter 12:47, gemeint ist aber „vor 11:30“.
+- Ehrlich festgehalten: Bei einer Verschiebung sind Instagram und TikTok ca. 3,5 h falsch online (löschen erst ab 21:30).
+Vorbeugung: Di und Mi morgens die News-Zeile ansehen, denn der alte Produzent-Prompt hat keinen Release-Check.
