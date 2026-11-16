@@ -55,7 +55,7 @@ def test_plan_and_output_files(rp):
     check(PLAN[rp], os.path.join(ROOT, rp))
 
 
-@pytest.mark.parametrize("rp,sch", [("plan/waechter.json", "waechter"), ("plan/eingereicht.json", "eingereicht")])
+@pytest.mark.parametrize("rp,sch", [("plan/waechter.json", "waechter"), ("plan/eingereicht.json", "eingereicht"), ("plan/postplan.json", "postplan")])
 def test_waechter_files(rp, sch):
     check(sch, os.path.join(ROOT, rp))
 

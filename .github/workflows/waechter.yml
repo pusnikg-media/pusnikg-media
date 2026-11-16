@@ -5,7 +5,7 @@
 name: waechter
 on:
   push:
-    paths: ["waechter/**", "plan/waechter.json", "plan/eingereicht.json", ".github/workflows/waechter.yml"]
+    paths: ["waechter/**", "plan/waechter.json", "plan/eingereicht.json", "plan/postplan.json", ".github/workflows/waechter.yml"]
   schedule:
     - cron: "47 5 * * *"
     - cron: "37 11 * * *"
@@ -48,12 +48,21 @@ jobs:
             python3 waechter/waechter.py --root . --dry; exit 0
           fi
           git config user.name "Pusnik G Bot"; git config user.email "bot@users.noreply.github.com"
+          # Haken aus den Einreich-Issues -> plan/eingereicht.json (heilt einen verlorenen Push der Aktion 'einreichen'); Fehler hier stoppen den Wächter nicht
+          python3 waechter/einreichen.py --root . --mode sync || echo "einreichen sync fehlgeschlagen"
           python3 waechter/waechter.py --root .   # Fehler (z. B. Issues) lassen den Lauf rot enden
-          cp stats/alerts.md /home/runner/alerts.md
+          cp stats/alerts.md /home/runner/alerts.md; cp plan/eingereicht.json /home/runner/eingereicht.json
           for i in 1 2 3 4 5; do   # auf den neuesten main legen (viele Actions pushen)
             git fetch -q --depth=1 origin main && git reset -q --hard origin/main || { sleep 5; continue; }
             mkdir -p stats && cp /home/runner/alerts.md stats/alerts.md
-            git add stats/alerts.md; git diff --cached --quiet && { echo "alerts.md unveraendert"; break; }
+            python3 - <<'PY'
+          import json
+          mine = json.load(open("/home/runner/eingereicht.json")); cur = json.load(open("plan/eingereicht.json"))
+          if any(set(mine.get(k, [])) - set(cur.get(k, [])) for k in ("slots", "posts")):   # nur hinzufügen
+              for k in ("slots", "posts"): cur[k] = sorted(set(cur.get(k, [])) | set(mine.get(k, [])))
+              json.dump(cur, open("plan/eingereicht.json", "w"), ensure_ascii=False, indent=1); open("plan/eingereicht.json", "a").write("\n")
+          PY
+            git add stats/alerts.md plan/eingereicht.json; git diff --cached --quiet && { echo "alerts.md unveraendert"; break; }
             git commit -q -m "waechter: alerts" && git push -q origin HEAD:main && { echo PUBLISHED; break; }
             echo "push retry $i"; sleep 8
           done

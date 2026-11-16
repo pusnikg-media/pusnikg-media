@@ -1,0 +1,169 @@
+{
+ "note": "Postplan der Kampagnen-Clips (Quelle für die Einreich-Issues, Aktion 'einreichen'; Wächter ordnet Live-Posts dem nächsten Slot ±14 Min zu). Ein Eintrag pro Clip: datum + zeit (Europe/Berlin), konto, kampagne (= Name in plan/waechter.json kampagnen), clip (<clipjob>/<id>), titel (für Steven, kurz), plattformen. Geschrieben vom Clipping-Agenten beim Einplanen (siehe claude/haertung-stand.md); bis 16.11. aus den 'Links'-Erinnerungen übernommen. Ohne Eintrag erscheint ein Post trotzdem im Issue, aber erst nach dem Live-Gang.",
+ "slots": [
+  {
+   "datum": "2026-11-16",
+   "zeit": "15:00",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr5/A_key",
+   "titel": "TJR gets a broke car",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  },
+  {
+   "datum": "2026-11-16",
+   "zeit": "15:00",
+   "konto": "Pusnik G",
+   "kampagne": "COD Warzone Season 1",
+   "clip": "wzs1/B_drop",
+   "titel": "Drop into Hajin",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
+  },
+  {
+   "datum": "2026-11-16",
+   "zeit": "19:00",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr4/B_plan",
+   "titel": "TJR: Er hat keine Ahnung",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  },
+  {
+   "datum": "2026-11-16",
+   "zeit": "19:30",
+   "konto": "Pusnik G",
+   "kampagne": "COD Warzone Season 1",
+   "clip": "wzs1/C_close",
+   "titel": "Close Quarters",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
+  },
+  {
+   "datum": "2026-11-17",
+   "zeit": "09:00",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr4/D_test",
+   "titel": "TJR Probefahrt 200K-SUV",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  },
+  {
+   "datum": "2026-11-17",
+   "zeit": "09:30",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr5/B_seat",
+   "titel": "No automatic seats?!",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  },
+  {
+   "datum": "2026-11-17",
+   "zeit": "15:00",
+   "konto": "Pusnik G",
+   "kampagne": "COD Warzone Season 1",
+   "clip": "wzs1/D_night",
+   "titel": "Night",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
+  },
+  {
+   "datum": "2026-11-17",
+   "zeit": "19:30",
+   "konto": "Pusnik G",
+   "kampagne": "COD Warzone Season 1",
+   "clip": "wzs1/E_map",
+   "titel": "Hajin Map",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
+  },
+  {
+   "datum": "2026-11-18",
+   "zeit": "09:00",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr4/C_brother",
+   "titel": "TJR über seinen großen Bruder",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  },
+  {
+   "datum": "2026-11-18",
+   "zeit": "09:30",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr5/C_worst",
+   "titel": "Worst day of his life",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  },
+  {
+   "datum": "2026-11-18",
+   "zeit": "19:30",
+   "konto": "Pusnik G",
+   "kampagne": "COD Warzone Season 1",
+   "clip": "wzs1/F_free",
+   "titel": "All Free",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
+  },
+  {
+   "datum": "2026-11-19",
+   "zeit": "09:00",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr4/E_seats",
+   "titel": "TJR Rückbank wie ein Kino",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  },
+  {
+   "datum": "2026-11-19",
+   "zeit": "09:30",
+   "konto": "Pusnik IRL",
+   "kampagne": "TJR",
+   "clip": "tjr5/E_outro",
+   "titel": "TJR after 24h being broke",
+   "plattformen": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ]
+  }
+ ]
+}
