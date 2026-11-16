@@ -1,4 +1,4 @@
-# Kampagnen-Radar – 16.11.2026 12:14 UTC
+# Kampagnen-Radar – 16.11.2026 12:36 UTC
 
 Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl nach festen Regeln – vor dem Beitritt das Briefing lesen. Beitreten kann nur Steven. NEW = seit dem letzten Lauf neu.
 
@@ -6,28 +6,28 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
 
 - **TJR $50,000 Clipping Campaign** (Pusnik IRL): 31.8K $ von 50K $ frei, 100 $ in 24 h ausgezahlt, 297 Clipper
 - **$9,000 Jason Pool Campaign** (Pusnik IRL): 9K $ Pool, 2400 Clipper
-- **Call of Duty - Warzone Season 1 Clipping** (Pusnik G): 1.1K $ von 40K $ frei, 900 $ in 24 h ausgezahlt, 172 Clipper ⚠ Topf reicht bei diesem Tempo keine 3 Tage mehr
+- **Call of Duty - Warzone Season 1 Clipping** (Pusnik G): 1K $ von 40K $ frei, 1K $ in 24 h ausgezahlt, 172 Clipper ⚠ Topf reicht bei diesem Tempo keine 3 Tage mehr
 - **Call of Duty - MW4 DMZ Intel Briefing Clipping** (Pusnik G): 24.3K $ von 30K $ frei, 79 Clipper
 
 ## Pusnik G – beste offene Kampagnen (6 passen)
 
+- **Pet Simulator 99! [ROBLOX]** (BloxClips, verifiziert) – 0.9–1 $/1K, 8.1K $ frei, Auszahlung ab 1K Views, 1400 Clipper, TT/IG/YT, Roblox, seit 4 weeks ago
+  Achtung: Material liegt bei (1 Dateien)
+  Create engaging Roblox short-form videos showcasing Pet Simulator 99’s gameplay, rare pets, exciting moments, and unique features to encourage viewers to play the game.
+  https://contentrewards.com/c/campaigns/6b341aff-816a-419d-9b6f-c4763559be12
 - **$8,500 FaZe Tournament Clipping Campaign** (ClippedIn) – 1 $/1K, 8.4K $ frei, 27 $ in 24 h ausgezahlt, Auszahlung ab 10K Views, 15 Clipper, TT/IG/YT/X, Gaming, seit 4 days ago
   Achtung: Publikum: 60 % USA/Tier 1 verlangt; Logo/Wasserzeichen Pflicht; Material liegt bei (2 Dateien)
   FaZe Flank Invitational (Call of Duty), live on Twitch Nov 10 to 12. Clip the draft, clutch plays and reactions from the official broadcast only. FaZe Flank logo on every clip, required caption tags, 60%+ US audience. $1 CPM, up t
   https://contentrewards.com/c/campaigns/200ea21b-be80-4db8-b552-8e32b148604e
-- NEW **Pet Simulator 99! [ROBLOX]** (BloxClips, verifiziert) – 0.9–1 $/1K, 2.9K $ frei, Auszahlung ab 1K Views, 1400 Clipper, TT/IG/YT, Roblox, seit 4 weeks ago
-  Achtung: Material liegt bei (1 Dateien)
-  Create engaging Roblox short-form videos showcasing Pet Simulator 99’s gameplay, rare pets, exciting moments, and unique features to encourage viewers to play the game.
-  https://contentrewards.com/c/campaigns/6b341aff-816a-419d-9b6f-c4763559be12
 - **Lysium/Benji Ramos Clips** (Lysium) – 1.5 $/1K, 527 $ frei, 1 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 51 Clipper, TT/IG/YT/X, GTA, seit 1 month ago
   Achtung: Bewerbung/Vorab-Freigabe nötig; Material liegt bei (1 Dateien)
   Pushing clips of Lysium as Benji Ramos in NoPixel V or his reactions to RP moments. Find high energy, funny, unexpected, or story-driven moments with enough context to understand the scene. No drama bait. All clips require pre-app
   https://contentrewards.com/c/campaigns/6d896f33-152f-42a9-92f4-662199228349
-- **Roblox Troll Clipping | Dubbing AI** (ClipScales) – 1 $/1K, 539 $ frei, 11 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 64 Clipper, TT/IG/YT, Gaming, seit 1 week ago
+- **Roblox Troll Clipping | Dubbing AI** (ClipScales) – 1 $/1K, 537 $ frei, 13 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 64 Clipper, TT/IG/YT, Gaming, seit 1 week ago
   Achtung: Material liegt bei (2 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   Copy our viral formats and clip for trolling funny voice-changing moments. Blow up. Earn big.
   https://contentrewards.com/c/campaigns/0c18e861-37bc-48a0-a475-19cfac1ce1ba
-- **Roblox Anime Game | World of Stands** (ClipScales) – 0.8 $/1K, 662 $ frei, 17 $ in 24 h ausgezahlt, Auszahlung ab 2.5K Views, 93 Clipper, TT/IG/YT, Gaming, seit yesterday
+- **Roblox Anime Game | World of Stands** (ClipScales) – 0.8 $/1K, 659 $ frei, 20 $ in 24 h ausgezahlt, Auszahlung ab 2.5K Views, 93 Clipper, TT/IG/YT, Gaming, seit yesterday
   Achtung: Material liegt bei (2 Dateien)
   Create original, engaging Roblox short-form videos clipping World of Stands, an already popular anime game on Jojo's Bizarre Adventures. Easy Virality. Earn Big.
   https://contentrewards.com/c/campaigns/7a166eff-fb4f-433a-8b2a-3fd9d2b9652e
@@ -77,6 +77,6 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
 - Daise — Dollfaces + Charm Bracelets Clipping (Clip Influence) – 2 $/1K, 8K $ frei, Entertainment
 - Mr. Pa Clipping (Clip Influence) – 1.75 $/1K, 2.5K $ frei, Entertainment
 - Fundingpips Clipping (FundingPips) – 6 $/1K, 1.9K $ frei, Technology
-- NEW Jo Koy: Comedy Special (Eclipse) – 2 $/1K, 16.4K $ frei, Entertainment
+- Jo Koy: Comedy Special (Eclipse) – 2 $/1K, 16.4K $ frei, Entertainment
 - Sherlock [UGC REPOSTING NEW PAGES] (Acrune) – 1 $/1K, 5.3K $ frei, Entertainment
 - F1 ASTON MARTIN x COINBASE (ClipHaus) – 1.5 $/1K, 5.6K $ frei, Sports
