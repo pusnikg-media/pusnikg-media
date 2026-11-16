@@ -1,8 +1,6 @@
 {
- "at": "2026-11-16T04:58:11+00:00",
- "errors": [
-  "reddit r/GTA6: HTTP 429"
- ],
+ "at": "2026-11-16T05:00:20+00:00",
+ "errors": [],
  "items": [
   {
    "src": "reddit",
@@ -16,7 +14,7 @@
    "host": "v.redd.it",
    "age_h": 8.0,
    "id": "r:1xx6m8z",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -30,7 +28,7 @@
    "host": "v.redd.it",
    "age_h": 15.4,
    "id": "r:1xwvkra",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -42,9 +40,9 @@
    "link": "https://yt3.googleusercontent.com/wo6Mh-bK3eJrGlhxaCnA0W_Ncku0XlDPgdiLi-BzEG3T1OhxgJkUlvVIw9E8aKDwDhh5iXNo2g=s900-c-k-c0x00ffffff-no-rj",
    "is_clip": false,
    "host": "yt3.googleusercontent.com",
-   "age_h": 2.3,
+   "age_h": 2.4,
    "id": "r:1xxe0in",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -58,7 +56,7 @@
    "host": "v.redd.it",
    "age_h": 20.1,
    "id": "r:1xwqqo6",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -72,7 +70,7 @@
    "host": "v.redd.it",
    "age_h": 15.2,
    "id": "r:1xwvuyn",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -84,9 +82,9 @@
    "link": "https://v.redd.it/o23atr4ktt1i1",
    "is_clip": true,
    "host": "v.redd.it",
-   "age_h": 9.6,
+   "age_h": 9.7,
    "id": "r:1xx44dr",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -100,7 +98,7 @@
    "host": "v.redd.it",
    "age_h": 16.6,
    "id": "r:1xwu5mv",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -114,7 +112,7 @@
    "host": "v.redd.it",
    "age_h": 9.8,
    "id": "r:1xx3ulk",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -128,7 +126,7 @@
    "host": "v.redd.it",
    "age_h": 13.3,
    "id": "r:1xwykso",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -142,7 +140,7 @@
    "host": "v.redd.it",
    "age_h": 22.6,
    "id": "r:1xwoaaf",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -156,7 +154,7 @@
    "host": "v.redd.it",
    "age_h": 14.3,
    "id": "r:1xwx2qo",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -170,6 +168,118 @@
    "host": "twitch.tv",
    "age_h": 6.1,
    "id": "r:1xx99xb",
+   "new": false
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 1,
+   "title": "No words needed. Enjoy the fuck out of this game. We made it.",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xwzezu/no_words_needed_enjoy_the_fuck_out_of_this_game/",
+   "link": "",
+   "is_clip": false,
+   "host": "reddit.com",
+   "age_h": 12.7,
+   "id": "r:1xwzezu",
+   "new": true
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 2,
+   "title": "We are officially 72 hours away from GTA VI",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xwt02p/we_are_officially_72_hours_away_from_gta_vi/",
+   "link": "https://i.redd.it/w1cxejacfr1i1.gif",
+   "is_clip": false,
+   "host": "i.redd.it",
+   "age_h": 17.7,
+   "id": "r:1xwt02p",
+   "new": true
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 3,
+   "title": "Rob Nelson has one last chance to play the main storyline (~80 hours) before official launch",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xwt5q7/rob_nelson_has_one_last_chance_to_play_the_main/",
+   "link": "https://i.redd.it/ri8acxn1hr1i1.jpeg",
+   "is_clip": false,
+   "host": "i.redd.it",
+   "age_h": 17.6,
+   "id": "r:1xwt5q7",
+   "new": true
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 4,
+   "title": "GTA 6 Jason and Lucia artwork at Rockstar North",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xwudi9/gta_6_jason_and_lucia_artwork_at_rockstar_north/",
+   "link": "https://i.redd.it/4k4js2h6tr1i1.jpeg",
+   "is_clip": false,
+   "host": "i.redd.it",
+   "age_h": 16.4,
+   "id": "r:1xwudi9",
+   "new": true
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 5,
+   "title": "Inside Rockstar and Take Two headquarters as we speak:",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xx2969/inside_rockstar_and_take_two_headquarters_as_we/",
+   "link": "https://v.redd.it/imwgyegagt1i1",
+   "is_clip": true,
+   "host": "v.redd.it",
+   "age_h": 10.9,
+   "id": "r:1xx2969",
+   "new": true
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 6,
+   "title": "Yeah I'm not playing any other game for a long time.",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xwu53f/yeah_im_not_playing_any_other_game_for_a_long_time/",
+   "link": "https://i.redd.it/u6199oeyqr1i1.jpeg",
+   "is_clip": false,
+   "host": "i.redd.it",
+   "age_h": 16.7,
+   "id": "r:1xwu53f",
+   "new": true
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 7,
+   "title": "we have no idea what we’re in for",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xwyzqs/we_have_no_idea_what_were_in_for/",
+   "link": "https://i.redd.it/5ac7o9xwts1i1.jpeg",
+   "is_clip": false,
+   "host": "i.redd.it",
+   "age_h": 13.0,
+   "id": "r:1xwyzqs",
+   "new": true
+  },
+  {
+   "src": "reddit",
+   "sub": "GTA6",
+   "area": "gaming",
+   "rank": 8,
+   "title": "GTA 6 Jason and Lucia artwork at Rockstar North got Completed",
+   "post": "https://www.reddit.com/r/GTA6/comments/1xx0hjq/gta_6_jason_and_lucia_artwork_at_rockstar_north/",
+   "link": "",
+   "is_clip": false,
+   "host": "reddit.com",
+   "age_h": 12.0,
+   "id": "r:1xx0hjq",
    "new": true
   },
   {
@@ -184,7 +294,7 @@
    "host": "i.redd.it",
    "age_h": 23.7,
    "id": "r:1xwn8fh",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -196,9 +306,9 @@
    "link": "https://i.redd.it/92hnpf89eu1i1.jpeg",
    "is_clip": false,
    "host": "i.redd.it",
-   "age_h": 7.7,
+   "age_h": 7.8,
    "id": "r:1xx6ydl",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -212,7 +322,7 @@
    "host": "v.redd.it",
    "age_h": 9.1,
    "id": "r:1xx4y3r",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -226,7 +336,7 @@
    "host": "i.redd.it",
    "age_h": 5.5,
    "id": "r:1xxa3d3",
-   "new": true
+   "new": false
   },
   {
    "src": "reddit",
@@ -238,16 +348,16 @@
    "link": "https://i.redd.it/6iywss8hcs1i1.jpeg",
    "is_clip": false,
    "host": "i.redd.it",
-   "age_h": 14.6,
+   "age_h": 14.7,
    "id": "r:1xwwo4i",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "lainelly",
    "title": "LMOAOOAA",
-   "views": 10749,
+   "views": 10750,
    "per_h": 465,
    "dur": 31,
    "age_h": 23.1,
@@ -256,14 +366,14 @@
    "video": "https://clips.kick.com/clips/29/clip_01M7EW8W6PQQ526WFEC5Y56J52/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7EW8W6PQQ526WFEC5Y56J52",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "westcol",
    "title": "se salio la teta jajajajajaj",
-   "views": 3777,
+   "views": 3780,
    "per_h": 156,
    "dur": 30,
    "age_h": 24.2,
@@ -272,7 +382,7 @@
    "video": "https://clips.kick.com/clips/65/clip_01M7ERC8WA67K4S1X8VS1WRXKX/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7ERC8WA67K4S1X8VS1WRXKX",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
@@ -280,15 +390,15 @@
    "channel": "greatwhitemike",
    "title": "GWM 2 FOR 1",
    "views": 2702,
-   "per_h": 227,
+   "per_h": 225,
    "dur": 69,
-   "age_h": 11.9,
+   "age_h": 12.0,
    "category": "Just Sleeping",
    "page": "https://kick.com/greatwhitemike/clips/clip_01M7G2DPFSQR0GMTVB4VQ7J2KC",
    "video": "https://clips.kick.com/clips/f2/clip_01M7G2DPFSQR0GMTVB4VQ7J2KC/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7G2DPFSQR0GMTVB4VQ7J2KC",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
@@ -304,7 +414,7 @@
    "video": "https://clips.kick.com/clips/46/clip_01M7G25P1J88YDFDBNH33DAHN4/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7G25P1J88YDFDBNH33DAHN4",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
@@ -312,15 +422,15 @@
    "channel": "greatwhitemike",
    "title": "Mike Absolutely smashed",
    "views": 2347,
-   "per_h": 89,
+   "per_h": 88,
    "dur": 22,
-   "age_h": 26.5,
+   "age_h": 26.6,
    "category": "Just Sleeping",
    "page": "https://kick.com/greatwhitemike/clips/clip_01M7EG87ZPBVN7N5M06W6XJ8Z7",
    "video": "https://clips.kick.com/clips/fa/clip_01M7EG87ZPBVN7N5M06W6XJ8Z7/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7EG87ZPBVN7N5M06W6XJ8Z7",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
@@ -336,15 +446,15 @@
    "video": "https://clips.kick.com/clips/35/clip_01M7FSPDH587NCCD6ECJFE9EYT/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7FSPDH587NCCD6ECJFE9EYT",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "harry",
    "title": "gangsta speedy",
-   "views": 1488,
-   "per_h": 219,
+   "views": 1500,
+   "per_h": 221,
    "dur": 73,
    "age_h": 6.8,
    "category": "Grand Theft Auto V (GTA)",
@@ -352,14 +462,14 @@
    "video": "https://clips.kick.com/clips/ca/clip_01M7GM7JQVZQAJ963RR74RY7WE/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7GM7JQVZQAJ963RR74RY7WE",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "juliaaemerick",
    "title": "w facada prr",
-   "views": 1337,
+   "views": 1338,
    "per_h": 203,
    "dur": 43,
    "age_h": 6.6,
@@ -368,7 +478,7 @@
    "video": "https://clips.kick.com/clips/f6/clip_01M7GMRNHP7R24WTV0QCWVDZP8/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7GMRNHP7R24WTV0QCWVDZP8",
-   "new": true
+   "new": false
   }
  ]
 }
