@@ -54,7 +54,7 @@ def get(url, tries=3):
             err = f"HTTP {code}"
         except Exception as e:  # noqa: BLE001 - every source is optional
             err = f"{type(e).__name__}: {str(e)[:80]}"
-        time.sleep(4 * (i + 1))
+        time.sleep((15 if "429" in str(err) else 4) * (i + 1))
     raise RuntimeError(err or "empty")
 
 
@@ -100,7 +100,7 @@ def reddit(cfg, errors):
             out += got
         except Exception as e:  # noqa: BLE001
             errors.append(f"reddit r/{s['sub']}: {e}")
-        time.sleep(3)
+        time.sleep(12)
     return out
 
 
