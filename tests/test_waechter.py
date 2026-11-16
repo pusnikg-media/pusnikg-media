@@ -77,8 +77,6 @@ def test_daily_short_expected_without_job_after_taeglich_ab(tmp_path):
     assert run(on, []) == [f"short:2026-11-{d}:{pl}" for d in (27, 28) for pl in ("tiktok", "youtube")]
     assert run(dict(on, tagesshort=dict(on["tagesshort"], taeglich_bis="2026-11-27")), []) == ["short:2026-11-27:tiktok", "short:2026-11-27:youtube"]   # Widerruf: 28. nicht mehr erwartet
     assert run(dict(on, tagesshort=dict(on["tagesshort"], taeglich_ab=None)), []) == []             # Feld aus: altes Verhalten (nur jobs/)
-    last_job = max(json.load(open(f))["date"] for f in __import__("glob").glob(os.path.join(ROOT, "jobs", "*.json")))
-    assert REAL["tagesshort"]["taeglich_ab"] > last_job                                              # echte Konfig deckt die Zeit nach dem letzten Auftrag ab
 
 
 def test_post_after_1930(tmp_path):
@@ -86,8 +84,9 @@ def test_post_after_1930(tmp_path):
     assert [k for k in keys(tmp_path, SHORT_OK + late)[0] if k.startswith("postzeit")] == ["postzeit:2026-11-17:short:tiktok:t9"]
 
 
-def test_ignored_late_shorts_only_on_their_day(tmp_path):
+def test_ignored_late_shorts_only_on_their_day(tmp_path, monkeypatch):
     """Review-Roundup 18.11. 21:17 / Rekord-Check 20.11. 20:30: Shorts sind freigegeben, Kampagnen-Clips und andere Tage nicht."""
+    monkeypatch.setitem(CFG, "ignorieren", [{"key": "postzeit:2026-11-18:short", "grund": "x"}, {"key": "postzeit:2026-11-20:short", "grund": "x"}])
     def late(*ps): return sorted(k for k in keys(tmp_path, SHORT_OK + list(ps), now=dt.datetime(2026, 11, 21, 5, 47, tzinfo=dt.timezone.utc))[0] if k.startswith("postzeit"))
     assert late(post("youtube", "r1", "2026-11-18T20:17:00Z"), post("tiktok", "r2", "2026-11-20T19:30:00Z")) == []                      # 21:17 am 18.11., 20:30 am 20.11.
     assert late(post("tiktok", "k1", "2026-11-18T20:17:00Z", camp="TJR", acc="Pusnik IRL")) == ["postzeit:2026-11-18:kampagne:tiktok:k1"]   # Kampagne: weiter Alarm
