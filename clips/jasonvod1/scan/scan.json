@@ -1,0 +1,122 @@
+{
+ "duration": 42.0,
+ "width": 1280,
+ "height": 720,
+ "fps": 60.0,
+ "mode": "full",
+ "regions": [],
+ "cuts": [],
+ "sentences": [
+  {
+   "s": 0.21,
+   "e": 2.13,
+   "text": "Yo, you're nothing without that shade, though."
+  },
+  {
+   "s": 3.71,
+   "e": 4.19,
+   "text": "Yeah,"
+  },
+  {
+   "s": 5.53,
+   "e": 5.95,
+   "text": "I got you, bro."
+  },
+  {
+   "s": 6.17,
+   "e": 6.51,
+   "text": "You got me?"
+  },
+  {
+   "s": 7.11,
+   "e": 8.95,
+   "text": "Yo, what the fuck, bro?"
+  },
+  {
+   "s": 10.47,
+   "e": 11.97,
+   "text": "Oh, my God, bro."
+  },
+  {
+   "s": 13.51,
+   "e": 14.39,
+   "text": "You look so good."
+  },
+  {
+   "s": 15.99,
+   "e": 16.35,
+   "text": "I got you."
+  },
+  {
+   "s": 18.52,
+   "e": 19.2,
+   "text": "I have another one."
+  },
+  {
+   "s": 22.54,
+   "e": 23.18,
+   "text": "You actually going low?"
+  },
+  {
+   "s": 23.54,
+   "e": 24.74,
+   "text": "That shit low as fuck."
+  },
+  {
+   "s": 26.98,
+   "e": 28.68,
+   "text": "Tookie, who else you got?"
+  },
+  {
+   "s": 28.82,
+   "e": 30.12,
+   "text": "Hey, yo!"
+  },
+  {
+   "s": 31.24,
+   "e": 32.7,
+   "text": "Bro, what is this?"
+  },
+  {
+   "s": 33.84,
+   "e": 34.34,
+   "text": "A dab?"
+  },
+  {
+   "s": 35.32,
+   "e": 39.86,
+   "text": "I wanted to get the one where he was wearing a skirt, but oh you should have done that bro."
+  },
+  {
+   "s": 39.88,
+   "e": 40.38,
+   "text": "What the hell?"
+  },
+  {
+   "s": 40.52,
+   "e": 41.86,
+   "text": "Yeah, I've never seen this photo right here"
+  }
+ ],
+ "candidates": [
+  {
+   "a": 0.06,
+   "b": 14.69,
+   "len": 14.6,
+   "score": 0.435,
+   "cuts": 0,
+   "text": "Yo, you're nothing without that shade, though. Yeah, I got you, bro. You got me? Yo, what the fuck, bro? Oh, my God, bro. You look so good.",
+   "sheet": "cand_00.jpg"
+  },
+  {
+   "a": 26.83,
+   "b": 42.0,
+   "len": 15.2,
+   "score": 0.563,
+   "cuts": 0,
+   "text": "Tookie, who else you got? Hey, yo! Bro, what is this? A dab? I wanted to get the one where he was wearing a skirt, but oh you should have done that bro. What the hell? Yeah, I've never seen this photo right here",
+   "sheet": "cand_01.jpg"
+  }
+ ],
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/raw_20261116-123357.mp4"
+}
