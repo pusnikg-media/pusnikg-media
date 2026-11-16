@@ -33,6 +33,7 @@ Alle Zeiten Europe/Berlin. Spätschicht-Woche 16.–22.11.: **Steven ist 12:00�
 | 17:17 + | stats-Lauf (vor dem Short; evtl. 50–90 Min später) | W | `stats/latest.md` jünger als 16 h |
 | 18:00 | **Launch-Short geht live** (der Text sagt „GTA 6 is finally out“ – nur korrekt, wenn der Release-Check von 11:30 bestanden ist) | vidIQ | Post `completed` auf YouTube + TikTok bis 18:45; Wächter-Fenster 17:30–18:45 |
 | 20:17 / 20:47 | stats + Wächter; 20:05 Issue für morgen | W | `alerts.md` ohne „Tages-Short“-Alarm |
+| (jederzeit) | **Livewatch ausschalten:** `enabled: false` pushen reicht NICHT für einen laufenden/wartenden Lauf – zusätzlich Actions -> livewatch -> Lauf abbrechen | C oder S (Safari) | kein Lauf „in progress“, keine neuen Commits `livewatch: …` |
 | 21:30+ | S wieder erreichbar: Live-Clips aus Livewatch NICHT heute posten (nach 19:30 verboten); mit „ja“ für Freitag 09:00/09:30 einplanen lassen | S + C | Slots Fr 20.11. 09:00 und 09:30 je Konto (max. 2 pro Konto/Tag) |
 
 ## Danach Fr 20.11.
