@@ -62,5 +62,21 @@
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-122624.jpg",
   "posted": false,
   "chat": 2.75
+ },
+ {
+  "id": "20261116-122748",
+  "at": "2026-11-16T12:30:06+00:00",
+  "channel": "jasontheween",
+  "hype": 20.6,
+  "seconds": 24.0,
+  "quote": "Live moment",
+  "a": 14,
+  "b": 38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/raw_20261116-122748.mp4",
+  "said": "I'm ready, my two's come merch, alright, bet. Hey guys, unfortunately this is a no streaming zone, if you don't mind as soon as you get into those stores, you're good, we can turn that off.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/live-jasontheween_20261116-122748.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-jasontheween/qa/live-jasontheween_20261116-122748.jpg",
+  "posted": false,
+  "chat": 2.45
  }
 ]
