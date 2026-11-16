@@ -594,16 +594,19 @@ def facecam_rect(src, a, dur, p, spec="auto"):
         Fi = F.astype(np.int16)
         ex = np.percentile(np.abs(np.diff(Fi, axis=2)), 25, axis=0); ey = np.percentile(np.abs(np.diff(Fi, axis=1)), 25, axis=0)
 
-        def edge(prof, lo, hi, limit, outer):
+        def edge(prof, lo, hi, limit, outer, cov=None):
             """Lasting edge in [lo, hi): of the strong ones the one farthest from the face (outer = -1 towards 0, +1 towards the end) -
             the room behind the streamer has lasting edges too, the cam's border lies outside them (camtest run 2).
             The picture's own edge counts when the range runs into it."""
             lo_, hi_ = max(int(lo), 0), min(int(hi), len(prof))
             if hi_ - lo_ >= 3:
-                seg = prof[lo_:hi_]; base = float(np.median(prof)) + 1e-6; top = float(seg.max())
+                seg = prof[lo_:hi_]; base = float(np.median(prof)) + 1e-6
+                if cov is not None: seg = np.where(cov[lo_:hi_] >= 0.7, seg, 0.0)  # the cam border runs along the whole side; a HUD badge / room edge covers only part of it (ninja test 16.11.)
+                top = float(seg.max())
                 if top >= max(6.0, 3.0 * base):
                     idx = np.nonzero(seg >= max(6.0, 3.0 * base, 0.6 * top))[0]
                     return lo_ + int(idx[0] if outer < 0 else idx[-1]) + 1
+            if cov is not None: return None  # strict pass found no full-width edge: the caller falls back to the plain search
             if lo < 2: return 0
             if hi > limit - 2: return limit
             return None
@@ -611,8 +614,11 @@ def facecam_rect(src, a, dur, p, spec="auto"):
         px = ex[r0:r1].mean(axis=0)
         L = edge(px, cx - 3.6 * fw, cx - 0.6 * fw, sw, -1); R = edge(px, cx + 0.6 * fw, cx + 3.6 * fw, sw, 1)
         if L is not None and R is not None and R - L >= 1.6 * fw:
-            py = ey[:, max(L + 2, 0):max(R - 2, L + 3)].mean(axis=1)
-            T = edge(py, cy - 2.6 * fw, cy - 0.6 * fw, sh, -1); B = edge(py, cy + 0.8 * fw, cy + 3.4 * fw, sh, 1)
+            cs = slice(max(L + 2, 0), max(R - 2, L + 3)); py = ey[:, cs].mean(axis=1); pyc = (ey[:, cs] >= 2.0).mean(axis=1)
+            tl, bl = (cy - 2.6 * fw, cy - 0.6 * fw), (cy + 0.8 * fw, cy + 3.4 * fw)
+            T = edge(py, *tl, sh, -1, pyc); B = edge(py, *bl, sh, 1, pyc)
+            if T is None: T = edge(py, *tl, sh, -1)
+            if B is None: B = edge(py, *bl, sh, 1)
             if T is not None and B is not None and B - T >= 1.4 * fw:
                 w = min(R - L, (B - T) * 1.5)
                 if 1.8 * fw <= w <= 4.6 * fw:  # wider = not a cam border but something behind a cut-out streamer (camtest run 3)
@@ -697,6 +703,10 @@ def render_clip(job, c, src, p, words, out, tmp):
     caps = c.get("captions", not (native or split)) and bool(words); capb = None
     if split:  # facecam 1080x720 on top, gameplay 1080x1200 (centre of the picture) below
         fg_y, fg_h = 720, 1200; ch = p["h"] // 2 * 2; cw = min(p["w"], int(ch * W / fg_h / 2) * 2); mv = 150; capb = 786; track = False
+        gx = (p["w"] - cw) // 2 // 2 * 2  # gameplay window: centre of the picture, nudged sideways so no strip of the cam stays in it (tarik test 16.11.)
+        if cam[0] + cam[2] > gx and cam[0] < gx + cw:
+            gx = min(max(gx, cam[0] + cam[2]), p["w"] - cw) if cam[0] + cam[2] / 2 < p["w"] / 2 else max(min(gx, cam[0] - cw), 0)
+            gx = gx // 2 * 2
     elif native:  # whole picture, nothing cropped away (how viral streamer clips are posted)
         fg_h = min(FG_H, int(W * p["h"] / p["w"] / 2) * 2); fg_y = (H - fg_h) // 2
         cw = p["w"] // 2 * 2; ch = min(p["h"], int(cw * fg_h / W / 2) * 2); mv = H - (fg_y + fg_h) + 60
@@ -729,7 +739,7 @@ def render_clip(job, c, src, p, words, out, tmp):
               f"crop={zw}:{zh}:x='(iw-ow)/2':y='(ih-oh)*0.42'") if pts else ""
         if split:
             fl = (f"[0:v]split=2[c0][g0];[c0]crop={cam[2]}:{cam[3]}:{cam[0]}:{cam[1]},scale={W}:720:flags=lanczos,setsar=1[top];"
-                  f"[g0]crop={cw}:{ch},scale={W}:{fg_h}:flags=lanczos{zf},setsar=1[bot];[top][bot]vstack[v1];[v1][1:v]overlay=0:0[v2];[v2]")
+                  f"[g0]crop={cw}:{ch}:{gx}:{(p['h'] - ch) // 2},scale={W}:{fg_h}:flags=lanczos{zf},setsar=1[bot];[top][bot]vstack[v1];[v1][1:v]overlay=0:0[v2];[v2]")
         elif full:
             fl = f"[0:v]crop={cw}:{ch}{xpos},scale={W}:{H}:flags=lanczos{zf},setsar=1[v1];[v1][1:v]overlay=0:0[v2];[v2]"
         else:

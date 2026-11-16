@@ -1,5 +1,5 @@
 {
- "note": "Kampagnen-Radar (pipeline/kampagnen/kampagnen.py, Action kampagnen). joined: Kampagnen, denen Steven beigetreten ist (match = Teil des Titels, account = Konto) - der Radar zeigt deren Rest-Budget und warnt, wenn der Topf leer wird. ignore: Titel-Teile oder IDs, die nie vorgeschlagen werden sollen. Weitere Stellschrauben (min_rate, min_left, max_views_needed, block_words, accounts) stehen mit ihren Standardwerten oben im Skript. Ergebnis: campaigns/latest.md",
+ "note": "Kampagnen-Radar (pipeline/kampagnen/kampagnen.py, Action kampagnen). joined: Kampagnen, denen Steven beigetreten ist (match = Teil des Titels, account = Konto) - der Radar zeigt deren Rest-Budget und warnt, wenn der Topf leer wird. ignore: Titel-Teile oder IDs, die nie vorgeschlagen werden sollen. Weitere Stellschrauben (min_rate, min_left, max_views_needed, block_words, accounts) stehen mit ihren Standardwerten oben im Skript. Ergebnis: campaigns/latest.md. accounts (16.11., GTA-6-Launch): ueberschreibt die Standard-Konten komplett = Kopie der Standardwerte aus kampagnen.py plus GTA-6-Stichwoerter bei Pusnik G; aendern sich die Standardwerte im Skript, hier nachziehen.",
  "joined": [
   {"match": "TJR $50,000", "account": "Pusnik IRL"},
   {"match": "$9,000 Jason Pool", "account": "Pusnik IRL"},
@@ -7,6 +7,10 @@
   {"match": "MW4 DMZ Intel Briefing Clipping", "account": "Pusnik G"}
  ],
  "ignore": ["Preme"],
+ "accounts": {
+  "Pusnik G": {"categories": ["gaming", "gta", "esports", "video game"], "weak_categories": [], "words": ["call of duty", "warzone", "modern warfare", "mw4", "black ops", "gta", "grand theft auto", "fortnite", "roblox", "minecraft", "valorant", "apex legends", "esports", "gameplay", "video game", "faze", "gaming", "speedrun", "gta 6", "gta6", "gta vi", "grand theft auto vi", "grand theft auto 6", "rockstar", "vice city", "leonida", "jason and lucia", "take-two"]},
+  "Pusnik IRL": {"categories": ["streamer", "twitch", "kick", "youtuber", "content creator", "celebrity", "personal brand", "podcast", "comedy", "fan page", "vlog"], "weak_categories": ["entertainment", "lifestyle", "sports"], "words": ["stream", "streamer", "irl", "vlog", "podcast", "twitch", "youtuber", "his content", "her content", "'s content", "reaction", "interview", "host", "creator", "episode"]}
+ },
  "min_rate": 0.5,
  "min_left": 300,
  "max_views_needed": 10000
