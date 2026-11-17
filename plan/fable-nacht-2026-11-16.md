@@ -57,6 +57,8 @@ Nicht geändert (bewusst): `|| exit 0` bei stats (Selbstheilung 4×/Tag), render
 ## Block 5 – Ergebnis
 `plan/prompts/`: `produzent.md`, `clipping-agent.md`, `analyst.md`, `stratege.md`, `deal-radar.md`, `reel-scout.md`, `README.md` (Tabelle, Einspielen, Entscheidungen), `runbook-launch-tag-2026-11-19.md`. Je Datei oben „Befunde zum alten Prompt“. Wichtigste Altlasten: Freigabe-Widerspruch (CLAUDE.md „nie ohne ja“ gegen Dauer-Anweisung), Wächter-Schritt 0 fehlte, Deal-Radar schrieb ins Repo (kein Schreibrecht) und nutzte 7 Suchen/Tag, Stratege nutzte WebFetch statt Radar und Zapier für Zahlen, Experiment-2-Reste im Produzent, „Whop“ in drei Warzone-Erinnerungen, zwei Zusatz-Shorts nach 19:30. Ergänzt von mir: **Release-Check** (Verschiebung des GTA-6-Releases → kein „is out“-Short) im Produzent und im Runbook. Kein Trigger geändert.
 
+> **Korrektur Session 2 (17.11. nachts):** Der Satz unten „Produzent VOR Di 07:47 einspielen“ gilt nicht mehr. Gültig ist `plan/prompts/README.md`: **nach** dem Lauf Di 17.11. 07:47, vor Mi 18.11. 07:47 (Stevens Plan „ab Di 07:47“).
+
 ### Nachtrag 20:45 – vidIQ lesend (0 Credits, Subagent)
 Stand 16.11. abends: Pusnik-G-Tages-Short 17.11. und 18.11. eingeplant (IG/TikTok scheduled, YouTube 18.11. bereits hochgeladen/privat), **19.–21.11. noch nicht** (der Produzent plant immer den ersten freien Tag: am 17.11. den 19.11.). Keine Post nach 19:30, nie mehr als 2 Kampagnen-Posts pro Konto/Tag, keine Entwürfe, keine Doppelten. Folge: **den neuen Produzent-Prompt VOR Di 17.11. 07:47 einspielen** (Release-Check), nicht erst nach dem 20.11. – README/Runbook angepasst; Punkt 1 der Steven-Liste gilt dafür zuerst für den Produzenten.
 

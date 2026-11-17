@@ -137,3 +137,91 @@ def test_opencv5_without_cascade_falls_back_instead_of_crashing(cf, src_clip, mo
     p = cf.probe(src_clip)
     assert cf.facecam_rect(src_clip, 0.5, 3.0, p, "auto") is None
     assert cf.face_track(src_clip, 0.5, 3.0, p, 600) is None
+
+
+# --- Session 2 (16.11. nachts): Review-Reste ---------------------------------------------------------------------------------
+
+def _portrait_src(path):
+    """720x1280 (Handy-Hochformat): blau, oben 10 % rot, unten 10 % grün - beide Streifen müssen im Clip sichtbar bleiben."""
+    import subprocess
+    r = subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=c=blue:s=720x1280:r=25:d=6",
+                        "-f", "lavfi", "-i", "sine=frequency=440:duration=6",
+                        "-vf", "drawbox=x=0:y=0:w=720:h=128:color=red:t=fill,drawbox=x=0:y=1152:w=720:h=128:color=lime:t=fill",
+                        "-c:v", "libx264", "-preset", "ultrafast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", path],
+                       capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+
+
+def _rgb(f, x, y):
+    import subprocess
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", "1", "-i", f, "-vf", f"crop=2:2:{x}:{y},format=rgb24", "-frames:v", "1",
+                        "-f", "rawvideo", "-"], capture_output=True)
+    return tuple(r.stdout[:3])
+
+
+@pytest.mark.parametrize("layout,fg_y", [("native", 360), ("framed", 400)])
+def test_portrait_source_is_not_cropped(cf, tmp_path, layout, fg_y):
+    """Hochformat-Quelle: früher wurde nur das Mittelband gezeigt (oben/unten weg). Jetzt ganzes Bild, schmal und mittig."""
+    src = str(tmp_path / "p.mp4"); _portrait_src(src)
+    r, f = render(cf, src, tmp_path, layout=layout)
+    assert r["ok"] and (ffprobe(f)["w"], ffprobe(f)["h"]) == (1080, 1920)
+    top, bot = _rgb(f, 540, fg_y + 30), _rgb(f, 540, fg_y + 1200 - 30)
+    assert top[0] > 180 and top[2] < 90, f"roter Streifen oben fehlt: {top}"
+    assert bot[1] > 180 and bot[2] < 90, f"grüner Streifen unten fehlt: {bot}"
+
+
+def test_frame_rate_survives_0_over_0(cf):
+    """ffprobe meldet bei manchen Streams r_frame_rate '0/0' -> früher ZeroDivisionError statt eines Werts."""
+    assert cf.frame_rate({"r_frame_rate": "0/0", "avg_frame_rate": "30000/1001"}) == pytest.approx(29.97, abs=0.01)
+    assert cf.frame_rate({"r_frame_rate": "0/0", "avg_frame_rate": "0/0"}) == 30.0
+    assert cf.frame_rate({"r_frame_rate": "25/1"}) == 25.0
+    assert cf.frame_rate({}) == 30.0
+
+
+def test_emoji_sequences_are_one_token(cf):
+    t = cf.tokens("a 👍🏽 🇩🇪 👨‍👩‍👧 😭‍")
+    assert t == ["a", " ", "👍🏽", " ", "🇩🇪", " ", "👨‍👩‍👧", " ", "😭"]
+    assert cf.caption_hints("Kai Cenat tells the worker to CALM DOWN with the false claims today... 👍🏽 🇺🇸") == []
+
+
+def test_caption_box_draws_skin_tone_and_flag_as_one_emoji(cf):
+    """Strukturell (schriftunabhängig): Hautton-/Flaggen-/Familien-Emoji braucht im Kasten genau so viel Platz wie ein einfaches."""
+    from PIL import Image
+    def width(text):
+        img = Image.new("RGBA", (1080, 1920), (0, 0, 0, 0)); cf.caption_box(img, text, 600)
+        bb = img.getbbox(); return bb[2] - bb[0]
+    base = width("Rug is SCARED... 😭 😭 😭")
+    assert width("Rug is SCARED... 👍🏽 🇩🇪 👨‍👩‍👧") == base
+
+
+def test_probe_with_0_over_0_uses_avg_frame_rate(cf, monkeypatch):
+    """probe() selbst: '0/0' -> zweite Abfrage avg_frame_rate statt Absturz mit falscher Meldung."""
+    import types
+    calls = []
+    def fake_run(args, **k):
+        calls.append(args)
+        if "v:0" in args and "json" in args:
+            out = '{"streams":[{"width":1280,"height":720,"r_frame_rate":"0/0"}],"format":{"duration":"6.0"}}'
+        elif "stream=avg_frame_rate" in args: out = "25/1\n"
+        else: out = "aac\n"
+        return types.SimpleNamespace(stdout=out, returncode=0)
+    monkeypatch.setattr(cf, "run", fake_run)
+    p = cf.probe("x.mp4")
+    assert p["fps"] == 25.0 and p["w"] == 1280 and p["audio"] and len(calls) == 3
+
+
+@pytest.mark.parametrize("layout", ["native", "framed"])
+@pytest.mark.parametrize("size", ["1280x720", "720x1280", "1080x1350", "1000x1010"])
+def test_crop_and_scale_keep_the_aspect_ratio(cf, tmp_path, monkeypatch, layout, size):
+    """Kein Verzerren: Seitenverhältnis von crop (Quelle) und scale (Ziel) im Vordergrund gleich (±1 %), für Quer-, Hoch-, 4:5- und fast quadratische Quellen."""
+    import re, subprocess
+    src = str(tmp_path / "s.mp4")
+    r = subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", f"testsrc2=size={size}:rate=25:duration=6", "-f", "lavfi", "-i",
+                        "sine=frequency=440:duration=6", "-c:v", "libx264", "-preset", "ultrafast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", src],
+                       capture_output=True, text=True); assert r.returncode == 0, r.stderr
+    calls = []; orig = cf.run
+    monkeypatch.setattr(cf, "run", lambda cmd, *a, **k: (calls.append(" ".join(map(str, cmd))), orig(cmd, *a, **k))[1])
+    render(cf, src, tmp_path, layout=layout, **({"caption": CAPTION} if layout == "native" else {}))
+    fc = next(c for c in calls if "[f0]crop=" in c)
+    cw, ch, sw, sh = map(int, re.search(r"\[f0\]crop=(\d+):(\d+)[^,]*,scale=(\d+):(\d+)", fc).groups())
+    assert abs((cw / ch) / (sw / sh) - 1) < 0.01, (size, layout, cw, ch, sw, sh)
