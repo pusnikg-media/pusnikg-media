@@ -1,11 +1,8 @@
-# Alarme – Stand 17.11.2026 07:45 (Europe/Berlin)
+# Alarme – Stand 17.11.2026 13:06 (Europe/Berlin)
 
-stand_utc: 2026-11-17T06:45:00Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-17T12:06:43Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
-
-## Daten veraltet oder nicht lesbar
-- trends/latest.json: reddit r/GTA: HTTP 429
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
 - Warzone S1 (Pusnik G, tiktok, 16.11. 19:30): „Close quarters in the Warzone Season 1 traile“ – https://www.tiktok.com/@pusnikg/video/7708838386353622305
