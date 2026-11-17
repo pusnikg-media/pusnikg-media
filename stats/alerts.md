@@ -1,8 +1,11 @@
-# Alarme – Stand 17.11.2026 21:19 (Europe/Berlin)
+# Alarme – Stand 17.11.2026 21:34 (Europe/Berlin)
 
-stand_utc: 2026-11-17T20:19:37Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-17T20:34:56Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
+
+## Daten veraltet oder nicht lesbar
+- trends/latest.json: reddit r/LivestreamFail: HTTP 429; reddit r/GTA6: HTTP 404; reddit r/GTA: HTTP 429
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
 - TJR (Pusnik IRL, youtube, 17.11. 09:30): „TJR Discovers Cars Without Automatic Seats #s“ – https://www.youtube.com/shorts/GdajiWDyyRE
