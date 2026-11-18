@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "ɪɾɪk.\n1: 5.67s  ðæt tˈaɪz ðɪ ˈɔːltˈaɪm ɹˈɛkɚd, ænd ˈæftɚ θˈɜːtiːn jˈɪɹz, ɹˈɑːkstɑːɹ ˈæktʃuːəli dᵻlˈɪvɚd.\n2: 3.50s  ɑːɹ juː stˈɑːɹɾɪŋ tənˈaɪt, ɔːɹ wˈeɪɾɪŋ ʌntˈɪl ðə wˈiːkɛnd?\n3: 1.93s  fˈɑːloʊ fɔːɹ lˈɑːntʃ dˈeɪ.\nTTS_OK 4 lines 16.40s\n\u001b[0;93m2026-11-18 15:05:10.924288233 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at \"/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171\" because filename \"5620e0c7-8062-4dce-aeb7-520c7ef76171\" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+\u001b[m",
+  "LIGHT_OK 4 lines, 12 shots, 17.66 s\nGTA@0.23 6@0.58 reviews@1.26 are@1.60 in,@1.93 and@2.48 it@2.55 scored@2.63 a@2.82 ninety-nine@3.02 on@3.67 Metacritic.@3.87\nThat@0.23 ties@0.53 the@0.81 all-time@1.11 record,@1.61 and@2.33 after@2.38 thirteen@2.62 years,@2.92 Rockstar@3.60 actually@3.98 delivered.@4.40\nAre@0.22 you@0.51 starting@0.61 tonight,@0.83 or@1.52 waiting@1.65 until@1.89 the@2.34 weekend?@2.50\nFollow@0.25 for@0.67 launch@0.86 day.@1.03\nWORDS_OK 4 lines\n\nTOTAL 17.66 shots 12 captions 11\nRENDER_OK /home/runner/work_pusnikg-2026-11-18-reviews-tt/pusnikg-2026-11-18-reviews-tt.mp4 17.66s",
+  "QA_OK 17.66s -14.5 LUFS frames: /home/runner/work_pusnikg-2026-11-18-reviews-tt/pusnikg-2026-11-18-reviews-tt_qa_0.png /home/runner/work_pusnikg-2026-11-18-reviews-tt/pusnikg-2026-11-18-reviews-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-18-reviews-tt/pusnikg-2026-11-18-reviews-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 17.66,
+ "music": "https://cdn.orshot.com/library/music/52485fa4-693b-42a6-9187-86684408982e.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-18-reviews-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-18-reviews-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-18-reviews-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-18-reviews-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-18-reviews-tt",
+ "attempts": 1
+}
