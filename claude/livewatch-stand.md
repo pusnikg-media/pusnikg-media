@@ -1,3 +1,5 @@
+> **Update 18.11.2026 abends:** Livewatch gehört jetzt der Clix-Kampagne (`plan/livewatch.json`: nur `twitch.tv/clix`, `from` 19.11. 05:45, `until` 12:45; Jason entfernt). Anleitung für die Launch-Wache und Generalprobe-Ergebnis: `claude/launch-wache.md`. Neu in v0.6: `from`, Aufnahme endet bei `until`, Kanal-Feld `caption`/`crop`, Marker `clips/live-<name>/posted/<id>.json`, Testmodus mit `min_chat`/`co_chat`/`warmup`. Clipfabrik v6: `crop`.
+
 # Livewatch – Stand 16.11.2026 abends (v0.4, JasonTheWeen / Kampagne Reach „$9,000 Jason Pool")
 Regeln der Kampagne: `claude/jason-kampagne.md`. `plan/livewatch.json`: `enabled false`, Kanal `jasontheween`, `profile: irl`.
 
