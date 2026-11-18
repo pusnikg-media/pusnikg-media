@@ -18,7 +18,7 @@ Advisor (Opus): höchstens 3 Aufrufe – vor dem ersten Post, wenn ein Fehler 2�
 ## 1. Kampagnenregeln (hart; sonst keine Auszahlung)
 1. **Clix ist die Hauptperson** und nie negativ (kein Auslachen, Scheitern/Peinlichkeit als Pointe, Streit/Beleidigung gegen ihn, kein Hate-Farming). **Nur Clix, kein Lacy:** Clips, in denen Lacy oder ein Gast Hauptperson/Co-Star ist (sichtbar im Bild oder lauter Dialog mit ihm), nicht nehmen; nur Clix allein oder klar Clix im Fokus.
 2. Name **„Clix“** im Overlay (Kontextsatz, beginnt mit „Clix“) **und** in der Post-Caption; **#Clix** in der Caption. TikTok: **genau 5 Hashtags**.
-3. **Keine Logos oder Wasserzeichen jeder Art**: Twitch-Logo/-Overlay, Chat, Alerts/Sub-/Donation-Einblendungen, Zähler, Sponsoren-/Marken-/Spiele-/Streamer-Logos (auch auf Kleidung, Bannern, Bildschirmen), Rockstar-/GTA-Logo, Titel-/Lade-/Menübildschirme mit Logo, Pusnik-G-Logo. Der Render fügt nichts hinzu (nie `logo`/`pill` setzen). Zweifel = **nicht posten**.
+3. **Keine Logos oder Wasserzeichen jeder Art**: Twitch-Logo/-Overlay, Chat, Alerts/Sub-/Donation-Einblendungen, Zähler, Sponsoren-/Marken-/Spiele-/Streamer-Logos (auch auf Kleidung, Bannern, Bildschirmen), Rockstar-/GTA-Logo, Titel-/Lade-/Menübildschirme mit Logo, Pusnik-G-Logo. Der Render fügt nichts hinzu (nie `logo`/`pill` setzen). Zweifel = **nicht posten**. **Generalprobe 18.11. (Clix live, IRL-Meet-and-Greet):** Der Stream hat einen **eingebrannten Sub-Zähler + Timer + rot-schwarzes Emblem am rechten Rand** (ab ca. 88 % der Bildbreite, vertikal ca. 30–57 %) und JBL-Quantum-Sponsorenwände. Der Zähler/das Emblem lässt sich mit `crop` abschneiden (Abschnitt 6, Weg B); Sponsoren-/Logo-Hintergründe mitten im Bild **nicht** → Clip verwerfen.
 4. **Keine KI-Videos, keine Reposts** (nur eigener Schnitt aus dem Livestream), nur TikTok, Instagram Reels, YouTube Shorts.
 5. **TikTok-Offenlegung:** `brandContent: true`.
 6. Original-Ton, ganzes Originalbild (`layout: native`), 10–35 s, kein Zoom, keine Wort-Untertitel; der Clip beginnt direkt auf dem Moment.
@@ -55,7 +55,7 @@ Zwischen den Meldungen **nichts** tun – kein Tool-Polling alle 3 Minuten. Alle
 1. **Neu** = Eintrag in `clips/live-clix/inbox.json` mit `posted: false`, ohne `clips/live-clix/posted/<id>.json` (Liste: `https://api.github.com/repos/pusnikg-media/pusnikg-media/contents/clips/live-clix/posted`, 404 = leer), `at` **höchstens 40 Min alt** (älter: Marker `skipped`, Grund `stale`). Älteste zuerst, **ein Clip nach dem anderen**.
 2. `qa`-Bild laden und mit Read ansehen; `said` lesen (`quote` ist nur Platzhalter). **Ein Nein = `skipped` (Grund notieren):**
    - Ist **Clix** klar im Bild/die sprechende Person (Regel 1.1, kein Lacy)? Passiert etwas Sehenswertes (Reaktion, Gameplay-Moment, Lacher, Überraschung, starkes Zitat)? Ruhiges Reden, Menü/Ladebildschirm, Pause/Werbung, Stille, Musik, Warten = nein.
-   - Kein Logo/Overlay/Wasserzeichen (Regel 1.3), auch an Rändern und Ecken des Originalbilds. **Ist ein Overlay fest in den Stream eingebrannt, ist der Clip nicht postbar** (kein Verpixeln, kein Rechnen). Zweifel = nein.
+   - Kein Logo/Overlay/Wasserzeichen (Regel 1.3), auch an Rändern und Ecken des Originalbilds. **Randständiges Overlay (Zähler, Timer, Emblem direkt am Bildrand) → Weg B mit `crop`** (Abschnitt 6) und das fertige QA-Bild nochmal prüfen. **Overlay/Logo mitten im Bild oder Sponsorenwand/Banner hinter Clix → nicht postbar** (kein Verpixeln). Zweifel = nein. Weg A (Livewatch-Clip) nur, wenn das Bild gar kein Overlay hat.
    - Regeln 1.1, 1.7, 1.8 erfüllt; `seconds` 10–35, Ton vorhanden (`said` nicht leer).
 3. Ist ffmpeg vorhanden: 3 Frames des Clips ansehen (`curl -o c.mp4 <url>`, `ffmpeg -ss 3 -i c.mp4 -frames:v 1 f1.jpg`, bei 12 s und 22 s). Sonst genügt das QA-Bild.
 
@@ -67,8 +67,9 @@ Fehlt dir sicherer Inhalt: nimm eine der Standardzeilen aus `plan/livewatch.json
 **Weg B (Standard): Re-Render über die Clipfabrik mit eigenem Satz**
 1. Auftrag `clipjobs/clix-<MMTT>-<HHMMSS>.json` (aus `id` `20261119-055812` → `clix-1119-055812`; Name = Dateiname; nur `a-z0-9-`):
    `{"name": "clix-1119-055812", "source": "<entry.raw>", "layout": "native", "min_len": 10, "clips": [{"id": "A", "a": <entry.a>, "b": <entry.b>, "caption": "<Kontextsatz>"}]}`
+   Feld **`crop`** (Job- oder Clip-Ebene, nur Weg B): `[x, y, w, h]` als Anteile 0–1 des Quellbilds, die **bleiben**; schneidet einen Overlay am Rand ab, bevor das Layout gebaut wird (auch im unscharfen Hintergrund). Beispiel Generalprobe (Zähler/Emblem rechts ab 88 %): `"crop": [0, 0, 0.87, 1]`; Overlay oben: `[0, 0.15, 1, 0.85]`. Anteile aus dem QA-Bild ablesen (das Originalbild liegt dort als Band über die ganze Breite; Breite 0 → 1) und 2 % Sicherheitsrand lassen. `w`/`h` mindestens 0,4. Nur `layout: native`.
    Keine weiteren Felder (kein `logo`, `pill`, `track`, `zoom`, `hook`, `captions`). `entry.raw` leer → Weg A.
-2. Commit „clipjob: clix-…“ pushen (Abschnitt 7) → startet die Action `clipfabrik` automatisch.
+2. Commit „clipjob: clix-…“ pushen (Abschnitt 7) → startet die Action `clipfabrik` automatisch (gemessen in der Generalprobe: **ca. 8 Min** vom Push bis `result.json`).
 3. Warten (Hintergrund-`until curl … result.json`, alle 45 s, höchstens 15 Min), bis `clips/<name>/result.json` `"ok": true` und `"phase": "rendered"` zeigt. Dann `clips[0].qa` ansehen (Satz ganz lesbar, richtig geschrieben, ganzes Bild, kein Logo). `clips[0].url` = Video.
 **Weg A (Fallback): der Livewatch-Clip** (`entry.url`, trägt einen der festen Sätze mit „Clix“). Nehmen, wenn Weg B nach 15 Min nicht fertig/rot ist oder der Moment sonst älter als 30 Min würde. Höchstens 2× hintereinander A (sonst gleich klingende Clips).
 
@@ -99,5 +100,10 @@ Fehlt dir sicherer Inhalt: nimm eine der Standardzeilen aus `plan/livewatch.json
 1. Offene `new` Einträge: Marker `skipped`, Grund `zu spaet`. **Livewatch nicht ausschalten** (läuft per `until` 12:45 von selbst aus).
 2. **Bilanz** als Push + `claude/launch-wache-bilanz.md` (Posts mit Uhrzeit und Links, verworfene Clips mit Grund, Probleme, was Steven nachholen muss – z. B. Clips nach 11:30 konnte er wegen Spätschicht nicht binnen 30 Min einreichen). Danach: „Für die nächste Aufgabe neue Session starten.“
 
-## 10. Generalprobe (18./19.11. nachts, Branch gta6-live)
-(Ergebnis steht unten, wird vor dem Merge ergänzt.)
+## 10. Generalprobe (18.11. 22:40–23:40 Berlin, Branch gta6-live → main)
+- **Login:** `twitch.tv/clix` existiert, Clix war live (IRL Meet-and-Greet, JBL-Quantum-Event). Chat-Lesen, Lautstärke und **Werbepausen-Erkennung funktionierten live** (zwei echte Ad-Breaks erkannt: 151 s + später).
+- **Messung (zwei Läufe, gaming, ca. 45 Min):** Lauf 1 mit den Launch-Werten (Profil gaming 3,0/2,0): nach der Aufwärmzeit höchstes Chat-Verhältnis 2,5 → **0 Treffer** (mit 4,5/2,5 ebenfalls 0). Lauf 2 mit 2,0/1,5: 3 Treffer (x2,1–2,8), alle Smalltalk – **brauchbar 0 von 3**. Werte bleiben darum bei `min_chat` 4,5 / `co_chat` 2,5 (Stand Launch-Vorbereiter; ohne Messung unter Launch-Bedingungen nicht ändern). Am Launch-Tag ist der Chat vermutlich lauter; zeigt `inbox.json` bis ca. 90 Min nach Streamstart nichts, ist das ein Hinweis für Steven, kein Bug.
+- **Render Weg A** (Livewatch-Direktclip): 1080×1920, h264/aac, 23,95 s Bild = 23,95 s Ton, Quelle 1280×720/60 fps, Ton unverändert.
+- **Render Weg B** (Clipfabrik, eigener Satz „Clix meets fans …“ + `crop [0,0,0.87,1]`): Satz ganz lesbar, „Clix“ zuerst, Zähler/Emblem weg, **Ton-Versatz gegen die Quelle 0,03 s (Korrelation 0,98)**. Dauer Push → fertig: **492 s**.
+- **Befund Overlay/Logo:** Der Testclip hätte das Gate **nicht bestanden** (JBL-Quantum-Logos auf der Wand hinter Clix). Zähler/Emblem am Rand waren per `crop` entfernbar (Abschnitt 6), Sponsorenwände nicht. Ob der Marathon-Stream am Donnerstag dasselbe Overlay trägt, ist offen: ist es überall fest eingebrannt und nicht croppbar, entstehen **0 postbare Clips** – das ist dann das Ergebnis der Bildkontrolle, nicht ein Fehler.
+- Die Testdateien (`clips/live-clix/`, `clips/clix-test/`, `clipjobs/clix-test.json`) wurden danach von main gelöscht.
