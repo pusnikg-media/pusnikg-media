@@ -24,32 +24,43 @@ Advisor (Opus): höchstens 3 Aufrufe – vor dem ersten Post, wenn ein Fehler 2�
 6. Original-Ton, ganzes Originalbild (`layout: native`), 10–35 s, kein Zoom, keine Wort-Untertitel; der Clip beginnt direkt auf dem Moment.
 7. Nie: Selbstverletzung/Suizid-Sprüche, Slurs (auch zensiert), Glücksspiel/Casino-Branding, Politik, 18+, Auflösung im Kontextsatz verraten, erfundene Fakten.
 8. **Nur Momente ab 06:00 MEZ**, in denen Clix GTA 6 spielt oder stark darauf reagiert (lustige Momente, einprägsame Zitate, Reaktionen). Pre-Show-Gerede vor dem GTA-Start nicht posten (Zeit im Clip = `at` minus ca. 3–4 Min; im Zweifel `said` lesen: Countdown/Intro = überspringen).
-9. **Tempo:** höchstens **1 Post pro 30 Min**, nur echte Highlights, **höchstens 8 Clips** insgesamt (meine Obergrenze; Steven nennt keine Zahl – bewusste Ausnahme von „2 pro Konto/Tag“), **letzter Publish 12:30**. Nie nach 19:30 (gilt auch, falls die Wache später doch weiterläuft).
+9. **Tempo:** höchstens **1 Post pro 30 Min**, nur echte Highlights, **höchstens 8 Clips** insgesamt (Obergrenze der Vorbereitungs-Session, nicht von Steven; Steven nennt keine Zahl – bewusste Ausnahme von „2 pro Konto/Tag“), **letzter Publish 12:30**. Nie nach 19:30 (gilt auch, falls die Wache später doch weiterläuft).
 
 ## 2. Start 05:50 – Vorprüfung (kein Warten auf Steven)
 1. Repo-Zugriff (Abschnitt 0). `curl -s "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/plan/livewatch.json?t=$(date +%s)"`: erwartet `enabled: true`, `from: 2026-11-19T04:45:00Z` (= 05:45), `until: 2026-11-19T11:45:00Z` (= 12:45), **einziger Kanal `clix`** (`https://www.twitch.tv/clix`, profile gaming, `min_chat 4.5`, `co_chat 2.5`, `max_pending 8`). `enabled` ist false → auf true setzen (nur dieses Feld), pushen (Abschnitt 7).
 2. Läuft ein Lauf `livewatch` (`actions_list list_workflow_runs livewatch.yml`, Status `in_progress`/`queued`)? **Nein → selbst starten:** `actions_run_trigger run_workflow livewatch.yml ref main`, Eingaben leer. (Crons kommen 50–90 Min zu spät. Ein wartender Lauf nimmt ab 05:45 sofort auf. Ein Lauf, der nach < 1 Min fertig ist, hat noch „aus“ gesehen → einmal wiederholen.) **Erste Clips frühestens ca. 8 Min nach Aufnahmebeginn** (Aufwärmzeit).
-3. `vidiq_social_account_list` (canPublishOnly true, 0 Credits). Pusnik G (`platformAccountId`): **Instagram `28698521726515865`**, **TikTok `_0006ihYRp26lN7Ju1qg8gYLKNjbzUKkXa_m`**, **YouTube `UCdDdmDm4ojr_G_oY_JiJ6BA`**. Nicht postbar: die anderen trotzdem bedienen, in der Bilanz nennen. **Nie** mit den IRL-Konten posten.
+3. `vidiq_social_account_list` (canPublishOnly true, 0 Credits). **In der Vorbereitung am 18.11. geprüft: alle drei Pusnik-G-Konten `canPublish: true`, IDs unten stimmen.** Pusnik G (`platformAccountId`): **Instagram `28698521726515865`**, **TikTok `_0006ihYRp26lN7Ju1qg8gYLKNjbzUKkXa_m`**, **YouTube `UCdDdmDm4ojr_G_oY_JiJ6BA`**. Nicht postbar: die anderen trotzdem bedienen, in der Bilanz nennen. **Nie** mit den IRL-Konten posten.
 4. `vidiq_social_post_list` (heute): nichts Bestehendes verändern. Am 19.11. 18:00 liegt das Launch-Short; die Wache ist dann längst fertig (12:30).
 5. Keine Startmeldung an Steven. Nur melden, wenn etwas nicht geht.
 
 ## 3. Warten ohne Dauer-Polling (Kontingent sparen)
-Ein einziger Hintergrund-Befehl (Bash `run_in_background`), der **nur endet, wenn ein neuer Clip da ist** (oder nach 100 Min, dann neu starten); jeder Treffer = eine Meldung an dich:
+Ein Hintergrund-Befehl (Bash `run_in_background`, Skript unten als `/tmp/wait.sh` speichern, `bash /tmp/wait.sh`). Er endet **nur**, wenn ein neuer Clip da ist (`NEW <id> <id>`, Exit 0), nach ca. 100 Min (`TIMEOUT`, Exit 1 → neu starten) oder wenn der Abruf kaputt ist (`ERROR …`, Exit 2 → **nicht weiterschlafen**: Ursache prüfen, Steven nennen). 404 auf der Inbox = noch nichts (normal). Abrufe laufen mit curl, Python parst nur. **Jede erledigte Clip-ID** (auch `skipped`) hängst du an `/tmp/wache_done.txt` an (`echo <id> >> /tmp/wache_done.txt`), damit ein Marker, den raw noch nicht liefert, den Befehl nicht erneut auf denselben Clip weckt. Getestet in der Vorbereitung: 404 → schläft; gepinnter Commit mit Inbox → `NEW`; kaputter Host → `ERROR`; erledigte ID wird übersprungen.
 ```
-until python3 -I - <<'PY'
-import json, urllib.request, time, sys
-base = "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/"
-def get(p):
-    try: return urllib.request.urlopen(urllib.request.Request(base + p + "?t=%d" % time.time()), timeout=20).read()
-    except Exception: return None
-box = json.loads(get("inbox.json") or b"[]")
-new = [e["id"] for e in box if not e.get("posted") and get("posted/" + e["id"] + ".json") is None]
-sys.exit(0 if new else 1)
-PY
-do sleep 60; done; echo NEW
+# Wartet, bis ein neuer Clix-Clip in der Inbox steht. Exit 0 + "NEW <id> ..." = neu; Exit 2 + "ERROR ..." = Abruf kaputt (laut beenden, nicht weiterschlafen).
+B=${B:-https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix}   # B nur zum Testen ändern
+DONE=${DONE:-/tmp/wache_done.txt}; touch "$DONE"; ERR=0
+for i in $(seq 1 ${LOOPS:-100}); do
+  code=$(curl -s -o /tmp/wache_inbox.json -w '%{http_code}' "$B/inbox.json?t=$(date +%s)")
+  if [ "$code" = 200 ]; then
+    ERR=0
+    ids=$(python3 -I -c "
+import json
+done = set(open('$DONE').read().split())
+print(' '.join(e['id'] for e in json.load(open('/tmp/wache_inbox.json')) if not e.get('posted') and e['id'] not in done))")
+    new=""
+    for id in $ids; do
+      m=$(curl -s -o /dev/null -w '%{http_code}' "$B/posted/$id.json?t=$(date +%s)")
+      if [ "$m" = 404 ]; then new="$new $id"; elif [ "$m" = 200 ]; then echo "$id" >> "$DONE"; else ERR=$((ERR+1)); fi
+    done
+    if [ -n "$new" ]; then echo "NEW$new"; exit 0; fi
+  elif [ "$code" != 404 ]; then ERR=$((ERR+1)); fi
+  if [ "$ERR" -ge 5 ]; then echo "ERROR Abruf liefert HTTP $code (5x hintereinander)"; exit 2; fi
+  sleep ${SLEEP:-60}
+done
+echo TIMEOUT; exit 1
 ```
 Zwischen den Meldungen **nichts** tun – kein Tool-Polling alle 3 Minuten. Alle ca. 30 Min kurz prüfen, dass noch ein Lauf `livewatch` läuft und `plan/livewatch.json` `enabled: true` hat (sonst Abschnitt 2.2).
-`LIVEWATCH_FULL` im Log = Inbox-Bremse (8 offene Clips): erledigte Clips protokollieren (Abschnitt 7), dann läuft die Aufnahme von selbst weiter.
+`LIVEWATCH_FULL` im Log = Inbox-Bremse (8 offene Clips): erledigte Clips protokollieren (Abschnitt 7), dann läuft die Aufnahme von selbst weiter. (Logs laufender Jobs sind per API nicht lesbar – den Zustand an `inbox.json`, `actions_list` und Commits „livewatch: …“ ablesen.)
 
 ## 4. Prüfung je Clip (Bildkontrolle ist Pflicht – Livewatch war bisher nur Kandidatenfinder)
 1. **Neu** = Eintrag in `clips/live-clix/inbox.json` mit `posted: false`, ohne `clips/live-clix/posted/<id>.json` (Liste: `https://api.github.com/repos/pusnikg-media/pusnikg-media/contents/clips/live-clix/posted`, 404 = leer), `at` **höchstens 40 Min alt** (älter: Marker `skipped`, Grund `stale`). Älteste zuerst, **ein Clip nach dem anderen**.
@@ -80,7 +91,7 @@ Fehlt dir sicherer Inhalt: nimm eine der Standardzeilen aus `plan/livewatch.json
    - INSTAGRAM: `text` = Caption.
    - YOUTUBE: `title` = Kontextsatz **ohne Emojis und ohne „...“**, beginnt mit „Clix“, endet mit „ #shorts“, **höchstens 60 Zeichen**; `privacyStatus: public`; `text` = Kontextsatz + neue Zeile `#Clix #GTA6 #Shorts`. (Der Stream steht nicht auf YouTube, deshalb ist YouTube erlaubt.)
    - Caption (TikTok/Instagram): Kontextsatz + Leerzeile + kurze Frage an die Zuschauer (Englisch, z. B. „Would you have survived this?“) + Leerzeile + **genau 5 Hashtags: `#Clix #GTA6 #GTAVI #Gaming #Clips`**. Kein @-Handle, kein #fyp/#viral/#Ad.
-3. `ready` prüfen (sonst `vidiq_social_post_draft_update` mit der postId, nie ein zweiter Entwurf). **Letzte Kontrolle vor dem Publish:** Uhrzeit < 12:30, ≥ 30 Min seit dem letzten Publish, ≤ 8 Clips heute, Regeln 1.1–1.9 erfüllt. **Marker `claimed` zuerst:** `posted/<id>.json` mit `{"status":"claimed", "postId": …}` anlegen, committen und pushen (Abschnitt 7), **erst dann** `vidiq_social_post_publish` (`postId` + `revision`). Hintergrund: stirbt die Sitzung nach dem Publish, darf ein Neustart den Clip nicht noch einmal posten. Veröffentlichtes lässt sich nicht zurücknehmen; nie zweimal denselben Clip; bei Marker `claimed` ohne `links` zuerst `vidiq_social_post_status`/`vidiq_social_post_list` prüfen, nicht neu posten.
+3. **Letzte Kontrolle VOR `draft_create`** (nie einen fertigen `ready`-Entwurf liegen lassen – der Produzent veröffentlicht um 07:47 übrig gebliebene ready-Entwürfe): Uhrzeit < 12:30, ≥ 30 Min seit dem letzten Publish, ≤ 8 Clips heute, Regeln 1.1–1.9 erfüllt. Dann `ready` prüfen (sonst `vidiq_social_post_draft_update` mit der postId, nie ein zweiter Entwurf). **Lehnt vidIQ/TikTok `brandContent` ab: TikTok für diesen Clip auslassen** (nie ohne Offenlegung posten), Instagram/YouTube trotzdem, in der Bilanz nennen. **Marker `claimed` zuerst:** `posted/<id>.json` mit `{"status":"claimed", "postId": …}` anlegen, committen und pushen (Abschnitt 7), **erst dann** `vidiq_social_post_publish` (`postId` + `revision`). Hintergrund: stirbt die Sitzung nach dem Publish, darf ein Neustart den Clip nicht noch einmal posten. Veröffentlichtes lässt sich nicht zurücknehmen; nie zweimal denselben Clip; bei Marker `claimed` ohne `links` zuerst `vidiq_social_post_status`/`vidiq_social_post_list` prüfen, nicht neu posten.
 4. Nach ca. 15 s `vidiq_social_post_status`. Eine Plattform `failed`: einmal mit `publicationIds` erneut, sonst im Marker vermerken. TikTok liefert oft keinen Link (dann „aus der App kopieren“); YouTube „processing“ ist normal.
 
 ## 7. Protokoll, Postplan, Push (nach jedem Clip, auch bei `skipped`)
@@ -93,7 +104,7 @@ Fehlt dir sicherer Inhalt: nimm eine der Standardzeilen aus `plan/livewatch.json
 
 ## 8. Fehler und Grenzen
 - Fehler 2× gleich → Ursache im Log lesen, einmal anders versuchen (Advisor). **Nach 3 Fehlversuchen** am selben Clip: Steven per Push melden, Marker `failed`, weiter mit dem nächsten. Nicht festhängen.
-- Nichts im Inbox: normal (Clix noch nicht live, Aufwärmzeit, ruhiger Stream, Werbepause). `min_chat`/`co_chat`, Kanal, Profil **nicht ändern**. Steht 90 Min nach Streamstart noch **kein** Eintrag in der Inbox: in der Bilanz erwähnen, nichts bauen.
+- Nichts im Inbox: normal (Clix noch nicht live, Aufwärmzeit, ruhiger Stream, Werbepause). `min_chat`/`co_chat`, Kanal, Profil **nicht ändern**. Steht um **07:30** noch **kein** Eintrag in der Inbox (und Clix ist laut `actions_list`/Commits „livewatch: …“ live): in der Bilanz erwähnen, nichts bauen.
 - Steht in `trends/latest.md` oder bei Rockstar eine Verschiebung („delay“, „postponed“): keine Captions mit „GTA 6 is out“; reine Clix-Momente bleiben ok.
 
 ## 9. Ende (12:30 oder Steven schreibt „Stopp“)
@@ -102,7 +113,7 @@ Fehlt dir sicherer Inhalt: nimm eine der Standardzeilen aus `plan/livewatch.json
 
 ## 10. Generalprobe (18.11. 22:40–23:40 Berlin, Branch gta6-live → main)
 - **Login:** `twitch.tv/clix` existiert, Clix war live (IRL Meet-and-Greet, JBL-Quantum-Event). Chat-Lesen, Lautstärke und **Werbepausen-Erkennung funktionierten live** (zwei echte Ad-Breaks erkannt: 151 s + später).
-- **Messung (zwei Läufe, gaming, ca. 45 Min):** Lauf 1 mit den Launch-Werten (Profil gaming 3,0/2,0): nach der Aufwärmzeit höchstes Chat-Verhältnis 2,5 → **0 Treffer** (mit 4,5/2,5 ebenfalls 0). Lauf 2 mit 2,0/1,5: 3 Treffer (x2,1–2,8), alle Smalltalk – **brauchbar 0 von 3**. Werte bleiben darum bei `min_chat` 4,5 / `co_chat` 2,5 (Stand Launch-Vorbereiter; ohne Messung unter Launch-Bedingungen nicht ändern). Am Launch-Tag ist der Chat vermutlich lauter; zeigt `inbox.json` bis ca. 90 Min nach Streamstart nichts, ist das ein Hinweis für Steven, kein Bug.
+- **Messung (zwei Läufe, gaming, ca. 45 Min):** Lauf 1 (Profil gaming 3,0/2,0, also nicht die Launch-Werte): nach der Aufwärmzeit höchstes Chat-Verhältnis 2,5 → **0 Treffer** (mit den Launch-Werten 4,5/2,5 erst recht 0). Lauf 2 mit 2,0/1,5: 3 Treffer (x2,1–2,8), alle Smalltalk – **brauchbar 0 von 3**. Werte bleiben darum bei `min_chat` 4,5 / `co_chat` 2,5 (Stand Launch-Vorbereiter; ohne Messung unter Launch-Bedingungen nicht ändern). Am Launch-Tag ist der Chat vermutlich lauter; zeigt `inbox.json` um 07:30 noch nichts, ist das ein Hinweis für Steven, kein Bug.
 - **Render Weg A** (Livewatch-Direktclip): 1080×1920, h264/aac, 23,95 s Bild = 23,95 s Ton, Quelle 1280×720/60 fps, Ton unverändert.
 - **Render Weg B** (Clipfabrik, eigener Satz „Clix meets fans …“ + `crop [0,0,0.87,1]`): Satz ganz lesbar, „Clix“ zuerst, Zähler/Emblem weg, **Ton-Versatz gegen die Quelle 0,03 s (Korrelation 0,98)**. Dauer Push → fertig: **492 s**.
 - **Befund Overlay/Logo:** Der Testclip hätte das Gate **nicht bestanden** (JBL-Quantum-Logos auf der Wand hinter Clix). Zähler/Emblem am Rand waren per `crop` entfernbar (Abschnitt 6), Sponsorenwände nicht. Ob der Marathon-Stream am Donnerstag dasselbe Overlay trägt, ist offen: ist es überall fest eingebrannt und nicht croppbar, entstehen **0 postbare Clips** – das ist dann das Ergebnis der Bildkontrolle, nicht ein Fehler.
