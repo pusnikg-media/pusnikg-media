@@ -1,36 +1,20 @@
 {
- "at": "2026-11-18T11:35:53+00:00",
+ "at": "2026-11-18T16:43:30+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
-  "reddit r/GTA6: HTTP 429",
+  "reddit r/GTA6: HTTP 404",
   "reddit r/GTA: HTTP 429"
  ],
  "items": [
   {
    "src": "kick",
    "area": "irl",
-   "channel": "xqc",
-   "title": ",tymdgndnntynty",
-   "views": 14599,
-   "per_h": 416,
-   "dur": 68,
-   "age_h": 35.1,
-   "category": "Just Chatting",
-   "page": "https://kick.com/xqc/clips/clip_01M7KECPEW9P1Y63PHKN8KZ0W8",
-   "video": "https://clips.kick.com/clips/70/clip_01M7KECPEW9P1Y63PHKN8KZ0W8/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7KECPEW9P1Y63PHKN8KZ0W8",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "asmongold",
    "title": "fnfgfcmfggfg",
-   "views": 8652,
-   "per_h": 692,
+   "views": 11336,
+   "per_h": 644,
    "dur": 180,
-   "age_h": 12.5,
+   "age_h": 17.6,
    "category": "World of Warcraft",
    "page": "https://kick.com/asmongold/clips/clip_01M7NW3REXAK5ERRDZXJQTWTG4",
    "video": "https://clips.kick.com/clips/d9/clip_01M7NW3REXAK5ERRDZXJQTWTG4/playlist.m3u8",
@@ -43,10 +27,10 @@
    "area": "irl",
    "channel": "oldschool8k",
    "title": "¡Cierren el estadio! Repetición",
-   "views": 6630,
-   "per_h": 323,
+   "views": 6680,
+   "per_h": 261,
    "dur": 29,
-   "age_h": 20.5,
+   "age_h": 25.6,
    "category": "VALORANT",
    "page": "https://kick.com/oldschool8k/clips/clip_01M7N0NQQGKD78D92NJDDMD570",
    "video": "https://clips.kick.com/clips/fd/clip_01M7N0NQQGKD78D92NJDDMD570/playlist.m3u8",
@@ -59,10 +43,10 @@
    "area": "irl",
    "channel": "capped",
    "title": "Capped's reaction to NoPixel's TGA Nomination",
-   "views": 6245,
-   "per_h": 361,
+   "views": 6530,
+   "per_h": 292,
    "dur": 179,
-   "age_h": 17.3,
+   "age_h": 22.4,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/capped/clips/clip_01M7NBMVHAZJCMRBBZVZZSWW19",
    "video": "https://clips.kick.com/clips/02/clip_01M7NBMVHAZJCMRBBZVZZSWW19/playlist.m3u8",
@@ -73,12 +57,44 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "xmerghani",
+   "title": "mergano na dziwkach",
+   "views": 6348,
+   "per_h": 1716,
+   "dur": 125,
+   "age_h": 3.7,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/xmerghani/clips/clip_01M7QC25KBMT8PQF6SEPRFP3GK",
+   "video": "https://clips.kick.com/clips/56/clip_01M7QC25KBMT8PQF6SEPRFP3GK/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7QC25KBMT8PQF6SEPRFP3GK",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "rraenee",
+   "title": "LAN HERKES ÇIPLAK",
+   "views": 4755,
+   "per_h": 1251,
+   "dur": 14,
+   "age_h": 3.8,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/rraenee/clips/clip_01M7QBJDMN1VY7V8T20BK39CAC",
+   "video": "https://clips.kick.com/clips/7e/clip_01M7QBJDMN1VY7V8T20BK39CAC/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7QBJDMN1VY7V8T20BK39CAC",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "madhousetv",
    "title": "Neymar fala sobre FalleN | dust2.com.br",
-   "views": 4150,
-   "per_h": 218,
+   "views": 4573,
+   "per_h": 190,
    "dur": 40,
-   "age_h": 19.0,
+   "age_h": 24.1,
    "category": "Kings League",
    "page": "https://kick.com/madhousetv/clips/clip_01M7N5Q7H2RRD2A0JYBKF319J2",
    "video": "https://clips.kick.com/clips/81/clip_01M7N5Q7H2RRD2A0JYBKF319J2/playlist.m3u8",
@@ -89,93 +105,46 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "r0pd0nz",
-   "title": "4K xD",
-   "views": 3581,
-   "per_h": 111,
-   "dur": 32,
-   "age_h": 32.4,
-   "category": "Counter-Strike 2",
-   "page": "https://kick.com/r0pd0nz/clips/clip_01M7KQM5KN6DJJ2S7B0TAA5MMM",
-   "video": "https://clips.kick.com/clips/7f/clip_01M7KQM5KN6DJJ2S7B0TAA5MMM/playlist.m3u8",
+   "channel": "davyjones",
+   "title": "DAVA JONES THE PLUMBER",
+   "views": 4341,
+   "per_h": 1315,
+   "dur": 55,
+   "age_h": 3.3,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/davyjones/clips/clip_01M7QDAFVYHDBCX9RW4Z7ZSY62",
+   "video": "https://clips.kick.com/clips/07/clip_01M7QDAFVYHDBCX9RW4Z7ZSY62/playlist.m3u8",
    "mature": false,
-   "id": "k:clip_01M7KQM5KN6DJJ2S7B0TAA5MMM",
+   "id": "k:clip_01M7QDAFVYHDBCX9RW4Z7ZSY62",
    "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "xqc",
-   "title": "etsutrdts",
-   "views": 3471,
-   "per_h": 99,
-   "dur": 56,
-   "age_h": 35.0,
-   "category": "Just Chatting",
-   "page": "https://kick.com/xqc/clips/clip_01M7KESG9PK6RNGP21YWGGBX9X",
-   "video": "https://clips.kick.com/clips/79/clip_01M7KESG9PK6RNGP21YWGGBX9X/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7KESG9PK6RNGP21YWGGBX9X",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "naldiofficial",
-   "title": "reaction toh ha",
-   "views": 2269,
-   "per_h": 74,
-   "dur": 180,
-   "age_h": 30.5,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/naldiofficial/clips/clip_01M7KY94XHHY20THKV3B6KNMMN",
-   "video": "https://clips.kick.com/clips/d6/clip_01M7KY94XHHY20THKV3B6KNMMN/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7KY94XHHY20THKV3B6KNMMN",
-   "new": false
+   "channel": "n3on",
+   "title": "What is bro doing",
+   "views": 4274,
+   "per_h": 1583,
+   "dur": 78,
+   "age_h": 2.7,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/n3on/clips/clip_01M7QFDDYEWM7WHDG2PEYQXZNT",
+   "video": "https://clips.kick.com/clips/ad/clip_01M7QFDDYEWM7WHDG2PEYQXZNT/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7QFDDYEWM7WHDG2PEYQXZNT",
+   "new": true
   },
   {
    "src": "news",
    "area": "gaming",
    "site": "Polygon",
-   "title": "Gta 6 Won’t Launch Without This PS5 Anti-Piracy Update Sony Just Released",
-   "page": "https://www.polygon.com/gta-6-grand-theft-auto-playstation-mandatory-ps5-update/",
-   "age_h": 0.8,
-   "id": "n:gta-6-won-t-launch-without-this-ps5-anti-piracy-update-sony-",
+   "title": "GTA 6 Really Is Better On PS5 Than Xbox",
+   "page": "https://www.polygon.com/gta-6-ps5-vs-xbox/",
+   "age_h": 1.7,
+   "id": "n:gta-6-really-is-better-on-ps5-than-xbox",
    "sites": [
     "Polygon",
-    "VGC",
     "IGN",
-    "Kotaku",
-    "Eurogamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "How to Play GTA 6 Early on XBOX With New Zealand Trick—All Time Zones, Explained",
-   "page": "https://insider-gaming.com/how-to-play-gta-6-early-xbox-new-zealand-trick/",
-   "age_h": 0.6,
-   "id": "n:how-to-play-gta-6-early-on-xbox-with-new-zealand-trick-all-t",
-   "sites": [
-    "Insider Gaming",
-    "VGC",
-    "IGN",
-    "GameSpot"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "How to collect your GTA 6 Ultimate Edition bonuses",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ultimate-edition-bonuses/",
-   "age_h": 0.6,
-   "id": "n:how-to-collect-your-gta-6-ultimate-edition-bonuses",
-   "sites": [
     "PC Gamer",
     "RockstarINTEL"
    ],
@@ -184,68 +153,43 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "IGN",
-   "title": "GTA 6 Vice City NBA Court Revealed by Miami Heat",
-   "page": "https://www.ign.com/articles/gta-6-vice-city-nba-court-revealed-by-miami-heat",
-   "age_h": 11.7,
-   "id": "n:gta-6-vice-city-nba-court-revealed-by-miami-heat",
+   "site": "VGC",
+   "title": "Rockstar says PS5 Pro can’t handle GTA 6 at 60 FPS",
+   "page": "https://www.videogameschronicle.com/news/rockstar-says-ps5-pro-cant-handle-gta-6-at-60-fps/",
+   "age_h": 0.8,
+   "id": "n:rockstar-says-ps5-pro-can-t-handle-gta-6-at-60-fps",
    "sites": [
+    "VGC",
+    "PC Gamer",
+    "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "GTA 6 Sets New Record As Highest-Rated Video Game of All Time",
+   "page": "https://www.polygon.com/gta-6-highest-rated-game-all-time-metacritic-review-score/",
+   "age_h": 1.7,
+   "id": "n:gta-6-sets-new-record-as-highest-rated-video-game-of-all-tim",
+   "sites": [
+    "Polygon",
     "IGN",
-    "PC Gamer"
+    "RockstarINTEL"
    ],
-   "new": false
+   "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "IGN",
-   "title": "GTA 6 Fans Baffled After Jason's Actor Gets Left Out of Game Awards Nominations",
-   "page": "https://www.ign.com/articles/gta-6-fans-baffled-after-jasons-actor-gets-left-out-of-game-awards-nominations",
-   "age_h": 11.8,
-   "id": "n:gta-6-fans-baffled-after-jason-s-actor-gets-left-out-of-game",
+   "site": "Insider Gaming",
+   "title": "GTA 6 100% Completion Walkthrough—A Long Road Trophy & Achievement Guide",
+   "page": "https://insider-gaming.com/gta-6-100-completion-a-long-road-trophy/",
+   "age_h": 0.9,
+   "id": "n:gta-6-100-completion-walkthrough-a-long-road-trophy-achievem",
    "sites": [
-    "IGN",
-    "PC Gamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "How Grand Theft Auto 6 Can Be Nominated At The Game Awards Despite Not Being Out Yet",
-   "page": "https://kotaku.com/game-awards-2026-nominations-gta-grand-theft-auto-6-lucia-2000757763",
-   "age_h": 16.1,
-   "id": "n:how-grand-theft-auto-6-can-be-nominated-at-the-game-awards-d",
-   "sites": [
-    "Kotaku",
-    "VGC"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "GameSpot",
-   "title": "GTA 6 Has A Lot Of Different Bird Species, Here’s How Many",
-   "page": "https://www.gamespot.com/articles/gta-6-has-a-lot-of-different-bird-species-heres-how-many/",
-   "age_h": 20.0,
-   "id": "n:gta-6-has-a-lot-of-different-bird-species-here-s-how-many",
-   "sites": [
-    "GameSpot",
-    "PC Gamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "GTA 6 achievement list: Every unlawful challenge standing between you and 100% completion",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-achievements-list/",
-   "age_h": 0.1,
-   "id": "n:gta-6-achievement-list-every-unlawful-challenge-standing-bet",
-   "sites": [
+    "Insider Gaming",
     "PC Gamer"
    ],
    "new": true
@@ -253,12 +197,55 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Kotaku",
-   "title": "We Tested How Long It Takes To Run Out Of Gas In GTA 6",
-   "page": "https://kotaku.com/we-tested-how-long-it-takes-to-run-out-of-gas-in-gta-6-2000755601",
-   "age_h": 0.1,
-   "id": "n:we-tested-how-long-it-takes-to-run-out-of-gas-in-gta-6",
+   "site": "Eurogamer",
+   "title": "GTA 6 breaks the all-time livestream viewer record hours before it's available to play for most of the world",
+   "page": "https://www.eurogamer.net/grand-theft-auto-6-streaming-record-broken",
+   "age_h": 1.0,
+   "id": "n:gta-6-breaks-the-all-time-livestream-viewer-record-hours-bef",
    "sites": [
+    "Eurogamer",
+    "RockstarINTEL"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 Xbox Series S performance analysis admires the effort but says ‘significant frame drops’ are a problem",
+   "page": "https://www.videogameschronicle.com/news/gta-6-xbox-series-s-performance-analysis-admires-the-effort-but-says-significant-frame-drops-are-a-problem/",
+   "age_h": 2.2,
+   "id": "n:gta-6-xbox-series-s-performance-analysis-admires-the-effort-",
+   "sites": [
+    "VGC",
+    "IGN"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Eurogamer",
+   "title": "You cannot replay missions in GTA 6, but you can use multiple save files, as Rockstar explains how it made missions \"harder to fail\"",
+   "page": "https://www.eurogamer.net/gta-6-multiple-save-files-replay-missions",
+   "age_h": 2.3,
+   "id": "n:you-cannot-replay-missions-in-gta-6-but-you-can-use-multiple",
+   "sites": [
+    "Eurogamer",
+    "IGN"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "GameSpot",
+   "title": "The GTA 6 Map Is Truly, Truly Massive (Of Course)",
+   "page": "https://www.gamespot.com/articles/the-gta-6-map-is-truly-truly-massive-of-course/",
+   "age_h": 2.6,
+   "id": "n:the-gta-6-map-is-truly-truly-massive-of-course-",
+   "sites": [
+    "GameSpot",
     "Kotaku"
    ],
    "new": true
@@ -267,12 +254,25 @@
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "Complete GTA 6 Trophy List—How To Get All Trophies & Achievements",
-   "page": "https://insider-gaming.com/complete-gta-6-trophy-list-how-to-get-all-trophies-achievements/",
-   "age_h": 0.1,
-   "id": "n:complete-gta-6-trophy-list-how-to-get-all-trophies-achieveme",
+   "title": "All GTA 6 Controller Settings on PlayStation & XBOX—Full Control Scheme",
+   "page": "https://insider-gaming.com/gta-6-control-settings/",
+   "age_h": 0.3,
+   "id": "n:all-gta-6-controller-settings-on-playstation-xbox-full-contr",
    "sites": [
     "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Eurogamer",
+   "title": "GTA 6 is so big, it managed to break Reddit - and it isn't even actually out yet",
+   "page": "https://www.eurogamer.net/grand-theft-auto-6-breaks-reddit-not-out-yet",
+   "age_h": 0.6,
+   "id": "n:gta-6-is-so-big-it-managed-to-break-reddit-and-it-isn-t-even",
+   "sites": [
+    "Eurogamer"
    ],
    "new": true
   }
