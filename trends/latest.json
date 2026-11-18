@@ -1,9 +1,9 @@
 {
- "at": "2026-11-17T20:31:16+00:00",
+ "at": "2026-11-18T05:41:56+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 429",
+  "reddit r/LivestreamFail: HTTP 404",
   "reddit r/GTA6: HTTP 404",
-  "reddit r/GTA: HTTP 429"
+  "reddit r/GTA: HTTP 404"
  ],
  "items": [
   {
@@ -11,10 +11,10 @@
    "area": "irl",
    "channel": "xqc",
    "title": ",tymdgndnntynty",
-   "views": 10543,
-   "per_h": 525,
+   "views": 13292,
+   "per_h": 455,
    "dur": 68,
-   "age_h": 20.1,
+   "age_h": 29.2,
    "category": "Just Chatting",
    "page": "https://kick.com/xqc/clips/clip_01M7KECPEW9P1Y63PHKN8KZ0W8",
    "video": "https://clips.kick.com/clips/70/clip_01M7KECPEW9P1Y63PHKN8KZ0W8/playlist.m3u8",
@@ -27,106 +27,74 @@
    "area": "irl",
    "channel": "oldschool8k",
    "title": "¡Cierren el estadio! Repetición",
-   "views": 4720,
-   "per_h": 874,
+   "views": 6598,
+   "per_h": 452,
    "dur": 29,
-   "age_h": 5.4,
+   "age_h": 14.6,
    "category": "VALORANT",
    "page": "https://kick.com/oldschool8k/clips/clip_01M7N0NQQGKD78D92NJDDMD570",
    "video": "https://clips.kick.com/clips/fd/clip_01M7N0NQQGKD78D92NJDDMD570/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7N0NQQGKD78D92NJDDMD570",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "capped",
+   "title": "Capped's reaction to NoPixel's TGA Nomination",
+   "views": 5691,
+   "per_h": 499,
+   "dur": 179,
+   "age_h": 11.4,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/capped/clips/clip_01M7NBMVHAZJCMRBBZVZZSWW19",
+   "video": "https://clips.kick.com/clips/02/clip_01M7NBMVHAZJCMRBBZVZZSWW19/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7NBMVHAZJCMRBBZVZZSWW19",
    "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "jollyirl",
-   "title": "Real Talk with @jomommaIRL @M1keDanger and Jolly",
-   "views": 4582,
-   "per_h": 132,
-   "dur": 152,
-   "age_h": 34.7,
-   "category": "IRL",
-   "page": "https://kick.com/jollyirl/clips/clip_01M7HW7AMDFQ1JXZMQTDT3EVVT",
-   "video": "https://clips.kick.com/clips/13/clip_01M7HW7AMDFQ1JXZMQTDT3EVVT/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7HW7AMDFQ1JXZMQTDT3EVVT",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "4head",
-   "title": "PD gang counter the ATM",
-   "views": 4290,
-   "per_h": 166,
-   "dur": 86,
-   "age_h": 25.9,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/4head/clips/clip_01M7JT2PCAM31P5PSZ0KH6RWN3",
-   "video": "https://clips.kick.com/clips/6c/clip_01M7JT2PCAM31P5PSZ0KH6RWN3/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7JT2PCAM31P5PSZ0KH6RWN3",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "berkcan",
-   "title": "SUEDA <3",
-   "views": 4015,
-   "per_h": 145,
-   "dur": 30,
-   "age_h": 27.7,
-   "category": "Just Chatting",
-   "page": "https://kick.com/berkcan/clips/clip_01M7JM75DQQDFM6KK571WAQ8J5",
-   "video": "https://clips.kick.com/clips/29/clip_01M7JM75DQQDFM6KK571WAQ8J5/playlist.m3u8",
+   "channel": "asmongold",
+   "title": "fnfgfcmfggfg",
+   "views": 4161,
+   "per_h": 630,
+   "dur": 180,
+   "age_h": 6.6,
+   "category": "World of Warcraft",
+   "page": "https://kick.com/asmongold/clips/clip_01M7NW3REXAK5ERRDZXJQTWTG4",
+   "video": "https://clips.kick.com/clips/d9/clip_01M7NW3REXAK5ERRDZXJQTWTG4/playlist.m3u8",
    "mature": false,
-   "id": "k:clip_01M7JM75DQQDFM6KK571WAQ8J5",
-   "new": false
+   "id": "k:clip_01M7NW3REXAK5ERRDZXJQTWTG4",
+   "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "travpiper",
-   "title": "good job unc",
-   "views": 3029,
-   "per_h": 110,
-   "dur": 22,
-   "age_h": 27.6,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/travpiper/clips/clip_01M7JMHM0VAE2ZQ13F75WN5TQV",
-   "video": "https://clips.kick.com/clips/54/clip_01M7JMHM0VAE2ZQ13F75WN5TQV/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7JMHM0VAE2ZQ13F75WN5TQV",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "4head",
-   "title": "Horror movie Cinema",
-   "views": 2812,
-   "per_h": 126,
-   "dur": 25,
-   "age_h": 22.3,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/4head/clips/clip_01M7K6KEDZR9HX5J9WAYC34MW7",
-   "video": "https://clips.kick.com/clips/47/clip_01M7K6KEDZR9HX5J9WAYC34MW7/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7K6KEDZR9HX5J9WAYC34MW7",
-   "new": false
+   "channel": "madhousetv",
+   "title": "Neymar fala sobre FalleN | dust2.com.br",
+   "views": 3810,
+   "per_h": 291,
+   "dur": 40,
+   "age_h": 13.1,
+   "category": "Kings League",
+   "page": "https://kick.com/madhousetv/clips/clip_01M7N5Q7H2RRD2A0JYBKF319J2",
+   "video": "https://clips.kick.com/clips/81/clip_01M7N5Q7H2RRD2A0JYBKF319J2/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7N5Q7H2RRD2A0JYBKF319J2",
+   "new": true
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "xqc",
    "title": "etsutrdts",
-   "views": 2773,
-   "per_h": 139,
+   "views": 3316,
+   "per_h": 114,
    "dur": 56,
-   "age_h": 19.9,
+   "age_h": 29.1,
    "category": "Just Chatting",
    "page": "https://kick.com/xqc/clips/clip_01M7KESG9PK6RNGP21YWGGBX9X",
    "video": "https://clips.kick.com/clips/79/clip_01M7KESG9PK6RNGP21YWGGBX9X/playlist.m3u8",
@@ -135,17 +103,78 @@
    "new": false
   },
   {
+   "src": "kick",
+   "area": "irl",
+   "channel": "naldiofficial",
+   "title": "reaction toh ha",
+   "views": 2089,
+   "per_h": 85,
+   "dur": 180,
+   "age_h": 24.6,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/naldiofficial/clips/clip_01M7KY94XHHY20THKV3B6KNMMN",
+   "video": "https://clips.kick.com/clips/d6/clip_01M7KY94XHHY20THKV3B6KNMMN/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7KY94XHHY20THKV3B6KNMMN",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "suryanshexd",
+   "title": "rp se irl matter",
+   "views": 1437,
+   "per_h": 86,
+   "dur": 106,
+   "age_h": 16.7,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/suryanshexd/clips/clip_01M7MSJMP9FSWGQVF4YB0ZTSBK",
+   "video": "https://clips.kick.com/clips/8a/clip_01M7MSJMP9FSWGQVF4YB0ZTSBK/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7MSJMP9FSWGQVF4YB0ZTSBK",
+   "new": true
+  },
+  {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "The Game Awards 2026 nominees announced, and GTA 6 leads with eight nods before it's even out",
-   "page": "https://www.eurogamer.net/game-awards-2026-nominees-full-list-gta-6",
-   "age_h": 1.5,
-   "id": "n:the-game-awards-2026-nominees-announced-and-gta-6-leads-with",
+   "site": "IGN",
+   "title": "GTA 6 Fans Baffled After Jason's Actor Gets Left Out of Game Awards Nominations",
+   "page": "https://www.ign.com/articles/gta-6-fans-baffled-after-jasons-actor-gets-left-out-of-game-awards-nominations",
+   "age_h": 5.9,
+   "id": "n:gta-6-fans-baffled-after-jason-s-actor-gets-left-out-of-game",
    "sites": [
-    "Eurogamer",
     "IGN",
-    "Insider Gaming"
+    "PC Gamer",
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Kotaku",
+   "title": "How Grand Theft Auto 6 Can Be Nominated At The Game Awards Despite Not Being Out Yet",
+   "page": "https://kotaku.com/game-awards-2026-nominations-gta-grand-theft-auto-6-lucia-2000757763",
+   "age_h": 10.2,
+   "id": "n:how-grand-theft-auto-6-can-be-nominated-at-the-game-awards-d",
+   "sites": [
+    "Kotaku",
+    "VGC",
+    "RockstarINTEL"
+   ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "IGN",
+   "title": "GTA 6 Vice City NBA Court Revealed by Miami Heat",
+   "page": "https://www.ign.com/articles/gta-6-vice-city-nba-court-revealed-by-miami-heat",
+   "age_h": 5.8,
+   "id": "n:gta-6-vice-city-nba-court-revealed-by-miami-heat",
+   "sites": [
+    "IGN",
+    "PC Gamer"
    ],
    "new": true
   },
@@ -155,11 +184,10 @@
    "site": "VGC",
    "title": "GTA 6 New Zealand trick: How to play GTA 6 early",
    "page": "https://www.videogameschronicle.com/guide/gta-6-new-zealand-trick-how-to-play-gta-6-early/",
-   "age_h": 4.8,
+   "age_h": 14.0,
    "id": "n:gta-6-new-zealand-trick-how-to-play-gta-6-early",
    "sites": [
     "VGC",
-    "Kotaku",
     "GameSpot"
    ],
    "new": false
@@ -167,81 +195,10 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Grand Theft Auto 6 hacker pleads guilty to all charges",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-hacker-pleads-guilty-to-all-charges/",
-   "age_h": 24.8,
-   "id": "n:grand-theft-auto-6-hacker-pleads-guilty-to-all-charges",
-   "sites": [
-    "PC Gamer",
-    "Eurogamer",
-    "RockstarINTEL"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "How Grand Theft Auto 6 Can Be Nominated At The Game Awards Despite Not Being Out Yet",
-   "page": "https://kotaku.com/game-awards-2026-nominations-gta-grand-theft-auto-6-lucia-2000757763",
-   "age_h": 1.0,
-   "id": "n:how-grand-theft-auto-6-can-be-nominated-at-the-game-awards-d",
-   "sites": [
-    "Kotaku",
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "We got 8 Game Awards nominations for GTA 6 before GTA 6",
-   "page": "https://www.pcgamer.com/gaming-industry/events-conferences/we-got-8-game-awards-nominations-for-gta-6-before-gta-6/",
-   "age_h": 1.9,
-   "id": "n:we-got-8-game-awards-nominations-for-gta-6-before-gta-6",
-   "sites": [
-    "PC Gamer",
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "GTA 6's Rumored Lucia Actor Confirmed for Cast by Game Awards Nomination",
-   "page": "https://www.polygon.com/gta-6-lucia-actor-confirmed-game-awards-2026/",
-   "age_h": 2.6,
-   "id": "n:gta-6-s-rumored-lucia-actor-confirmed-for-cast-by-game-award",
-   "sites": [
-    "Polygon",
-    "Eurogamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "GTA VI Nominated For Game of the Year, Has Most Nominations",
-   "page": "https://rockstarintel.com/gta-vi-nominated-for-game-of-the-year-leads-nominations/",
-   "age_h": 3.3,
-   "id": "n:gta-vi-nominated-for-game-of-the-year-has-most-nominations",
-   "sites": [
-    "RockstarINTEL",
-    "Insider Gaming"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
    "site": "GameSpot",
    "title": "GTA 6 Has A Lot Of Different Bird Species, Here’s How Many",
    "page": "https://www.gamespot.com/articles/gta-6-has-a-lot-of-different-bird-species-heres-how-many/",
-   "age_h": 5.0,
+   "age_h": 14.1,
    "id": "n:gta-6-has-a-lot-of-different-bird-species-here-s-how-many",
    "sites": [
     "GameSpot",
@@ -252,30 +209,67 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "87% Of GTA VI Pre-Orders Are The $100 Ultimate Edition",
-   "page": "https://rockstarintel.com/87-of-gta-vi-pre-orders-are-the-100-ultimate-edition/",
-   "age_h": 6.9,
-   "id": "n:87-of-gta-vi-pre-orders-are-the-100-ultimate-edition",
+   "site": "Kotaku",
+   "title": "Miami Heat Players Flaunt Neat-Looking GTA 6-Themed PS5 Pros",
+   "page": "https://kotaku.com/miami-heat-players-flaunt-neat-looking-gta-6-themed-ps5-pros-2000757883",
+   "age_h": 1.8,
+   "id": "n:miami-heat-players-flaunt-neat-looking-gta-6-themed-ps5-pros",
    "sites": [
-    "RockstarINTEL",
-    "VGC"
+    "Kotaku"
    ],
-   "new": false
+   "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "GameSpot",
-   "title": "GTA 6 Has Teamed Up With The Weather Channel To Show How Dynamic Leonida Can Be",
-   "page": "https://www.gamespot.com/articles/gta-6-has-teamed-up-with-the-weather-channel-to-show-how-dynamic-leonida-can-be/",
-   "age_h": 10.3,
-   "id": "n:gta-6-has-teamed-up-with-the-weather-channel-to-show-how-dyn",
+   "site": "Kotaku",
+   "title": "PS5 Gets Last-Minute Software Update That’s Required To Play GTA 6",
+   "page": "https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868",
+   "age_h": 2.7,
+   "id": "n:ps5-gets-last-minute-software-update-that-s-required-to-play",
    "sites": [
-    "GameSpot",
-    "RockstarINTEL"
+    "Kotaku"
    ],
-   "new": false
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Kotaku",
+   "title": "Birdwatchers, Catholic Schools, And The Weather Channel: Everyone’s Hyping Up GTA 6 Release Day",
+   "page": "https://kotaku.com/birdwatchers-catholic-schools-and-the-weather-channel-everyones-hyping-up-gta-6-release-day-2000757823",
+   "age_h": 3.9,
+   "id": "n:birdwatchers-catholic-schools-and-the-weather-channel-everyo",
+   "sites": [
+    "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "GTA 6's Release Will Stress The Internet Just As Everything's Falling Apart",
+   "page": "https://www.polygon.com/gta-6-release-apple-down-outages-microsoft-chase-bank-issues/",
+   "age_h": 4.2,
+   "id": "n:gta-6-s-release-will-stress-the-internet-just-as-everything-",
+   "sites": [
+    "Polygon"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "Newzoo analyst expects Grand Theft Auto to turn around a rough year for console gaming: 'without GTA 6 the console market would likely be down year-over-year in 2026'",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/newzoo-analyst-expects-grand-theft-auto-to-turn-around-a-rough-year-for-console-gaming-without-gta-6-the-console-market-would-likely-be-down-year-over-year-in-2026/",
+   "age_h": 5.1,
+   "id": "n:newzoo-analyst-expects-grand-theft-auto-to-turn-around-a-rou",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
   }
  ]
 }
