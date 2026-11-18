@@ -10,6 +10,9 @@ on:
       urls: {description: "TEST (ignores enabled): comma-separated channel urls, first live one is recorded", required: false, default: ""}
       minutes: {description: "TEST: max minutes (default 35)", required: false, default: "35"}
       profile: {description: "TEST: irl or gaming", required: false, default: "gaming"}
+      min_chat: {description: "TEST (measurement): chat ratio that triggers a clip, empty = profile (clix launch value 4.5)", required: false, default: ""}
+      co_chat: {description: "TEST (measurement): chat ratio when loudness agrees, empty = profile", required: false, default: ""}
+      warmup: {description: "TEST (measurement): seconds without clips at the start, empty = 480", required: false, default: ""}
 permissions:
   contents: write
 concurrency:
@@ -38,6 +41,9 @@ jobs:
           IN_URLS: ${{ inputs.urls }}
           IN_MIN: ${{ inputs.minutes }}
           IN_PROFILE: ${{ inputs.profile }}
+          IN_MINCHAT: ${{ inputs.min_chat }}
+          IN_COCHAT: ${{ inputs.co_chat }}
+          IN_WARMUP: ${{ inputs.warmup }}
         run: |
           python3 - <<'PY'
           import json, os, re
@@ -47,7 +53,11 @@ jobs:
               m = re.fullmatch(r"https://(www\.)?(twitch\.tv|kick\.com)/([A-Za-z0-9_]+)", u)
               if not m: raise SystemExit("bad url: " + u)
               prof = os.environ.get("IN_PROFILE", "gaming")
-              chans.append({"name": m.group(3), "url": u, "height": 720, "profile": "irl" if prof == "irl" else "gaming", "max_clips": 3})
+              ch = {"name": m.group(3), "url": u, "height": 720, "profile": "irl" if prof == "irl" else "gaming", "max_clips": 3}
+              for k, e in (("min_chat", "IN_MINCHAT"), ("co_chat", "IN_COCHAT"), ("warmup_s", "IN_WARMUP")):
+                  v = re.sub(r"[^0-9.]", "", os.environ.get(e, ""))
+                  if v: ch[k] = float(v) if k != "warmup_s" else int(float(v))
+              chans.append(ch)
           mins = max(5, min(int(re.sub(r"\D", "", os.environ.get("IN_MIN", "35")) or 35), 120))
           json.dump({"enabled": True, "max_minutes": mins, "channels": chans}, open("plan/livewatch.json", "w"))
           print("TEST config:", chans, mins)

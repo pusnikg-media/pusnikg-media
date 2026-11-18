@@ -303,6 +303,8 @@ def make_clip(ch, root, segs, t0, peak, hype, stamp):
     # v0.2 (15.11.): viral style = whole picture + one sentence. The preview only quotes what was said; the agent writes the real
     # context sentence and re-renders through the Clipfabrik from the RAW moment (kept as raw_<stamp>.mp4, source of a clipjob).
     quote = ('"' + title.capitalize() + '"') if title else "Live moment"
+    cap = ch.get("caption")  # v0.6 (18.11.): fixed fallback sentence per channel (campaign rule: streamer name in the overlay); a list rotates by clip
+    if cap: quote = cap if isinstance(cap, str) else cap[sum(map(ord, stamp)) % len(cap)]
     job = {"name": name, "layout": ch.get("layout", "native"), "fix": ch.get("fix") or {}, "_logo_img": None}
     clip = {"id": stamp, "a": round(a, 2), "b": round(b, 2), "caption": quote}
     r = cf.render_clip(job, clip, raw, p, words, out, tmp)
@@ -317,10 +319,21 @@ def make_clip(ch, root, segs, t0, peak, hype, stamp):
             "url": f"{cf.RAW}/clips/{name}/{r['file']}", "qa": f"{cf.RAW}/clips/{name}/{r['qa']}", "posted": False}, name
 
 
+def posted_ids(root, name):
+    """v0.6: the launch watch (an agent) never edits inbox.json (the runner appends to it every few minutes -> merge conflicts); it drops
+    clips/live-<name>/posted/<id>.json instead. A clip counts as posted when its entry says so OR such a marker exists."""
+    d = os.path.join(root, "clips", name, "posted")
+    try: return {os.path.splitext(f)[0] for f in os.listdir(d) if f.endswith(".json")}
+    except OSError: return set()
+
+
 def publish(root, name, entry, push):
     ip = os.path.join(root, "clips", name, "inbox.json")
     try: box = json.load(open(ip))
     except Exception: box = []
+    done = posted_ids(root, name)
+    for e in box:
+        if e.get("id") in done: e["posted"] = True  # fold the markers into the inbox (the runner is its only writer)
     box.append(entry); json.dump(box[-40:], open(ip, "w"), indent=1, ensure_ascii=False)
     if not push: return
     g = lambda *a: subprocess.run(["git", "-C", root, *a], capture_output=True, text=True)
@@ -448,7 +461,8 @@ def inbox_full(root, ch):
     def young(e):  # only the last 24 h count: the guard frees itself, nobody has to clean up (the agent may only write clipjobs/ + postplan)
         try: return (now - datetime.datetime.fromisoformat(e["at"])).total_seconds() < 86400
         except Exception: return True
-    return sum(1 for e in box if not e.get("posted") and young(e)) >= int(ch.get("max_pending", 12))
+    done = posted_ids(root, name)
+    return sum(1 for e in box if not e.get("posted") and e.get("id") not in done and young(e)) >= int(ch.get("max_pending", 12))
 
 
 def watch_once(root, c, t_end):
@@ -476,8 +490,17 @@ def watch(root, sleep=time.sleep, now=time.time, watcher=None):
     try:
         if c.get("until"): until = datetime.datetime.fromisoformat(str(c["until"]).replace("Z", "+00:00")).timestamp()
     except Exception: until = None
+    if until is not None: t_end = min(t_end, until)  # v0.6: a run that started before `until` stops recording at `until` (was: ran to max_minutes)
+    start = None  # v0.6: "from" (ISO, UTC) = do not record before this time (the run may start earlier and just waits; keeps the inbox free of pre-launch junk)
+    try:
+        if c.get("from"): start = datetime.datetime.fromisoformat(str(c["from"]).replace("Z", "+00:00")).timestamp()
+    except Exception: start = None
     watcher = watcher or watch_once
     while True:
+        if start is not None and now() < start:
+            stop = t_end if until is None else min(t_end, until)
+            if now() + wait >= stop and start >= stop: break
+            sleep(min(wait, max(1, start - now()))); continue
         if watcher(root, c, t_end): return
         stop = t_end if until is None else min(t_end, until)
         if now() + wait >= stop: break

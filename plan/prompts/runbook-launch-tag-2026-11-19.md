@@ -1,5 +1,7 @@
 # Runbook Launch-Tag Donnerstag 19.11.2026 (GTA 6) – Stand 16.11.2026
 
+> **Überholt am 18.11.2026 für Livewatch/Clix:** Livewatch ist für twitch.tv/clix an (ab 19.11. 05:45), die Aufgabe „GTA-6-Launch-Wache (Clix)“ postet 06:00–12:30 nach `claude/launch-wache.md` sofort über vidIQ (Stevens Anweisung). Alle Zeilen unten zu „Livewatch AUS“, „nur mit ja“ und „frühestens Fr 09:00“ gelten dafür nicht mehr.
+
 Alle Zeiten Europe/Berlin. Spätschicht-Woche 16.–22.11.: **Steven ist 12:00–21:30 nicht erreichbar, nur 09:00/09:30 sind Einreichen-Slots.** Actions laufen laut Messung 13.–16.11. oft 50–90 Min später als der Cron (Wächter läuft deshalb zusätzlich direkt nach jedem stats-Lauf). Abkürzungen: **S** = Steven (iPhone), **A** = geplanter Agent, **W** = Wächter/Action, **C** = Chat-Session (Steven schreibt im Pusnik-G-Chat).
 
 ## Vorabend Mi 18.11.

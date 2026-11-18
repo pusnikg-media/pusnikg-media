@@ -91,6 +91,20 @@
     "youtube",
     "tiktok"
    ]
+  },
+  {
+   "name": "Clix GTA VI Marathon",
+   "stats": "Clix GTA VI",
+   "clips": [
+    "live-clix"
+   ],
+   "konto": "Pusnik G",
+   "bis": "2026-11-19",
+   "erwartet": null,
+   "plattformen": [
+    "tiktok",
+    "youtube"
+   ]
   }
  ],
  "postzeit_toleranz_min": 5,

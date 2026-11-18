@@ -170,3 +170,46 @@ def test_inbox_full_stops_recording(lw, tmp_path):
     (d / "inbox.json").write_text(json.dumps([fresh()] * 3))
     assert lw.inbox_full(root, ch)
     assert lw.watch_once(root, lw.cfg(root) | {"channels": [ch]}, 9e12) is True          # returns without touching the recorder
+
+
+# --- v0.6 (18.11.): Launch-Wache -------------------------------------------------------------------------------------------
+def test_watch_waits_for_from(lw, tmp_path):
+    import datetime
+    t = datetime.datetime(2026, 11, 19, 4, 0, tzinfo=datetime.timezone.utc).timestamp()
+    root = _cfg_root(tmp_path, max_minutes=330, poll_seconds=90, **{"from": "2026-11-19T04:45:00Z"}); clk = Clock(); clk.t = t; calls = []
+    def watcher(r, c, te): calls.append(clk.t); return True
+    lw.watch(root, sleep=clk.sleep, now=clk.now, watcher=watcher)
+    assert len(calls) == 1 and calls[0] >= t + 45 * 60 and calls[0] < t + 47 * 60       # nothing recorded before 04:45 UTC, then straight in
+
+
+def test_watch_from_after_end_gives_up(lw, tmp_path):
+    root = _cfg_root(tmp_path, max_minutes=10, poll_seconds=90, **{"from": "2030-01-01T00:00:00Z"}); clk = Clock(); calls = []
+    lw.watch(root, sleep=clk.sleep, now=clk.now, watcher=lambda r, c, t: calls.append(1) or True)
+    assert calls == [] and clk.t - 1000 <= 10 * 60 + 1
+
+
+def test_posted_marker_frees_the_brake(lw, tmp_path):
+    import json, datetime as D
+    root = _cfg_root(tmp_path); d = tmp_path / "clips" / "live-x"; (d / "posted").mkdir(parents=True)
+    ch = {"name": "x", "url": "https://www.twitch.tv/x", "max_pending": 2}
+    now = D.datetime.now(D.timezone.utc).isoformat()
+    (d / "inbox.json").write_text(json.dumps([{"id": "a", "at": now, "posted": False}, {"id": "b", "at": now, "posted": False}]))
+    assert lw.inbox_full(root, ch)
+    (d / "posted" / "a.json").write_text("{}")
+    assert not lw.inbox_full(root, ch)
+    lw.publish(root, "live-x", {"id": "c", "at": now, "posted": False, "url": "u", "hype": 1}, False)
+    box = json.load(open(d / "inbox.json"))
+    assert [e["posted"] for e in box] == [True, False, False]                             # marker folded into the inbox by the runner
+
+
+def test_fixed_caption_option(lw):
+    import inspect
+    assert 'ch.get("caption")' in inspect.getsource(lw.make_clip)
+
+
+def test_watch_caps_recording_at_until(lw, tmp_path):
+    import datetime
+    root = _cfg_root(tmp_path, max_minutes=300, poll_seconds=60, until="2026-11-19T17:30:00Z"); seen = []
+    clk = Clock(); clk.t = datetime.datetime(2026, 11, 19, 16, 0, tzinfo=datetime.timezone.utc).timestamp()
+    lw.watch(root, sleep=clk.sleep, now=clk.now, watcher=lambda r, c, t_end: seen.append(t_end) or True)
+    assert seen[0] == datetime.datetime(2026, 11, 19, 17, 30, tzinfo=datetime.timezone.utc).timestamp()

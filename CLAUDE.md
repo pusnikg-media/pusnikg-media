@@ -10,7 +10,7 @@ Gaming-Shorts-Kanal "Pusnik G" (YT Shorts, TikTok, Reels) + Clipping-Kampagnen (
 - Titel, Captions, Skripte, Kommentare: Englisch, kopierfertig, ohne Überschriften wie "Description:".
 - TikTok: genau 5 Hashtags im Text.
 - Hook in Sekunde 1, keine beschleunigten Voiceovers.
-- Nie nach 19:30 (Europe/Berlin) posten. Nie ohne Stevens "ja" veröffentlichen.
+- Nie nach 19:30 (Europe/Berlin) posten. Nie ohne Stevens "ja" veröffentlichen. **Einzige Ausnahme:** Launch-Wache für Clix am 19.11. 06:00–12:30, siehe `claude/launch-wache.md` und `plan/team_state.md`.
 - Nur lizenziertes/erlaubtes Material mit eigenem Mehrwert.
 
 ## Advisor
