@@ -42,6 +42,8 @@ v5 (15.11., from the reference lab: viral streamer clips keep the ORIGINAL frami
   layout    "split" = gaming clips with a facecam: streamer's face on top (1080x720), gameplay below (1080x1200), caption on the
             seam. "facecam": "auto" (default; finds the small face that stays in one place) or [x, y, w, h] as fractions of the
             source frame (0-1). No facecam found -> falls back to "native".
+  crop      [x, y, w, h] as fractions (0-1) of the source picture that STAY (v6, 18.11.; layout native / framed, job or clip): cuts burned-in overlays
+            (sub counter, logo) at the edge off before the layout, e.g. [0, 0, 0.87, 1] drops the right 13 %. Needs w, h >= 0.4. Not for split / full.
   caption   clip only: one context sentence in normal spelling, e.g. "Lacy did NOT expect Rug to DANCE on his stream 😭"
             (max 3 lines, ~95 characters; emojis are drawn when the runner has a colour emoji font). Drawn as a white box
             with black text right above the picture (layout native/framed) or at the top (full). Replaces the big title.
@@ -810,12 +812,25 @@ def snap_to_words(a, b, dur, words):
     return a, b, (b - max(ends) if ends else 9.0)
 
 
+def parse_crop(v, p):
+    """crop = [x, y, w, h] as fractions (0-1) of the source picture = the part that stays (layout native / framed). Returns pixels (x, y, w, h), all even, or None."""
+    if not v: return None
+    try: x, y, w, h = [float(t) for t in v]
+    except Exception: raise Fail(f"crop must be [x, y, w, h] as fractions, got {v!r}")
+    if not (0 <= x < 1 and 0 <= y < 1 and 0.4 <= w <= 1 and 0.4 <= h <= 1 and x + w <= 1.001 and y + h <= 1.001): raise Fail(f"crop out of range: {v!r} (w and h at least 0.4, inside the picture)")
+    cw, ch = int(w * p["w"]) // 2 * 2, int(h * p["h"]) // 2 * 2; cx, cy = min(int(x * p["w"]) // 2 * 2, p["w"] - cw), min(int(y * p["h"]) // 2 * 2, p["h"] - ch)
+    return None if (cx, cy, cw, ch) == (0, 0, p["w"] // 2 * 2, p["h"] // 2 * 2) else (cx, cy, cw, ch)
+
+
 def render_clip(job, c, src, p, words, out, tmp):
     a, b = float(c["a"]), min(float(c["b"]), p["dur"]); cid = c["id"]
     a, b, tail = snap_to_words(a, b, p["dur"], words)  # 16.11.: no word cut in half at the edges, fade-out never eats the last word
     capt = str(c.get("caption") or "").strip()
     title = str(c.get("title") or capt[:40]).strip().upper(); pill = c.get("pill", job.get("pill")) or ""
     layout = c.get("layout", job.get("layout", "framed")); track = c.get("track", job.get("track", False))
+    crop = parse_crop(c.get("crop", job.get("crop")), p) if layout in ("native", "framed") else None  # v6 (18.11.): cut burned-in overlays at the edge off the source first
+    pre = ""
+    if crop: pre = f"crop={crop[2]}:{crop[3]}:{crop[0]}:{crop[1]},"; p = {**p, "w": crop[2], "h": crop[3]}
     cam = facecam_rect(src, a, b - a, p, c.get("facecam", job.get("facecam", "auto"))) if layout == "split" else None
     if layout == "split" and not cam: layout = "native"; print(f"WARN {cid}: no facecam found - layout native")
     full = layout == "full"; native = layout == "native"; split = layout == "split"
@@ -871,7 +886,7 @@ def render_clip(job, c, src, p, words, out, tmp):
         elif full:
             fl = f"[0:v]crop={cw}:{ch}{xpos},scale={W}:{H}:flags=lanczos{zf},setsar=1[v1];[v1][1:v]overlay=0:0[v2];[v2]"
         else:
-            fl = (f"[0:v]split=2[b0][f0];"
+            fl = (f"[0:v]{pre}split=2[b0][f0];"
                   f"[b0]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,scale={W}:{H},eq=brightness=-0.22:saturation=1.1[bg];"
                   f"[f0]crop={cw}:{ch}{xpos},scale={fg_w}:{fg_h}:flags=lanczos{zf}[fg];"
                   f"[bg][fg]overlay={fg_x}:{fg_y}[v1];[v1][1:v]overlay=0:0[v2];[v2]")
@@ -915,7 +930,7 @@ def sig(*parts):
     return hashlib.sha1(json.dumps(parts, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:12]
 
 
-V3_KEYS = ("layout", "track", "max_height", "hot_k", "zoom", "facecam")
+V3_KEYS = ("layout", "track", "max_height", "hot_k", "zoom", "facecam", "crop")
 
 
 def v3(job):

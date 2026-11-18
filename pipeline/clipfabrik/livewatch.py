@@ -306,6 +306,7 @@ def make_clip(ch, root, segs, t0, peak, hype, stamp):
     cap = ch.get("caption")  # v0.6 (18.11.): fixed fallback sentence per channel (campaign rule: streamer name in the overlay); a list rotates by clip
     if cap: quote = cap if isinstance(cap, str) else cap[sum(map(ord, stamp)) % len(cap)]
     job = {"name": name, "layout": ch.get("layout", "native"), "fix": ch.get("fix") or {}, "_logo_img": None}
+    if ch.get("crop"): job["crop"] = ch["crop"]  # v0.6: [x, y, w, h] fractions that stay (clipfabrik v6) - cuts an overlay at the edge off the direct clip too
     clip = {"id": stamp, "a": round(a, 2), "b": round(b, 2), "caption": quote}
     r = cf.render_clip(job, clip, raw, p, words, out, tmp)
     rawname = f"raw_{stamp}.mp4"
