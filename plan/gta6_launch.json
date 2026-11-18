@@ -1,8 +1,17 @@
 {
  "enabled": false,
  "launch": "2026-11-19",
- "note": "GTA-6-Launch-Vorbereitung (angelegt 16.11.2026, Branch gta6-launch). enabled bleibt false: nichts liest diese Datei automatisch - sie ist die Checkliste fuer Donnerstag 19.11. Livewatch laeuft NUR fuer Streamer mit aktiver Kampagne oder schriftlicher Erlaubnis: erst wenn bei einem Streamer das Feld campaign gefuellt ist (Kampagnenname bei Content Rewards oder 'Erlaubnis: <wer/wann>'), darf er in plan/livewatch.json. Fremde Streams ohne Kampagne/Erlaubnis nur als Trend-Signal (trends/latest.md). GTA-6-Kampagnen nur mit Rechteinhaber oder offiziellem Partner (team_state.md).",
+ "note": "GTA-6-Launch-Vorbereitung (angelegt 16.11.2026, Branch gta6-launch). enabled bleibt false: nichts liest diese Datei automatisch - sie ist die Checkliste fuer Donnerstag 19.11. Livewatch laeuft NUR fuer Streamer mit aktiver Kampagne oder schriftlicher Erlaubnis: erst wenn bei einem Streamer das Feld campaign gefuellt ist (Kampagnenname bei Content Rewards oder 'Erlaubnis: <wer/wann>'), darf er in plan/livewatch.json. Fremde Streams ohne Kampagne/Erlaubnis nur als Trend-Signal (trends/latest.md). GTA-6-Kampagnen nur mit Rechteinhaber oder offiziellem Partner (team_state.md). STAND 18.11.: Nur Clix hat eine Kampagne (Feld campaign gefuellt) und steht in plan/livewatch.json; alle anderen Kandidaten bleiben Trend-Signal.",
  "streamers": [
+  {
+   "name": "clix",
+   "platform": "twitch",
+   "url": "https://www.twitch.tv/clix",
+   "priority": 1,
+   "campaign": "$5,000 Clix GTA VI Marathon Pool (Reach, Content Rewards) - Steven beigetreten, Konto Pusnik G, 18.11.2026",
+   "why": "Kampagnenstreamer: GTA-VI-Marathon ab Release Do 19.11. 06:00 Berlin",
+   "checked_16_11": "18.11.: Kampagne laut Steven; Kanal-/Login-Pruefung siehe claude/launch-wache.md, Abschnitt Generalprobe"
+  },
   {
    "name": "xqc",
    "platform": "kick",

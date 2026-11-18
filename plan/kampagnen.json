@@ -4,7 +4,8 @@
   {"match": "TJR $50,000", "account": "Pusnik IRL"},
   {"match": "$9,000 Jason Pool", "account": "Pusnik IRL"},
   {"match": "Warzone Season 1 Clipping", "account": "Pusnik G"},
-  {"match": "MW4 DMZ Intel Briefing Clipping", "account": "Pusnik G"}
+  {"match": "MW4 DMZ Intel Briefing Clipping", "account": "Pusnik G"},
+  {"match": "985dc674-c75e-44fc-ac87-1b1506324389", "account": "Pusnik G"}
  ],
  "ignore": ["Preme"],
  "accounts": {
