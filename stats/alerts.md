@@ -1,6 +1,6 @@
-# Alarme – Stand 18.11.2026 18:22 (Europe/Berlin)
+# Alarme – Stand 18.11.2026 21:15 (Europe/Berlin)
 
-stand_utc: 2026-11-18T17:22:56Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-18T20:15:17Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
@@ -8,6 +8,10 @@ Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene P
 - trends/latest.json: reddit r/LivestreamFail: HTTP 404; reddit r/GTA6: HTTP 404; reddit r/GTA: HTTP 429
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
+- TJR (Pusnik IRL, youtube, 18.11. 09:30): „TJR: "Worst Day Of My Life" #shorts“ – https://www.youtube.com/shorts/jLfal0h29nc
+- TJR (Pusnik IRL, tiktok, 18.11. 09:30): „TJR after a few hours without his usual routi“ – https://www.tiktok.com/@pusnikirl/video/7709424676061089057
+- TJR (Pusnik IRL, youtube, 18.11. 09:00): „TJR On His Older Brother ❤️ #TJR #shorts“ – https://www.youtube.com/shorts/n0bTSampHII
+- TJR (Pusnik IRL, tiktok, 18.11. 09:00): „TJR on growing up as the younger brother and “ – https://www.tiktok.com/@pusnikirl/video/7709418169038900512
 - Warzone S1 (Pusnik G, tiktok, 17.11. 19:30): „Hajin is one of two new Warzone maps this sea“ – https://www.tiktok.com/@pusnikg/video/7709209457917512992
 - Warzone S1 (Pusnik G, tiktok, 17.11. 15:00): „The Warzone Season 1 trailer goes dark and th“ – https://www.tiktok.com/@pusnikg/video/7709139888309931296
 - TJR (Pusnik IRL, youtube, 17.11. 09:30): „TJR Discovers Cars Without Automatic Seats #s“ – https://www.youtube.com/shorts/GdajiWDyyRE
