@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 3.73s  ʌnpˈɑːpjʊlɚɹ əpˈɪniən, dˈoʊnt ɹˈʌʃ θɹuː dʒˌiːtˌiːˈeɪ sˈɪks.\n1: 4.65s  wiː wˈeɪɾᵻd θˈɜːtiːn jˈɪɹz, fˈɪnɪʃɪŋ ɪɾ ɪn wˈʌn wˈiːkɛnd mˌeɪks nˈoʊ sˈɛns.\n2: 3.00s  ɑːɹ juː ɹˈʌʃɪŋ ðə stˈoːɹi ɔːɹ tˈeɪkɪŋ ɪt slˈoʊ?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 13.75s",
+  "PREFLIGHT_OK 4 lines, 10 shots, 15.01 s\nUnpopular@0.22 opinion,@0.75 don't@1.62 rush@1.78 through@1.92 GTA@2.17 6.@2.41\nWe@0.22 waited@0.50 thirteen@0.70 years,@1.04 finishing@1.74 it@1.95 in@2.27 one@2.41 weekend@2.57 makes@2.95 no@3.31 sense.@3.57\nAre@0.22 you@0.51 rushing@0.61 the@0.79 story@1.08 or@1.39 taking@1.63 it@1.88 slow?@2.10\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 15.01 shots 10 captions 11\nRENDER_OK /home/runner/work_pusnikg-2026-11-20-launch1-v2-tt/pusnikg-2026-11-20-launch1-v2-tt.mp4 15.01s",
+  "QA_OK 15.01s -14.3 LUFS frames: /home/runner/work_pusnikg-2026-11-20-launch1-v2-tt/pusnikg-2026-11-20-launch1-v2-tt_qa_0.png /home/runner/work_pusnikg-2026-11-20-launch1-v2-tt/pusnikg-2026-11-20-launch1-v2-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-20-launch1-v2-tt/pusnikg-2026-11-20-launch1-v2-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 15.01,
+ "music": "https://cdn.orshot.com/library/music/0884579d-8174-4e27-92da-dc00cf3fd4a0.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-20-launch1-v2-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-20-launch1-v2-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-20-launch1-v2-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-20-launch1-v2-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-20-launch1-v2-tt",
+ "attempts": 1
+}
