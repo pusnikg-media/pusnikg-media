@@ -1,16 +1,17 @@
-# Zahlen – Stand 18.11.2026 18:22 (Europe/Berlin)
+# Zahlen – Stand 18.11.2026 21:15 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 39.676 · Zuwachs 24 h: 269
+Posts gezählt: 80 · Views gesamt: 39.658 · Zuwachs 24 h: 269
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
+| 2026-11-18 | tiktok | Warzone stays free-to-play, and Season 1 brings  | 106 | – | – | 0 | Warzone S1 |
 | 2026-11-18 | youtube | Who's Calling in Sick for GTA 6? #shorts | 1 | – | – | 0 |  |
-| 2026-11-18 | tiktok | GTA 6 release date is tomorrow, November 19. Are | 60 | – | – | 1 |  |
-| 2026-11-18 | tiktok | GTA 6 reviews are in: a 99 on Metacritic and not | 105 | – | – | 1 |  |
-| 2026-11-18 | youtube | GTA 6 Reviews Are In: 99 on Metacritic #shorts | 2 | – | – | 0 |  |
+| 2026-11-18 | tiktok | GTA 6 release date is tomorrow, November 19. Are | 243 | – | – | 2 |  |
+| 2026-11-18 | tiktok | GTA 6 reviews are in: a 99 on Metacritic and not | 246 | – | – | 1 |  |
+| 2026-11-18 | youtube | GTA 6 Reviews Are In: 99 on Metacritic #shorts | 4 | – | – | 0 |  |
 | 2026-11-17 | tiktok | Hajin is one of two new Warzone maps this season | 241 | 151 | – | 3 | Warzone S1 |
 | 2026-11-17 | youtube | When Can You Play GTA 6? Unlock Time #shorts | 3 | 3 | 3 | 0 |  |
 | 2026-11-17 | tiktok | GTA 6 release time: Rockstar hasn't confirmed it | 298 | 84 | 298 | 2 |  |
@@ -30,7 +31,6 @@ Posts gezählt: 80 · Views gesamt: 39.676 · Zuwachs 24 h: 269
 | 2026-11-11 | youtube | 13 Years of Waiting for GTA 6 #shorts | 216 | 0 | – | 6 |  |
 | 2026-11-11 | tiktok | GTA 6 release is almost here, 13 years after GTA | 258 | 0 | – | 8 |  |
 | 2026-11-10 | youtube | Lionel Rafale's Story / Virtua Fighter Crossroad | 20 | 0 | – | 1 | SEGA Virtua Fighter |
-| 2026-11-10 | tiktok | A city you've never seen A story you've never he | 243 | 0 | – | 2 | SEGA Virtua Fighter |
 
 ## Pusnik IRL
 Posts gezählt: 16 · Views gesamt: 4.476 · Zuwachs 24 h: 1
@@ -57,8 +57,8 @@ Posts gezählt: 16 · Views gesamt: 4.476 · Zuwachs 24 h: 1
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
+| Warzone S1 | 6 | 1.327 | 251 | – |
 | TJR | 14 | 3.625 | 748 | 0 von 14 |
-| Warzone S1 | 5 | 1.221 | 251 | – |
 | MW4 DMZ | 3 | 778 | 277 | – |
 | JasonTheWeen | 2 | 851 | 849 | – |
 | SEGA Virtua Fighter | 8 | 3.265 | 1.279 | – |
