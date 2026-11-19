@@ -674,6 +674,28 @@ def vod_pointers(login, vid, lo, hi, top=8):
     return keep[:top]
 
 
+def clip_list(login, since=0.0, top=30):
+    """19.11.: the viewers' Twitch clips of the last 24 h, best viewed first (GQL, then yt-dlp's channel clip list). Written to replay_info.json so an agent can pick
+    sources. Each = {slug, url, title, views, created, dur, vod, vod_s, by}. Raises when both ways fail."""
+    lg = re.sub(r"[^a-z0-9_]", "", login.lower()); errs = []
+    try:
+        q = ('query{user(login:"%s"){clips(first:100, criteria:{period:LAST_DAY, sort:VIEWS_DESC}){edges{node{id slug title viewCount createdAt durationSeconds videoOffsetSeconds video{id} curator{login}}}}}}' % lg)
+        out = []
+        for e in gql(q)["user"]["clips"]["edges"]:
+            n = e["node"]; cr = iso_epoch(n["createdAt"])
+            if cr < since: continue
+            out.append({"slug": n["slug"], "url": f"https://clips.twitch.tv/{n['slug']}", "title": n.get("title") or "", "views": int(n.get("viewCount") or 0), "created": n["createdAt"],
+                        "dur": int(n.get("durationSeconds") or 0), "vod": (n.get("video") or {}).get("id"), "vod_s": n.get("videoOffsetSeconds"), "by": (n.get("curator") or {}).get("login") or ""})
+        return sorted(out, key=lambda x: -x["views"])[:top]
+    except Exception as e: errs.append("gql: " + str(e)[-120:])
+    try:
+        d = _ytdlp_json(["--flat-playlist", "--playlist-end", "40", f"https://www.twitch.tv/{lg}/clips?filter=clips&range=24hr"])
+        return [{"slug": str(x.get("id")), "url": x.get("url") or f"https://clips.twitch.tv/{x.get('id')}", "title": x.get("title") or "", "views": int(x.get("view_count") or 0), "created": x.get("timestamp"),
+                 "dur": int(x.get("duration") or 0), "vod": None, "vod_s": None, "by": ""} for x in (d.get("entries") or [])][:top]
+    except Exception as e: errs.append("yt-dlp: " + str(e)[-160:])
+    raise RuntimeError(" | ".join(errs))
+
+
 def push_paths(root, paths, msg):
     g = lambda *a: subprocess.run(["git", "-C", root, *a], capture_output=True, text=True)
     for p in paths: g("add", p)
@@ -698,6 +720,12 @@ def replay(vod, start, minutes, root, min_chat=None, compare=False):
     infop = os.path.join(root, "clips", name, "replay_info.json"); os.makedirs(os.path.dirname(infop), exist_ok=True)
     def save(): json.dump(info, open(infop, "w"), indent=1, ensure_ascii=False)
     mm = re.search(r"twitch\.tv/([A-Za-z0-9_]+)", ch.get("url", "")); login = mm.group(1) if mm else ch["name"]
+    t_since = 0.0
+    try: t_since = iso_epoch(start)
+    except Exception: pass
+    try: info["clips_all"] = clip_list(login, t_since)
+    except Exception as e: info["errors"].append("cliplist: " + str(e)[-240:])
+    save(); push_paths(root, [infop], "livewatch: replay_info (%d clips listed)" % len(info.get("clips_all", [])))
     try: vid, created = resolve_vod(vod if re.search(r"videos/\d+|twitch\.tv/", vod or "") else f"https://www.twitch.tv/{vod}", login)
     except Exception as e:
         info["errors"].append("resolve: " + str(e)[-200:]); save(); push_paths(root, [infop], "livewatch: replay_info (resolve failed)"); print("VOD not resolvable:", e); return
