@@ -233,5 +233,24 @@
   "peak_s": 4194,
   "vod": "2932204601",
   "vod_s": 70539
+ },
+ {
+  "id": "20261119-074517",
+  "at": "2026-11-19T07:46:06+00:00",
+  "channel": "clix",
+  "hype": 12.5,
+  "seconds": 12.15,
+  "quote": "Clix just hit another big moment in the GTA VI marathon... 😮🎮",
+  "a": 27.86,
+  "b": 40.01,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-074517.mp4",
+  "said": "1400? 1400! 1 ,400 I'd say between 1 ,400 and 4 ,000 that's a big fucking",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-074517.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-074517.jpg",
+  "posted": false,
+  "chat": 3.33,
+  "peak_s": 4717,
+  "vod": "2932204601",
+  "vod_s": 71062
  }
 ]
