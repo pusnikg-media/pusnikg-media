@@ -11,10 +11,18 @@ Briefing (Screenshot Steven 19.11.):
 - Nie hinzufügen: Logo, Wasserzeichen, `pill`. Stream-Overlays am Rand dürfen bleiben oder per `crop` weg.
 - Sonst Abschnitt 1 der launch-wache.md sinngemäß (nicht negativ, keine Slurs auch zensiert, kein Glücksspiel, keine erfundenen Fakten).
 
+## Layout + Bildtext (Steven 19.11. 12:33, aus viralen GTA-6-Reels mit 700 Tsd.+ Views – geht allen älteren Stil-Regeln vor)
+Pro Moment EINES der zwei Layouts wählen:
+- **A „Spiel ist der Witz“** (absurde Physik, Unfall/Absturz, Tiere, Glitch, „GTA ist zu realistisch“-Detail): Clip `"layout": "native", "style": "mini"` → ganzes Streambild 16:9 mittig auf Schwarz, Kais kleine Cam/Overlays bleiben wie im Original, darüber nur weiße Mini-Schrift ohne Kasten. `caption` = **2–5 Wörter + 1 Emoji**, ironisch oder trocken, OHNE Namen. Muster: „Realistic game 🥀“, „Rockstar cooked 💀“, „Physics left the chat 😭“, „First shark attack 💀“, „You need a key now? 😭“.
+- **B „Kai-Reaktion ist der Witz“** (Schrei, Lachanfall, Rage, Schock auf der Cam): `"layout": "split"` (Cam oben, Gameplay unten) + weißer Kasten. `caption` = EINE kühne Behauptung/Zuspitzung, 9–15 Wörter, beginnt mit „Kai“, 1–2 Wörter GROSS, 1–2 Emojis. Muster: „Kai becomes the FIRST streamer to get robbed by an NPC 😭“, „Kai did NOT expect the alligator to be THAT fast 💀“.
+- Verboten: beschreibende Leerformeln („X is deep into the marathon and this moment is WILD“, „another big moment“, „insane moment“).
+- Schnitt: Clip beginnt IM Moment (Sek. 0 = Action, kein Anlauf), 15–45 s, Originalton, kein Zoom.
+- Momentjagd (in dieser Reihenfolge): Tiere (Hai, Alligator, Bär), Abstürze/Unfälle, Realismus-Details, Glitches/absurde Physik, Kai schreit/lacht. Reine Laber-/Menüszenen nie.
+- `hints` in result.json: bei `style: mini` gelten 2–6 Wörter; die alten Hinweise („Satz beginnt nicht mit dem Namen“, „...“) zählen dort nicht.
+
 ## Texte
-- Kontextsatz: beginnt mit „Kai Cenat“, nennt den konkreten Moment (aus `said` + Bild), Stil `claude/reflab-erkenntnisse.md`, 9–15 Wörter, 1–2 Wörter GROSS, „...“ + 1–2 Emojis. Keine Leerformeln („WILD moment“, „another big moment“).
-- Caption TikTok/Instagram: Kontextsatz + Leerzeile + kurze Frage + Leerzeile + genau 5 Hashtags `#KaiCenat #GTA6 #GTAVI #Gaming #Clips`.
-- YouTube: Titel = Kontextsatz ohne Emojis/„...“, ≤ 60 Zeichen inkl. „ #shorts“; Text = Satz + `#KaiCenat #GTA6 #Shorts`; public. (Livestream-Material, nicht vom YouTube-Re-Upload-Verbot betroffen.)
+- Caption TikTok/Instagram: ein Satz mit „Kai Cenat“ + dem konkreten Moment (bei Layout A ist der Bildtext kurz – der Name steht dann HIER) + Leerzeile + kurze Frage, die zum Widerspruch reizt („Is this the most realistic game ever?“) + Leerzeile + genau 5 Hashtags `#KaiCenat #GTA6 #GTAVI #Gaming #Clips`.
+- YouTube: Titel = erster Satz der Caption (mit „Kai Cenat“) ohne Emojis/„...“, ≤ 60 Zeichen inkl. „ #shorts“; Text = Satz + `#KaiCenat #GTA6 #Shorts`; public. (Livestream-Material, nicht vom YouTube-Re-Upload-Verbot betroffen.)
 - Weg A (Livewatch-Direktclip) nie posten.
 
 ## Livewatch (erster Lauf ab 13:00 stellt um, danach nur `enabled`/`until`)
