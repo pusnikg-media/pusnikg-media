@@ -105,6 +105,22 @@
     "tiktok",
     "youtube"
    ]
+  },
+  {
+   "name": "Kai Cenat GTA 6",
+   "stats": "Kai Cenat GTA 6",
+   "clips": [
+    "kai-vod1",
+    "live-kaicenat"
+   ],
+   "konto": "Pusnik G",
+   "bis": "2026-11-22",
+   "erwartet": null,
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ],
+   "max_pro_tag": 4
   }
  ],
  "postzeit_toleranz_min": 5,

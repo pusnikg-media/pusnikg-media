@@ -241,3 +241,17 @@ def test_postplan_rules_quiet_for_valid_and_past_slots(tmp_path):
     ok = [_slot("2026-11-19", "09:00", "a/1"), _slot("2026-11-19", "09:30", "a/2"), _slot("2026-11-19", "19:30", "z/9", konto="Pusnik G"),
           _slot("2026-11-17", "21:00", "old/1")]                                                                               # Vergangenheit: nicht mehr beurteilen
     assert _plan(tmp_path, ok) == []
+
+
+def test_postplan_campaign_cap_from_config(tmp_path):
+    """waechter.json kampagnen[].max_pro_tag (Steven-Ausnahme, z. B. Kai Cenat 4/Tag) ersetzt die 2er-Grenze nur fuer diese Kampagne."""
+    r = tmp_path; (r / "plan").mkdir()
+    cfg = {"kampagnen": [{"name": "Kai", "max_pro_tag": 4}]}
+    (r / "plan" / "waechter.json").write_text(json.dumps(cfg))
+    kai = [_slot("2026-11-19", z, f"k/{i}", konto="Pusnik G", kampagne="Kai") for i, z in enumerate(("10:41", "13:30", "16:30", "19:15"))]
+    (r / "plan" / "postplan.json").write_text(json.dumps({"slots": kai}))
+    probs, _ = W.evaluate(str(r), CFG, NOW, None)
+    assert [p.key for p in probs if p.key.startswith("plan-")] == []
+    (r / "plan" / "postplan.json").write_text(json.dumps({"slots": kai + [_slot("2026-11-19", "09:00", "k/9", konto="Pusnik G", kampagne="Kai")]}))
+    probs, _ = W.evaluate(str(r), CFG, NOW, None)
+    assert [p.key for p in probs if p.key.startswith("plan-")] == ["plan-max4:2026-11-19:Pusnik G:Kai"]

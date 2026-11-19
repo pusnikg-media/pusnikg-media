@@ -202,15 +202,17 @@ def check_postplan_regeln(root, now):
     Kampagnen-Clip nie nach 19:30, nie um 18:00 (Tages-Short), hoechstens 2 pro Konto und Tag, derselbe Clip nicht zweimal (doppelter Post)."""
     plan = jl(os.path.join(root, "plan", "postplan.json"), {}) or {}
     today = f"{local(now):%Y-%m-%d}"; out, per_day, seen = [], {}, {}
+    caps = {k["name"]: int(k["max_pro_tag"]) for k in ((jl(os.path.join(root, "plan", "waechter.json"), {}) or {}).get("kampagnen") or []) if k.get("max_pro_tag")}  # Steven-Ausnahme je Kampagne (z. B. Kai Cenat: 4/Tag)
     for s in merge_slots(plan.get("slots", [])):
         if s["datum"] < today: continue
         who = f"{s.get('kampagne')} {s.get('clip', '')} ({s.get('konto')}) {s['datum'][8:]}.{s['datum'][5:7]}. {s['zeit']}"
         if hhmm(s["zeit"]) > hhmm("19:30"): out.append(P("postzeit", f"plan-spaet:{s['datum']}:{s['zeit']}:{s.get('konto')}", f"Plan verletzt die 19:30-Regel: {who}."))
         if s["zeit"] == "18:00": out.append(P("postzeit", f"plan-1800:{s['datum']}:{s.get('konto')}", f"Plan: Kampagnen-Clip um 18:00 (Slot des Tages-Shorts): {who}."))
-        per_day.setdefault((s["datum"], s.get("konto")), []).append(s)
+        per_day.setdefault((s["datum"], s.get("konto"), s.get("kampagne") if s.get("kampagne") in caps else None), []).append(s)
         if s.get("clip"): seen.setdefault(s["clip"], []).append(s)
-    for (d, konto), sl in per_day.items():
-        if len(sl) > 2: out.append(P("postzeit", f"plan-max2:{d}:{konto}", f"Plan: {len(sl)} Kampagnen-Clips am {d[8:]}.{d[5:7]}. auf {konto} (erlaubt: 2)."))
+    for (d, konto, kamp), sl in per_day.items():
+        mx = caps.get(kamp, 2)
+        if len(sl) > mx: out.append(P("postzeit", f"plan-max{mx}:{d}:{konto}" + (f":{kamp}" if kamp else ""), f"Plan: {len(sl)} {'Kampagnen-Clips' if not kamp else kamp + '-Clips'} am {d[8:]}.{d[5:7]}. auf {konto} (erlaubt: {mx})."))
     for clip, sl in seen.items():
         if len(sl) > 1: out.append(P("postzeit", f"plan-doppelt:{clip}", f"Plan: Clip {clip} steht {len(sl)}x im Postplan ({', '.join(x['datum'][5:] + ' ' + x['zeit'] for x in sl)}) – doppelter Post?"))
     return out

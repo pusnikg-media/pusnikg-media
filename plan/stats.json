@@ -10,7 +10,8 @@
   {"name": "MW4 DMZ", "match": ["#mw4", "#dmz"], "min_views": null},
   {"name": "SEGA Virtua Fighter", "match": ["virtua fighter", "#virtuafighter"], "min_views": null},
   {"name": "JasonTheWeen", "match": ["#jasontheween"], "min_views": null},
-  {"name": "Clix GTA VI", "match": ["#clix"], "min_views": null}
+  {"name": "Clix GTA VI", "match": ["#clix"], "min_views": null},
+  {"name": "Kai Cenat GTA 6", "match": ["#kaicenat"], "min_views": null}
  ],
  "scan": 40,
  "keep_days": 45

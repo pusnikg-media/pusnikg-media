@@ -177,8 +177,11 @@ def check_postplan(plan, names, konten, root=ROOT, warn=None):
         assert s["zeit"] != "18:00", "nie zur Short-Zeit"
     for k in {(s["konto"], s["datum"], s["zeit"]) for s in slots}:
         assert len({s["clip"] for s in plan if (s["konto"], s["datum"], s["zeit"]) == k}) == 1, f"zwei Clips im selben Slot: {k}"
-    for konto in konten:                                                                                   # höchstens 2 pro Konto und Tag
-        for d in {s["datum"] for s in slots}: assert sum(1 for s in slots if s["konto"] == konto and s["datum"] == d) <= 2, (konto, d)
+    caps = {k["name"]: int(k["max_pro_tag"]) for k in REAL["kampagnen"] if k.get("max_pro_tag")}          # Steven-Ausnahme je Kampagne (waechter.json max_pro_tag)
+    for konto in konten:                                                                                   # höchstens 2 pro Konto und Tag (ohne Ausnahme-Kampagnen)
+        for d in {s["datum"] for s in slots}:
+            assert sum(1 for s in slots if s["konto"] == konto and s["datum"] == d and s["kampagne"] not in caps) <= 2, (konto, d)
+            for kamp, mx in caps.items(): assert sum(1 for s in slots if s["konto"] == konto and s["datum"] == d and s["kampagne"] == kamp) <= mx, (konto, d, kamp)
     for s in plan:                                                                                          # gerendert? (fehlende Ergebnisdatei = nur Warnung)
         job, _, cid = s["clip"].partition("/"); f = os.path.join(root, "clips", job, "result.json")
         if os.path.exists(f) and cid and warn is not None and cid not in [c["id"] for c in json.load(open(f))["clips"]]: warn.append(f"{s['clip']} nicht in {job}/result.json")
