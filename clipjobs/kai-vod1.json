@@ -30,21 +30,39 @@
    "a": 3970.3,
    "b": 3997.3,
    "caption": "Kai: 'we're actually here' 😭",
-   "captions": true
+   "captions": true,
+   "facecam": [
+    0,
+    0.35,
+    0.22,
+    0.31
+   ]
   },
   {
    "id": "E_paint",
    "a": 4679.1,
    "b": 4695.6,
    "caption": "Kai picks his car paint 🎨",
-   "captions": true
+   "captions": true,
+   "facecam": [
+    0,
+    0.35,
+    0.22,
+    0.31
+   ]
   },
   {
    "id": "H_code",
    "a": 6238.4,
    "b": 6260.8,
    "caption": "Kai finds the 0420 code 👀",
-   "captions": true
+   "captions": true,
+   "facecam": [
+    0,
+    0.35,
+    0.22,
+    0.31
+   ]
   },
   {
    "id": "D_house",
@@ -72,22 +90,26 @@
    "a": 4217.8,
    "b": 4233.6,
    "caption": "Kai: 'be manly, bro' 😂",
-   "captions": true
+   "captions": true,
+   "facecam": [
+    0,
+    0.35,
+    0.22,
+    0.31
+   ]
   },
   {
    "id": "J_apology",
    "a": 5795.2,
    "b": 5815.0,
    "caption": "Kai keeps saying 'my bad' 😅",
-   "captions": true
-  },
-  {
-   "id": "Z_native_test",
-   "a": 904.4,
-   "b": 920.2,
-   "caption": "Kai finds a BABY in GTA 6 👶",
    "captions": true,
-   "layout": "native"
+   "facecam": [
+    0,
+    0.35,
+    0.22,
+    0.31
+   ]
   }
  ]
 }
