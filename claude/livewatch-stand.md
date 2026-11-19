@@ -1,13 +1,15 @@
 # Livewatch – Stand 19.11.2026 (Clix GTA-VI-Marathon, v0.7)
 
 ## Messung und Änderung (Steven-Auftrag 19.11. 07:50 Berlin)
-- **Befund:** Clix live seit ca. 05:00 Berlin (GTA 6, Marathon-Timer im Bild). Livewatch lief ab 05:45 mit min_chat 4,5 / co_chat 2,5 / min_hype 9: **ein einziger Treffer in ca. 2 h** (07:51, chat x3,29 – Bootfahrt + Smalltalk, kein Highlight, übersprungen). Die Launch-Werte waren für Clix zu streng.
+- **Befund:** Clix streamt seit ca. 11:30 Berlin am Vortag (Marathon-Timer im Bild ~20 h); bis ca. 07:30 Berlin IRL, GTA 6 nur 07:40–08:15, danach Schlaf bis ca. 15:30. Livewatch lief ab 05:45 mit min_chat 4,5 / co_chat 2,5 / min_hype 9: **ein einziger Treffer in ca. 2 h** (07:51, chat x3,29 – Bootfahrt + Smalltalk, kein Highlight, übersprungen). Die Launch-Werte waren für Clix zu streng.
 - **Neue Werte (plan/livewatch.json, Kanal clix):** `min_chat 3.0`, `co_chat 1.8`, `min_hype 7`, `warmup_s 180`, `per_hour 6`, `max_clips 14` (vorher 4,5 / 2,5 / 9 / 480 / 4 / 10). Kontrolle: 2–4 Kandidaten/Std. gewünscht; > 8/Std. → `min_chat` wieder um 0,5 anheben.
 - **Neue Signale (v0.7, `pipeline/clipfabrik/livewatch.py`, 14 neue Tests):**
   1. *Chat-Inhalt:* KEKW, LUL, OMEGALUL, LMAO, 💀 😂, „CLIP IT“, „NO WAY“, BRO, einzelnes W/L → Anteil in der Chat-Spitze hebt das Chat-Verhältnis bis x1,6 (`chat_boost`).
   2. *Zuschauer-Clips:* `ClipWatch` liest alle 45 s die Erstellzeiten der Twitch-Clips von Clix (GQL, anonym). ≥ 2 Clips innerhalb 25 s = stärkster Beweis, löst allein aus (`kind: viewer-clips`, Moment ca. 14 s vor dem Klick). Ob Twitch die Abfrage zulässt, ist **ungeprüft** (im Log steht „clipwatch: …“ bei Fehler).
   3. *Stimm-Ausbruch:* `find_outburst` = lauteste 4 s gegen den Median der letzten 2 Min (nicht 10 Min). ≥ `min_burst` (9 dB) + Chat ≥ 0,8 × co_chat löst aus (`kind: outburst`).
   4. *Sicherheitsnetz:* 30 Min ohne Auslöser → Moment mit der höchsten Punktzahl (hype/min_hype + chat/min_chat + burst/min_burst + 2 bei Zuschauer-Clips) wird Kandidat (`safety: true`, `score`); Aufnahmestücke bleiben dafür 35 statt 15 Min. Wird nur gepostet, wenn die Bildkontrolle es hergibt.
+- **Ergebnis der neuen Werte:** 5 Kandidaten in 12 Min, 19 gesamt, **0 brauchbar** (IRL, Cutscene-Lärm). Die Lautstärke triggert auf Spiel-Dialog, nicht auf Clix; ohne Clix-Reaktion (Facecam) bleibt es Kandidatenfinder. Idee: Facecam-Mund/Bewegung oder Mikro-Lautstärke trennen. Zuschauer-Clip-Abfrage (GQL `clips`) lieferte 0 – ungeklärt, ob geblockt.
+- Replay-Modus v0.7: `vod` = Kanalname reicht (neuester Archiv-Stream per GQL/yt-dlp, ging beim 3. Versuch), `start` = ISO-Zeit; `replay_info.json` zeigt, was aufgelöst wurde.
 - Lauf neu gestartet 08:00 Berlin (alter Lauf abgebrochen, Aufnahme-Puffer weg, 3 Min Aufwärmzeit).
 
 > **Update 18.11.2026 abends:** Livewatch gehört jetzt der Clix-Kampagne (`plan/livewatch.json`: nur `twitch.tv/clix`, `from` 19.11. 05:45, `until` 12:45; Jason entfernt). Anleitung für die Launch-Wache und Generalprobe-Ergebnis: `claude/launch-wache.md`. Neu in v0.6: `from`, Aufnahme endet bei `until`, Kanal-Feld `caption`/`crop`, Marker `clips/live-<name>/posted/<id>.json`, Testmodus mit `min_chat`/`co_chat`/`warmup`. Clipfabrik v6: `crop`.
