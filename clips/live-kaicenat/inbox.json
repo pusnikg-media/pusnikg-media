@@ -182,7 +182,7 @@
   "said": "Yeah, we'll be in touch if we need anything else. Oh nice work, okay? Oh my gosh sports car Yeah, no, can't tell ya, is there anything else?",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-164919.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-164919.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.74,
   "peak_s": 5565
  },
@@ -199,7 +199,7 @@
   "said": "god, I think I remember me. I got off to the game like bro Chat, he'll be remembering who you are, bro And it's like damn They're",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-165316.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-165316.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 1.9,
   "peak_s": 5847
  },
@@ -219,5 +219,22 @@
   "posted": false,
   "chat": 2.19,
   "peak_s": 125
+ },
+ {
+  "id": "20261119-172055",
+  "at": "2026-11-19T17:21:18+00:00",
+  "channel": "kaicenat",
+  "hype": 9.6,
+  "seconds": 14.42,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 19.1,
+  "b": 33.51,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-172055.mp4",
+  "said": "do I make this shit like my magazines Do this triggers Yo, are we epic or no? Like what's going on bro? Is it glitching or no?",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-172055.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-172055.jpg",
+  "posted": false,
+  "chat": 3.09,
+  "peak_s": 312
  }
 ]
