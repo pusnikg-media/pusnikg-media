@@ -4,7 +4,6 @@
  "minutes": 132,
  "pointers": [],
  "made": [],
- "errors": [
-  "resolve: gql: 'NoneType' object is not subscriptable | yt-dlp: list index out of range"
- ]
+ "errors": [],
+ "clips_all": []
 }
