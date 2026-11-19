@@ -1,10 +1,209 @@
 {
  "ok": true,
  "name": "kai-vod1",
- "sig": "d7d3f24aebfa",
+ "sig": "04314bfb2e0e",
  "attempts": 1,
  "source": "https://drive.google.com/file/d/1E3UmNb_zi5JTFJBMY3Wgh7QQOqXkoEOD/view",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/scan/scan.json",
- "clips": [],
- "phase": "scanned"
+ "clips": [
+  {
+   "id": "A_baby",
+   "ok": true,
+   "seconds": 15.79,
+   "title": "KAI FINDS A BABY IN GTA 6 👶",
+   "file": "kai-vod1_A_baby.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_A_baby.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai finds a BABY in GTA 6 👶",
+   "hints": [
+    "Kontextsatz hat nur 7 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "c355cc5e3c8c",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_A_baby.mp4"
+  },
+  {
+   "id": "B_13y",
+   "ok": true,
+   "seconds": 15.6,
+   "title": "KAI WAITED 13 YEARS FOR THIS 😭",
+   "file": "kai-vod1_B_13y.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_B_13y.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai waited 13 years for this 😭",
+   "hints": [
+    "Kontextsatz hat nur 6 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "55552fd5de9b",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_B_13y.mp4"
+  },
+  {
+   "id": "C_here",
+   "ok": true,
+   "seconds": 27.0,
+   "title": "KAI: 'WE'RE ACTUALLY HERE' 😭",
+   "file": "kai-vod1_C_here.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_C_here.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai: 'we're actually here' 😭",
+   "hints": [
+    "Kontextsatz hat nur 4 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "5f20f15aaa83",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_C_here.mp4"
+  },
+  {
+   "id": "E_paint",
+   "ok": true,
+   "seconds": 16.5,
+   "title": "KAI PICKS HIS CAR PAINT 🎨",
+   "file": "kai-vod1_E_paint.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_E_paint.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai picks his car paint 🎨",
+   "hints": [
+    "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "c721f2ca2ad3",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_E_paint.mp4"
+  },
+  {
+   "id": "H_code",
+   "ok": true,
+   "seconds": 22.4,
+   "title": "KAI FINDS THE 0420 CODE 👀",
+   "file": "kai-vod1_H_code.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_H_code.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai finds the 0420 code 👀",
+   "hints": [
+    "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "6f2d4944e818",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_H_code.mp4"
+  },
+  {
+   "id": "D_house",
+   "ok": true,
+   "seconds": 20.92,
+   "title": "KAI HAS $407 TO FIX A HOUSE 💸",
+   "file": "kai-vod1_D_house.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_D_house.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai has $407 to fix a house 💸",
+   "hints": [
+    "Kontextsatz hat nur 7 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "25883a0ec243",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_D_house.mp4"
+  },
+  {
+   "id": "G_night",
+   "ok": true,
+   "seconds": 17.0,
+   "title": "KAI ON THE GTA 6 NIGHT DRIVE 🌙",
+   "file": "kai-vod1_G_night.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_G_night.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai on the GTA 6 night drive 🌙",
+   "hints": [
+    "Kontextsatz hat nur 7 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "7b785ea81969",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_G_night.mp4"
+  },
+  {
+   "id": "F_newgame",
+   "ok": true,
+   "seconds": 20.8,
+   "title": "KAI: 'A WHOLE NEW GAME' 🤯",
+   "file": "kai-vod1_F_newgame.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_F_newgame.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai: 'a whole NEW game' 🤯",
+   "hints": [
+    "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "f6138c123b5f",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_F_newgame.mp4"
+  },
+  {
+   "id": "I_manly",
+   "ok": true,
+   "seconds": 15.8,
+   "title": "KAI: 'BE MANLY, BRO' 😂",
+   "file": "kai-vod1_I_manly.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_I_manly.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai: 'be manly, bro' 😂",
+   "hints": [
+    "Kontextsatz hat nur 4 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "380f80568d3f",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_I_manly.mp4"
+  },
+  {
+   "id": "J_apology",
+   "ok": true,
+   "seconds": 19.8,
+   "title": "KAI KEEPS SAYING 'MY BAD' 😅",
+   "file": "kai-vod1_J_apology.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_J_apology.jpg",
+   "layout": "split",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai keeps saying 'my bad' 😅",
+   "hints": [
+    "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "c103f00e261b",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_J_apology.mp4"
+  },
+  {
+   "id": "Z_native_test",
+   "ok": true,
+   "seconds": 15.79,
+   "title": "KAI FINDS A BABY IN GTA 6 👶",
+   "file": "kai-vod1_Z_native_test.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_Z_native_test.jpg",
+   "layout": "native",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Kai finds a BABY in GTA 6 👶",
+   "hints": [
+    "Kontextsatz hat nur 7 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
+    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
+   ],
+   "sig": "680cfcb1eca0",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_Z_native_test.mp4"
+  }
+ ],
+ "phase": "rendered"
 }
