@@ -1,0 +1,10 @@
+{
+ "vod_arg": "clix",
+ "start_arg": "2026-11-19T05:00:00Z",
+ "minutes": 132,
+ "pointers": [],
+ "made": [],
+ "errors": [
+  "resolve: 'NoneType' object is not subscriptable"
+ ]
+}
