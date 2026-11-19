@@ -213,3 +213,38 @@ def test_watch_caps_recording_at_until(lw, tmp_path):
     clk = Clock(); clk.t = datetime.datetime(2026, 11, 19, 16, 0, tzinfo=datetime.timezone.utc).timestamp()
     lw.watch(root, sleep=clk.sleep, now=clk.now, watcher=lambda r, c, t_end: seen.append(t_end) or True)
     assert seen[0] == datetime.datetime(2026, 11, 19, 17, 30, tzinfo=datetime.timezone.utc).timestamp()
+
+
+# ---- v0.7 (19.11.2026): chat words, voice outburst, viewer-clip cluster ----
+@pytest.mark.parametrize("text,hit", [("KEKW", True), ("LULW that was insane", True), ("NO WAY bro", True), ("CLIP IT", True), ("W", True), ("L", True),
+                                      ("💀💀", True), ("w", False), ("what is he doing", False), ("hello chat how are you", False), ("this is a W moment", False)])
+def test_hype_msg(lw, text, hit):
+    assert lw.hype_msg(text) == hit
+
+
+def test_chat_boost_and_kw_share(lw):
+    assert lw.chat_boost(0) == 1.0 and lw.chat_boost(1.0) == 1.6
+    c = lw.Chat.__new__(lw.Chat); c._state(False)
+    for k in range(100, 110):
+        for i in range(4): c.add(k, f"u{k}{i}", "KEKW" if i < 2 else "ok then")
+    assert 0.45 < c.kw_share(110) < 0.55
+    assert c.kw_share(500) == 0.0  # fewer than 8 messages -> no claim
+
+
+def test_find_outburst_vs_last_two_minutes(lw):
+    db = [-30.0] * 300 + [-12.0] * 3 + [-30.0] * 60  # scream out of a calm minute
+    b, p = lw.find_outburst(db)
+    assert b >= 17 and 300 <= p <= 303
+    assert lw.find_outburst([-30.0] * 400)[0] == 0.0
+    loud = [-12.0] * 400  # constantly loud stream: no outburst
+    assert lw.find_outburst(loud)[0] == 0.0
+    assert lw.find_outburst([-60.0] * 400)[1] is None  # ad gap / silence
+
+
+def test_clip_cluster(lw):
+    t0 = 1000.0
+    assert lw.clip_cluster([t0 + 200], t0, 300) == (0, None)  # one clip is no proof
+    n, pos = lw.clip_cluster([t0 + 200, t0 + 210, t0 + 215, t0 + 50], t0, 300)
+    assert n == 3 and 180 <= pos <= 200
+    assert lw.clip_cluster([t0 + 100, t0 + 160], t0, 300) == (0, None)  # too far apart
+    assert lw.clip_cluster([t0 + 10, t0 + 12], t0, 600) == (0, None)  # older than the lookback window

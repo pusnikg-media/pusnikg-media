@@ -67,6 +67,75 @@ def find_peak(db, win=20, base=600):
 PROFILES = {"irl": {"min_chat": 4.5, "co_chat": 2.5}, "gaming": {"min_chat": 3.0, "co_chat": 2.0}}
 
 
+HYPE_RE = re.compile(r"(?i)(?:\bkekw\w*|\blul\w*|\bomegalul\w*|\blmf?ao\b|\bclip (?:it|that)\b|\bno ?way\b|\bbro+\b|\bwtf\b|\bpog\w*|\bomg\b|\bicant\b|\bhol[yl]\b|\blets? ?go+\b|\bcracked\b|\binsane\b|\bcrazy\b|💀|😂|🤣|😭|🔥)")
+HYPE_RE_CS = re.compile(r"^(?:W+|L+)$")  # a bare "W" / "L" counts only as a whole message (case-sensitive: lowercase w/l is noise)
+
+
+def hype_msg(text):
+    """v0.7: chat CONTENT signal - KEKW / LUL / OMEGALUL / LMAO / skulls / laughing / 'CLIP IT' / W / L / 'NO WAY' / BRO."""
+    t = (text or "").strip()
+    if HYPE_RE_CS.match(t): return True
+    return bool(HYPE_RE.search(re.sub(r"\b[WL]\b", "", t)))
+
+
+def chat_boost(share):
+    """Share of hype messages (0-1) in the burst window -> multiplier for the chat ratio (1.0 ... 1.6)."""
+    return 1.0 + min(max(share, 0.0), 0.6)
+
+
+def find_outburst(db, short=4, ref=120, look=180):
+    """v0.7: sudden voice outburst (scream, laughter) against the last `ref` seconds only (not the 10 min baseline): best (dB, position) of the newest `look` s,
+    where dB = mean of the 2 loudest seconds in a `short` s window minus the median of the `ref` s before it (silence / ad gaps ignored)."""
+    import numpy as np
+    d = np.array(db, dtype=np.float32); n = len(d); best, bp = 0.0, None
+    for t in range(max(ref, n - look), n - short + 1):
+        w = d[t - ref:t]; w = w[w > -50]
+        if len(w) < ref // 2: continue
+        cur = d[t:t + short]
+        if (cur < -50).any(): continue
+        s = float(np.sort(cur)[-2:].mean() - np.median(w))
+        if s > best: best, bp = s, t + int(np.argmax(cur))
+    return round(best, 1), bp
+
+
+def clip_cluster(times, t0, upto, near=25, need=2, look=240):
+    """v0.7: viewers' Twitch clips created at (almost) the same time = strongest sign of a moment. times = clip creation epochs, t0 = recording start epoch,
+    upto = recording seconds so far. Returns (n, position): the biggest group of >= need clips within `near` s in the newest `look` s; the moment is ~14 s
+    before the click (a clip holds ~25 s before + 5 s after the click, and people click after the reaction)."""
+    pos = sorted(x - t0 for x in times if upto - look <= x - t0 <= upto)
+    best, mid = 0, None
+    for i, a in enumerate(pos):
+        grp = [x for x in pos[i:] if x - a <= near]
+        if len(grp) > best: best, mid = len(grp), sum(grp) / len(grp)
+    if best < need: return 0, None
+    return best, max(int(mid) - 14, 0)
+
+
+class ClipWatch:
+    """v0.7: polls the creation times of the channel's Twitch clips of the last hour (anonymous GQL, like the chat replay). Silent when Twitch refuses."""
+    def __init__(self, channel):
+        import threading
+        self.ch = channel.lower(); self.times = {}; self.ok = False; self.err = 0
+        threading.Thread(target=self.run, daemon=True).start()
+
+    def poll(self):
+        import urllib.request
+        q = ('query{user(login:"%s"){clips(first:40, criteria:{period:LAST_DAY, sort:CREATED_AT_DESC}){edges{node{id createdAt viewCount}}}}}' % re.sub(r"[^a-z0-9_]", "", self.ch))
+        r = urllib.request.Request("https://gql.twitch.tv/gql", json.dumps({"query": q}).encode(), {"Client-ID": "kimne78kx3ncx6brgo4mv6wki5h1ko", "Content-Type": "application/json"})
+        ed = json.load(urllib.request.urlopen(r, timeout=20))["data"]["user"]["clips"]["edges"]
+        for e in ed:
+            n = e["node"]; self.times[n["id"]] = datetime.datetime.fromisoformat(n["createdAt"].replace("Z", "+00:00")).timestamp()
+        self.ok = True
+
+    def run(self):
+        while True:
+            try: self.poll(); self.err = 0
+            except Exception as e:
+                self.err += 1
+                if self.err in (1, 20): print("clipwatch:", str(e)[-80:])
+            time.sleep(45)
+
+
 def with_profile(ch):
     """Channel entry + profile defaults (explicit fields in the entry win)."""
     return {**PROFILES.get(str(ch.get("profile", "gaming")).lower(), PROFILES["gaming"]), **ch}
@@ -164,13 +233,14 @@ class Chat:
         threading.Thread(target=self.run, daemon=True).start()
 
     def _state(self, legacy=False):
-        self.n = {}; self.u = {}; self.alerts = {}; self.kinds = {}; self.ok = False; self.legacy = legacy
+        self.n = {}; self.u = {}; self.kw = {}; self.alerts = {}; self.kinds = {}; self.ok = False; self.legacy = legacy
 
     def add(self, k, login, text, bits=0, kind=None):
         kind = kind or classify(login, text, bits)
         if kind and not self.legacy:
             self.alerts[k] = self.alerts.get(k, 0) + 1; self.kinds[kind] = self.kinds.get(kind, 0) + 1; return
         self.n[k] = self.n.get(k, 0) + 1; self.u.setdefault(k, set()).add((login or "").lower()); self.ok = True
+        if hype_msg(text): self.kw[k] = self.kw.get(k, 0) + 1
 
     def run(self):
         import socket
@@ -218,6 +288,11 @@ class Chat:
         if med < 3: return 0.0, None  # chat too quiet to say anything
         k0 = max(0, len(w) - 180); i = k0 + int(np.argmax(w[k0:]))
         return round(float(w[i]) / med, 2), lo + i - 4  # people type a few seconds after the moment
+
+    def kw_share(self, cp, before=20, after=5):
+        """v0.7: share of the messages in [cp - before, cp + after] that carry hype words (KEKW, LUL, 💀, CLIP IT, W ...)."""
+        r = range(max(cp - before, 0), cp + after); m = sum(self.n.get(k, 0) for k in r)
+        return (sum(self.kw.get(k, 0) for k in r) / m) if m >= 8 else 0.0
 
     def alert_near(self, cp, before=35, after=5):
         """(alert events, distinct chatters) in [cp - before, cp + after]: a burst that is mostly an alert chain is no moment."""
@@ -358,15 +433,18 @@ def save_calib(root, ch, data, push):
         time.sleep(6)
 
 
-def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False):
+def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False, clipw=None, t_rec=None):
     """Shared by watch and simulate: rec = folder that fills with %05d.ts pieces, alive() = recorder still running.
-    ads = AdWatch (live only), keep = leave the pieces on disk (comparison runs read the same recording twice)."""
+    ads = AdWatch (live only), keep = leave the pieces on disk (comparison runs read the same recording twice).
+    v0.7 (19.11.): clipw = ClipWatch (viewers' clips, live only), t_rec = recording start epoch; chat words, voice outburst, safety net (see below)."""
     ch = with_profile(ch); skipped = {"alert": 0, "ad": 0}; expect = 0
-    db, segs, done, clips, last = [], {}, 0, [], -999.0; t0 = 0.0
+    db, segs, done, clips, last = [], {}, 0, [], -999.0; t0 = 0.0; safe_last = -999
     dry = bool(ch.get("log_only")); cal = {"channel": ch["name"], "started": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
                                            "minutes": [], "events": []}
     min_chat = float(ch.get("min_chat", 3.0)); co_chat = float(ch.get("co_chat", 2.0))  # calibrated 15.11.2026 (98 min, 2 channels): 2.5/1.4 fired every 4.6 min
     alert_max = int(ch.get("alert_max", 3)); warm = int(ch.get("warmup_s", 480))  # no clip in the first 8 min of a recording (chat/loudness baseline still forming)
+    safety_s = int(ch.get("safety_s", 1800)); cands = []; keep_min = 35 if safety_s else 15  # v0.7: nothing for safety_s -> best-scored moment of that time
+    min_burst = float(ch.get("min_burst", 9.0))
     min_hype = float(ch.get("min_hype", 9)); per_hour = int(ch.get("per_hour", 3)); max_clips = int(ch.get("max_clips", 8))
     while time.time() < t_end:
         files = sorted(glob.glob(os.path.join(rec, "*.ts"))); run = alive()
@@ -382,7 +460,19 @@ def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False):
             print(f"min {done:3d} hype {hype:4.1f} peak {peak} chat x{cr} at {cp}")
             if len(db) < warm and not ch.get("legacy"):  # live test 16.11.: 3 clips in the first 9 min (baseline of the young recording is unstable, expected ~0.5 at 3/h)
                 hype, peak, cr, cp = 0.0, None, 0.0, None
-            if chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
+            burst, bp = (find_outburst(db) if not ch.get("legacy") else (0.0, None)); vcn, vcp = 0, None; score = 0.0
+            if len(db) < warm and not ch.get("legacy"): burst, bp = 0.0, None
+            if clipw and clipw.ok and t_rec and not ch.get("legacy") and len(db) >= warm: vcn, vcp = clip_cluster(list(clipw.times.values()), t_rec, len(db))
+            if chat and chat.ok and cp is not None and not chat.legacy:  # v0.7: hype words in the chat raise the ratio (up to x1.6)
+                sh = chat.kw_share(cp); cr = round(cr * chat_boost(sh), 2)
+                if sh >= 0.25: print(f"   chat words {sh:.0%} hype -> ratio x{cr}")
+            if not ch.get("legacy"):  # v0.7: one comparable total score per minute (safety net + log)
+                score = round(hype / max(min_hype, 1) + cr / max(min_chat, 0.1) + burst / max(min_burst, 1) + 2.0 * (vcn >= 2), 2)
+                if peak is not None and len(db) >= warm: cands.append((score, int(peak), done))
+                if burst >= min_burst or vcn >= 2: print(f"   outburst {burst} dB at {bp} | viewer clips x{vcn} at {vcp} | score {score}")
+            if vcn >= 2 and vcp is not None:  # strongest proof: several viewers clipped the same moment
+                cr = max(cr, min_chat); cp = vcp + 18; peak, hype = vcp, max(hype, min_hype); kind = "viewer-clips"; print(f"   viewers clipped it x{vcn}: moment at {vcp}")
+            elif chat and chat.ok:  # with a chat signal: a chat burst decides; loudness alone needs at least a busier chat
                 al, us = chat.alert_near(cp) if (cp is not None and cr >= min_chat) else (0, 0)
                 if cp is not None and cr >= min_chat and not chat.legacy and al >= alert_max and al >= 0.25 * us:
                     skipped["alert"] += 1; peak = None; print(f"   chat burst x{cr} skipped: alert chain ({al} alerts vs {us} chatters)")
@@ -391,6 +481,8 @@ def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False):
                     w0 = max(cp - 28, 0); seg_ = db[w0:cp + 5]  # measured lags 7-25 s (median 17), 25 was the old cap
                     lag = (cp + 4) - (w0 + max(range(len(seg_)), key=seg_.__getitem__)) if seg_ else 0; kind = "chat"
                     peak, hype = (max(cp + 4 - lag, 0) if seg_ else max(cp, 0)), max(hype, min_hype); print(f"   chat burst x{cr}: moment {lag:.0f} s before the chat peak")
+                elif cp is not None and burst >= min_burst and bp is not None and cr >= 0.8 * co_chat and abs(cp - bp) < 30:  # v0.7: a sudden scream/laugh + a lively chat
+                    peak, hype, kind = bp, max(hype, min_hype), "outburst"; print(f"   voice outburst {burst} dB + chat x{cr}: moment at {bp}")
                 elif not (cp is not None and cr >= co_chat and peak is not None and abs(cp - peak) < 30): peak = None
             if dry:
                 if peak is not None and hype >= min_hype and len(db) - peak >= 12 and peak - last > 90:
@@ -407,7 +499,18 @@ def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False):
                     clips.append(peak); last = peak
                 except Exception as e:
                     print("WARN clip failed:", str(e)[-300:]); last = peak
-            for j in [k for k in segs if k < i - 14 and not keep]:  # keep 15 minutes on disk
+            anchor = max(last, warm, safe_last)  # v0.7 safety net: safety_s (30 min) without a clip -> the best-scored moment of that time becomes a candidate (the agent still looks at it)
+            if safety_s and not dry and not ch.get("legacy") and len(clips) < max_clips and len(db) - anchor >= safety_s:
+                pool = [c for c in cands if len(db) - safety_s <= c[1] <= len(db) - 12 and c[1] - last > 90 and (c[1] - 30) // SEG in segs]
+                safe_last = len(db)
+                if pool:
+                    sc, sp, _ = max(pool); stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
+                    print(f"   SAFETY NET: {safety_s // 60} min without a trigger -> best moment {sp} (score {sc})")
+                    try:
+                        entry, name = make_clip(ch, root, segs, t0, sp, max(hype, 0.0), stamp); entry["chat"] = cr; entry["peak_s"] = int(sp); entry["safety"] = True; entry["score"] = sc
+                        publish(root, name, entry, push); clips.append(sp); last = sp
+                    except Exception as e: print("WARN safety clip failed:", str(e)[-300:])
+            for j in [k for k in segs if k < i - (keep_min - 1) and not keep]:  # keep 15 minutes on disk (v0.7: 35 for the safety net)
                 try: os.remove(segs.pop(j))
                 except OSError: pass
         if not run and done >= len(files): break
@@ -477,7 +580,8 @@ def watch_once(root, c, t_end):
         print("LIVE:", ch["name"])
         m = re.search(r"twitch\.tv/([A-Za-z0-9_]+)", ch["url"]); chat = Chat(m.group(1)) if m else None
         ads = AdWatch(lambda: rc.hls, rc.t_start) if m else None  # ad markers exist on Twitch HLS only
-        try: n = loop(ch, root, rec, rc.alive, True, t_end, chat, ads)
+        clipw = ClipWatch(m.group(1)) if m else None
+        try: n = loop(ch, root, rec, rc.alive, True, t_end, chat, ads, clipw=clipw, t_rec=rc.t_start)
         finally: rc.stop()
         print(f"LIVEWATCH_DONE {ch['name']} clips {n}"); return True
     return False
