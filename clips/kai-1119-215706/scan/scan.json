@@ -1,0 +1,63 @@
+{
+ "duration": 42.0,
+ "width": 1280,
+ "height": 720,
+ "fps": 60.0,
+ "mode": "full",
+ "regions": [],
+ "cuts": [],
+ "sentences": [
+  {
+   "s": 15.72,
+   "e": 17.6,
+   "text": "Oh my gosh W car"
+  },
+  {
+   "s": 23.2,
+   "e": 23.92,
+   "text": "Yeah"
+  },
+  {
+   "s": 26.94,
+   "e": 27.88,
+   "text": "Y 'all hit an engine?"
+  },
+  {
+   "s": 29.64,
+   "e": 30.14,
+   "text": "Oh my god."
+  },
+  {
+   "s": 30.56,
+   "e": 30.82,
+   "text": "Oh my"
+  },
+  {
+   "s": 33.18,
+   "e": 33.76,
+   "text": "god."
+  },
+  {
+   "s": 33.88,
+   "e": 34.6,
+   "text": "The tracker's about to happen."
+  },
+  {
+   "s": 38.48,
+   "e": 41.8,
+   "text": "Oh, if you drive fast, the tracker can't own."
+  }
+ ],
+ "candidates": [
+  {
+   "a": 26.79,
+   "b": 42.0,
+   "len": 15.2,
+   "score": 0.398,
+   "cuts": 0,
+   "text": "Y 'all hit an engine? Oh my god. Oh my god. The tracker's about to happen. Oh, if you drive fast, the tracker can't own.",
+   "sheet": "cand_00.jpg"
+  }
+ ],
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-215706.mp4"
+}

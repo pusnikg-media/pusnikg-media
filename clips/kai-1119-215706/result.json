@@ -1,0 +1,26 @@
+{
+ "ok": true,
+ "name": "kai-1119-215706",
+ "sig": "c5ba2cadbe0c",
+ "attempts": 1,
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-215706.mp4",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-1119-215706/scan/scan.json",
+ "clips": [
+  {
+   "id": "A",
+   "ok": true,
+   "seconds": 15.59,
+   "title": "DRIVE SLOW, GO TO JAIL 💀",
+   "file": "kai-1119-215706_A.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-1119-215706/qa/kai-1119-215706_A.jpg",
+   "layout": "native",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Drive slow, go to jail 💀",
+   "style": "mini",
+   "sig": "62d4a1b8a79d",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-1119-215706/kai-1119-215706_A.mp4"
+  }
+ ],
+ "phase": "rendered"
+}
