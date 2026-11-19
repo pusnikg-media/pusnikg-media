@@ -123,7 +123,7 @@ class Ads:
 def _run_loop(lw, monkeypatch, tmp_path, ads=None, gap=()):
     rec = tmp_path / "rec"; rec.mkdir(); _pieces(str(rec), gap=gap)
     made = []
-    monkeypatch.setattr(lw, "make_clip", lambda ch, root, segs, t0, peak, hype, stamp: made.append((peak, hype)) or ({"id": "x", "url": "u"}, "n"))
+    monkeypatch.setattr(lw, "make_clip", lambda ch, root, segs, t0, peak, hype, stamp, **k: made.append((peak, hype)) or ({"id": "x", "url": "u"}, "n"))
     monkeypatch.setattr(lw, "publish", lambda *a, **k: None)
     fast_time(lw, monkeypatch, 0)
     ch = {"name": "synth", "url": "u", "warmup_s": 0, "min_hype": 9, "per_hour": 3, "max_clips": 8}
