@@ -1,7 +1,7 @@
 {
  "ok": true,
  "name": "kai-vod1",
- "sig": "04314bfb2e0e",
+ "sig": "957b4427076e",
  "attempts": 1,
  "source": "https://drive.google.com/file/d/1E3UmNb_zi5JTFJBMY3Wgh7QQOqXkoEOD/view",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/scan/scan.json",
@@ -57,7 +57,7 @@
     "Kontextsatz hat nur 4 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "5f20f15aaa83",
+   "sig": "091b5497555f",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_C_here.mp4"
   },
   {
@@ -75,7 +75,7 @@
     "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "c721f2ca2ad3",
+   "sig": "4b4e667b6490",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_E_paint.mp4"
   },
   {
@@ -93,7 +93,7 @@
     "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "6f2d4944e818",
+   "sig": "77149276cfa4",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_H_code.mp4"
   },
   {
@@ -165,7 +165,7 @@
     "Kontextsatz hat nur 4 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "380f80568d3f",
+   "sig": "2453e39cd436",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_I_manly.mp4"
   },
   {
@@ -183,26 +183,8 @@
     "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "c103f00e261b",
+   "sig": "e91ea99d6a4b",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_J_apology.mp4"
-  },
-  {
-   "id": "Z_native_test",
-   "ok": true,
-   "seconds": 15.79,
-   "title": "KAI FINDS A BABY IN GTA 6 👶",
-   "file": "kai-vod1_Z_native_test.mp4",
-   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/qa/kai-vod1_Z_native_test.jpg",
-   "layout": "native",
-   "tracked": false,
-   "punches": 0,
-   "caption": "Kai finds a BABY in GTA 6 👶",
-   "hints": [
-    "Kontextsatz hat nur 7 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
-    "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
-   ],
-   "sig": "680cfcb1eca0",
-   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_Z_native_test.mp4"
   }
  ],
  "phase": "rendered"
