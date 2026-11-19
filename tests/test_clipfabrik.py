@@ -225,3 +225,25 @@ def test_crop_and_scale_keep_the_aspect_ratio(cf, tmp_path, monkeypatch, layout,
     fc = next(c for c in calls if "[f0]crop=" in c)
     cw, ch, sw, sh = map(int, re.search(r"\[f0\]crop=(\d+):(\d+)[^,]*,scale=(\d+):(\d+)", fc).groups())
     assert abs((cw / ch) / (sw / sh) - 1) < 0.01, (size, layout, cw, ch, sw, sh)
+
+
+def test_mini_style_black_background_and_plain_label(cf, src_clip, tmp_path):
+    """v7 (19.11.): style mini = Mini-Text ohne Kasten, Hintergrund schwarz statt Unschärfe (virale GTA-6-Reels)."""
+    import subprocess
+    def gray(f, x, y):
+        r = subprocess.run(["ffmpeg", "-v", "error", "-ss", "1", "-i", f, "-vf", f"crop=8:8:{x}:{y},format=gray", "-frames:v", "1", "-f", "rawvideo", "-"],
+                           capture_output=True); return max(r.stdout)
+    d1, d2 = tmp_path / "a", tmp_path / "b"; d1.mkdir(); d2.mkdir()
+    r, fm = render(cf, src_clip, d1, layout="native", style="mini", caption="Realistic game 🥀")
+    _, fb = render(cf, src_clip, d2, layout="native", caption=CAPTION)
+    assert r["layout"] == "native" and r["style"] == "mini" and r.get("hints") is None, r
+    assert gray(fm, 40, 1800) <= 24, "Hintergrund unten ist nicht schwarz"
+    assert gray(fb, 40, 1800) > gray(fm, 40, 1800), "box-Stil hat weiter den unscharfen Hintergrund"
+
+
+def test_mini_caption_hints(cf):
+    assert cf.caption_hints("Realistic game 🥀", 20, "mini") == []
+    assert cf.caption_hints("Rockstar cooked 💀", 30, "mini") == []
+    assert any("höchstens 5" in h for h in cf.caption_hints("Kai Cenat crashes a plane into the swamp today 😭", 20, "mini"))
+    assert any("Emoji" in h for h in cf.caption_hints("Realistic game", 20, "mini"))
+    assert cf.caption_hints("Realistic game 🥀") != []   # box-Stil prüft weiter auf ganzen Satz

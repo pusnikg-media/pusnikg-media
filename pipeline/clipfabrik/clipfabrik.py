@@ -47,6 +47,10 @@ v5 (15.11., from the reference lab: viral streamer clips keep the ORIGINAL frami
   caption   clip only: one context sentence in normal spelling, e.g. "Lacy did NOT expect Rug to DANCE on his stream 😭"
             (max 3 lines, ~95 characters; emojis are drawn when the runner has a colour emoji font). Drawn as a white box
             with black text right above the picture (layout native/framed) or at the top (full). Replaces the big title.
+v7 (19.11., viral GTA-6 reels with 700K+ views: tiny ironic caption, no box, picture on black)
+  style     clip only: "box" (default, white box as above) or "mini" = 2-5 words + emoji in plain white text (thin black outline,
+            no box) right above the picture; with layout native the background is BLACK instead of the blurred fill
+            (e.g. "Realistic game 🥀"). In split it is drawn on the seam like the box. Hints then check 2-6 words.
 Result: clips/<name>/result.json {"ok", "sig", "attempts", "clips": [{"id", "ok", "url", "seconds", "title", "caption", "hints"}], "error"}.
 "hints" = soft style checks of the caption (too short, no emoji, two sentences ...) - the clip is rendered anyway.
 Layout 1080x1920: blurred fill, sharp centre crop 1080x1200 at y=400, title (+ pill) on top, karaoke captions (libass)."""
@@ -380,13 +384,21 @@ def tokens(text):
     return out
 
 
-def caption_hints(text, seconds=None):
+def caption_hints(text, seconds=None, style="box"):
     """Soft checks against the house style of viral clip captions (reel-scout 16.11.2026). Hints only - nothing fails.
     The agent reads them in result.json ("hints") and fixes the job once if a hint is justified."""
     t = re.sub(r"\s+", " ", text or "").strip(); h = []
     if not t: return h
     words = [w for w in re.findall(r"[A-Za-z0-9$'’%.,-]+", t) if re.search(r"[A-Za-z0-9]", w)]
     emo = [c for c in tokens(t) if is_emoji(c[0])]
+    if style == "mini":  # v7: short ironic label - no name, no "...", 2-6 words
+        if len(words) < 2: h.append("Mini-Text hat weniger als 2 Wörter")
+        if len(words) > 6: h.append(f"Mini-Text hat {len(words)} Wörter – höchstens 5 (sonst style box nehmen)")
+        if not emo: h.append("kein Emoji am Ende (üblich: 💀 😭 🥀 🔥)")
+        elif len(emo) > 2: h.append("mehr als 2 Emojis")
+        if t.isupper(): h.append("alles in Großbuchstaben – normale Schreibweise verwenden")
+        if seconds is not None and seconds > 50: h.append(f"Clip dauert {seconds:.0f} s – virale GTA-Clips liegen bei 15–45 s")
+        return h
     if len(words) < 8: h.append(f"Kontextsatz hat nur {len(words)} Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern")
     if len(words) > 17: h.append(f"Kontextsatz hat {len(words)} Wörter – auf höchstens 15 kürzen")
     if not emo: h.append("kein Emoji am Ende (üblich: 😭 😂 👀 💰)")
@@ -420,7 +432,7 @@ def caption_wrap(d, text, f, size, maxw):
     return lines, wlen
 
 
-def caption_box(img, text, bottom, size=46, maxw=920):
+def caption_box(img, text, bottom, size=46, maxw=920, plain=False):
     """TikTok-style label: white rounded box, black bold text, centred, its lower edge at `bottom`.
     Short labels: 46 px, up to 3 lines. A whole story sentence (9-15 words, reel-scout 16.11.2026): shrinks to 42/38 px, up to 4 lines."""
     from PIL import Image, ImageDraw, ImageFont
@@ -430,14 +442,16 @@ def caption_box(img, text, bottom, size=46, maxw=920):
         except OSError: pass
     text = text.replace("\ufe0f", "")
     if ef is None: text = re.sub(r"\s+", " ", "".join(c for c in tokens(text) if not is_emoji(c[0]))).strip()
-    for size, maxl in ((size, 3), (42, 3), (38, 4)):
+    steps = ((60, 1), (60, 2), (52, 2), (46, 3)) if plain else ((size, 3), (42, 3), (38, 4))
+    if plain: maxw = 960
+    for size, maxl in steps:
         f = pfont(size); lines, wlen = caption_wrap(d, text, f, size, maxw)
         if len(lines) <= maxl and all(wlen(l) <= maxw + 40 for l in lines): break
     else:
         raise Fail(f"caption too long ({len(text)} chars, max ~150 / 4 lines): {text!r}")
     lh = int(size * 1.28); bw = int(max(wlen(l) for l in lines)) + 52; bh = lh * len(lines) + 30
     x0 = (W - bw) // 2; y0 = int(bottom - bh)
-    d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], radius=22, fill=(255, 255, 255, 255))
+    if not plain: d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], radius=22, fill=(255, 255, 255, 255))
     for i, l in enumerate(lines):
         x = (W - wlen(l)) / 2; y = y0 + 15 + i * lh
         for c in tokens(l):
@@ -451,11 +465,13 @@ def caption_box(img, text, bottom, size=46, maxw=920):
                 except Exception: pass
                 x += size * 1.08
             else:
-                d.text((x, y), c, font=f, fill=(0, 0, 0, 255)); x += d.textlength(c, font=f)
+                if plain: d.text((x, y), c, font=f, fill=(255, 255, 255, 255), stroke_width=2, stroke_fill=(0, 0, 0, 255))
+                else: d.text((x, y), c, font=f, fill=(0, 0, 0, 255))
+                x += d.textlength(c, font=f)
     return y0
 
 
-def overlay(title, pill, path, logo=None, logo_w=380, logo_pos="video_bottom", fg=(400, 1200), shade=False, caption=None, cap_bottom=None):
+def overlay(title, pill, path, logo=None, logo_w=380, logo_pos="video_bottom", fg=(400, 1200), shade=False, caption=None, cap_bottom=None, plain=False):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     if shade:  # full-screen layout: dark top gradient keeps the title readable on bright IRL footage
@@ -464,7 +480,7 @@ def overlay(title, pill, path, logo=None, logo_w=380, logo_pos="video_bottom", f
         img.putalpha(g.resize((W, H)))
     d = ImageDraw.Draw(img)
     if caption:  # context sentence instead of the big title (reference-lab style)
-        caption_box(img, caption, cap_bottom if cap_bottom is not None else 330)
+        caption_box(img, caption, cap_bottom if cap_bottom is not None else 330, plain=plain)
         if logo is not None: paste_logo(img, logo, logo_w, y_bottom=fg[0] + fg[1] - 40)
         img.save(path); return
     fs = 118
@@ -834,6 +850,7 @@ def render_clip(job, c, src, p, words, out, tmp):
     cam = facecam_rect(src, a, b - a, p, c.get("facecam", job.get("facecam", "auto"))) if layout == "split" else None
     if layout == "split" and not cam: layout = "native"; print(f"WARN {cid}: no facecam found - layout native")
     full = layout == "full"; native = layout == "native"; split = layout == "split"
+    mini = str(c.get("style", "box")) == "mini" and bool(capt) and not full  # v7: plain mini label (+ black background in native)
     zoom = bool(c.get("zoom", job.get("zoom", full))) and p["audio"]
     ov = os.path.join(tmp, cid + ".png")
     caps = c.get("captions", not (native or split)) and bool(words); capb = None
@@ -863,7 +880,7 @@ def render_clip(job, c, src, p, words, out, tmp):
     fg_x = (W - fg_w) // 2 // 2 * 2
     overlay(title, pill, ov, logo=job.get("_logo_img"), logo_w=int(c.get("logo_w", job.get("logo_w", 380))),
             logo_pos=c.get("logo_pos", job.get("logo_pos", "video_bottom")), fg=(fg_y, fg_h), shade=full and not capt,
-            caption=capt or None, cap_bottom=capb if split else (None if full else fg_y - 18))
+            caption=capt or None, cap_bottom=capb if split else (None if full else fg_y - 18), plain=mini)
     fps = min(60, max(24, round(p["fps"])))
     db = energy(src, a, b - a) if p["audio"] and (zoom or c.get("hook") == "auto") else []
     hook = c.get("hook")
@@ -887,7 +904,8 @@ def render_clip(job, c, src, p, words, out, tmp):
             fl = f"[0:v]crop={cw}:{ch}{xpos},scale={W}:{H}:flags=lanczos{zf},setsar=1[v1];[v1][1:v]overlay=0:0[v2];[v2]"
         else:
             fl = (f"[0:v]{pre}split=2[b0][f0];"
-                  f"[b0]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,scale={W}:{H},eq=brightness=-0.22:saturation=1.1[bg];"
+                  + (f"[b0]scale=108:192,setsar=1,drawbox=x=0:y=0:w=iw:h=ih:color=black:t=fill,scale={W}:{H}[bg];" if mini and native else
+                     f"[b0]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,scale={W}:{H},eq=brightness=-0.22:saturation=1.1[bg];") +
                   f"[f0]crop={cw}:{ch}{xpos},scale={fg_w}:{fg_h}:flags=lanczos{zf}[fg];"
                   f"[bg][fg]overlay={fg_x}:{fg_y}[v1];[v1][1:v]overlay=0:0[v2];[v2]")
         fl += (f"subtitles={sub}:fontsdir={FONTS}," if caps and n else "") + f"fps={fps},format=yuv420p"
@@ -921,7 +939,8 @@ def render_clip(job, c, src, p, words, out, tmp):
          "layout": layout, "tracked": stats["tracked"], "punches": stats["punches"]}
     if hook: r["hook"] = [round(float(hook[0]), 2), round(float(hook[1]), 2)]
     if capt:
-        r["caption"] = capt; hints = caption_hints(capt, q["dur"])
+        r["caption"] = capt; hints = caption_hints(capt, q["dur"], "mini" if mini else "box")
+        if mini: r["style"] = "mini"
         if hints: r["hints"] = hints; print(f"HINT {cid}: " + "; ".join(hints))
     return r
 
