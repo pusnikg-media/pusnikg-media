@@ -1,0 +1,2833 @@
+{
+ "duration": 7544.72,
+ "width": 1280,
+ "height": 720,
+ "fps": 60.0,
+ "mode": "hotspots",
+ "regions": [
+  {
+   "a": 397.0,
+   "b": 467.0,
+   "peak": 439.0,
+   "hype": 12.6
+  },
+  {
+   "a": 3229.0,
+   "b": 3299.0,
+   "peak": 3273.0,
+   "hype": 12.34
+  },
+  {
+   "a": 264.0,
+   "b": 334.0,
+   "peak": 306.0,
+   "hype": 11.21
+  },
+  {
+   "a": 4269.0,
+   "b": 4339.0,
+   "peak": 4301.0,
+   "hype": 11.16
+  },
+  {
+   "a": 153.0,
+   "b": 223.0,
+   "peak": 188.0,
+   "hype": 10.18
+  },
+  {
+   "a": 6197.0,
+   "b": 6267.0,
+   "peak": 6241.0,
+   "hype": 9.9
+  },
+  {
+   "a": 2736.0,
+   "b": 2806.0,
+   "peak": 2776.0,
+   "hype": 8.92
+  },
+  {
+   "a": 3950.0,
+   "b": 4020.0,
+   "peak": 3982.0,
+   "hype": 8.61
+  },
+  {
+   "a": 2543.0,
+   "b": 2613.0,
+   "peak": 2584.0,
+   "hype": 8.49
+  },
+  {
+   "a": 873.0,
+   "b": 943.0,
+   "peak": 909.0,
+   "hype": 8.46
+  },
+  {
+   "a": 4754.0,
+   "b": 4824.0,
+   "peak": 4797.0,
+   "hype": 8.38
+  },
+  {
+   "a": 6112.0,
+   "b": 6182.0,
+   "peak": 6155.0,
+   "hype": 8.37
+  },
+  {
+   "a": 2968.0,
+   "b": 3038.0,
+   "peak": 3012.0,
+   "hype": 8.31
+  },
+  {
+   "a": 2640.0,
+   "b": 2710.0,
+   "peak": 2683.0,
+   "hype": 8.29
+  },
+  {
+   "a": 4194.0,
+   "b": 4264.0,
+   "peak": 4238.0,
+   "hype": 8.2
+  },
+  {
+   "a": 2877.0,
+   "b": 2947.0,
+   "peak": 2903.0,
+   "hype": 8.09
+  },
+  {
+   "a": 2171.0,
+   "b": 2241.0,
+   "peak": 2211.0,
+   "hype": 7.95
+  },
+  {
+   "a": 6850.0,
+   "b": 6920.0,
+   "peak": 6894.0,
+   "hype": 7.92
+  },
+  {
+   "a": 4664.0,
+   "b": 4734.0,
+   "peak": 4694.0,
+   "hype": 7.85
+  },
+  {
+   "a": 3155.0,
+   "b": 3225.0,
+   "peak": 3199.0,
+   "hype": 7.82
+  },
+  {
+   "a": 5787.0,
+   "b": 5857.0,
+   "peak": 5827.0,
+   "hype": 7.82
+  },
+  {
+   "a": 4539.0,
+   "b": 4609.0,
+   "peak": 4579.0,
+   "hype": 7.79
+  },
+  {
+   "a": 3845.0,
+   "b": 3915.0,
+   "peak": 3887.0,
+   "hype": 7.69
+  },
+  {
+   "a": 4367.0,
+   "b": 4437.0,
+   "peak": 4411.0,
+   "hype": 7.46
+  },
+  {
+   "a": 5571.0,
+   "b": 5641.0,
+   "peak": 5611.0,
+   "hype": 7.4
+  },
+  {
+   "a": 7345.0,
+   "b": 7415.0,
+   "peak": 7387.0,
+   "hype": 7.17
+  },
+  {
+   "a": 802.0,
+   "b": 872.0,
+   "peak": 838.0,
+   "hype": 7.01
+  },
+  {
+   "a": 1565.0,
+   "b": 1635.0,
+   "peak": 1605.0,
+   "hype": 6.94
+  }
+ ],
+ "cuts": [],
+ "sentences": [
+  {
+   "s": 397.02,
+   "e": 398.22,
+   "text": "What up girl"
+  },
+  {
+   "s": 405.8,
+   "e": 409.88,
+   "text": "I'm doing good"
+  },
+  {
+   "s": 427.6,
+   "e": 430.4,
+   "text": "That's what y 'all are supposed to do."
+  },
+  {
+   "s": 430.4,
+   "e": 432.12,
+   "text": "Damn, that one was in there."
+  },
+  {
+   "s": 435.58,
+   "e": 436.54,
+   "text": "Hey Camino."
+  },
+  {
+   "s": 437.24,
+   "e": 440.64,
+   "text": "I've been waiting 13 years to explore this shit."
+  },
+  {
+   "s": 441.02,
+   "e": 442.08,
+   "text": "Calm the fuck down."
+  },
+  {
+   "s": 444.78,
+   "e": 446.72,
+   "text": "Camino, who am I fucking doing?"
+  },
+  {
+   "s": 447.48,
+   "e": 448.6,
+   "text": "Who I thought you'd do was both."
+  },
+  {
+   "s": 449.38,
+   "e": 451.78,
+   "text": "No, I'm just where we were."
+  },
+  {
+   "s": 452.66,
+   "e": 452.68,
+   "text": "Shit."
+  },
+  {
+   "s": 453.52,
+   "e": 455.58,
+   "text": "Yeah, so I called around a little on Gates."
+  },
+  {
+   "s": 455.58,
+   "e": 457.56,
+   "text": "You ain't the only one asking."
+  },
+  {
+   "s": 459.64,
+   "e": 460.78,
+   "text": "So what's that?"
+  },
+  {
+   "s": 461.84,
+   "e": 462.58,
+   "text": "Stuff in the gas."
+  },
+  {
+   "s": 463.76,
+   "e": 463.88,
+   "text": "Okay?"
+  },
+  {
+   "s": 465.6,
+   "e": 466.92,
+   "text": "I mean it!"
+  },
+  {
+   "s": 3229.62,
+   "e": 3231.96,
+   "text": "Yo, I'm gonna be fixing up my house right now"
+  },
+  {
+   "s": 3233.86,
+   "e": 3235.92,
+   "text": "Like I'm legit fixing my house"
+  },
+  {
+   "s": 3246.51,
+   "e": 3250.49,
+   "text": "gotta make sure the house is good chat Gotta make sure the house was good."
+  },
+  {
+   "s": 3250.51,
+   "e": 3251.31,
+   "text": "Can I paint?"
+  },
+  {
+   "s": 3253.34,
+   "e": 3257.6,
+   "text": "I got 2 ,000 in a stash and I got four hundred seven dollars in my name."
+  },
+  {
+   "s": 3257.9,
+   "e": 3258.42,
+   "text": "Hold on."
+  },
+  {
+   "s": 3258.44,
+   "e": 3260.6,
+   "text": "I can't pay anybody fix that Can I make the bed?"
+  },
+  {
+   "s": 3261.68,
+   "e": 3262.82,
+   "text": "Okay, that's rest"
+  },
+  {
+   "s": 3263.94,
+   "e": 3264.74,
+   "text": "Another book."
+  },
+  {
+   "s": 3264.74,
+   "e": 3267.34,
+   "text": "Let me examine that real quick Ashes of glory."
+  },
+  {
+   "s": 3267.4,
+   "e": 3267.74,
+   "text": "This is good."
+  },
+  {
+   "s": 3267.74,
+   "e": 3273.56,
+   "text": "This is military Lord chat military Lord right here You are all about the military, you know, he a military man."
+  },
+  {
+   "s": 3273.6,
+   "e": 3274.0,
+   "text": "You are"
+  },
+  {
+   "s": 3274.8,
+   "e": 3276.08,
+   "text": "All I could paint"
+  },
+  {
+   "s": 3277.36,
+   "e": 3280.82,
+   "text": "wait stormy blue paint pastel peach"
+  },
+  {
+   "s": 3281.98,
+   "e": 3282.5,
+   "text": "green"
+  },
+  {
+   "s": 3284.18,
+   "e": 3286.22,
+   "text": "Green blue or peach."
+  },
+  {
+   "s": 3286.7,
+   "e": 3287.84,
+   "text": "Let me see blue"
+  },
+  {
+   "s": 3289.28,
+   "e": 3292.0,
+   "text": "We'll climb down a little bit covers the tips"
+  },
+  {
+   "s": 264.0,
+   "e": 265.44,
+   "text": "Thank you so much to the bank"
+  },
+  {
+   "s": 269.8,
+   "e": 271.94,
+   "text": "Yeah, damn, oh"
+  },
+  {
+   "s": 274.44,
+   "e": 277.4,
+   "text": "my god Did you just took a shit bitch?"
+  },
+  {
+   "s": 281.12,
+   "e": 281.7,
+   "text": "Oh my god."
+  },
+  {
+   "s": 281.8,
+   "e": 282.3,
+   "text": "He'll look good as"
+  },
+  {
+   "s": 283.42,
+   "e": 286.62,
+   "text": "Her hair actually looks so good interact L2 talk."
+  },
+  {
+   "s": 286.62,
+   "e": 293.46,
+   "text": "Oh, you still doing that lay one on me Clue is planet of love ain't this planet."
+  },
+  {
+   "s": 293.54,
+   "e": 294.7,
+   "text": "That's for damn sure"
+  },
+  {
+   "s": 297.33,
+   "e": 304.99,
+   "text": "Yo, yo stop knocking my boy no I relax hold on hold on"
+  },
+  {
+   "s": 308.03,
+   "e": 309.67,
+   "text": "you"
+  },
+  {
+   "s": 316.26,
+   "e": 323.46,
+   "text": "know Zoe what's up though Camino's by the door bitch yeah"
+  },
+  {
+   "s": 327.62,
+   "e": 333.56,
+   "text": "what up girl hey Camino's get your ass over here shut up"
+  },
+  {
+   "s": 4269.02,
+   "e": 4271.74,
+   "text": "That's what the fuck, that's what the tank is, bro, appreciate it."
+  },
+  {
+   "s": 4272.34,
+   "e": 4273.9,
+   "text": "That may be upstairs, wait, no?"
+  },
+  {
+   "s": 4275.0,
+   "e": 4276.14,
+   "text": "Yeah, painting is inside."
+  },
+  {
+   "s": 4279.96,
+   "e": 4282.6,
+   "text": "No, that gotta be the roof, on the roof."
+  },
+  {
+   "s": 4295.02,
+   "e": 4295.2,
+   "text": "No?"
+  },
+  {
+   "s": 4300.47,
+   "e": 4302.11,
+   "text": "My trippin', where's that painting at?"
+  },
+  {
+   "s": 4310.35,
+   "e": 4311.57,
+   "text": "It's just I gotta fix something."
+  },
+  {
+   "s": 4312.89,
+   "e": 4314.37,
+   "text": "Oh, wait, I don't think it, wait."
+  },
+  {
+   "s": 4317.62,
+   "e": 4319.22,
+   "text": "I don't think I have to, wait, hold on, let me see."
+  },
+  {
+   "s": 4323.22,
+   "e": 4324.22,
+   "text": "Oh, no, I don't have to."
+  },
+  {
+   "s": 4326.78,
+   "e": 4327.78,
+   "text": "Oh, my trippin'."
+  },
+  {
+   "s": 4328.34,
+   "e": 4329.14,
+   "text": "Is it the other one?"
+  },
+  {
+   "s": 4329.14,
+   "e": 4330.16,
+   "text": "I wanna make sure this shit good."
+  },
+  {
+   "s": 4334.45,
+   "e": 4335.11,
+   "text": "Turn off."
+  },
+  {
+   "s": 4337.05,
+   "e": 4337.95,
+   "text": "What the hell does that sound?"
+  },
+  {
+   "s": 153.0,
+   "e": 153.6,
+   "text": "How was that?"
+  },
+  {
+   "s": 155.02,
+   "e": 156.86,
+   "text": "We were fighting over who was gonna drive."
+  },
+  {
+   "s": 157.44,
+   "e": 157.74,
+   "text": "Really?"
+  },
+  {
+   "s": 158.34,
+   "e": 159.28,
+   "text": "We gotta run these plates."
+  },
+  {
+   "s": 159.88,
+   "e": 162.92,
+   "text": "Yeah, he wanted to drive, but he drives like a bitch."
+  },
+  {
+   "s": 163.48,
+   "e": 166.28,
+   "text": "So, worse than my abuela and she has cataracts."
+  },
+  {
+   "s": 166.42,
+   "e": 166.86,
+   "text": "That's enough."
+  },
+  {
+   "s": 167.06,
+   "e": 168.7,
+   "text": "Yeah, well, you're pretty mean."
+  },
+  {
+   "s": 169.28,
+   "e": 170.14,
+   "text": "You're all so crazy."
+  },
+  {
+   "s": 170.4,
+   "e": 171.8,
+   "text": "Oh, don't you call me crazy, bro."
+  },
+  {
+   "s": 172.02,
+   "e": 172.14,
+   "text": "Why?"
+  },
+  {
+   "s": 172.34,
+   "e": 173.22,
+   "text": "I said that's enough."
+  },
+  {
+   "s": 173.48,
+   "e": 173.62,
+   "text": "Crazy?"
+  },
+  {
+   "s": 173.9,
+   "e": 174.94,
+   "text": "One more time, man."
+  },
+  {
+   "s": 175.02,
+   "e": 175.48,
+   "text": "Okay, alright."
+  },
+  {
+   "s": 175.8,
+   "e": 176.68,
+   "text": "Just messing around."
+  },
+  {
+   "s": 177.36,
+   "e": 178.24,
+   "text": "You're crazy, though."
+  },
+  {
+   "s": 179.98,
+   "e": 180.46,
+   "text": "Oh,"
+  },
+  {
+   "s": 181.42,
+   "e": 183.12,
+   "text": "she on are they on that?"
+  },
+  {
+   "s": 184.44,
+   "e": 185.04,
+   "text": "You good over there?"
+  },
+  {
+   "s": 185.82,
+   "e": 187.06,
+   "text": "Yeah, I'm good."
+  },
+  {
+   "s": 187.46,
+   "e": 188.58,
+   "text": "Oh my god, jail."
+  },
+  {
+   "s": 197.72,
+   "e": 199.68,
+   "text": "This place is tamping out."
+  },
+  {
+   "s": 200.02,
+   "e": 201.16,
+   "text": "I don't know why we fuck with any place else."
+  },
+  {
+   "s": 201.42,
+   "e": 202.18,
+   "text": "Yo, I'm here for you bro."
+  },
+  {
+   "s": 202.36,
+   "e": 202.98,
+   "text": "Show it to me."
+  },
+  {
+   "s": 203.08,
+   "e": 203.42,
+   "text": "Let me see."
+  },
+  {
+   "s": 208.89,
+   "e": 209.61,
+   "text": "Oh, shit."
+  },
+  {
+   "s": 213.39,
+   "e": 216.83,
+   "text": "Can I have another ice water please?"
+  },
+  {
+   "s": 217.15,
+   "e": 217.51,
+   "text": "Another one."
+  },
+  {
+   "s": 217.79,
+   "e": 219.65,
+   "text": "You don't want to let your caliente or something."
+  },
+  {
+   "s": 220.45,
+   "e": 221.09,
+   "text": "Just water."
+  },
+  {
+   "s": 221.79,
+   "e": 222.11,
+   "text": "C'mon."
+  },
+  {
+   "s": 222.53,
+   "e": 222.97,
+   "text": "I'm not gonna do it."
+  },
+  {
+   "s": 6197.0,
+   "e": 6198.4,
+   "text": "I think he was going to be put to cook."
+  },
+  {
+   "s": 6205.42,
+   "e": 6205.8,
+   "text": "No."
+  },
+  {
+   "s": 6210.27,
+   "e": 6210.73,
+   "text": "Look at this."
+  },
+  {
+   "s": 6211.33,
+   "e": 6212.53,
+   "text": "Yeah, they're not going to cover it."
+  },
+  {
+   "s": 6212.91,
+   "e": 6213.59,
+   "text": "Oh, need that."
+  },
+  {
+   "s": 6228.12,
+   "e": 6229.26,
+   "text": "Was he supposed to say it, Chad?"
+  },
+  {
+   "s": 6231.3,
+   "e": 6232.78,
+   "text": "Maybe he was in a notebook list."
+  },
+  {
+   "s": 6238.59,
+   "e": 6239.35,
+   "text": "Oh, look at his back."
+  },
+  {
+   "s": 6240.09,
+   "e": 6240.73,
+   "text": "There it is."
+  },
+  {
+   "s": 6241.41,
+   "e": 6242.83,
+   "text": "0 -4 -2 -0."
+  },
+  {
+   "s": 6255.1,
+   "e": 6258.4,
+   "text": "0 -4 -2 -0."
+  },
+  {
+   "s": 6259.92,
+   "e": 6260.3,
+   "text": "Ws."
+  },
+  {
+   "s": 6266.05,
+   "e": 6266.51,
+   "text": "Here we go."
+  },
+  {
+   "s": 2736.88,
+   "e": 2737.32,
+   "text": "Really?"
+  },
+  {
+   "s": 2738.88,
+   "e": 2739.2,
+   "text": "I'm joking."
+  },
+  {
+   "s": 2740.48,
+   "e": 2741.5,
+   "text": "This is great news."
+  },
+  {
+   "s": 2743.08,
+   "e": 2744.04,
+   "text": "Did they, uh,"
+  },
+  {
+   "s": 2745.83,
+   "e": 2747.29,
+   "text": "they say anything about a little man?"
+  },
+  {
+   "s": 2748.33,
+   "e": 2750.95,
+   "text": "That's a whole different thing, Evan."
+  },
+  {
+   "s": 2751.37,
+   "e": 2752.53,
+   "text": "I'll tell you when I see you."
+  },
+  {
+   "s": 2753.13,
+   "e": 2753.57,
+   "text": "Okay."
+  },
+  {
+   "s": 2753.85,
+   "e": 2754.19,
+   "text": "All right."
+  },
+  {
+   "s": 2754.71,
+   "e": 2755.41,
+   "text": "I'll let you go."
+  },
+  {
+   "s": 2756.47,
+   "e": 2757.69,
+   "text": "You think I'm gonna like it in the keys?"
+  },
+  {
+   "s": 2758.63,
+   "e": 2759.35,
+   "text": "What's not to like?"
+  },
+  {
+   "s": 2760.25,
+   "e": 2762.35,
+   "text": "Life's easy down here, for the most part."
+  },
+  {
+   "s": 2763.65,
+   "e": 2764.75,
+   "text": "We're gonna have some fun, though."
+  },
+  {
+   "s": 2765.77,
+   "e": 2766.21,
+   "text": "Okay."
+  },
+  {
+   "s": 2767.01,
+   "e": 2767.71,
+   "text": "I'll see you soon."
+  },
+  {
+   "s": 2767.71,
+   "e": 2770.05,
+   "text": "Yeah, see you on the outside."
+  },
+  {
+   "s": 2771.81,
+   "e": 2773.87,
+   "text": "He gonna, he f***ing up right now, y 'all."
+  },
+  {
+   "s": 2774.13,
+   "e": 2777.55,
+   "text": "He f***ing up, but you know when the baddie coming over, you gotta turn to Mr."
+  },
+  {
+   "s": 2777.79,
+   "e": 2777.89,
+   "text": "Clean!"
+  },
+  {
+   "s": 2779.87,
+   "e": 2780.99,
+   "text": "You just have to!"
+  },
+  {
+   "s": 2781.73,
+   "e": 2782.93,
+   "text": "Yo, up here."
+  },
+  {
+   "s": 2785.96,
+   "e": 2786.62,
+   "text": "What you doing up there?"
+  },
+  {
+   "s": 2786.62,
+   "e": 2787.54,
+   "text": "Oh, this is what if I could do."
+  },
+  {
+   "s": 2787.82,
+   "e": 2788.94,
+   "text": "I'm just fixing some leaks."
+  },
+  {
+   "s": 2790.2,
+   "e": 2791.26,
+   "text": "Good, that's good."
+  },
+  {
+   "s": 2791.62,
+   "e": 2794.68,
+   "text": "You don't fix it too good, I'm gonna have to start charging rent."
+  },
+  {
+   "s": 2795.18,
+   "e": 2797.32,
+   "text": "Hey, I'm just looking after the place, man."
+  },
+  {
+   "s": 2798.54,
+   "e": 2799.62,
+   "text": "What do you ask me to do?"
+  },
+  {
+   "s": 2802.19,
+   "e": 2804.57,
+   "text": "Seriously dude, you got some time on your hands."
+  },
+  {
+   "s": 2804.75,
+   "e": 2805.91,
+   "text": "I got some properties with"
+  },
+  {
+   "s": 3954.98,
+   "e": 3958.12,
+   "text": "Yeah, come on Come on"
+  },
+  {
+   "s": 3959.84,
+   "e": 3963.38,
+   "text": "It's the house fix the house fix the house check."
+  },
+  {
+   "s": 3970.64,
+   "e": 3973.34,
+   "text": "Yeah, I believe like we actually here like bro what?"
+  },
+  {
+   "s": 3975.0,
+   "e": 3975.48,
+   "text": "Like"
+  },
+  {
+   "s": 3977.88,
+   "e": 3980.82,
+   "text": "what we actually are hit bro, like what I"
+  },
+  {
+   "s": 3982.04,
+   "e": 3984.04,
+   "text": "Do not believe we are here right now"
+  },
+  {
+   "s": 3986.4,
+   "e": 3987.52,
+   "text": "What's in here?"
+  },
+  {
+   "s": 3988.12,
+   "e": 3990.6,
+   "text": "Oh, that's my shed My bad."
+  },
+  {
+   "s": 3990.6,
+   "e": 3995.56,
+   "text": "Yeah, I'm so I told y 'all I'm going to try to like literally go through this game."
+  },
+  {
+   "s": 3995.58,
+   "e": 3997.14,
+   "text": "Like I'm in no rush, bro"
+  },
+  {
+   "s": 3997.96,
+   "e": 3998.6,
+   "text": "Where is"
+  },
+  {
+   "s": 4000.1,
+   "e": 4001.28,
+   "text": "Maybe this is the house over here."
+  },
+  {
+   "s": 4001.28,
+   "e": 4002.9,
+   "text": "Oh, it's probably a nape neighbors."
+  },
+  {
+   "s": 4003.08,
+   "e": 4003.96,
+   "text": "No, um,"
+  },
+  {
+   "s": 4010.24,
+   "e": 4011.28,
+   "text": "what else do we have to fix though?"
+  },
+  {
+   "s": 4011.34,
+   "e": 4011.98,
+   "text": "Hold on."
+  },
+  {
+   "s": 4012.26,
+   "e": 4013.46,
+   "text": "We got a big sign right here"
+  },
+  {
+   "s": 2543.66,
+   "e": 2546.7,
+   "text": "PS5's doing this, okay, and we reached an understanding though."
+  },
+  {
+   "s": 2546.7,
+   "e": 2551.74,
+   "text": "I'll let you guys know which thing I don't invite anyone over after midnight I don't know it works fine"
+  },
+  {
+   "s": 2566.0,
+   "e": 2566.4,
+   "text": "Whoa,"
+  },
+  {
+   "s": 2567.87,
+   "e": 2569.07,
+   "text": "whoa, look at this neighborhood"
+  },
+  {
+   "s": 2572.01,
+   "e": 2573.85,
+   "text": "Whoa, Chad, look at this neighborhood, bro."
+  },
+  {
+   "s": 2576.0,
+   "e": 2577.8,
+   "text": "This is crazy pull"
+  },
+  {
+   "s": 2581.68,
+   "e": 2582.26,
+   "text": "up wherever"
+  },
+  {
+   "s": 2583.64,
+   "e": 2593.36,
+   "text": "Yo, Sonny, if it was really dark, let me know cuz I don't know on my screen right here It's not as dark as here, but I don't know if this is what y 'all see us in my monitor I don't know if"
+  },
+  {
+   "s": 2597.2,
+   "e": 2598.18,
+   "text": "I get to appreciate it"
+  },
+  {
+   "s": 2599.34,
+   "e": 2602.66,
+   "text": "Hey, uh, I'm not made for this shit."
+  },
+  {
+   "s": 2604.54,
+   "e": 2605.54,
+   "text": "I know, man."
+  },
+  {
+   "s": 2606.96,
+   "e": 2608.6,
+   "text": "Bro, just be safe, okay?"
+  },
+  {
+   "s": 2609.56,
+   "e": 2611.9,
+   "text": "And with all the guys I've met around here, you're..."
+  },
+  {
+   "s": 2611.9,
+   "e": 2612.98,
+   "text": "You're the only one who's not..."
+  },
+  {
+   "s": 873.69,
+   "e": 875.93,
+   "text": "Hey, you look"
+  },
+  {
+   "s": 883.13,
+   "e": 883.33,
+   "text": "at"
+  },
+  {
+   "s": 889.34,
+   "e": 889.66,
+   "text": "me!"
+  },
+  {
+   "s": 889.76,
+   "e": 890.62,
+   "text": "What's she saying?"
+  },
+  {
+   "s": 891.36,
+   "e": 892.52,
+   "text": "Something like a coffee shop?"
+  },
+  {
+   "s": 892.72,
+   "e": 893.4,
+   "text": "She left something behind?"
+  },
+  {
+   "s": 894.3,
+   "e": 894.3,
+   "text": "Copy."
+  },
+  {
+   "s": 894.66,
+   "e": 895.42,
+   "text": "Yep, copy that."
+  },
+  {
+   "s": 895.56,
+   "e": 895.88,
+   "text": "Copy."
+  },
+  {
+   "s": 896.14,
+   "e": 896.8,
+   "text": "Yep, we're here."
+  },
+  {
+   "s": 897.3,
+   "e": 898.4,
+   "text": "Oye, we've been calling you."
+  },
+  {
+   "s": 898.66,
+   "e": 899.84,
+   "text": "She just walked out and left it here."
+  },
+  {
+   "s": 899.88,
+   "e": 901.5,
+   "text": "We don't know what to do with this, you know?"
+  },
+  {
+   "s": 901.64,
+   "e": 903.04,
+   "text": "I got free hallways burning back there."
+  },
+  {
+   "s": 903.04,
+   "e": 903.74,
+   "text": "Yeah, we have the baby."
+  },
+  {
+   "s": 903.96,
+   "e": 904.54,
+   "text": "I'm gonna need a CTS office."
+  },
+  {
+   "s": 904.54,
+   "e": 906.6,
+   "text": "This is the first baby I ever seen in a f***ing GTA!"
+  },
+  {
+   "s": 907.28,
+   "e": 909.9,
+   "text": "Take it away from us and we're not letting the baby out!"
+  },
+  {
+   "s": 910.34,
+   "e": 911.82,
+   "text": "Okay, I call child welfare."
+  },
+  {
+   "s": 912.0,
+   "e": 913.58,
+   "text": "They're gonna send someone as soon as they can."
+  },
+  {
+   "s": 913.82,
+   "e": 915.54,
+   "text": "In the meantime, you're just gonna have to hold tight."
+  },
+  {
+   "s": 918.6,
+   "e": 919.4,
+   "text": "Do I?"
+  },
+  {
+   "s": 921.66,
+   "e": 923.56,
+   "text": "Honey, you don't know how many bids we need to free up."
+  },
+  {
+   "s": 924.84,
+   "e": 929.06,
+   "text": "If you let me out, a supervised release or whatever,"
+  },
+  {
+   "s": 929.9,
+   "e": 932.1,
+   "text": "does that mean I can throw Moss back?"
+  },
+  {
+   "s": 933.54,
+   "e": 935.1,
+   "text": "Custody of your son is a different matter."
+  },
+  {
+   "s": 935.86,
+   "e": 938.12,
+   "text": "That's the case with the Department of Children and Families."
+  },
+  {
+   "s": 938.86,
+   "e": 942.96,
+   "text": "I don't think you'll get visitation right away, but reintegrating yourself in..."
+  },
+  {
+   "s": 4754.0,
+   "e": 4755.58,
+   "text": "Okay, nah, I don't need nothing for real."
+  },
+  {
+   "s": 4756.88,
+   "e": 4757.28,
+   "text": "Okay,"
+  },
+  {
+   "s": 4759.34,
+   "e": 4760.02,
+   "text": "be good."
+  },
+  {
+   "s": 4777.9,
+   "e": 4781.62,
+   "text": "Jason's so, like, nonchalant and calm, like, how does he do it?"
+  },
+  {
+   "s": 4783.92,
+   "e": 4784.44,
+   "text": "You know what I'm saying?"
+  },
+  {
+   "s": 4784.52,
+   "e": 4785.94,
+   "text": "Like, he just so, like, you know?"
+  },
+  {
+   "s": 4785.94,
+   "e": 4785.94,
+   "text": "Oh,"
+  },
+  {
+   "s": 4789.02,
+   "e": 4789.8,
+   "text": "face bumper?"
+  },
+  {
+   "s": 4795.78,
+   "e": 4799.24,
+   "text": "Mod shots and melodia feature specialized in your different cosmetic and performance mods."
+  },
+  {
+   "s": 4800.02,
+   "e": 4801.6,
+   "text": "Could you possibly run against me?"
+  },
+  {
+   "s": 4802.38,
+   "e": 4803.76,
+   "text": "Can I even fix my bumper?"
+  },
+  {
+   "s": 4804.64,
+   "e": 4804.98,
+   "text": "Let me see."
+  },
+  {
+   "s": 4806.36,
+   "e": 4807.44,
+   "text": "Let me see if I can fix it."
+  },
+  {
+   "s": 4815.95,
+   "e": 4818.29,
+   "text": "Bro, there is so much stuff, bro."
+  },
+  {
+   "s": 4819.37,
+   "e": 4821.39,
+   "text": "Like, oh my gosh."
+  },
+  {
+   "s": 6112.0,
+   "e": 6146.54,
+   "text": "dude what okay boy I don't know dude I didn't make any money this month or someone stole it from me make it up it's just a bullshit social construct anyways my guy point is Brian he ain't putting in the work like moi what the hell hi brother um I need the rat all right give me Brian's red or I kick your ass and turn this place upside down I'll turn you upside down hey bro give me that"
+  },
+  {
+   "s": 6149.32,
+   "e": 6164.6,
+   "text": "okay I don't have just take the acid it's in the back room the code is We"
+  },
+  {
+   "s": 6170.91,
+   "e": 6172.47,
+   "text": "don't f***ing"
+  },
+  {
+   "s": 6175.7,
+   "e": 6176.94,
+   "text": "open this bitch up."
+  },
+  {
+   "s": 6177.06,
+   "e": 6177.18,
+   "text": "Oh!"
+  },
+  {
+   "s": 6178.04,
+   "e": 6178.6,
+   "text": "Is that the cops?"
+  },
+  {
+   "s": 6180.08,
+   "e": 6180.82,
+   "text": "How do I close this shit?"
+  },
+  {
+   "s": 2968.69,
+   "e": 2974.81,
+   "text": "Okay, you can sit and do what just"
+  },
+  {
+   "s": 2978.65,
+   "e": 2981.85,
+   "text": "sit okay We could read after read a page of this."
+  },
+  {
+   "s": 2981.89,
+   "e": 2982.53,
+   "text": "Don't worry."
+  },
+  {
+   "s": 2982.71,
+   "e": 2983.35,
+   "text": "I can act."
+  },
+  {
+   "s": 2983.43,
+   "e": 2985.51,
+   "text": "I know how to actually read y 'all Here we go."
+  },
+  {
+   "s": 2985.71,
+   "e": 2986.43,
+   "text": "Watch this."
+  },
+  {
+   "s": 2986.51,
+   "e": 2987.19,
+   "text": "Watch this."
+  },
+  {
+   "s": 2987.19,
+   "e": 2987.59,
+   "text": "Watch."
+  },
+  {
+   "s": 2987.71,
+   "e": 2988.45,
+   "text": "Oh, all right."
+  },
+  {
+   "s": 2988.45,
+   "e": 2988.99,
+   "text": "Hold on."
+  },
+  {
+   "s": 2989.15,
+   "e": 2989.87,
+   "text": "Watch this."
+  },
+  {
+   "s": 2990.01,
+   "e": 2992.73,
+   "text": "Okay, I got you right now"
+  },
+  {
+   "s": 2993.69,
+   "e": 2999.45,
+   "text": "Chapter seven if you show your fear, okay, wait, no, we gotta read this tonight Yo, remind me to read this book tonight."
+  },
+  {
+   "s": 2999.49,
+   "e": 3001.23,
+   "text": "I at the bedtime story."
+  },
+  {
+   "s": 3001.23,
+   "e": 3003.79,
+   "text": "Okay locked Remind me, this is good lore."
+  },
+  {
+   "s": 3004.45,
+   "e": 3005.39,
+   "text": "We need to read this, okay?"
+  },
+  {
+   "s": 3007.13,
+   "e": 3008.27,
+   "text": "Like, I actually need to read this."
+  },
+  {
+   "s": 3008.63,
+   "e": 3009.21,
+   "text": "We need to read that."
+  },
+  {
+   "s": 3009.65,
+   "e": 3010.77,
+   "text": "First run of the spam book,"
+  },
+  {
+   "s": 3011.69,
+   "e": 3012.37,
+   "text": "I'm gonna do it."
+  },
+  {
+   "s": 3012.63,
+   "e": 3012.99,
+   "text": "Ooh, TV."
+  },
+  {
+   "s": 3024.99,
+   "e": 3026.07,
+   "text": "On a downtown Pee -wee."
+  },
+  {
+   "s": 3026.27,
+   "e": 3028.63,
+   "text": "Once again, Spark's spending a new chicken sandwich."
+  },
+  {
+   "s": 3034.56,
+   "e": 3035.16,
+   "text": "Chicken sandwich."
+  },
+  {
+   "s": 2640.0,
+   "e": 2640.98,
+   "text": "Thought you were calling tomorrow."
+  },
+  {
+   "s": 2642.14,
+   "e": 2643.46,
+   "text": "You're never gonna f***ing believe this."
+  },
+  {
+   "s": 2644.06,
+   "e": 2645.3,
+   "text": "They might be letting me out."
+  },
+  {
+   "s": 2646.32,
+   "e": 2646.7,
+   "text": "What?"
+  },
+  {
+   "s": 2648.32,
+   "e": 2648.84,
+   "text": "Overcrowding."
+  },
+  {
+   "s": 2649.64,
+   "e": 2650.68,
+   "text": "There's a new program."
+  },
+  {
+   "s": 2651.44,
+   "e": 2652.58,
+   "text": "Girls gonna be free."
+  },
+  {
+   "s": 2653.66,
+   "e": 2654.4,
+   "text": "Oh shit."
+  },
+  {
+   "s": 2655.34,
+   "e": 2656.0,
+   "text": "Lou, that's..."
+  },
+  {
+   "s": 2656.66,
+   "e": 2657.44,
+   "text": "I told you."
+  },
+  {
+   "s": 2657.7,
+   "e": 2659.3,
+   "text": "You do your time to keep your head down."
+  },
+  {
+   "s": 2659.84,
+   "e": 2660.84,
+   "text": "Try not to shank anyone."
+  },
+  {
+   "s": 2661.12,
+   "e": 2661.78,
+   "text": "Don't even joke."
+  },
+  {
+   "s": 2662.8,
+   "e": 2663.78,
+   "text": "But can you believe this?"
+  },
+  {
+   "s": 2664.84,
+   "e": 2665.84,
+   "text": "It's still processing."
+  },
+  {
+   "s": 2666.8,
+   "e": 2670.44,
+   "text": "There's still paperwork to do, But the woman said, I'm like a lock."
+  },
+  {
+   "s": 2671.46,
+   "e": 2674.32,
+   "text": "All right, you gonna use all your phone time?"
+  },
+  {
+   "s": 2674.5,
+   "e": 2676.34,
+   "text": "If you let me, what the fuck?"
+  },
+  {
+   "s": 2676.66,
+   "e": 2678.48,
+   "text": "You need to get your dick sucked, bitch."
+  },
+  {
+   "s": 2678.68,
+   "e": 2680.12,
+   "text": "You know what, keep doing that group work, girl."
+  },
+  {
+   "s": 2680.36,
+   "e": 2681.14,
+   "text": "It's working great."
+  },
+  {
+   "s": 2681.68,
+   "e": 2682.02,
+   "text": "Fuck you."
+  },
+  {
+   "s": 2682.02,
+   "e": 2684.16,
+   "text": "Oh my God, I love this bitch, I love her!"
+  },
+  {
+   "s": 2684.22,
+   "e": 2685.06,
+   "text": "You got a problem over there?"
+  },
+  {
+   "s": 2685.54,
+   "e": 2686.02,
+   "text": "All good."
+  },
+  {
+   "s": 2686.8,
+   "e": 2689.32,
+   "text": "It's gonna take more than us gang to put me in a bad mood today."
+  },
+  {
+   "s": 2690.26,
+   "e": 2692.52,
+   "text": "So you still got that place for me to stay?"
+  },
+  {
+   "s": 2692.84,
+   "e": 2695.52,
+   "text": "Yeah, yeah, I got a place."
+  },
+  {
+   "s": 2696.12,
+   "e": 2696.7,
+   "text": "Any idea when?"
+  },
+  {
+   "s": 2696.7,
+   "e": 2698.0,
+   "text": "Oh, I don't know."
+  },
+  {
+   "s": 2698.46,
+   "e": 2701.74,
+   "text": "They don't tell you, but it sounds like it could be soon soon"
+  },
+  {
+   "s": 2702.88,
+   "e": 2703.32,
+   "text": "Wow"
+  },
+  {
+   "s": 2704.56,
+   "e": 2705.0,
+   "text": "cool"
+  },
+  {
+   "s": 2705.88,
+   "e": 2707.66,
+   "text": "You aren't having second thoughts."
+  },
+  {
+   "s": 2707.66,
+   "e": 2709.92,
+   "text": "Are you oh damn of course?"
+  },
+  {
+   "s": 4194.0,
+   "e": 4195.16,
+   "text": "Okay, here we go."
+  },
+  {
+   "s": 4195.38,
+   "e": 4197.32,
+   "text": "Appreciate all the, appreciate all the, um,"
+  },
+  {
+   "s": 4198.12,
+   "e": 4198.78,
+   "text": "to get this chat."
+  },
+  {
+   "s": 4199.04,
+   "e": 4199.78,
+   "text": "Thank you so much."
+  },
+  {
+   "s": 4202.02,
+   "e": 4203.12,
+   "text": "Shower chat, I don't got a shower."
+  },
+  {
+   "s": 4203.88,
+   "e": 4205.62,
+   "text": "Bro, yeah, hot, bro, what?"
+  },
+  {
+   "s": 4206.48,
+   "e": 4208.3,
+   "text": "Bro, yeah, I think I got a shower after doing it."
+  },
+  {
+   "s": 4208.56,
+   "e": 4209.0,
+   "text": "Okay, bro."
+  },
+  {
+   "s": 4210.1,
+   "e": 4213.42,
+   "text": "Bro, come on, bro, I'm about to be in my, but I'm gonna have my dick out again."
+  },
+  {
+   "s": 4218.18,
+   "e": 4219.22,
+   "text": "I don't need no shower, what else?"
+  },
+  {
+   "s": 4219.34,
+   "e": 4221.16,
+   "text": "You need to be, you need to be manly, bro."
+  },
+  {
+   "s": 4221.66,
+   "e": 4221.98,
+   "text": "You know?"
+  },
+  {
+   "s": 4222.5,
+   "e": 4223.86,
+   "text": "You have to be manly, bro."
+  },
+  {
+   "s": 4224.6,
+   "e": 4227.8,
+   "text": "Now, my question is, where is this gym?"
+  },
+  {
+   "s": 4227.8,
+   "e": 4231.14,
+   "text": "Hmm, like, we might not have it yet."
+  },
+  {
+   "s": 4238.48,
+   "e": 4240.56,
+   "text": "We might not have it, what is cinematic, hold on."
+  },
+  {
+   "s": 4243.72,
+   "e": 4244.32,
+   "text": "Oh shit,"
+  },
+  {
+   "s": 4252.85,
+   "e": 4254.67,
+   "text": "oh this is like realistic, realistic bro."
+  },
+  {
+   "s": 4256.82,
+   "e": 4259.52,
+   "text": "I don't see any, I do see a painting over here that has to get done."
+  },
+  {
+   "s": 2880.41,
+   "e": 2886.53,
+   "text": "Manu you can sleep in rest of the events You can also access your hidden stash of cash, okay?"
+  },
+  {
+   "s": 2890.74,
+   "e": 2894.96,
+   "text": "Continue to explore your house in the area outside to find a variety of other things to do"
+  },
+  {
+   "s": 2900.72,
+   "e": 2902.68,
+   "text": "Andrew it's Jason Duvall."
+  },
+  {
+   "s": 2902.72,
+   "e": 2904.7,
+   "text": "Oh, yeah, the moron."
+  },
+  {
+   "s": 2913.64,
+   "e": 2915.34,
+   "text": "Yeah, you told me something like that."
+  },
+  {
+   "s": 2915.4,
+   "e": 2917.04,
+   "text": "Yeah, sorry I'm kind of in a hurry."
+  },
+  {
+   "s": 2917.08,
+   "e": 2918.94,
+   "text": "I need to come down and stock up"
+  },
+  {
+   "s": 2924.76,
+   "e": 2926.6,
+   "text": "Okay, yeah, I'll be there soon"
+  },
+  {
+   "s": 2927.7,
+   "e": 2928.78,
+   "text": "Phoebe, we gots to eat the snake?"
+  },
+  {
+   "s": 2931.96,
+   "e": 2933.18,
+   "text": "Oh, you eat better than a mouse!"
+  },
+  {
+   "s": 2938.36,
+   "e": 2938.8,
+   "text": "Oh, shit!"
+  },
+  {
+   "s": 2173.35,
+   "e": 2174.31,
+   "text": "It's not all right."
+  },
+  {
+   "s": 2174.31,
+   "e": 2174.99,
+   "text": "I know"
+  },
+  {
+   "s": 2177.97,
+   "e": 2179.07,
+   "text": "He might be done."
+  },
+  {
+   "s": 2179.45,
+   "e": 2185.05,
+   "text": "Oh wait this end this end relax relax relax relax relax relax"
+  },
+  {
+   "s": 2192.23,
+   "e": 2195.45,
+   "text": "All right, if you fall Florida say hell, yeah"
+  },
+  {
+   "s": 2196.65,
+   "e": 2199.57,
+   "text": "If you fall Florida say hell, yeah Then"
+  },
+  {
+   "s": 2203.15,
+   "e": 2204.99,
+   "text": "with the five get the W's in the chat"
+  },
+  {
+   "s": 2207.35,
+   "e": 2217.65,
+   "text": "this is a whole new game this is a whole new game whole new structure to play it whole new game bro you"
+  },
+  {
+   "s": 2222.96,
+   "e": 2227.96,
+   "text": "got a little yeah don't worry you look great and"
+  },
+  {
+   "s": 2235.77,
+   "e": 2240.91,
+   "text": "follow my lead don't say anything okay remember"
+  },
+  {
+   "s": 6854.34,
+   "e": 6856.76,
+   "text": "but it's going too fast oh"
+  },
+  {
+   "s": 6862.32,
+   "e": 6864.68,
+   "text": "it's like literally bro that's"
+  },
+  {
+   "s": 6872.68,
+   "e": 6876.76,
+   "text": "fine give me it my god damn all right"
+  },
+  {
+   "s": 6880.83,
+   "e": 6882.69,
+   "text": "photos look"
+  },
+  {
+   "s": 6890.72,
+   "e": 6893.28,
+   "text": "at that nigga though john lie that nigga though"
+  },
+  {
+   "s": 6896.67,
+   "e": 6898.49,
+   "text": "hold on he"
+  },
+  {
+   "s": 6904.64,
+   "e": 6906.9,
+   "text": "is that you know that"
+  },
+  {
+   "s": 6913.04,
+   "e": 6914.94,
+   "text": "must be his mom or something this"
+  },
+  {
+   "s": 6919.48,
+   "e": 6919.96,
+   "text": "is so cute"
+  },
+  {
+   "s": 4664.54,
+   "e": 4667.98,
+   "text": "You know like what can I got them a Ford you"
+  },
+  {
+   "s": 4670.28,
+   "e": 4679.1,
+   "text": "still got engine go smooth as butter Like I said, I'll throw in a respray, too Yeah, let me let me let me get a respray my boy."
+  },
+  {
+   "s": 4679.18,
+   "e": 4680.18,
+   "text": "Oh my gosh."
+  },
+  {
+   "s": 4680.36,
+   "e": 4680.74,
+   "text": "Hey, oh"
+  },
+  {
+   "s": 4682.5,
+   "e": 4684.44,
+   "text": "My god, what kind of should I go?"
+  },
+  {
+   "s": 4684.56,
+   "e": 4691.04,
+   "text": "I got to go black or some serious shit, but I picture y 'all like damn Now I think I might go Ooh."
+  },
+  {
+   "s": 4692.24,
+   "e": 4692.72,
+   "text": "Ooh."
+  },
+  {
+   "s": 4694.18,
+   "e": 4694.66,
+   "text": "Ooh."
+  },
+  {
+   "s": 4699.17,
+   "e": 4701.69,
+   "text": "She'll look like she just rolled off the line, man."
+  },
+  {
+   "s": 4702.99,
+   "e": 4704.23,
+   "text": "Oh, let me get black."
+  },
+  {
+   "s": 4705.19,
+   "e": 4705.77,
+   "text": "All right."
+  },
+  {
+   "s": 4706.47,
+   "e": 4707.73,
+   "text": "That's my speed, man."
+  },
+  {
+   "s": 4708.59,
+   "e": 4708.99,
+   "text": "All right."
+  },
+  {
+   "s": 4709.21,
+   "e": 4710.27,
+   "text": "You want to look at anything else?"
+  },
+  {
+   "s": 4710.37,
+   "e": 4711.13,
+   "text": "Be my guest."
+  },
+  {
+   "s": 4711.99,
+   "e": 4712.79,
+   "text": "Cosmetic performance."
+  },
+  {
+   "s": 4713.65,
+   "e": 4715.13,
+   "text": "You got to pay from now on, though."
+  },
+  {
+   "s": 4715.49,
+   "e": 4716.55,
+   "text": "I got you spoiler."
+  },
+  {
+   "s": 4717.59,
+   "e": 4719.31,
+   "text": "You can put a spoiler on the back of this thing."
+  },
+  {
+   "s": 4724.16,
+   "e": 4724.64,
+   "text": "Ooh."
+  },
+  {
+   "s": 4725.34,
+   "e": 4726.32,
+   "text": "Pro builds full kits."
+  },
+  {
+   "s": 4726.32,
+   "e": 4729.28,
+   "text": "Oh my gosh"
+  },
+  {
+   "s": 4732.48,
+   "e": 4733.46,
+   "text": "bodywork"
+  },
+  {
+   "s": 3156.26,
+   "e": 3157.28,
+   "text": "Give her a chat"
+  },
+  {
+   "s": 3170.47,
+   "e": 3174.19,
+   "text": "like they did just so much to do like there's so much."
+  },
+  {
+   "s": 3174.31,
+   "e": 3175.41,
+   "text": "What is this?"
+  },
+  {
+   "s": 3177.31,
+   "e": 3178.35,
+   "text": "On oh"
+  },
+  {
+   "s": 3186.76,
+   "e": 3187.84,
+   "text": "my gosh, we"
+  },
+  {
+   "s": 3193.83,
+   "e": 3197.57,
+   "text": "a handyman I'll get you a nigga like Jason like"
+  },
+  {
+   "s": 3199.1,
+   "e": 3199.5,
+   "text": "Jason."
+  },
+  {
+   "s": 3199.5,
+   "e": 3200.32,
+   "text": "Hold on"
+  },
+  {
+   "s": 3217.12,
+   "e": 3217.66,
+   "text": "bro."
+  },
+  {
+   "s": 3217.9,
+   "e": 3219.04,
+   "text": "What the hell?"
+  },
+  {
+   "s": 5787.24,
+   "e": 5789.72,
+   "text": "It's leaving me Los Santos."
+  },
+  {
+   "s": 5789.72,
+   "e": 5791.72,
+   "text": "He took my Los Santos out of here live."
+  },
+  {
+   "s": 5791.96,
+   "e": 5795.18,
+   "text": "I'm considering that a success You got something you want to say?"
+  },
+  {
+   "s": 5795.34,
+   "e": 5796.72,
+   "text": "Oh, why are you staring at me?"
+  },
+  {
+   "s": 5796.9,
+   "e": 5800.48,
+   "text": "Okay, my bad All right, my bad rain on your head right, but you need to stop."
+  },
+  {
+   "s": 5800.74,
+   "e": 5801.5,
+   "text": "Okay, my bad."
+  },
+  {
+   "s": 5801.5,
+   "e": 5802.7,
+   "text": "All right, my bad."
+  },
+  {
+   "s": 5802.76,
+   "e": 5804.98,
+   "text": "My bad I know I didn't mean it bro."
+  },
+  {
+   "s": 5805.04,
+   "e": 5805.52,
+   "text": "Oh my god."
+  },
+  {
+   "s": 5805.52,
+   "e": 5806.4,
+   "text": "I did not mean it bro."
+  },
+  {
+   "s": 5806.42,
+   "e": 5806.82,
+   "text": "Yo, bro."
+  },
+  {
+   "s": 5806.88,
+   "e": 5807.98,
+   "text": "Okay, yo, bro."
+  },
+  {
+   "s": 5807.98,
+   "e": 5809.58,
+   "text": "Calm down I see you again."
+  },
+  {
+   "s": 5809.88,
+   "e": 5811.04,
+   "text": "I'm you what?"
+  },
+  {
+   "s": 5812.66,
+   "e": 5814.74,
+   "text": "So now as a man, what the fuck am I supposed to do, chat?"
+  },
+  {
+   "s": 5820.54,
+   "e": 5821.98,
+   "text": "As a man though, you feel me?"
+  },
+  {
+   "s": 5821.98,
+   "e": 5822.98,
+   "text": "In the awards"
+  },
+  {
+   "s": 5844.97,
+   "e": 5847.41,
+   "text": "What the Wait, hold on now"
+  },
+  {
+   "s": 5848.27,
+   "e": 5848.99,
+   "text": "Hold on now."
+  },
+  {
+   "s": 5848.99,
+   "e": 5849.43,
+   "text": "Wait, hold on."
+  },
+  {
+   "s": 5849.43,
+   "e": 5850.27,
+   "text": "I gotta give me a umbrella."
+  },
+  {
+   "s": 5850.27,
+   "e": 5851.91,
+   "text": "Wait, let me let me get my parents right."
+  },
+  {
+   "s": 5851.99,
+   "e": 5852.49,
+   "text": "Let me lock in"
+  },
+  {
+   "s": 5853.53,
+   "e": 5856.83,
+   "text": "What a guy you doing you can do my own Come here boy"
+  },
+  {
+   "s": 4544.06,
+   "e": 4546.64,
+   "text": "The Gennado has been better days!"
+  },
+  {
+   "s": 4547.4,
+   "e": 4548.08,
+   "text": "Has seen better days."
+  },
+  {
+   "s": 4548.42,
+   "e": 4549.34,
+   "text": "Get it fixed up."
+  },
+  {
+   "s": 4549.56,
+   "e": 4549.8,
+   "text": "Say less."
+  },
+  {
+   "s": 4550.54,
+   "e": 4550.98,
+   "text": "Say less."
+  },
+  {
+   "s": 4551.54,
+   "e": 4552.7,
+   "text": "My first - Okay, say less."
+  },
+  {
+   "s": 4552.8,
+   "e": 4553.6,
+   "text": "That's all you have to say."
+  },
+  {
+   "s": 4554.2,
+   "e": 4555.5,
+   "text": "That's all you have to say, bro."
+  },
+  {
+   "s": 4556.66,
+   "e": 4557.36,
+   "text": "That's all you have to say, bro."
+  },
+  {
+   "s": 4589.02,
+   "e": 4589.98,
+   "text": "Jason, right?"
+  },
+  {
+   "s": 4595.34,
+   "e": 4596.28,
+   "text": "Yeah, let's be."
+  },
+  {
+   "s": 4596.86,
+   "e": 4598.94,
+   "text": "Cal said you wanted me to look at the Gennado?"
+  },
+  {
+   "s": 4599.6,
+   "e": 4600.76,
+   "text": "Don't look too bad."
+  },
+  {
+   "s": 4601.24,
+   "e": 4602.4,
+   "text": "On the outside at least."
+  },
+  {
+   "s": 4603.08,
+   "e": 4604.44,
+   "text": "The engine giving up on you yet?"
+  },
+  {
+   "s": 4604.7,
+   "e": 4605.94,
+   "text": "It's still going so far."
+  },
+  {
+   "s": 4606.64,
+   "e": 4606.82,
+   "text": "What?"
+  },
+  {
+   "s": 4606.82,
+   "e": 4608.34,
+   "text": "Rod bearings, brother."
+  },
+  {
+   "s": 3846.04,
+   "e": 3849.26,
+   "text": "I see a barber a barber shop."
+  },
+  {
+   "s": 3849.28,
+   "e": 3851.3,
+   "text": "I see Leroy's a clothing shop."
+  },
+  {
+   "s": 3851.82,
+   "e": 3854.96,
+   "text": "I also see a Acosta auto care."
+  },
+  {
+   "s": 3855.34,
+   "e": 3856.78,
+   "text": "That would be a car shop."
+  },
+  {
+   "s": 3857.72,
+   "e": 3859.4,
+   "text": "I Don't see any gym."
+  },
+  {
+   "s": 3859.52,
+   "e": 3860.64,
+   "text": "I see tattoos in"
+  },
+  {
+   "s": 3862.16,
+   "e": 3866.3,
+   "text": "My house This is yeah, this is my house right here."
+  },
+  {
+   "s": 3866.3,
+   "e": 3866.6,
+   "text": "Yeah"
+  },
+  {
+   "s": 3869.22,
+   "e": 3871.6,
+   "text": "Let's see Hold"
+  },
+  {
+   "s": 3874.1,
+   "e": 3874.28,
+   "text": "on."
+  },
+  {
+   "s": 3874.34,
+   "e": 3874.84,
+   "text": "Let me see."
+  },
+  {
+   "s": 3874.84,
+   "e": 3876.52,
+   "text": "Wait, do I start to fix the roof?"
+  },
+  {
+   "s": 3876.52,
+   "e": 3876.84,
+   "text": "Yeah."
+  },
+  {
+   "s": 3880.26,
+   "e": 3881.34,
+   "text": "Oh, this looks amazing."
+  },
+  {
+   "s": 3882.46,
+   "e": 3884.74,
+   "text": "I I think I still got work to do."
+  },
+  {
+   "s": 3885.08,
+   "e": 3886.84,
+   "text": "Oh, we still got work to do."
+  },
+  {
+   "s": 3887.32,
+   "e": 3888.6,
+   "text": "Rev, this is the pocket thing."
+  },
+  {
+   "s": 3888.86,
+   "e": 3889.96,
+   "text": "We still got work to do, chat."
+  },
+  {
+   "s": 3890.22,
+   "e": 3890.44,
+   "text": "Lock in."
+  },
+  {
+   "s": 3894.93,
+   "e": 3895.39,
+   "text": "Lock in."
+  },
+  {
+   "s": 3899.57,
+   "e": 3900.31,
+   "text": "This is so fun."
+  },
+  {
+   "s": 3903.96,
+   "e": 3904.24,
+   "text": "Oh yeah."
+  },
+  {
+   "s": 3909.8,
+   "e": 3910.18,
+   "text": "Oh yeah."
+  },
+  {
+   "s": 4367.0,
+   "e": 4368.76,
+   "text": "put that on."
+  },
+  {
+   "s": 4369.14,
+   "e": 4370.52,
+   "text": "All right let's put this down real quick."
+  },
+  {
+   "s": 4374.75,
+   "e": 4375.11,
+   "text": "Okay."
+  },
+  {
+   "s": 4381.93,
+   "e": 4388.29,
+   "text": "All right chat I think it's time to hit the road but this time we won't be taking my car we'll be taking my bike."
+  },
+  {
+   "s": 4400.54,
+   "e": 4402.02,
+   "text": "Hey this is Joey from good time auto care."
+  },
+  {
+   "s": 4402.54,
+   "e": 4403.24,
+   "text": "Cal mentioned your car."
+  },
+  {
+   "s": 4403.38,
+   "e": 4403.92,
+   "text": "I need some work."
+  },
+  {
+   "s": 4404.24,
+   "e": 4405.32,
+   "text": "Let me know here's my spot."
+  },
+  {
+   "s": 4407.32,
+   "e": 4409.66,
+   "text": "Whoa let me just look at this shit chat hold on."
+  },
+  {
+   "s": 4410.82,
+   "e": 4411.0,
+   "text": "Can we"
+  },
+  {
+   "s": 4417.79,
+   "e": 4424.01,
+   "text": "walk"
+  },
+  {
+   "s": 4430.73,
+   "e": 4430.99,
+   "text": "into"
+  },
+  {
+   "s": 5571.0,
+   "e": 5589.61,
+   "text": "who's fishing okay who's fishing over here right now you fishing let me finish you bro excuse me there what there's something you need but why am I This isn't me."
+  },
+  {
+   "s": 5590.55,
+   "e": 5591.01,
+   "text": "I'm sorry."
+  },
+  {
+   "s": 5591.11,
+   "e": 5592.13,
+   "text": "You didn't see you talking there"
+  },
+  {
+   "s": 5593.07,
+   "e": 5593.71,
+   "text": "I know bitch."
+  },
+  {
+   "s": 5609.05,
+   "e": 5609.69,
+   "text": "I"
+  },
+  {
+   "s": 5617.15,
+   "e": 5617.99,
+   "text": "know fool game."
+  },
+  {
+   "s": 5618.25,
+   "e": 5618.89,
+   "text": "I"
+  },
+  {
+   "s": 5620.11,
+   "e": 5624.65,
+   "text": "Whoa, hold on the cops are actively looking for you in this area"
+  },
+  {
+   "s": 5625.59,
+   "e": 5629.35,
+   "text": "Whoa, my parents is known and my outfit is known."
+  },
+  {
+   "s": 5629.49,
+   "e": 5638.85,
+   "text": "So check we are in front of a barbershop and a clothing space let's see what happens when we get a change hold on let's see hold on"
+  },
+  {
+   "s": 7345.0,
+   "e": 7346.54,
+   "text": "everything about a person."
+  },
+  {
+   "s": 7346.92,
+   "e": 7347.78,
+   "text": "Oh my fucking god!"
+  },
+  {
+   "s": 7348.4,
+   "e": 7349.5,
+   "text": "Everything you want to know,"
+  },
+  {
+   "s": 7350.46,
+   "e": 7357.58,
+   "text": "like what kind of music they listen to, or what do they use to date, or where they work out."
+  },
+  {
+   "s": 7358.9,
+   "e": 7360.3,
+   "text": "Oh my god."
+  },
+  {
+   "s": 7360.36,
+   "e": 7361.36,
+   "text": "It's called stalking, Mandy."
+  },
+  {
+   "s": 7362.56,
+   "e": 7365.84,
+   "text": "No, uh, it's not stalking if you've met in person."
+  },
+  {
+   "s": 7366.28,
+   "e": 7367.04,
+   "text": "Uh -huh."
+  },
+  {
+   "s": 7368.0,
+   "e": 7369.3,
+   "text": "Yo, Jason, put the lunch down!"
+  },
+  {
+   "s": 7369.74,
+   "e": 7373.46,
+   "text": "I just want to know why I have to keep breaking appliances to get you to come see me."
+  },
+  {
+   "s": 7373.46,
+   "e": 7374.38,
+   "text": "Fixtures."
+  },
+  {
+   "s": 7375.18,
+   "e": 7375.34,
+   "text": "Yo."
+  },
+  {
+   "s": 7376.2,
+   "e": 7376.48,
+   "text": "Whatever."
+  },
+  {
+   "s": 7377.46,
+   "e": 7378.22,
+   "text": "I'm just kidding."
+  },
+  {
+   "s": 7379.36,
+   "e": 7379.54,
+   "text": "Yo."
+  },
+  {
+   "s": 7380.12,
+   "e": 7381.22,
+   "text": "You'll see me in jail right now."
+  },
+  {
+   "s": 7381.3,
+   "e": 7381.88,
+   "text": "Get one note off."
+  },
+  {
+   "s": 7383.38,
+   "e": 7383.72,
+   "text": "Oh."
+  },
+  {
+   "s": 7383.98,
+   "e": 7384.5,
+   "text": "Oops."
+  },
+  {
+   "s": 7385.2,
+   "e": 7386.06,
+   "text": "Forgot about that."
+  },
+  {
+   "s": 7386.36,
+   "e": 7386.72,
+   "text": "Ew."
+  },
+  {
+   "s": 7387.12,
+   "e": 7388.14,
+   "text": "Oh, my fucking God!"
+  },
+  {
+   "s": 7388.52,
+   "e": 7389.78,
+   "text": "Oh, my fucking God!"
+  },
+  {
+   "s": 7390.48,
+   "e": 7391.22,
+   "text": "This is fake!"
+  },
+  {
+   "s": 7391.74,
+   "e": 7392.04,
+   "text": "Right."
+  },
+  {
+   "s": 7393.98,
+   "e": 7394.28,
+   "text": "Go."
+  },
+  {
+   "s": 7397.58,
+   "e": 7397.96,
+   "text": "All right."
+  },
+  {
+   "s": 7400.65,
+   "e": 7401.47,
+   "text": "You should work fine now."
+  },
+  {
+   "s": 7401.73,
+   "e": 7404.33,
+   "text": "These are my dads, but I think you forgot about them."
+  },
+  {
+   "s": 7404.79,
+   "e": 7406.87,
+   "text": "You can have them for fixing my sin."
+  },
+  {
+   "s": 7407.13,
+   "e": 7407.35,
+   "text": "Oh."
+  },
+  {
+   "s": 7407.35,
+   "e": 7409.07,
+   "text": "I appreciate that, Mandy."
+  },
+  {
+   "s": 7410.63,
+   "e": 7411.23,
+   "text": "What's up, Jason?"
+  },
+  {
+   "s": 7412.01,
+   "e": 7412.93,
+   "text": "Why don't you like me?"
+  },
+  {
+   "s": 7413.03,
+   "e": 7413.45,
+   "text": "No, I don't!"
+  },
+  {
+   "s": 7414.35,
+   "e": 7414.97,
+   "text": "Who are you with?"
+  },
+  {
+   "s": 802.24,
+   "e": 805.34,
+   "text": "Let's go to the coffee shop coffee shop is that way"
+  },
+  {
+   "s": 806.16,
+   "e": 808.88,
+   "text": "Okay, okay, okay Okay."
+  },
+  {
+   "s": 809.52,
+   "e": 810.12,
+   "text": "Oh my god."
+  },
+  {
+   "s": 810.12,
+   "e": 810.58,
+   "text": "We're about to drive."
+  },
+  {
+   "s": 813.11,
+   "e": 814.27,
+   "text": "Oh my god"
+  },
+  {
+   "s": 824.0,
+   "e": 824.68,
+   "text": "Oh,"
+  },
+  {
+   "s": 830.65,
+   "e": 831.07,
+   "text": "this looks"
+  },
+  {
+   "s": 1565.0,
+   "e": 1567.02,
+   "text": "I can probably get it tuned up for you while I'm here."
+  },
+  {
+   "s": 1567.24,
+   "e": 1568.32,
+   "text": "No charge, of course."
+  },
+  {
+   "s": 1569.16,
+   "e": 1570.9,
+   "text": "Hey, you still got those tigers?"
+  },
+  {
+   "s": 1573.74,
+   "e": 1573.94,
+   "text": "The tiger?"
+  },
+  {
+   "s": 1576.79,
+   "e": 1582.55,
+   "text": "Come on, will you drag me all the way west to camp to this tiny little shack next to the turbine?"
+  },
+  {
+   "s": 1583.47,
+   "e": 1585.17,
+   "text": "Hey, you talking to somebody?"
+  },
+  {
+   "s": 1586.19,
+   "e": 1587.83,
+   "text": "Yeah, I'm talking to you."
+  },
+  {
+   "s": 1588.25,
+   "e": 1596.49,
+   "text": "I said we're on the west side of the camp and I'm in a tiny little shack next to the turbine from what I can see in here in the shack."
+  },
+  {
+   "s": 1596.49,
+   "e": 1610.85,
+   "text": "shit he's talking to somebody oh my gosh"
+  },
+  {
+   "s": 1614.85,
+   "e": 1619.49,
+   "text": "did you check it out wear and tear holes"
+  },
+  {
+   "s": 1620.33,
+   "e": 1621.75,
+   "text": "Give me that."
+  },
+  {
+   "s": 1621.75,
+   "e": 1623.67,
+   "text": "I don't think it's a pretty good shape."
+  },
+  {
+   "s": 1625.49,
+   "e": 1626.27,
+   "text": "That's fun."
+  },
+  {
+   "s": 1627.55,
+   "e": 1627.95,
+   "text": "Double?"
+  },
+  {
+   "s": 1629.23,
+   "e": 1629.91,
+   "text": "I can't do a double."
+  }
+ ],
+ "candidates": [
+  {
+   "a": 286.47,
+   "b": 305.29,
+   "len": 18.8,
+   "score": 1.254,
+   "cuts": 0,
+   "text": "Oh, you still doing that lay one on me Clue is planet of love ain't this planet. That's for damn sure Yo, yo stop knocking my boy no I relax hold on hold on",
+   "hype": 11.21,
+   "peak_in": false,
+   "sheet": "cand_00.jpg"
+  },
+  {
+   "a": 435.43,
+   "b": 452.08,
+   "len": 16.6,
+   "score": 1.525,
+   "cuts": 0,
+   "text": "Hey Camino. I've been waiting 13 years to explore this shit. Calm the fuck down. Camino, who am I fucking doing? Who I thought you'd do was both. No, I'm just where we were.",
+   "hype": 12.6,
+   "peak_in": true,
+   "sheet": "cand_01.jpg"
+  },
+  {
+   "a": 899.73,
+   "b": 915.84,
+   "len": 16.1,
+   "score": 1.384,
+   "cuts": 0,
+   "text": "We don't know what to do with this, you know? I got free hallways burning back there. Yeah, we have the baby. I'm gonna need a CTS office. This is the first baby I ever seen in a f***ing GTA! Take it away from us and we're not letting the baby out! Okay, I call child welfare. They're gonna send someone as soon as they can. In the meantime, you're just gonna have to hold tight.",
+   "hype": 8.46,
+   "peak_in": true,
+   "sheet": "cand_02.jpg"
+  },
+  {
+   "a": 1588.1,
+   "b": 1611.15,
+   "len": 23.0,
+   "score": 1.268,
+   "cuts": 0,
+   "text": "I said we're on the west side of the camp and I'm in a tiny little shack next to the turbine from what I can see in here in the shack. shit he's talking to somebody oh my gosh",
+   "hype": 6.94,
+   "peak_in": true,
+   "sheet": "cand_03.jpg"
+  },
+  {
+   "a": 2207.2,
+   "b": 2228.26,
+   "len": 21.1,
+   "score": 1.227,
+   "cuts": 0,
+   "text": "this is a whole new game this is a whole new game whole new structure to play it whole new game bro you got a little yeah don't worry you look great and",
+   "hype": 7.95,
+   "peak_in": true,
+   "sheet": "cand_04.jpg"
+  },
+  {
+   "a": 2575.85,
+   "b": 2593.66,
+   "len": 17.8,
+   "score": 1.276,
+   "cuts": 0,
+   "text": "This is crazy pull up wherever Yo, Sonny, if it was really dark, let me know cuz I don't know on my screen right here It's not as dark as here, but I don't know if this is what y 'all see us in my monitor I don't know if",
+   "hype": 8.49,
+   "peak_in": true,
+   "sheet": "cand_05.jpg"
+  },
+  {
+   "a": 2671.31,
+   "b": 2686.32,
+   "len": 15.0,
+   "score": 1.352,
+   "cuts": 0,
+   "text": "All right, you gonna use all your phone time? If you let me, what the fuck? You need to get your dick sucked, bitch. You know what, keep doing that group work, girl. It's working great. Fuck you. Oh my God, I love this bitch, I love her! You got a problem over there? All good.",
+   "hype": 8.29,
+   "peak_in": true,
+   "sheet": "cand_06.jpg"
+  },
+  {
+   "a": 2766.86,
+   "b": 2783.23,
+   "len": 16.4,
+   "score": 1.315,
+   "cuts": 0,
+   "text": "I'll see you soon. Yeah, see you on the outside. He gonna, he f***ing up right now, y 'all. He f***ing up, but you know when the baddie coming over, you gotta turn to Mr. Clean! You just have to! Yo, up here.",
+   "hype": 8.92,
+   "peak_in": true,
+   "sheet": "cand_07.jpg"
+  },
+  {
+   "a": 3257.75,
+   "b": 3273.86,
+   "len": 16.1,
+   "score": 1.604,
+   "cuts": 0,
+   "text": "Hold on. I can't pay anybody fix that Can I make the bed? Okay, that's rest Another book. Let me examine that real quick Ashes of glory. This is good. This is military Lord chat military Lord right here You are all about the military, you know, he a military man.",
+   "hype": 12.34,
+   "peak_in": true,
+   "sheet": "cand_08.jpg"
+  },
+  {
+   "a": 6149.17,
+   "b": 6164.9,
+   "len": 15.7,
+   "score": 1.434,
+   "cuts": 0,
+   "text": "okay I don't have just take the acid it's in the back room the code is We",
+   "hype": 8.37,
+   "peak_in": true,
+   "sheet": "cand_09.jpg"
+  }
+ ],
+ "source": "https://drive.google.com/file/d/1E3UmNb_zi5JTFJBMY3Wgh7QQOqXkoEOD/view"
+}

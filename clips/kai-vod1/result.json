@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "name": "kai-vod1",
+ "sig": "d7d3f24aebfa",
+ "attempts": 1,
+ "source": "https://drive.google.com/file/d/1E3UmNb_zi5JTFJBMY3Wgh7QQOqXkoEOD/view",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/scan/scan.json",
+ "clips": [],
+ "phase": "scanned"
+}
