@@ -1,14 +1,15 @@
-# Zahlen – Stand 19.11.2026 11:04 (Europe/Berlin)
+# Zahlen – Stand 19.11.2026 13:16 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 39.673 · Zuwachs 24 h: 14
+Posts gezählt: 80 · Views gesamt: 39.598 · Zuwachs 24 h: 14
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
-| 2026-11-19 | tiktok | Kai Cenat spots the first baby he's ever seen in | 13 | – | – | 0 | Kai Cenat GTA 6 |
-| 2026-11-18 | tiktok | Warzone stays free-to-play, and Season 1 brings  | 241 | – | – | 0 | Warzone S1 |
+| 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 0 | – | – | 0 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat spots the first baby he's ever seen in | 130 | – | – | 1 | Kai Cenat GTA 6 |
+| 2026-11-18 | tiktok | Warzone stays free-to-play, and Season 1 brings  | 242 | – | – | 0 | Warzone S1 |
 | 2026-11-18 | youtube | Who's Calling in Sick for GTA 6? #shorts | 2 | – | – | 0 |  |
 | 2026-11-18 | tiktok | GTA 6 release date is tomorrow, November 19. Are | 249 | – | – | 2 |  |
 | 2026-11-18 | tiktok | GTA 6 reviews are in: a 99 on Metacritic and not | 248 | – | – | 1 |  |
@@ -30,17 +31,16 @@ Posts gezählt: 80 · Views gesamt: 39.673 · Zuwachs 24 h: 14
 | 2026-11-14 | tiktok | GTA 6 physical edition has no disc, just a downl | 419 | 4 | 376 | 1 |  |
 | 2026-11-14 | tiktok | MW4 DMZ sends us into Blacksite XO1 and this bri | 277 | 0 | 276 | 8 | MW4 DMZ |
 | 2026-11-11 | youtube | 13 Years of Waiting for GTA 6 #shorts | 217 | 1 | – | 6 |  |
-| 2026-11-11 | tiktok | GTA 6 release is almost here, 13 years after GTA | 258 | 0 | – | 8 |  |
 
 ## Pusnik IRL
-Posts gezählt: 20 · Views gesamt: 5.147 · Zuwachs 24 h: 23
+Posts gezählt: 20 · Views gesamt: 5.685 · Zuwachs 24 h: 23
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
 | 2026-11-19 | youtube | TJR After 24 Hours Of Living Broke #shorts | 0 | – | – | 0 | TJR |
-| 2026-11-19 | tiktok | TJR's verdict after 24 hours of living broke: le | 289 | – | – | 6 | TJR |
+| 2026-11-19 | tiktok | TJR's verdict after 24 hours of living broke: le | 569 | – | – | 8 | TJR |
 | 2026-11-19 | youtube | This Back Seat Is Insane 🤯 #TJR #shorts | 0 | – | – | 0 | TJR |
-| 2026-11-19 | tiktok | TJR checks out the back seat of this SUV and it  | 382 | – | – | 3 | TJR |
+| 2026-11-19 | tiktok | TJR checks out the back seat of this SUV and it  | 640 | – | – | 4 | TJR |
 | 2026-11-18 | youtube | TJR: "Worst Day Of My Life" #shorts | 0 | 0 | 0 | 0 | TJR |
 | 2026-11-18 | tiktok | TJR after a few hours without his usual routine: | 748 | 19 | 748 | 4 | TJR |
 | 2026-11-18 | youtube | TJR On His Older Brother ❤️ #TJR #shorts | 0 | 0 | 0 | 0 | TJR |
@@ -61,9 +61,9 @@ Posts gezählt: 20 · Views gesamt: 5.147 · Zuwachs 24 h: 23
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Kai Cenat GTA 6 | 1 | 13 | 13 | – |
-| TJR | 18 | 4.296 | 748 | 0 von 18 |
-| Warzone S1 | 6 | 1.465 | 252 | – |
+| Kai Cenat GTA 6 | 2 | 130 | 130 | – |
+| TJR | 18 | 4.834 | 748 | 0 von 18 |
+| Warzone S1 | 6 | 1.466 | 252 | – |
 | MW4 DMZ | 3 | 778 | 277 | – |
 | JasonTheWeen | 2 | 851 | 849 | – |
 | SEGA Virtua Fighter | 8 | 3.265 | 1.279 | – |
