@@ -2,7 +2,7 @@
  "enabled": true,
  "note": "AN seit 18.11.2026 (Launch-Wache, nach Generalprobe). Nur twitch.tv/clix, Kampagne \"$5,000 Clix GTA VI Marathon Pool\" (Reach, Content Rewards; claude/launch-wache.md). from = nicht vor 19.11. 05:45 Berlin aufnehmen (Laeufe warten bis dahin, Inbox bleibt frei von Vorlauf-Muell), until = 19.11. 12:45 Berlin (die Launch-Wache arbeitet bis 12:30; danach stoppt Livewatch von selbst). Werte aus gta6_launch.livewatch_template, min_chat/co_chat nicht ohne Messung aendern. Aus: enabled false pushen UND laufenden Lauf abbrechen. Vorher: JasonTheWeen (claude/livewatch-stand.md), entfernt 18.11. | 19.11. 08:10 Berlin (Steven-Auftrag): Trigger sensibler, min_chat 3.0 / co_chat 1.8 / min_hype 7 / warmup_s 180 (Grund: 2 h Live, 1 Treffer bei 4.5/2.5/9). Werte-Log: claude/livewatch-stand.md. | 19.11. 13:00: auf kaicenat umgestellt (Steven; claude/kai-wache.md).",
  "from": "2026-11-19T04:45:00Z",
- "until": "2026-11-19T16:11:00Z",
+ "until": "2026-11-19T17:11:00Z",
  "max_minutes": 330,
  "poll_seconds": 90,
  "channels": [
