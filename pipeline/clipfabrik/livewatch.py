@@ -613,22 +613,104 @@ def watch(root, sleep=time.sleep, now=time.time, watcher=None):
     print("LIVEWATCH_IDLE")
 
 
+GQL_ID = "kimne78kx3ncx6brgo4mv6wki5h1ko"
+
+
+def gql(query, timeout=30):
+    """One anonymous Twitch GQL query (same public web client as the chat replay). Raises on any problem."""
+    import urllib.request
+    r = urllib.request.Request("https://gql.twitch.tv/gql", json.dumps({"query": query}).encode(), {"Client-ID": GQL_ID, "Content-Type": "application/json"})
+    d = json.load(urllib.request.urlopen(r, timeout=timeout))
+    if d.get("errors") and not d.get("data"): raise RuntimeError(str(d["errors"])[:200])
+    return d["data"]
+
+
+def iso_epoch(x):
+    return datetime.datetime.fromisoformat(str(x).replace("Z", "+00:00")).timestamp()
+
+
+def resolve_vod(vod, login):
+    """v0.7 replay: 'videos/<id>' url -> (id, created epoch or None). Else the channel's newest archive (running broadcasts are archives, too)."""
+    m = re.search(r"videos/(\d+)", vod or "")
+    if m:
+        try: n = gql('query{video(id:"%s"){createdAt}}' % m.group(1))["video"]; return m.group(1), iso_epoch(n["createdAt"])
+        except Exception: return m.group(1), None
+    n = gql('query{user(login:"%s"){videos(first:3, type:ARCHIVE, sort:TIME){edges{node{id createdAt lengthSeconds title}}}}}' % re.sub(r"[^a-z0-9_]", "", login.lower()))["user"]["videos"]["edges"][0]["node"]
+    print("VOD resolved:", n); return n["id"], iso_epoch(n["createdAt"])
+
+
+def vod_pointers(login, vid, lo, hi, top=8):
+    """v0.7 replay: viewers' Twitch clips of this VOD inside [lo, hi] VOD seconds, best viewed first, one per 45 s. = (offset, duration, views, title, curator)."""
+    q = ('query{user(login:"%s"){clips(first:100, criteria:{period:LAST_DAY, sort:VIEWS_DESC}){edges{node{id title viewCount durationSeconds videoOffsetSeconds video{id} curator{login}}}}}}'
+         % re.sub(r"[^a-z0-9_]", "", login.lower()))
+    out = []
+    for e in gql(q)["user"]["clips"]["edges"]:
+        n = e["node"]
+        if not n.get("video") or str(n["video"]["id"]) != str(vid) or n.get("videoOffsetSeconds") is None: continue
+        o = int(n["videoOffsetSeconds"])
+        if lo <= o <= hi: out.append((o, int(n.get("durationSeconds") or 25), int(n.get("viewCount") or 0), n.get("title") or "", ((n.get("curator") or {}).get("login") or "")))
+    keep = []
+    for c in sorted(out, key=lambda x: -x[2]):
+        if all(abs(c[0] - k[0]) > 45 for k in keep): keep.append(c)
+    return keep[:top]
+
+
+def push_paths(root, paths, msg):
+    g = lambda *a: subprocess.run(["git", "-C", root, *a], capture_output=True, text=True)
+    for p in paths: g("add", p)
+    g("commit", "-q", "-m", msg)
+    for i in range(4):
+        if g("pull", "-q", "--rebase", "origin", "main").returncode == 0 and g("push", "-q", "origin", "HEAD:main").returncode == 0: return True
+        time.sleep(6)
+    return False
+
+
 def replay(vod, start, minutes, root, min_chat=None, compare=False):
     """VOD mode: a past Twitch VOD is played through the live detection. Audio = VOD (HLS, read faster than real time),
-    chat = chat replay. Clips land in clips/live-<channel>/ exactly like live clips, and are pushed one by one."""
-    m = re.search(r"videos/(\d+)", vod); assert m, "VOD url needs /videos/<id>"
+    chat = chat replay. Clips land in clips/live-<channel>/ exactly like live clips, and are pushed one by one.
+    v0.7 (19.11.): `vod` may be a channel url / name (-> newest archive), `start` may be an ISO time (UTC, e.g. 2026-11-19T05:00:00Z), and the clips that
+    viewers made on Twitch in that window mark the moments first (own cut from the VOD at their timestamps, no repost); the detection runs afterwards when
+    fewer than 6 of those worked. replay_info.json in the channel folder tells what was resolved (the logs of a running job are not readable)."""
     c = cfg(root); ch = dict((c.get("channels") or [{}])[0]); ch.setdefault("name", "jasontheween")
     ch = {"min_hype": 9, "layout": "native", "per_hour": 8, "max_clips": 8, **ch}
     if min_chat: ch["min_chat"] = float(min_chat)
     ch.pop("log_only", None); dur = int(minutes) * 60
+    name = "live-" + re.sub(r"[^a-z0-9-]", "", ch["name"].lower()); info = {"vod_arg": vod, "start_arg": start, "minutes": int(minutes), "pointers": [], "made": [], "errors": []}
+    infop = os.path.join(root, "clips", name, "replay_info.json"); os.makedirs(os.path.dirname(infop), exist_ok=True)
+    def save(): json.dump(info, open(infop, "w"), indent=1, ensure_ascii=False)
+    mm = re.search(r"twitch\.tv/([A-Za-z0-9_]+)", ch.get("url", "")); login = mm.group(1) if mm else ch["name"]
+    try: vid, created = resolve_vod(vod if re.search(r"videos/\d+|twitch\.tv/", vod or "") else f"https://www.twitch.tv/{vod}", login)
+    except Exception as e:
+        info["errors"].append("resolve: " + str(e)[-200:]); save(); push_paths(root, [infop], "livewatch: replay_info (resolve failed)"); print("VOD not resolvable:", e); return
+    vod = f"https://www.twitch.tv/videos/{vid}"
+    try: start = int(start)
+    except ValueError:
+        if created is None: info["errors"].append("ISO start needs the VOD creation time"); save(); push_paths(root, [infop], "livewatch: replay_info (no start)"); return
+        start = max(0, int(iso_epoch(start) - created))
+    info.update({"vod": vid, "vod_created": created, "start_s": start}); save()
+    ptr = []
+    try: ptr = vod_pointers(login, vid, start, start + dur)
+    except Exception as e: info["errors"].append("clips: " + str(e)[-200:])
+    info["pointers"] = [{"offset": o, "dur": d, "views": v, "title": t, "by": b} for o, d, v, t, b in ptr]; save()
+    push_paths(root, [infop], "livewatch: replay_info %d viewer clips" % len(ptr))
     hls = live_url(vod, int(ch.get("height", 720)))
-    if not hls: print("VOD not readable"); return
+    if not hls:
+        info["errors"].append("VOD not readable"); save(); push_paths(root, [infop], "livewatch: replay_info (VOD not readable)"); print("VOD not readable"); return
     rec = os.path.join(os.environ.get("RUNNER_TEMP", "/tmp"), "lw_rec"); os.makedirs(rec, exist_ok=True)
     for f in glob.glob(os.path.join(rec, "*.ts")): os.remove(f)
     cf.run(["ffmpeg", "-y", "-v", "error", "-ss", str(int(start)), "-i", hls, "-t", str(dur), "-c", "copy", "-f", "segment", "-segment_time", str(SEG),
             "-reset_timestamps", "1", os.path.join(rec, "%05d.ts")], timeout=3600)
     print("VOD recorded:", len(glob.glob(os.path.join(rec, "*.ts"))), "pieces")
-    chat = ReplayChat(m.group(1), int(start), dur); ch["vod"] = m.group(1); ch["vod_start"] = int(start)
+    segs = {int(os.path.basename(f)[:5]): f for f in glob.glob(os.path.join(rec, "*.ts"))}
+    for i, (o, d, v, t, b) in enumerate(ptr):  # viewers' clips first: the moment is ~70 % into the viewer clip
+        pk = (o - start) + min(d, 30) * 0.7; stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + f"v{i}"
+        try:
+            entry, nm = make_clip(ch, root, segs, 0.0, pk, 0.0, stamp); entry.update({"viewer_clip": True, "views": v, "title": t, "peak_s": int(pk), "vod": vid, "vod_s": int(o), "chat": 0.0})
+            publish(root, nm, entry, True); info["made"].append({"id": stamp, "views": v, "title": t, "vod_s": o})
+        except Exception as e: info["errors"].append(f"clip {i} @{o}: " + str(e)[-160:]); print("WARN viewer clip failed:", str(e)[-200:])
+    save(); push_paths(root, [infop], "livewatch: replay_info (%d clips made)" % len(info["made"]))
+    if len(info["made"]) >= 6: print("enough viewer clips, detection skipped"); return
+    chat = ReplayChat(vid, int(start), dur); ch["vod"] = vid; ch["vod_start"] = int(start)
     if compare:  # same recording twice: old settings (plain message count, no alert / safety filters; dir live-<name>-old holds QA pictures only), then the new ones
         old = {**ch, "legacy": True, "name": ch["name"] + "-old", "min_chat": float(min_chat or 4.5)}
         n0 = loop(old, root, rec, lambda: False, True, time.time() + 3 * 3600, chat.view(True), keep=True); print(f"COMPARE old settings: clips {n0}")

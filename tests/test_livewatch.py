@@ -248,3 +248,18 @@ def test_clip_cluster(lw):
     assert n == 3 and 180 <= pos <= 200
     assert lw.clip_cluster([t0 + 100, t0 + 160], t0, 300) == (0, None)  # too far apart
     assert lw.clip_cluster([t0 + 10, t0 + 12], t0, 600) == (0, None)  # older than the lookback window
+
+
+def test_vod_pointers_filters_vod_window_and_dedupes(lw, monkeypatch):
+    def n(o, v, vid="99", d=25, t="t"): return {"node": {"id": "x", "title": t, "viewCount": v, "durationSeconds": d, "videoOffsetSeconds": o, "video": {"id": vid}, "curator": {"login": "u"}}}
+    edges = [n(1000, 50), n(1020, 80), n(5000, 10), n(300, 99), n(2000, 70, vid="12"), {"node": {"id": "y", "title": "", "viewCount": 5, "durationSeconds": 20, "videoOffsetSeconds": None, "video": None, "curator": None}}]
+    monkeypatch.setattr(lw, "gql", lambda q, timeout=30: {"user": {"clips": {"edges": edges}}})
+    got = lw.vod_pointers("clix", "99", 600, 3000)
+    assert [(g[0], g[2]) for g in got] == [(1020, 80)]  # 300 is before the window, 5000 after, vod 12 is another broadcast, 1000 is within 45 s of the better 1020
+
+
+def test_resolve_vod_from_url_and_channel(lw, monkeypatch):
+    monkeypatch.setattr(lw, "gql", lambda q, timeout=30: {"video": {"createdAt": "2026-11-18T11:00:00Z"}} if "video(id" in q else
+                        {"user": {"videos": {"edges": [{"node": {"id": "777", "createdAt": "2026-11-18T11:00:00Z", "lengthSeconds": 1, "title": "x"}}]}}})
+    vid, created = lw.resolve_vod("https://www.twitch.tv/videos/555", "clix"); assert vid == "555" and created == 1794999600.0
+    assert lw.resolve_vod("https://www.twitch.tv/clix", "clix")[0] == "777"
