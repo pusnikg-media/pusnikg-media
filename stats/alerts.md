@@ -1,6 +1,6 @@
-# Alarme – Stand 19.11.2026 10:42 (Europe/Berlin)
+# Alarme – Stand 19.11.2026 10:59 (Europe/Berlin)
 
-stand_utc: 2026-11-19T09:42:34Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-19T09:59:19Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
@@ -11,7 +11,7 @@ Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene P
 - Repo ist 3769 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
 
 ## Post nach 19:30
-- Plan: 3 Kampagnen-Clips am 19.11. auf Pusnik G (erlaubt: 2).
+- Plan: 4 Kampagnen-Clips am 19.11. auf Pusnik G (erlaubt: 2).
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
 - Warzone S1 (Pusnik G, tiktok, 18.11. 19:30): „Warzone stays free-to-play, and Season 1 brin“ – https://www.tiktok.com/@pusnikg/video/7709580557197380896
