@@ -1,10 +1,14 @@
 {
  "id": "20261119-153435",
- "status": "claimed",
- "grund": "Alligator-Moment, Layout A mini",
- "at": "2026-11-19T16:25:00Z",
+ "status": "posted",
+ "grund": "Alligator-Moment, Layout A mini; kein Postplan-Slot (Limit max_pro_tag 4 voll)",
+ "at": "2026-11-19T16:19:00Z",
  "caption": "Florida wildlife is real 💀",
  "weg": "B",
  "postId": "043027b7-16d7-4697-a766-a1b75760d92f",
- "links": {}
+ "links": {
+  "tiktok": "https://www.tiktok.com/@pusnikg/video/7709917315281751329",
+  "youtube": "https://www.youtube.com/watch?v=frRYpoxwlUY",
+  "instagram": ""
+ }
 }
