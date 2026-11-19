@@ -347,5 +347,24 @@
   "peak_s": 7786,
   "vod": "2932204601",
   "vod_s": 74131
+ },
+ {
+  "id": "20261119-113204",
+  "at": "2026-11-19T11:32:42+00:00",
+  "channel": "clix",
+  "hype": 28.9,
+  "seconds": 16.05,
+  "quote": "Clix is deep into the GTA VI launch marathon and this moment is WILD... 🔥🎮",
+  "a": 25.95,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-113204.mp4",
+  "said": "burned down pretty good can't remember exactly but I think I built the fire under that barrel around 3 p .m. and it's 830 a .m. right now so 17 hours it's been burning I think it's time we crack it open and see what we got. I expect it's not completely done, but we'll...",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-113204.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-113204.jpg",
+  "posted": false,
+  "chat": 0.0,
+  "peak_s": 12998,
+  "safety": true,
+  "score": 4.13
  }
 ]
