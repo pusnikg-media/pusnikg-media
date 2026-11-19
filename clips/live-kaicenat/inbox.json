@@ -420,7 +420,7 @@
   "said": "Oof. He's heavy. Well we got the full order. What? You can't carry two? Course I can. Just don't feel like it. I'm sorry. I'm never doing that again. I'm never doing it again. I'm sorry.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-221100.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-221100.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.92,
   "peak_s": 6993
  },
@@ -437,7 +437,7 @@
   "said": "They're not gonna know what's me, huh? Oh Shit even see bone next to me who is",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-223137.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-223137.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.87,
   "peak_s": 709
  },
@@ -454,7 +454,7 @@
   "said": "Oh! You pulled out the Oozie? You not know Oozie? Get the fuck in with the floor and pop, you nigga And back out the locks, right?",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-224147.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-224147.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.13,
   "peak_s": 1364
  },
@@ -471,7 +471,7 @@
   "said": "every bank I think that's possible do it yeah I gotta get oh first to do it you got to do it robbing every bank in GTA Yeah, you're gonna -",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-224553.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-224553.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.06,
   "peak_s": 1552
  },
@@ -488,7 +488,7 @@
   "said": "i still feel like we should have gotten scratched oh it's the music video chat w music video w music video here we go Yo Loonie, Jay, what you think of the ride? Howdy. Hold on, gotta be! Just count to ten!",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-225151.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-225151.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.58,
   "peak_s": 1948
  },
@@ -505,7 +505,7 @@
   "said": "I feel like this shit finna get shot up, bro. Okay, move, move. Thanks for now. Right there. Go get her. Oh shit, Sonny's alive, chat. Everybody say hello, Sonny.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-225305.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-225305.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.59,
   "peak_s": 2067
  },
@@ -525,5 +525,22 @@
   "posted": false,
   "chat": 2.27,
   "peak_s": 5577
+ },
+ {
+  "id": "20261119-235446",
+  "at": "2026-11-19T23:55:41+00:00",
+  "channel": "kaicenat",
+  "hype": 12.2,
+  "seconds": 20.05,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 19.2,
+  "b": 39.25,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-235446.mp4",
+  "said": "oh my god this is not a pinball machine oh my gosh oh my gosh no you need the other end follow it to the other direction oh my oh my god we said we said we said we said we said we said it we said it we said it we said it we said it we said Holy shit.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-235446.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-235446.jpg",
+  "posted": false,
+  "chat": 6.69,
+  "peak_s": 5772
  }
 ]
