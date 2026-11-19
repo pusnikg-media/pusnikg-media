@@ -152,7 +152,7 @@
   "said": "Should we farm a clip Should we farm a clip should we have him holding the camera and then you act like you get mad at the cameraman and be like Oh, why are you filming so low? Yeah. All right. Wait, wait, wait, wait. Yeah, yeah.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-073846.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-073846.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.88,
   "peak_s": 1330,
   "vod": "2932204601",
@@ -171,7 +171,7 @@
   "said": "Yo, you're good dude, you're good bro my bad, dude, okay, Lacey. I'm gonna have to tell you something right now I don't know why your crack was already out My crack's always out, look. I can't crack. I can't crack. Dude, I just like touch it. No, I know. I was",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-074001.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-074001.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.33,
   "peak_s": 1525,
   "vod": "2932204601",
@@ -195,5 +195,24 @@
   "peak_s": 1993,
   "vod": "2932204601",
   "vod_s": 68338
+ },
+ {
+  "id": "20261119-074247",
+  "at": "2026-11-19T07:43:49+00:00",
+  "channel": "clix",
+  "hype": 8.0,
+  "seconds": 13.97,
+  "quote": "Clix just hit another big moment in the GTA VI marathon... 😮🎮",
+  "a": 27.08,
+  "b": 41.05,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-074247.mp4",
+  "said": "What you got front row seats, bro Why are you eating their saffron roe seeds? I don't know what I got.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-074247.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-074247.jpg",
+  "posted": false,
+  "chat": 2.78,
+  "peak_s": 2548,
+  "vod": "2932204601",
+  "vod_s": 68893
  }
 ]
