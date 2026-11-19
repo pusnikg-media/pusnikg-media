@@ -1,0 +1,14 @@
+{
+ "note": "Postfenster der Kai-Cenat-Kampagne (Steven 19.11. abends: er muss jeden Post binnen 30 Min bei Content Rewards einreichen und kann in der Spaetschicht nur in den Pausen). Maßgeblich: claude/kai-wache.md Abschnitt 'Zeitfenster, Limits, Reihenfolge'. Tage OHNE Eintrag unter 'tage' (Wochenende, Steven hat frei): keine Fensterbindung, Wache postet wie bisher im stuendlichen Lauf (Moment hoechstens 75 Min alt), weiter nur 09:00-19:30 (Waechter/Test erzwingen 19:30 fuer jeden Postplan-Slot). Neue Spaetschicht-Tage = Zeile unter 'tage' (Berlin, HH:MM = Fensterbeginn).",
+ "kampagne": "Kai Cenat GTA 6",
+ "max_pro_tag": 8,
+ "pro_fenster": 2,
+ "abstand_im_fenster_min": 10,
+ "abstand_zwischen_posts_min": 60,
+ "moment_max_alter_h": 4,
+ "fruehestens": "09:00",
+ "spaetestens": "19:30",
+ "tage": {
+  "2026-11-20": ["10:45", "13:15", "16:30", "19:00"]
+ }
+}

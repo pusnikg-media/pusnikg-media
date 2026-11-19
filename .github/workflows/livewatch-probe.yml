@@ -1,0 +1,27 @@
+# Livewatch v0.8 probe (19.11.2026): prints what the top-clip mode would do RIGHT NOW on a GitHub runner - the channel's viewer clips (anonymous Twitch GQL),
+# the relative threshold, the candidates and one test download (clip + a VOD section timing). Writes NOTHING into the repo, no push, no concurrency group
+# (does not touch the running livewatch). Manual only. Look at the "Probe" step log: lines starting with PROBE.
+name: livewatch-probe
+on:
+  workflow_dispatch:
+  push:  # TEMPORAER: damit der Probelauf vor dem Merge laeuft (workflow_dispatch geht erst, wenn die Datei auf main liegt). Nach dem Merge diesen Block loeschen.
+    branches: [claude/zealous-hypatia-gqclx9]
+    paths: [".github/workflows/livewatch-probe.yml"]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        timeout-minutes: 10
+        run: |
+          bash pipeline/install_tools.sh || exit 1
+          pip install -q numpy scipy pillow yt-dlp curl_cffi
+      - name: Probe
+        run: python3 -u pipeline/clipfabrik/livewatch.py probe .
