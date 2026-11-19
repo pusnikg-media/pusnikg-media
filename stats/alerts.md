@@ -1,6 +1,6 @@
-# Alarme – Stand 19.11.2026 18:22 (Europe/Berlin)
+# Alarme – Stand 19.11.2026 21:19 (Europe/Berlin)
 
-stand_utc: 2026-11-19T17:22:06Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-19T20:19:24Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
@@ -8,9 +8,14 @@ Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene P
 - trends/latest.json: reddit r/LivestreamFail: HTTP 404; reddit r/GTA6: HTTP 404; reddit r/GTA: HTTP 404
 
 ## Repo wächst zu stark
-- Repo ist 4388 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
+- Repo ist 4507 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
+- Kai Cenat GTA 6 (Pusnik G, tiktok, 19.11. 10:40): „Kai Cenat spots the first baby he's ever seen“ – https://www.tiktok.com/@pusnikg/video/7709815203948465440
+- TJR (Pusnik IRL, youtube, 19.11. 09:30): „TJR After 24 Hours Of Living Broke #shorts“ – https://www.youtube.com/shorts/GncHEd-_g9U
+- TJR (Pusnik IRL, tiktok, 19.11. 09:30): „TJR's verdict after 24 hours of living broke:“ – https://www.tiktok.com/@pusnikirl/video/7709796979932417312
+- TJR (Pusnik IRL, youtube, 19.11. 09:00): „This Back Seat Is Insane 🤯 #TJR #shorts“ – https://www.youtube.com/shorts/zyCaNf8NK4I
+- TJR (Pusnik IRL, tiktok, 19.11. 09:00): „TJR checks out the back seat of this SUV and “ – https://www.tiktok.com/@pusnikirl/video/7709789236613975328
 - Warzone S1 (Pusnik G, tiktok, 18.11. 19:30): „Warzone stays free-to-play, and Season 1 brin“ – https://www.tiktok.com/@pusnikg/video/7709580557197380896
 - TJR (Pusnik IRL, youtube, 18.11. 09:30): „TJR: "Worst Day Of My Life" #shorts“ – https://www.youtube.com/shorts/jLfal0h29nc
 - TJR (Pusnik IRL, tiktok, 18.11. 09:30): „TJR after a few hours without his usual routi“ – https://www.tiktok.com/@pusnikirl/video/7709424676061089057
