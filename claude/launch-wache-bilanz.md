@@ -1,10 +1,10 @@
-# Launch-Wache Bilanz – Clix GTA VI Marathon (Do 19.11.2026), Stand 08:55 Berlin
+# Launch-Wache Bilanz – Clix GTA VI Marathon (Do 19.11.2026), Stand 08:55 Berlin (Zeiten in Berlin)
 
 **Posts: 0.** Links: keine. Kein Clip hielt die Prüfung (Clix klar im Fokus + sehenswerter GTA-Moment).
 
 ## Was passiert ist
 - Clix streamt seit gestern ca. 11:34 Berlin (VOD 2932204601). Bis ca. 07:30 Berlin war er **IRL** (Nachtfahrt, Haus, Besuch, Lacy). GTA 6 lief nur von ca. **07:40 bis 08:15 Berlin** (Bootsfahrt, Story-Dialoge, Karte). Um 08:16 ging er schlafen: Bildschirm „Waking up in 07:13:55“ → **wacht ca. 15:30 Berlin auf**, also nach 12:30 (Befugnis) und nach `until` (12:45).
-- Livewatch war nicht kaputt: 05:45–07:51 UTC… (Berlin 06:45–08:51) nur 1 Treffer bei 4,5/2,5/9; nach Senkung auf 3,0/1,8/7 kamen im Minutentakt Kandidaten.
+- Livewatch war nicht kaputt: ab 05:45 Berlin bis 07:51 Berlin nur 1 Treffer bei 4,5/2,5/9; nach Senkung auf 3,0/1,8/7 kamen im Minutentakt Kandidaten.
 - **19 Kandidaten geprüft, 0 postbar:** 7 IRL ohne GTA, 6 Story-Cutscene/Boot mit Spieldialog ohne Clix-Reaktion, 2 Menü/Karte, 2 Smalltalk, 2 Schlafengehen. Keine Marker-Lücke: jeder Clip hat `clips/live-clix/posted/<id>.json` (skipped + Grund).
 - Notlösung „Twitch-Clips der Zuschauer“: Clip-Liste liefert 0 (GQL leer/geblockt aus dem Runner), mein direkter Abruf aus der Sandbox wurde vom System gesperrt (nicht umgangen). Zuschauer-Clips wären außerdem Reposts.
 
