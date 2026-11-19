@@ -236,5 +236,22 @@
   "posted": false,
   "chat": 3.09,
   "peak_s": 312
+ },
+ {
+  "id": "20261119-173001",
+  "at": "2026-11-19T17:31:23+00:00",
+  "channel": "kaicenat",
+  "hype": 14.6,
+  "seconds": 26.04,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14,
+  "b": 38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-173001.mp4",
+  "said": "Oh Come on come on. Come on. What'd they crash it to me bro? Why why why why why why",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-173001.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-173001.jpg",
+  "posted": false,
+  "chat": 3.32,
+  "peak_s": 861
  }
 ]
