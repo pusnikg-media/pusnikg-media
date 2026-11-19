@@ -629,14 +629,33 @@ def iso_epoch(x):
     return datetime.datetime.fromisoformat(str(x).replace("Z", "+00:00")).timestamp()
 
 
+def _ytdlp_json(args, timeout=240):
+    r = subprocess.run(["yt-dlp", "-J", "--no-warnings", *args], capture_output=True, text=True, timeout=timeout)
+    if r.returncode != 0 or not r.stdout.strip(): raise RuntimeError("yt-dlp: " + (r.stderr.strip().split("\n") or [""])[-1][:200])
+    return json.loads(r.stdout)
+
+
 def resolve_vod(vod, login):
-    """v0.7 replay: 'videos/<id>' url -> (id, created epoch or None). Else the channel's newest archive (running broadcasts are archives, too)."""
-    m = re.search(r"videos/(\d+)", vod or "")
-    if m:
-        try: n = gql('query{video(id:"%s"){createdAt}}' % m.group(1))["video"]; return m.group(1), iso_epoch(n["createdAt"])
-        except Exception: return m.group(1), None
-    n = gql('query{user(login:"%s"){videos(first:3, type:ARCHIVE, sort:TIME){edges{node{id createdAt lengthSeconds title}}}}}' % re.sub(r"[^a-z0-9_]", "", login.lower()))["user"]["videos"]["edges"][0]["node"]
-    print("VOD resolved:", n); return n["id"], iso_epoch(n["createdAt"])
+    """v0.7 replay: 'videos/<id>' url -> (id, created epoch or None). Else the channel's newest archive (running broadcasts are archives, too).
+    GQL first, yt-dlp as the second way (19.11.: the GQL video list answered with null on the first live try)."""
+    m = re.search(r"videos/(\d+)", vod or ""); vid = m.group(1) if m else None; created = None; errs = []
+    try:
+        if vid: created = iso_epoch(gql('query{video(id:"%s"){createdAt}}' % vid)["video"]["createdAt"])
+        else:
+            n = gql('query{user(login:"%s"){videos(first:3, type:ARCHIVE, sort:TIME){edges{node{id createdAt lengthSeconds title}}}}}' % re.sub(r"[^a-z0-9_]", "", login.lower()))["user"]["videos"]["edges"][0]["node"]
+            print("VOD resolved (gql):", n); return n["id"], iso_epoch(n["createdAt"])
+    except Exception as e: errs.append("gql: " + str(e)[-120:])
+    try:
+        if not vid:
+            d = _ytdlp_json(["--flat-playlist", "--playlist-end", "3", f"https://www.twitch.tv/{re.sub(r'[^A-Za-z0-9_]', '', login)}/videos?filter=archives&sort=time"])
+            e0 = (d.get("entries") or [])[0]; vid = re.sub(r"\D", "", str(e0.get("id") or e0.get("url") or "")) or None
+            if not vid: raise RuntimeError("no archive in list")
+        if created is None:
+            ts = _ytdlp_json(["--no-playlist", f"https://www.twitch.tv/videos/{vid}"], 300).get("timestamp"); created = float(ts) if ts else None
+        print("VOD resolved (yt-dlp):", vid, created); return vid, created
+    except Exception as e: errs.append("yt-dlp: " + str(e)[-160:])
+    if vid: return vid, created
+    raise RuntimeError(" | ".join(errs))
 
 
 def vod_pointers(login, vid, lo, hi, top=8):
