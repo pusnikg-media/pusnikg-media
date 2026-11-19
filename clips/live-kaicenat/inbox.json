@@ -369,7 +369,7 @@
   "said": "Okay, so back to this we need to talk about Sheila's tendency to go full -trad wife I mean like her fan base. Oh my god. I know taste like Every single day, so I don't really understand chat tastes like WAPA",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-200917.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-200917.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.62,
   "peak_s": 6694
  },
@@ -386,7 +386,7 @@
   "said": "that came from you're ready to go do some hunting man yeah sure all right fuck yeah let me get my shit together here yeah hey you need a gun or you got one yeah I got a few things in the car yeah fuck that we're We're gonna do it. Let's do it. My bad. God damn I can't eat. God damn my bad. Damn. So that my mom, bruh. Let's go. Damn.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-204803.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-204803.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.3,
   "peak_s": 1994
  },
@@ -406,5 +406,22 @@
   "posted": false,
   "chat": 4.93,
   "peak_s": 6153
+ },
+ {
+  "id": "20261119-221100",
+  "at": "2026-11-19T22:11:56+00:00",
+  "channel": "kaicenat",
+  "hype": 9.0,
+  "seconds": 15.2,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 16.64,
+  "b": 31.84,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-221100.mp4",
+  "said": "Oof. He's heavy. Well we got the full order. What? You can't carry two? Course I can. Just don't feel like it. I'm sorry. I'm never doing that again. I'm never doing it again. I'm sorry.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-221100.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-221100.jpg",
+  "posted": false,
+  "chat": 2.92,
+  "peak_s": 6993
  }
 ]
