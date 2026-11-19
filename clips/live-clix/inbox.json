@@ -29,7 +29,7 @@
   "said": "Little guy Yeah, cute ain't gonna fill our bellies. You're one my fish Yeah",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-070446.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-070446.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.33,
   "peak_s": 153
  },
@@ -49,5 +49,22 @@
   "posted": false,
   "chat": 2.17,
   "peak_s": 501
+ },
+ {
+  "id": "20261119-071303",
+  "at": "2026-11-19T07:14:05+00:00",
+  "channel": "clix",
+  "hype": 11.4,
+  "seconds": 15.2,
+  "quote": "Clix is deep into the GTA VI launch marathon and this moment is WILD... 🔥🎮",
+  "a": 16.47,
+  "b": 31.66,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-071303.mp4",
+  "said": "This is serious just Glad you're around. Oh good. I'm not going anywhere Come on. Let's go to bed You should hit nope type shit, dude. What is that comment, bro?",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-071303.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-071303.jpg",
+  "posted": false,
+  "chat": 3.33,
+  "peak_s": 621
  }
 ]
