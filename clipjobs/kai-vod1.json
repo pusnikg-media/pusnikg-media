@@ -1,7 +1,93 @@
 {
  "name": "kai-vod1",
  "source": "https://drive.google.com/file/d/1E3UmNb_zi5JTFJBMY3Wgh7QQOqXkoEOD/view",
- "layout": "native",
+ "layout": "split",
+ "facecam": [
+  0,
+  0.2889,
+  0.22,
+  0.25
+ ],
  "min_len": 15,
- "hot_k": 28
+ "hot_k": 28,
+ "clips": [
+  {
+   "id": "A_baby",
+   "a": 904.4,
+   "b": 920.2,
+   "caption": "Kai finds a BABY in GTA 6 👶",
+   "captions": true
+  },
+  {
+   "id": "B_13y",
+   "a": 437.0,
+   "b": 452.6,
+   "caption": "Kai waited 13 years for this 😭",
+   "captions": true
+  },
+  {
+   "id": "C_here",
+   "a": 3970.3,
+   "b": 3997.3,
+   "caption": "Kai: 'we're actually here' 😭",
+   "captions": true
+  },
+  {
+   "id": "E_paint",
+   "a": 4679.1,
+   "b": 4695.6,
+   "caption": "Kai picks his car paint 🎨",
+   "captions": true
+  },
+  {
+   "id": "H_code",
+   "a": 6238.4,
+   "b": 6260.8,
+   "caption": "Kai finds the 0420 code 👀",
+   "captions": true
+  },
+  {
+   "id": "D_house",
+   "a": 3253.2,
+   "b": 3273.8,
+   "caption": "Kai has $407 to fix a house 💸",
+   "captions": true
+  },
+  {
+   "id": "G_night",
+   "a": 2566.0,
+   "b": 2583.0,
+   "caption": "Kai on the GTA 6 night drive 🌙",
+   "captions": true
+  },
+  {
+   "id": "F_newgame",
+   "a": 2207.2,
+   "b": 2228.0,
+   "caption": "Kai: 'a whole NEW game' 🤯",
+   "captions": true
+  },
+  {
+   "id": "I_manly",
+   "a": 4217.8,
+   "b": 4233.6,
+   "caption": "Kai: 'be manly, bro' 😂",
+   "captions": true
+  },
+  {
+   "id": "J_apology",
+   "a": 5795.2,
+   "b": 5815.0,
+   "caption": "Kai keeps saying 'my bad' 😅",
+   "captions": true
+  },
+  {
+   "id": "Z_native_test",
+   "a": 904.4,
+   "b": 920.2,
+   "caption": "Kai finds a BABY in GTA 6 👶",
+   "captions": true,
+   "layout": "native"
+  }
+ ]
 }
