@@ -1,5 +1,5 @@
 {
- "note": "Reserve Kai-Cenat-VOD (kai-vod1, Clipfabrik, layout split, bereits gerendert). Steven 19.11.: nur TikTok + Instagram auf Pusnik G (kein YouTube, Quelle = YouTube-Marathon), max. 4 Kai-Posts pro Tag (Live-Clips der Kai-Wache zaehlen mit), mind. 2,5 h Abstand, nie nach 19:30 MEZ, nichts vor 09:00. Live-Clips der Kai-Wache haben Vorrang und duerfen diese Slots verschieben (naechster freier Slot, Reihenfolge der Liste). Posten wie vidIQ-Regeln in claude/kai-wache.md: Video-URL -> vidiq_video_upload (url), ein Entwurf mit publishAt (UTC = MEZ minus 1 h), TikTok brandContent true, privacyLevel PUBLIC_TO_EVERYONE, allowComment true, isAiGenerated false, musicUsageConfirmed true; Instagram nur text; dann vidiq_social_post_publish. Nach dem Post: status auf posted setzen, Slot in plan/postplan.json (kampagne 'Kai Cenat GTA 6', plattformen tiktok+instagram), Steven per Push die Links.",
+ "note": "Reserve Kai-Cenat-VOD (kai-vod1, Clipfabrik, layout split, bereits gerendert). Steven 19.11.: nur TikTok + Instagram auf Pusnik G (kein YouTube, Quelle = YouTube-Marathon). Limit seit 19.11. abends: ALLE Kai-Posts zusammen (Live-Clips, viewer-top, VOD/Reserve) hoechstens 8 pro Tag, mind. 60 Min Abstand (Ausnahme Fenster-Modus: bis 2 Posts pro Fenster im Abstand 10 Min), nichts vor 09:00, nie nach 19:30 MEZ. Zeiten an Spaetschicht-Tagen = Fenster aus plan/kai_fenster.json (Fr 20.11.: 10:45, 13:15, 16:30, 19:00; Steven reicht nur in den Pausen ein). Live-Clips der Kai-Wache haben Vorrang: Reserve fuellt nur Plaetze, die im letzten Lauf vor dem Fenster (mind. 20 Min vorher) kein Live-Clip belegt; die Zeiten unten sind der Standardplatz, keine feste Planung (in vidIQ ist nichts geplant). Posten wie vidIQ-Regeln in claude/kai-wache.md: Video-URL -> vidiq_video_upload (url), ein Entwurf mit publishAt (UTC = MEZ minus 1 h), TikTok brandContent true, privacyLevel PUBLIC_TO_EVERYONE, allowComment true, isAiGenerated false, musicUsageConfirmed true; Instagram nur text; dann vidiq_social_post_publish. Nach dem Post: status auf posted setzen, Slot in plan/postplan.json (kampagne 'Kai Cenat GTA 6', plattformen tiktok+instagram), Steven per Push die Links.",
  "konto": "Pusnik G",
  "plattformen": [
   "tiktok",
@@ -44,7 +44,7 @@
  "reserve": [
   {
    "datum": "2026-11-20",
-   "zeit": "09:30",
+   "zeit": "10:45",
    "clip": "D_house",
    "titel": "Kai has $407 to fix a house",
    "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_D_house.mp4",
@@ -53,7 +53,7 @@
   },
   {
    "datum": "2026-11-20",
-   "zeit": "13:00",
+   "zeit": "13:15",
    "clip": "C_here",
    "titel": "Kai: 'we're actually here'",
    "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_C_here.mp4",
