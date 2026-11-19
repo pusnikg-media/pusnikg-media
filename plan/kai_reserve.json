@@ -16,9 +16,12 @@
   },
   {
    "clip": "B_13y",
-   "slot": "2026-11-19 13:30",
-   "status": "scheduled",
-   "postId": "28cb1dc2-c325-45b4-9941-6711b20d9d37"
+   "slot": "2026-11-19 13:15",
+   "status": "posted",
+   "postId": "28cb1dc2-c325-45b4-9941-6711b20d9d37",
+   "note": "in vidIQ von 13:30 auf 13:15 verschoben (nicht von dieser Session)",
+   "tiktok": "https://www.tiktok.com/@pusnikg/video/7709855000276503841",
+   "instagram": "https://www.instagram.com/reel/Df7DqK1hME2/"
   },
   {
    "clip": "E_paint",
@@ -28,9 +31,10 @@
   },
   {
    "clip": "F_newgame",
-   "slot": "2026-11-19 19:15",
+   "slot": "2026-11-19 19:00",
    "status": "scheduled",
-   "postId": "52450cdf-a422-450e-83de-705e2818b598"
+   "postId": "52450cdf-a422-450e-83de-705e2818b598",
+   "note": "in vidIQ von 19:15 auf 19:00 verschoben (nicht von dieser Session)"
   }
  ],
  "reserve": [
