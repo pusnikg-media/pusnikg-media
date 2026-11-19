@@ -4,6 +4,9 @@
 name: livewatch-probe
 on:
   workflow_dispatch:
+  push:  # TEMPORAER: damit der Probelauf vor dem Merge laeuft (workflow_dispatch geht erst, wenn die Datei auf main liegt). Nach dem Merge diesen Block loeschen.
+    branches: [claude/zealous-hypatia-gqclx9]
+    paths: [".github/workflows/livewatch-probe.yml"]
 permissions:
   contents: read
 jobs:
