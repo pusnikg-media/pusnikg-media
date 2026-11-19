@@ -1,6 +1,6 @@
-# Alarme – Stand 19.11.2026 13:19 (Europe/Berlin)
+# Alarme – Stand 19.11.2026 13:34 (Europe/Berlin)
 
-stand_utc: 2026-11-19T12:19:16Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-19T12:34:19Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
@@ -8,7 +8,7 @@ Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene P
 - trends/latest.json: reddit r/LivestreamFail: HTTP 429; reddit r/GTA6: HTTP 429; reddit r/GTA: HTTP 429
 
 ## Repo wächst zu stark
-- Repo ist 4050 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
+- Repo ist 4059 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
 - Warzone S1 (Pusnik G, tiktok, 18.11. 19:30): „Warzone stays free-to-play, and Season 1 brin“ – https://www.tiktok.com/@pusnikg/video/7709580557197380896
