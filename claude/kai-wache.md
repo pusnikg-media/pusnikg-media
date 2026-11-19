@@ -1,0 +1,30 @@
+# Kai-Cenat-Wache (ab 19.11.2026 13:00) – ersetzt die Clix-Wache
+
+Steven, 19.11.2026 09:07: „umstellen von Clix auf Kai Cenat“ – Kai liefert bessere, schnellere Clips. Gilt für die geplante Aufgabe **„Kai Cenat Live-Wache (stündlich)“**. Mechanik (Prüfung, Weg B, Veröffentlichen, Marker, Postplan, Push) wie `claude/launch-wache.md` Abschnitte 4–8 und 11, aber überall **Kai Cenat statt Clix** und mit diesen Änderungen (gehen vor):
+
+## Kampagne „Kai Cenat - $10,000 GTA 6 Pool Campaign“ (Clipped & Shipped, Content Rewards, ID 1d2bcb00-c904-415f-aa82-f95b96baad86)
+Briefing (Screenshot Steven 19.11.):
+- Material nur aus Kai Cenats GTA-6-Marathon auf Twitch und YouTube.
+- Kai Cenat muss GTA 6 spielen und Hauptfokus sein (Szenen nur mit Gästen, Chat-Lesen ohne Spiel, Pause = nicht nehmen).
+- Caption muss **#KaiCenat** enthalten.
+- Plattformen TikTok, Instagram Reels, YouTube Shorts (X nie). Konto **Pusnik G**. TikTok `brandContent: true`.
+- Nie hinzufügen: Logo, Wasserzeichen, `pill`. Stream-Overlays am Rand dürfen bleiben oder per `crop` weg.
+- Sonst Abschnitt 1 der launch-wache.md sinngemäß (nicht negativ, keine Slurs auch zensiert, kein Glücksspiel, keine erfundenen Fakten).
+
+## Texte
+- Kontextsatz: beginnt mit „Kai Cenat“, nennt den konkreten Moment (aus `said` + Bild), Stil `claude/reflab-erkenntnisse.md`, 9–15 Wörter, 1–2 Wörter GROSS, „...“ + 1–2 Emojis. Keine Leerformeln („WILD moment“, „another big moment“).
+- Caption TikTok/Instagram: Kontextsatz + Leerzeile + kurze Frage + Leerzeile + genau 5 Hashtags `#KaiCenat #GTA6 #GTAVI #Gaming #Clips`.
+- YouTube: Titel = Kontextsatz ohne Emojis/„...“, ≤ 60 Zeichen inkl. „ #shorts“; Text = Satz + `#KaiCenat #GTA6 #Shorts`; public. (Livestream-Material, nicht vom YouTube-Re-Upload-Verbot betroffen.)
+- Weg A (Livewatch-Direktclip) nie posten.
+
+## Livewatch (erster Lauf ab 13:00 stellt um, danach nur `enabled`/`until`)
+- `plan/livewatch.json` → `channels` = genau ein Eintrag: Kopie des bisherigen clix-Eintrags mit `"name": "kaicenat"`, `"url": "https://www.twitch.tv/kaicenat"`, `"caption": ["Kai Cenat GTA 6 moment (Vorschau, nie posten)"]`; alle anderen Werte unverändert. `note` um einen Satz ergänzen („19.11. 13:00: auf kaicenat umgestellt (Steven)“). Clix ist damit raus.
+- Inbox: `clips/live-kaicenat/inbox.json`, Marker `clips/live-kaicenat/posted/<id>.json`, Clipfabrik-Aufträge `clipjobs/kai-<MMTT>-<HHMMSS>.json`.
+- `until` rollend jetzt + 2 h, höchstens 2026-11-22T23:30:00Z.
+- Postplan: `"kampagne": "Kai Cenat GTA 6"`, `"clip": "live-kaicenat/<id>"`.
+
+## Zeitfenster
+Läufe stündlich 07:07–00:07 Berlin, bis Mo 23.11. 00:07. Kein Publish zwischen 00:30 und 07:00 (Steven muss binnen 30 Min einreichen). Höchstens 2 Posts pro Lauf, 8 pro Tag, Moment höchstens 75 Min alt.
+
+## YouTube-Video (2 h GTA 6) und VODs
+Kommt über den Clipping-Agenten (Drive-Ordner „Pusnik G Clipping“/„Kai Cenat“, Briefing-Datei liegt dort). Clips aus dem YouTube-Video nur TikTok + Instagram (team_state: kein YouTube für YouTube-Quellen). Twitch-VODs von kaicenat darf die Clipfabrik direkt als `source` nehmen.
