@@ -28,3 +28,12 @@ Läufe stündlich 07:07–00:07 Berlin, bis Mo 23.11. 00:07. Kein Publish zwisch
 
 ## YouTube-Video (2 h GTA 6) und VODs
 Kommt über den Clipping-Agenten (Drive-Ordner „Pusnik G Clipping“/„Kai Cenat“, Briefing-Datei liegt dort). Clips aus dem YouTube-Video nur TikTok + Instagram (team_state: kein YouTube für YouTube-Quellen). Twitch-VODs von kaicenat darf die Clipfabrik direkt als `source` nehmen.
+
+## Stand 19.11. 11:00 – Marathon-VOD `kai-vod1` (Auftrag Steven, Session Clipfabrik)
+- Quelle: Drive-Datei kai.mp4 (1E3UmNb_zi5JTFJBMY3Wgh7QQOqXkoEOD, „Jeder mit dem Link“), 2 h 5 min. Clipfabrik-Auftrag `clipjobs/kai-vod1.json` (Scan → 10 Clips, `clips/kai-vod1/`). `claude/clipfabrik-stand.md` und `clipfabrik-posting.md` gibt es im Repo nicht.
+- Layout `split` für alle 10 Clips (Facecam sichtbar). Kais Cam sitzt klein links (ca. 260×150 px der 720p-Quelle); bis ca. 3300 s bei y ≈ 0,32–0,53, ab ca. 3900 s tiefer (y ≈ 0,40–0,60). Darum: `facecam: [0,0.2889,0.22,0.25]` (Job) und `[0,0.357,0.22,0.25]` für C/E/H/I/J (Clips ab 3970 s). `auto` wurde nicht benutzt. Cam-Fenster mindestens 22 % Breite (Mindestbreite der Funktion). Nach Änderungen am Chat-/Cam-Layout QA-Bild prüfen (Chat-Zeilen unter der Cam).
+- Kontextsatz kurz (≤ ca. 28 Zeichen, Steven-Vorgabe), „Kai …“ + Emoji; Untertitel an (`captions: true`); kein Zoom, kein Logo, Originalton. Caption TikTok/Instagram: Satz mit „Kai Cenat“ + Frage + 5 Hashtags `#KaiCenat #GTA6 #GTAVI #Gaming #Clips`; TikTok `brandContent: true`.
+- Gepostet/geplant über vidIQ (nur TikTok + Instagram, Pusnik G): A_baby 10:41 (live), B_13y 13:30, E_paint 16:30, F_newgame 19:15 (in vidIQ geplant, Post-IDs in `plan/kai_reserve.json`). Slots in `plan/postplan.json` (Kampagne „Kai Cenat GTA 6“).
+- Reserve: `plan/kai_reserve.json`, Fr 20.11. und Sa 21.11. je 3 Slots (09:30/13:00/16:30). **Kai-Wache zählt diese Posts bei „höchstens 4 Kai-Posts pro Tag“ mit**; Live-Clips der Wache haben Vorrang und dürfen Reserve-Slots nach hinten schieben (mind. 2,5 h Abstand, nie nach 19:30).
+- Offen für Steven: Die Kampagne „Kai Cenat GTA 6“ steht noch **nicht** in `plan/waechter.json`, `plan/stats.json`, `plan/kampagnen.json` (`joined`) – sonst kein Wächter-/Stats-Abgleich. Nicht von mir geändert.
+- Bei „Calm the fuck down“/Fluchen im Spielton (B_13y) gibt es Untertitel mit Schimpfwörtern, aber keine Slurs; die Clips H/J vorher kurz gegenprüfen, falls sich die Briefing-Regeln ändern.

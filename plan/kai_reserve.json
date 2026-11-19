@@ -1,0 +1,92 @@
+{
+ "note": "Reserve Kai-Cenat-VOD (kai-vod1, Clipfabrik, layout split, bereits gerendert). Steven 19.11.: nur TikTok + Instagram auf Pusnik G (kein YouTube, Quelle = YouTube-Marathon), max. 4 Kai-Posts pro Tag (Live-Clips der Kai-Wache zaehlen mit), mind. 2,5 h Abstand, nie nach 19:30 MEZ, nichts vor 09:00. Live-Clips der Kai-Wache haben Vorrang und duerfen diese Slots verschieben (naechster freier Slot, Reihenfolge der Liste). Posten wie vidIQ-Regeln in claude/kai-wache.md: Video-URL -> vidiq_video_upload (url), ein Entwurf mit publishAt (UTC = MEZ minus 1 h), TikTok brandContent true, privacyLevel PUBLIC_TO_EVERYONE, allowComment true, isAiGenerated false, musicUsageConfirmed true; Instagram nur text; dann vidiq_social_post_publish. Nach dem Post: status auf posted setzen, Slot in plan/postplan.json (kampagne 'Kai Cenat GTA 6', plattformen tiktok+instagram), Steven per Push die Links.",
+ "konto": "Pusnik G",
+ "plattformen": [
+  "tiktok",
+  "instagram"
+ ],
+ "kampagne": "Kai Cenat GTA 6",
+ "heute_gepostet_geplant": [
+  {
+   "clip": "A_baby",
+   "slot": "2026-11-19 10:41",
+   "status": "posted",
+   "tiktok": "https://www.tiktok.com/@pusnikg/video/7709815203948465440",
+   "instagram": "https://www.instagram.com/reel/Df6yAAHIYhT/"
+  },
+  {
+   "clip": "B_13y",
+   "slot": "2026-11-19 13:30",
+   "status": "scheduled",
+   "postId": "28cb1dc2-c325-45b4-9941-6711b20d9d37"
+  },
+  {
+   "clip": "E_paint",
+   "slot": "2026-11-19 16:30",
+   "status": "scheduled",
+   "postId": "dbb3a0d8-d495-4b91-8d90-09885fef956a"
+  },
+  {
+   "clip": "F_newgame",
+   "slot": "2026-11-19 19:15",
+   "status": "scheduled",
+   "postId": "52450cdf-a422-450e-83de-705e2818b598"
+  }
+ ],
+ "reserve": [
+  {
+   "datum": "2026-11-20",
+   "zeit": "09:30",
+   "clip": "D_house",
+   "titel": "Kai has $407 to fix a house",
+   "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_D_house.mp4",
+   "text": "Kai Cenat counts his money before fixing up his GTA 6 house 💸\n\nWould $407 be enough for you?\n\n#KaiCenat #GTA6 #GTAVI #Gaming #Clips",
+   "status": "reserve"
+  },
+  {
+   "datum": "2026-11-20",
+   "zeit": "13:00",
+   "clip": "C_here",
+   "titel": "Kai: 'we're actually here'",
+   "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_C_here.mp4",
+   "text": "Kai Cenat can't believe he's actually in GTA 6 😭\n\nDid it feel real to you too?\n\n#KaiCenat #GTA6 #GTAVI #Gaming #Clips",
+   "status": "reserve"
+  },
+  {
+   "datum": "2026-11-20",
+   "zeit": "16:30",
+   "clip": "G_night",
+   "titel": "Kai on the GTA 6 night drive",
+   "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_G_night.mp4",
+   "text": "Kai Cenat can't stop looking at this GTA 6 neighborhood 🌙\n\nDoes Leonida look this good to you?\n\n#KaiCenat #GTA6 #GTAVI #Gaming #Clips",
+   "status": "reserve"
+  },
+  {
+   "datum": "2026-11-21",
+   "zeit": "09:30",
+   "clip": "J_apology",
+   "titel": "Kai keeps saying 'my bad'",
+   "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_J_apology.mp4",
+   "text": "Kai Cenat keeps saying 'my bad' in GTA 6 😅\n\nWould you have stayed this calm?\n\n#KaiCenat #GTA6 #GTAVI #Gaming #Clips",
+   "status": "reserve"
+  },
+  {
+   "datum": "2026-11-21",
+   "zeit": "13:00",
+   "clip": "H_code",
+   "titel": "Kai finds the 0420 code",
+   "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_H_code.mp4",
+   "text": "Kai Cenat finds the 0420 code in GTA 6 👀\n\nDid you catch it too?\n\n#KaiCenat #GTA6 #GTAVI #Gaming #Clips",
+   "status": "reserve"
+  },
+  {
+   "datum": "2026-11-21",
+   "zeit": "16:30",
+   "clip": "I_manly",
+   "titel": "Kai: 'be manly, bro'",
+   "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_I_manly.mp4",
+   "text": "Kai Cenat says you have to be manly in GTA 6 😂\n\nDo you agree with Kai?\n\n#KaiCenat #GTA6 #GTAVI #Gaming #Clips",
+   "status": "reserve"
+  }
+ ]
+}
