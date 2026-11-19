@@ -1,0 +1,15 @@
+{
+ "name": "kai-1119-153435",
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-153435.mp4",
+ "layout": "native",
+ "min_len": 10,
+ "clips": [
+  {
+   "id": "A",
+   "a": 25.69,
+   "b": 42.0,
+   "style": "mini",
+   "caption": "Florida wildlife is real 💀"
+  }
+ ]
+}
