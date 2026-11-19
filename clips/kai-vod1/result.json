@@ -1,7 +1,7 @@
 {
  "ok": true,
  "name": "kai-vod1",
- "sig": "957b4427076e",
+ "sig": "0999ed7bb48f",
  "attempts": 1,
  "source": "https://drive.google.com/file/d/1E3UmNb_zi5JTFJBMY3Wgh7QQOqXkoEOD/view",
  "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/scan/scan.json",
@@ -57,7 +57,7 @@
     "Kontextsatz hat nur 4 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "091b5497555f",
+   "sig": "42f8eb70435d",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_C_here.mp4"
   },
   {
@@ -75,7 +75,7 @@
     "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "4b4e667b6490",
+   "sig": "0c6b988e8d71",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_E_paint.mp4"
   },
   {
@@ -93,7 +93,7 @@
     "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "77149276cfa4",
+   "sig": "dd8f87e3ff27",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_H_code.mp4"
   },
   {
@@ -165,7 +165,7 @@
     "Kontextsatz hat nur 4 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "2453e39cd436",
+   "sig": "1e91ae1ace15",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_I_manly.mp4"
   },
   {
@@ -183,7 +183,7 @@
     "Kontextsatz hat nur 5 Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern",
     "Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)"
    ],
-   "sig": "e91ea99d6a4b",
+   "sig": "e17fb8595feb",
    "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-vod1/kai-vod1_J_apology.mp4"
   }
  ],
