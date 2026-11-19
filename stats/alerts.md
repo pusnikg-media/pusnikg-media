@@ -1,13 +1,14 @@
-# Alarme – Stand 18.11.2026 23:04 (Europe/Berlin)
+# Alarme – Stand 19.11.2026 07:20 (Europe/Berlin)
 
-stand_utc: 2026-11-18T22:04:22Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-19T06:20:40Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
 ## Daten veraltet oder nicht lesbar
-- trends/latest.json: reddit r/LivestreamFail: HTTP 404; reddit r/GTA6: HTTP 404; reddit r/GTA: HTTP 429
+- trends/latest.json: reddit r/LivestreamFail: HTTP 404; reddit r/GTA6: HTTP 404; reddit r/GTA: HTTP 404
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
+- Warzone S1 (Pusnik G, tiktok, 18.11. 19:30): „Warzone stays free-to-play, and Season 1 brin“ – https://www.tiktok.com/@pusnikg/video/7709580557197380896
 - TJR (Pusnik IRL, youtube, 18.11. 09:30): „TJR: "Worst Day Of My Life" #shorts“ – https://www.youtube.com/shorts/jLfal0h29nc
 - TJR (Pusnik IRL, tiktok, 18.11. 09:30): „TJR after a few hours without his usual routi“ – https://www.tiktok.com/@pusnikirl/video/7709424676061089057
 - TJR (Pusnik IRL, youtube, 18.11. 09:00): „TJR On His Older Brother ❤️ #TJR #shorts“ – https://www.youtube.com/shorts/n0bTSampHII
