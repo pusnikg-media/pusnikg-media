@@ -494,11 +494,13 @@ def vod_section(vid, a, b, dst, timeout=120):
 def viewer_raw(c, tmp, rec=None, vod=False, extend_below=22, pre=12, post=15):
     """Raw for a new inbox entry from a viewer clip. Order: (1) the moment lies inside the running recording (the 35 min buffer): cut PRE_S before / POST_S after from it - fast, exact,
     and Kai's reaction is in; (2) the viewer clip itself (yt-dlp, <= 720p); (3) only with vod=True and a clip shorter than `extend_below` s: stretched from the VOD
-    (measured 19.11.: a section far into a long running VOD took > 100 s, so it is off by default). rec = (segs, t_rec, seconds recorded so far).
+    (measured 19.11.: a section far into a long running VOD took > 100 s, so it is off by default). rec = (segs, t_rec, seconds recorded so far[, AdWatch]):
+    the runner sees Twitch's ad breaks (about a sixth of the time on 19.11.), so a window that touches one is NOT cut from the recording - the viewer clip is taken instead.
     Returns (raw path, position of the moment inside it, source)."""
     if rec:
-        segs, t_rec, ready = rec; pos = c["moment"] - t_rec
-        if pos - PRE_S >= 0 and pos + POST_S <= ready:
+        segs, t_rec, ready = rec[:3]; ads = rec[3] if len(rec) > 3 else None; pos = c["moment"] - t_rec
+        if ads is not None and pos - PRE_S >= 0 and ads.hit(pos - PRE_S, pos + POST_S): print("   top clip: ad break in the recording window -> viewer clip itself")
+        elif pos - PRE_S >= 0 and pos + POST_S <= ready:
             try:
                 dst = os.path.join(tmp, "viewer_rec.mp4"); cut(segs, 0.0, pos - PRE_S, pos + POST_S, dst); return dst, float(PRE_S), "recording"
             except Exception as e: print("   top clip: recording cut not possible:", str(e)[-100:])
@@ -595,7 +597,7 @@ def publish(root, name, entry, push):
     done = posted_ids(root, name)
     for e in box:
         if e.get("id") in done: e["posted"] = True  # fold the markers into the inbox (the runner is its only writer)
-    box.append(entry); json.dump(box[-40:], open(ip, "w"), indent=1, ensure_ascii=False)
+    box.append(entry); json.dump(box[-100:], open(ip, "w"), indent=1, ensure_ascii=False)  # v0.8: 100 (was 40): the top-clip dedupe (clip_id, moment_utc) reads this list; 40 covered < 4 h at 10+ entries/h
     if not push: return
     g = lambda *a: subprocess.run(["git", "-C", root, *a], capture_output=True, text=True)
     g("add", "-A", f"clips/{name}"); g("commit", "-q", "-m", f"livewatch: {name} {entry['id']} (hype {entry['hype']})")
@@ -628,7 +630,7 @@ def top_pass(ch, root, clipw, push, state, now=None, rec=None):
         hour = sum(1 for e in box if e.get("kind") == "viewer-top" and now - iso_epoch(e.get("at", "1970-01-01T00:00:00+00:00")) < 3600)
         room = int(ch.get("top_per_hour", 4)) - hour
         if room <= 0: return 0
-        cands = top_candidates(clipw.day(now), now, box, posted_ids(root, name) | state["made"], rel=float(ch.get("top_rel", 1.5)), min_views=int(ch.get("top_min_views", 40)),
+        cands = top_candidates(clipw.day(now), now, box, state["made"], rel=float(ch.get("top_rel", 1.5)), min_views=int(ch.get("top_min_views", 40)),
                                window_h=float(ch.get("top_window_h", 4.0)), lag=float(ch.get("stream_lag_s", 12.0)))
         cands = [c for c in cands if c["id"] not in state["failed"]]
         if cands: print(f"   top clips: {len(cands)} candidate(s), best '{cands[0]['title'][:40]}' {cands[0]['views']} views (x{cands[0]['rel']} median)")
@@ -710,7 +712,7 @@ def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False, cli
                 if peak is not None and hype >= min_hype and len(db) - peak >= post_s + 1 and peak - last > 90:
                     cal["events"].append({"min": done, "pos": int(peak), "kind": kind, "hype": round(hype, 1), "chat": cr, "lag": lag}); last = peak
                 if done % 20 == 0: save_calib(root, ch, cal, push)
-            elif peak is not None and ads and ads.hit(peak - 30, peak + 12):
+            elif peak is not None and ads and ads.hit(peak - PRE_S, peak + post_s):
                 skipped["ad"] += 1; last = peak; print("   moment skipped: Twitch ad break")
             elif peak is not None and hype >= min_hype and len(db) - peak >= post_s + 1 and peak - last > 90 and len(recent) < per_hour and len(clips) < max_clips:
                 stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
@@ -735,7 +737,7 @@ def loop(ch, root, rec, alive, push, t_end, chat=None, ads=None, keep=False, cli
                         publish(root, name, entry, push); clips.append(sp); last = sp
                     except Exception as e: print("WARN safety clip failed:", str(e)[-300:])
             if clipw and clipw.ok and not dry and not ch.get("legacy") and ch.get("top_clips", True) and len(clips) + top_n < max_clips and time.time() - top_state["last"] >= top_every:
-                top_state["last"] = time.time(); top_n += top_pass(ch, root, clipw, push, top_state, rec=((segs, t_rec, len(db)) if t_rec else None))  # v0.8: viewer clips by views (does not need the recording)
+                top_state["last"] = time.time(); top_n += top_pass(ch, root, clipw, push, top_state, rec=((segs, t_rec, len(db), ads) if t_rec else None))  # v0.8: viewer clips by views (does not need the recording)
             for j in [k for k in segs if k < i - (keep_min - 1) and not keep]:  # keep 15 minutes on disk (v0.7: 35 for the safety net)
                 try: os.remove(segs.pop(j))
                 except OSError: pass

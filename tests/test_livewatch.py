@@ -471,3 +471,17 @@ def test_kai_testset_cutscene_flag_catches_rejections_not_the_good_ones(lw):
     assert all(flag[i] == 0 for i in yes), {i: flag[i] for i in yes}                     # Alligator & Co. bleiben unberuehrt
     caught = [i for i in no if flag[i] >= 1]
     assert len(caught) >= 6, caught                                                      # 6 von 15 Neins (Zwischensequenzen / reiner Spieldialog)
+
+
+def test_viewer_raw_skips_the_recording_when_an_ad_break_touches_the_window(lw, tmp_path, monkeypatch):
+    """Der Runner sieht Twitch-Werbung (19.11.: ca. 1/6 der Zeit): ein Schnitt aus der Aufnahme waere Werbematerial, gates=False liesse ihn durch."""
+    class Ads:
+        def __init__(self, r): self.r = r
+        def hit(self, a, b, pad=8): return any(x - pad <= b and y + pad >= a for x, y in self.r)
+    c = {"moment": 5000.0 + 700, "slug": "s", "vid": None, "off": None}
+    cuts = []
+    monkeypatch.setattr(lw, "cut", lambda segs, t0, a, b, dst: cuts.append(a) or dst)
+    monkeypatch.setattr(lw, "fetch_clip", lambda slug, dst, timeout=150: dst)
+    monkeypatch.setattr(lw.cf, "probe", lambda f: {"dur": 20.0})
+    assert lw.viewer_raw(c, str(tmp_path), rec=({}, 5000.0, 900, Ads([(690, 760)])))[2] == "clip" and cuts == []
+    assert lw.viewer_raw(c, str(tmp_path), rec=({}, 5000.0, 900, Ads([(100, 200)])))[2] == "recording" and len(cuts) == 1   # Werbung weit weg: Aufnahme
