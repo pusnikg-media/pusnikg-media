@@ -12,7 +12,7 @@
   "said": "Yeah, I think I'm gonna, I think I'm gonna wake up, I'm gonna wake up before I work out with Marlin, play the game for one or two hours and work out with Marlin, then order a coffee, get breakfast, and then go for a 12 hour straight. That lowkey sounds good as fuck, right?",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-065104.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-065104.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.29,
   "peak_s": 7535
  },
@@ -32,5 +32,22 @@
   "posted": false,
   "chat": 3.33,
   "peak_s": 153
+ },
+ {
+  "id": "20261119-071056",
+  "at": "2026-11-19T07:11:40+00:00",
+  "channel": "clix",
+  "hype": 10.5,
+  "seconds": 13.85,
+  "quote": "Clix and the GTA VI marathon keep delivering the hype... 🔥😂",
+  "a": 28.06,
+  "b": 41.91,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-071056.mp4",
+  "said": "Oh fuck Nice one, McCulloch. Not bad, bro. I seriously fucked up there, didn't I? No. Don't worry about it.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-071056.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-071056.jpg",
+  "posted": false,
+  "chat": 2.17,
+  "peak_s": 501
  }
 ]
