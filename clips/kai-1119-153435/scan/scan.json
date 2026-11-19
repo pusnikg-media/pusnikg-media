@@ -1,0 +1,111 @@
+{
+ "duration": 42.0,
+ "width": 1280,
+ "height": 720,
+ "fps": 60.0,
+ "mode": "full",
+ "regions": [],
+ "cuts": [
+  34.63,
+  36.33,
+  39.13
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 0.46,
+   "text": "You know."
+  },
+  {
+   "s": 6.0,
+   "e": 8.02,
+   "text": "Okay, let's do this."
+  },
+  {
+   "s": 11.97,
+   "e": 12.37,
+   "text": "Lucia!"
+  },
+  {
+   "s": 13.09,
+   "e": 13.25,
+   "text": "Pull!"
+  },
+  {
+   "s": 15.15,
+   "e": 16.59,
+   "text": "Lift with your legs, Lucita."
+  },
+  {
+   "s": 17.25,
+   "e": 18.01,
+   "text": "I got it, Ma."
+  },
+  {
+   "s": 18.27,
+   "e": 19.89,
+   "text": "Use those street trunks your papa gave you."
+  },
+  {
+   "s": 20.39,
+   "e": 20.93,
+   "text": "Thanks, Ma."
+  },
+  {
+   "s": 21.43,
+   "e": 21.67,
+   "text": "Thanks."
+  },
+  {
+   "s": 25.81,
+   "e": 26.53,
+   "text": "That's it."
+  },
+  {
+   "s": 27.15,
+   "e": 27.35,
+   "text": "Yeah, baby."
+  },
+  {
+   "s": 28.61,
+   "e": 29.17,
+   "text": "We did it, girl."
+  },
+  {
+   "s": 38.76,
+   "e": 39.16,
+   "text": "Thank you, God."
+  },
+  {
+   "s": 40.16,
+   "e": 40.66,
+   "text": "Thank you, Jesus."
+  },
+  {
+   "s": 41.56,
+   "e": 41.78,
+   "text": "Ma?"
+  }
+ ],
+ "candidates": [
+  {
+   "a": 5.85,
+   "b": 21.97,
+   "len": 16.1,
+   "score": 0.421,
+   "cuts": 0,
+   "text": "Okay, let's do this. Lucia! Pull! Lift with your legs, Lucita. I got it, Ma. Use those street trunks your papa gave you. Thanks, Ma. Thanks.",
+   "sheet": "cand_00.jpg"
+  },
+  {
+   "a": 25.66,
+   "b": 40.96,
+   "len": 15.3,
+   "score": 0.445,
+   "cuts": 3,
+   "text": "That's it. Yeah, baby. We did it, girl. Thank you, God. Thank you, Jesus.",
+   "sheet": "cand_01.jpg"
+  }
+ ],
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-153435.mp4"
+}
