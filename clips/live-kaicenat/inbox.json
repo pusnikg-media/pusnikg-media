@@ -12,7 +12,7 @@
   "said": "life is They'll cover the up. Yep. I'm up. Good morning. Check my job. Good morning. We have an action back day ahead of us",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-134454.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-134454.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.08,
   "peak_s": 5401
  },
@@ -29,7 +29,7 @@
   "said": "It's currently 9 a .m We no sleep We're gonna make some real progress. I feel it I feel it",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-140400.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-140400.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.45,
   "peak_s": 6498
  },
@@ -49,5 +49,22 @@
   "posted": false,
   "chat": 4.0,
   "peak_s": 1291
+ },
+ {
+  "id": "20261119-144324",
+  "at": "2026-11-19T14:44:15+00:00",
+  "channel": "kaicenat",
+  "hype": 10.8,
+  "seconds": 12.95,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 28.93,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-144324.mp4",
+  "said": "You know what I'm saying? Look, we just you do not have to say you do not even say PS 5 Alright So my dog, yeah, you need to shoot a video for his new song. Okay, probably",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-144324.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-144324.jpg",
+  "posted": false,
+  "chat": 3.3,
+  "peak_s": 1708
  }
 ]
