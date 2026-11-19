@@ -214,5 +214,24 @@
   "peak_s": 2548,
   "vod": "2932204601",
   "vod_s": 68893
+ },
+ {
+  "id": "20261119-074410",
+  "at": "2026-11-19T07:45:13+00:00",
+  "channel": "clix",
+  "hype": 7.0,
+  "seconds": 24.0,
+  "quote": "Clix and the GTA VI marathon keep delivering the hype... 🔥😂",
+  "a": 14,
+  "b": 38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-074410.mp4",
+  "said": "Shout out be back. What up Russ? I need your mac and cheese They were following you too That's the people that we fucking",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-074410.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-074410.jpg",
+  "posted": false,
+  "chat": 1.91,
+  "peak_s": 4194,
+  "vod": "2932204601",
+  "vod_s": 70539
  }
 ]
