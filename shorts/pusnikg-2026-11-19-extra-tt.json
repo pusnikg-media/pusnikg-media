@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 3.08s  ɹˈɑːkstɑːɹ dʒˈʌst dɹˈɑːpt ɐ fɹˈiː mˈæp ʌv lˈiənɪdə.\n1: 5.88s  ɡɹˈæb ðə pɹˈɪntəbəl mˈæp ænd pˈoʊstɚ fɹˈiː ˌɔn ɹˈɑːkstɑːɹz əfˈɪʃəl dʒˌiːtˌiːˈeɪ sˈɪks pˈeɪdʒ.\n2: 3.10s  ɑːɹ juː pɹˈɪntɪŋ ɪt, ɔːɹ stˈɪkɪŋ tə ðɪ ɪŋɡˈeɪm mˈæp?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 14.43s",
+  "PREFLIGHT_OK 4 lines, 10 shots, 15.69 s\nRockstar@0.22 just@0.79 dropped@1.06 a@1.28 free@1.50 map@1.63 of@1.85 Leonida.@2.03\nGrab@0.25 the@0.65 printable@0.83 map@1.15 and@1.47 poster@1.71 free@1.95 on@2.46 Rockstar's@2.73 official@3.44 GTA@3.82 6@4.14 page.@4.76\nAre@0.22 you@0.51 printing@0.61 it,@0.81 or@1.24 sticking@1.30 to@1.54 the@1.85 in-game@1.95 map?@2.23\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 15.685 shots 10 captions 11\nRENDER_OK /home/runner/work_pusnikg-2026-11-19-extra-tt/pusnikg-2026-11-19-extra-tt.mp4 15.69s",
+  "QA_OK 15.69s -14.3 LUFS frames: /home/runner/work_pusnikg-2026-11-19-extra-tt/pusnikg-2026-11-19-extra-tt_qa_0.png /home/runner/work_pusnikg-2026-11-19-extra-tt/pusnikg-2026-11-19-extra-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-19-extra-tt/pusnikg-2026-11-19-extra-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 15.69,
+ "music": "https://cdn.orshot.com/library/music/a2294d2e-945e-4fed-8ec9-22bb70763ed0.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-19-extra-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-19-extra-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-19-extra-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-19-extra-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-19-extra-tt",
+ "attempts": 1
+}
