@@ -80,7 +80,7 @@
   "said": "Yo, no Do you have that thing the timer my shit? I Have the time. Yeah Are you doing it through toolkit? Yeah, I guess but I have it in there. It's just not Transition. Oh, okay. I'm gonna go full",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-071549.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-071549.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.33,
   "peak_s": 764
  },
@@ -97,8 +97,27 @@
   "said": "I'm gonna go take a shower and then I'm just gonna randomly get in bed, but I won't say nothing. I love you guys 20 hours stream crazy fucking day Like actually a crazy day, bro",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-071654.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-071654.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 5.23,
   "peak_s": 862
+ },
+ {
+  "id": "20261119-073706",
+  "at": "2026-11-19T07:37:35+00:00",
+  "channel": "clix",
+  "hype": 24.6,
+  "seconds": 13.52,
+  "quote": "Clix is deep into the GTA VI launch marathon and this moment is WILD... 🔥🎮",
+  "a": 21.27,
+  "b": 34.78,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-073706.mp4",
+  "said": "Brother, did he pepper spray himself? Is he coming or no?",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-073706.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-073706.jpg",
+  "posted": false,
+  "chat": 2.82,
+  "peak_s": 194,
+  "vod": "2932204601",
+  "vod_s": 66539
  }
 ]
