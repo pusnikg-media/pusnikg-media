@@ -403,7 +403,7 @@
   "said": "Y 'all hear that engine? Oh my god, oh my god! The shotgun's not gonna happen. Oh, if you drive fast the tracker can't own",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-215706.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-215706.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.93,
   "peak_s": 6153
  },
@@ -440,5 +440,22 @@
   "posted": false,
   "chat": 2.87,
   "peak_s": 709
+ },
+ {
+  "id": "20261119-224147",
+  "at": "2026-11-19T22:42:48+00:00",
+  "channel": "kaicenat",
+  "hype": 7.0,
+  "seconds": 24.0,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14,
+  "b": 38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-224147.mp4",
+  "said": "Oh! You pulled out the Oozie? You not know Oozie? Get the fuck in with the floor and pop, you nigga And back out the locks, right?",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-224147.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-224147.jpg",
+  "posted": false,
+  "chat": 4.13,
+  "peak_s": 1364
  }
 ]
