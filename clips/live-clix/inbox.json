@@ -266,7 +266,7 @@
   "said": "Like he puts on this like tough guy act now bro, like all of a sudden after a year and a half of fucking each other",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-074609.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-074609.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.33,
   "peak_s": 5074,
   "vod": "2932204601",
@@ -309,5 +309,24 @@
   "peak_s": 6299,
   "vod": "2932204601",
   "vod_s": 72644
+ },
+ {
+  "id": "20261119-074926",
+  "at": "2026-11-19T07:50:20+00:00",
+  "channel": "clix",
+  "hype": 19.2,
+  "seconds": 18.99,
+  "quote": "Clix and the GTA VI marathon keep delivering the hype... 🔥😂",
+  "a": 15.4,
+  "b": 34.39,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-074926.mp4",
+  "said": "over the border and overcharging thoughts on pollo shooters of the mean greet with distinct bomb hunting rifle that's gonna be the craziest I've ever seen bro I'm not gonna lie after this shit job look at don't do it remains a secret, but the price tag of 3 million dollars is one number that he's happy to share.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-074926.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-074926.jpg",
+  "posted": false,
+  "chat": 3.84,
+  "peak_s": 6614,
+  "vod": "2932204601",
+  "vod_s": 72959
  }
 ]
