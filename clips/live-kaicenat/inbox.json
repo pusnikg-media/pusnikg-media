@@ -267,7 +267,7 @@
   "said": "Cuz y 'all ain't serious about this business fuck you talking to like that you need to calm your ass down, okay? Oh, believe me. I am calm. Yo, yo, yo guys got word from room. She's not coming out What? We don't try to find this m - Roxy! No, no, no, no, no, don't do that! Yo, real",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-182004.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-182004.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.23,
   "peak_s": 138
  },
@@ -284,7 +284,7 @@
   "said": "It's like Jay. I don't know like Jason's like He's like, I don't know bro. It's fine. I ain't a lot Lucido fun like I'll just get just one hurt like both girls have the best shit",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-184107.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-184107.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.54,
   "peak_s": 1351
  },
@@ -301,7 +301,7 @@
   "said": "Sandals now and this is what I meant like sandals like you I feel cute today. Like this is what I do You know, like I feel so cute today, you know Now look now I'm gonna go",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-184220.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-184220.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.12,
   "peak_s": 1472
  },
@@ -321,5 +321,22 @@
   "posted": false,
   "chat": 3.18,
   "peak_s": 5064
+ },
+ {
+  "id": "20261119-195813",
+  "at": "2026-11-19T19:59:09+00:00",
+  "channel": "kaicenat",
+  "hype": 10.5,
+  "seconds": 15.73,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 24.54,
+  "b": 40.26,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-195813.mp4",
+  "said": "I gotta make this right, another right. Go back on the highway, and I gotta make this right.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-195813.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-195813.jpg",
+  "posted": false,
+  "chat": 4.14,
+  "peak_s": 6019
  }
 ]
