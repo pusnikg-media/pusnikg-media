@@ -252,5 +252,24 @@
   "peak_s": 4717,
   "vod": "2932204601",
   "vod_s": 71062
+ },
+ {
+  "id": "20261119-074609",
+  "at": "2026-11-19T07:47:12+00:00",
+  "channel": "clix",
+  "hype": 11.4,
+  "seconds": 15.57,
+  "quote": "Clix is deep into the GTA VI launch marathon and this moment is WILD... 🔥🎮",
+  "a": 26.44,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/raw_20261119-074609.mp4",
+  "said": "Like he puts on this like tough guy act now bro, like all of a sudden after a year and a half of fucking each other",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/live-clix_20261119-074609.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-clix/qa/live-clix_20261119-074609.jpg",
+  "posted": false,
+  "chat": 3.33,
+  "peak_s": 5074,
+  "vod": "2932204601",
+  "vod_s": 71419
  }
 ]
