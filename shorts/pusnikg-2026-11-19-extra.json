@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 3.08s  ɹˈɑːkstɑːɹ dʒˈʌst dɹˈɑːpt ɐ fɹˈiː mˈæp ʌv lˈiənɪdə.\n1: 5.88s  ɡɹˈæb ðə pɹˈɪntəbəl mˈæp ænd pˈoʊstɚ fɹˈiː ˌɔn ɹˈɑːkstɑːɹz əfˈɪʃəl dʒˌiːtˌiːˈeɪ sˈɪks pˈeɪdʒ.\n2: 3.30s  ɐ fˈɪzɪkəl kˈɑːpi hˈɪts ðə ɹˈɑːkstɑːɹ stˈoːɹ sˈuːn.\n3: 5.15s  ɐ pˈeɪpɚ mˈæp nˈɛkst tə jʊɹ skɹˈiːn ɪz pjˈʊɹ ˈoʊldskˈuːl dʒˌiːtˌiːˈeɪ ˈɛnɚdʒi.\n4: 3.10s  ɑːɹ juː pɹˈɪntɪŋ ɪt, ɔːɹ stˈɪkɪŋ tə ðɪ ɪŋɡˈeɪm mˈæp?\n5: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 6 lines 22.88s",
+  ".15 and@1.47 poster@1.71 free@1.95 on@2.46 Rockstar's@2.73 official@3.44 GTA@3.82 6@4.14 page.@4.76\nA@0.22 physical@0.48 copy@0.70 hits@1.17 the@1.45 Rockstar@1.63 Store@2.00 soon.@2.30\nA@0.22 paper@0.48 map@0.66 next@0.94 to@1.25 your@1.47 screen@1.53 is@1.89 pure@2.29 old-school@2.55 GTA@3.27 energy.@3.66\nAre@0.22 you@0.51 printing@0.61 it,@0.81 or@1.24 sticking@1.30 to@1.54 the@1.85 in-game@1.95 map?@2.23\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 6 lines\n\nTOTAL 24.575 shots 16 captions 18\nRENDER_OK /home/runner/work_pusnikg-2026-11-19-extra/pusnikg-2026-11-19-extra.mp4 24.58s",
+  "QA_OK 24.57s -14.1 LUFS frames: /home/runner/work_pusnikg-2026-11-19-extra/pusnikg-2026-11-19-extra_qa_0.png /home/runner/work_pusnikg-2026-11-19-extra/pusnikg-2026-11-19-extra_qa_mid.png /home/runner/work_pusnikg-2026-11-19-extra/pusnikg-2026-11-19-extra_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 24.57,
+ "music": "https://cdn.orshot.com/library/music/a2294d2e-945e-4fed-8ec9-22bb70763ed0.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-19-extra.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-19-extra_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-19-extra_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-19-extra_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-19-extra",
+ "attempts": 1
+}
