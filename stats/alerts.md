@@ -1,6 +1,6 @@
-# Alarme – Stand 19.11.2026 21:37 (Europe/Berlin)
+# Alarme – Stand 19.11.2026 23:18 (Europe/Berlin)
 
-stand_utc: 2026-11-19T20:37:25Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-19T22:18:44Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
@@ -8,9 +8,14 @@ Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene P
 - trends/latest.json: reddit r/LivestreamFail: HTTP 429; reddit r/GTA6: HTTP 404; reddit r/GTA: HTTP 429
 
 ## Repo wächst zu stark
-- Repo ist 4507 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
+- Repo ist 4610 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
+
+## Post nach 19:30
+- Plan verletzt die 19:30-Regel: Kai Cenat GTA 6 live-kaicenat/20261119-215706 (Pusnik G) 19.11. 23:19.
+- Plan: 5 Kai Cenat GTA 6-Clips am 19.11. auf Pusnik G (erlaubt: 4).
 
 ## Kampagnen-Clip nicht bei Content Rewards eingereicht
+- Kai Cenat GTA 6 (Pusnik G, tiktok, 19.11. 13:15): „Kai Cenat has waited 13 years to explore this“ – https://www.tiktok.com/@pusnikg/video/7709855000276503841
 - Kai Cenat GTA 6 (Pusnik G, tiktok, 19.11. 10:40): „Kai Cenat spots the first baby he's ever seen“ – https://www.tiktok.com/@pusnikg/video/7709815203948465440
 - TJR (Pusnik IRL, youtube, 19.11. 09:30): „TJR After 24 Hours Of Living Broke #shorts“ – https://www.youtube.com/shorts/GncHEd-_g9U
 - TJR (Pusnik IRL, tiktok, 19.11. 09:30): „TJR's verdict after 24 hours of living broke:“ – https://www.tiktok.com/@pusnikirl/video/7709796979932417312
