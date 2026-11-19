@@ -21,7 +21,7 @@ Advisor (Opus): höchstens 3 Aufrufe – vor dem ersten Post, wenn ein Fehler 2�
 3. **Logos – locker sehen (Steven, 19.11.2026 00:01: „nicht so streng mit den Logos etc.“; geht allen strengeren Formulierungen in dieser Datei vor).** Die Kampagnenregel „keine Logos“ zielt auf Logos/Wasserzeichen, die der Clipper hinzufügt. Darum:
    - Der Render fügt **nichts** hinzu (nie `logo`/`pill` setzen, kein Pusnik-G-Logo, kein eigenes Wasserzeichen).
    - **Logos, die zum Stream gehören, sind ok:** Sponsorenwände/Banner hinter Clix (z. B. JBL Quantum), Logos auf Kleidung, Headset, Bildschirmen, GTA-/Rockstar-Logos im Spielbild.
-   - Eingebrannte Stream-Overlays am Rand (Sub-Zähler, Timer, Emblem, Chat-Box, Alerts) **mit `crop` abschneiden, wenn es leicht geht** (Abschnitt 6, Weg B; Generalprobe: Zähler/Timer/rot-schwarzes Emblem rechts ab ca. 88 % der Breite, vertikal ca. 30–57 % → `crop [0, 0, 0.87, 1]`). Geht das nicht oder ist Weg B nicht rechtzeitig fertig: **trotzdem posten** (Weg A).
+   - Eingebrannte Stream-Overlays am Rand (Sub-Zähler, Timer, Emblem, Chat-Box, Alerts) **mit `crop` abschneiden, wenn es leicht geht** (Abschnitt 6, Weg B; Generalprobe: Zähler/Timer/rot-schwarzes Emblem rechts ab ca. 88 % der Breite, vertikal ca. 30–57 % → `crop [0, 0, 0.87, 1]`). Geht das nicht: ohne `crop` über Weg B posten. Weg A gibt es nicht mehr (Abschnitt 6).
    - Wegen Logos **nur verwerfen**, wenn ein Overlay einen großen Teil des Bildes verdeckt oder ein fremdes Clipper-Wasserzeichen drin ist. **Zweifel bei Logos = posten.**
 4. **Keine KI-Videos, keine Reposts** (nur eigener Schnitt aus dem Livestream), nur TikTok, Instagram Reels, YouTube Shorts.
 5. **TikTok-Offenlegung:** `brandContent: true`.
@@ -76,17 +76,17 @@ Zwischen den Meldungen **nichts** tun – kein Tool-Polling alle 3 Minuten. Alle
 
 ## 5. Kontextsatz (Englisch, ein Satz, kommt als weißer Kasten ins Video)
 Beginnt mit **Clix**, 9–15 Wörter, höchstens ca. 120 Zeichen, sagt was passiert, verrät die Auflösung nicht, höchstens 1–2 Wörter GROSS, endet mit „...“ und 1–2 Emojis, konkrete Dinge aus dem Clip, keine erfundenen Fakten, nie zwei Sätze mit gleichem Aufbau. Muster: „Clix couldn't believe what just happened in the very first minutes of GTA VI... 😮🎮“ · „Clix steals his first car in Vice City and the chaos starts IMMEDIATELY... 🚗🔥“.
-Fehlt dir sicherer Inhalt: nimm eine der Standardzeilen aus `plan/livewatch.json` → `channels[0].caption` (Weg A).
+**Keine Standardzeilen mehr (Steven, 19.11.2026: „goofy“).** Der Satz muss den konkreten Moment benennen (wer/was/Reaktion, aus `said` + Bild), Stil der Referenzen in `claude/reflab-erkenntnisse.md` („Lacy did NOT expect Rug to DANCE on his stream...😭❤️“). Verboten: Leerformeln wie „this moment is WILD“, „another big moment“, „keep delivering the hype“. Fehlt sicherer Inhalt → Clip nicht posten.
 
 ## 6. Rendern und Veröffentlichen
 **Weg B (Standard): Re-Render über die Clipfabrik mit eigenem Satz**
 1. Auftrag `clipjobs/clix-<MMTT>-<HHMMSS>.json` (aus `id` `20261119-055812` → `clix-1119-055812`; Name = Dateiname; nur `a-z0-9-`):
    `{"name": "clix-1119-055812", "source": "<entry.raw>", "layout": "native", "min_len": 10, "clips": [{"id": "A", "a": <entry.a>, "b": <entry.b>, "caption": "<Kontextsatz>"}]}`
    Feld **`crop`** (Job- oder Clip-Ebene, nur Weg B): `[x, y, w, h]` als Anteile 0–1 des Quellbilds, die **bleiben**; schneidet einen Overlay am Rand ab, bevor das Layout gebaut wird (auch im unscharfen Hintergrund). Beispiel Generalprobe (Zähler/Emblem rechts ab 88 %): `"crop": [0, 0, 0.87, 1]`; Overlay oben: `[0, 0.15, 1, 0.85]`. Anteile aus dem QA-Bild ablesen (das Originalbild liegt dort als Band über die ganze Breite; Breite 0 → 1) und 2 % Sicherheitsrand lassen. `w`/`h` mindestens 0,4. Nur `layout: native`.
-   Keine weiteren Felder (kein `logo`, `pill`, `track`, `zoom`, `hook`, `captions`). `entry.raw` leer → Weg A.
+   Keine weiteren Felder (kein `logo`, `pill`, `track`, `zoom`, `hook`, `captions`). `entry.raw` leer → nicht posten.
 2. Commit „clipjob: clix-…“ pushen (Abschnitt 7) → startet die Action `clipfabrik` automatisch (gemessen in der Generalprobe: **ca. 8 Min** vom Push bis `result.json`).
 3. Warten (Hintergrund-`until curl … result.json`, alle 45 s, höchstens 15 Min), bis `clips/<name>/result.json` `"ok": true` und `"phase": "rendered"` zeigt. Dann `clips[0].qa` ansehen (Satz ganz lesbar, richtig geschrieben, ganzes Bild, kein Logo). `clips[0].url` = Video.
-**Weg A (Fallback): der Livewatch-Clip** (`entry.url`, trägt einen der festen Sätze mit „Clix“). Nehmen, wenn Weg B nach 15 Min nicht fertig/rot ist oder der Moment sonst älter als 30 Min würde. Höchstens 2× hintereinander A (sonst gleich klingende Clips).
+**Weg A ist abgeschafft (Steven, 19.11.2026):** Der Livewatch-Clip (`entry.url`) trägt nur eine Standardzeile und wird nie gepostet, er dient nur als Vorschau. Ist Weg B nach 15 Min nicht fertig/rot: einmal neu anstoßen, sonst `skipped` mit Grund.
 
 **Veröffentlichen (vidIQ, 0 Credits):**
 1. `vidiq_video_upload` mit `url` = Video-URL → `uploadId` (bei „processing“ mit `uploadId` nachprüfen).
