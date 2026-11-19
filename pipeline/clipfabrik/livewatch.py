@@ -491,10 +491,10 @@ def vod_section(vid, a, b, dst, timeout=120):
         return False
 
 
-def viewer_raw(c, tmp, rec=None, vod=False, extend_below=22, pre=12, post=15):
+def viewer_raw(c, tmp, rec=None, vod=False, extend_below=22, pre=12, post=15, vod_timeout=90):
     """Raw for a new inbox entry from a viewer clip. Order: (1) the moment lies inside the running recording (the 35 min buffer): cut PRE_S before / POST_S after from it - fast, exact,
     and Kai's reaction is in; (2) the viewer clip itself (yt-dlp, <= 720p); (3) only with vod=True and a clip shorter than `extend_below` s: stretched from the VOD
-    (measured 19.11.: a section far into a long running VOD took > 100 s, so it is off by default). rec = (segs, t_rec, seconds recorded so far[, AdWatch]):
+    (measured 19.11.: a section far into the running VOD took > 100 s in the sandbox but 11 s on the GitHub runner (probe), so it is on; it is cut off after 90 s and the clip itself is used). rec = (segs, t_rec, seconds recorded so far[, AdWatch]):
     the runner sees Twitch's ad breaks (about a sixth of the time on 19.11.), so a window that touches one is NOT cut from the recording - the viewer clip is taken instead.
     Returns (raw path, position of the moment inside it, source)."""
     if rec:
@@ -507,7 +507,7 @@ def viewer_raw(c, tmp, rec=None, vod=False, extend_below=22, pre=12, post=15):
     clip = fetch_clip(c["slug"], os.path.join(tmp, "viewer_clip.mp4")); p = cf.probe(clip); dur = p["dur"]
     if vod and dur < extend_below and c.get("vid") and c.get("off") is not None:
         sec = os.path.join(tmp, "viewer_vod.mp4"); o = float(c["off"])
-        if vod_section(c["vid"], o - pre, o + dur + post, sec):
+        if vod_section(c["vid"], o - pre, o + dur + post, sec, timeout=vod_timeout):
             os.remove(clip); return sec, pre + 0.7 * dur, "vod"
     return clip, 0.7 * dur, "clip"
 
@@ -638,7 +638,7 @@ def top_pass(ch, root, clipw, push, state, now=None, rec=None):
         for c in cands[:min(room, int(ch.get("top_per_pass", 1)))]:
             stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
             try:
-                raw, pk, src = viewer_raw(c, tmp, rec=rec, vod=bool(ch.get("top_vod", False)))
+                raw, pk, src = viewer_raw(c, tmp, rec=rec, vod=bool(ch.get("top_vod", True)))
                 entry, nm = make_clip(ch, root, {}, 0.0, 0.0, 0.0, stamp, raw_in=raw, pk_in=pk, gates=False,
                                       extra={"kind": "viewer-top", "score": round(3.0 + min(c["rel"] or 0, 10) / 2, 2), "views": c["views"], "clip_title": c["title"], "clip_id": c["id"],
                                              "clip_url": f"https://clips.twitch.tv/{c['slug']}", "clip_by": c["by"], "clip_s": c["dur"], "moment_utc": iso_utc(c["moment"]), "chat": 0.0, "raw_from": src})
