@@ -216,7 +216,7 @@
   "said": "It closed, huh? 0 -1 -0 -4. Oh my gosh, I'm fucking stupid. I knew it was something I had to do, though.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-171811.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-171811.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.19,
   "peak_s": 125
  },
@@ -233,7 +233,7 @@
   "said": "do I make this shit like my magazines Do this triggers Yo, are we epic or no? Like what's going on bro? Is it glitching or no?",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-172055.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-172055.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.09,
   "peak_s": 312
  },
@@ -250,8 +250,25 @@
   "said": "Oh Come on come on. Come on. What'd they crash it to me bro? Why why why why why why",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-173001.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-173001.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.32,
   "peak_s": 861
+ },
+ {
+  "id": "20261119-182004",
+  "at": "2026-11-19T18:20:52+00:00",
+  "channel": "kaicenat",
+  "hype": 12.7,
+  "seconds": 16.89,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14.71,
+  "b": 31.14,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-182004.mp4",
+  "said": "Cuz y 'all ain't serious about this business fuck you talking to like that you need to calm your ass down, okay? Oh, believe me. I am calm. Yo, yo, yo guys got word from room. She's not coming out What? We don't try to find this m - Roxy! No, no, no, no, no, don't do that! Yo, real",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-182004.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-182004.jpg",
+  "posted": false,
+  "chat": 3.23,
+  "peak_s": 138
  }
 ]
