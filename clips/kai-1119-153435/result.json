@@ -1,0 +1,26 @@
+{
+ "ok": true,
+ "name": "kai-1119-153435",
+ "sig": "54469f8c2f3b",
+ "attempts": 1,
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-153435.mp4",
+ "scan": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-1119-153435/scan/scan.json",
+ "clips": [
+  {
+   "id": "A",
+   "ok": true,
+   "seconds": 16.32,
+   "title": "FLORIDA WILDLIFE IS REAL 💀",
+   "file": "kai-1119-153435_A.mp4",
+   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-1119-153435/qa/kai-1119-153435_A.jpg",
+   "layout": "native",
+   "tracked": false,
+   "punches": 0,
+   "caption": "Florida wildlife is real 💀",
+   "style": "mini",
+   "sig": "4d7201328022",
+   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/kai-1119-153435/kai-1119-153435_A.mp4"
+  }
+ ],
+ "phase": "rendered"
+}
