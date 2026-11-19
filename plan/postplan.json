@@ -164,6 +164,42 @@
     "instagram",
     "youtube"
    ]
+  },
+  {
+   "datum": "2026-11-19",
+   "zeit": "10:41",
+   "konto": "Pusnik G",
+   "kampagne": "Kai Cenat GTA 6",
+   "clip": "kai-vod1/A_baby",
+   "titel": "Kai finds a BABY in GTA 6",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
+  },
+  {
+   "datum": "2026-11-19",
+   "zeit": "13:30",
+   "konto": "Pusnik G",
+   "kampagne": "Kai Cenat GTA 6",
+   "clip": "kai-vod1/B_13y",
+   "titel": "Kai waited 13 years for this",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
+  },
+  {
+   "datum": "2026-11-19",
+   "zeit": "19:15",
+   "konto": "Pusnik G",
+   "kampagne": "Kai Cenat GTA 6",
+   "clip": "kai-vod1/F_newgame",
+   "titel": "Kai: a whole NEW game",
+   "plattformen": [
+    "tiktok",
+    "instagram"
+   ]
   }
  ]
 }
