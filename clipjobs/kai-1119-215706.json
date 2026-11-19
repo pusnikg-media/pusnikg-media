@@ -1,0 +1,15 @@
+{
+ "name": "kai-1119-215706",
+ "source": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-215706.mp4",
+ "layout": "native",
+ "min_len": 10,
+ "clips": [
+  {
+   "id": "A",
+   "a": 26.41,
+   "b": 42.0,
+   "style": "mini",
+   "caption": "Drive slow, go to jail 💀"
+  }
+ ]
+}
