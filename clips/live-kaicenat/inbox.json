@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-001856",
-  "at": "2026-11-20T00:19:53+00:00",
-  "channel": "kaicenat",
-  "hype": 12.0,
-  "seconds": 22.62,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 15.66,
-  "b": 38.28,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-001856.mp4",
-  "said": "They're good. Go get it W's W's God holding it tight. All right. I'm up. Okay. Now I'm breaking the glass",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-001856.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-001856.jpg",
-  "posted": true,
-  "chat": 5.17,
-  "peak_s": 153
- },
- {
   "id": "20261120-003258",
   "at": "2026-11-20T00:33:42+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.88,
   "peak_s": 2125
+ },
+ {
+  "id": "20261120-184724",
+  "at": "2026-11-20T18:48:30+00:00",
+  "channel": "kaicenat",
+  "hype": 30.0,
+  "seconds": 27.52,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14,
+  "b": 38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-184724.mp4",
+  "said": "you think you're doing hey those are the ones i saw going before do it this he's got the trophy oh my god who shot him who shot him what's",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-184724.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-184724.jpg",
+  "posted": false,
+  "chat": 2.72,
+  "peak_s": 5221
  }
 ]
