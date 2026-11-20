@@ -1,7 +1,7 @@
 {
- "at": "2026-11-20T11:34:04+00:00",
+ "at": "2026-11-20T16:36:56+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 429",
+  "reddit r/LivestreamFail: HTTP 404",
   "reddit r/GTA6: HTTP 404",
   "reddit r/GTA: HTTP 404"
  ],
@@ -9,44 +9,28 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "adinross",
-   "title": "etaztjgzyhrfxsj",
-   "views": 29495,
-   "per_h": 860,
-   "dur": 29,
-   "age_h": 34.3,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/adinross/clips/clip_01M7RP0WZYS0W8VVWWZ4CR5M7B",
-   "video": "https://clips.kick.com/clips/93/clip_01M7RP0WZYS0W8VVWWZ4CR5M7B/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7RP0WZYS0W8VVWWZ4CR5M7B",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "xmerghani",
-   "title": "clip",
-   "views": 9379,
-   "per_h": 266,
-   "dur": 30,
-   "age_h": 35.3,
-   "category": "Just Chatting",
-   "page": "https://kick.com/xmerghani/clips/clip_01M7RJP0CRN7G7AR17YBNJ5JDY",
-   "video": "https://clips.kick.com/clips/85/clip_01M7RJP0CRN7G7AR17YBNJ5JDY/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7RJP0CRN7G7AR17YBNJ5JDY",
-   "new": false
+   "channel": "chillingcrew",
+   "title": "GTA V X @1WIN EXCLUSIV @KICKSTREAMING produ @1win",
+   "views": 9917,
+   "per_h": 2543,
+   "dur": 180,
+   "age_h": 3.9,
+   "category": "Special Events",
+   "page": "https://kick.com/chillingcrew/clips/clip_01M7WFMTVZFGRYMJTS0ZG58CC5",
+   "video": "https://clips.kick.com/clips/0e/clip_01M7WFMTVZFGRYMJTS0ZG58CC5/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7WFMTVZFGRYMJTS0ZG58CC5",
+   "new": true
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "misshenley",
    "title": "More Candy Daddy Gifts",
-   "views": 8115,
-   "per_h": 297,
+   "views": 9462,
+   "per_h": 293,
    "dur": 35,
-   "age_h": 27.3,
+   "age_h": 32.3,
    "category": "Slots & Casino",
    "page": "https://kick.com/misshenley/clips/clip_01M7SDXSYHPYFFMD78ZSYJKWJ4",
    "video": "https://clips.kick.com/clips/e2/clip_01M7SDXSYHPYFFMD78ZSYJKWJ4/playlist.m3u8",
@@ -59,10 +43,10 @@
    "area": "irl",
    "channel": "misshenley",
    "title": "First Spin On Reseed 🤑",
-   "views": 7563,
-   "per_h": 276,
+   "views": 8820,
+   "per_h": 272,
    "dur": 45,
-   "age_h": 27.4,
+   "age_h": 32.4,
    "category": "Slots & Casino",
    "page": "https://kick.com/misshenley/clips/clip_01M7SDCKC9B0WKZZBGJFB0VCXR",
    "video": "https://clips.kick.com/clips/28/clip_01M7SDCKC9B0WKZZBGJFB0VCXR/playlist.m3u8",
@@ -75,10 +59,10 @@
    "area": "irl",
    "channel": "destiny",
    "title": "A message to mockler glazers",
-   "views": 6986,
-   "per_h": 492,
+   "views": 7523,
+   "per_h": 390,
    "dur": 144,
-   "age_h": 14.2,
+   "age_h": 19.3,
    "category": "Just Chatting",
    "page": "https://kick.com/destiny/clips/clip_01M7TTPQVA25B40ZW35STASVE1",
    "video": "https://clips.kick.com/clips/ef/clip_01M7TTPQVA25B40ZW35STASVE1/playlist.m3u8",
@@ -89,58 +73,74 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "djmariio",
-   "title": "conejo en gta",
-   "views": 6751,
-   "per_h": 191,
-   "dur": 22,
-   "age_h": 35.3,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/djmariio/clips/clip_01M7RJG4376F9Z5M1CC4GR01Z6",
-   "video": "https://clips.kick.com/clips/49/clip_01M7RJG4376F9Z5M1CC4GR01Z6/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7RJG4376F9Z5M1CC4GR01Z6",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "kaneljoseph",
-   "title": "aaaaaaa",
-   "views": 5771,
-   "per_h": 181,
-   "dur": 30,
-   "age_h": 31.9,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/kaneljoseph/clips/clip_01M7RY71237VHTJPPVVBG7M74Z",
-   "video": "https://clips.kick.com/clips/23/clip_01M7RY71237VHTJPPVVBG7M74Z/playlist.m3u8",
+   "channel": "chillingcrew",
+   "title": "Lanzamiento GTA VII @1WIN CHILLING CREW 420",
+   "views": 7318,
+   "per_h": 1557,
+   "dur": 180,
+   "age_h": 4.7,
+   "category": "Special Events",
+   "page": "https://kick.com/chillingcrew/clips/clip_01M7WCRHFFTVZB26SFJJM6N2GN",
+   "video": "https://clips.kick.com/clips/47/clip_01M7WCRHFFTVZB26SFJJM6N2GN/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M7RY71237VHTJPPVVBG7M74Z",
-   "new": false
+   "id": "k:clip_01M7WCRHFFTVZB26SFJJM6N2GN",
+   "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "xqc",
-   "title": "clip for science",
-   "views": 5122,
-   "per_h": 160,
+   "channel": "rraenee",
+   "title": "ALLAH KAHRETSİN",
+   "views": 7006,
+   "per_h": 327,
+   "dur": 17,
+   "age_h": 21.4,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/rraenee/clips/clip_01M7TKFDS432PJ5FMT6ADP3P1N",
+   "video": "https://clips.kick.com/clips/e6/clip_01M7TKFDS432PJ5FMT6ADP3P1N/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7TKFDS432PJ5FMT6ADP3P1N",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "xmerghani",
+   "title": "40$",
+   "views": 5079,
+   "per_h": 213,
    "dur": 30,
-   "age_h": 32.1,
+   "age_h": 23.9,
    "category": "Just Chatting",
-   "page": "https://kick.com/xqc/clips/clip_01M7RXF4ZDXJAKXDJVGVGS6ZWM",
-   "video": "https://clips.kick.com/clips/6e/clip_01M7RXF4ZDXJAKXDJVGVGS6ZWM/playlist.m3u8",
+   "page": "https://kick.com/xmerghani/clips/clip_01M7TAX77FG0EC76VCVYYS0HF9",
+   "video": "https://clips.kick.com/clips/9f/clip_01M7TAX77FG0EC76VCVYYS0HF9/playlist.m3u8",
    "mature": false,
-   "id": "k:clip_01M7RXF4ZDXJAKXDJVGVGS6ZWM",
+   "id": "k:clip_01M7TAX77FG0EC76VCVYYS0HF9",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "paymoneywubby",
+   "title": "om",
+   "views": 5057,
+   "per_h": 482,
+   "dur": 30,
+   "age_h": 10.5,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/paymoneywubby/clips/clip_01M7VRW5RA71X4HP9C6P4KQ7KT",
+   "video": "https://clips.kick.com/clips/7b/clip_01M7VRW5RA71X4HP9C6P4KQ7KT/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7VRW5RA71X4HP9C6P4KQ7KT",
    "new": true
   },
   {
    "src": "youtube",
    "area": "gaming",
    "channel": "Rockstar Games",
-   "views": 2446469,
-   "per_h": 113262,
-   "age_h": 21.6,
+   "views": 3324218,
+   "per_h": 124971,
+   "age_h": 26.6,
    "title": "Grand Theft Auto VI Now Available",
    "page": "https://www.youtube.com/shorts/T95WGWkx7P0",
    "id": "y:T95WGWkx7P0",
@@ -149,15 +149,14 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "IGN",
-   "title": "Cyberleek Returns for GTA 6 Launch to Reportedly Release a Near-Complete Xbox Build, Threatens to Release the Game's Executable in Days",
-   "page": "https://www.ign.com/articles/cyberleek-returns-for-gta-6-launch-to-reportedly-release-a-near-complete-xbox-build-threatens-to-release-the-games-executable-in-days",
-   "age_h": 1.4,
-   "id": "n:cyberleek-returns-for-gta-6-launch-to-reportedly-release-a-n",
+   "site": "Polygon",
+   "title": "GTA 6 Sets New Sales Record for Rockstar Just One Day In",
+   "page": "https://www.polygon.com/gta-6-sales-2-billion-dollars-ps5-xbox-series-x/",
+   "age_h": 0.7,
+   "id": "n:gta-6-sets-new-sales-record-for-rockstar-just-one-day-in",
    "sites": [
-    "IGN",
-    "PC Gamer",
-    "Kotaku",
+    "Polygon",
+    "Eurogamer",
     "VGC"
    ],
    "new": true
@@ -165,14 +164,99 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "Polygon",
+   "title": "GTA 6 Cast List: Who plays Jason, Lucia and More",
+   "page": "https://www.polygon.com/gta-6-cast-list-actors-cameos-grand-theft-auto/",
+   "age_h": 0.9,
+   "id": "n:gta-6-cast-list-who-plays-jason-lucia-and-more",
+   "sites": [
+    "Polygon",
+    "IGN",
+    "Eurogamer"
+   ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "GTA 6’s Official Connection to Red Dead Redemption Revealed",
+   "page": "https://www.polygon.com/gta-6-red-dead-redemption-other-rockstar-games/",
+   "age_h": 0.4,
+   "id": "n:gta-6-s-official-connection-to-red-dead-redemption-revealed",
+   "sites": [
+    "Polygon",
+    "RockstarINTEL"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "How to change radio stations in GTA 6",
+   "page": "https://www.polygon.com/gta-6-radio-station-how-to-change/",
+   "age_h": 1.0,
+   "id": "n:how-to-change-radio-stations-in-gta-6",
+   "sites": [
+    "Polygon",
+    "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "Is Niko Bellic in GTA 6?",
+   "page": "https://insider-gaming.com/niko-bellic-gta-6/",
+   "age_h": 1.0,
+   "id": "n:is-niko-bellic-in-gta-6-",
+   "sites": [
+    "Insider Gaming",
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "Should you spare or kill Arnold for 'Hey Arnold' in GTA 6?",
+   "page": "https://www.polygon.com/gta-6-kill-spare-arnold-hey-arnold-quest-grand-theft-auto/",
+   "age_h": 1.1,
+   "id": "n:should-you-spare-or-kill-arnold-for-hey-arnold-in-gta-6-",
+   "sites": [
+    "Polygon",
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "GameSpot",
+   "title": "GTA 6 Is A British Success Story, Prime Minister Says, But He Won’t Play It",
+   "page": "https://www.gamespot.com/articles/gta-6-is-a-british-success-story-prime-minister-says-but-he-wont-play-it/",
+   "age_h": 1.6,
+   "id": "n:gta-6-is-a-british-success-story-prime-minister-says-but-he-",
+   "sites": [
+    "GameSpot",
+    "Eurogamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "IGN",
-   "title": "GTA 6 Players Find Red Dead Redemption Lore That Strongly Suggests Both Series Are Set in the Same Universe",
-   "page": "https://www.ign.com/articles/gta-6-red-dead-redemption-2-same-timeline",
-   "age_h": 0.7,
-   "id": "n:gta-6-players-find-red-dead-redemption-lore-that-strongly-su",
+   "title": "GTA 6 Players Are Refusing to Make Use of an Infinite Money Glitch They Say Ruins the Experience",
+   "page": "https://www.ign.com/articles/gta-6-players-multiple-money-glitches",
+   "age_h": 3.2,
+   "id": "n:gta-6-players-are-refusing-to-make-use-of-an-infinite-money-",
    "sites": [
     "IGN",
-    "RockstarINTEL"
+    "VGC"
    ],
    "new": true
   },
@@ -182,109 +266,27 @@
    "site": "RockstarINTEL",
    "title": "Best GTA VI Settings You Need To Change",
    "page": "https://rockstarintel.com/best-gta-vi-settings-you-need-to-change/",
-   "age_h": 1.5,
+   "age_h": 6.6,
    "id": "n:best-gta-vi-settings-you-need-to-change",
    "sites": [
     "RockstarINTEL",
     "Eurogamer"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Eurogamer",
-   "title": "\"You broke my heart\" - popular artist Doja Cat gutted to not have her music in Grand Theft Auto 6",
-   "page": "https://www.eurogamer.net/grand-theft-auto-6-doja-cat-gutted-not-in-soundtrack",
-   "age_h": 1.6,
-   "id": "n:-you-broke-my-heart-popular-artist-doja-cat-gutted-to-not-ha",
-   "sites": [
-    "Eurogamer",
-    "Kotaku"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Where to Find the UFO Encounter in GTA 6—Alien Abduction Event, Explained",
-   "page": "https://insider-gaming.com/where-to-find-ufo-in-gta-6-explained/",
-   "age_h": 3.2,
-   "id": "n:where-to-find-the-ufo-encounter-in-gta-6-alien-abduction-eve",
-   "sites": [
-    "Insider Gaming",
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "IGN",
-   "title": "GTA 6 Has Police Departments Across America Begging People Not to Commit Crimes IRL",
-   "page": "https://www.ign.com/articles/gta-6-has-police-departments-across-america-begging-people-not-to-commit-crimes-irl",
-   "age_h": 11.6,
-   "id": "n:gta-6-has-police-departments-across-america-begging-people-n",
-   "sites": [
-    "IGN",
-    "Kotaku"
-   ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
    "area": "gaming",
    "site": "PC Gamer",
-   "title": "Rockstar has finally posted GTA 6's full map online—thank goodness, because clearing the entire thing in game takes ages",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/rockstar-has-finally-posted-gta-6s-full-map-online-thank-goodness-because-clearing-the-entire-thing-in-game-takes-ages/",
-   "age_h": 19.2,
-   "id": "n:rockstar-has-finally-posted-gta-6-s-full-map-online-thank-go",
+   "title": "Cyberleek drops what they claim is a near-complete GTA 6 Xbox build online",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/cyberleek-drops-what-they-claim-is-a-near-complete-gta-6-xbox-build-online/",
+   "age_h": 17.3,
+   "id": "n:cyberleek-drops-what-they-claim-is-a-near-complete-gta-6-xbo",
    "sites": [
     "PC Gamer",
-    "RockstarINTEL"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "GameSpot",
-   "title": "GTA 6’s Digital Release Has GameStop CEO Defending Physical Games, For Obvious Reasons",
-   "page": "https://www.gamespot.com/articles/gta-6-digital-release-has-gamestop-ceo-defending-physical-games-for-obvious-reasons/",
-   "age_h": 21.3,
-   "id": "n:gta-6-s-digital-release-has-gamestop-ceo-defending-physical-",
-   "sites": [
-    "GameSpot",
-    "Eurogamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "GTA 6 Money Cheat Code—How To Get More Money Fast In GTA 6",
-   "page": "https://insider-gaming.com/gta-6-money-cheat/",
-   "age_h": 0.1,
-   "id": "n:gta-6-money-cheat-code-how-to-get-more-money-fast-in-gta-6",
-   "sites": [
-    "Insider Gaming"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "GTA 6 Release Was So Big It Broke Internet Download Records, Twice In One Week",
-   "page": "https://kotaku.com/gta-6-release-was-so-big-it-broke-internet-download-records-twice-in-one-week-2000758654",
-   "age_h": 0.6,
-   "id": "n:gta-6-release-was-so-big-it-broke-internet-download-records-",
-   "sites": [
     "Kotaku"
    ],
-   "new": true
+   "new": false
   }
  ]
 }
