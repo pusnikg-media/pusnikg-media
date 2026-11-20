@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-154310",
-  "at": "2026-11-19T15:44:02+00:00",
-  "channel": "kaicenat",
-  "hype": 11.7,
-  "seconds": 14.44,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 25.03,
-  "b": 39.47,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-154310.mp4",
-  "said": "Oh Every NPC in this game like it looks very unique in some type of way",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-154310.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-154310.jpg",
-  "posted": true,
-  "chat": 4.94,
-  "peak_s": 1599
- },
- {
   "id": "20261119-164919",
   "at": "2026-11-19T16:50:11+00:00",
   "channel": "kaicenat",
@@ -641,7 +624,7 @@
   "said": "No, I shouldn't cuz my shit already good Cosmetics we spring. Oh, no, I said I have to",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-071753.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-071753.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.89,
   "peak_s": 2025,
   "safety": true,
@@ -660,7 +643,7 @@
   "said": "yo check how do I for what? Wait, how do you look at your loadout? before you like Wait, I forgot How do I like put a suppressor on my my shit?",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-075550.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-075550.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.22,
   "peak_s": 6044
  },
@@ -677,8 +660,25 @@
   "said": "YouTube Holy crap check. Oh my if you guys are not subbed up hit that sub button. Yeah Hit the sub. Oh my gosh rainbow with the",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-083837.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-083837.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.17,
   "peak_s": 1364
+ },
+ {
+  "id": "20261120-092005",
+  "at": "2026-11-20T09:20:51+00:00",
+  "channel": "kaicenat",
+  "hype": 12.9,
+  "seconds": 14.62,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 23.8,
+  "b": 38.41,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-092005.mp4",
+  "said": "I'm going to be so pissed bro Bro, stop saying GG bro. Stop saying GG's bro, please stop saying Please stop saying that bro, please stop saying that",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-092005.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-092005.jpg",
+  "posted": false,
+  "chat": 2.44,
+  "peak_s": 138
  }
 ]
