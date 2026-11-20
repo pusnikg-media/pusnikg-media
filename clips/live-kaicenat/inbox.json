@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-204803",
-  "at": "2026-11-19T20:49:15+00:00",
-  "channel": "kaicenat",
-  "hype": 12.6,
-  "seconds": 24.09,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 14,
-  "b": 38,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-204803.mp4",
-  "said": "that came from you're ready to go do some hunting man yeah sure all right fuck yeah let me get my shit together here yeah hey you need a gun or you got one yeah I got a few things in the car yeah fuck that we're We're gonna do it. Let's do it. My bad. God damn I can't eat. God damn my bad. Damn. So that my mom, bruh. Let's go. Damn.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-204803.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-204803.jpg",
-  "posted": true,
-  "chat": 4.3,
-  "peak_s": 1994
- },
- {
   "id": "20261119-215706",
   "at": "2026-11-19T21:57:56+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 10.24,
   "peak_s": 1222
+ },
+ {
+  "id": "20261120-124722",
+  "at": "2026-11-20T12:48:14+00:00",
+  "channel": "kaicenat",
+  "hype": 11.1,
+  "seconds": 16.28,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14.47,
+  "b": 30.74,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-124722.mp4",
+  "said": "Yeah, I got the car we should probably let him know we're on the way. That's a good point. I'll call him. Oh Shit god damn started talking that nigga down through the mouth",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-124722.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-124722.jpg",
+  "posted": false,
+  "chat": 1.46,
+  "peak_s": 1714
  }
 ]
