@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-062051",
-  "at": "2026-11-20T06:21:37+00:00",
-  "channel": "kaicenat",
-  "hype": 12.7,
-  "seconds": 15.07,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 21.31,
-  "b": 36.37,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-062051.mp4",
-  "said": "damn oh my ass not out no more yes ass not out no more",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-062051.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-062051.jpg",
-  "posted": true,
-  "chat": 6.08,
-  "peak_s": 334
- },
- {
   "id": "20261120-062501",
   "at": "2026-11-20T06:25:45+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 1.89,
   "peak_s": 1495
+ },
+ {
+  "id": "20261120-195008",
+  "at": "2026-11-20T19:50:52+00:00",
+  "channel": "kaicenat",
+  "hype": 10.9,
+  "seconds": 16.08,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14.78,
+  "b": 30.86,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-195008.mp4",
+  "said": "get her thick again. Yo, bro. See I don't like the games So check yeah, I don't like the games No, wow",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-195008.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-195008.jpg",
+  "posted": false,
+  "chat": 2.31,
+  "peak_s": 1835
  }
 ]
