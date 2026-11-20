@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-172055",
-  "at": "2026-11-19T17:21:18+00:00",
-  "channel": "kaicenat",
-  "hype": 9.6,
-  "seconds": 14.42,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 19.1,
-  "b": 33.51,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-172055.mp4",
-  "said": "do I make this shit like my magazines Do this triggers Yo, are we epic or no? Like what's going on bro? Is it glitching or no?",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-172055.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-172055.jpg",
-  "posted": true,
-  "chat": 3.09,
-  "peak_s": 312
- },
- {
   "id": "20261119-173001",
   "at": "2026-11-19T17:31:23+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 1.9,
   "peak_s": 983
+ },
+ {
+  "id": "20261120-094510",
+  "at": "2026-11-20T09:45:57+00:00",
+  "channel": "kaicenat",
+  "hype": 8.1,
+  "seconds": 15.69,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 21.83,
+  "b": 37.52,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-094510.mp4",
+  "said": "don't know about the rest of you but I am ready for a cocktail let him do what he does then I want him down lock in everybody said lock in I was here estado I want you to meet Lucia she's part of the new security detail that we I promise.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-094510.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-094510.jpg",
+  "posted": false,
+  "chat": 4.2,
+  "peak_s": 1680
  }
 ]
