@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-200514",
-  "at": "2026-11-19T20:05:54+00:00",
-  "channel": "kaicenat",
-  "hype": 11.2,
-  "seconds": 15.53,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 26.31,
-  "b": 41.84,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-200514.mp4",
-  "said": "So, you want me to deliver all these boxes? Oh, check out babe. Oh, babe. Oh, babe. Manifestix that I still have to sell. What? Andy, this is a lot. Yeah, we all get stuck sometimes, Andy. What's important is that we keep bringing in more recruits.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-200514.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-200514.jpg",
-  "posted": true,
-  "chat": 2.87,
-  "peak_s": 6458
- },
- {
   "id": "20261119-200917",
   "at": "2026-11-19T20:10:14+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.96,
   "peak_s": 1892
+ },
+ {
+  "id": "20261120-122740",
+  "at": "2026-11-20T12:28:14+00:00",
+  "channel": "kaicenat",
+  "hype": 8.7,
+  "seconds": 17.42,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 17.76,
+  "b": 35.17,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-122740.mp4",
+  "said": "Squeeze, baby, come on, juice it up. Squeeze that juice. Come on. Okay, that's pretty good.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-122740.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-122740.jpg",
+  "posted": false,
+  "chat": 2.06,
+  "peak_s": 563
  }
 ]
