@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-195813",
-  "at": "2026-11-19T19:59:09+00:00",
-  "channel": "kaicenat",
-  "hype": 10.5,
-  "seconds": 15.73,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 24.54,
-  "b": 40.26,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-195813.mp4",
-  "said": "I gotta make this right, another right. Go back on the highway, and I gotta make this right.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-195813.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-195813.jpg",
-  "posted": true,
-  "chat": 4.14,
-  "peak_s": 6019
- },
- {
   "id": "20261119-200514",
   "at": "2026-11-19T20:05:54+00:00",
   "channel": "kaicenat",
@@ -609,7 +592,7 @@
   "said": "We actually should do a date now. We actually did to do this date. I don't know why",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-105218.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-105218.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.79,
   "peak_s": 5728
  },
@@ -626,7 +609,7 @@
   "said": "Oh my gosh. I yes. I wash my hand Finally, right? Oh my back Burning I'm back is burning. I'm back burning And",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-110122.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-110122.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.02,
   "peak_s": 6144
  },
@@ -643,7 +626,7 @@
   "said": "I Was supposed to have this meeting with a club promoter downtown But then I was like we gotta think about the optics told him to come over here meet the girls and of course Please it's so cold up here So y 'all caught a hot right now. Oh",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-110424.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-110424.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.92,
   "peak_s": 6345
  },
@@ -660,7 +643,7 @@
   "said": "Should I put it on? Should I put the long sleeve on or nah? A low key? I might, hold on. It's right here, it's right here.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-110607.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-110607.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.32,
   "peak_s": 6562
  },
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 4.39,
   "peak_s": 1692
+ },
+ {
+  "id": "20261120-114943",
+  "at": "2026-11-20T11:50:19+00:00",
+  "channel": "kaicenat",
+  "hype": 10.9,
+  "seconds": 14.64,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 17.95,
+  "b": 32.59,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-114943.mp4",
+  "said": "Text Wyman and let him know the cop car is where he wanted it. Yes, ma 'am Exactly where it's at nigga Your horrible driver. Oh, I'm a horrible driver.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-114943.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-114943.jpg",
+  "posted": false,
+  "chat": 2.96,
+  "peak_s": 1892
  }
 ]
