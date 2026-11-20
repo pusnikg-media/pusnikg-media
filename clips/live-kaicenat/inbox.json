@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-235156",
-  "at": "2026-11-19T23:52:42+00:00",
-  "channel": "kaicenat",
-  "hype": 14.5,
-  "seconds": 15.97,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 22.61,
-  "b": 38.58,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-235156.mp4",
-  "said": "I got it tight, I got it tight. Hurry your ass up, keep the line taut. I got it, yeah! Oh, what you mean? Yo bro. Get off that cable, we're open. Bro.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-235156.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-235156.jpg",
-  "posted": true,
-  "chat": 2.27,
-  "peak_s": 5577
- },
- {
   "id": "20261119-235446",
   "at": "2026-11-19T23:55:41+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 3.4,
   "peak_s": 442
+ },
+ {
+  "id": "20261120-174120",
+  "at": "2026-11-20T17:42:23+00:00",
+  "channel": "kaicenat",
+  "hype": 7.0,
+  "seconds": 22.42,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 19.59,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-174120.mp4",
+  "said": "honey i'm fine it's just a few cuts and bruises i'm fine really honey they took rafa oh what what do you",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-174120.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-174120.jpg",
+  "posted": false,
+  "chat": 3.52,
+  "peak_s": 1283
  }
 ]
