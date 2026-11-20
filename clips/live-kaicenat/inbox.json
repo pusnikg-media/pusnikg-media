@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-000350",
-  "at": "2026-11-20T00:04:40+00:00",
-  "channel": "kaicenat",
-  "hype": 12.3,
-  "seconds": 14.98,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 23.47,
-  "b": 38.44,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-000350.mp4",
-  "said": "I'm so fucking fired. Whoa! Oh, fuck! That's a shit to fire! You're a drunk, drunk driver. The door is shut! was he drunk no",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-000350.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-000350.jpg",
-  "posted": true,
-  "chat": 2.46,
-  "peak_s": 6337
- },
- {
   "id": "20261120-001856",
   "at": "2026-11-20T00:19:53+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 3.55,
   "peak_s": 1682
+ },
+ {
+  "id": "20261120-175729",
+  "at": "2026-11-20T17:58:37+00:00",
+  "channel": "kaicenat",
+  "hype": 13.7,
+  "seconds": 12.97,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 29.04,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-175729.mp4",
+  "said": "Oh my boy always got some nice car, bro Uh -huh. Heard? Dan's been talking about how Don take out a personal key car for his elevator. He only went with access to the basement. He ain't no restriction in the basement. That came from Royce's car.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-175729.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-175729.jpg",
+  "posted": false,
+  "chat": 2.88,
+  "peak_s": 2125
  }
 ]
