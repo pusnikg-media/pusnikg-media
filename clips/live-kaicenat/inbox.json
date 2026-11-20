@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-062501",
-  "at": "2026-11-20T06:25:45+00:00",
-  "channel": "kaicenat",
-  "hype": 12.7,
-  "seconds": 14.93,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 24.01,
-  "b": 38.94,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-062501.mp4",
-  "said": "boo at least like surprise here. Did she bust you probably with a hamburger and fries game What do y 'all pain? What do y 'all pain question marks for as a grown -ass man to make me some food sometimes, bro",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-062501.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-062501.jpg",
-  "posted": true,
-  "chat": 4.56,
-  "peak_s": 433
- },
- {
   "id": "20261120-062648",
   "at": "2026-11-20T06:27:30+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.31,
   "peak_s": 1835
+ },
+ {
+  "id": "20261120-204916",
+  "at": "2026-11-20T20:50:00+00:00",
+  "channel": "kaicenat",
+  "hype": 28.2,
+  "seconds": 16.82,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 25.18,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-204916.mp4",
+  "said": "Take a shower and I gotta I think I gotta change her hair, huh? Well, I'm trying",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-204916.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-204916.jpg",
+  "posted": false,
+  "chat": 1.87,
+  "peak_s": 5263
  }
 ]
