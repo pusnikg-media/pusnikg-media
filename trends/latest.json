@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T05:41:48+00:00",
+ "at": "2026-11-20T11:34:04+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 429",
   "reddit r/GTA6: HTTP 404",
@@ -11,10 +11,10 @@
    "area": "irl",
    "channel": "adinross",
    "title": "etaztjgzyhrfxsj",
-   "views": 27218,
-   "per_h": 958,
+   "views": 29495,
+   "per_h": 860,
    "dur": 29,
-   "age_h": 28.4,
+   "age_h": 34.3,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/adinross/clips/clip_01M7RP0WZYS0W8VVWWZ4CR5M7B",
    "video": "https://clips.kick.com/clips/93/clip_01M7RP0WZYS0W8VVWWZ4CR5M7B/playlist.m3u8",
@@ -25,122 +25,122 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "xmerghani",
+   "title": "clip",
+   "views": 9379,
+   "per_h": 266,
+   "dur": 30,
+   "age_h": 35.3,
+   "category": "Just Chatting",
+   "page": "https://kick.com/xmerghani/clips/clip_01M7RJP0CRN7G7AR17YBNJ5JDY",
+   "video": "https://clips.kick.com/clips/85/clip_01M7RJP0CRN7G7AR17YBNJ5JDY/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7RJP0CRN7G7AR17YBNJ5JDY",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "misshenley",
    "title": "More Candy Daddy Gifts",
-   "views": 6529,
-   "per_h": 305,
+   "views": 8115,
+   "per_h": 297,
    "dur": 35,
-   "age_h": 21.4,
+   "age_h": 27.3,
    "category": "Slots & Casino",
    "page": "https://kick.com/misshenley/clips/clip_01M7SDXSYHPYFFMD78ZSYJKWJ4",
    "video": "https://clips.kick.com/clips/e2/clip_01M7SDXSYHPYFFMD78ZSYJKWJ4/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7SDXSYHPYFFMD78ZSYJKWJ4",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "misshenley",
    "title": "First Spin On Reseed 🤑",
-   "views": 6143,
-   "per_h": 286,
+   "views": 7563,
+   "per_h": 276,
    "dur": 45,
-   "age_h": 21.5,
+   "age_h": 27.4,
    "category": "Slots & Casino",
    "page": "https://kick.com/misshenley/clips/clip_01M7SDCKC9B0WKZZBGJFB0VCXR",
    "video": "https://clips.kick.com/clips/28/clip_01M7SDCKC9B0WKZZBGJFB0VCXR/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7SDCKC9B0WKZZBGJFB0VCXR",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "xmerghani",
-   "title": "clip",
-   "views": 6138,
-   "per_h": 209,
-   "dur": 30,
-   "age_h": 29.4,
-   "category": "Just Chatting",
-   "page": "https://kick.com/xmerghani/clips/clip_01M7RJP0CRN7G7AR17YBNJ5JDY",
-   "video": "https://clips.kick.com/clips/85/clip_01M7RJP0CRN7G7AR17YBNJ5JDY/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7RJP0CRN7G7AR17YBNJ5JDY",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "destiny",
    "title": "A message to mockler glazers",
-   "views": 5646,
-   "per_h": 672,
+   "views": 6986,
+   "per_h": 492,
    "dur": 144,
-   "age_h": 8.4,
+   "age_h": 14.2,
    "category": "Just Chatting",
    "page": "https://kick.com/destiny/clips/clip_01M7TTPQVA25B40ZW35STASVE1",
    "video": "https://clips.kick.com/clips/ef/clip_01M7TTPQVA25B40ZW35STASVE1/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7TTPQVA25B40ZW35STASVE1",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "djmariio",
    "title": "conejo en gta",
-   "views": 3762,
-   "per_h": 128,
+   "views": 6751,
+   "per_h": 191,
    "dur": 22,
-   "age_h": 29.4,
+   "age_h": 35.3,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/djmariio/clips/clip_01M7RJG4376F9Z5M1CC4GR01Z6",
    "video": "https://clips.kick.com/clips/49/clip_01M7RJG4376F9Z5M1CC4GR01Z6/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7RJG4376F9Z5M1CC4GR01Z6",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "kaneljoseph",
    "title": "aaaaaaa",
-   "views": 3625,
-   "per_h": 139,
+   "views": 5771,
+   "per_h": 181,
    "dur": 30,
-   "age_h": 26.0,
+   "age_h": 31.9,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/kaneljoseph/clips/clip_01M7RY71237VHTJPPVVBG7M74Z",
    "video": "https://clips.kick.com/clips/23/clip_01M7RY71237VHTJPPVVBG7M74Z/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7RY71237VHTJPPVVBG7M74Z",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "abood",
-   "title": "ترههههه جوده",
-   "views": 3520,
-   "per_h": 243,
-   "dur": 180,
-   "age_h": 14.5,
+   "channel": "xqc",
+   "title": "clip for science",
+   "views": 5122,
+   "per_h": 160,
+   "dur": 30,
+   "age_h": 32.1,
    "category": "Just Chatting",
-   "page": "https://kick.com/abood/clips/clip_01M7T5M6SP77SJEANKG9504DNB",
-   "video": "https://clips.kick.com/clips/36/clip_01M7T5M6SP77SJEANKG9504DNB/playlist.m3u8",
+   "page": "https://kick.com/xqc/clips/clip_01M7RXF4ZDXJAKXDJVGVGS6ZWM",
+   "video": "https://clips.kick.com/clips/6e/clip_01M7RXF4ZDXJAKXDJVGVGS6ZWM/playlist.m3u8",
    "mature": false,
-   "id": "k:clip_01M7T5M6SP77SJEANKG9504DNB",
+   "id": "k:clip_01M7RXF4ZDXJAKXDJVGVGS6ZWM",
    "new": true
   },
   {
    "src": "youtube",
    "area": "gaming",
    "channel": "Rockstar Games",
-   "views": 1614610,
-   "per_h": 102841,
-   "age_h": 15.7,
+   "views": 2446469,
+   "per_h": 113262,
+   "age_h": 21.6,
    "title": "Grand Theft Auto VI Now Available",
    "page": "https://www.youtube.com/shorts/T95WGWkx7P0",
    "id": "y:T95WGWkx7P0",
@@ -149,12 +149,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Cyberleek drops what they claim is a near-complete GTA 6 Xbox build online",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/cyberleek-drops-what-they-claim-is-a-near-complete-gta-6-xbox-build-online/",
-   "age_h": 6.4,
-   "id": "n:cyberleek-drops-what-they-claim-is-a-near-complete-gta-6-xbo",
+   "site": "IGN",
+   "title": "Cyberleek Returns for GTA 6 Launch to Reportedly Release a Near-Complete Xbox Build, Threatens to Release the Game's Executable in Days",
+   "page": "https://www.ign.com/articles/cyberleek-returns-for-gta-6-launch-to-reportedly-release-a-near-complete-xbox-build-threatens-to-release-the-games-executable-in-days",
+   "age_h": 1.4,
+   "id": "n:cyberleek-returns-for-gta-6-launch-to-reportedly-release-a-n",
    "sites": [
+    "IGN",
     "PC Gamer",
     "Kotaku",
     "VGC"
@@ -164,14 +165,56 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Kotaku",
-   "title": "Here’s What People Are Playing That’s Not GTA 6",
-   "page": "https://kotaku.com/heres-what-people-are-playing-thats-not-gta-6-2000758577",
-   "age_h": 5.7,
-   "id": "n:here-s-what-people-are-playing-that-s-not-gta-6",
+   "site": "IGN",
+   "title": "GTA 6 Players Find Red Dead Redemption Lore That Strongly Suggests Both Series Are Set in the Same Universe",
+   "page": "https://www.ign.com/articles/gta-6-red-dead-redemption-2-same-timeline",
+   "age_h": 0.7,
+   "id": "n:gta-6-players-find-red-dead-redemption-lore-that-strongly-su",
    "sites": [
-    "Kotaku",
-    "IGN"
+    "IGN",
+    "RockstarINTEL"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "Best GTA VI Settings You Need To Change",
+   "page": "https://rockstarintel.com/best-gta-vi-settings-you-need-to-change/",
+   "age_h": 1.5,
+   "id": "n:best-gta-vi-settings-you-need-to-change",
+   "sites": [
+    "RockstarINTEL",
+    "Eurogamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Eurogamer",
+   "title": "\"You broke my heart\" - popular artist Doja Cat gutted to not have her music in Grand Theft Auto 6",
+   "page": "https://www.eurogamer.net/grand-theft-auto-6-doja-cat-gutted-not-in-soundtrack",
+   "age_h": 1.6,
+   "id": "n:-you-broke-my-heart-popular-artist-doja-cat-gutted-to-not-ha",
+   "sites": [
+    "Eurogamer",
+    "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "Where to Find the UFO Encounter in GTA 6—Alien Abduction Event, Explained",
+   "page": "https://insider-gaming.com/where-to-find-ufo-in-gta-6-explained/",
+   "age_h": 3.2,
+   "id": "n:where-to-find-the-ufo-encounter-in-gta-6-alien-abduction-eve",
+   "sites": [
+    "Insider Gaming",
+    "VGC"
    ],
    "new": true
   },
@@ -179,10 +222,10 @@
    "src": "news",
    "area": "gaming",
    "site": "IGN",
-   "title": "'I’m So F**kin’ Bitter' — Doja Cat Begs Rockstar to Put Her Music on the GTA 6 Soundtrack",
-   "page": "https://www.ign.com/articles/im-so-fkin-bitter-doja-cat-begs-rockstar-to-put-her-music-on-the-gta-6-soundtrack",
-   "age_h": 9.2,
-   "id": "n:-i-m-so-f-kin-bitter-doja-cat-begs-rockstar-to-put-her-music",
+   "title": "GTA 6 Has Police Departments Across America Begging People Not to Commit Crimes IRL",
+   "page": "https://www.ign.com/articles/gta-6-has-police-departments-across-america-begging-people-not-to-commit-crimes-irl",
+   "age_h": 11.6,
+   "id": "n:gta-6-has-police-departments-across-america-begging-people-n",
    "sites": [
     "IGN",
     "Kotaku"
@@ -192,24 +235,10 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Bigfoot explained: How to find ‘Bigfoot’ in GTA 6",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-bigfoot-explained-how-to-find-bigfoot-in-gta-6/",
-   "age_h": 11.2,
-   "id": "n:gta-6-bigfoot-explained-how-to-find-bigfoot-in-gta-6",
-   "sites": [
-    "VGC",
-    "Kotaku"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
    "site": "PC Gamer",
    "title": "Rockstar has finally posted GTA 6's full map online—thank goodness, because clearing the entire thing in game takes ages",
    "page": "https://www.pcgamer.com/games/grand-theft-auto/rockstar-has-finally-posted-gta-6s-full-map-online-thank-goodness-because-clearing-the-entire-thing-in-game-takes-ages/",
-   "age_h": 13.4,
+   "age_h": 19.2,
    "id": "n:rockstar-has-finally-posted-gta-6-s-full-map-online-thank-go",
    "sites": [
     "PC Gamer",
@@ -223,7 +252,7 @@
    "site": "GameSpot",
    "title": "GTA 6’s Digital Release Has GameStop CEO Defending Physical Games, For Obvious Reasons",
    "page": "https://www.gamespot.com/articles/gta-6-digital-release-has-gamestop-ceo-defending-physical-games-for-obvious-reasons/",
-   "age_h": 15.4,
+   "age_h": 21.3,
    "id": "n:gta-6-s-digital-release-has-gamestop-ceo-defending-physical-",
    "sites": [
     "GameSpot",
@@ -234,52 +263,26 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "GTA 6 Money Cheat Code—How To Get More Money Fast In GTA 6",
+   "page": "https://insider-gaming.com/gta-6-money-cheat/",
+   "age_h": 0.1,
+   "id": "n:gta-6-money-cheat-code-how-to-get-more-money-fast-in-gta-6",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "Kotaku",
-   "title": "GTA 6 Has A Surprising Late Game Cameo That Knocked Me On My Ass",
-   "page": "https://kotaku.com/gta-6-has-a-surprising-late-game-cameo-that-knocked-me-on-my-ass-2000758623",
-   "age_h": 2.8,
-   "id": "n:gta-6-has-a-surprising-late-game-cameo-that-knocked-me-on-my",
+   "title": "GTA 6 Release Was So Big It Broke Internet Download Records, Twice In One Week",
+   "page": "https://kotaku.com/gta-6-release-was-so-big-it-broke-internet-download-records-twice-in-one-week-2000758654",
+   "age_h": 0.6,
+   "id": "n:gta-6-release-was-so-big-it-broke-internet-download-records-",
    "sites": [
     "Kotaku"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "GTA+ for GTA 6 singleplayer is like subscription-based horse armor",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-for-gta-6-singleplayer-is-like-subscription-based-horse-armor/",
-   "age_h": 4.7,
-   "id": "n:gta-for-gta-6-singleplayer-is-like-subscription-based-horse-",
-   "sites": [
-    "PC Gamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "GTA 6 is playable in first-person, here's how to activate it",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-is-playable-in-first-person-heres-how-to-activate-it/",
-   "age_h": 4.7,
-   "id": "n:gta-6-is-playable-in-first-person-here-s-how-to-activate-it",
-   "sites": [
-    "PC Gamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "Controversial GTA 6 Easter Egg Will Annoy Millions of Gamers",
-   "page": "https://www.polygon.com/gta-6-physical-disc-spoof-game/",
-   "age_h": 4.7,
-   "id": "n:controversial-gta-6-easter-egg-will-annoy-millions-of-gamers",
-   "sites": [
-    "Polygon"
    ],
    "new": true
   }
