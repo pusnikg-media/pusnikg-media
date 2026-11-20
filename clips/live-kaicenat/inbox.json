@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-225305",
-  "at": "2026-11-19T22:54:11+00:00",
-  "channel": "kaicenat",
-  "hype": 12.9,
-  "seconds": 16.98,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 15.74,
-  "b": 32.72,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-225305.mp4",
-  "said": "I feel like this shit finna get shot up, bro. Okay, move, move. Thanks for now. Right there. Go get her. Oh shit, Sonny's alive, chat. Everybody say hello, Sonny.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-225305.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-225305.jpg",
-  "posted": true,
-  "chat": 4.59,
-  "peak_s": 2067
- },
- {
   "id": "20261119-235156",
   "at": "2026-11-19T23:52:42+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.0,
   "peak_s": 121
+ },
+ {
+  "id": "20261120-172726",
+  "at": "2026-11-20T17:28:18+00:00",
+  "channel": "kaicenat",
+  "hype": 8.7,
+  "seconds": 16.57,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14.81,
+  "b": 31.38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-172726.mp4",
+  "said": "Oh man, we need some more. Yeah, we need some more Jaydawg. Yeah, whenever I need to hit that once, we need to turn this fucking night around. Come on, go get him real quick. Okay, talk to the dealer, bro. He is a boy. I love bro",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-172726.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-172726.jpg",
+  "posted": false,
+  "chat": 3.4,
+  "peak_s": 442
  }
 ]
