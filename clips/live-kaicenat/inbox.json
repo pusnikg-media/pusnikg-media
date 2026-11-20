@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-224553",
-  "at": "2026-11-19T22:46:28+00:00",
-  "channel": "kaicenat",
-  "hype": 7.2,
-  "seconds": 19.23,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 22.77,
-  "b": 42.0,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-224553.mp4",
-  "said": "every bank I think that's possible do it yeah I gotta get oh first to do it you got to do it robbing every bank in GTA Yeah, you're gonna -",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-224553.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-224553.jpg",
-  "posted": true,
-  "chat": 3.06,
-  "peak_s": 1552
- },
- {
   "id": "20261119-225151",
   "at": "2026-11-19T22:52:41+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.36,
   "peak_s": 1100
+ },
+ {
+  "id": "20261120-164711",
+  "at": "2026-11-20T16:48:14+00:00",
+  "channel": "kaicenat",
+  "hype": 8.9,
+  "seconds": 17.42,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 19.58,
+  "b": 37.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-164711.mp4",
+  "said": "Oh yeah. You can drop them off! You're a fucking gun. Yo! Couple of y 'all!",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-164711.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-164711.jpg",
+  "posted": false,
+  "chat": 2.53,
+  "peak_s": 1583
  }
 ]
