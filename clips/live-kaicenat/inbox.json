@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-184220",
-  "at": "2026-11-19T18:43:12+00:00",
-  "channel": "kaicenat",
-  "hype": 12.5,
-  "seconds": 15.73,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 25.33,
-  "b": 41.06,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-184220.mp4",
-  "said": "Sandals now and this is what I meant like sandals like you I feel cute today. Like this is what I do You know, like I feel so cute today, you know Now look now I'm gonna go",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-184220.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-184220.jpg",
-  "posted": true,
-  "chat": 3.12,
-  "peak_s": 1472
- },
- {
   "id": "20261119-194218",
   "at": "2026-11-19T19:43:10+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 3.92,
   "peak_s": 6345
+ },
+ {
+  "id": "20261120-110607",
+  "at": "2026-11-20T11:06:48+00:00",
+  "channel": "kaicenat",
+  "hype": 7.0,
+  "seconds": 13.79,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 28.09,
+  "b": 41.94,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-110607.mp4",
+  "said": "Should I put it on? Should I put the long sleeve on or nah? A low key? I might, hold on. It's right here, it's right here.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-110607.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-110607.jpg",
+  "posted": false,
+  "chat": 3.32,
+  "peak_s": 6562
  }
 ]
