@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-235846",
-  "at": "2026-11-19T23:59:33+00:00",
-  "channel": "kaicenat",
-  "hype": 15.7,
-  "seconds": 15.12,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 16.65,
-  "b": 31.77,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-235846.mp4",
-  "said": "Don't lose that tension Keep pulling don't loosen up This is very hard this is hard this is hard ma 'am ma 'am. It's very hard",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-235846.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-235846.jpg",
-  "posted": true,
-  "chat": 2.43,
-  "peak_s": 6026
- },
- {
   "id": "20261120-000350",
   "at": "2026-11-20T00:04:40+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.07,
   "peak_s": 1442
+ },
+ {
+  "id": "20261120-174824",
+  "at": "2026-11-20T17:49:09+00:00",
+  "channel": "kaicenat",
+  "hype": 7.2,
+  "seconds": 16.63,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 25.27,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-174824.mp4",
+  "said": "You won't be a in this is fully evolved Hyper -evolved almost what does I know? right here right now you better let me out asshole dollars are dead bro in one year I was crypto visionaries are gonna be",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-174824.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-174824.jpg",
+  "posted": false,
+  "chat": 3.55,
+  "peak_s": 1682
  }
 ]
