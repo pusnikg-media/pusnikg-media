@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-003957",
-  "at": "2026-11-20T00:40:57+00:00",
-  "channel": "kaicenat",
-  "hype": 9.6,
-  "seconds": 23.77,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 14,
-  "b": 38,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-003957.mp4",
-  "said": "You think they think you ready like when you go back to the rest They're gonna thank you for this. You think they're gonna crown your bitch ass Now why don't y 'all chill the fuck out get back in your cars and we can forget this shit ever happened YEAH!",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-003957.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-003957.jpg",
-  "posted": true,
-  "chat": 2.72,
-  "peak_s": 1326
- },
- {
   "id": "20261120-004201",
   "at": "2026-11-20T00:43:01+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 3.82,
   "peak_s": 5632
+ },
+ {
+  "id": "20261120-190321",
+  "at": "2026-11-20T19:04:10+00:00",
+  "channel": "kaicenat",
+  "hype": 13.4,
+  "seconds": 12.67,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 28.85,
+  "b": 41.52,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-190321.mp4",
+  "said": "Yo, she ah Yo, when's the last time you talked to Abe Abe a bunch of times, but nothing just dumbass",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-190321.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-190321.jpg",
+  "posted": false,
+  "chat": 2.08,
+  "peak_s": 6210
  }
 ]
