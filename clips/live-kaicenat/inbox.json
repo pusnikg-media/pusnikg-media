@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-200917",
-  "at": "2026-11-19T20:10:14+00:00",
-  "channel": "kaicenat",
-  "hype": 11.5,
-  "seconds": 19.18,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 18.59,
-  "b": 37.76,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-200917.mp4",
-  "said": "Okay, so back to this we need to talk about Sheila's tendency to go full -trad wife I mean like her fan base. Oh my god. I know taste like Every single day, so I don't really understand chat tastes like WAPA",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-200917.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-200917.jpg",
-  "posted": true,
-  "chat": 2.62,
-  "peak_s": 6694
- },
- {
   "id": "20261119-204803",
   "at": "2026-11-19T20:49:15+00:00",
   "channel": "kaicenat",
@@ -643,7 +626,7 @@
   "said": "What I asked that question how many new food? Like how many move ball chat? That's what I meant. Okay? How many new food",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-114545.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-114545.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 4.39,
   "peak_s": 1692
  },
@@ -660,7 +643,7 @@
   "said": "Text Wyman and let him know the cop car is where he wanted it. Yes, ma 'am Exactly where it's at nigga Your horrible driver. Oh, I'm a horrible driver.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-114943.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-114943.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.96,
   "peak_s": 1892
  },
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.06,
   "peak_s": 563
+ },
+ {
+  "id": "20261120-123855",
+  "at": "2026-11-20T12:39:47+00:00",
+  "channel": "kaicenat",
+  "hype": 9.0,
+  "seconds": 16.02,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 22.56,
+  "b": 38.58,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-123855.mp4",
+  "said": "It's all good come and see you now Good definition, huh? All right, Chad with a post. Yo, yo, yo chat. Hold on chat everybody. We better chat. We are about to reset Chat we are about to reset. Are y 'all ready?",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-123855.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-123855.jpg",
+  "posted": false,
+  "chat": 10.24,
+  "peak_s": 1222
  }
 ]
