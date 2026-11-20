@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-194218",
-  "at": "2026-11-19T19:43:10+00:00",
-  "channel": "kaicenat",
-  "hype": 30.0,
-  "seconds": 12.85,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 28.61,
-  "b": 41.46,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-194218.mp4",
-  "said": "on the river great Now keep on how Chad ww's gonna get to the bank who's there man. It means pull that bro You're good. Just keep going where you're going. Okay, here you go. End of the road",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-194218.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-194218.jpg",
-  "posted": true,
-  "chat": 3.18,
-  "peak_s": 5064
- },
- {
   "id": "20261119-195813",
   "at": "2026-11-19T19:59:09+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 3.32,
   "peak_s": 6562
+ },
+ {
+  "id": "20261120-114545",
+  "at": "2026-11-20T11:46:19+00:00",
+  "channel": "kaicenat",
+  "hype": 10.6,
+  "seconds": 13.82,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 18.4,
+  "b": 32.21,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-114545.mp4",
+  "said": "What I asked that question how many new food? Like how many move ball chat? That's what I meant. Okay? How many new food",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-114545.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-114545.jpg",
+  "posted": false,
+  "chat": 4.39,
+  "peak_s": 1692
  }
 ]
