@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-062648",
-  "at": "2026-11-20T06:27:30+00:00",
-  "channel": "kaicenat",
-  "hype": 11.7,
-  "seconds": 13.35,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 21.56,
-  "b": 34.91,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-062648.mp4",
-  "said": "Let's see Yo, bro, Lucy and I can't use Lucia I'm gonna leave the crib I'm gonna leave the crib. Oh, I got my new car to work. I Might go see what Billy want.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-062648.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-062648.jpg",
-  "posted": true,
-  "chat": 2.67,
-  "peak_s": 596
- },
- {
   "id": "20261120-063053",
   "at": "2026-11-20T06:31:43+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 1.87,
   "peak_s": 5263
+ },
+ {
+  "id": "20261120-210305",
+  "at": "2026-11-20T21:03:53+00:00",
+  "channel": "kaicenat",
+  "hype": 7.6,
+  "seconds": 14.3,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 25.52,
+  "b": 39.81,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-210305.mp4",
+  "said": "You ever think about me when I'm not around? Call me, baby. You know I'm always down to talk and whatever. When I do, you better pick up.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-210305.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-210305.jpg",
+  "posted": false,
+  "chat": 2.44,
+  "peak_s": 6212
  }
 ]
