@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-235446",
-  "at": "2026-11-19T23:55:41+00:00",
-  "channel": "kaicenat",
-  "hype": 12.2,
-  "seconds": 20.05,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 19.2,
-  "b": 39.25,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-235446.mp4",
-  "said": "oh my god this is not a pinball machine oh my gosh oh my gosh no you need the other end follow it to the other direction oh my oh my god we said we said we said we said we said we said it we said it we said it we said it we said it we said Holy shit.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-235446.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-235446.jpg",
-  "posted": true,
-  "chat": 6.69,
-  "peak_s": 5772
- },
- {
   "id": "20261119-235846",
   "at": "2026-11-19T23:59:33+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 3.52,
   "peak_s": 1283
+ },
+ {
+  "id": "20261120-174428",
+  "at": "2026-11-20T17:45:20+00:00",
+  "channel": "kaicenat",
+  "hype": 7.0,
+  "seconds": 12.12,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 29.89,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-174428.mp4",
+  "said": "Nah, bro. He is like Yeah, I'm a lot spiking your security drink is crazy, bro Like but you spike my drink like",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-174428.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-174428.jpg",
+  "posted": false,
+  "chat": 2.07,
+  "peak_s": 1442
  }
 ]
