@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-225151",
-  "at": "2026-11-19T22:52:41+00:00",
-  "channel": "kaicenat",
-  "hype": 11.6,
-  "seconds": 16.02,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 23.78,
-  "b": 39.8,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-225151.mp4",
-  "said": "i still feel like we should have gotten scratched oh it's the music video chat w music video w music video here we go Yo Loonie, Jay, what you think of the ride? Howdy. Hold on, gotta be! Just count to ten!",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-225151.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-225151.jpg",
-  "posted": true,
-  "chat": 3.58,
-  "peak_s": 1948
- },
- {
   "id": "20261119-225305",
   "at": "2026-11-19T22:54:11+00:00",
   "channel": "kaicenat",
@@ -643,7 +626,7 @@
   "said": "If you guys are just tuning in, welcome, welcome. Hit that like button, hit that subscribe button. Hope you're having a good day, hope you're having a good Friday so far. anything worker listen let me tell you",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-162858.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-162858.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.69,
   "peak_s": 493
  },
@@ -660,7 +643,7 @@
   "said": "Okay, I didn't even try to what I miss Do I just have socks on? Nah, I'm also trebuchet right now",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-163912.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-163912.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.36,
   "peak_s": 1100
  },
@@ -677,8 +660,25 @@
   "said": "Oh yeah. You can drop them off! You're a fucking gun. Yo! Couple of y 'all!",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-164711.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-164711.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.53,
   "peak_s": 1583
+ },
+ {
+  "id": "20261120-172318",
+  "at": "2026-11-20T17:24:04+00:00",
+  "channel": "kaicenat",
+  "hype": 9.2,
+  "seconds": 15.19,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 26.81,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-172318.mp4",
+  "said": "Just chill, okay? Did he hear the sound? Oh, wow. He do not mess up for him. You know about this, how they doing out there? Come on, man. You can't forget about your bread hills, bro. I practically pay the rent. Hey, let me get into that man. Oh, yeah, I got you Thanks, man. It's fucking bullshit",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-172318.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-172318.jpg",
+  "posted": false,
+  "chat": 2.0,
+  "peak_s": 121
  }
 ]
