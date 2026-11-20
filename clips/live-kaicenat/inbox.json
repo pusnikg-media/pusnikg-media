@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-164919",
-  "at": "2026-11-19T16:50:11+00:00",
-  "channel": "kaicenat",
-  "hype": 12.9,
-  "seconds": 16.18,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 21.52,
-  "b": 37.69,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-164919.mp4",
-  "said": "Yeah, we'll be in touch if we need anything else. Oh nice work, okay? Oh my gosh sports car Yeah, no, can't tell ya, is there anything else?",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-164919.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-164919.jpg",
-  "posted": true,
-  "chat": 4.74,
-  "peak_s": 5565
- },
- {
   "id": "20261119-165316",
   "at": "2026-11-19T16:54:13+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.44,
   "peak_s": 138
+ },
+ {
+  "id": "20261120-092415",
+  "at": "2026-11-20T09:24:56+00:00",
+  "channel": "kaicenat",
+  "hype": 14.6,
+  "seconds": 13.55,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 27.74,
+  "b": 41.29,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-092415.mp4",
+  "said": "Alright, so let's go home, bro Wait, so her not texting back is part of the story Is that a fact? Yo Nick, can we check that bro? I do not know that's a",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-092415.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-092415.jpg",
+  "posted": false,
+  "chat": 1.64,
+  "peak_s": 433
  }
 ]
