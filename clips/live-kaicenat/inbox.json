@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-184107",
-  "at": "2026-11-19T18:41:56+00:00",
-  "channel": "kaicenat",
-  "hype": 12.6,
-  "seconds": 14.5,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 20.79,
-  "b": 35.28,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-184107.mp4",
-  "said": "It's like Jay. I don't know like Jason's like He's like, I don't know bro. It's fine. I ain't a lot Lucido fun like I'll just get just one hurt like both girls have the best shit",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-184107.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-184107.jpg",
-  "posted": true,
-  "chat": 2.54,
-  "peak_s": 1351
- },
- {
   "id": "20261119-184220",
   "at": "2026-11-19T18:43:12+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.02,
   "peak_s": 6144
+ },
+ {
+  "id": "20261120-110424",
+  "at": "2026-11-20T11:05:23+00:00",
+  "channel": "kaicenat",
+  "hype": 9.3,
+  "seconds": 15.82,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 16.47,
+  "b": 32.28,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-110424.mp4",
+  "said": "I Was supposed to have this meeting with a club promoter downtown But then I was like we gotta think about the optics told him to come over here meet the girls and of course Please it's so cold up here So y 'all caught a hot right now. Oh",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-110424.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-110424.jpg",
+  "posted": false,
+  "chat": 3.92,
+  "peak_s": 6345
  }
 ]
