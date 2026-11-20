@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-004201",
-  "at": "2026-11-20T00:43:01+00:00",
-  "channel": "kaicenat",
-  "hype": 10.0,
-  "seconds": 15.69,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 22.01,
-  "b": 37.7,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-004201.mp4",
-  "said": "Mommy, are you okay? Yeah. No, yeah. I should have forgot about this guy. Okay, come on. You've not got loyalty, nigga. Come on. I got loyalty, nigga. I got loyalty, nigga. You know what?",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-004201.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-004201.jpg",
-  "posted": true,
-  "chat": 3.17,
-  "peak_s": 1491
- },
- {
   "id": "20261120-004805",
   "at": "2026-11-20T00:49:07+00:00",
   "channel": "kaicenat",
@@ -626,7 +609,7 @@
   "said": "you think you're doing hey those are the ones i saw going before do it this he's got the trophy oh my god who shot him who shot him what's",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-184724.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-184724.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.72,
   "peak_s": 5221
  },
@@ -643,7 +626,7 @@
   "said": "on, the weapon! We're at the sugar factory. Final check is fucking everywhere. We need help. Here, no more Billy than really think this through. Just get down, okay? Here, fucker.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-185236.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-185236.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 5.45,
   "peak_s": 5454
  },
@@ -660,7 +643,7 @@
   "said": "Do, do, do Let's go I think we're good Another W mission bro Another one, another W mission with this dude man I actually like this dude man",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-185432.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-185432.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.82,
   "peak_s": 5632
  },
@@ -677,8 +660,25 @@
   "said": "Yo, she ah Yo, when's the last time you talked to Abe Abe a bunch of times, but nothing just dumbass",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-190321.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-190321.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.08,
   "peak_s": 6210
+ },
+ {
+  "id": "20261120-193508",
+  "at": "2026-11-20T19:36:09+00:00",
+  "channel": "kaicenat",
+  "hype": 12.4,
+  "seconds": 24.1,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 14,
+  "b": 38,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-193508.mp4",
+  "said": "space response. Two Cs evading in a high -speed vehicle. Currently traveling eastbound and has requested additional support. Shit! There's cops up there! Make a right!",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-193508.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-193508.jpg",
+  "posted": false,
+  "chat": 7.04,
+  "peak_s": 934
  }
 ]
