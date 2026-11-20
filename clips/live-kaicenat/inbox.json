@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-215706",
-  "at": "2026-11-19T21:57:56+00:00",
-  "channel": "kaicenat",
-  "hype": 11.6,
-  "seconds": 15.59,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 26.41,
-  "b": 42.0,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-215706.mp4",
-  "said": "Y 'all hear that engine? Oh my god, oh my god! The shotgun's not gonna happen. Oh, if you drive fast the tracker can't own",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-215706.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-215706.jpg",
-  "posted": true,
-  "chat": 4.93,
-  "peak_s": 6153
- },
- {
   "id": "20261119-221100",
   "at": "2026-11-19T22:11:56+00:00",
   "channel": "kaicenat",
@@ -643,7 +626,7 @@
   "said": "Squeeze, baby, come on, juice it up. Squeeze that juice. Come on. Okay, that's pretty good.",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-122740.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-122740.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 2.06,
   "peak_s": 563
  },
@@ -660,7 +643,7 @@
   "said": "It's all good come and see you now Good definition, huh? All right, Chad with a post. Yo, yo, yo chat. Hold on chat everybody. We better chat. We are about to reset Chat we are about to reset. Are y 'all ready?",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-123855.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-123855.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 10.24,
   "peak_s": 1222
  },
@@ -677,8 +660,25 @@
   "said": "Yeah, I got the car we should probably let him know we're on the way. That's a good point. I'll call him. Oh Shit god damn started talking that nigga down through the mouth",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-124722.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-124722.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 1.46,
   "peak_s": 1714
+ },
+ {
+  "id": "20261120-160322",
+  "at": "2026-11-20T16:04:07+00:00",
+  "channel": "kaicenat",
+  "hype": 30.0,
+  "seconds": 13.18,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 25.02,
+  "b": 38.2,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-160322.mp4",
+  "said": "Yeah, check check check. Yeah, we testing testing testing check. Yeah, hear me. Oh My god",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-160322.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-160322.jpg",
+  "posted": false,
+  "chat": 3.65,
+  "peak_s": 5606
  }
 ]
