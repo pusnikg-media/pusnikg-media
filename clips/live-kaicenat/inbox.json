@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261120-004805",
-  "at": "2026-11-20T00:49:07+00:00",
-  "channel": "kaicenat",
-  "hype": 8.5,
-  "seconds": 23.85,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 14,
-  "b": 38,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-004805.mp4",
-  "said": "that's a good skin, bro They had a good skin on game Holy shit, I'm gonna drop Who am I driving to? Oh, it's not a road shot though. I thought we got a road trip",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-004805.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-004805.jpg",
-  "posted": true,
-  "chat": 2.23,
-  "peak_s": 1768
- },
- {
   "id": "20261120-062051",
   "at": "2026-11-20T06:21:37+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 7.04,
   "peak_s": 934
+ },
+ {
+  "id": "20261120-194615",
+  "at": "2026-11-20T19:47:04+00:00",
+  "channel": "kaicenat",
+  "hype": 11.5,
+  "seconds": 15.62,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 23.47,
+  "b": 39.08,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-194615.mp4",
+  "said": "Hey, what's this? Shit. Guess we got lucky this time. Aight, man, look, I'ma be real with you. Can't hide your back. You're under arrest. No, just ask! No, peace! It's not only for personal use. I ain't trying to say it to nobody. Yo, I said I ain't trying to say it to nobody. Let's get it.",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-194615.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-194615.jpg",
+  "posted": false,
+  "chat": 1.89,
+  "peak_s": 1495
  }
 ]
