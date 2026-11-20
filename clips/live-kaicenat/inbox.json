@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-152818",
-  "at": "2026-11-19T15:29:33+00:00",
-  "channel": "kaicenat",
-  "hype": 7.0,
-  "seconds": 27.32,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 14,
-  "b": 38,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-152818.mp4",
-  "said": "for approval waiting for someone to tell you it's okay to want more guess what god they're never gonna tell you that you've got to take it winners don't Wait, winners and winners sign up for my two week online course and they go low installments",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-152818.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-152818.jpg",
-  "posted": true,
-  "chat": 1.94,
-  "peak_s": 731
- },
- {
   "id": "20261119-153319",
   "at": "2026-11-19T15:34:11+00:00",
   "channel": "kaicenat",
@@ -678,5 +661,24 @@
   "posted": false,
   "chat": 13.19,
   "peak_s": 1709
+ },
+ {
+  "id": "20261120-071753",
+  "at": "2026-11-20T07:18:23+00:00",
+  "channel": "kaicenat",
+  "hype": 30.0,
+  "seconds": 17.97,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 13.84,
+  "b": 31.8,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-071753.mp4",
+  "said": "No, I shouldn't cuz my shit already good Cosmetics we spring. Oh, no, I said I have to",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-071753.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-071753.jpg",
+  "posted": false,
+  "chat": 2.89,
+  "peak_s": 2025,
+  "safety": true,
+  "score": 3.67
  }
 ]
