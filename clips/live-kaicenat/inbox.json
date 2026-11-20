@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-224147",
-  "at": "2026-11-19T22:42:48+00:00",
-  "channel": "kaicenat",
-  "hype": 7.0,
-  "seconds": 24.0,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 14,
-  "b": 38,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-224147.mp4",
-  "said": "Oh! You pulled out the Oozie? You not know Oozie? Get the fuck in with the floor and pop, you nigga And back out the locks, right?",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-224147.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-224147.jpg",
-  "posted": true,
-  "chat": 4.13,
-  "peak_s": 1364
- },
- {
   "id": "20261119-224553",
   "at": "2026-11-19T22:46:28+00:00",
   "channel": "kaicenat",
@@ -643,7 +626,7 @@
   "said": "Yeah, check check check. Yeah, we testing testing testing check. Yeah, hear me. Oh My god",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-160322.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-160322.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.65,
   "peak_s": 5606
  },
@@ -660,7 +643,7 @@
   "said": "don't know why I can't do my headphones. What's going on check? Good morning. Good morning. Good morning. Good morning. Good morning Good morning Yo production. Can I tell Daniel or somebody? um",
   "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-160711.mp4",
   "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-160711.jpg",
-  "posted": false,
+  "posted": true,
   "chat": 3.62,
   "peak_s": 5844
  },
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 2.69,
   "peak_s": 493
+ },
+ {
+  "id": "20261120-163912",
+  "at": "2026-11-20T16:40:08+00:00",
+  "channel": "kaicenat",
+  "hype": 9.9,
+  "seconds": 16.07,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 15.31,
+  "b": 31.37,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-163912.mp4",
+  "said": "Okay, I didn't even try to what I miss Do I just have socks on? Nah, I'm also trebuchet right now",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-163912.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-163912.jpg",
+  "posted": false,
+  "chat": 2.36,
+  "peak_s": 1100
  }
 ]
