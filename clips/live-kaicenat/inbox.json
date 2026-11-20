@@ -1,22 +1,5 @@
 [
  {
-  "id": "20261119-221100",
-  "at": "2026-11-19T22:11:56+00:00",
-  "channel": "kaicenat",
-  "hype": 9.0,
-  "seconds": 15.2,
-  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
-  "a": 16.64,
-  "b": 31.84,
-  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261119-221100.mp4",
-  "said": "Oof. He's heavy. Well we got the full order. What? You can't carry two? Course I can. Just don't feel like it. I'm sorry. I'm never doing that again. I'm never doing it again. I'm sorry.",
-  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261119-221100.mp4",
-  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261119-221100.jpg",
-  "posted": true,
-  "chat": 2.92,
-  "peak_s": 6993
- },
- {
   "id": "20261119-223137",
   "at": "2026-11-19T22:32:25+00:00",
   "channel": "kaicenat",
@@ -680,5 +663,22 @@
   "posted": false,
   "chat": 3.65,
   "peak_s": 5606
+ },
+ {
+  "id": "20261120-160711",
+  "at": "2026-11-20T16:07:54+00:00",
+  "channel": "kaicenat",
+  "hype": 30.0,
+  "seconds": 15.04,
+  "quote": "Kai Cenat GTA 6 moment (Vorschau, nie posten)",
+  "a": 26.96,
+  "b": 42.0,
+  "raw": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/raw_20261120-160711.mp4",
+  "said": "don't know why I can't do my headphones. What's going on check? Good morning. Good morning. Good morning. Good morning. Good morning Good morning Yo production. Can I tell Daniel or somebody? um",
+  "url": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/live-kaicenat_20261120-160711.mp4",
+  "qa": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/clips/live-kaicenat/qa/live-kaicenat_20261120-160711.jpg",
+  "posted": false,
+  "chat": 3.62,
+  "peak_s": 5844
  }
 ]
