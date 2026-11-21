@@ -1,8 +1,8 @@
 {
- "at": "2026-11-21T11:27:15+00:00",
+ "at": "2026-11-21T16:26:49+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
-  "reddit r/GTA6: HTTP 404",
+  "reddit r/GTA6: HTTP 429",
   "reddit r/GTA: HTTP 429"
  ],
  "items": [
@@ -11,10 +11,10 @@
    "area": "irl",
    "channel": "xqc",
    "title": "ddsgsrgesrdfsrg",
-   "views": 11960,
-   "per_h": 699,
+   "views": 13348,
+   "per_h": 604,
    "dur": 180,
-   "age_h": 17.1,
+   "age_h": 22.1,
    "category": "Just Chatting",
    "page": "https://kick.com/xqc/clips/clip_01M7X2WVSJ7HB2PFGHBCACCKS3",
    "video": "https://clips.kick.com/clips/98/clip_01M7X2WVSJ7HB2PFGHBCACCKS3/playlist.m3u8",
@@ -27,10 +27,10 @@
    "area": "irl",
    "channel": "chillingcrew",
    "title": "GTA V X @1WIN EXCLUSIV @KICKSTREAMING produ @1win",
-   "views": 10260,
-   "per_h": 452,
+   "views": 10355,
+   "per_h": 374,
    "dur": 180,
-   "age_h": 22.7,
+   "age_h": 27.7,
    "category": "Special Events",
    "page": "https://kick.com/chillingcrew/clips/clip_01M7WFMTVZFGRYMJTS0ZG58CC5",
    "video": "https://clips.kick.com/clips/0e/clip_01M7WFMTVZFGRYMJTS0ZG58CC5/playlist.m3u8",
@@ -43,10 +43,10 @@
    "area": "irl",
    "channel": "gustavocsgo",
    "title": "lucia retrasadita",
-   "views": 8936,
-   "per_h": 488,
+   "views": 9397,
+   "per_h": 405,
    "dur": 18,
-   "age_h": 18.3,
+   "age_h": 23.2,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/gustavocsgo/clips/clip_01M7WZ18VJJHYGG9M9ZES4XG4H",
    "video": "https://clips.kick.com/clips/11/clip_01M7WZ18VJJHYGG9M9ZES4XG4H/playlist.m3u8",
@@ -59,10 +59,10 @@
    "area": "irl",
    "channel": "paulinholokobr",
    "title": "base militar",
-   "views": 7927,
-   "per_h": 433,
+   "views": 8104,
+   "per_h": 348,
    "dur": 30,
-   "age_h": 18.3,
+   "age_h": 23.3,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/paulinholokobr/clips/clip_01M7WYYTNRS4Z48JXTFXT6STA7",
    "video": "https://clips.kick.com/clips/ee/clip_01M7WYYTNRS4Z48JXTFXT6STA7/playlist.m3u8",
@@ -75,10 +75,10 @@
    "area": "irl",
    "channel": "maacir",
    "title": "3 yıldızzz",
-   "views": 7615,
-   "per_h": 416,
+   "views": 7718,
+   "per_h": 331,
    "dur": 30,
-   "age_h": 18.3,
+   "age_h": 23.3,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/maacir/clips/clip_01M7WYV1MX5XH878THXAZKPDTX",
    "video": "https://clips.kick.com/clips/45/clip_01M7WYV1MX5XH878THXAZKPDTX/playlist.m3u8",
@@ -91,10 +91,10 @@
    "area": "irl",
    "channel": "paymoneywubby",
    "title": "om",
-   "views": 7456,
-   "per_h": 254,
+   "views": 7649,
+   "per_h": 222,
    "dur": 30,
-   "age_h": 29.4,
+   "age_h": 34.4,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/paymoneywubby/clips/clip_01M7VRW5RA71X4HP9C6P4KQ7KT",
    "video": "https://clips.kick.com/clips/7b/clip_01M7VRW5RA71X4HP9C6P4KQ7KT/playlist.m3u8",
@@ -107,10 +107,10 @@
    "area": "irl",
    "channel": "chillingcrew",
    "title": "Lanzamiento GTA VII @1WIN CHILLING CREW 420",
-   "views": 7404,
-   "per_h": 314,
+   "views": 7417,
+   "per_h": 259,
    "dur": 180,
-   "age_h": 23.6,
+   "age_h": 28.6,
    "category": "Special Events",
    "page": "https://kick.com/chillingcrew/clips/clip_01M7WCRHFFTVZB26SFJJM6N2GN",
    "video": "https://clips.kick.com/clips/47/clip_01M7WCRHFFTVZB26SFJJM6N2GN/playlist.m3u8",
@@ -121,26 +121,26 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "knut",
-   "title": "Swatted",
-   "views": 5774,
-   "per_h": 172,
-   "dur": 44,
-   "age_h": 33.6,
-   "category": "Just Sleeping",
-   "page": "https://kick.com/knut/clips/clip_01M7V9KMXTQN4FZHZZ32EYM10A",
-   "video": "https://clips.kick.com/clips/16/clip_01M7V9KMXTQN4FZHZZ32EYM10A/master.m3u8",
+   "channel": "asmongold",
+   "title": "sdrgsragwergaraAsdfaS",
+   "views": 7142,
+   "per_h": 313,
+   "dur": 63,
+   "age_h": 22.8,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/asmongold/clips/clip_01M7X0MWQ306FPKYJVF9C1KTZD",
+   "video": "https://clips.kick.com/clips/f0/clip_01M7X0MWQ306FPKYJVF9C1KTZD/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M7V9KMXTQN4FZHZZ32EYM10A",
-   "new": false
+   "id": "k:clip_01M7X0MWQ306FPKYJVF9C1KTZD",
+   "new": true
   },
   {
    "src": "youtube",
    "area": "gaming",
    "channel": "Rockstar Games",
-   "views": 6032772,
-   "per_h": 132588,
-   "age_h": 45.5,
+   "views": 6677535,
+   "per_h": 132491,
+   "age_h": 50.4,
    "title": "Grand Theft Auto VI Now Available",
    "page": "https://www.youtube.com/shorts/T95WGWkx7P0",
    "id": "y:T95WGWkx7P0",
@@ -152,7 +152,7 @@
    "site": "Eurogamer",
    "title": "GTA 6 is officially the biggest entertainment launch of all time, selling 32.5 million pre-sale copies and a bonkers $3.79 billion in its first day",
    "page": "https://www.eurogamer.net/gta-6-biggest-entertainment-launch",
-   "age_h": 15.4,
+   "age_h": 20.4,
    "id": "n:gta-6-is-officially-the-biggest-entertainment-launch-of-all-",
    "sites": [
     "Eurogamer",
@@ -166,10 +166,82 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "Polygon",
+   "title": "Where to find the bowling alley safe code in GTA 6",
+   "page": "https://www.polygon.com/gta-6-kingpin-bowling-alley-safe-code-location-grand-theft-auto/",
+   "age_h": 0.3,
+   "id": "n:where-to-find-the-bowling-alley-safe-code-in-gta-6",
+   "sites": [
+    "Polygon",
+    "VGC",
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "How to Make Lucia Nude in GTA 6",
+   "page": "https://insider-gaming.com/lucia-naked-gta-6/",
+   "age_h": 1.1,
+   "id": "n:how-to-make-lucia-nude-in-gta-6",
+   "sites": [
+    "Insider Gaming",
+    "PC Gamer",
+    "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "GTA 6's Impact on Steam and Roblox After Record-Breaking Launch Revealed",
+   "page": "https://www.polygon.com/gta-6-impact-on-steam-roblox/",
+   "age_h": 0.4,
+   "id": "n:gta-6-s-impact-on-steam-and-roblox-after-record-breaking-lau",
+   "sites": [
+    "Polygon",
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "Where to Find The Grotti Itali RSX Supercar in GTA 6—Randy’s Wishlist Car Locations",
+   "page": "https://insider-gaming.com/where-to-find-the-grotti-iitali-rsx-in-gta-6/",
+   "age_h": 0.6,
+   "id": "n:where-to-find-the-grotti-itali-rsx-supercar-in-gta-6-randy-s",
+   "sites": [
+    "Insider Gaming",
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Eurogamer",
+   "title": "GTA 6 is crashing on some PS5s with error CE-108255-1 - here's what you can try",
+   "page": "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix",
+   "age_h": 1.4,
+   "id": "n:gta-6-is-crashing-on-some-ps5s-with-error-ce-108255-1-here-s",
+   "sites": [
+    "Eurogamer",
+    "GameSpot"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "Kotaku",
    "title": "So Is The $100 GTA 6 Ultimate Edition Actually Worth It?",
    "page": "https://kotaku.com/so-is-the-100-gta-6-ultimate-edition-actually-worth-it-2000758998",
-   "age_h": 11.4,
+   "age_h": 16.4,
    "id": "n:so-is-the-100-gta-6-ultimate-edition-actually-worth-it-",
    "sites": [
     "Kotaku",
@@ -183,7 +255,7 @@
    "site": "IGN",
    "title": "Actor Who Plays Mandy in GTA 6 Excitedly Speaks Out After Character Goes Viral",
    "page": "https://www.ign.com/articles/actor-who-plays-mandy-in-gta-6-excitedly-speaks-out-after-character-goes-viral",
-   "age_h": 11.9,
+   "age_h": 16.9,
    "id": "n:actor-who-plays-mandy-in-gta-6-excitedly-speaks-out-after-ch",
    "sites": [
     "IGN",
@@ -197,7 +269,7 @@
    "site": "Kotaku",
    "title": "How To Solve All Main Puzzles In GTA 6′s Tenebrae Lux",
    "page": "https://kotaku.com/how-to-solve-all-main-puzzles-in-gta-6s-tenebrae-lux-2000758940",
-   "age_h": 11.9,
+   "age_h": 16.9,
    "id": "n:how-to-solve-all-main-puzzles-in-gta-6-s-tenebrae-lux",
    "sites": [
     "Kotaku",
@@ -208,84 +280,14 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "GTA 6 is Getting Review Bombed",
-   "page": "https://insider-gaming.com/gta-6-review-bombed/",
-   "age_h": 12.7,
-   "id": "n:gta-6-is-getting-review-bombed",
-   "sites": [
-    "Insider Gaming",
-    "Kotaku"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Best Graphics Settings To Use in GTA 6",
-   "page": "https://insider-gaming.com/gta-6-best-graphics-settings/",
-   "age_h": 13.2,
-   "id": "n:best-graphics-settings-to-use-in-gta-6",
-   "sites": [
-    "Insider Gaming",
-    "RockstarINTEL"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
    "site": "PC Gamer",
    "title": "Florida Joker gets his wish: He's a 'special voice actor' in Grand Theft Auto 6",
    "page": "https://www.pcgamer.com/games/grand-theft-auto/florida-joker-gets-his-wish-hes-a-special-voice-actor-in-grand-theft-auto-6/",
-   "age_h": 13.4,
+   "age_h": 18.4,
    "id": "n:florida-joker-gets-his-wish-he-s-a-special-voice-actor-in-gr",
    "sites": [
     "PC Gamer",
     "RockstarINTEL"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Try this GTA 6 movement speed setting to make Jason and Lucia walk faster",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-movement-speed-setting-walk-faster/",
-   "age_h": 13.6,
-   "id": "n:try-this-gta-6-movement-speed-setting-to-make-jason-and-luci",
-   "sites": [
-    "PC Gamer",
-    "Kotaku"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "GTA 6 Includes Compelling Evidence That It’s Set In The Same Universe As Red Dead Redemption",
-   "page": "https://kotaku.com/gta-6-includes-compelling-evidence-that-its-set-in-the-same-universe-as-red-dead-redemption-2000758912",
-   "age_h": 14.9,
-   "id": "n:gta-6-includes-compelling-evidence-that-it-s-set-in-the-same",
-   "sites": [
-    "Kotaku",
-    "RockstarINTEL"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "GameSpot",
-   "title": "GTA 6 Doesn’t Have Any Doja Cat Music, And She Didn’t Censor Her Message To Rockstar",
-   "page": "https://www.gamespot.com/articles/gta-6-doesnt-have-any-doja-cat-music-and-she-didnt-censor-her-message-to-rockstar/",
-   "age_h": 18.8,
-   "id": "n:gta-6-doesn-t-have-any-doja-cat-music-and-she-didn-t-censor-",
-   "sites": [
-    "GameSpot",
-    "Eurogamer"
    ],
    "new": false
   }
