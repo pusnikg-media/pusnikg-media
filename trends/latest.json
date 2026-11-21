@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T16:26:49+00:00",
+ "at": "2026-11-21T20:23:50+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
   "reddit r/GTA6: HTTP 429",
@@ -11,10 +11,10 @@
    "area": "irl",
    "channel": "xqc",
    "title": "ddsgsrgesrdfsrg",
-   "views": 13348,
-   "per_h": 604,
+   "views": 14294,
+   "per_h": 548,
    "dur": 180,
-   "age_h": 22.1,
+   "age_h": 26.1,
    "category": "Just Chatting",
    "page": "https://kick.com/xqc/clips/clip_01M7X2WVSJ7HB2PFGHBCACCKS3",
    "video": "https://clips.kick.com/clips/98/clip_01M7X2WVSJ7HB2PFGHBCACCKS3/playlist.m3u8",
@@ -27,10 +27,10 @@
    "area": "irl",
    "channel": "chillingcrew",
    "title": "GTA V X @1WIN EXCLUSIV @KICKSTREAMING produ @1win",
-   "views": 10355,
-   "per_h": 374,
+   "views": 10424,
+   "per_h": 329,
    "dur": 180,
-   "age_h": 27.7,
+   "age_h": 31.7,
    "category": "Special Events",
    "page": "https://kick.com/chillingcrew/clips/clip_01M7WFMTVZFGRYMJTS0ZG58CC5",
    "video": "https://clips.kick.com/clips/0e/clip_01M7WFMTVZFGRYMJTS0ZG58CC5/playlist.m3u8",
@@ -43,10 +43,10 @@
    "area": "irl",
    "channel": "gustavocsgo",
    "title": "lucia retrasadita",
-   "views": 9397,
-   "per_h": 405,
+   "views": 9776,
+   "per_h": 359,
    "dur": 18,
-   "age_h": 23.2,
+   "age_h": 27.2,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/gustavocsgo/clips/clip_01M7WZ18VJJHYGG9M9ZES4XG4H",
    "video": "https://clips.kick.com/clips/11/clip_01M7WZ18VJJHYGG9M9ZES4XG4H/playlist.m3u8",
@@ -57,12 +57,28 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "asmongold",
+   "title": "sdrgsragwergaraAsdfaS",
+   "views": 8477,
+   "per_h": 317,
+   "dur": 63,
+   "age_h": 26.7,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/asmongold/clips/clip_01M7X0MWQ306FPKYJVF9C1KTZD",
+   "video": "https://clips.kick.com/clips/f0/clip_01M7X0MWQ306FPKYJVF9C1KTZD/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7X0MWQ306FPKYJVF9C1KTZD",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "paulinholokobr",
    "title": "base militar",
-   "views": 8104,
-   "per_h": 348,
+   "views": 8258,
+   "per_h": 304,
    "dur": 30,
-   "age_h": 23.3,
+   "age_h": 27.2,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/paulinholokobr/clips/clip_01M7WYYTNRS4Z48JXTFXT6STA7",
    "video": "https://clips.kick.com/clips/ee/clip_01M7WYYTNRS4Z48JXTFXT6STA7/playlist.m3u8",
@@ -75,10 +91,10 @@
    "area": "irl",
    "channel": "maacir",
    "title": "3 yıldızzz",
-   "views": 7718,
-   "per_h": 331,
+   "views": 7770,
+   "per_h": 285,
    "dur": 30,
-   "age_h": 23.3,
+   "age_h": 27.3,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/maacir/clips/clip_01M7WYV1MX5XH878THXAZKPDTX",
    "video": "https://clips.kick.com/clips/45/clip_01M7WYV1MX5XH878THXAZKPDTX/playlist.m3u8",
@@ -89,28 +105,12 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "paymoneywubby",
-   "title": "om",
-   "views": 7649,
-   "per_h": 222,
-   "dur": 30,
-   "age_h": 34.4,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/paymoneywubby/clips/clip_01M7VRW5RA71X4HP9C6P4KQ7KT",
-   "video": "https://clips.kick.com/clips/7b/clip_01M7VRW5RA71X4HP9C6P4KQ7KT/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7VRW5RA71X4HP9C6P4KQ7KT",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "chillingcrew",
    "title": "Lanzamiento GTA VII @1WIN CHILLING CREW 420",
-   "views": 7417,
-   "per_h": 259,
+   "views": 7422,
+   "per_h": 228,
    "dur": 180,
-   "age_h": 28.6,
+   "age_h": 32.5,
    "category": "Special Events",
    "page": "https://kick.com/chillingcrew/clips/clip_01M7WCRHFFTVZB26SFJJM6N2GN",
    "video": "https://clips.kick.com/clips/47/clip_01M7WCRHFFTVZB26SFJJM6N2GN/playlist.m3u8",
@@ -121,26 +121,26 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "asmongold",
-   "title": "sdrgsragwergaraAsdfaS",
-   "views": 7142,
-   "per_h": 313,
-   "dur": 63,
-   "age_h": 22.8,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/asmongold/clips/clip_01M7X0MWQ306FPKYJVF9C1KTZD",
-   "video": "https://clips.kick.com/clips/f0/clip_01M7X0MWQ306FPKYJVF9C1KTZD/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7X0MWQ306FPKYJVF9C1KTZD",
+   "channel": "buddha",
+   "title": "lang shot",
+   "views": 7088,
+   "per_h": 385,
+   "dur": 46,
+   "age_h": 18.4,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/buddha/clips/clip_01M7XX4WHC7BEK2T765QASYK70",
+   "video": "https://clips.kick.com/clips/67/clip_01M7XX4WHC7BEK2T765QASYK70/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7XX4WHC7BEK2T765QASYK70",
    "new": true
   },
   {
    "src": "youtube",
    "area": "gaming",
    "channel": "Rockstar Games",
-   "views": 6677535,
-   "per_h": 132491,
-   "age_h": 50.4,
+   "views": 7354557,
+   "per_h": 135194,
+   "age_h": 54.4,
    "title": "Grand Theft Auto VI Now Available",
    "page": "https://www.youtube.com/shorts/T95WGWkx7P0",
    "id": "y:T95WGWkx7P0",
@@ -152,7 +152,7 @@
    "site": "Eurogamer",
    "title": "GTA 6 is officially the biggest entertainment launch of all time, selling 32.5 million pre-sale copies and a bonkers $3.79 billion in its first day",
    "page": "https://www.eurogamer.net/gta-6-biggest-entertainment-launch",
-   "age_h": 20.4,
+   "age_h": 24.4,
    "id": "n:gta-6-is-officially-the-biggest-entertainment-launch-of-all-",
    "sites": [
     "Eurogamer",
@@ -166,15 +166,15 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Polygon",
-   "title": "Where to find the bowling alley safe code in GTA 6",
-   "page": "https://www.polygon.com/gta-6-kingpin-bowling-alley-safe-code-location-grand-theft-auto/",
-   "age_h": 0.3,
-   "id": "n:where-to-find-the-bowling-alley-safe-code-in-gta-6",
+   "site": "VGC",
+   "title": "GTA 6 Kingpin Bowling Alley safe code and location: How to find and open the safe",
+   "page": "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/",
+   "age_h": 3.4,
+   "id": "n:gta-6-kingpin-bowling-alley-safe-code-and-location-how-to-fi",
    "sites": [
-    "Polygon",
     "VGC",
-    "PC Gamer"
+    "PC Gamer",
+    "Polygon"
    ],
    "new": true
   },
@@ -182,14 +182,27 @@
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "How to Make Lucia Nude in GTA 6",
-   "page": "https://insider-gaming.com/lucia-naked-gta-6/",
-   "age_h": 1.1,
-   "id": "n:how-to-make-lucia-nude-in-gta-6",
+   "title": "Where to Find The Pegassi Toros in GTA 6—Randy’s Wishlist Car Locations",
+   "page": "https://insider-gaming.com/where-to-find-the-pegassi-toros-in-gta-6/",
+   "age_h": 1.2,
+   "id": "n:where-to-find-the-pegassi-toros-in-gta-6-randy-s-wishlist-ca",
    "sites": [
     "Insider Gaming",
-    "PC Gamer",
-    "Kotaku"
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 Brooks Boatworks safe code and location: How to find and open the safe",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe/",
+   "age_h": 3.8,
+   "id": "n:gta-6-brooks-boatworks-safe-code-and-location-how-to-find-an",
+   "sites": [
+    "VGC",
+    "PC Gamer"
    ],
    "new": true
   },
@@ -199,27 +212,27 @@
    "site": "Polygon",
    "title": "GTA 6's Impact on Steam and Roblox After Record-Breaking Launch Revealed",
    "page": "https://www.polygon.com/gta-6-impact-on-steam-roblox/",
-   "age_h": 0.4,
+   "age_h": 4.3,
    "id": "n:gta-6-s-impact-on-steam-and-roblox-after-record-breaking-lau",
    "sites": [
     "Polygon",
     "PC Gamer"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "Where to Find The Grotti Itali RSX Supercar in GTA 6—Randy’s Wishlist Car Locations",
-   "page": "https://insider-gaming.com/where-to-find-the-grotti-iitali-rsx-in-gta-6/",
-   "age_h": 0.6,
-   "id": "n:where-to-find-the-grotti-itali-rsx-supercar-in-gta-6-randy-s",
+   "title": "How to Make Lucia Nude in GTA 6",
+   "page": "https://insider-gaming.com/lucia-naked-gta-6/",
+   "age_h": 5.1,
+   "id": "n:how-to-make-lucia-nude-in-gta-6",
    "sites": [
     "Insider Gaming",
     "PC Gamer"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -227,11 +240,25 @@
    "site": "Eurogamer",
    "title": "GTA 6 is crashing on some PS5s with error CE-108255-1 - here's what you can try",
    "page": "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix",
-   "age_h": 1.4,
+   "age_h": 5.3,
    "id": "n:gta-6-is-crashing-on-some-ps5s-with-error-ce-108255-1-here-s",
    "sites": [
     "Eurogamer",
     "GameSpot"
+   ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 La Cascara Motel safe code: How to find and open the safe",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-la-cascara-motel-safe-code-how-to-find-and-open-the-safe/",
+   "age_h": 5.4,
+   "id": "n:gta-6-la-cascara-motel-safe-code-how-to-find-and-open-the-sa",
+   "sites": [
+    "VGC",
+    "PC Gamer"
    ],
    "new": true
   },
@@ -241,7 +268,7 @@
    "site": "Kotaku",
    "title": "So Is The $100 GTA 6 Ultimate Edition Actually Worth It?",
    "page": "https://kotaku.com/so-is-the-100-gta-6-ultimate-edition-actually-worth-it-2000758998",
-   "age_h": 16.4,
+   "age_h": 20.4,
    "id": "n:so-is-the-100-gta-6-ultimate-edition-actually-worth-it-",
    "sites": [
     "Kotaku",
@@ -252,44 +279,15 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "IGN",
-   "title": "Actor Who Plays Mandy in GTA 6 Excitedly Speaks Out After Character Goes Viral",
-   "page": "https://www.ign.com/articles/actor-who-plays-mandy-in-gta-6-excitedly-speaks-out-after-character-goes-viral",
-   "age_h": 16.9,
-   "id": "n:actor-who-plays-mandy-in-gta-6-excitedly-speaks-out-after-ch",
+   "site": "VGC",
+   "title": "GTA 6 Dealer’s Choice walkthrough: Should you choose Cut or Pure?",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-dealers-choice-walkthrough-should-you-choose-cut-or-pure/",
+   "age_h": 0.2,
+   "id": "n:gta-6-dealer-s-choice-walkthrough-should-you-choose-cut-or-p",
    "sites": [
-    "IGN",
-    "PC Gamer"
+    "VGC"
    ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "How To Solve All Main Puzzles In GTA 6′s Tenebrae Lux",
-   "page": "https://kotaku.com/how-to-solve-all-main-puzzles-in-gta-6s-tenebrae-lux-2000758940",
-   "age_h": 16.9,
-   "id": "n:how-to-solve-all-main-puzzles-in-gta-6-s-tenebrae-lux",
-   "sites": [
-    "Kotaku",
-    "Eurogamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Florida Joker gets his wish: He's a 'special voice actor' in Grand Theft Auto 6",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/florida-joker-gets-his-wish-hes-a-special-voice-actor-in-grand-theft-auto-6/",
-   "age_h": 18.4,
-   "id": "n:florida-joker-gets-his-wish-he-s-a-special-voice-actor-in-gr",
-   "sites": [
-    "PC Gamer",
-    "RockstarINTEL"
-   ],
-   "new": false
+   "new": true
   }
  ]
 }
