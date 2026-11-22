@@ -1,31 +1,31 @@
-# Zahlen – Stand 22.11.2026 07:13 (Europe/Berlin)
+# Zahlen – Stand 22.11.2026 12:58 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 43.432 · Zuwachs 24 h: 3.112
+Posts gezählt: 80 · Views gesamt: 43.453 · Zuwachs 24 h: 2.302
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
-| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 216 | – | – | 5 |  |
+| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 217 | – | – | 5 |  |
 | 2026-11-21 | youtube | GTA 6 Characters: Jason or Lucia? #shorts | 492 | – | – | 12 |  |
-| 2026-11-20 | tiktok | GTA 6 story tip: don't rush it, explore Leonida  | 245 | 21 | 243 | 8 |  |
-| 2026-11-20 | youtube | Don't Rush GTA 6. Here's Why #shorts | 362 | 6 | 356 | 3 |  |
-| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.492 | 163 | 3.329 | 30 | Kai Cenat GTA 6 |
+| 2026-11-20 | tiktok | GTA 6 story tip: don't rush it, explore Leonida  | 245 | 14 | 243 | 8 |  |
+| 2026-11-20 | youtube | Don't Rush GTA 6. Here's Why #shorts | 362 | 5 | 356 | 3 |  |
+| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.492 | 78 | 3.329 | 30 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat finds out this GTA 6 car's tracker pin | 254 | 0 | 254 | 8 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat keeps saying this is a whole new game  | 250 | 0 | 250 | 15 | Kai Cenat GTA 6 |
-| 2026-11-19 | youtube | GTA 6 Is Finally Out #shorts | 55 | 10 | 37 | 0 |  |
+| 2026-11-19 | youtube | GTA 6 Is Finally Out #shorts | 55 | 9 | 37 | 0 |  |
 | 2026-11-19 | tiktok | GTA 6 release day is finally here after 13 years | 213 | 0 | 213 | 0 |  |
-| 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.540 | 2.864 | 2.963 | 46 | Kai Cenat GTA 6 |
+| 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.552 | 2.150 | 2.963 | 46 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat fights an alligator in GTA 6 and Flori | 242 | 1 | 241 | 2 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 366 | 41 | 305 | 18 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 374 | 41 | 305 | 18 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 219 | 1 | 211 | 16 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat spots the first baby he's ever seen in | 300 | 0 | 292 | 3 | Kai Cenat GTA 6 |
 | 2026-11-18 | tiktok | Warzone stays free-to-play, and Season 1 brings  | 246 | 0 | 244 | 1 | Warzone S1 |
 | 2026-11-18 | youtube | Who's Calling in Sick for GTA 6? #shorts | 50 | -1 | 4 | 0 |  |
 | 2026-11-18 | tiktok | GTA 6 release date is tomorrow, November 19. Are | 250 | 0 | 249 | 2 |  |
 | 2026-11-18 | tiktok | GTA 6 reviews are in: a 99 on Metacritic and not | 248 | 0 | 248 | 1 |  |
-| 2026-11-18 | youtube | GTA 6 Reviews Are In: 99 on Metacritic #shorts | 19 | 1 | 5 | 1 |  |
+| 2026-11-18 | youtube | GTA 6 Reviews Are In: 99 on Metacritic #shorts | 19 | 0 | 5 | 1 |  |
 | 2026-11-17 | tiktok | Hajin is one of two new Warzone maps this season | 243 | 0 | 242 | 3 | Warzone S1 |
 | 2026-11-17 | youtube | When Can You Play GTA 6? Unlock Time #shorts | 1 | 0 | 3 | 0 |  |
 | 2026-11-17 | tiktok | GTA 6 release time: Rockstar hasn't confirmed it | 300 | 0 | 298 | 2 |  |
@@ -33,7 +33,7 @@ Posts gezählt: 80 · Views gesamt: 43.432 · Zuwachs 24 h: 3.112
 | 2026-11-16 | tiktok | Close quarters in the Warzone Season 1 trailer.  | 252 | 0 | 251 | 3 | Warzone S1 |
 
 ## Pusnik IRL
-Posts gezählt: 20 · Views gesamt: 5.820 · Zuwachs 24 h: 1
+Posts gezählt: 20 · Views gesamt: 5.820 · Zuwachs 24 h: 0
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
@@ -54,14 +54,14 @@ Posts gezählt: 20 · Views gesamt: 5.820 · Zuwachs 24 h: 1
 | 2026-11-16 | youtube | TJR Swaps His Life For A Broke Car #shorts | 0 | 0 | 0 | 0 | TJR |
 | 2026-11-16 | tiktok | TJR swaps his life for a day and gets handed the | 252 | 0 | 252 | 4 | TJR |
 | 2026-11-15 | youtube | TJR Gifts His Brother A Car 😳 #TJR #shorts | 1 | 0 | 1 | 0 | TJR |
-| 2026-11-15 | tiktok | TJR surprised his brother with a brand new car a | 240 | 1 | 236 | 9 | TJR |
+| 2026-11-15 | tiktok | TJR surprised his brother with a brand new car a | 240 | 0 | 236 | 9 | TJR |
 | 2026-11-14 | youtube | Lacy breaks his expensive watch 😭 #JasonTheWeen  | 2 | 0 | 2 | 0 | JasonTheWeen |
 | 2026-11-14 | tiktok | Lacy breaks his expensive watch on JasonTheWeen' | 849 | 0 | 849 | 5 | JasonTheWeen |
 
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Kai Cenat GTA 6 | 8 | 11.663 | 6.540 | – |
+| Kai Cenat GTA 6 | 8 | 11.683 | 6.552 | – |
 | TJR | 18 | 4.969 | 748 | 0 von 18 |
 | Warzone S1 | 6 | 1.473 | 252 | – |
 | MW4 DMZ | 3 | 779 | 277 | – |
