@@ -1,8 +1,8 @@
 {
- "at": "2026-11-22T05:35:50+00:00",
+ "at": "2026-11-22T11:27:17+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 404",
-  "reddit r/GTA6: HTTP 429",
+  "reddit r/LivestreamFail: HTTP 429",
+  "reddit r/GTA6: HTTP 404",
   "reddit r/GTA: HTTP 429"
  ],
  "items": [
@@ -11,26 +11,26 @@
    "area": "irl",
    "channel": "chillingcrew",
    "title": "LANZAMIENTO GTA VI @1WIN",
-   "views": 8720,
-   "per_h": 3791,
+   "views": 8876,
+   "per_h": 1082,
    "dur": 176,
-   "age_h": 2.3,
+   "age_h": 8.2,
    "category": "Special Events",
    "page": "https://kick.com/chillingcrew/clips/clip_01M80M18WT5BFB4F9QFG05V0A0",
    "video": "https://clips.kick.com/clips/2a/clip_01M80M18WT5BFB4F9QFG05V0A0/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M80M18WT5BFB4F9QFG05V0A0",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "buddha",
    "title": "lang shot",
-   "views": 8305,
-   "per_h": 301,
+   "views": 8700,
+   "per_h": 260,
    "dur": 46,
-   "age_h": 27.6,
+   "age_h": 33.4,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/buddha/clips/clip_01M7XX4WHC7BEK2T765QASYK70",
    "video": "https://clips.kick.com/clips/67/clip_01M7XX4WHC7BEK2T765QASYK70/playlist.m3u8",
@@ -43,104 +43,104 @@
    "area": "irl",
    "channel": "harry",
    "title": "Police brutality MF",
-   "views": 5777,
-   "per_h": 220,
+   "views": 6108,
+   "per_h": 190,
    "dur": 42,
-   "age_h": 26.3,
+   "age_h": 32.2,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/harry/clips/clip_01M7Y1J7WDYY67TW8S7WN3GDXH",
    "video": "https://clips.kick.com/clips/50/clip_01M7Y1J7WDYY67TW8S7WN3GDXH/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7Y1J7WDYY67TW8S7WN3GDXH",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "sian-phan-mhanslot",
-   "title": "PGSLOT FUN88 : สาวคอกเทลแตกเป็นแสนเหลือจะเชื่อ",
-   "views": 4052,
-   "per_h": 167,
-   "dur": 180,
-   "age_h": 24.3,
-   "category": "Slots & Casino",
-   "page": "https://kick.com/sian-phan-mhanslot/clips/clip_01M7Y8GPNSH61KGW2YY7V5WWFN",
-   "video": "https://clips.kick.com/clips/a9/clip_01M7Y8GPNSH61KGW2YY7V5WWFN/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7Y8GPNSH61KGW2YY7V5WWFN",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "viruslivehai",
    "title": "GTA 6 CAR Jump #gta6",
-   "views": 3794,
-   "per_h": 212,
+   "views": 3998,
+   "per_h": 168,
    "dur": 30,
-   "age_h": 17.9,
+   "age_h": 23.8,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/viruslivehai/clips/clip_01M7YYEE0WX1G8CCFBMAV1C796",
    "video": "https://clips.kick.com/clips/a3/clip_01M7YYEE0WX1G8CCFBMAV1C796/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7YYEE0WX1G8CCFBMAV1C796",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "tjnv",
-   "title": "Premium Cut",
-   "views": 3172,
-   "per_h": 108,
-   "dur": 18,
-   "age_h": 29.5,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/tjnv/clips/clip_01M7XPVVFQVQ8THMBA7C30PS4G",
-   "video": "https://clips.kick.com/clips/6f/clip_01M7XPVVFQVQ8THMBA7C30PS4G/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7XPVVFQVQ8THMBA7C30PS4G",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "un-nefer",
-   "title": "разговор с девушкой демогогом или софистом",
-   "views": 3057,
-   "per_h": 241,
-   "dur": 180,
-   "age_h": 12.7,
-   "category": "IRL",
-   "page": "https://kick.com/un-nefer/clips/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q",
-   "video": "https://clips.kick.com/clips/6e/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "sergioeleven",
    "title": "LA SOMETE EN VIVO",
-   "views": 2968,
-   "per_h": 102,
+   "views": 3684,
+   "per_h": 106,
    "dur": 62,
-   "age_h": 29.1,
+   "age_h": 34.9,
    "category": "Just Chatting",
    "page": "https://kick.com/sergioeleven/clips/clip_01M7XR5RJHQE1EESVA7N7ETHRA",
    "video": "https://clips.kick.com/clips/32/clip_01M7XR5RJHQE1EESVA7N7ETHRA/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7XR5RJHQE1EESVA7N7ETHRA",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "tjnv",
+   "title": "Premium Cut",
+   "views": 3268,
+   "per_h": 93,
+   "dur": 18,
+   "age_h": 35.3,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/tjnv/clips/clip_01M7XPVVFQVQ8THMBA7C30PS4G",
+   "video": "https://clips.kick.com/clips/6f/clip_01M7XPVVFQVQ8THMBA7C30PS4G/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7XPVVFQVQ8THMBA7C30PS4G",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "un-nefer",
+   "title": "разговор с девушкой демогогом или софистом",
+   "views": 3091,
+   "per_h": 167,
+   "dur": 180,
+   "age_h": 18.5,
+   "category": "IRL",
+   "page": "https://kick.com/un-nefer/clips/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q",
+   "video": "https://clips.kick.com/clips/6e/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "rraenee",
+   "title": "Among us sessizliği",
+   "views": 2600,
+   "per_h": 74,
+   "dur": 30,
+   "age_h": 35.1,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/rraenee/clips/clip_01M7XQRMCVG2CDH9ZSD3RY687A",
+   "video": "https://clips.kick.com/clips/7b/clip_01M7XQRMCVG2CDH9ZSD3RY687A/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7XQRMCVG2CDH9ZSD3RY687A",
    "new": true
   },
   {
    "src": "youtube",
    "area": "gaming",
    "channel": "Rockstar Games",
-   "views": 8312051,
-   "per_h": 130693,
-   "age_h": 63.6,
+   "views": 8899283,
+   "per_h": 128047,
+   "age_h": 69.5,
    "title": "Grand Theft Auto VI Now Available",
    "page": "https://www.youtube.com/shorts/T95WGWkx7P0",
    "id": "y:T95WGWkx7P0",
@@ -149,43 +149,28 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Polygon",
-   "title": "Where to find the giant crab safe code and Crabshack VF5 SMG in GTA 6",
-   "page": "https://www.polygon.com/gta-6-giant-crab-safe-code-crabshack-vf5-smg-how-to-get-pelican-valley-outpost/",
-   "age_h": 7.8,
-   "id": "n:where-to-find-the-giant-crab-safe-code-and-crabshack-vf5-smg",
-   "sites": [
-    "Polygon",
-    "VGC",
-    "PC Gamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
    "site": "Insider Gaming",
    "title": "Where to Find The Buckingham Jubilee in GTA 6—Randy’s Wishlist Car Locations",
    "page": "https://insider-gaming.com/where-to-find-the-buckingham-jubilee-in-gta-6/",
-   "age_h": 7.1,
+   "age_h": 12.9,
    "id": "n:where-to-find-the-buckingham-jubilee-in-gta-6-randy-s-wishli",
    "sites": [
     "Insider Gaming",
     "PC Gamer"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Polygon",
-   "title": "GTA 6 Players Are Obsessed With Finding IRL Florida in Vice City",
-   "page": "https://www.polygon.com/gta-6-players-irl-vice-city-locations/",
-   "age_h": 7.6,
-   "id": "n:gta-6-players-are-obsessed-with-finding-irl-florida-in-vice-",
+   "site": "VGC",
+   "title": "GTA 6 Avery Pawn Shop Safe Code: How to Find and Open the Safe",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe/",
+   "age_h": 14.8,
+   "id": "n:gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-saf",
    "sites": [
-    "Polygon",
-    "VGC"
+    "VGC",
+    "PC Gamer"
    ],
    "new": true
   },
@@ -195,7 +180,7 @@
    "site": "VGC",
    "title": "GTA 6 Kingpin Bowling Alley safe code and location: How to find and open the safe",
    "page": "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/",
-   "age_h": 12.6,
+   "age_h": 18.4,
    "id": "n:gta-6-kingpin-bowling-alley-safe-code-and-location-how-to-fi",
    "sites": [
     "VGC",
@@ -209,7 +194,7 @@
    "site": "VGC",
    "title": "GTA 6 Brooks Boatworks safe code and location: How to find and open the safe",
    "page": "https://www.videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe/",
-   "age_h": 13.0,
+   "age_h": 18.9,
    "id": "n:gta-6-brooks-boatworks-safe-code-and-location-how-to-find-an",
    "sites": [
     "VGC",
@@ -220,15 +205,67 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "Eurogamer",
+   "title": "GTA 6 player gets 30-day PSN ban for sharing in-game nudist photo with a friend",
+   "page": "https://www.eurogamer.net/gta-6-psn-ban-nude-photos-nudist-resort",
+   "age_h": 0.1,
+   "id": "n:gta-6-player-gets-30-day-psn-ban-for-sharing-in-game-nudist-",
+   "sites": [
+    "Eurogamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "Jason's stoic character in Grand Theft Auto 6 was inspired by Steve McQueen and research into Army veterans: 'These guys typically aren't running their mouths'",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/jasons-stoic-character-in-grand-theft-auto-6-was-inspired-by-steve-mcqueen-and-research-into-army-veterans-these-guys-typically-arent-running-their-mouths/",
+   "age_h": 0.6,
+   "id": "n:jason-s-stoic-character-in-grand-theft-auto-6-was-inspired-b",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "GTA VI’s Jet Ski Dog: EXCLUSIVE Interview With Real-Life Inspiration Owner",
+   "page": "https://rockstarintel.com/gta-vis-jet-ski-dog-exclusive-interview-with-real-life-inspiration-owner/",
+   "age_h": 1.0,
+   "id": "n:gta-vi-s-jet-ski-dog-exclusive-interview-with-real-life-insp",
+   "sites": [
+    "RockstarINTEL"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Eurogamer",
+   "title": "\"It stayed alive for so long\" - Behind the wheel with the Last Riders saying goodbye to GTA Online, amidst GTA 6's world-changing launch",
+   "page": "https://www.eurogamer.net/gta-6-grand-theft-auto-online-last-ride",
+   "age_h": 1.5,
+   "id": "n:-it-stayed-alive-for-so-long-behind-the-wheel-with-the-last-",
+   "sites": [
+    "Eurogamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "Kotaku",
    "title": "Binding Of Isaac Update Review-Bombed Over AI-Generated Music In GTA 6 Mode: ‘Woke Up To A Sh*t Show, Obviously I Had No Idea’",
    "page": "https://kotaku.com/binding-of-isaac-update-review-bombed-over-ai-generated-music-in-gta-6-mode-woke-up-to-a-sht-show-obviously-i-had-no-idea-2000759213",
-   "age_h": 5.3,
+   "age_h": 11.2,
    "id": "n:binding-of-isaac-update-review-bombed-over-ai-generated-musi",
    "sites": [
     "Kotaku"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -236,51 +273,12 @@
    "site": "VGC",
    "title": "GTA 6 Meet the Heders walkthrough: Find and open the SCOOP container",
    "page": "https://www.videogameschronicle.com/guide/gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-container/",
-   "age_h": 6.7,
+   "age_h": 12.5,
    "id": "n:gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-co",
    "sites": [
     "VGC"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Where to Find All of Randy’s Wishlist Supercars in GTA 6—Car Locations & Tips",
-   "page": "https://insider-gaming.com/where-to-find-all-of-randys-wishlist-supercars-in-gta-6-car-locations-tips/",
-   "age_h": 7.2,
-   "id": "n:where-to-find-all-of-randy-s-wishlist-supercars-in-gta-6-car",
-   "sites": [
-    "Insider Gaming"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 radio DJs and podcast hosts: Every famous voice on GTA 6’s radio",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-6s-radio/",
-   "age_h": 7.3,
-   "id": "n:gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-",
-   "sites": [
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Where to Find The Pfister Growler in GTA 6—Randy’s Wishlist Car Locations",
-   "page": "https://insider-gaming.com/where-to-find-the-pfister-growler-in-gta-6/",
-   "age_h": 7.4,
-   "id": "n:where-to-find-the-pfister-growler-in-gta-6-randy-s-wishlist-",
-   "sites": [
-    "Insider Gaming"
-   ],
-   "new": true
+   "new": false
   }
  ]
 }
