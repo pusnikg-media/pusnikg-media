@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T20:23:50+00:00",
+ "at": "2026-11-22T05:35:50+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
   "reddit r/GTA6: HTTP 429",
@@ -9,138 +9,138 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "xqc",
-   "title": "ddsgsrgesrdfsrg",
-   "views": 14294,
-   "per_h": 548,
-   "dur": 180,
-   "age_h": 26.1,
-   "category": "Just Chatting",
-   "page": "https://kick.com/xqc/clips/clip_01M7X2WVSJ7HB2PFGHBCACCKS3",
-   "video": "https://clips.kick.com/clips/98/clip_01M7X2WVSJ7HB2PFGHBCACCKS3/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7X2WVSJ7HB2PFGHBCACCKS3",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "chillingcrew",
-   "title": "GTA V X @1WIN EXCLUSIV @KICKSTREAMING produ @1win",
-   "views": 10424,
-   "per_h": 329,
-   "dur": 180,
-   "age_h": 31.7,
+   "title": "LANZAMIENTO GTA VI @1WIN",
+   "views": 8720,
+   "per_h": 3791,
+   "dur": 176,
+   "age_h": 2.3,
    "category": "Special Events",
-   "page": "https://kick.com/chillingcrew/clips/clip_01M7WFMTVZFGRYMJTS0ZG58CC5",
-   "video": "https://clips.kick.com/clips/0e/clip_01M7WFMTVZFGRYMJTS0ZG58CC5/playlist.m3u8",
+   "page": "https://kick.com/chillingcrew/clips/clip_01M80M18WT5BFB4F9QFG05V0A0",
+   "video": "https://clips.kick.com/clips/2a/clip_01M80M18WT5BFB4F9QFG05V0A0/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M7WFMTVZFGRYMJTS0ZG58CC5",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "gustavocsgo",
-   "title": "lucia retrasadita",
-   "views": 9776,
-   "per_h": 359,
-   "dur": 18,
-   "age_h": 27.2,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/gustavocsgo/clips/clip_01M7WZ18VJJHYGG9M9ZES4XG4H",
-   "video": "https://clips.kick.com/clips/11/clip_01M7WZ18VJJHYGG9M9ZES4XG4H/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7WZ18VJJHYGG9M9ZES4XG4H",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "asmongold",
-   "title": "sdrgsragwergaraAsdfaS",
-   "views": 8477,
-   "per_h": 317,
-   "dur": 63,
-   "age_h": 26.7,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/asmongold/clips/clip_01M7X0MWQ306FPKYJVF9C1KTZD",
-   "video": "https://clips.kick.com/clips/f0/clip_01M7X0MWQ306FPKYJVF9C1KTZD/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7X0MWQ306FPKYJVF9C1KTZD",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "paulinholokobr",
-   "title": "base militar",
-   "views": 8258,
-   "per_h": 304,
-   "dur": 30,
-   "age_h": 27.2,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/paulinholokobr/clips/clip_01M7WYYTNRS4Z48JXTFXT6STA7",
-   "video": "https://clips.kick.com/clips/ee/clip_01M7WYYTNRS4Z48JXTFXT6STA7/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7WYYTNRS4Z48JXTFXT6STA7",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "maacir",
-   "title": "3 yıldızzz",
-   "views": 7770,
-   "per_h": 285,
-   "dur": 30,
-   "age_h": 27.3,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/maacir/clips/clip_01M7WYV1MX5XH878THXAZKPDTX",
-   "video": "https://clips.kick.com/clips/45/clip_01M7WYV1MX5XH878THXAZKPDTX/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7WYV1MX5XH878THXAZKPDTX",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "chillingcrew",
-   "title": "Lanzamiento GTA VII @1WIN CHILLING CREW 420",
-   "views": 7422,
-   "per_h": 228,
-   "dur": 180,
-   "age_h": 32.5,
-   "category": "Special Events",
-   "page": "https://kick.com/chillingcrew/clips/clip_01M7WCRHFFTVZB26SFJJM6N2GN",
-   "video": "https://clips.kick.com/clips/47/clip_01M7WCRHFFTVZB26SFJJM6N2GN/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7WCRHFFTVZB26SFJJM6N2GN",
-   "new": false
+   "id": "k:clip_01M80M18WT5BFB4F9QFG05V0A0",
+   "new": true
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "buddha",
    "title": "lang shot",
-   "views": 7088,
-   "per_h": 385,
+   "views": 8305,
+   "per_h": 301,
    "dur": 46,
-   "age_h": 18.4,
+   "age_h": 27.6,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/buddha/clips/clip_01M7XX4WHC7BEK2T765QASYK70",
    "video": "https://clips.kick.com/clips/67/clip_01M7XX4WHC7BEK2T765QASYK70/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M7XX4WHC7BEK2T765QASYK70",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "harry",
+   "title": "Police brutality MF",
+   "views": 5777,
+   "per_h": 220,
+   "dur": 42,
+   "age_h": 26.3,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/harry/clips/clip_01M7Y1J7WDYY67TW8S7WN3GDXH",
+   "video": "https://clips.kick.com/clips/50/clip_01M7Y1J7WDYY67TW8S7WN3GDXH/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7Y1J7WDYY67TW8S7WN3GDXH",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "sian-phan-mhanslot",
+   "title": "PGSLOT FUN88 : สาวคอกเทลแตกเป็นแสนเหลือจะเชื่อ",
+   "views": 4052,
+   "per_h": 167,
+   "dur": 180,
+   "age_h": 24.3,
+   "category": "Slots & Casino",
+   "page": "https://kick.com/sian-phan-mhanslot/clips/clip_01M7Y8GPNSH61KGW2YY7V5WWFN",
+   "video": "https://clips.kick.com/clips/a9/clip_01M7Y8GPNSH61KGW2YY7V5WWFN/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7Y8GPNSH61KGW2YY7V5WWFN",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "viruslivehai",
+   "title": "GTA 6 CAR Jump #gta6",
+   "views": 3794,
+   "per_h": 212,
+   "dur": 30,
+   "age_h": 17.9,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/viruslivehai/clips/clip_01M7YYEE0WX1G8CCFBMAV1C796",
+   "video": "https://clips.kick.com/clips/a3/clip_01M7YYEE0WX1G8CCFBMAV1C796/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7YYEE0WX1G8CCFBMAV1C796",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "tjnv",
+   "title": "Premium Cut",
+   "views": 3172,
+   "per_h": 108,
+   "dur": 18,
+   "age_h": 29.5,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/tjnv/clips/clip_01M7XPVVFQVQ8THMBA7C30PS4G",
+   "video": "https://clips.kick.com/clips/6f/clip_01M7XPVVFQVQ8THMBA7C30PS4G/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7XPVVFQVQ8THMBA7C30PS4G",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "un-nefer",
+   "title": "разговор с девушкой демогогом или софистом",
+   "views": 3057,
+   "per_h": 241,
+   "dur": 180,
+   "age_h": 12.7,
+   "category": "IRL",
+   "page": "https://kick.com/un-nefer/clips/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q",
+   "video": "https://clips.kick.com/clips/6e/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "sergioeleven",
+   "title": "LA SOMETE EN VIVO",
+   "views": 2968,
+   "per_h": 102,
+   "dur": 62,
+   "age_h": 29.1,
+   "category": "Just Chatting",
+   "page": "https://kick.com/sergioeleven/clips/clip_01M7XR5RJHQE1EESVA7N7ETHRA",
+   "video": "https://clips.kick.com/clips/32/clip_01M7XR5RJHQE1EESVA7N7ETHRA/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M7XR5RJHQE1EESVA7N7ETHRA",
    "new": true
   },
   {
    "src": "youtube",
    "area": "gaming",
    "channel": "Rockstar Games",
-   "views": 7354557,
-   "per_h": 135194,
-   "age_h": 54.4,
+   "views": 8312051,
+   "per_h": 130693,
+   "age_h": 63.6,
    "title": "Grand Theft Auto VI Now Available",
    "page": "https://www.youtube.com/shorts/T95WGWkx7P0",
    "id": "y:T95WGWkx7P0",
@@ -149,45 +149,14 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "GTA 6 is officially the biggest entertainment launch of all time, selling 32.5 million pre-sale copies and a bonkers $3.79 billion in its first day",
-   "page": "https://www.eurogamer.net/gta-6-biggest-entertainment-launch",
-   "age_h": 24.4,
-   "id": "n:gta-6-is-officially-the-biggest-entertainment-launch-of-all-",
+   "site": "Polygon",
+   "title": "Where to find the giant crab safe code and Crabshack VF5 SMG in GTA 6",
+   "page": "https://www.polygon.com/gta-6-giant-crab-safe-code-crabshack-vf5-smg-how-to-get-pelican-valley-outpost/",
+   "age_h": 7.8,
+   "id": "n:where-to-find-the-giant-crab-safe-code-and-crabshack-vf5-smg",
    "sites": [
-    "Eurogamer",
-    "PC Gamer",
-    "RockstarINTEL",
-    "GameSpot",
-    "Kotaku"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Kingpin Bowling Alley safe code and location: How to find and open the safe",
-   "page": "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/",
-   "age_h": 3.4,
-   "id": "n:gta-6-kingpin-bowling-alley-safe-code-and-location-how-to-fi",
-   "sites": [
+    "Polygon",
     "VGC",
-    "PC Gamer",
-    "Polygon"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Where to Find The Pegassi Toros in GTA 6—Randy’s Wishlist Car Locations",
-   "page": "https://insider-gaming.com/where-to-find-the-pegassi-toros-in-gta-6/",
-   "age_h": 1.2,
-   "id": "n:where-to-find-the-pegassi-toros-in-gta-6-randy-s-wishlist-ca",
-   "sites": [
-    "Insider Gaming",
     "PC Gamer"
    ],
    "new": true
@@ -195,13 +164,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Brooks Boatworks safe code and location: How to find and open the safe",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe/",
-   "age_h": 3.8,
-   "id": "n:gta-6-brooks-boatworks-safe-code-and-location-how-to-find-an",
+   "site": "Insider Gaming",
+   "title": "Where to Find The Buckingham Jubilee in GTA 6—Randy’s Wishlist Car Locations",
+   "page": "https://insider-gaming.com/where-to-find-the-buckingham-jubilee-in-gta-6/",
+   "age_h": 7.1,
+   "id": "n:where-to-find-the-buckingham-jubilee-in-gta-6-randy-s-wishli",
    "sites": [
-    "VGC",
+    "Insider Gaming",
     "PC Gamer"
    ],
    "new": true
@@ -210,69 +179,27 @@
    "src": "news",
    "area": "gaming",
    "site": "Polygon",
-   "title": "GTA 6's Impact on Steam and Roblox After Record-Breaking Launch Revealed",
-   "page": "https://www.polygon.com/gta-6-impact-on-steam-roblox/",
-   "age_h": 4.3,
-   "id": "n:gta-6-s-impact-on-steam-and-roblox-after-record-breaking-lau",
+   "title": "GTA 6 Players Are Obsessed With Finding IRL Florida in Vice City",
+   "page": "https://www.polygon.com/gta-6-players-irl-vice-city-locations/",
+   "age_h": 7.6,
+   "id": "n:gta-6-players-are-obsessed-with-finding-irl-florida-in-vice-",
    "sites": [
     "Polygon",
-    "PC Gamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "How to Make Lucia Nude in GTA 6",
-   "page": "https://insider-gaming.com/lucia-naked-gta-6/",
-   "age_h": 5.1,
-   "id": "n:how-to-make-lucia-nude-in-gta-6",
-   "sites": [
-    "Insider Gaming",
-    "PC Gamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Eurogamer",
-   "title": "GTA 6 is crashing on some PS5s with error CE-108255-1 - here's what you can try",
-   "page": "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix",
-   "age_h": 5.3,
-   "id": "n:gta-6-is-crashing-on-some-ps5s-with-error-ce-108255-1-here-s",
-   "sites": [
-    "Eurogamer",
-    "GameSpot"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 La Cascara Motel safe code: How to find and open the safe",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-la-cascara-motel-safe-code-how-to-find-and-open-the-safe/",
-   "age_h": 5.4,
-   "id": "n:gta-6-la-cascara-motel-safe-code-how-to-find-and-open-the-sa",
-   "sites": [
-    "VGC",
-    "PC Gamer"
+    "VGC"
    ],
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Kotaku",
-   "title": "So Is The $100 GTA 6 Ultimate Edition Actually Worth It?",
-   "page": "https://kotaku.com/so-is-the-100-gta-6-ultimate-edition-actually-worth-it-2000758998",
-   "age_h": 20.4,
-   "id": "n:so-is-the-100-gta-6-ultimate-edition-actually-worth-it-",
+   "site": "VGC",
+   "title": "GTA 6 Kingpin Bowling Alley safe code and location: How to find and open the safe",
+   "page": "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/",
+   "age_h": 12.6,
+   "id": "n:gta-6-kingpin-bowling-alley-safe-code-and-location-how-to-fi",
    "sites": [
-    "Kotaku",
-    "IGN"
+    "VGC",
+    "PC Gamer"
    ],
    "new": false
   },
@@ -280,12 +207,78 @@
    "src": "news",
    "area": "gaming",
    "site": "VGC",
-   "title": "GTA 6 Dealer’s Choice walkthrough: Should you choose Cut or Pure?",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-dealers-choice-walkthrough-should-you-choose-cut-or-pure/",
-   "age_h": 0.2,
-   "id": "n:gta-6-dealer-s-choice-walkthrough-should-you-choose-cut-or-p",
+   "title": "GTA 6 Brooks Boatworks safe code and location: How to find and open the safe",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe/",
+   "age_h": 13.0,
+   "id": "n:gta-6-brooks-boatworks-safe-code-and-location-how-to-find-an",
+   "sites": [
+    "VGC",
+    "PC Gamer"
+   ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Kotaku",
+   "title": "Binding Of Isaac Update Review-Bombed Over AI-Generated Music In GTA 6 Mode: ‘Woke Up To A Sh*t Show, Obviously I Had No Idea’",
+   "page": "https://kotaku.com/binding-of-isaac-update-review-bombed-over-ai-generated-music-in-gta-6-mode-woke-up-to-a-sht-show-obviously-i-had-no-idea-2000759213",
+   "age_h": 5.3,
+   "id": "n:binding-of-isaac-update-review-bombed-over-ai-generated-musi",
+   "sites": [
+    "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 Meet the Heders walkthrough: Find and open the SCOOP container",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-container/",
+   "age_h": 6.7,
+   "id": "n:gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-co",
    "sites": [
     "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "Where to Find All of Randy’s Wishlist Supercars in GTA 6—Car Locations & Tips",
+   "page": "https://insider-gaming.com/where-to-find-all-of-randys-wishlist-supercars-in-gta-6-car-locations-tips/",
+   "age_h": 7.2,
+   "id": "n:where-to-find-all-of-randy-s-wishlist-supercars-in-gta-6-car",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 radio DJs and podcast hosts: Every famous voice on GTA 6’s radio",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-6s-radio/",
+   "age_h": 7.3,
+   "id": "n:gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-",
+   "sites": [
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "Where to Find The Pfister Growler in GTA 6—Randy’s Wishlist Car Locations",
+   "page": "https://insider-gaming.com/where-to-find-the-pfister-growler-in-gta-6/",
+   "age_h": 7.4,
+   "id": "n:where-to-find-the-pfister-growler-in-gta-6-randy-s-wishlist-",
+   "sites": [
+    "Insider Gaming"
    ],
    "new": true
   }
