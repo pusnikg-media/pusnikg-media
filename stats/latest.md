@@ -1,36 +1,36 @@
-# Zahlen – Stand 22.11.2026 12:58 (Europe/Berlin)
+# Zahlen – Stand 22.11.2026 18:03 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 43.453 · Zuwachs 24 h: 2.302
+Posts gezählt: 80 · Views gesamt: 42.922 · Zuwachs 24 h: 604
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
-| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 217 | – | – | 5 |  |
-| 2026-11-21 | youtube | GTA 6 Characters: Jason or Lucia? #shorts | 492 | – | – | 12 |  |
-| 2026-11-20 | tiktok | GTA 6 story tip: don't rush it, explore Leonida  | 245 | 14 | 243 | 8 |  |
-| 2026-11-20 | youtube | Don't Rush GTA 6. Here's Why #shorts | 362 | 5 | 356 | 3 |  |
-| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.492 | 78 | 3.329 | 30 | Kai Cenat GTA 6 |
+| 2026-11-22 | tiktok | GTA 6 story or pure chaos, what are you doing fi | 0 | – | – | 0 |  |
+| 2026-11-22 | youtube | GTA 6: Story First or Chaos First? #shorts | 0 | – | – | 0 |  |
+| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 217 | 119 | 217 | 5 |  |
+| 2026-11-21 | youtube | GTA 6 Characters: Jason or Lucia? #shorts | 492 | 202 | 492 | 12 |  |
+| 2026-11-20 | tiktok | GTA 6 story tip: don't rush it, explore Leonida  | 245 | 2 | 243 | 8 |  |
+| 2026-11-20 | youtube | Don't Rush GTA 6. Here's Why #shorts | 362 | 6 | 356 | 3 |  |
+| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.492 | 27 | 3.329 | 30 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat finds out this GTA 6 car's tracker pin | 254 | 0 | 254 | 8 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat keeps saying this is a whole new game  | 250 | 0 | 250 | 15 | Kai Cenat GTA 6 |
-| 2026-11-19 | youtube | GTA 6 Is Finally Out #shorts | 55 | 9 | 37 | 0 |  |
+| 2026-11-19 | youtube | GTA 6 Is Finally Out #shorts | 55 | 0 | 37 | 0 |  |
 | 2026-11-19 | tiktok | GTA 6 release day is finally here after 13 years | 213 | 0 | 213 | 0 |  |
-| 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.552 | 2.150 | 2.963 | 46 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat fights an alligator in GTA 6 and Flori | 242 | 1 | 241 | 2 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 374 | 41 | 305 | 18 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 219 | 1 | 211 | 16 | Kai Cenat GTA 6 |
+| 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.554 | 199 | 2.963 | 46 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat fights an alligator in GTA 6 and Flori | 242 | 0 | 241 | 2 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 397 | 44 | 305 | 18 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 219 | 0 | 211 | 16 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat spots the first baby he's ever seen in | 300 | 0 | 292 | 3 | Kai Cenat GTA 6 |
 | 2026-11-18 | tiktok | Warzone stays free-to-play, and Season 1 brings  | 246 | 0 | 244 | 1 | Warzone S1 |
-| 2026-11-18 | youtube | Who's Calling in Sick for GTA 6? #shorts | 50 | -1 | 4 | 0 |  |
+| 2026-11-18 | youtube | Who's Calling in Sick for GTA 6? #shorts | 50 | 0 | 4 | 0 |  |
 | 2026-11-18 | tiktok | GTA 6 release date is tomorrow, November 19. Are | 250 | 0 | 249 | 2 |  |
 | 2026-11-18 | tiktok | GTA 6 reviews are in: a 99 on Metacritic and not | 248 | 0 | 248 | 1 |  |
 | 2026-11-18 | youtube | GTA 6 Reviews Are In: 99 on Metacritic #shorts | 19 | 0 | 5 | 1 |  |
-| 2026-11-17 | tiktok | Hajin is one of two new Warzone maps this season | 243 | 0 | 242 | 3 | Warzone S1 |
+| 2026-11-17 | tiktok | Hajin is one of two new Warzone maps this season | 246 | 3 | 242 | 3 | Warzone S1 |
 | 2026-11-17 | youtube | When Can You Play GTA 6? Unlock Time #shorts | 1 | 0 | 3 | 0 |  |
 | 2026-11-17 | tiktok | GTA 6 release time: Rockstar hasn't confirmed it | 300 | 0 | 298 | 2 |  |
-| 2026-11-17 | tiktok | The Warzone Season 1 trailer goes dark and the m | 239 | 1 | 236 | 8 | Warzone S1 |
-| 2026-11-16 | tiktok | Close quarters in the Warzone Season 1 trailer.  | 252 | 0 | 251 | 3 | Warzone S1 |
 
 ## Pusnik IRL
 Posts gezählt: 20 · Views gesamt: 5.820 · Zuwachs 24 h: 0
@@ -61,9 +61,9 @@ Posts gezählt: 20 · Views gesamt: 5.820 · Zuwachs 24 h: 0
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Kai Cenat GTA 6 | 8 | 11.683 | 6.552 | – |
+| Kai Cenat GTA 6 | 8 | 11.708 | 6.554 | – |
 | TJR | 18 | 4.969 | 748 | 0 von 18 |
-| Warzone S1 | 6 | 1.473 | 252 | – |
+| Warzone S1 | 6 | 1.476 | 252 | – |
 | MW4 DMZ | 3 | 779 | 277 | – |
 | JasonTheWeen | 2 | 851 | 849 | – |
 | SEGA Virtua Fighter | 8 | 3.186 | 1.200 | – |
