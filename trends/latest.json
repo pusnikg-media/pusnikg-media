@@ -1,9 +1,9 @@
 {
- "at": "2026-11-22T16:28:16+00:00",
+ "at": "2026-11-22T20:27:56+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 429",
+  "reddit r/LivestreamFail: HTTP 404",
   "reddit r/GTA6: HTTP 404",
-  "reddit r/GTA: HTTP 429"
+  "reddit r/GTA: HTTP 404"
  ],
  "items": [
   {
@@ -11,10 +11,10 @@
    "area": "irl",
    "channel": "chillingcrew",
    "title": "LANZAMIENTO GTA VI @1WIN",
-   "views": 9019,
-   "per_h": 683,
+   "views": 9095,
+   "per_h": 529,
    "dur": 176,
-   "age_h": 13.2,
+   "age_h": 17.2,
    "category": "Special Events",
    "page": "https://kick.com/chillingcrew/clips/clip_01M80M18WT5BFB4F9QFG05V0A0",
    "video": "https://clips.kick.com/clips/2a/clip_01M80M18WT5BFB4F9QFG05V0A0/playlist.m3u8",
@@ -25,12 +25,28 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "guseinlive",
+   "title": "Ок",
+   "views": 4892,
+   "per_h": 1041,
+   "dur": 30,
+   "age_h": 4.7,
+   "category": "Just Chatting",
+   "page": "https://kick.com/guseinlive/clips/clip_01M81Z188H8NP09FNSGYK6GQPP",
+   "video": "https://clips.kick.com/clips/ac/clip_01M81Z188H8NP09FNSGYK6GQPP/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M81Z188H8NP09FNSGYK6GQPP",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "viruslivehai",
    "title": "GTA 6 CAR Jump #gta6",
-   "views": 4184,
-   "per_h": 145,
+   "views": 4359,
+   "per_h": 133,
    "dur": 30,
-   "age_h": 28.8,
+   "age_h": 32.8,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/viruslivehai/clips/clip_01M7YYEE0WX1G8CCFBMAV1C796",
    "video": "https://clips.kick.com/clips/a3/clip_01M7YYEE0WX1G8CCFBMAV1C796/playlist.m3u8",
@@ -41,12 +57,28 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "jetytv",
+   "title": "MAXWIN POMPEII",
+   "views": 4013,
+   "per_h": 2675,
+   "dur": 30,
+   "age_h": 1.5,
+   "category": "Slots & Casino",
+   "page": "https://kick.com/jetytv/clips/clip_01M829T06F2YQ8FJ86F2DDQWRB",
+   "video": "https://clips.kick.com/clips/8c/clip_01M829T06F2YQ8FJ86F2DDQWRB/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M829T06F2YQ8FJ86F2DDQWRB",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "un-nefer",
    "title": "разговор с девушкой демогогом или софистом",
-   "views": 3127,
-   "per_h": 133,
+   "views": 3155,
+   "per_h": 115,
    "dur": 180,
-   "age_h": 23.5,
+   "age_h": 27.5,
    "category": "IRL",
    "page": "https://kick.com/un-nefer/clips/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q",
    "video": "https://clips.kick.com/clips/6e/clip_01M7ZGJR6N5TY1K5NTCV0SMH7Q/playlist.m3u8",
@@ -57,65 +89,17 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "chillingcrew",
-   "title": "evento GTA 6 1wi",
-   "views": 2515,
-   "per_h": 180,
-   "dur": 180,
-   "age_h": 14.0,
-   "category": "Special Events",
-   "page": "https://kick.com/chillingcrew/clips/clip_01M80H7H2W9AW393S8C3YD5B7J",
-   "video": "https://clips.kick.com/clips/90/clip_01M80H7H2W9AW393S8C3YD5B7J/playlist.m3u8",
+   "channel": "jetytv",
+   "title": "FIST",
+   "views": 3006,
+   "per_h": 2004,
+   "dur": 40,
+   "age_h": 1.5,
+   "category": "Slots & Casino",
+   "page": "https://kick.com/jetytv/clips/clip_01M82A0Y3BYQG4W3Q423VEY1CE",
+   "video": "https://clips.kick.com/clips/d9/clip_01M82A0Y3BYQG4W3Q423VEY1CE/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M80H7H2W9AW393S8C3YD5B7J",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "3li_boltx",
-   "title": "فرم",
-   "views": 2154,
-   "per_h": 94,
-   "dur": 107,
-   "age_h": 23.0,
-   "category": "Just Chatting",
-   "page": "https://kick.com/3li_boltx/clips/clip_01M7ZJF6A2999R25DR9BB4WS85",
-   "video": "https://clips.kick.com/clips/4d/clip_01M7ZJF6A2999R25DR9BB4WS85/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7ZJF6A2999R25DR9BB4WS85",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "xqc",
-   "title": "XQc stream in kick",
-   "views": 1718,
-   "per_h": 54,
-   "dur": 55,
-   "age_h": 31.8,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/xqc/clips/clip_01M7YM6G7BTRB1AWCWGF48RDB8",
-   "video": "https://clips.kick.com/clips/55/clip_01M7YM6G7BTRB1AWCWGF48RDB8/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M7YM6G7BTRB1AWCWGF48RDB8",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "heheftw",
-   "title": "vendetta itna bura marti hai kya 🤣🤣",
-   "views": 1655,
-   "per_h": 51,
-   "dur": 101,
-   "age_h": 32.7,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/heheftw/clips/clip_01M7YGZ0JQNDWT61DJ9WE9S1HE",
-   "video": "https://clips.kick.com/clips/36/clip_01M7YGZ0JQNDWT61DJ9WE9S1HE/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M7YGZ0JQNDWT61DJ9WE9S1HE",
+   "id": "k:clip_01M82A0Y3BYQG4W3Q423VEY1CE",
    "new": true
   },
   {
@@ -123,26 +107,43 @@
    "area": "irl",
    "channel": "xmerghani",
    "title": "idealna misja",
-   "views": 1619,
-   "per_h": 74,
+   "views": 2884,
+   "per_h": 111,
    "dur": 30,
-   "age_h": 21.9,
+   "age_h": 25.9,
    "category": "Just Sleeping",
    "page": "https://kick.com/xmerghani/clips/clip_01M7ZPA3RHS398JYWG145KVZN2",
    "video": "https://clips.kick.com/clips/1f/clip_01M7ZPA3RHS398JYWG145KVZN2/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M7ZPA3RHS398JYWG145KVZN2",
-   "new": true
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "chillingcrew",
+   "title": "evento GTA 6 1wi",
+   "views": 2596,
+   "per_h": 144,
+   "dur": 180,
+   "age_h": 18.0,
+   "category": "Special Events",
+   "page": "https://kick.com/chillingcrew/clips/clip_01M80H7H2W9AW393S8C3YD5B7J",
+   "video": "https://clips.kick.com/clips/90/clip_01M80H7H2W9AW393S8C3YD5B7J/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M80H7H2W9AW393S8C3YD5B7J",
+   "new": false
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "GTA 6's strong and silent Jason was inspired by Steve McQueen and former Army Rangers, says Rockstar",
-   "page": "https://www.eurogamer.net/gta-6-jason-steve-mcqueen-army-rangers",
-   "age_h": 0.3,
-   "id": "n:gta-6-s-strong-and-silent-jason-was-inspired-by-steve-mcquee",
+   "site": "IGN",
+   "title": "Rockstar Says Jason's Viral Personality in GTA 6 Comes From Steve McQueen and Real-Life Veterans",
+   "page": "https://www.ign.com/articles/rockstar-says-jasons-viral-personality-in-gta-6-comes-from-steve-mcqueen-and-real-life-veterans",
+   "age_h": 2.2,
+   "id": "n:rockstar-says-jason-s-viral-personality-in-gta-6-comes-from-",
    "sites": [
+    "IGN",
     "Eurogamer",
     "PC Gamer"
    ],
@@ -152,10 +153,10 @@
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "Where to Find the Gauntlet Hellfire Car in GTA 6—Randy’s Wishlist Car Locations",
-   "page": "https://insider-gaming.com/where-to-find-the-guantlet-hellfire-gta-6/",
-   "age_h": 3.4,
-   "id": "n:where-to-find-the-gauntlet-hellfire-car-in-gta-6-randy-s-wis",
+   "title": "Where to Find the Ascot Paragon Car in GTA 6—Randy’s Wishlist Car Locations",
+   "page": "https://insider-gaming.com/where-to-find-the-ascot-paragon-in-gta-6/",
+   "age_h": 2.5,
+   "id": "n:where-to-find-the-ascot-paragon-car-in-gta-6-randy-s-wishlis",
    "sites": [
     "Insider Gaming",
     "PC Gamer"
@@ -168,7 +169,7 @@
    "site": "VGC",
    "title": "GTA 6 Avery Pawn Shop Safe Code: How to Find and Open the Safe",
    "page": "https://www.videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe/",
-   "age_h": 19.8,
+   "age_h": 23.8,
    "id": "n:gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-saf",
    "sites": [
     "VGC",
@@ -179,27 +180,39 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "PC Gamer",
+   "title": "GTA 6 needed a dedicated team to make sure all its different body types could share animations: 'It was a huge team effort'",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-needed-a-dedicated-team-to-make-sure-all-its-different-body-types-could-share-animations-it-was-a-huge-team-effort/",
+   "age_h": 0.2,
+   "id": "n:gta-6-needed-a-dedicated-team-to-make-sure-all-its-different",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "VGC",
-   "title": "GTA 6 Kingpin Bowling Alley safe code and location: How to find and open the safe",
-   "page": "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/",
-   "age_h": 23.5,
-   "id": "n:gta-6-kingpin-bowling-alley-safe-code-and-location-how-to-fi",
+   "title": "GTA 6 Bad Luck, I Guess trophy guide: How to rob the Payday Loans store",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-bad-luck-i-guess-trophy-guide-how-to-rob-the-payday-loans-store/",
+   "age_h": 0.5,
+   "id": "n:gta-6-bad-luck-i-guess-trophy-guide-how-to-rob-the-payday-lo",
    "sites": [
-    "VGC",
-    "PC Gamer"
+    "VGC"
    ],
-   "new": false
+   "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Polygon",
-   "title": "Where to find the Fast & Furious Mitsubishi Eclipse in GTA 6",
-   "page": "https://www.polygon.com/gta-6-mitsubishi-eclipse-fast-and-furious-brian-oconner-car/",
+   "site": "VGC",
+   "title": "GTA 6: Arthur Morgan’s hat location from Red Dead Redemption 2",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-arthur-morgan-hat-location/",
    "age_h": 0.9,
-   "id": "n:where-to-find-the-fast-furious-mitsubishi-eclipse-in-gta-6",
+   "id": "n:gta-6-arthur-morgan-s-hat-location-from-red-dead-redemption-",
    "sites": [
-    "Polygon"
+    "VGC"
    ],
    "new": true
   },
@@ -207,10 +220,10 @@
    "src": "news",
    "area": "gaming",
    "site": "Polygon",
-   "title": "GTA 6 Parody In Binding of Isaac Used AI Without Creator's Knowledge",
-   "page": "https://www.polygon.com/gta-6-parody-binding-of-isaac-ai-use/",
-   "age_h": 1.0,
-   "id": "n:gta-6-parody-in-binding-of-isaac-used-ai-without-creator-s-k",
+   "title": "'GTA 6' Bombshell: Husband Melts Down After Wife Hid Her Role In Game For Years",
+   "page": "https://www.polygon.com/gta-6-amber-wallin-comedian-instagram-npc-voice-actor-husband-secret/",
+   "age_h": 0.9,
+   "id": "n:-gta-6-bombshell-husband-melts-down-after-wife-hid-her-role-",
    "sites": [
     "Polygon"
    ],
@@ -219,11 +232,24 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "PC Gamer",
-   "title": "The GTAs that are still worth playing while you wait for GTA 6 on PC",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/the-gtas-that-are-still-worth-playing-while-you-wait-for-gta-6-on-pc/",
+   "site": "Insider Gaming",
+   "title": "GTA 3 Had a $600,000 Music Budget It Never Spent",
+   "page": "https://insider-gaming.com/gta-3-music-budget-soundtrack-deal/",
    "age_h": 1.5,
-   "id": "n:the-gtas-that-are-still-worth-playing-while-you-wait-for-gta",
+   "id": "n:gta-3-had-a-600-000-music-budget-it-never-spent",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "GTA 6 discourse is suffering from the flat earther effect",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-discourse-is-already-suffering-from-the-flat-earther-effect/",
+   "age_h": 1.7,
+   "id": "n:gta-6-discourse-is-suffering-from-the-flat-earther-effect",
    "sites": [
     "PC Gamer"
    ],
@@ -232,39 +258,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Polygon",
-   "title": "GTA 6 Could Actually Lose at Least 3 Game Awards Categories",
-   "page": "https://www.polygon.com/gta-6-goty-game-awards-sweep/",
-   "age_h": 1.5,
-   "id": "n:gta-6-could-actually-lose-at-least-3-game-awards-categories",
+   "site": "Kotaku",
+   "title": "Godfather Of Cyberpunk Says He’s Never Played A Video Game, But Finds GTA 6 ‘Intriguing’",
+   "page": "https://kotaku.com/godfather-of-cyberpunk-says-hes-never-played-a-video-game-but-finds-gta-6-intriguing-2000759281",
+   "age_h": 1.7,
+   "id": "n:godfather-of-cyberpunk-says-he-s-never-played-a-video-game-b",
    "sites": [
-    "Polygon"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "GTA 6 Mamba GT locations: How to restore the third car for Wyman",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mamba-gt-locations/",
-   "age_h": 1.6,
-   "id": "n:gta-6-mamba-gt-locations-how-to-restore-the-third-car-for-wy",
-   "sites": [
-    "PC Gamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "GTA 6 Players Keep Discovering Ridiculous New Ways To Steal Money",
-   "page": "https://www.polygon.com/gta-6-players-ridiculous-ways-to-steal-money/",
-   "age_h": 1.9,
-   "id": "n:gta-6-players-keep-discovering-ridiculous-new-ways-to-steal-",
-   "sites": [
-    "Polygon"
+    "Kotaku"
    ],
    "new": true
   }
