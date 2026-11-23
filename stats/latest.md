@@ -1,27 +1,27 @@
-# Zahlen – Stand 23.11.2026 07:28 (Europe/Berlin)
+# Zahlen – Stand 23.11.2026 13:17 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 43.218 · Zuwachs 24 h: 43
+Posts gezählt: 80 · Views gesamt: 43.235 · Zuwachs 24 h: 38
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
 | 2026-11-22 | tiktok | GTA 6 story or pure chaos, what are you doing fi | 216 | – | – | 0 |  |
-| 2026-11-22 | youtube | GTA 6: Story First or Chaos First? #shorts | 86 | – | – | 2 |  |
-| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 217 | 1 | 217 | 5 |  |
-| 2026-11-21 | youtube | GTA 6 Characters: Jason or Lucia? #shorts | 493 | 1 | 486 | 12 |  |
+| 2026-11-22 | youtube | GTA 6: Story First or Chaos First? #shorts | 87 | – | – | 2 |  |
+| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 217 | 0 | 217 | 5 |  |
+| 2026-11-21 | youtube | GTA 6 Characters: Jason or Lucia? #shorts | 495 | 3 | 486 | 12 |  |
 | 2026-11-20 | tiktok | GTA 6 story tip: don't rush it, explore Leonida  | 245 | 0 | 243 | 8 |  |
 | 2026-11-20 | youtube | Don't Rush GTA 6. Here's Why #shorts | 366 | 4 | 356 | 3 |  |
-| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.454 | -38 | 3.329 | 30 | Kai Cenat GTA 6 |
+| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.459 | -33 | 3.329 | 30 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat finds out this GTA 6 car's tracker pin | 254 | 0 | 254 | 8 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat keeps saying this is a whole new game  | 250 | 0 | 250 | 15 | Kai Cenat GTA 6 |
 | 2026-11-19 | youtube | GTA 6 Is Finally Out #shorts | 55 | 0 | 37 | 0 |  |
 | 2026-11-19 | tiktok | GTA 6 release day is finally here after 13 years | 213 | 0 | 213 | 0 |  |
-| 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.554 | 14 | 2.963 | 46 | Kai Cenat GTA 6 |
+| 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.562 | 10 | 2.963 | 47 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat fights an alligator in GTA 6 and Flori | 242 | 0 | 241 | 2 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 423 | 57 | 305 | 18 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 219 | 0 | 211 | 16 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 423 | 49 | 305 | 18 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 220 | 1 | 211 | 16 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat spots the first baby he's ever seen in | 300 | 0 | 292 | 3 | Kai Cenat GTA 6 |
 | 2026-11-18 | tiktok | Warzone stays free-to-play, and Season 1 brings  | 246 | 0 | 244 | 1 | Warzone S1 |
 | 2026-11-18 | youtube | Who's Calling in Sick for GTA 6? #shorts | 49 | -1 | 4 | 0 |  |
@@ -61,7 +61,7 @@ Posts gezählt: 20 · Views gesamt: 5.820 · Zuwachs 24 h: 0
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Kai Cenat GTA 6 | 8 | 11.696 | 6.554 | – |
+| Kai Cenat GTA 6 | 8 | 11.710 | 6.562 | – |
 | TJR | 18 | 4.969 | 748 | 0 von 18 |
 | Warzone S1 | 6 | 1.477 | 252 | – |
 | MW4 DMZ | 3 | 779 | 277 | – |
