@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T16:36:13+00:00",
+ "at": "2026-11-23T20:30:49+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
   "reddit r/GTA6: HTTP 429",
@@ -9,28 +9,12 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "misshenley",
-   "title": "shny",
-   "views": 11360,
-   "per_h": 335,
-   "dur": 75,
-   "age_h": 33.9,
-   "category": "Slots & Casino",
-   "page": "https://kick.com/misshenley/clips/clip_01M80ZNY13K978R91M8N3B5G5A",
-   "video": "https://clips.kick.com/clips/e5/clip_01M80ZNY13K978R91M8N3B5G5A/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M80ZNY13K978R91M8N3B5G5A",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "guseinlive",
    "title": "Ок",
-   "views": 5479,
-   "per_h": 221,
+   "views": 5556,
+   "per_h": 194,
    "dur": 30,
-   "age_h": 24.8,
+   "age_h": 28.7,
    "category": "Just Chatting",
    "page": "https://kick.com/guseinlive/clips/clip_01M81Z188H8NP09FNSGYK6GQPP",
    "video": "https://clips.kick.com/clips/ac/clip_01M81Z188H8NP09FNSGYK6GQPP/playlist.m3u8",
@@ -43,10 +27,10 @@
    "area": "irl",
    "channel": "nsumpe234j",
    "title": "okwase classin",
-   "views": 4256,
-   "per_h": 225,
+   "views": 5195,
+   "per_h": 228,
    "dur": 180,
-   "age_h": 18.9,
+   "age_h": 22.8,
    "category": "IRL",
    "page": "https://kick.com/nsumpe234j/clips/clip_01M82K8JK94TSSDT80Z9FH10F3",
    "video": "https://clips.kick.com/clips/a5/clip_01M82K8JK94TSSDT80Z9FH10F3/playlist.m3u8",
@@ -57,12 +41,28 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "gabepeixe",
+   "title": "kkkkkkkkkk",
+   "views": 4715,
+   "per_h": 157,
+   "dur": 180,
+   "age_h": 30.1,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/gabepeixe/clips/clip_01M81TBH7TZRWAKNS5EHXR6M43",
+   "video": "https://clips.kick.com/clips/a8/clip_01M81TBH7TZRWAKNS5EHXR6M43/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M81TBH7TZRWAKNS5EHXR6M43",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "jetytv",
    "title": "MAXWIN POMPEII",
-   "views": 4142,
-   "per_h": 191,
+   "views": 4155,
+   "per_h": 162,
    "dur": 30,
-   "age_h": 21.7,
+   "age_h": 25.6,
    "category": "Slots & Casino",
    "page": "https://kick.com/jetytv/clips/clip_01M829T06F2YQ8FJ86F2DDQWRB",
    "video": "https://clips.kick.com/clips/8c/clip_01M829T06F2YQ8FJ86F2DDQWRB/playlist.m3u8",
@@ -73,28 +73,28 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "gabepeixe",
-   "title": "kkkkkkkkkk",
-   "views": 3134,
-   "per_h": 120,
+   "channel": "neexcsgo",
+   "title": "CINEMA W CHUJ",
+   "views": 3686,
+   "per_h": 170,
    "dur": 180,
-   "age_h": 26.2,
+   "age_h": 21.7,
    "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/gabepeixe/clips/clip_01M81TBH7TZRWAKNS5EHXR6M43",
-   "video": "https://clips.kick.com/clips/a8/clip_01M81TBH7TZRWAKNS5EHXR6M43/playlist.m3u8",
+   "page": "https://kick.com/neexcsgo/clips/clip_01M82Q0FQ9VT1ZMJWDZ4ZMQCRQ",
+   "video": "https://clips.kick.com/clips/d4/clip_01M82Q0FQ9VT1ZMJWDZ4ZMQCRQ/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M81TBH7TZRWAKNS5EHXR6M43",
-   "new": true
+   "id": "k:clip_01M82Q0FQ9VT1ZMJWDZ4ZMQCRQ",
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "jetytv",
    "title": "FIST",
-   "views": 3105,
-   "per_h": 144,
+   "views": 3119,
+   "per_h": 122,
    "dur": 40,
-   "age_h": 21.6,
+   "age_h": 25.5,
    "category": "Slots & Casino",
    "page": "https://kick.com/jetytv/clips/clip_01M82A0Y3BYQG4W3Q423VEY1CE",
    "video": "https://clips.kick.com/clips/d9/clip_01M82A0Y3BYQG4W3Q423VEY1CE/playlist.m3u8",
@@ -105,61 +105,102 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "cobbruvsjim",
-   "title": "Chicken VS Jimmy. hard r version",
-   "views": 2930,
-   "per_h": 90,
-   "dur": 39,
-   "age_h": 32.4,
-   "category": "IRL",
-   "page": "https://kick.com/cobbruvsjim/clips/clip_01M814MRZEMVBTJ36TVF9TJVTT",
-   "video": "https://clips.kick.com/clips/41/clip_01M814MRZEMVBTJ36TVF9TJVTT/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M814MRZEMVBTJ36TVF9TJVTT",
+   "channel": "neexcsgo",
+   "title": "NEEX Vanilla Unicorn",
+   "views": 2861,
+   "per_h": 135,
+   "dur": 180,
+   "age_h": 21.2,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/neexcsgo/clips/clip_01M82RZ5VXCHGDBQK49TQCXY64",
+   "video": "https://clips.kick.com/clips/33/clip_01M82RZ5VXCHGDBQK49TQCXY64/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M82RZ5VXCHGDBQK49TQCXY64",
    "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "neexcsgo",
-   "title": "CINEMA W CHUJ",
-   "views": 2443,
-   "per_h": 137,
-   "dur": 180,
-   "age_h": 17.8,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/neexcsgo/clips/clip_01M82Q0FQ9VT1ZMJWDZ4ZMQCRQ",
-   "video": "https://clips.kick.com/clips/d4/clip_01M82Q0FQ9VT1ZMJWDZ4ZMQCRQ/playlist.m3u8",
+   "channel": "achtenwlodar",
+   "title": "niezle",
+   "views": 2036,
+   "per_h": 93,
+   "dur": 30,
+   "age_h": 22.0,
+   "category": "Just Chatting",
+   "page": "https://kick.com/achtenwlodar/clips/clip_01M82P900B2Z3RMTENZ3858AFP",
+   "video": "https://clips.kick.com/clips/d7/clip_01M82P900B2Z3RMTENZ3858AFP/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M82Q0FQ9VT1ZMJWDZ4ZMQCRQ",
+   "id": "k:clip_01M82P900B2Z3RMTENZ3858AFP",
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "GTA VI Update 01.002.002 Patch Notes Released",
-   "page": "https://rockstarintel.com/new-gta-vi-update-01-002-002-patch-notes-released/",
-   "age_h": 1.3,
-   "id": "n:gta-vi-update-01-002-002-patch-notes-released",
+   "site": "Polygon",
+   "title": "Where to find the Silent Hill hotel in GTA 6",
+   "page": "https://www.polygon.com/gta-6-silent-hill-hotel-easter-egg-location-marbelle-hotel-safe/",
+   "age_h": 0.1,
+   "id": "n:where-to-find-the-silent-hill-hotel-in-gta-6",
    "sites": [
-    "RockstarINTEL",
-    "Insider Gaming",
-    "IGN"
+    "Polygon",
+    "VGC"
    ],
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "GameSpot",
-   "title": "This Terrifying GTA 6 Easter Egg Will Give You Nightmares",
-   "page": "https://www.gamespot.com/articles/this-terrifying-gta-6-easter-egg-will-give-you-nightmares/",
-   "age_h": 0.1,
-   "id": "n:this-terrifying-gta-6-easter-egg-will-give-you-nightmares",
+   "site": "IGN",
+   "title": "Players Have Found a GTA 6 60fps Glitch, but It Just Reaffirms Rockstar's 30fps Cap",
+   "page": "https://www.ign.com/articles/players-have-found-a-gta-6-60fps-glitch-but-it-just-reaffirms-rockstars-30fps-cap",
+   "age_h": 0.7,
+   "id": "n:players-have-found-a-gta-6-60fps-glitch-but-it-just-reaffirm",
    "sites": [
-    "GameSpot",
-    "Insider Gaming"
+    "IGN",
+    "Eurogamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "IGN",
+   "title": "YouTuber Discovers Wild GTA 6 Easter Egg, Cracks Code in Just 3 Days to Reveal Brilliant Surprise",
+   "page": "https://www.ign.com/articles/gta-6-easter-egg-danny-dyer-kent-paul",
+   "age_h": 0.8,
+   "id": "n:youtuber-discovers-wild-gta-6-easter-egg-cracks-code-in-just",
+   "sites": [
+    "IGN",
+    "GameSpot"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "Where to find the UFO dream house in GTA 6",
+   "page": "https://www.polygon.com/gta-6-ufo-dream-house-location-where-to-find-grand-theft-auto/",
+   "age_h": 1.2,
+   "id": "n:where-to-find-the-ufo-dream-house-in-gta-6",
+   "sites": [
+    "Polygon",
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "GTA 6 Vice City Pre-Order DLC Now Available for All, With One Catch",
+   "page": "https://www.polygon.com/gta-6-vice-city-pre-order-dlc-availble-to-purchase/",
+   "age_h": 1.9,
+   "id": "n:gta-6-vice-city-pre-order-dlc-now-available-for-all-with-one",
+   "sites": [
+    "Polygon",
+    "GameSpot"
    ],
    "new": true
   },
@@ -169,27 +210,13 @@
    "site": "Kotaku",
    "title": "GTA 6‘s First Post-Launch Update Fixes 7 Bugs",
    "page": "https://kotaku.com/gta-6s-first-post-launch-update-fixes-7-bugs-2000759480",
-   "age_h": 0.1,
+   "age_h": 4.0,
    "id": "n:gta-6-s-first-post-launch-update-fixes-7-bugs",
    "sites": [
     "Kotaku",
     "VGC"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "GameSpot",
-   "title": "GTA 6’s Preorder DLC Is Now Available By Itself For $5",
-   "page": "https://www.gamespot.com/articles/gta-6s-preorder-dlc-is-now-available-by-itself-for-5/",
-   "age_h": 0.7,
-   "id": "n:gta-6-s-preorder-dlc-is-now-available-by-itself-for-5",
-   "sites": [
-    "GameSpot",
-    "RockstarINTEL"
-   ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -197,38 +224,23 @@
    "site": "VGC",
    "title": "GTA 6 hacker who leaked footage in 2022 has been released on licence and told not to do it again",
    "page": "https://www.videogameschronicle.com/news/gta-6-hacker-who-leaked-footage-in-2022-has-been-released-on-licence-and-told-not-to-do-it-again/",
-   "age_h": 0.9,
+   "age_h": 4.8,
    "id": "n:gta-6-hacker-who-leaked-footage-in-2022-has-been-released-on",
    "sites": [
     "VGC",
     "RockstarINTEL"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "GTA 6 can run at 60fps on Xbox Series X if you use a glitch, but there's a catch",
-   "page": "https://www.eurogamer.net/grand-theft-auto-6-60-fps-glitch-xbox",
-   "age_h": 2.4,
-   "id": "n:gta-6-can-run-at-60fps-on-xbox-series-x-if-you-use-a-glitch-",
+   "site": "VGC",
+   "title": "GTA 6 Here Kitty Kitty mission walkthrough: How to find Charles",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-here-kitty-kitty-mission-walkthrough-how-to-find-charles/",
+   "age_h": 0.2,
+   "id": "n:gta-6-here-kitty-kitty-mission-walkthrough-how-to-find-charl",
    "sites": [
-    "Eurogamer",
-    "RockstarINTEL"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Where To Find Armored Trucks in GTA 6—A Classic Blitz Play Trophy Guide",
-   "page": "https://insider-gaming.com/where-to-find-armored-trucks-gta-6-classic-blitz/",
-   "age_h": 2.5,
-   "id": "n:where-to-find-armored-trucks-in-gta-6-a-classic-blitz-play-t",
-   "sites": [
-    "Insider Gaming",
     "VGC"
    ],
    "new": true
@@ -236,25 +248,11 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "GTA 6's strong and silent Jason was inspired by Steve McQueen and former Army Rangers, says Rockstar",
-   "page": "https://www.eurogamer.net/gta-6-jason-steve-mcqueen-army-rangers",
-   "age_h": 24.4,
-   "id": "n:gta-6-s-strong-and-silent-jason-was-inspired-by-steve-mcquee",
-   "sites": [
-    "Eurogamer",
-    "PC Gamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
    "site": "Insider Gaming",
-   "title": "All Illegal Operations Locations & Key Valuables In GTA 6",
-   "page": "https://insider-gaming.com/all-illegal-operations-locations-key-valuables-in-gta-6/",
-   "age_h": 0.1,
-   "id": "n:all-illegal-operations-locations-key-valuables-in-gta-6",
+   "title": "GTA 6 Chapter 2 Mission List – Every Mission in GTA 6 Chapter 2 in Order",
+   "page": "https://insider-gaming.com/gta-6-chapter-2-mission-list-in-order/",
+   "age_h": 0.2,
+   "id": "n:gta-6-chapter-2-mission-list-every-mission-in-gta-6-chapter-",
    "sites": [
     "Insider Gaming"
    ],
@@ -263,13 +261,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Kotaku",
-   "title": "Some Unlucky GTA 6 Players Keep Running Into Crashes On PS5, But There Are Workarounds",
-   "page": "https://kotaku.com/some-unlucky-gta-6-players-keep-running-into-crashes-on-ps5-but-there-are-workarounds-2000758451",
+   "site": "Insider Gaming",
+   "title": "GTA 6 Chapter 1 Mission List – Every Mission in GTA 6 Chapter 1 in Order",
+   "page": "https://insider-gaming.com/gta-6-chapter-1-mission-list-in-order/",
    "age_h": 0.4,
-   "id": "n:some-unlucky-gta-6-players-keep-running-into-crashes-on-ps5-",
+   "id": "n:gta-6-chapter-1-mission-list-every-mission-in-gta-6-chapter-",
    "sites": [
-    "Kotaku"
+    "Insider Gaming"
    ],
    "new": true
   }
