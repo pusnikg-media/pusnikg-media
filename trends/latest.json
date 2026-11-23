@@ -1,9 +1,10 @@
 {
- "at": "2026-11-23T05:46:57+00:00",
+ "at": "2026-11-23T11:33:29+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 429",
   "reddit r/GTA6: HTTP 404",
-  "reddit r/GTA: HTTP 404"
+  "reddit r/GTA: HTTP 404",
+  "news RockstarINTEL: Timeout: Failed to perform, curl: (28) Operation timed out after 25001 milliseconds with "
  ],
  "items": [
   {
@@ -11,10 +12,10 @@
    "area": "irl",
    "channel": "chillingcrew",
    "title": "LANZAMIENTO GTA VI @1WIN",
-   "views": 9260,
-   "per_h": 349,
+   "views": 9358,
+   "per_h": 290,
    "dur": 176,
-   "age_h": 26.5,
+   "age_h": 32.3,
    "category": "Special Events",
    "page": "https://kick.com/chillingcrew/clips/clip_01M80M18WT5BFB4F9QFG05V0A0",
    "video": "https://clips.kick.com/clips/2a/clip_01M80M18WT5BFB4F9QFG05V0A0/playlist.m3u8",
@@ -27,26 +28,26 @@
    "area": "irl",
    "channel": "misshenley",
    "title": "shny",
-   "views": 6823,
-   "per_h": 295,
+   "views": 9136,
+   "per_h": 316,
    "dur": 75,
-   "age_h": 23.1,
+   "age_h": 28.9,
    "category": "Slots & Casino",
    "page": "https://kick.com/misshenley/clips/clip_01M80ZNY13K978R91M8N3B5G5A",
    "video": "https://clips.kick.com/clips/e5/clip_01M80ZNY13K978R91M8N3B5G5A/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M80ZNY13K978R91M8N3B5G5A",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "guseinlive",
    "title": "Ок",
-   "views": 5215,
-   "per_h": 372,
+   "views": 5362,
+   "per_h": 271,
    "dur": 30,
-   "age_h": 14.0,
+   "age_h": 19.8,
    "category": "Just Chatting",
    "page": "https://kick.com/guseinlive/clips/clip_01M81Z188H8NP09FNSGYK6GQPP",
    "video": "https://clips.kick.com/clips/ac/clip_01M81Z188H8NP09FNSGYK6GQPP/playlist.m3u8",
@@ -59,10 +60,10 @@
    "area": "irl",
    "channel": "jetytv",
    "title": "MAXWIN POMPEII",
-   "views": 4076,
-   "per_h": 377,
+   "views": 4108,
+   "per_h": 247,
    "dur": 30,
-   "age_h": 10.8,
+   "age_h": 16.6,
    "category": "Slots & Casino",
    "page": "https://kick.com/jetytv/clips/clip_01M829T06F2YQ8FJ86F2DDQWRB",
    "video": "https://clips.kick.com/clips/8c/clip_01M829T06F2YQ8FJ86F2DDQWRB/playlist.m3u8",
@@ -75,15 +76,47 @@
    "area": "irl",
    "channel": "sergioeleven",
    "title": "Wow",
-   "views": 3346,
-   "per_h": 113,
+   "views": 4099,
+   "per_h": 116,
    "dur": 96,
-   "age_h": 29.5,
+   "age_h": 35.3,
    "category": "Just Chatting",
    "page": "https://kick.com/sergioeleven/clips/clip_01M809QCZ8BZ6ASJNH3J29GPM1",
    "video": "https://clips.kick.com/clips/79/clip_01M809QCZ8BZ6ASJNH3J29GPM1/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M809QCZ8BZ6ASJNH3J29GPM1",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "xmerghani",
+   "title": "Maciek pokazuje co zrobi kurwie",
+   "views": 3589,
+   "per_h": 285,
+   "dur": 30,
+   "age_h": 12.6,
+   "category": "Just Sleeping",
+   "page": "https://kick.com/xmerghani/clips/clip_01M82QKAMXQN1W5TXSFDEAQ401",
+   "video": "https://clips.kick.com/clips/1e/clip_01M82QKAMXQN1W5TXSFDEAQ401/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M82QKAMXQN1W5TXSFDEAQ401",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "nsumpe234j",
+   "title": "okwase classin",
+   "views": 3405,
+   "per_h": 245,
+   "dur": 180,
+   "age_h": 13.9,
+   "category": "IRL",
+   "page": "https://kick.com/nsumpe234j/clips/clip_01M82K8JK94TSSDT80Z9FH10F3",
+   "video": "https://clips.kick.com/clips/a5/clip_01M82K8JK94TSSDT80Z9FH10F3/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M82K8JK94TSSDT80Z9FH10F3",
    "new": true
   },
   {
@@ -91,10 +124,10 @@
    "area": "irl",
    "channel": "jetytv",
    "title": "FIST",
-   "views": 3056,
-   "per_h": 283,
+   "views": 3081,
+   "per_h": 187,
    "dur": 40,
-   "age_h": 10.8,
+   "age_h": 16.5,
    "category": "Slots & Casino",
    "page": "https://kick.com/jetytv/clips/clip_01M82A0Y3BYQG4W3Q423VEY1CE",
    "video": "https://clips.kick.com/clips/d9/clip_01M82A0Y3BYQG4W3Q423VEY1CE/playlist.m3u8",
@@ -103,44 +136,12 @@
    "new": false
   },
   {
-   "src": "kick",
-   "area": "irl",
-   "channel": "chillingcrew",
-   "title": "evento GTA 6 1wi",
-   "views": 2786,
-   "per_h": 102,
-   "dur": 180,
-   "age_h": 27.3,
-   "category": "Special Events",
-   "page": "https://kick.com/chillingcrew/clips/clip_01M80H7H2W9AW393S8C3YD5B7J",
-   "video": "https://clips.kick.com/clips/90/clip_01M80H7H2W9AW393S8C3YD5B7J/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M80H7H2W9AW393S8C3YD5B7J",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "xmerghani",
-   "title": "Maciek pokazuje co zrobi kurwie",
-   "views": 2270,
-   "per_h": 334,
-   "dur": 30,
-   "age_h": 6.8,
-   "category": "Just Sleeping",
-   "page": "https://kick.com/xmerghani/clips/clip_01M82QKAMXQN1W5TXSFDEAQ401",
-   "video": "https://clips.kick.com/clips/1e/clip_01M82QKAMXQN1W5TXSFDEAQ401/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M82QKAMXQN1W5TXSFDEAQ401",
-   "new": true
-  },
-  {
    "src": "news",
    "area": "gaming",
    "site": "IGN",
    "title": "Rockstar Says Jason's Viral Personality in GTA 6 Comes From Steve McQueen and Real-Life Veterans",
    "page": "https://www.ign.com/articles/rockstar-says-jasons-viral-personality-in-gta-6-comes-from-steve-mcqueen-and-real-life-veterans",
-   "age_h": 11.5,
+   "age_h": 17.3,
    "id": "n:rockstar-says-jason-s-viral-personality-in-gta-6-comes-from-",
    "sites": [
     "IGN",
@@ -152,40 +153,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Binding of Isaac DLC adds AI music in GTA 6-parodying update despite not having an AI disclosure, Steam reviews drop to Overwhelmingly Negative, music gets pulled",
-   "page": "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/",
-   "age_h": 4.6,
-   "id": "n:binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update",
+   "site": "Eurogamer",
+   "title": "Why can't you play darts in GTA 6 when you could in previous games? Because Rockstar \"didn't have the resources\" to do it to a standard it'd be happy with",
+   "page": "https://www.eurogamer.net/grand-theft-auto-6-no-darts-didnt-have-resources",
+   "age_h": 1.7,
+   "id": "n:why-can-t-you-play-darts-in-gta-6-when-you-could-in-previous",
    "sites": [
-    "PC Gamer",
-    "Kotaku"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Skunk Ape questline walkthrough: All effigy locations and choices",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-skunk-ape-questline-walkthrough-all-effigy-locations-and-choices/",
-   "age_h": 9.0,
-   "id": "n:gta-6-skunk-ape-questline-walkthrough-all-effigy-locations-a",
-   "sites": [
-    "VGC",
-    "Insider Gaming"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "IGN",
-   "title": "The Hunger Games: Sunrise on the Reaping Plows Through GTA 6 Hype With $225 Million Opening Weekend",
-   "page": "https://www.ign.com/articles/the-hunger-games-sunrise-on-the-reaping-plows-through-gta-6-hype-with-225-million-opening-weekend",
-   "age_h": 5.0,
-   "id": "n:the-hunger-games-sunrise-on-the-reaping-plows-through-gta-6-",
-   "sites": [
+    "Eurogamer",
     "IGN"
    ],
    "new": true
@@ -193,11 +167,63 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6: Find and break into Freddie Gibbs’ doomsday compound in Grand Theft Auto 6",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-find-break-in-freddie-doomsday-compound-grand-theft-auto/",
+   "age_h": 0.0,
+   "id": "n:gta-6-find-and-break-into-freddie-gibbs-doomsday-compound-in",
+   "sites": [
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "GTA 6 Kit Car locations: How to restore the fourth car for Wyman",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-kit-car-locations/",
+   "age_h": 0.1,
+   "id": "n:gta-6-kit-car-locations-how-to-restore-the-fourth-car-for-wy",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 Chapter 3 Mission List: Every Mission in Order & Point of No Return",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-chapter-3-mission-list/",
+   "age_h": 0.2,
+   "id": "n:gta-6-chapter-3-mission-list-every-mission-in-order-point-of",
+   "sites": [
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "As GTA 6 gets review-bombed on Metacritic, GTA fans have started review-bombing Ocarina of Time in response",
+   "page": "https://www.videogameschronicle.com/news/as-gta-6-gets-review-bombed-on-metacritic-gta-fans-have-started-review-bombing-ocarina-of-time-in-response/",
+   "age_h": 0.2,
+   "id": "n:as-gta-6-gets-review-bombed-on-metacritic-gta-fans-have-star",
+   "sites": [
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "Polygon",
-   "title": "GTA 6 Is Getting Review Bombed in Zelda vs. GTA Troll War",
-   "page": "https://www.polygon.com/gta-6-review-bombed-legend-of-zelda/",
-   "age_h": 5.0,
-   "id": "n:gta-6-is-getting-review-bombed-in-zelda-vs-gta-troll-war",
+   "title": "GTA 6 Streams Hit With Indiscriminate Copyright Claims by Reggaeton Artist",
+   "page": "https://www.polygon.com/gta-6-streamers-copyright-claim-frank-el-santo/",
+   "age_h": 0.5,
+   "id": "n:gta-6-streams-hit-with-indiscriminate-copyright-claims-by-re",
    "sites": [
     "Polygon"
    ],
@@ -206,26 +232,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Chapter 2 Mission List: Every Missions in Order & Point Of No Return",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-chapter-2-mission-list/",
-   "age_h": 5.6,
-   "id": "n:gta-6-chapter-2-mission-list-every-missions-in-order-point-o",
+   "site": "Insider Gaming",
+   "title": "GTA 6 New Update Releasing in Phases; Size Revealed",
+   "page": "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/",
+   "age_h": 0.6,
+   "id": "n:gta-6-new-update-releasing-in-phases-size-revealed",
    "sites": [
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Ride or Die walkthrough: Where to find the DWNPLY sneakers and get them for free",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-ride-or-die-walkthrough-where-to-find-the-dwnply-sneakers-and-get-them-for-free/",
-   "age_h": 6.0,
-   "id": "n:gta-6-ride-or-die-walkthrough-where-to-find-the-dwnply-sneak",
-   "sites": [
-    "VGC"
+    "Insider Gaming"
    ],
    "new": true
   },
@@ -233,10 +246,10 @@
    "src": "news",
    "area": "gaming",
    "site": "IGN",
-   "title": "GTA 6 Dev Honors Late Mother With In-Game Memorial That Players Can Visit",
-   "page": "https://www.ign.com/articles/gta-6-dev-honors-late-mother-with-in-game-memorial-that-players-can-visit",
-   "age_h": 6.4,
-   "id": "n:gta-6-dev-honors-late-mother-with-in-game-memorial-that-play",
+   "title": "Naughty Dog Dev: GTA 6 Appears to Him as ‘as a Bugatti Veyron Would to a Nervous Victorian Child’",
+   "page": "https://www.ign.com/articles/naughty-dog-dev-gta-6-appears-to-him-as-as-a-bugatti-veyron-would-to-a-nervous-victorian-child",
+   "age_h": 3.6,
+   "id": "n:naughty-dog-dev-gta-6-appears-to-him-as-as-a-bugatti-veyron-",
    "sites": [
     "IGN"
    ],
@@ -245,26 +258,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Mami Knows Best mission walkthrough",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-mami-knows-best-mission-walkthrough/",
-   "age_h": 6.8,
-   "id": "n:gta-6-mami-knows-best-mission-walkthrough",
+   "site": "IGN",
+   "title": "Robbing Banks is a Blast, But I Wish There Were More Houses to Repair in GTA 6",
+   "page": "https://www.ign.com/articles/robbing-banks-is-a-blast-but-i-wish-there-were-more-houses-to-repair-in-gta-6",
+   "age_h": 4.7,
+   "id": "n:robbing-banks-is-a-blast-but-i-wish-there-were-more-houses-t",
    "sites": [
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Top Billing walkthrough: How to complete the mission and rewards",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-top-billing-walkthrough-how-to-complete-the-mission-and-rewards/",
-   "age_h": 7.3,
-   "id": "n:gta-6-top-billing-walkthrough-how-to-complete-the-mission-an",
-   "sites": [
-    "VGC"
+    "IGN"
    ],
    "new": true
   }
