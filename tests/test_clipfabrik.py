@@ -181,7 +181,7 @@ def test_frame_rate_survives_0_over_0(cf):
 def test_emoji_sequences_are_one_token(cf):
     t = cf.tokens("a 👍🏽 🇩🇪 👨‍👩‍👧 😭‍")
     assert t == ["a", " ", "👍🏽", " ", "🇩🇪", " ", "👨‍👩‍👧", " ", "😭"]
-    assert cf.caption_hints("Kai Cenat tells the worker to CALM DOWN with the false claims today... 👍🏽 🇺🇸") == []
+    assert cf.caption_hints("Kai Cenat vs the worker 👍🏽 🇺🇸") == []
 
 
 def test_caption_box_draws_skin_tone_and_flag_as_one_emoji(cf):
@@ -247,3 +247,13 @@ def test_mini_caption_hints(cf):
     assert any("höchstens 5" in h for h in cf.caption_hints("Kai Cenat crashes a plane into the swamp today 😭", 20, "mini"))
     assert any("Emoji" in h for h in cf.caption_hints("Realistic game", 20, "mini"))
     assert cf.caption_hints("Realistic game 🥀") != []   # box-Stil prüft weiter auf ganzen Satz
+
+
+def test_short_caption_rule_24_11(cf):
+    """Seit 24.11.2026: Kontextsatz 3-8 Wörter (Name, Pointe, Emoji), kein „...“ nötig."""
+    assert cf.caption_hints("Lacy is SCARED of rain 😭", 20) == []
+    assert cf.caption_hints("Kai vs the McDonald's worker 👀", 20) == []
+    long = "Lacy couldn't believe Rug is too SCARED to drive his $850,000 Rolls-Royce in the RAIN... 😭💰"
+    assert any("höchstens 8" in h for h in cf.caption_hints(long, 20))
+    assert any("nur 2" in h for h in cf.caption_hints("Kai screams 😭", 20))
+    assert any("2 Emojis" in h for h in cf.caption_hints("Kai vs the worker 😭😭😭", 20))

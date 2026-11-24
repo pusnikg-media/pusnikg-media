@@ -399,14 +399,14 @@ def caption_hints(text, seconds=None, style="box"):
         if t.isupper(): h.append("alles in Großbuchstaben – normale Schreibweise verwenden")
         if seconds is not None and seconds > 50: h.append(f"Clip dauert {seconds:.0f} s – virale GTA-Clips liegen bei 15–45 s")
         return h
-    if len(words) < 8: h.append(f"Kontextsatz hat nur {len(words)} Wörter – Ziel ist ein ganzer Erzählsatz mit 9–15 Wörtern")
-    if len(words) > 17: h.append(f"Kontextsatz hat {len(words)} Wörter – auf höchstens 15 kürzen")
-    if not emo: h.append("kein Emoji am Ende (üblich: 😭 😂 👀 💰)")
-    elif len(emo) > 3: h.append("mehr als 3 Emojis")
+    # seit 24.11.2026 (Reel-Scout, Steven „anwenden“): kurz, 3-8 Wörter = Name, Pointe, Emoji
+    if len(words) < 3: h.append(f"Kontextsatz hat nur {len(words)} Wörter – Ziel 3–8 Wörter: Name, Pointe, Emoji")
+    if len(words) > 9: h.append(f"Kontextsatz hat {len(words)} Wörter – auf höchstens 8 kürzen (Name, Pointe, Emoji)")
+    if not emo: h.append("kein Emoji am Ende (üblich: 😭 😂 👀 💀)")
+    elif len(emo) > 2: h.append("mehr als 2 Emojis")
     elif not is_emoji(tokens(t.replace("\ufe0f", ""))[-1][0]): h.append("Emoji gehört ans Satzende")
-    if "..." not in t and "…" not in t: h.append("Satz endet nicht offen („...“ vor dem Emoji hält die Auflösung zurück)")
     caps = [w for w in words if len(w) > 2 and w.isupper() and re.search(r"[A-Z]", w)]
-    if len(caps) > 3: h.append(f"{len(caps)} Wörter in Großbuchstaben – höchstens 1–2 (das überraschende Wort)")
+    if len(caps) > 2: h.append(f"{len(caps)} Wörter in Großbuchstaben – höchstens 1 (das überraschende Wort)")
     if t.isupper(): h.append("alles in Großbuchstaben – normale Schreibweise verwenden")
     if words and not words[0][0].isupper(): h.append("Satz beginnt nicht mit dem Namen")
     if re.search(r"[.!?] +[A-Z]", re.sub(r"\.\.\.|…", "", t)): h.append("zwei Sätze – nur EIN Satz")
@@ -434,7 +434,7 @@ def caption_wrap(d, text, f, size, maxw):
 
 def caption_box(img, text, bottom, size=46, maxw=920, plain=False):
     """TikTok-style label: white rounded box, black bold text, centred, its lower edge at `bottom`.
-    Short labels: 46 px, up to 3 lines. A whole story sentence (9-15 words, reel-scout 16.11.2026): shrinks to 42/38 px, up to 4 lines."""
+    Short labels: 46 px, up to 3 lines. Since 24.11.2026 captions are short (3-8 words); longer text still shrinks to 42/38 px, up to 4 lines."""
     from PIL import Image, ImageDraw, ImageFont
     d = ImageDraw.Draw(img); ef = None
     for p_ in EMOJI_FONTS:
