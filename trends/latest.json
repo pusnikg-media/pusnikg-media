@@ -1,8 +1,8 @@
 {
- "at": "2026-11-24T16:44:57+00:00",
+ "at": "2026-11-24T20:31:14+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
-  "reddit r/GTA6: HTTP 429",
+  "reddit r/GTA6: HTTP 404",
   "reddit r/GTA: HTTP 429"
  ],
  "items": [
@@ -11,10 +11,10 @@
    "area": "irl",
    "channel": "destiny",
    "title": "boss's response",
-   "views": 11573,
-   "per_h": 622,
+   "views": 12112,
+   "per_h": 541,
    "dur": 180,
-   "age_h": 18.6,
+   "age_h": 22.4,
    "category": "Just Chatting",
    "page": "https://kick.com/destiny/clips/clip_01M8574C64C3KRZ930Y8PGFGVD",
    "video": "https://clips.kick.com/clips/05/clip_01M8574C64C3KRZ930Y8PGFGVD/playlist.m3u8",
@@ -27,10 +27,10 @@
    "area": "irl",
    "channel": "asmongold",
    "title": "rshfbdnsf",
-   "views": 10109,
-   "per_h": 602,
+   "views": 11756,
+   "per_h": 571,
    "dur": 180,
-   "age_h": 16.8,
+   "age_h": 20.6,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/asmongold/clips/clip_01M85DCD0FCM1EJBKYJYZG88C3",
    "video": "https://clips.kick.com/clips/14/clip_01M85DCD0FCM1EJBKYJYZG88C3/playlist.m3u8",
@@ -43,26 +43,26 @@
    "area": "irl",
    "channel": "sian-phan-mhanslot",
    "title": "ไม้เดียวแตก 2 แสนโครตสุด",
-   "views": 5923,
-   "per_h": 239,
+   "views": 5955,
+   "per_h": 209,
    "dur": 180,
-   "age_h": 24.8,
+   "age_h": 28.5,
    "category": "Slots & Casino",
    "page": "https://kick.com/sian-phan-mhanslot/clips/clip_01M84J25FT1SP6CQCCP5HN7Q5J",
    "video": "https://clips.kick.com/clips/40/clip_01M84J25FT1SP6CQCCP5HN7Q5J/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M84J25FT1SP6CQCCP5HN7Q5J",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "asmongold",
    "title": "w4edrftgyhuji",
-   "views": 3462,
-   "per_h": 211,
+   "views": 3883,
+   "per_h": 192,
    "dur": 40,
-   "age_h": 16.4,
+   "age_h": 20.2,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/asmongold/clips/clip_01M85EVPK3ACDWCJDZ41HETV4J",
    "video": "https://clips.kick.com/clips/13/clip_01M85EVPK3ACDWCJDZ41HETV4J/playlist.m3u8",
@@ -75,10 +75,10 @@
    "area": "irl",
    "channel": "buddha",
    "title": "verdict",
-   "views": 3265,
-   "per_h": 235,
+   "views": 3680,
+   "per_h": 209,
    "dur": 59,
-   "age_h": 13.9,
+   "age_h": 17.6,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/buddha/clips/clip_01M85P57HXKFWV6VKSZD71GNR8",
    "video": "https://clips.kick.com/clips/07/clip_01M85P57HXKFWV6VKSZD71GNR8/playlist.m3u8",
@@ -91,10 +91,10 @@
    "area": "irl",
    "channel": "krxnto1",
    "title": "another gang backoff",
-   "views": 1915,
-   "per_h": 71,
+   "views": 1975,
+   "per_h": 65,
    "dur": 54,
-   "age_h": 26.8,
+   "age_h": 30.6,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/krxnto1/clips/clip_01M84AYQSQWVN42Q42MJ6NH08H",
    "video": "https://clips.kick.com/clips/ae/clip_01M84AYQSQWVN42Q42MJ6NH08H/playlist.m3u8",
@@ -105,34 +105,34 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "buddha",
-   "title": "explain",
-   "views": 1682,
-   "per_h": 122,
-   "dur": 44,
-   "age_h": 13.8,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/buddha/clips/clip_01M85QKVM28TTV1H9WT8TR39TE",
-   "video": "https://clips.kick.com/clips/98/clip_01M85QKVM28TTV1H9WT8TR39TE/playlist.m3u8",
+   "channel": "konke_sirlee",
+   "title": "konke's first stream",
+   "views": 1861,
+   "per_h": 258,
+   "dur": 180,
+   "age_h": 7.2,
+   "category": "Just Chatting",
+   "page": "https://kick.com/konke_sirlee/clips/clip_01M86V6QRSRDD4E4CE8G1HSF1S",
+   "video": "https://clips.kick.com/clips/14/clip_01M86V6QRSRDD4E4CE8G1HSF1S/playlist.m3u8",
    "mature": false,
-   "id": "k:clip_01M85QKVM28TTV1H9WT8TR39TE",
-   "new": false
+   "id": "k:clip_01M86V6QRSRDD4E4CE8G1HSF1S",
+   "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "v_clarry",
-   "title": "yh ky tha 😱",
-   "views": 1452,
-   "per_h": 49,
-   "dur": 52,
-   "age_h": 29.4,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/v_clarry/clips/clip_01M8425MD6BD8SEVKRJMX9JVSG",
-   "video": "https://clips.kick.com/clips/41/clip_01M8425MD6BD8SEVKRJMX9JVSG/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M8425MD6BD8SEVKRJMX9JVSG",
-   "new": false
+   "channel": "blueface",
+   "title": "DAMN 😳",
+   "views": 1841,
+   "per_h": 52,
+   "dur": 20,
+   "age_h": 35.6,
+   "category": "IRL",
+   "page": "https://kick.com/blueface/clips/clip_01M83SP881YJRWECYYTK28TFJ4",
+   "video": "https://clips.kick.com/clips/34/clip_01M83SP881YJRWECYYTK28TFJ4/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M83SP881YJRWECYYTK28TFJ4",
+   "new": true
   },
   {
    "src": "news",
@@ -140,27 +140,55 @@
    "site": "Kotaku",
    "title": "GTA 6 Is PlayStation’s Biggest Launch Of All Time, With Over 39 Million Players",
    "page": "https://kotaku.com/gta6-grand-theft-auto-6-ps5-playstation-sony-record-sales-2001000009",
-   "age_h": 1.2,
+   "age_h": 5.0,
    "id": "n:gta-6-is-playstation-s-biggest-launch-of-all-time-with-over-",
    "sites": [
     "Kotaku",
     "Eurogamer",
     "RockstarINTEL",
-    "IGN",
     "PC Gamer"
+   ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "The Witcher 4 Will Be a GTA 6-Sized Leap Forward, CD Projekt Red Says",
+   "page": "https://www.polygon.com/the-witcher-4-vs-gta-6-cyberpunk-2-cd-projekt-red/",
+   "age_h": 0.3,
+   "id": "n:the-witcher-4-will-be-a-gta-6-sized-leap-forward-cd-projekt-",
+   "sites": [
+    "Polygon",
+    "VGC",
+    "Eurogamer"
    ],
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Rockstar Reportedly Open to Selling Red Dead Redemption TV Rights",
-   "page": "https://insider-gaming.com/red-dead-redemption-developer-reportedly-open-to-selling-tv-rights/",
-   "age_h": 0.6,
-   "id": "n:rockstar-reportedly-open-to-selling-red-dead-redemption-tv-r",
+   "site": "IGN",
+   "title": "GTA 6 Gets Officially Licensed Trading Cards Based on In-Game Collectibles",
+   "page": "https://www.ign.com/articles/gta-6-gets-officially-licensed-trading-cards-based-on-in-game-collectibles",
+   "age_h": 1.7,
+   "id": "n:gta-6-gets-officially-licensed-trading-cards-based-on-in-gam",
    "sites": [
-    "Insider Gaming",
+    "IGN",
+    "RockstarINTEL",
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "Rockstar is reportedly interested in a Red Dead Redemption film or TV show",
+   "page": "https://www.videogameschronicle.com/news/rockstar-is-reportedly-interested-in-a-red-dead-redemption-film-or-tv-show/",
+   "age_h": 5.0,
+   "id": "n:rockstar-is-reportedly-interested-in-a-red-dead-redemption-f",
+   "sites": [
     "VGC",
     "RockstarINTEL",
     "Eurogamer"
@@ -173,13 +201,12 @@
    "site": "GameSpot",
    "title": "GTA 6 Hacker Releases Full Xbox Build, And PC Modders Are Already Trying To Get It Running",
    "page": "https://www.gamespot.com/articles/gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running/",
-   "age_h": 5.4,
+   "age_h": 9.1,
    "id": "n:gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-alr",
    "sites": [
     "GameSpot",
     "Eurogamer",
-    "PC Gamer",
-    "RockstarINTEL"
+    "PC Gamer"
    ],
    "new": false
   },
@@ -187,56 +214,13 @@
    "src": "news",
    "area": "gaming",
    "site": "VGC",
-   "title": "Cyberpunk 2 creative director jokes that he’s cancelling the game after playing GTA 6",
-   "page": "https://www.videogameschronicle.com/news/cyberpunk-2-creative-director-jokes-that-hes-cancelling-the-game-after-playing-gta-6/",
-   "age_h": 6.2,
-   "id": "n:cyberpunk-2-creative-director-jokes-that-he-s-cancelling-the",
+   "title": "GTA 6: Full Vice City retro easter egg walkthrough, all rewards",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+   "age_h": 0.9,
+   "id": "n:gta-6-full-vice-city-retro-easter-egg-walkthrough-all-reward",
    "sites": [
     "VGC",
-    "PC Gamer",
     "GameSpot"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "Where To Get The Car Key Cloner In GTA 6",
-   "page": "https://www.videogameschronicle.com/guide/where-to-get-the-car-key-cloner-in-gta-6/",
-   "age_h": 0.8,
-   "id": "n:where-to-get-the-car-key-cloner-in-gta-6",
-   "sites": [
-    "VGC",
-    "Insider Gaming"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Gellhorn’s Missing Tourists Walkthrough in GTA 6—Serial Killer Mission Location & Guide",
-   "page": "https://insider-gaming.com/gellhorns-missing-tourists-gta-6/",
-   "age_h": 0.8,
-   "id": "n:gellhorn-s-missing-tourists-walkthrough-in-gta-6-serial-kill",
-   "sites": [
-    "Insider Gaming",
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "Where to Find the Mamba GT Car in GTA 6—Randy’s Wishlist Car Locations",
-   "page": "https://insider-gaming.com/where-to-find-the-mamba-gt-in-gta-6/",
-   "age_h": 2.8,
-   "id": "n:where-to-find-the-mamba-gt-car-in-gta-6-randy-s-wishlist-car",
-   "sites": [
-    "Insider Gaming",
-    "VGC"
    ],
    "new": true
   },
@@ -246,7 +230,7 @@
    "site": "Eurogamer",
    "title": "Rockstar Games reveals 23 extra tracks in GTA 6's deluxe edition soundtrack, featuring Denzel Curry, HEALTH, and more",
    "page": "https://www.eurogamer.net/gta-6-deluxe-edition-soundtrack-23-extra-tracks",
-   "age_h": 6.7,
+   "age_h": 10.5,
    "id": "n:rockstar-games-reveals-23-extra-tracks-in-gta-6-s-deluxe-edi",
    "sites": [
     "Eurogamer",
@@ -257,11 +241,24 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "How to Find and Complete the La Cascara Motel Illegal Operation in GTA 6—All Key Valuables",
+   "page": "https://insider-gaming.com/gta-6-la-cascara-motel-key-valuables/",
+   "age_h": 0.0,
+   "id": "n:how-to-find-and-complete-the-la-cascara-motel-illegal-operat",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "PC Gamer",
-   "title": "GTA 6 is great because of all its murderous NPCs, not in spite of them",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-is-great-because-of-all-its-murderous-npcs-not-in-spite-of-them/",
-   "age_h": 0.1,
-   "id": "n:gta-6-is-great-because-of-all-its-murderous-npcs-not-in-spit",
+   "title": "Best unique weapons to grab early in GTA 6: Get yourself some silenced weapons without the price tag",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-unique-weapons/",
+   "age_h": 0.2,
+   "id": "n:best-unique-weapons-to-grab-early-in-gta-6-get-yourself-some",
    "sites": [
     "PC Gamer"
    ],
@@ -270,13 +267,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "GTA 6 players are discovering, who needs a gun when it's easier to rob a store with a crate of beer?",
-   "page": "https://www.eurogamer.net/grand-theft-auto-6-beer-robberies",
-   "age_h": 0.2,
-   "id": "n:gta-6-players-are-discovering-who-needs-a-gun-when-it-s-easi",
+   "site": "PC Gamer",
+   "title": "How to steal the Ocelot Bloodless Jugular in GTA 6",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
+   "age_h": 0.7,
+   "id": "n:how-to-steal-the-ocelot-bloodless-jugular-in-gta-6",
    "sites": [
-    "Eurogamer"
+    "PC Gamer"
    ],
    "new": true
   }
