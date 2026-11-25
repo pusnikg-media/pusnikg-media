@@ -1,8 +1,8 @@
 {
- "at": "2026-11-24T20:31:14+00:00",
+ "at": "2026-11-25T05:39:52+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
-  "reddit r/GTA6: HTTP 404",
+  "reddit r/GTA6: HTTP 429",
   "reddit r/GTA: HTTP 429"
  ],
  "items": [
@@ -10,59 +10,27 @@
    "src": "kick",
    "area": "irl",
    "channel": "destiny",
-   "title": "boss's response",
-   "views": 12112,
-   "per_h": 541,
-   "dur": 180,
-   "age_h": 22.4,
+   "title": "dndgnn",
+   "views": 7282,
+   "per_h": 1175,
+   "dur": 76,
+   "age_h": 6.2,
    "category": "Just Chatting",
-   "page": "https://kick.com/destiny/clips/clip_01M8574C64C3KRZ930Y8PGFGVD",
-   "video": "https://clips.kick.com/clips/05/clip_01M8574C64C3KRZ930Y8PGFGVD/playlist.m3u8",
+   "page": "https://kick.com/destiny/clips/clip_01M87Y3XVP3XNMJT0AW1SRA4KT",
+   "video": "https://clips.kick.com/clips/71/clip_01M87Y3XVP3XNMJT0AW1SRA4KT/playlist.m3u8",
    "mature": false,
-   "id": "k:clip_01M8574C64C3KRZ930Y8PGFGVD",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "asmongold",
-   "title": "rshfbdnsf",
-   "views": 11756,
-   "per_h": 571,
-   "dur": 180,
-   "age_h": 20.6,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/asmongold/clips/clip_01M85DCD0FCM1EJBKYJYZG88C3",
-   "video": "https://clips.kick.com/clips/14/clip_01M85DCD0FCM1EJBKYJYZG88C3/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M85DCD0FCM1EJBKYJYZG88C3",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "sian-phan-mhanslot",
-   "title": "ไม้เดียวแตก 2 แสนโครตสุด",
-   "views": 5955,
-   "per_h": 209,
-   "dur": 180,
-   "age_h": 28.5,
-   "category": "Slots & Casino",
-   "page": "https://kick.com/sian-phan-mhanslot/clips/clip_01M84J25FT1SP6CQCCP5HN7Q5J",
-   "video": "https://clips.kick.com/clips/40/clip_01M84J25FT1SP6CQCCP5HN7Q5J/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M84J25FT1SP6CQCCP5HN7Q5J",
-   "new": false
+   "id": "k:clip_01M87Y3XVP3XNMJT0AW1SRA4KT",
+   "new": true
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "asmongold",
    "title": "w4edrftgyhuji",
-   "views": 3883,
-   "per_h": 192,
+   "views": 4452,
+   "per_h": 152,
    "dur": 40,
-   "age_h": 20.2,
+   "age_h": 29.3,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/asmongold/clips/clip_01M85EVPK3ACDWCJDZ41HETV4J",
    "video": "https://clips.kick.com/clips/13/clip_01M85EVPK3ACDWCJDZ41HETV4J/playlist.m3u8",
@@ -75,10 +43,10 @@
    "area": "irl",
    "channel": "buddha",
    "title": "verdict",
-   "views": 3680,
-   "per_h": 209,
+   "views": 4138,
+   "per_h": 154,
    "dur": 59,
-   "age_h": 17.6,
+   "age_h": 26.8,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/buddha/clips/clip_01M85P57HXKFWV6VKSZD71GNR8",
    "video": "https://clips.kick.com/clips/07/clip_01M85P57HXKFWV6VKSZD71GNR8/playlist.m3u8",
@@ -89,49 +57,98 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "krxnto1",
-   "title": "another gang backoff",
-   "views": 1975,
-   "per_h": 65,
-   "dur": 54,
-   "age_h": 30.6,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/krxnto1/clips/clip_01M84AYQSQWVN42Q42MJ6NH08H",
-   "video": "https://clips.kick.com/clips/ae/clip_01M84AYQSQWVN42Q42MJ6NH08H/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M84AYQSQWVN42Q42MJ6NH08H",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "konke_sirlee",
    "title": "konke's first stream",
-   "views": 1861,
-   "per_h": 258,
+   "views": 2153,
+   "per_h": 131,
    "dur": 180,
-   "age_h": 7.2,
+   "age_h": 16.4,
    "category": "Just Chatting",
    "page": "https://kick.com/konke_sirlee/clips/clip_01M86V6QRSRDD4E4CE8G1HSF1S",
    "video": "https://clips.kick.com/clips/14/clip_01M86V6QRSRDD4E4CE8G1HSF1S/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M86V6QRSRDD4E4CE8G1HSF1S",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "paymoneywubby",
+   "title": "gta6",
+   "views": 1990,
+   "per_h": 81,
+   "dur": 180,
+   "age_h": 24.6,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/paymoneywubby/clips/clip_01M85Z3CAACFS13G2P2ETBY19Q",
+   "video": "https://clips.kick.com/clips/cb/clip_01M85Z3CAACFS13G2P2ETBY19Q/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M85Z3CAACFS13G2P2ETBY19Q",
    "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "blueface",
-   "title": "DAMN 😳",
-   "views": 1841,
-   "per_h": 52,
-   "dur": 20,
-   "age_h": 35.6,
-   "category": "IRL",
-   "page": "https://kick.com/blueface/clips/clip_01M83SP881YJRWECYYTK28TFJ4",
-   "video": "https://clips.kick.com/clips/34/clip_01M83SP881YJRWECYYTK28TFJ4/playlist.m3u8",
+   "channel": "asmongold",
+   "title": "dhtgndgn",
+   "views": 1966,
+   "per_h": 328,
+   "dur": 53,
+   "age_h": 6.0,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/asmongold/clips/clip_01M87YQQT7TY5D6G3WP1RHHZFM",
+   "video": "https://clips.kick.com/clips/73/clip_01M87YQQT7TY5D6G3WP1RHHZFM/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M83SP881YJRWECYYTK28TFJ4",
+   "id": "k:clip_01M87YQQT7TY5D6G3WP1RHHZFM",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "buddha",
+   "title": "explain",
+   "views": 1950,
+   "per_h": 73,
+   "dur": 44,
+   "age_h": 26.7,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/buddha/clips/clip_01M85QKVM28TTV1H9WT8TR39TE",
+   "video": "https://clips.kick.com/clips/98/clip_01M85QKVM28TTV1H9WT8TR39TE/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M85QKVM28TTV1H9WT8TR39TE",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "manax",
+   "title": "ATM gone wrong",
+   "views": 1757,
+   "per_h": 66,
+   "dur": 53,
+   "age_h": 26.7,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/manax/clips/clip_01M85QKF3XHYSNZ8SFD5HES2SS",
+   "video": "https://clips.kick.com/clips/7b/clip_01M85QKF3XHYSNZ8SFD5HES2SS/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M85QKF3XHYSNZ8SFD5HES2SS",
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "The difference between The Witcher 3 and Witcher 4 will be 'comparable' to that of GTA 5 and GTA 6, CD Projekt boss says: 'I mean, it's been 11 years'",
+   "page": "https://www.pcgamer.com/games/the-witcher/the-difference-between-the-witcher-3-and-witcher-4-will-be-comparable-to-that-of-gta-5-and-gta-6-cd-projekt-boss-says-i-mean-its-been-11-years/",
+   "age_h": 6.6,
+   "id": "n:the-difference-between-the-witcher-3-and-witcher-4-will-be-c",
+   "sites": [
+    "PC Gamer",
+    "IGN",
+    "Polygon",
+    "VGC",
+    "Eurogamer"
+   ],
    "new": true
   },
   {
@@ -140,7 +157,7 @@
    "site": "Kotaku",
    "title": "GTA 6 Is PlayStation’s Biggest Launch Of All Time, With Over 39 Million Players",
    "page": "https://kotaku.com/gta6-grand-theft-auto-6-ps5-playstation-sony-record-sales-2001000009",
-   "age_h": 5.0,
+   "age_h": 14.1,
    "id": "n:gta-6-is-playstation-s-biggest-launch-of-all-time-with-over-",
    "sites": [
     "Kotaku",
@@ -153,14 +170,13 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Polygon",
-   "title": "The Witcher 4 Will Be a GTA 6-Sized Leap Forward, CD Projekt Red Says",
-   "page": "https://www.polygon.com/the-witcher-4-vs-gta-6-cyberpunk-2-cd-projekt-red/",
-   "age_h": 0.3,
-   "id": "n:the-witcher-4-will-be-a-gta-6-sized-leap-forward-cd-projekt-",
+   "site": "PC Gamer",
+   "title": "Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competitors they've been slow to come back",
+   "page": "https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/",
+   "age_h": 2.1,
+   "id": "n:analyst-estimates-call-of-duty-lost-44-of-its-players-when-g",
    "sites": [
-    "Polygon",
-    "VGC",
+    "PC Gamer",
     "Eurogamer"
    ],
    "new": true
@@ -168,13 +184,54 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "IGN",
-   "title": "GTA 6 Gets Officially Licensed Trading Cards Based on In-Game Collectibles",
-   "page": "https://www.ign.com/articles/gta-6-gets-officially-licensed-trading-cards-based-on-in-game-collectibles",
-   "age_h": 1.7,
-   "id": "n:gta-6-gets-officially-licensed-trading-cards-based-on-in-gam",
+   "site": "Insider Gaming",
+   "title": "GTA 6 Runs Better On Xbox Series X Than Base PS5",
+   "page": "https://insider-gaming.com/gta-6-runs-better-xbox-series-x/",
+   "age_h": 6.8,
+   "id": "n:gta-6-runs-better-on-xbox-series-x-than-base-ps5",
    "sites": [
-    "IGN",
+    "Insider Gaming",
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "Vice City portal Easter egg location in GTA 6",
+   "page": "https://www.polygon.com/gta-6-vice-city-portal-easter-egg-location-walkthrough-how-to-open/",
+   "age_h": 7.5,
+   "id": "n:vice-city-portal-easter-egg-location-in-gta-6",
+   "sites": [
+    "Polygon",
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "How to Get Jason & Lucia’s Relationship to Max Level in GTA 6",
+   "page": "https://insider-gaming.com/jason-lucia-relationship-max-gta-6/",
+   "age_h": 8.2,
+   "id": "n:how-to-get-jason-lucia-s-relationship-to-max-level-in-gta-6",
+   "sites": [
+    "Insider Gaming",
+    "Polygon"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "GTA VI Official Trading Cards Announced by Panini",
+   "page": "https://rockstarintel.com/gta-vi-official-trading-cards-announced-by-panini/",
+   "age_h": 11.3,
+   "id": "n:gta-vi-official-trading-cards-announced-by-panini",
+   "sites": [
     "RockstarINTEL",
     "VGC"
    ],
@@ -183,13 +240,12 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "Rockstar is reportedly interested in a Red Dead Redemption film or TV show",
-   "page": "https://www.videogameschronicle.com/news/rockstar-is-reportedly-interested-in-a-red-dead-redemption-film-or-tv-show/",
-   "age_h": 5.0,
-   "id": "n:rockstar-is-reportedly-interested-in-a-red-dead-redemption-f",
+   "site": "RockstarINTEL",
+   "title": "Rockstar Reportedly Selling Red Dead Redemption Movie and TV Rights For $100 Million",
+   "page": "https://rockstarintel.com/rockstar-reportedly-selling-red-dead-redemption-movie-and-tv-rights-for-100-million/",
+   "age_h": 17.0,
+   "id": "n:rockstar-reportedly-selling-red-dead-redemption-movie-and-tv",
    "sites": [
-    "VGC",
     "RockstarINTEL",
     "Eurogamer"
    ],
@@ -201,79 +257,24 @@
    "site": "GameSpot",
    "title": "GTA 6 Hacker Releases Full Xbox Build, And PC Modders Are Already Trying To Get It Running",
    "page": "https://www.gamespot.com/articles/gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running/",
-   "age_h": 9.1,
+   "age_h": 18.3,
    "id": "n:gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-alr",
    "sites": [
     "GameSpot",
-    "Eurogamer",
-    "PC Gamer"
+    "Eurogamer"
    ],
    "new": false
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6: Full Vice City retro easter egg walkthrough, all rewards",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
-   "age_h": 0.9,
-   "id": "n:gta-6-full-vice-city-retro-easter-egg-walkthrough-all-reward",
+   "site": "Kotaku",
+   "title": "The Actor Behind GTA 6′s Viral NPC Mandy Reacts To All Of The Attention: ‘It’s Sort Of Bittersweet’",
+   "page": "https://kotaku.com/the-actor-behind-gta-6s-viral-npc-mandy-reacts-to-all-of-the-attention-its-sort-of-bittersweet-2001000149",
+   "age_h": 5.1,
+   "id": "n:the-actor-behind-gta-6-s-viral-npc-mandy-reacts-to-all-of-th",
    "sites": [
-    "VGC",
-    "GameSpot"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Eurogamer",
-   "title": "Rockstar Games reveals 23 extra tracks in GTA 6's deluxe edition soundtrack, featuring Denzel Curry, HEALTH, and more",
-   "page": "https://www.eurogamer.net/gta-6-deluxe-edition-soundtrack-23-extra-tracks",
-   "age_h": 10.5,
-   "id": "n:rockstar-games-reveals-23-extra-tracks-in-gta-6-s-deluxe-edi",
-   "sites": [
-    "Eurogamer",
-    "RockstarINTEL"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "How to Find and Complete the La Cascara Motel Illegal Operation in GTA 6—All Key Valuables",
-   "page": "https://insider-gaming.com/gta-6-la-cascara-motel-key-valuables/",
-   "age_h": 0.0,
-   "id": "n:how-to-find-and-complete-the-la-cascara-motel-illegal-operat",
-   "sites": [
-    "Insider Gaming"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Best unique weapons to grab early in GTA 6: Get yourself some silenced weapons without the price tag",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-unique-weapons/",
-   "age_h": 0.2,
-   "id": "n:best-unique-weapons-to-grab-early-in-gta-6-get-yourself-some",
-   "sites": [
-    "PC Gamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "How to steal the Ocelot Bloodless Jugular in GTA 6",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
-   "age_h": 0.7,
-   "id": "n:how-to-steal-the-ocelot-bloodless-jugular-in-gta-6",
-   "sites": [
-    "PC Gamer"
+    "Kotaku"
    ],
    "new": true
   }
