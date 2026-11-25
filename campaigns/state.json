@@ -219,7 +219,7 @@
 "budget": 9000.0,
 "clippers": 3100,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {},
 "description": "Get paid to clip JasonTheWeen's content! twitch.tv/jasontheween tiktok.com/@jasontheween instagram.com/jasontheween",
@@ -227,7 +227,7 @@
 "launched": "3 weeks ago",
 "category": "Entertainment",
 "files": 4,
-"detail_at": "2026-11-25T06:19:38+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 0
 },
 "200ea21b-be80-4db8-b552-8e32b148604e": {
@@ -364,6 +364,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2100.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2100.0
 ]
 ],
 "id": "200ea21b-be80-4db8-b552-8e32b148604e",
@@ -384,7 +388,7 @@
 "budget": 8500.0,
 "clippers": 22,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "Only clip the official FaZe Flank Invitational broadcast (twitch.tv/faze, twitch.tv/zoomaa) or the players' own POV streams",
 "Keep the FaZe Flank Invitational logo on screen for the whole clip, never over the action",
@@ -424,9 +428,9 @@
 "launched": "1 week ago",
 "category": "Gaming",
 "files": 3,
-"views": 544700,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 300.0
+"views": 1100000,
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 0
 },
 "ac91f9d8-146d-4450-a78c-2c275eedd8f9": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -562,6 +566,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 60.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+60.0
 ]
 ],
 "id": "ac91f9d8-146d-4450-a78c-2c275eedd8f9",
@@ -580,7 +588,7 @@
 "budget": 1000.0,
 "clippers": 3,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -599,7 +607,7 @@
 "launched": "1 month ago",
 "category": "Relationships & Dating",
 "files": 2,
-"detail_at": "2026-11-22T12:01:10+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 0
 },
 "b8cf722b-8dd2-444b-b3cc-b1a7d23104ba": {
@@ -736,6 +744,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1600.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2400.0
 ]
 ],
 "id": "b8cf722b-8dd2-444b-b3cc-b1a7d23104ba",
@@ -751,26 +763,26 @@
 "pool": false,
 "rate": 2.5,
 "rate_max": 3.0,
-"spent": 1600.0,
-"budget": 11900.0,
-"clippers": 48,
+"spent": 255.0,
+"budget": 5973.0,
+"clippers": 63,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
 "rate": 3.0,
-"min_payout": 3.0,
+"min_payout": 6.0,
 "max_payout": 500.0
 },
 "instagram": {
 "rate": 3.0,
-"min_payout": 3.0,
+"min_payout": 6.0,
 "max_payout": 500.0
 },
 "youtube": {
 "rate": 3.0,
-"min_payout": 3.0,
+"min_payout": 6.0,
 "max_payout": 500.0
 }
 },
@@ -780,8 +792,8 @@
 "category": "Gaming",
 "files": 3,
 "hidden_rules": 1,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 100.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 900.0
 },
 "9f03e708-da0c-4ef6-992f-0c05cb56111f": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -917,6 +929,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 267.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+270.0
 ]
 ],
 "id": "9f03e708-da0c-4ef6-992f-0c05cb56111f",
@@ -931,11 +947,11 @@
 "pool": false,
 "rate": 1.5,
 "rate_max": 1.5,
-"spent": 267.0,
+"spent": 270.0,
 "budget": 1500.0,
 "clippers": 9,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -951,11 +967,11 @@
 },
 "description": "Get paid per view to post reaction videos to The Weeknd's Hong Kong performance on TikTok + IG. MV Edit. Must add the official sound (muted) + #TheWeeknd #fayewong. Multiple posts allowed. Read brief below. Max Pay $200+",
 "status": "Accepting clips",
-"launched": "2 weeks ago",
+"launched": "3 weeks ago",
 "category": "Music",
 "files": 3,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 43.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 45.0
 },
 "b25afad5-4bb6-4f26-a54b-af7e7c753782": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -1091,6 +1107,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 0.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+0.0
 ]
 ],
 "id": "b25afad5-4bb6-4f26-a54b-af7e7c753782",
@@ -1109,7 +1129,7 @@
 "budget": 1000.0,
 "clippers": 2,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -1128,7 +1148,7 @@
 "launched": "1 week ago",
 "category": "Music",
 "files": 2,
-"detail_at": "2026-11-22T12:01:10+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 0
 },
 "4c7d1ede-2fca-406a-971d-f651880168aa": {
@@ -1261,6 +1281,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 285.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+285.0
 ]
 ],
 "id": "4c7d1ede-2fca-406a-971d-f651880168aa",
@@ -1279,7 +1303,7 @@
 "budget": 1500.0,
 "clippers": 25,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -1295,11 +1319,11 @@
 },
 "description": "Get paid per view to clip The Weeknd's Hong Kong performance on TikTok + IG. Cut the best moments from the official performance video, hook in 2s. Must add the official sound (muted) + #TheWeeknd #fayewong. Multiple posts allowed. Read brief below. Max Pay $200+",
 "status": "Accepting clips",
-"launched": "2 weeks ago",
+"launched": "3 weeks ago",
 "category": "Music",
 "files": 2,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 7.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 6.0
 },
 "14f743b2-c5ca-4f3e-8c0d-3010c485005d": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -1435,6 +1459,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 347800.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+347800.0
 ]
 ],
 "id": "14f743b2-c5ca-4f3e-8c0d-3010c485005d",
@@ -1455,7 +1483,7 @@
 "budget": 353000.0,
 "clippers": 360,
 "age": "11mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "Ne pas dénigrer l'image de Yomi Denzel et d'autres créateurs",
 "Content requirements",
@@ -1490,9 +1518,9 @@
 "category": "Personal Brand",
 "files": 1,
 "hidden_rules": 0,
-"views": 714500000,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 600.0
+"views": 722700000,
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 200.0
 },
 "791ad52c-a938-48b3-8f7e-f43ca10b110c": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -1752,6 +1780,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 413100.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+413800.0
 ]
 ],
 "id": "1db63081-715e-4e04-9b11-fbc1d4e8e700",
@@ -1767,11 +1799,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.5,
-"spent": 413100.0,
+"spent": 413800.0,
 "budget": 433300.0,
 "clippers": 4400,
 "age": "6mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -1796,8 +1828,8 @@
 "category": "Technology",
 "files": 2,
 "hidden_rules": 1,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 1600.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 1900.0
 },
 "f7ac5280-4d8b-4f96-9c49-351a0c1f6477": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -1933,6 +1965,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 890.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+936.0
 ]
 ],
 "id": "f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
@@ -1949,11 +1985,11 @@
 "pool": false,
 "rate": 0.5,
 "rate_max": 0.5,
-"spent": 890.0,
+"spent": 936.0,
 "budget": 2000.0,
 "clippers": 672,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -1979,11 +2015,11 @@
 },
 "description": "Patrick Habirora Fighting Edits/Clipping X Jake Paul MVP x PFL Interview Clipping",
 "status": "Accepting clips",
-"launched": "1 week ago",
+"launched": "2 weeks ago",
 "category": "Entertainment",
 "files": 2,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 156.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 148.0
 },
 "db285bc6-9a06-43ff-ae4b-4b5ebf149b8b": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -2282,6 +2318,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 92600.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+93400.0
 ]
 ],
 "id": "e509f6d0-13bf-42bc-8450-09e12c216c33",
@@ -2297,11 +2337,11 @@
 "pool": false,
 "rate": 2.0,
 "rate_max": 2.0,
-"spent": 92600.0,
+"spent": 93400.0,
 "budget": 100100.0,
-"clippers": 410,
+"clippers": 411,
 "age": "5mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "youtube": {
@@ -2326,8 +2366,8 @@
 "category": "Sports",
 "files": 4,
 "hidden_rules": 2,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 1800.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 1400.0
 },
 "cef221f8-63ce-46b6-b27b-e4145d110b62": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -2463,6 +2503,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 523.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+524.0
 ]
 ],
 "id": "cef221f8-63ce-46b6-b27b-e4145d110b62",
@@ -2478,11 +2522,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 523.0,
+"spent": 524.0,
 "budget": 1000.0,
 "clippers": 39,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -2644,6 +2688,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 26900.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+26900.0
 ]
 ],
 "id": "188c3e39-7850-4896-94df-e7a5be0cfec3",
@@ -2655,17 +2703,16 @@
 "tiktok",
 "instagram",
 "youtube",
-"x",
-"facebook"
+"x"
 ],
 "pool": false,
 "rate": 0.5,
 "rate_max": 1.0,
-"spent": 26900.0,
-"budget": 173000.0,
+"spent": 23940.0,
+"budget": 85000.0,
 "clippers": 977,
 "age": "4mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "youtube": {
@@ -2695,7 +2742,7 @@
 "category": "Business",
 "files": 2,
 "hidden_rules": 1,
-"detail_at": "2026-11-22T12:01:10+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 100.0
 },
 "a1cefc3b-4533-438f-8e70-a7299550f1cf": {
@@ -3380,6 +3427,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 14400.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+14500.0
 ]
 ],
 "id": "0afd04db-e183-4411-9957-0b890ef272b5",
@@ -3395,11 +3446,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 3.0,
-"spent": 14400.0,
+"spent": 14454.0,
 "budget": 26300.0,
 "clippers": 96,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -3423,8 +3474,8 @@
 "launched": "2 months ago",
 "category": "Entertainment",
 "files": 2,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 200.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 100.0
 },
 "485fd01a-6710-4cce-a0e7-723de8990827": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -3508,6 +3559,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 254.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+257.0
 ]
 ],
 "id": "485fd01a-6710-4cce-a0e7-723de8990827",
@@ -3523,11 +3578,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 254.0,
+"spent": 257.0,
 "budget": 2000.0,
 "clippers": 138,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "MUST HAVE: \"The Other Side of Hard with Ken Rideout\" on screen for the full clip. Clips without it are rejected",
 "MUST BE 25 to 60 seconds. Shorter or longer clips are rejected",
@@ -3706,6 +3761,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 16200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+16200.0
 ]
 ],
 "id": "18496202-6029-4a29-a44c-9fc33678fcb9",
@@ -3721,11 +3780,11 @@
 "pool": false,
 "rate": 2.0,
 "rate_max": 3.0,
-"spent": 16200.0,
+"spent": 16159.0,
 "budget": 23000.0,
 "clippers": 81,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -3749,7 +3808,7 @@
 "launched": "3 months ago",
 "category": "Entertainment",
 "files": 2,
-"detail_at": "2026-11-22T12:01:10+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 100.0
 },
 "86842687-ba2b-4638-a024-995dcf3d25a3": {
@@ -3886,6 +3945,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 16000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+16000.0
 ]
 ],
 "id": "86842687-ba2b-4638-a024-995dcf3d25a3",
@@ -3903,11 +3966,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 2.0,
-"spent": 16000.0,
+"spent": 16022.0,
 "budget": 20000.0,
 "clippers": 34,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -3942,7 +4005,7 @@
 "category": "Personal Brand",
 "files": 2,
 "hidden_rules": 1,
-"detail_at": "2026-11-22T12:01:10+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 200.0
 },
 "6590957d-cd29-4135-8483-0cda5f6ed6a8": {
@@ -4047,6 +4110,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1300.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1300.0
 ]
 ],
 "id": "6590957d-cd29-4135-8483-0cda5f6ed6a8",
@@ -4066,7 +4133,7 @@
 "budget": 2000.0,
 "clippers": 344,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -4423,6 +4490,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 4700.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+4700.0
 ]
 ],
 "id": "7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
@@ -4438,11 +4509,11 @@
 "pool": false,
 "rate": 0.2,
 "rate_max": 1.0,
-"spent": 4700.0,
+"spent": 4739.0,
 "budget": 12000.0,
 "clippers": 43,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "✅ Publica mínimo 2 videos cortos al día en todas las redes",
 "✅ Sabri tiene que aparecer hablando minimo un 75% del video.",
@@ -4487,9 +4558,9 @@
 "launched": "2 months ago",
 "category": "Lifestyle",
 "files": 1,
-"views": 16000000,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 500.0
+"views": 22700000,
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 0
 },
 "2e7ca35e-4cff-4755-bae8-8f9f5d727c0b": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -4625,6 +4696,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2400.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2400.0
 ]
 ],
 "id": "2e7ca35e-4cff-4755-bae8-8f9f5d727c0b",
@@ -4639,11 +4714,11 @@
 "pool": false,
 "rate": 2.0,
 "rate_max": 2.0,
-"spent": 2400.0,
+"spent": 2433.0,
 "budget": 10000.0,
-"clippers": 35,
+"clippers": 36,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -4662,7 +4737,7 @@
 "launched": "1 month ago",
 "category": "Entertainment",
 "files": 3,
-"detail_at": "2026-11-22T12:01:10+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 0
 },
 "488d8a64-6c64-446d-8038-b74001934705": {
@@ -4799,6 +4874,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 7900.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+8000.0
 ]
 ],
 "id": "488d8a64-6c64-446d-8038-b74001934705",
@@ -4816,11 +4895,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 7900.0,
+"spent": 7959.0,
 "budget": 9000.0,
 "clippers": 83,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -4851,12 +4930,12 @@
 },
 "description": "Post our clips of Nepal's honey hunters: men on rope ladders 200m up a cliff, harvesting wild mad honey. Best fit: documentary, rare food, expedition and travel pages. Also post our talking head clips and only Clip in English will be accepted",
 "status": "Accepting clips",
-"launched": "1 month ago",
+"launched": "2 months ago",
 "category": "Documentary",
 "files": 8,
 "hidden_rules": 1,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 100.0
 },
 "23022f84-5715-4ba5-a647-abc4baf4f0f8": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -4984,6 +5063,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1800.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1800.0
 ]
 ],
 "id": "23022f84-5715-4ba5-a647-abc4baf4f0f8",
@@ -5002,7 +5085,7 @@
 "budget": 5300.0,
 "clippers": 48,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -5158,6 +5241,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2200.0
 ]
 ],
 "id": "7b094e71-4021-4c56-95ad-e1c0c3cd7f1a",
@@ -5177,7 +5264,7 @@
 "budget": 5000.0,
 "clippers": 63,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -5412,6 +5499,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2400.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2400.0
 ]
 ],
 "id": "2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
@@ -5431,7 +5522,7 @@
 "budget": 4900.0,
 "clippers": 33,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -5456,7 +5547,7 @@
 "category": "Fan Page",
 "files": 2,
 "detail_at": "2026-11-22T17:59:29+00:00",
-"paid_24h": 100.0
+"paid_24h": 0
 },
 "29c92590-738b-4421-a675-75e5ddfe4c32": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -5710,6 +5801,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2500.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2100.0
 ]
 ],
 "id": "c0c37381-e244-4643-98bd-edbff4bc1465",
@@ -5725,11 +5820,11 @@
 "pool": false,
 "rate": 6.0,
 "rate_max": 6.0,
-"spent": 2500.0,
+"spent": 2100.0,
 "budget": 4000.0,
 "clippers": 1800,
 "age": "6mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -5891,6 +5986,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2200.0
 ]
 ],
 "id": "5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
@@ -5910,7 +6009,7 @@
 "budget": 4000.0,
 "clippers": 268,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -5935,7 +6034,7 @@
 "category": "Entertainment",
 "files": 4,
 "detail_at": "2026-11-22T17:59:29+00:00",
-"paid_24h": 100.0,
+"paid_24h": 0,
 "hidden_rules": 1
 },
 "96f76f67-78be-472b-a067-58ae07e98fc9": {
@@ -6383,6 +6482,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2000.0
 ]
 ],
 "id": "07d35069-c63d-4382-bf14-0a70921f7693",
@@ -6401,7 +6504,7 @@
 "budget": 2300.0,
 "clippers": 47,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "@CashOnlyJon",
 "Up to $250 Per Reel + $1,000 Bonus",
@@ -6580,6 +6683,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2100.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2200.0
 ]
 ],
 "id": "ee00b0fb-b07e-4750-bfc8-867f01bec211",
@@ -6595,11 +6702,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 2100.0,
+"spent": 2200.0,
 "budget": 2300.0,
 "clippers": 48,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -6624,7 +6731,7 @@
 "category": "Entrepreneurship",
 "files": 3,
 "detail_at": "2026-11-22T17:59:29+00:00",
-"paid_24h": 0
+"paid_24h": 100.0
 },
 "1e8549b7-3b37-4d61-9bcb-22ae1c5005f6": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -6760,6 +6867,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1500.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1500.0
 ]
 ],
 "id": "1e8549b7-3b37-4d61-9bcb-22ae1c5005f6",
@@ -6779,7 +6890,7 @@
 "budget": 2100.0,
 "clippers": 99,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "youtube": {
@@ -6941,6 +7052,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1300.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1300.0
 ]
 ],
 "id": "722616d3-c98e-4821-810c-f2d88c0edee5",
@@ -6958,7 +7073,7 @@
 "budget": 2000.0,
 "clippers": 423,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -7109,6 +7224,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1600.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1600.0
 ]
 ],
 "id": "70314901-9544-4615-a37a-22e31f6b0014",
@@ -7126,9 +7245,9 @@
 "rate_max": 1.0,
 "spent": 1600.0,
 "budget": 2000.0,
-"clippers": 56,
+"clippers": 58,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -7148,7 +7267,7 @@
 "category": "Personal Brand",
 "files": 2,
 "detail_at": "2026-11-22T17:59:29+00:00",
-"paid_24h": 200.0
+"paid_24h": 0
 },
 "5e5be7d5-2a2e-4bf1-b017-5e5d956ec269": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -7417,6 +7536,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1100.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1100.0
 ]
 ],
 "id": "d32a5d03-8ab1-4e9f-919b-00b4b3ade0e9",
@@ -7433,9 +7556,9 @@
 "rate_max": 0.9,
 "spent": 1100.0,
 "budget": 1600.0,
-"clippers": 99,
+"clippers": 102,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "facebook": {
@@ -7720,6 +7843,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 778.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+778.0
 ]
 ],
 "id": "16a7f214-3e58-40e6-b4b1-b337a8dc71fc",
@@ -7738,8 +7865,8 @@
 "spent": 778.0,
 "budget": 1500.0,
 "clippers": 29,
-"age": "7mo",
-"last": "2026-11-25T06:19:38+00:00",
+"age": "8mo",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "youtube": {
@@ -7900,6 +8027,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1000.0
 ]
 ],
 "id": "25533ec6-2d77-471d-9c90-7e095b522e66",
@@ -7919,7 +8050,7 @@
 "budget": 1500.0,
 "clippers": 56,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -8357,6 +8488,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1000.0
 ]
 ],
 "id": "b4eb73f4-8fcf-48ef-a80c-f35472764f14",
@@ -8376,7 +8511,7 @@
 "budget": 1400.0,
 "clippers": 31,
 "age": "4mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "youtube": {
@@ -8624,6 +8759,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 637.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+637.0
 ]
 ],
 "id": "e5b1e838-31d8-4a4e-9584-841c01456638",
@@ -8642,7 +8781,7 @@
 "budget": 1000.0,
 "clippers": 51,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -8798,6 +8937,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 816.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+816.0
 ]
 ],
 "id": "9efb4281-815f-49ed-85a7-de73c1fb87d8",
@@ -8818,7 +8961,7 @@
 "budget": 1000.0,
 "clippers": 58,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -8976,6 +9119,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 263.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+265.0
 ]
 ],
 "id": "407756b7-fee5-406b-b116-1c8eafcfac69",
@@ -8989,11 +9136,11 @@
 "pool": false,
 "rate": 0.25,
 "rate_max": 0.25,
-"spent": 263.0,
+"spent": 265.0,
 "budget": 1000.0,
 "clippers": 154,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -9008,7 +9155,7 @@
 "category": "Music",
 "files": 3,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 4.0
+"paid_24h": 5.0
 },
 "b865e0da-2b57-463f-886a-c800abd14f60": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -9850,6 +9997,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 3900.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+3900.0
 ]
 ],
 "id": "6fe4c1aa-c8ca-4836-836b-01ab2540b337",
@@ -9869,7 +10020,7 @@
 "budget": 5000.0,
 "clippers": 87,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -10277,6 +10428,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 3900.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+3900.0
 ]
 ],
 "id": "bc8f7d6a-3a31-4a4a-88ea-bb88245e418e",
@@ -10295,7 +10450,7 @@
 "budget": 5000.0,
 "clippers": 22,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -10730,6 +10885,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1200.0
 ]
 ],
 "id": "19859ab5-057c-4cff-847c-93155c896827",
@@ -10749,7 +10908,7 @@
 "budget": 2500.0,
 "clippers": 122,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "NEWEST EPISODE - CLIP THIS ONE:",
 "youtu.be/hfaCgw_alj0",
@@ -10925,6 +11084,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 4800.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+4800.0
 ]
 ],
 "id": "a696e6af-18aa-4320-a61e-32e3bcf40a44",
@@ -10945,7 +11108,7 @@
 "budget": 5000.0,
 "clippers": 27,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -11112,6 +11275,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1500.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1500.0
 ]
 ],
 "id": "e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
@@ -11130,7 +11297,7 @@
 "budget": 2000.0,
 "clippers": 21,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -11580,6 +11747,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 4400.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+4400.0
 ]
 ],
 "id": "c86efdd3-c2cb-4a4f-b6a2-2c5a90b3c6fc",
@@ -11597,7 +11768,7 @@
 "budget": 4600.0,
 "clippers": 21,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -11612,7 +11783,7 @@
 "category": "Health & Wellness",
 "files": 1,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 100.0
+"paid_24h": 0
 },
 "6d896f33-152f-42a9-92f4-662199228349": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -11748,6 +11919,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 620.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+639.0
 ]
 ],
 "id": "6d896f33-152f-42a9-92f4-662199228349",
@@ -11764,11 +11939,11 @@
 "pool": false,
 "rate": 1.5,
 "rate_max": 1.5,
-"spent": 620.0,
+"spent": 639.0,
 "budget": 1000.0,
 "clippers": 93,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "Give context to clips if possible.",
 "Give high energy moments but does not have to be loud=funny only situations.",
@@ -11811,7 +11986,7 @@
 "hidden_rules": 0,
 "views": 565900,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 10.0
+"paid_24h": 29.0
 },
 "b237ddaf-6320-48da-b7d7-a8d8791eb30e": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -11947,6 +12122,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1400.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1400.0
 ]
 ],
 "id": "b237ddaf-6320-48da-b7d7-a8d8791eb30e",
@@ -11966,7 +12145,7 @@
 "budget": 2000.0,
 "clippers": 20,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -12128,6 +12307,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 61700.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+62400.0
 ]
 ],
 "id": "f354afb5-bc73-4090-b723-35f65dbba276",
@@ -12143,11 +12326,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 61700.0,
+"spent": 62400.0,
 "budget": 66000.0,
-"clippers": 708,
+"clippers": 714,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "youtube": {
@@ -12173,7 +12356,7 @@
 "files": 1,
 "hidden_rules": 1,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 1300.0
+"paid_24h": 1700.0
 },
 "311ba494-5f1f-40d7-ade1-92607ba1df06": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -12309,6 +12492,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 811.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+813.0
 ]
 ],
 "id": "311ba494-5f1f-40d7-ade1-92607ba1df06",
@@ -12323,11 +12510,11 @@
 "pool": false,
 "rate": 1.1,
 "rate_max": 1.1,
-"spent": 811.0,
+"spent": 813.0,
 "budget": 1100.0,
 "clippers": 17,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -12348,7 +12535,7 @@
 "files": 1,
 "hidden_rules": 1,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 19.0
+"paid_24h": 16.0
 },
 "ceff4682-947e-40c9-b7df-81a806c89943": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -12539,6 +12726,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1300.0
 ]
 ],
 "id": "b536fdfc-4d10-4069-92ff-103b65cecdbe",
@@ -12553,11 +12744,11 @@
 "pool": false,
 "rate": 3.0,
 "rate_max": 3.0,
-"spent": 1200.0,
+"spent": 1300.0,
 "budget": 1500.0,
 "clippers": 20,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -12577,7 +12768,7 @@
 "category": "Twitch",
 "files": 1,
 "detail_at": "2026-11-23T18:15:50+00:00",
-"paid_24h": 0
+"paid_24h": 100.0
 },
 "cc16421d-18b0-46a5-aea2-6f2f2ae370bf": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -12741,6 +12932,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 562.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+562.0
 ]
 ],
 "id": "60e19a6d-066c-4090-8728-02eb6bd789ef",
@@ -12760,7 +12955,7 @@
 "budget": 5000.0,
 "clippers": 14,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -12854,6 +13049,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 10900.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+10900.0
 ]
 ],
 "id": "816b45a1-dc3f-42b5-b41e-81a1ebf8360e",
@@ -12868,11 +13067,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 10894.0,
-"budget": 12253.0,
+"spent": 10900.0,
+"budget": 12300.0,
 "clippers": 62,
 "age": "4mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -13009,6 +13208,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 4600.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+4600.0
 ]
 ],
 "id": "705f6e21-38af-408c-9e55-c77e4611bf09",
@@ -13028,7 +13231,7 @@
 "budget": 10500.0,
 "clippers": 90,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -13449,6 +13652,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2800.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2800.0
 ]
 ],
 "id": "e7b7aa0d-8d5c-460b-bb1e-803ad0492bc5",
@@ -13465,9 +13672,9 @@
 "rate_max": 1.5,
 "spent": 2800.0,
 "budget": 6000.0,
-"clippers": 197,
+"clippers": 201,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -13488,7 +13695,7 @@
 "files": 2,
 "hidden_rules": 2,
 "detail_at": "2026-11-23T18:15:50+00:00",
-"paid_24h": 500.0
+"paid_24h": 400.0
 },
 "03b93a42-c89e-4f53-9885-3fbc86091867": {
 "first": "2026-11-16T07:48:38+00:00",
@@ -13964,6 +14171,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 781.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+781.0
 ]
 ],
 "id": "06b0dba7-cb5f-409b-a5e6-2e64824de464",
@@ -13983,7 +14194,7 @@
 "budget": 1000.0,
 "clippers": 30,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -14197,6 +14408,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 7800.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+8100.0
 ]
 ],
 "id": "4a70ba91-44be-4dc8-946c-47e45a2403ea",
@@ -14210,11 +14425,11 @@
 "pool": false,
 "rate": 3.0,
 "rate_max": 3.0,
-"spent": 7800.0,
+"spent": 8100.0,
 "budget": 17500.0,
-"clippers": 21,
+"clippers": 22,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -14229,7 +14444,7 @@
 "category": "Entertainment",
 "files": 2,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 600.0
+"paid_24h": 700.0
 },
 "6b341aff-816a-419d-9b6f-c4763559be12": {
 "first": "2026-11-16T12:14:18+00:00",
@@ -14790,6 +15005,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 5000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+5000.0
 ]
 ],
 "id": "796d5d55-c4ae-4172-9670-4afd85668a4d",
@@ -14810,7 +15029,7 @@
 "budget": 6000.0,
 "clippers": 103,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -15938,6 +16157,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 3700.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+3800.0
 ]
 ],
 "id": "9b248ec0-0be4-4223-bab1-202b5013c0e7",
@@ -15953,11 +16176,11 @@
 "pool": false,
 "rate": 0.8,
 "rate_max": 1.0,
-"spent": 3700.0,
+"spent": 3800.0,
 "budget": 3900.0,
-"clippers": 103,
+"clippers": 104,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -16201,6 +16424,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 266.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+267.0
 ]
 ],
 "id": "bb11120c-865b-4d12-911f-aec4e701767c",
@@ -16215,11 +16442,11 @@
 "pool": false,
 "rate": 1.5,
 "rate_max": 1.5,
-"spent": 266.0,
+"spent": 267.0,
 "budget": 1000.0,
 "clippers": 63,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -16710,6 +16937,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 594.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+595.0
 ]
 ],
 "id": "45508e74-e67d-4922-b89d-53dafe4cf70d",
@@ -16724,11 +16955,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 594.0,
+"spent": 595.0,
 "budget": 1500.0,
 "clippers": 34,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -16748,7 +16979,7 @@
 "category": "Streamer",
 "files": 1,
 "detail_at": "2026-11-23T12:19:26+00:00",
-"paid_24h": 9.0
+"paid_24h": 3.0
 },
 "65724060-69de-4dc7-a523-4843b7358871": {
 "first": "2026-11-17T12:08:28+00:00",
@@ -16964,6 +17195,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 6500.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+6700.0
 ]
 ],
 "id": "b5ff48d7-ec63-443a-b767-3a430a6f71f4",
@@ -16979,11 +17214,11 @@
 "pool": false,
 "rate": 2.0,
 "rate_max": 2.0,
-"spent": 6500.0,
+"spent": 6700.0,
 "budget": 12000.0,
-"clippers": 146,
+"clippers": 147,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -17011,7 +17246,7 @@
 "by_country": "TikTok YouTube Pak, Ind, Ban Bangladesh, India, Pakistan Not paid Other countries $2.00/1K No country data Not paid",
 "files": 1,
 "detail_at": "2026-11-23T12:19:26+00:00",
-"paid_24h": 4300.0
+"paid_24h": 1100.0
 },
 "3fdeeed8-d822-4eeb-a35c-f839bc6880ee": {
 "first": "2026-11-17T18:15:18+00:00",
@@ -17019,6 +17254,10 @@
 [
 "2026-11-17T18:15:18+00:00",
 603.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+974.0
 ]
 ],
 "id": "3fdeeed8-d822-4eeb-a35c-f839bc6880ee",
@@ -17034,12 +17273,22 @@
 "pool": false,
 "rate": 1.25,
 "rate_max": 1.25,
-"spent": 603.0,
+"spent": 974.0,
 "budget": 1000.0,
-"clippers": 114,
-"age": "2d",
-"last": "2026-11-17T18:15:18+00:00",
-"brief": [],
+"clippers": 108,
+"age": "1w",
+"last": "2026-11-25T12:24:01+00:00",
+"brief": [
+"Videos to Clip-",
+"youtu.be/G91kquwMD2k",
+"youtu.be/aMLyywmalvI",
+"youtu.be/_hE44Jp3Ks0",
+"American views",
+"Videos must have CEO Brickz name visible and use @CEO Brickz and #Ceobrickz in the description.",
+"Strong hooks only.",
+"Creator requirements",
+"Experienced clipper, must know what a strong hook is and has a following"
+],
 "platform_rates": {
 "instagram": {
 "rate": 1.25,
@@ -17059,11 +17308,12 @@
 },
 "description": "Get paid to clip CEO BRICKZ, all videos are in the Brief. Tier 1 Audience Required: Minimum 40% of total views must come from Tier 1 countries, with American (USA) viewers preferred. Audience demographics must be shared Must use @CEO Brickz and #CEOBrickz",
 "status": "Accepting clips",
-"launched": "2 days ago",
+"launched": "1 week ago",
 "category": "Entertainment",
 "files": 1,
-"detail_at": "2026-11-17T18:15:18+00:00",
-"paid_24h": 0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 0,
+"views": 1100000
 },
 "5354eab8-c428-483f-9d34-09c8db7fc324": {
 "first": "2026-11-17T18:15:18+00:00",
@@ -17167,6 +17417,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1100.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1100.0
 ]
 ],
 "id": "5354eab8-c428-483f-9d34-09c8db7fc324",
@@ -17186,7 +17440,7 @@
 "budget": 1500.0,
 "clippers": 32,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -17315,6 +17569,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 574.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+574.0
 ]
 ],
 "id": "ab5d3166-40cc-466e-ab4c-82d525624918",
@@ -17334,7 +17592,7 @@
 "budget": 1000.0,
 "clippers": 28,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -17360,7 +17618,7 @@
 "files": 5,
 "hidden_rules": 1,
 "detail_at": "2026-11-24T06:18:36+00:00",
-"paid_24h": 1.0
+"paid_24h": 0
 },
 "60918377-62b2-48c4-abc9-9a2f7ad10b50": {
 "first": "2026-11-17T18:15:18+00:00",
@@ -17657,6 +17915,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 360.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+360.0
 ]
 ],
 "id": "40046522-56d9-45ad-9198-faea8eca90c6",
@@ -17675,7 +17937,7 @@
 "budget": 2000.0,
 "clippers": 6,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -17695,7 +17957,7 @@
 "category": "Music",
 "files": 1,
 "detail_at": "2026-11-24T12:21:05+00:00",
-"paid_24h": 72.0
+"paid_24h": 16.0
 },
 "985dc674-c75e-44fc-ac87-1b1506324389": {
 "first": "2026-11-18T06:24:15+00:00",
@@ -18542,6 +18804,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 352.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+377.0
 ]
 ],
 "id": "e4a9465f-d415-4e30-bf53-e46014958bc6",
@@ -18558,11 +18824,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 352.0,
+"spent": 377.0,
 "budget": 10000.0,
 "clippers": 29,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -18593,7 +18859,7 @@
 "files": 3,
 "hidden_rules": 1,
 "detail_at": "2026-11-25T06:19:38+00:00",
-"paid_24h": 68.0
+"paid_24h": 87.0
 },
 "0ee8e3c7-b8ee-4eee-bf22-fbd3bd863b01": {
 "first": "2026-11-18T18:09:43+00:00",
@@ -18940,6 +19206,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 3000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+3100.0
 ]
 ],
 "id": "c2e7d8ec-2121-41dc-9c0a-f7d7da5fd6c4",
@@ -18954,11 +19224,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 3000.0,
+"spent": 3100.0,
 "budget": 3400.0,
 "clippers": 11,
 "age": "3mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -18978,8 +19248,8 @@
 "category": "Sports",
 "files": 1,
 "hidden_rules": 1,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 200.0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 300.0
 },
 "2eaa14fb-6927-4136-897e-b096e0d907d6": {
 "first": "2026-11-19T06:21:39+00:00",
@@ -19095,22 +19365,22 @@
 "youtube",
 "x"
 ],
-"pool": false,
+"pool": true,
 "rate": null,
 "rate_max": null,
 "spent": null,
 "budget": 20000.0,
 "clippers": 1600,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {},
 "description": "Get paid to clip the best/funniest moments from CORE content! ⬇️",
 "status": "Accepting clips",
-"launched": "1 week ago",
+"launched": "2 weeks ago",
 "category": "Streamer",
 "files": 4,
-"detail_at": "2026-11-22T12:01:10+00:00",
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 0
 },
 "8072f4df-bfec-4975-9041-6a9ea78c1011": {
@@ -19159,6 +19429,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 721.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+721.0
 ]
 ],
 "id": "8072f4df-bfec-4975-9041-6a9ea78c1011",
@@ -19177,7 +19451,7 @@
 "budget": 1500.0,
 "clippers": 92,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -19304,6 +19578,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 4200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+4200.0
 ]
 ],
 "id": "6d11ea9e-b814-494a-a135-30dcbcc39645",
@@ -19318,11 +19596,11 @@
 "pool": false,
 "rate": 1.5,
 "rate_max": 1.75,
-"spent": 4212.0,
+"spent": 4200.0,
 "budget": 10000.0,
 "clippers": 61,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -19414,6 +19692,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 29.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+29.0
 ]
 ],
 "id": "2c1875a7-4ac7-4f73-a263-859c39072628",
@@ -19432,7 +19714,7 @@
 "budget": 1500.0,
 "clippers": 7,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -19624,6 +19906,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 3200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+3900.0
 ]
 ],
 "id": "f0b0fbac-c754-45e5-96f6-aef8796dac91",
@@ -19640,11 +19926,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 3200.0,
+"spent": 3900.0,
 "budget": 7000.0,
-"clippers": 190,
+"clippers": 199,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -19674,7 +19960,7 @@
 "category": "Kick",
 "files": 2,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 1000.0
+"paid_24h": 1600.0
 },
 "2872b137-97d0-4a14-9f2b-1166989597ec": {
 "first": "2026-11-19T18:10:58+00:00",
@@ -19788,6 +20074,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 107.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+107.0
 ]
 ],
 "id": "3d9ef19f-1256-47ca-b630-e33e2c923969",
@@ -19807,7 +20097,7 @@
 "budget": 2500.0,
 "clippers": 18,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -19900,6 +20190,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1500.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1600.0
 ]
 ],
 "id": "ab601e43-9404-4375-8e1e-2b49db1aef26",
@@ -19915,11 +20209,11 @@
 "pool": false,
 "rate": 2.0,
 "rate_max": 2.0,
-"spent": 1500.0,
+"spent": 1600.0,
 "budget": 12400.0,
 "clippers": 25,
 "age": "5d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -20084,6 +20378,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2600.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2600.0
 ]
 ],
 "id": "1077608b-3026-4535-9cf4-7990aa95d64f",
@@ -20102,7 +20400,7 @@
 "budget": 2700.0,
 "clippers": 14,
 "age": "8mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -20424,6 +20722,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 656.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+656.0
 ]
 ],
 "id": "e27ebc99-3cf6-43a2-be45-3ad152386247",
@@ -20444,7 +20746,7 @@
 "budget": 1000.0,
 "clippers": 65,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -20534,6 +20836,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 772.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+838.0
 ]
 ],
 "id": "586210f7-cf29-438c-886d-66f18f73839a",
@@ -20548,11 +20854,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 772.0,
+"spent": 838.0,
 "budget": 2000.0,
 "clippers": 85,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -20572,7 +20878,7 @@
 "category": "Lifestyle",
 "files": 1,
 "detail_at": "2026-11-24T06:18:36+00:00",
-"paid_24h": 190.0
+"paid_24h": 220.0
 },
 "168599e4-92fa-4e52-9ef6-2556a30381e7": {
 "first": "2026-11-20T18:17:02+00:00",
@@ -20902,6 +21208,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 807.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+820.0
 ]
 ],
 "id": "079cf4a5-9629-4a7a-b4e8-ca33d5b40258",
@@ -20917,11 +21227,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.3,
-"spent": 807.0,
+"spent": 820.0,
 "budget": 1800.0,
-"clippers": 26,
+"clippers": 27,
 "age": "3w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -20946,7 +21256,7 @@
 "category": "Mobile App",
 "files": 1,
 "detail_at": "2026-11-24T18:10:27+00:00",
-"paid_24h": 22.0
+"paid_24h": 35.0
 },
 "f8706345-4971-43c8-999b-42346038ce02": {
 "first": "2026-11-22T06:16:23+00:00",
@@ -21126,6 +21436,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1500.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1600.0
 ]
 ],
 "id": "207a3da1-3aae-4cfb-a263-c8503c687134",
@@ -21143,11 +21457,11 @@
 "pool": false,
 "rate": 0.75,
 "rate_max": 1.25,
-"spent": 1509.0,
+"spent": 1600.0,
 "budget": 2000.0,
 "clippers": 202,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -21183,7 +21497,7 @@
 "files": 1,
 "hidden_rules": 2,
 "detail_at": "2026-11-25T06:19:38+00:00",
-"paid_24h": 0
+"paid_24h": 100.0
 },
 "5a0781f5-2721-43cb-bc76-72882dd9b0e9": {
 "first": "2026-11-22T12:01:10+00:00",
@@ -21288,6 +21602,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1200.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1400.0
 ]
 ],
 "id": "76893dce-b122-4a37-8042-c8d7229d086d",
@@ -21305,11 +21623,11 @@
 "pool": false,
 "rate": 0.5,
 "rate_max": 0.5,
-"spent": 1200.0,
+"spent": 1381.0,
 "budget": 5000.0,
-"clippers": 247,
-"age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"clippers": 250,
+"age": "2w",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -21340,11 +21658,11 @@
 },
 "description": "VAVADA — Post Clips & Get Views Create and post engaging clips in English on your own account. Choose a format that works for your audience: sports, gaming, humour, highlights or other entertaining content.",
 "status": "Accepting clips",
-"launched": "1 week ago",
+"launched": "2 weeks ago",
 "category": "Gambling",
 "files": 1,
-"detail_at": "2026-11-22T12:01:10+00:00",
-"paid_24h": 0
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 460.0
 },
 "18ec67db-f05c-4ea2-ba45-d1fcc61c88a5": {
 "first": "2026-11-22T12:01:10+00:00",
@@ -21504,6 +21822,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 2000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+2200.0
 ]
 ],
 "id": "bb66f9eb-b90e-4dd0-8cee-9f3cd566c9a0",
@@ -21521,11 +21843,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 2000.0,
+"spent": 2200.0,
 "budget": 10000.0,
 "clippers": 152,
 "age": "6d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -21560,7 +21882,7 @@
 "category": "Entertainment",
 "files": 2,
 "detail_at": "2026-11-23T06:30:26+00:00",
-"paid_24h": 700.0
+"paid_24h": 800.0
 },
 "686f6547-172e-4b76-99be-c26eabd5a2cf": {
 "first": "2026-11-23T06:30:26+00:00",
@@ -21592,6 +21914,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 252.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+261.0
 ]
 ],
 "id": "686f6547-172e-4b76-99be-c26eabd5a2cf",
@@ -21606,11 +21932,11 @@
 "pool": false,
 "rate": 0.5,
 "rate_max": 0.5,
-"spent": 252.0,
+"spent": 261.0,
 "budget": 1000.0,
 "clippers": 35,
 "age": "3d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -21845,6 +22171,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 674.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+840.0
 ]
 ],
 "id": "02b6bc2c-3b99-4710-a15b-0b926633cd1a",
@@ -21860,11 +22190,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 674.0,
+"spent": 840.0,
 "budget": 1000.0,
-"clippers": 14,
+"clippers": 15,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -21889,7 +22219,7 @@
 "category": "Entertainment",
 "files": 3,
 "detail_at": "2026-11-23T18:15:50+00:00",
-"paid_24h": 91.0
+"paid_24h": 234.0
 },
 "91c5082d-7c89-4359-8653-db87a4ca01d5": {
 "first": "2026-11-24T06:18:36+00:00",
@@ -21908,6 +22238,10 @@
 ],
 [
 "2026-11-25T06:19:38+00:00",
+0.0
+],
+[
+"2026-11-25T12:24:01+00:00",
 0.0
 ]
 ],
@@ -21928,7 +22262,7 @@
 "budget": 4000.0,
 "clippers": 0,
 "age": "1d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -21973,6 +22307,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 0.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+0.0
 ]
 ],
 "id": "c3e0abdc-c0d9-46bf-ad79-c6800cd7d4e3",
@@ -21992,7 +22330,7 @@
 "budget": 4000.0,
 "clippers": 0,
 "age": "1d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -22038,6 +22376,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 3100.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+3200.0
 ]
 ],
 "id": "802cf95a-ea84-4070-9a96-8a917831cb16",
@@ -22053,11 +22395,11 @@
 "pool": false,
 "rate": 0.3,
 "rate_max": 0.3,
-"spent": 3100.0,
+"spent": 3200.0,
 "budget": 15000.0,
 "clippers": 77,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -22086,7 +22428,7 @@
 "files": 3,
 "hidden_rules": 1,
 "detail_at": "2026-11-24T06:18:36+00:00",
-"paid_24h": 1700.0
+"paid_24h": 1600.0
 },
 "94a8c6f8-cd63-460d-a267-b721cbe5c51c": {
 "first": "2026-11-24T06:18:36+00:00",
@@ -22161,6 +22503,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 328.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+339.0
 ]
 ],
 "id": "28e95189-4b8d-4ef7-9329-14b45dc3dc2d",
@@ -22175,11 +22521,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 328.0,
+"spent": 339.0,
 "budget": 1000.0,
 "clippers": 38,
 "age": "6d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -22199,7 +22545,7 @@
 "category": "Entertainment",
 "files": 6,
 "detail_at": "2026-11-24T06:18:36+00:00",
-"paid_24h": 42.0
+"paid_24h": 44.0
 },
 "41ebe09d-401e-4d79-b910-e74d2f144e41": {
 "first": "2026-11-24T06:18:36+00:00",
@@ -22219,6 +22565,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 165.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+225.0
 ]
 ],
 "id": "41ebe09d-401e-4d79-b910-e74d2f144e41",
@@ -22232,11 +22582,11 @@
 "pool": false,
 "rate": 0.5,
 "rate_max": 0.5,
-"spent": 165.0,
+"spent": 225.0,
 "budget": 1000.0,
 "clippers": 42,
 "age": "3d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -22252,7 +22602,7 @@
 "files": 1,
 "hidden_rules": 1,
 "detail_at": "2026-11-24T06:18:36+00:00",
-"paid_24h": 115.0
+"paid_24h": 158.0
 },
 "ea416af3-f1aa-4b56-9c8b-f2a51e6d6df4": {
 "first": "2026-11-24T06:18:36+00:00",
@@ -22263,6 +22613,10 @@
 ],
 [
 "2026-11-25T06:19:38+00:00",
+2400.0
+],
+[
+"2026-11-25T12:24:01+00:00",
 2400.0
 ]
 ],
@@ -22283,7 +22637,7 @@
 "budget": 5000.0,
 "clippers": 17,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -22308,7 +22662,7 @@
 "category": "Personal Brand",
 "files": 1,
 "detail_at": "2026-11-24T06:18:36+00:00",
-"paid_24h": 200.0
+"paid_24h": 0
 },
 "93b81d7f-211f-4961-95c7-93b2b78f087d": {
 "first": "2026-11-24T06:18:36+00:00",
@@ -22319,6 +22673,10 @@
 ],
 [
 "2026-11-25T06:19:38+00:00",
+1700.0
+],
+[
+"2026-11-25T12:24:01+00:00",
 1700.0
 ]
 ],
@@ -22340,7 +22698,7 @@
 "budget": 5000.0,
 "clippers": 12,
 "age": "2w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "x": {
@@ -22371,7 +22729,7 @@
 "files": 2,
 "hidden_rules": 1,
 "detail_at": "2026-11-24T06:18:36+00:00",
-"paid_24h": 100.0
+"paid_24h": 0
 },
 "b5063b46-6922-4227-8da5-f0f4560386ef": {
 "first": "2026-11-24T12:21:05+00:00",
@@ -22491,6 +22849,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 1000.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+1000.0
 ]
 ],
 "id": "ebc7dd27-5d08-4d06-86d5-659706286077",
@@ -22509,7 +22871,7 @@
 "budget": 2000.0,
 "clippers": 64,
 "age": "4mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -22594,6 +22956,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 3600.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+3700.0
 ]
 ],
 "id": "1391fb95-e8a3-4f0b-b146-d0d786e6aee0",
@@ -22609,11 +22975,11 @@
 "pool": false,
 "rate": 5.0,
 "rate_max": 5.0,
-"spent": 3600.0,
+"spent": 3700.0,
 "budget": 12000.0,
 "clippers": 30,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -22641,7 +23007,7 @@
 "by_country": "TikTok YouTube Pak, Ind, Ban Bangladesh, India, Pakistan Not paid Other countries $5.00/1K No country data Not paid",
 "files": 1,
 "detail_at": "2026-11-24T18:10:27+00:00",
-"paid_24h": 400.0
+"paid_24h": 500.0
 },
 "e50854d4-3991-4981-bf84-b8911e52c0f3": {
 "first": "2026-11-24T18:10:27+00:00",
@@ -22694,6 +23060,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 352.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+355.0
 ]
 ],
 "id": "6c0cb168-82d6-45ae-9e7c-b407aa1c6616",
@@ -22709,11 +23079,11 @@
 "pool": false,
 "rate": 0.5,
 "rate_max": 0.5,
-"spent": 352.0,
+"spent": 355.0,
 "budget": 1000.0,
 "clippers": 22,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -22738,7 +23108,7 @@
 "category": "iOS App",
 "files": 2,
 "detail_at": "2026-11-24T18:10:27+00:00",
-"paid_24h": 130.0
+"paid_24h": 133.0
 },
 "565184e8-b802-4b36-8508-dd9b82949e23": {
 "first": "2026-11-24T18:10:27+00:00",
@@ -22750,6 +23120,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 228.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+232.0
 ]
 ],
 "id": "565184e8-b802-4b36-8508-dd9b82949e23",
@@ -22765,11 +23139,11 @@
 "pool": false,
 "rate": 0.5,
 "rate_max": 0.5,
-"spent": 228.0,
+"spent": 232.0,
 "budget": 1000.0,
 "clippers": 97,
-"age": "5d",
-"last": "2026-11-25T06:19:38+00:00",
+"age": "6d",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -22794,7 +23168,7 @@
 "category": "Sports Podcast",
 "files": 4,
 "detail_at": "2026-11-24T18:10:27+00:00",
-"paid_24h": 41.0
+"paid_24h": 45.0
 },
 "fe4d1c34-4ed5-4895-9995-0d63bb5cb5a8": {
 "first": "2026-11-24T18:10:27+00:00",
@@ -22806,6 +23180,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 471.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+483.0
 ]
 ],
 "id": "fe4d1c34-4ed5-4895-9995-0d63bb5cb5a8",
@@ -22821,11 +23199,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 2.0,
-"spent": 471.0,
+"spent": 483.0,
 "budget": 2300.0,
 "clippers": 20,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "instagram": {
@@ -22851,7 +23229,7 @@
 "files": 2,
 "hidden_rules": 1,
 "detail_at": "2026-11-24T18:10:27+00:00",
-"paid_24h": 10.0
+"paid_24h": 22.0
 },
 "dc7183a8-7779-4b54-99a8-b7ac8c8452ec": {
 "first": "2026-11-25T06:19:38+00:00",
@@ -22864,16 +23242,17 @@
 "platforms": [
 "tiktok",
 "instagram",
-"youtube"
+"youtube",
+"x"
 ],
-"pool": true,
+"pool": false,
 "rate": null,
 "rate_max": null,
 "spent": null,
 "budget": 25000.0,
 "clippers": 64,
 "age": "3d",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {},
 "description": "Clip content from Lacy's social media accounts (TikTok, IG, YT) READ THE RULES AND REQUIREMENTS HERE: Campaign ending 21st of December.",
@@ -22890,6 +23269,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 212.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+213.0
 ]
 ],
 "id": "6e79148f-eac9-4ba0-8794-ea50f423a8bc",
@@ -22903,11 +23286,11 @@
 "pool": false,
 "rate": 0.5,
 "rate_max": 0.5,
-"spent": 212.0,
+"spent": 213.0,
 "budget": 1000.0,
 "clippers": 23,
 "age": "1w",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -22923,7 +23306,7 @@
 "files": 2,
 "hidden_rules": 2,
 "detail_at": "2026-11-25T06:19:38+00:00",
-"paid_24h": 0
+"paid_24h": 1.0
 },
 "e621e0b4-fca8-4ff8-a655-d7a580568459": {
 "first": "2026-11-25T06:19:38+00:00",
@@ -22931,6 +23314,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 5100.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+5200.0
 ]
 ],
 "id": "e621e0b4-fca8-4ff8-a655-d7a580568459",
@@ -22945,11 +23332,11 @@
 "pool": false,
 "rate": 1.0,
 "rate_max": 1.0,
-"spent": 5122.0,
+"spent": 5200.0,
 "budget": 7000.0,
 "clippers": 10,
 "age": "2mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [
 "Jesus debe aparecer en minimo el 85% del video",
 "El video debe durar minimo 15 segundos",
@@ -22978,7 +23365,7 @@
 "hidden_rules": 0,
 "views": 6600000,
 "detail_at": "2026-11-25T06:19:38+00:00",
-"paid_24h": 0
+"paid_24h": 100.0
 },
 "8e776e0c-9225-4ec0-8dce-2beba746435b": {
 "first": "2026-11-25T06:19:38+00:00",
@@ -22986,6 +23373,10 @@
 [
 "2026-11-25T06:19:38+00:00",
 421.0
+],
+[
+"2026-11-25T12:24:01+00:00",
+423.0
 ]
 ],
 "id": "8e776e0c-9225-4ec0-8dce-2beba746435b",
@@ -23001,11 +23392,11 @@
 "pool": false,
 "rate": 0.6,
 "rate_max": 1.0,
-"spent": 421.0,
+"spent": 423.0,
 "budget": 1000.0,
 "clippers": 13,
 "age": "1mo",
-"last": "2026-11-25T06:19:38+00:00",
+"last": "2026-11-25T12:24:01+00:00",
 "brief": [],
 "platform_rates": {
 "tiktok": {
@@ -23031,7 +23422,7 @@
 "files": 1,
 "hidden_rules": 1,
 "detail_at": "2026-11-25T06:19:38+00:00",
-"paid_24h": 0
+"paid_24h": 2.0
 },
 "1fd67e9d-d2b1-4694-8f6f-ae90dae12bcc": {
 "first": "2026-11-25T06:19:38+00:00",
@@ -23071,6 +23462,118 @@
 "category": "Gambling",
 "files": 1,
 "detail_at": "2026-11-25T06:19:38+00:00",
+"paid_24h": 0
+},
+"d6c42071-e0b9-4faf-8918-3b730cdfcd2d": {
+"first": "2026-11-25T12:24:01+00:00",
+"hist": [
+[
+"2026-11-25T12:24:01+00:00",
+139.0
+]
+],
+"id": "d6c42071-e0b9-4faf-8918-3b730cdfcd2d",
+"url": "https://contentrewards.com/c/campaigns/d6c42071-e0b9-4faf-8918-3b730cdfcd2d",
+"title": "Jacks Club Clipping Campaign",
+"brand": "Jacks Club",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube",
+"x"
+],
+"pool": false,
+"rate": 0.3,
+"rate_max": 0.3,
+"spent": 139.0,
+"budget": 1000.0,
+"clippers": 23,
+"age": "1w",
+"last": "2026-11-25T12:24:01+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 0.3,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"x": {
+"rate": 0.3,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"instagram": {
+"rate": 0.3,
+"min_payout": 10.0,
+"max_payout": 100.0
+},
+"youtube": {
+"rate": 0.3,
+"min_payout": 10.0,
+"max_payout": 100.0
+}
+},
+"description": "Find the best moments from the Jacks Club stream, cut them into clips, and post with #JacksClubCasino. The more views, the more you earn. 18+",
+"status": "Accepting clips",
+"launched": "1 week ago",
+"category": "Casino",
+"files": 4,
+"hidden_rules": 1,
+"detail_at": "2026-11-25T12:24:01+00:00",
+"paid_24h": 0
+},
+"098c2c7a-a338-4638-a53f-3de82008151c": {
+"first": "2026-11-25T12:24:01+00:00",
+"hist": [
+[
+"2026-11-25T12:24:01+00:00",
+106.0
+]
+],
+"id": "098c2c7a-a338-4638-a53f-3de82008151c",
+"url": "https://contentrewards.com/c/campaigns/098c2c7a-a338-4638-a53f-3de82008151c",
+"title": "RoAutomation (Roblox)",
+"brand": "ClipMatrix",
+"verified": false,
+"platforms": [
+"tiktok",
+"instagram",
+"youtube"
+],
+"pool": false,
+"rate": 2.0,
+"rate_max": 2.0,
+"spent": 106.0,
+"budget": 3000.0,
+"clippers": 44,
+"age": "1d",
+"last": "2026-11-25T12:24:01+00:00",
+"brief": [],
+"platform_rates": {
+"tiktok": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"instagram": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+},
+"youtube": {
+"rate": 2.0,
+"min_payout": 2.0,
+"max_payout": 300.0
+}
+},
+"description": "RoAutomation is an all-in-one AI studio for making Roblox games. Its agents help you go from an idea to a playable game: plan it, build the world and game systems, make the UI and assets, playtest, prep the launch, and read your game’s numbers after it goes live.",
+"status": "Accepting clips",
+"launched": "yesterday",
+"category": "Roblox",
+"files": 4,
+"hidden_rules": 1,
+"detail_at": "2026-11-25T12:24:01+00:00",
 "paid_24h": 0
 }
 }
