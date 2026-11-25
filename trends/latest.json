@@ -1,9 +1,9 @@
 {
- "at": "2026-11-25T05:39:52+00:00",
+ "at": "2026-11-25T11:37:16+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 404",
-  "reddit r/GTA6: HTTP 429",
-  "reddit r/GTA: HTTP 429"
+  "reddit r/GTA6: HTTP 404",
+  "reddit r/GTA: HTTP 404"
  ],
  "items": [
   {
@@ -11,26 +11,26 @@
    "area": "irl",
    "channel": "destiny",
    "title": "dndgnn",
-   "views": 7282,
-   "per_h": 1175,
+   "views": 10290,
+   "per_h": 850,
    "dur": 76,
-   "age_h": 6.2,
+   "age_h": 12.1,
    "category": "Just Chatting",
    "page": "https://kick.com/destiny/clips/clip_01M87Y3XVP3XNMJT0AW1SRA4KT",
    "video": "https://clips.kick.com/clips/71/clip_01M87Y3XVP3XNMJT0AW1SRA4KT/playlist.m3u8",
    "mature": false,
    "id": "k:clip_01M87Y3XVP3XNMJT0AW1SRA4KT",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "asmongold",
    "title": "w4edrftgyhuji",
-   "views": 4452,
-   "per_h": 152,
+   "views": 4703,
+   "per_h": 133,
    "dur": 40,
-   "age_h": 29.3,
+   "age_h": 35.3,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/asmongold/clips/clip_01M85EVPK3ACDWCJDZ41HETV4J",
    "video": "https://clips.kick.com/clips/13/clip_01M85EVPK3ACDWCJDZ41HETV4J/playlist.m3u8",
@@ -43,10 +43,10 @@
    "area": "irl",
    "channel": "buddha",
    "title": "verdict",
-   "views": 4138,
-   "per_h": 154,
+   "views": 4278,
+   "per_h": 131,
    "dur": 59,
-   "age_h": 26.8,
+   "age_h": 32.7,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/buddha/clips/clip_01M85P57HXKFWV6VKSZD71GNR8",
    "video": "https://clips.kick.com/clips/07/clip_01M85P57HXKFWV6VKSZD71GNR8/playlist.m3u8",
@@ -57,12 +57,76 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "asmongold",
+   "title": "dhtgndgn",
+   "views": 3417,
+   "per_h": 285,
+   "dur": 53,
+   "age_h": 12.0,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/asmongold/clips/clip_01M87YQQT7TY5D6G3WP1RHHZFM",
+   "video": "https://clips.kick.com/clips/73/clip_01M87YQQT7TY5D6G3WP1RHHZFM/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M87YQQT7TY5D6G3WP1RHHZFM",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "paymoneywubby",
+   "title": "gta6",
+   "views": 2916,
+   "per_h": 96,
+   "dur": 180,
+   "age_h": 30.5,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/paymoneywubby/clips/clip_01M85Z3CAACFS13G2P2ETBY19Q",
+   "video": "https://clips.kick.com/clips/cb/clip_01M85Z3CAACFS13G2P2ETBY19Q/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M85Z3CAACFS13G2P2ETBY19Q",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "saab",
+   "title": "true",
+   "views": 2482,
+   "per_h": 179,
+   "dur": 27,
+   "age_h": 13.9,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/saab/clips/clip_01M87R67BH87V7YM9411S1FH8E",
+   "video": "https://clips.kick.com/clips/6a/clip_01M87R67BH87V7YM9411S1FH8E/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M87R67BH87V7YM9411S1FH8E",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "triplex",
+   "title": "TRIPLEX DA TRAGO EXTRAÑO A WARENCITA ?????",
+   "views": 2363,
+   "per_h": 338,
+   "dur": 36,
+   "age_h": 7.0,
+   "category": "IRL",
+   "page": "https://kick.com/triplex/clips/clip_01M88FHDCV829TX3VRKG2H0MND",
+   "video": "https://clips.kick.com/clips/dd/clip_01M88FHDCV829TX3VRKG2H0MND/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M88FHDCV829TX3VRKG2H0MND",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "konke_sirlee",
    "title": "konke's first stream",
-   "views": 2153,
-   "per_h": 131,
+   "views": 2300,
+   "per_h": 103,
    "dur": 180,
-   "age_h": 16.4,
+   "age_h": 22.3,
    "category": "Just Chatting",
    "page": "https://kick.com/konke_sirlee/clips/clip_01M86V6QRSRDD4E4CE8G1HSF1S",
    "video": "https://clips.kick.com/clips/14/clip_01M86V6QRSRDD4E4CE8G1HSF1S/playlist.m3u8",
@@ -71,67 +135,19 @@
    "new": false
   },
   {
-   "src": "kick",
-   "area": "irl",
-   "channel": "paymoneywubby",
-   "title": "gta6",
-   "views": 1990,
-   "per_h": 81,
-   "dur": 180,
-   "age_h": 24.6,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/paymoneywubby/clips/clip_01M85Z3CAACFS13G2P2ETBY19Q",
-   "video": "https://clips.kick.com/clips/cb/clip_01M85Z3CAACFS13G2P2ETBY19Q/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M85Z3CAACFS13G2P2ETBY19Q",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "asmongold",
-   "title": "dhtgndgn",
-   "views": 1966,
-   "per_h": 328,
-   "dur": 53,
-   "age_h": 6.0,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/asmongold/clips/clip_01M87YQQT7TY5D6G3WP1RHHZFM",
-   "video": "https://clips.kick.com/clips/73/clip_01M87YQQT7TY5D6G3WP1RHHZFM/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M87YQQT7TY5D6G3WP1RHHZFM",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "buddha",
-   "title": "explain",
-   "views": 1950,
-   "per_h": 73,
-   "dur": 44,
-   "age_h": 26.7,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/buddha/clips/clip_01M85QKVM28TTV1H9WT8TR39TE",
-   "video": "https://clips.kick.com/clips/98/clip_01M85QKVM28TTV1H9WT8TR39TE/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M85QKVM28TTV1H9WT8TR39TE",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "manax",
-   "title": "ATM gone wrong",
-   "views": 1757,
-   "per_h": 66,
-   "dur": 53,
-   "age_h": 26.7,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/manax/clips/clip_01M85QKF3XHYSNZ8SFD5HES2SS",
-   "video": "https://clips.kick.com/clips/7b/clip_01M85QKF3XHYSNZ8SFD5HES2SS/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M85QKF3XHYSNZ8SFD5HES2SS",
+   "src": "news",
+   "area": "gaming",
+   "site": "IGN",
+   "title": "GTA 6 Analysis Shows PS5 Version Suffers 'Substantially' More Frequent Frame Rate Drops Than Xbox Series X Version, Sparking Debate About Sony's 'Plays Best on PS5' Marketing",
+   "page": "https://www.ign.com/articles/gta-6-analysis-shows-ps5-version-suffers-substantially-more-frequent-frame-rate-drops-than-xbox-series-x-version-sparking-debate-about-sonys-plays-best-on-ps5-marketing",
+   "age_h": 1.4,
+   "id": "n:gta-6-analysis-shows-ps5-version-suffers-substantially-more-",
+   "sites": [
+    "IGN",
+    "Eurogamer",
+    "Insider Gaming",
+    "VGC"
+   ],
    "new": true
   },
   {
@@ -140,85 +156,25 @@
    "site": "PC Gamer",
    "title": "The difference between The Witcher 3 and Witcher 4 will be 'comparable' to that of GTA 5 and GTA 6, CD Projekt boss says: 'I mean, it's been 11 years'",
    "page": "https://www.pcgamer.com/games/the-witcher/the-difference-between-the-witcher-3-and-witcher-4-will-be-comparable-to-that-of-gta-5-and-gta-6-cd-projekt-boss-says-i-mean-its-been-11-years/",
-   "age_h": 6.6,
+   "age_h": 12.6,
    "id": "n:the-difference-between-the-witcher-3-and-witcher-4-will-be-c",
    "sites": [
     "PC Gamer",
     "IGN",
-    "Polygon",
-    "VGC",
     "Eurogamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "GTA 6 Is PlayStation’s Biggest Launch Of All Time, With Over 39 Million Players",
-   "page": "https://kotaku.com/gta6-grand-theft-auto-6-ps5-playstation-sony-record-sales-2001000009",
-   "age_h": 14.1,
-   "id": "n:gta-6-is-playstation-s-biggest-launch-of-all-time-with-over-",
-   "sites": [
-    "Kotaku",
-    "Eurogamer",
-    "RockstarINTEL",
-    "PC Gamer"
    ],
    "new": false
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competitors they've been slow to come back",
-   "page": "https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/",
-   "age_h": 2.1,
-   "id": "n:analyst-estimates-call-of-duty-lost-44-of-its-players-when-g",
+   "site": "VGC",
+   "title": "GTA 6: How to flip a car in Grand Theft Auto 6",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-how-to-flip-car-grand-theft-auto/",
+   "age_h": 0.8,
+   "id": "n:gta-6-how-to-flip-a-car-in-grand-theft-auto-6",
    "sites": [
-    "PC Gamer",
-    "Eurogamer"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "GTA 6 Runs Better On Xbox Series X Than Base PS5",
-   "page": "https://insider-gaming.com/gta-6-runs-better-xbox-series-x/",
-   "age_h": 6.8,
-   "id": "n:gta-6-runs-better-on-xbox-series-x-than-base-ps5",
-   "sites": [
-    "Insider Gaming",
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "Vice City portal Easter egg location in GTA 6",
-   "page": "https://www.polygon.com/gta-6-vice-city-portal-easter-egg-location-walkthrough-how-to-open/",
-   "age_h": 7.5,
-   "id": "n:vice-city-portal-easter-egg-location-in-gta-6",
-   "sites": [
-    "Polygon",
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "How to Get Jason & Lucia’s Relationship to Max Level in GTA 6",
-   "page": "https://insider-gaming.com/jason-lucia-relationship-max-gta-6/",
-   "age_h": 8.2,
-   "id": "n:how-to-get-jason-lucia-s-relationship-to-max-level-in-gta-6",
-   "sites": [
-    "Insider Gaming",
+    "VGC",
     "Polygon"
    ],
    "new": true
@@ -227,24 +183,10 @@
    "src": "news",
    "area": "gaming",
    "site": "RockstarINTEL",
-   "title": "GTA VI Official Trading Cards Announced by Panini",
-   "page": "https://rockstarintel.com/gta-vi-official-trading-cards-announced-by-panini/",
-   "age_h": 11.3,
-   "id": "n:gta-vi-official-trading-cards-announced-by-panini",
-   "sites": [
-    "RockstarINTEL",
-    "VGC"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "Rockstar Reportedly Selling Red Dead Redemption Movie and TV Rights For $100 Million",
-   "page": "https://rockstarintel.com/rockstar-reportedly-selling-red-dead-redemption-movie-and-tv-rights-for-100-million/",
-   "age_h": 17.0,
-   "id": "n:rockstar-reportedly-selling-red-dead-redemption-movie-and-tv",
+   "title": "Max Payne Remake Development With Rockstar Is “Amazing” Says Remedy",
+   "page": "https://rockstarintel.com/max-payne-remake-development-with-rockstar-is-amazing-says-remedy/",
+   "age_h": 0.9,
+   "id": "n:max-payne-remake-development-with-rockstar-is-amazing-says-r",
    "sites": [
     "RockstarINTEL",
     "Eurogamer"
@@ -254,10 +196,38 @@
   {
    "src": "news",
    "area": "gaming",
+   "site": "PC Gamer",
+   "title": "Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competitors they've been slow to come back",
+   "page": "https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/",
+   "age_h": 8.1,
+   "id": "n:analyst-estimates-call-of-duty-lost-44-of-its-players-when-g",
+   "sites": [
+    "PC Gamer",
+    "Eurogamer"
+   ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "Rockstar Reportedly Selling Red Dead Redemption Movie and TV Rights For $100 Million",
+   "page": "https://rockstarintel.com/rockstar-reportedly-selling-red-dead-redemption-movie-and-tv-rights-for-100-million/",
+   "age_h": 22.9,
+   "id": "n:rockstar-reportedly-selling-red-dead-redemption-movie-and-tv",
+   "sites": [
+    "RockstarINTEL",
+    "Eurogamer"
+   ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "GameSpot",
    "title": "GTA 6 Hacker Releases Full Xbox Build, And PC Modders Are Already Trying To Get It Running",
    "page": "https://www.gamespot.com/articles/gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running/",
-   "age_h": 18.3,
+   "age_h": 24.2,
    "id": "n:gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-alr",
    "sites": [
     "GameSpot",
@@ -269,12 +239,38 @@
    "src": "news",
    "area": "gaming",
    "site": "Kotaku",
-   "title": "The Actor Behind GTA 6′s Viral NPC Mandy Reacts To All Of The Attention: ‘It’s Sort Of Bittersweet’",
-   "page": "https://kotaku.com/the-actor-behind-gta-6s-viral-npc-mandy-reacts-to-all-of-the-attention-its-sort-of-bittersweet-2001000149",
-   "age_h": 5.1,
-   "id": "n:the-actor-behind-gta-6-s-viral-npc-mandy-reacts-to-all-of-th",
+   "title": "Cyberpunk 2 Development Ramps Up At CD Projekt Red, But Ambitions For The Project Are ‘Not Changed’ By GTA 6′s Success",
+   "page": "https://kotaku.com/cyberpunk-2-cd-projekt-red-the-witcher-4-sirius-gta6-rockstar-2001000233",
+   "age_h": 0.1,
+   "id": "n:cyberpunk-2-development-ramps-up-at-cd-projekt-red-but-ambit",
    "sites": [
     "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "GTA 6's best lore drops happen when you're chilling with your partner, so stop leaving them at home all the time",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-best-lore-drops-happen-when-youre-chilling-with-your-partner-so-stop-leaving-them-at-home-all-the-time/",
+   "age_h": 0.4,
+   "id": "n:gta-6-s-best-lore-drops-happen-when-you-re-chilling-with-you",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 Company Property walkthrough: How to save the weapons cargo",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-company-property-walkthrough-how-to-save-the-weapons-cargo/",
+   "age_h": 0.7,
+   "id": "n:gta-6-company-property-walkthrough-how-to-save-the-weapons-c",
+   "sites": [
+    "VGC"
    ],
    "new": true
   }

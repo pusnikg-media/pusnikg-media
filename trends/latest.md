@@ -1,35 +1,35 @@
-# Trendscout – 25.11.2026 05:39 UTC
+# Trendscout – 25.11.2026 11:37 UTC
 
 Automatisch gesammelt (Reddit, Kick, YouTube-Feeds, Gaming-News), ohne Login/Credits. NEW = beim letzten Lauf noch nicht dabei.
 
 ## GTA-6-News (letzte 30 h, Gaming-Newsseiten)
 Mehrere Quellen = große Geschichte. Für Shorts nur Fakten verwenden, die im verlinkten Artikel stehen; Leaks/Gerüchte als solche benennen.
 
-- NEW [5 Quellen] The difference between The Witcher 3 and Witcher 4 will be 'comparable' to that of GTA 5 and GTA 6, CD Projekt boss say… – PC Gamer, IGN, Polygon, VGC, vor 7 h → https://www.pcgamer.com/games/the-witcher/the-difference-between-the-witcher-3-and-witcher-4-will-be-comparable-to-that-of-gta-5-and-gta-6-cd-projekt-boss-says-i-mean-its-been-11-years/
-- [4 Quellen] GTA 6 Is PlayStation’s Biggest Launch Of All Time, With Over 39 Million Players – Kotaku, Eurogamer, RockstarINTEL, PC Gamer, vor 14 h → https://kotaku.com/gta6-grand-theft-auto-6-ps5-playstation-sony-record-sales-2001000009
-- NEW [2 Quellen] Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competi… – PC Gamer, Eurogamer, vor 2 h → https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/
-- NEW [2 Quellen] GTA 6 Runs Better On Xbox Series X Than Base PS5 – Insider Gaming, VGC, vor 7 h → https://insider-gaming.com/gta-6-runs-better-xbox-series-x/
-- NEW [2 Quellen] Vice City portal Easter egg location in GTA 6 – Polygon, VGC, vor 8 h → https://www.polygon.com/gta-6-vice-city-portal-easter-egg-location-walkthrough-how-to-open/
-- NEW [2 Quellen] How to Get Jason & Lucia’s Relationship to Max Level in GTA 6 – Insider Gaming, Polygon, vor 8 h → https://insider-gaming.com/jason-lucia-relationship-max-gta-6/
-- NEW [2 Quellen] GTA VI Official Trading Cards Announced by Panini – RockstarINTEL, VGC, vor 11 h → https://rockstarintel.com/gta-vi-official-trading-cards-announced-by-panini/
-- NEW [2 Quellen] Rockstar Reportedly Selling Red Dead Redemption Movie and TV Rights For $100 Million – RockstarINTEL, Eurogamer, vor 17 h → https://rockstarintel.com/rockstar-reportedly-selling-red-dead-redemption-movie-and-tv-rights-for-100-million/
-- [2 Quellen] GTA 6 Hacker Releases Full Xbox Build, And PC Modders Are Already Trying To Get It Running – GameSpot, Eurogamer, vor 18 h → https://www.gamespot.com/articles/gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running/
-- NEW The Actor Behind GTA 6′s Viral NPC Mandy Reacts To All Of The Attention: ‘It’s Sort Of Bittersweet’ – Kotaku, vor 5 h → https://kotaku.com/the-actor-behind-gta-6s-viral-npc-mandy-reacts-to-all-of-the-attention-its-sort-of-bittersweet-2001000149
+- NEW [4 Quellen] GTA 6 Analysis Shows PS5 Version Suffers 'Substantially' More Frequent Frame Rate Drops Than Xbox Series X Version, Spa… – IGN, Eurogamer, Insider Gaming, VGC, vor 1 h → https://www.ign.com/articles/gta-6-analysis-shows-ps5-version-suffers-substantially-more-frequent-frame-rate-drops-than-xbox-series-x-version-sparking-debate-about-sonys-plays-best-on-ps5-marketing
+- [3 Quellen] The difference between The Witcher 3 and Witcher 4 will be 'comparable' to that of GTA 5 and GTA 6, CD Projekt boss say… – PC Gamer, IGN, Eurogamer, vor 13 h → https://www.pcgamer.com/games/the-witcher/the-difference-between-the-witcher-3-and-witcher-4-will-be-comparable-to-that-of-gta-5-and-gta-6-cd-projekt-boss-says-i-mean-its-been-11-years/
+- NEW [2 Quellen] GTA 6: How to flip a car in Grand Theft Auto 6 – VGC, Polygon, vor 1 h → https://www.videogameschronicle.com/guide/gta-6-how-to-flip-car-grand-theft-auto/
+- NEW [2 Quellen] Max Payne Remake Development With Rockstar Is “Amazing” Says Remedy – RockstarINTEL, Eurogamer, vor 1 h → https://rockstarintel.com/max-payne-remake-development-with-rockstar-is-amazing-says-remedy/
+- [2 Quellen] Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competi… – PC Gamer, Eurogamer, vor 8 h → https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/
+- [2 Quellen] Rockstar Reportedly Selling Red Dead Redemption Movie and TV Rights For $100 Million – RockstarINTEL, Eurogamer, vor 23 h → https://rockstarintel.com/rockstar-reportedly-selling-red-dead-redemption-movie-and-tv-rights-for-100-million/
+- [2 Quellen] GTA 6 Hacker Releases Full Xbox Build, And PC Modders Are Already Trying To Get It Running – GameSpot, Eurogamer, vor 24 h → https://www.gamespot.com/articles/gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running/
+- NEW Cyberpunk 2 Development Ramps Up At CD Projekt Red, But Ambitions For The Project Are ‘Not Changed’ By GTA 6′s Success – Kotaku, vor 0 h → https://kotaku.com/cyberpunk-2-cd-projekt-red-the-witcher-4-sirius-gta6-rockstar-2001000233
+- NEW GTA 6's best lore drops happen when you're chilling with your partner, so stop leaving them at home all the time – PC Gamer, vor 0 h → https://www.pcgamer.com/games/grand-theft-auto/gta-6s-best-lore-drops-happen-when-youre-chilling-with-your-partner-so-stop-leaving-them-at-home-all-the-time/
+- NEW GTA 6 Company Property walkthrough: How to save the weapons cargo – VGC, vor 1 h → https://www.videogameschronicle.com/guide/gta-6-company-property-walkthrough-how-to-save-the-weapons-cargo/
 
 ## Kick – meistgesehene Clips (24–36 h)
 W = beobachteter Kampagnen-Streamer. `video` in latest.json ist direkt als Clipfabrik-`source` nutzbar.
 
-- NEW destiny: „dndgnn“ – 7282 Views, 76 s, Just Chatting → https://kick.com/destiny/clips/clip_01M87Y3XVP3XNMJT0AW1SRA4KT
-- asmongold: „w4edrftgyhuji“ – 4452 Views, 40 s, Grand Theft Auto VI (GTA), 18+ → https://kick.com/asmongold/clips/clip_01M85EVPK3ACDWCJDZ41HETV4J
-- buddha: „verdict“ – 4138 Views, 59 s, Grand Theft Auto V (GTA) → https://kick.com/buddha/clips/clip_01M85P57HXKFWV6VKSZD71GNR8
-- konke_sirlee: „konke's first stream“ – 2153 Views, 180 s, Just Chatting → https://kick.com/konke_sirlee/clips/clip_01M86V6QRSRDD4E4CE8G1HSF1S
-- NEW paymoneywubby: „gta6“ – 1990 Views, 180 s, Grand Theft Auto VI (GTA), 18+ → https://kick.com/paymoneywubby/clips/clip_01M85Z3CAACFS13G2P2ETBY19Q
-- NEW asmongold: „dhtgndgn“ – 1966 Views, 53 s, Grand Theft Auto VI (GTA), 18+ → https://kick.com/asmongold/clips/clip_01M87YQQT7TY5D6G3WP1RHHZFM
-- buddha: „explain“ – 1950 Views, 44 s, Grand Theft Auto V (GTA) → https://kick.com/buddha/clips/clip_01M85QKVM28TTV1H9WT8TR39TE
-- NEW manax: „ATM gone wrong“ – 1757 Views, 53 s, Grand Theft Auto V (GTA) → https://kick.com/manax/clips/clip_01M85QKF3XHYSNZ8SFD5HES2SS
+- destiny: „dndgnn“ – 10290 Views, 76 s, Just Chatting → https://kick.com/destiny/clips/clip_01M87Y3XVP3XNMJT0AW1SRA4KT
+- asmongold: „w4edrftgyhuji“ – 4703 Views, 40 s, Grand Theft Auto VI (GTA), 18+ → https://kick.com/asmongold/clips/clip_01M85EVPK3ACDWCJDZ41HETV4J
+- buddha: „verdict“ – 4278 Views, 59 s, Grand Theft Auto V (GTA) → https://kick.com/buddha/clips/clip_01M85P57HXKFWV6VKSZD71GNR8
+- asmongold: „dhtgndgn“ – 3417 Views, 53 s, Grand Theft Auto VI (GTA), 18+ → https://kick.com/asmongold/clips/clip_01M87YQQT7TY5D6G3WP1RHHZFM
+- paymoneywubby: „gta6“ – 2916 Views, 180 s, Grand Theft Auto VI (GTA), 18+ → https://kick.com/paymoneywubby/clips/clip_01M85Z3CAACFS13G2P2ETBY19Q
+- NEW saab: „true“ – 2482 Views, 27 s, Grand Theft Auto VI (GTA), 18+ → https://kick.com/saab/clips/clip_01M87R67BH87V7YM9411S1FH8E
+- NEW triplex: „TRIPLEX DA TRAGO EXTRAÑO A WARENCITA ?????“ – 2363 Views, 36 s, IRL → https://kick.com/triplex/clips/clip_01M88FHDCV829TX3VRKG2H0MND
+- konke_sirlee: „konke's first stream“ – 2300 Views, 180 s, Just Chatting → https://kick.com/konke_sirlee/clips/clip_01M86V6QRSRDD4E4CE8G1HSF1S
 
 ## Nicht erreichbar
 
 - reddit r/LivestreamFail: HTTP 404
-- reddit r/GTA6: HTTP 429
-- reddit r/GTA: HTTP 429
+- reddit r/GTA6: HTTP 404
+- reddit r/GTA: HTTP 404
