@@ -1,39 +1,39 @@
-# Zahlen – Stand 26.11.2026 13:19 (Europe/Berlin)
+# Zahlen – Stand 26.11.2026 18:25 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 41.882 · Zuwachs 24 h: 39
+Posts gezählt: 80 · Views gesamt: 39.392 · Zuwachs 24 h: 64
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
-| 2026-11-25 | tiktok | GTA 6 radio debate: the radio is half of every G | 225 | – | – | 8 |  |
-| 2026-11-25 | youtube | GTA 6 Radio: On or Off? #shorts | 82 | – | – | 1 |  |
-| 2026-11-24 | tiktok | GTA 6 tips nobody asked for: close the guides an | 265 | 7 | 265 | 6 |  |
-| 2026-11-24 | youtube | GTA 6 Tip: Stop Using Guides #shorts | 322 | 4 | 318 | 3 |  |
-| 2026-11-23 | tiktok | GTA 6 map question: where in Leonida are you goi | 233 | 1 | 231 | 1 |  |
+| 2026-11-26 | tiktok | GTA 5 vs GTA 6: thirteen years and three console | 68 | – | – | 0 |  |
+| 2026-11-26 | youtube | GTA 5 to GTA 6: 13 Years Later #shorts | 135 | – | – | 1 |  |
+| 2026-11-25 | tiktok | GTA 6 radio debate: the radio is half of every G | 225 | 6 | 225 | 8 |  |
+| 2026-11-25 | youtube | GTA 6 Radio: On or Off? #shorts | 87 | 35 | 87 | 2 |  |
+| 2026-11-24 | tiktok | GTA 6 tips nobody asked for: close the guides an | 265 | 0 | 265 | 6 |  |
+| 2026-11-24 | youtube | GTA 6 Tip: Stop Using Guides #shorts | 323 | 5 | 318 | 3 |  |
+| 2026-11-23 | tiktok | GTA 6 map question: where in Leonida are you goi | 233 | 0 | 231 | 1 |  |
 | 2026-11-23 | youtube | GTA 6 Map: Where Are You Going First? #shorts | 215 | 0 | 193 | 0 |  |
-| 2026-11-22 | tiktok | GTA 6 story or pure chaos, what are you doing fi | 217 | 1 | 216 | 0 |  |
+| 2026-11-22 | tiktok | GTA 6 story or pure chaos, what are you doing fi | 217 | 0 | 216 | 0 |  |
 | 2026-11-22 | youtube | GTA 6: Story First or Chaos First? #shorts | 87 | 0 | 85 | 2 |  |
-| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 220 | 1 | 217 | 5 |  |
+| 2026-11-21 | tiktok | GTA 6 characters debate: Jason or Lucia, who's t | 220 | 0 | 217 | 5 |  |
 | 2026-11-21 | youtube | GTA 6 Characters: Jason or Lucia? #shorts | 497 | 0 | 486 | 12 |  |
-| 2026-11-20 | tiktok | GTA 6 story tip: don't rush it, explore Leonida  | 250 | 3 | 243 | 8 |  |
+| 2026-11-20 | tiktok | GTA 6 story tip: don't rush it, explore Leonida  | 250 | 2 | 243 | 8 |  |
 | 2026-11-20 | youtube | Don't Rush GTA 6. Here's Why #shorts | 366 | 0 | 356 | 3 |  |
-| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.458 | 0 | 3.329 | 30 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat finds out this GTA 6 car's tracker pin | 256 | 1 | 254 | 8 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat keeps saying this is a whole new game  | 251 | 1 | 250 | 15 | Kai Cenat GTA 6 |
+| 2026-11-19 | youtube | Kai Cenat's GTA 6 car tracker snitches to the co | 3.459 | 1 | 3.329 | 30 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat finds out this GTA 6 car's tracker pin | 256 | 0 | 254 | 8 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat keeps saying this is a whole new game  | 251 | 0 | 250 | 15 | Kai Cenat GTA 6 |
 | 2026-11-19 | youtube | GTA 6 Is Finally Out #shorts | 55 | 0 | 37 | 0 |  |
 | 2026-11-19 | tiktok | GTA 6 release day is finally here after 13 years | 213 | 0 | 213 | 0 |  |
 | 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.574 | 2 | 2.963 | 47 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat fights an alligator in GTA 6 and Flori | 242 | 0 | 241 | 2 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 487 | 18 | 305 | 18 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 493 | 13 | 305 | 18 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 220 | 0 | 211 | 16 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat spots the first baby he's ever seen in | 301 | 0 | 292 | 3 | Kai Cenat GTA 6 |
-| 2026-11-18 | tiktok | Warzone stays free-to-play, and Season 1 brings  | 246 | 0 | 244 | 1 | Warzone S1 |
-| 2026-11-18 | youtube | Who's Calling in Sick for GTA 6? #shorts | 49 | 0 | 4 | 0 |  |
 
 ## Pusnik IRL
-Posts gezählt: 20 · Views gesamt: 5.821 · Zuwachs 24 h: 1
+Posts gezählt: 20 · Views gesamt: 5.821 · Zuwachs 24 h: 0
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
@@ -52,7 +52,7 @@ Posts gezählt: 20 · Views gesamt: 5.821 · Zuwachs 24 h: 1
 | 2026-11-16 | youtube | TJR's Brother Has No Idea 🤫 #TJR #shorts | 0 | 0 | 0 | 0 | TJR |
 | 2026-11-16 | tiktok | TJR's brother has no idea what is about to happe | 242 | 0 | 242 | 1 | TJR |
 | 2026-11-16 | youtube | TJR Swaps His Life For A Broke Car #shorts | 0 | 0 | 0 | 0 | TJR |
-| 2026-11-16 | tiktok | TJR swaps his life for a day and gets handed the | 253 | 1 | 252 | 4 | TJR |
+| 2026-11-16 | tiktok | TJR swaps his life for a day and gets handed the | 253 | 0 | 252 | 4 | TJR |
 | 2026-11-15 | youtube | TJR Gifts His Brother A Car 😳 #TJR #shorts | 1 | 0 | 1 | 0 | TJR |
 | 2026-11-15 | tiktok | TJR surprised his brother with a brand new car a | 240 | 0 | 236 | 9 | TJR |
 | 2026-11-14 | youtube | Lacy breaks his expensive watch 😭 #JasonTheWeen  | 2 | 0 | 2 | 0 | JasonTheWeen |
@@ -61,7 +61,7 @@ Posts gezählt: 20 · Views gesamt: 5.821 · Zuwachs 24 h: 1
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Kai Cenat GTA 6 | 8 | 11.789 | 6.574 | – |
+| Kai Cenat GTA 6 | 8 | 11.796 | 6.574 | – |
 | TJR | 18 | 4.970 | 748 | 0 von 18 |
 | Warzone S1 | 6 | 1.479 | 252 | – |
 | MW4 DMZ | 3 | 779 | 277 | – |
