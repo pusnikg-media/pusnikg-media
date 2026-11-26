@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "log": [
+  "WARN clip dropped as blurry (line 0): cc78d3a6731.mp4",
+  "0: 5.62s  sˌiːdʒˈeɪ ɪz stˈɪl ðə bˈɛst dʒˌiːtˌiːˈeɪ pɹˈoʊɾɐɡənˌɪst ˈɛvɚ, ænd ɪts nˌɑːt ˈiːvən klˈoʊs.\n1: 4.65s  tˈɑːmi vɜːsˈɛɾi bˈɪlt ɐn ˈɛmpaɪɚ, ænd nˈiːkoʊ kˈæɹid ðə dˈɑːɹkɪst stˈoːɹi.\n2: 4.92s  mˈaɪkəl, fɹˈæŋklɪn ænd tɹˈɛvɚ wɜː ɡɹˈeɪt, bˌʌt ðeɪ splˈɪt wˈʌn ɡˈeɪm θɹˈiː wˈeɪz.\n3: 5.25s  dʒˈeɪsən ænd lˈuːʃə kʊd tˈeɪk ðə kɹˈaʊn, bˌʌt mˈoʊst əv ˌʌs hˈævənt fˈɪnɪʃt ðɛɹ stˈoːɹi jˈɛt.\n4: 1.68s  hˌuː ɪz jʊɹ nˈʌmbɚ wˌʌn?\n5: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 6 lines 24.50s",
+  "2.35 carried@2.71 the@3.00 darkest@3.20 story.@3.42\nMichael,@0.22 Franklin@0.88 and@1.02 Trevor@1.47 were@1.64 great,@1.93 but@2.54 they@2.56 split@2.67 one@2.91 game@3.20 three@3.43 ways.@3.68\nJason@0.23 and@0.59 Lucia@0.90 could@1.09 take@1.40 the@1.63 crown,@1.80 but@2.40 most@2.46 of@2.67 us@2.84 haven't@2.96 finished@3.32 their@3.55 story@3.78 yet.@4.01\nWho@0.25 is@0.51 your@0.58 number@0.69 one?@0.88\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 6 lines\n\nTOTAL 26.2 shots 19 captions 21\nRENDER_OK /home/runner/work_pusnikg-2026-11-27-goat-ai/pusnikg-2026-11-27-goat-ai.mp4 26.20s",
+  "QA_OK 26.20s -13.8 LUFS frames: /home/runner/work_pusnikg-2026-11-27-goat-ai/pusnikg-2026-11-27-goat-ai_qa_0.png /home/runner/work_pusnikg-2026-11-27-goat-ai/pusnikg-2026-11-27-goat-ai_qa_mid.png /home/runner/work_pusnikg-2026-11-27-goat-ai/pusnikg-2026-11-27-goat-ai_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 26.2,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus12.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-27-goat-ai.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-27-goat-ai_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-27-goat-ai_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-27-goat-ai_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-27-goat-ai",
+ "attempts": 1
+}
