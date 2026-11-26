@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "log": [
+  "WARN clip dropped as blurry (line 0): cc78d3a6731.mp4",
+  "0: 5.62s  sˌiːdʒˈeɪ ɪz stˈɪl ðə bˈɛst dʒˌiːtˌiːˈeɪ pɹˈoʊɾɐɡənˌɪst ˈɛvɚ, ænd ɪts nˌɑːt ˈiːvən klˈoʊs.\n1: 4.65s  tˈɑːmi vɜːsˈɛɾi bˈɪlt ɐn ˈɛmpaɪɚ, ænd nˈiːkoʊ kˈæɹid ðə dˈɑːɹkɪst stˈoːɹi.\n2: 1.68s  hˌuː ɪz jʊɹ nˈʌmbɚ wˌʌn?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 14.33s",
+  "PREFLIGHT_OK 4 lines, 11 shots, 15.58 s\nCJ@0.23 is@0.64 still@1.16 the@1.39 best@1.57 GTA@1.81 protagonist@2.36 ever,@2.95 and@3.97 it's@4.01 not@4.19 even@4.35 close.@4.55\nTommy@0.22 Vercetti@0.56 built@1.09 an@1.39 empire,@1.53 and@2.31 Niko@2.35 carried@2.71 the@3.00 darkest@3.20 story.@3.42\nWho@0.25 is@0.51 your@0.58 number@0.69 one?@0.88\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 15.585 shots 11 captions 8\nRENDER_OK /home/runner/work_pusnikg-2026-11-27-goat-ai-tt/pusnikg-2026-11-27-goat-ai-tt.mp4 15.59s",
+  "QA_OK 15.59s -13.8 LUFS frames: /home/runner/work_pusnikg-2026-11-27-goat-ai-tt/pusnikg-2026-11-27-goat-ai-tt_qa_0.png /home/runner/work_pusnikg-2026-11-27-goat-ai-tt/pusnikg-2026-11-27-goat-ai-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-27-goat-ai-tt/pusnikg-2026-11-27-goat-ai-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 15.59,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus12.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-27-goat-ai-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-27-goat-ai-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-27-goat-ai-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-27-goat-ai-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-27-goat-ai-tt",
+ "attempts": 1
+}
