@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-27-goat-ai",
+ "date": "2026-11-27",
+ "day": -8,
+ "script": [
+  "CJ is still the best GTA protagonist ever, and it's not even close.",
+  "Tommy Vercetti built an empire, and Niko carried the darkest story.",
+  "Michael, Franklin and Trevor were great, but they split one game three ways.",
+  "Jason and Lucia could take the crown, but most of us haven't finished their story yet.",
+  "Who is your number one?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/343227.mp4",
+    "start": 0.5
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/241574.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/179649.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/9473.mp4",
+    "start": 5
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/152184.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car05a.mp4",
+    "start": 4
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/199208.mp4",
+    "start": 2
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/218714.mp4",
+    "start": 20
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/game03a.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/117321.mp4",
+    "start": 10
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/9473.mp4",
+    "start": 20
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/162670.mp4",
+    "start": 5
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus12.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Cinematic hip hop mus12 (eigene Bibliothek)"
+ },
+ "hook_big": "CJ",
+ "hook_mid": "STILL #1?",
+ "hook_sub": "BEST GTA PROTAGONIST?",
+ "badge": "GTA 6 • WEEK 2",
+ "card": {
+  "line": 2,
+  "word": "three",
+  "top": "GTA V",
+  "big": "3",
+  "bottom": "ONE GAME 3 WAYS"
+ },
+ "punch": [
+  "empire",
+  "darkest",
+  "three",
+  "crown"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}
