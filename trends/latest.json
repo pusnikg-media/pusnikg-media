@@ -1,7 +1,7 @@
 {
- "at": "2026-11-25T20:33:16+00:00",
+ "at": "2026-11-26T05:40:21+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 404",
+  "reddit r/LivestreamFail: HTTP 429",
   "reddit r/GTA6: HTTP 404",
   "reddit r/GTA: HTTP 429"
  ],
@@ -9,60 +9,12 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "destiny",
-   "title": "dndgnn",
-   "views": 12105,
-   "per_h": 574,
-   "dur": 76,
-   "age_h": 21.1,
-   "category": "Just Chatting",
-   "page": "https://kick.com/destiny/clips/clip_01M87Y3XVP3XNMJT0AW1SRA4KT",
-   "video": "https://clips.kick.com/clips/71/clip_01M87Y3XVP3XNMJT0AW1SRA4KT/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M87Y3XVP3XNMJT0AW1SRA4KT",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "asmongold",
-   "title": "dhtgndgn",
-   "views": 4523,
-   "per_h": 216,
-   "dur": 53,
-   "age_h": 20.9,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/asmongold/clips/clip_01M87YQQT7TY5D6G3WP1RHHZFM",
-   "video": "https://clips.kick.com/clips/73/clip_01M87YQQT7TY5D6G3WP1RHHZFM/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M87YQQT7TY5D6G3WP1RHHZFM",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "saab",
-   "title": "true",
-   "views": 3664,
-   "per_h": 161,
-   "dur": 27,
-   "age_h": 22.8,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/saab/clips/clip_01M87R67BH87V7YM9411S1FH8E",
-   "video": "https://clips.kick.com/clips/6a/clip_01M87R67BH87V7YM9411S1FH8E/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M87R67BH87V7YM9411S1FH8E",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "captain-jack-live",
    "title": "🎰🔥 BIG SPINS, BIG VIBES! 💸",
-   "views": 3625,
-   "per_h": 549,
+   "views": 3760,
+   "per_h": 239,
    "dur": 47,
-   "age_h": 6.6,
+   "age_h": 15.7,
    "category": "Slots & Casino",
    "page": "https://kick.com/captain-jack-live/clips/clip_01M89FZMEP0JB17V1WMXN18GZK",
    "video": "https://clips.kick.com/clips/84/clip_01M89FZMEP0JB17V1WMXN18GZK/playlist.m3u8",
@@ -75,10 +27,10 @@
    "area": "irl",
    "channel": "captain-jack-live",
    "title": "🤑 Охота за заносами! 🎰💸",
-   "views": 3594,
-   "per_h": 545,
+   "views": 3647,
+   "per_h": 232,
    "dur": 82,
-   "age_h": 6.6,
+   "age_h": 15.7,
    "category": "Slots & Casino",
    "page": "https://kick.com/captain-jack-live/clips/clip_01M89FS543DFPQCX70YS4WKF1W",
    "video": "https://clips.kick.com/clips/15/clip_01M89FS543DFPQCX70YS4WKF1W/playlist.m3u8",
@@ -89,28 +41,12 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "konke_sirlee",
-   "title": "konke's first stream",
-   "views": 2531,
-   "per_h": 81,
-   "dur": 180,
-   "age_h": 31.3,
-   "category": "Just Chatting",
-   "page": "https://kick.com/konke_sirlee/clips/clip_01M86V6QRSRDD4E4CE8G1HSF1S",
-   "video": "https://clips.kick.com/clips/14/clip_01M86V6QRSRDD4E4CE8G1HSF1S/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M86V6QRSRDD4E4CE8G1HSF1S",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "triplex",
    "title": "TRIPLEX DA TRAGO EXTRAÑO A WARENCITA ?????",
-   "views": 2467,
-   "per_h": 155,
+   "views": 2606,
+   "per_h": 104,
    "dur": 36,
-   "age_h": 15.9,
+   "age_h": 25.0,
    "category": "IRL",
    "page": "https://kick.com/triplex/clips/clip_01M88FHDCV829TX3VRKG2H0MND",
    "video": "https://clips.kick.com/clips/dd/clip_01M88FHDCV829TX3VRKG2H0MND/playlist.m3u8",
@@ -121,45 +57,81 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "xmerghani",
-   "title": "Szeli w Klubie",
-   "views": 1455,
-   "per_h": 57,
-   "dur": 112,
-   "age_h": 25.6,
+   "channel": "robertovstheworld",
+   "title": "EBOLA, MIAMI IS LIKE THAILAND",
+   "views": 2247,
+   "per_h": 96,
+   "dur": 180,
+   "age_h": 23.4,
    "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/xmerghani/clips/clip_01M87ERQG3YW852CPYR97TD3R9",
-   "video": "https://clips.kick.com/clips/a1/clip_01M87ERQG3YW852CPYR97TD3R9/playlist.m3u8",
+   "page": "https://kick.com/robertovstheworld/clips/clip_01M88NCD91TN0YCN9XWGXAP920",
+   "video": "https://clips.kick.com/clips/3f/clip_01M88NCD91TN0YCN9XWGXAP920/master.m3u8",
    "mature": true,
-   "id": "k:clip_01M87ERQG3YW852CPYR97TD3R9",
+   "id": "k:clip_01M88NCD91TN0YCN9XWGXAP920",
    "new": true
   },
   {
-   "src": "news",
-   "area": "gaming",
-   "site": "IGN",
-   "title": "GTA 6 Doesn't Let You Replay Missions, and Rockstar Says There's a Good Reason for That",
-   "page": "https://www.ign.com/articles/gta-6-doesnt-let-you-replay-missions-and-rockstar-says-theres-a-good-reason-for-that",
-   "age_h": 0.3,
-   "id": "n:gta-6-doesn-t-let-you-replay-missions-and-rockstar-says-ther",
-   "sites": [
-    "IGN",
-    "GameSpot"
-   ],
+   "src": "kick",
+   "area": "irl",
+   "channel": "bykhay",
+   "title": "kasdjasd",
+   "views": 2077,
+   "per_h": 212,
+   "dur": 23,
+   "age_h": 9.8,
+   "category": "Just Chatting",
+   "page": "https://kick.com/bykhay/clips/clip_01M8A423MN2JYDZAP1VZ0XNM5D",
+   "video": "https://clips.kick.com/clips/f1/clip_01M8A423MN2JYDZAP1VZ0XNM5D/master.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8A423MN2JYDZAP1VZ0XNM5D",
    "new": true
   },
   {
-   "src": "news",
-   "area": "gaming",
-   "site": "GameSpot",
-   "title": "GTA 6’s Mandy Actor Reacts To The Online “Weirdos”",
-   "page": "https://www.gamespot.com/articles/gta-6s-mandy-actor-reacts-to-the-online-weirdos/",
-   "age_h": 3.4,
-   "id": "n:gta-6-s-mandy-actor-reacts-to-the-online-weirdos-",
-   "sites": [
-    "GameSpot",
-    "Kotaku"
-   ],
+   "src": "kick",
+   "area": "irl",
+   "channel": "abuswe7l",
+   "title": "بمووووت",
+   "views": 1559,
+   "per_h": 226,
+   "dur": 24,
+   "age_h": 6.9,
+   "category": "Just Chatting",
+   "page": "https://kick.com/abuswe7l/clips/clip_01M8AE3BSHRESFBE3AH3J64E7J",
+   "video": "https://clips.kick.com/clips/1e/clip_01M8AE3BSHRESFBE3AH3J64E7J/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M8AE3BSHRESFBE3AH3J64E7J",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "peace_456",
+   "title": "hoooooooo saanvi",
+   "views": 1257,
+   "per_h": 61,
+   "dur": 41,
+   "age_h": 20.6,
+   "category": "Grand Theft Auto V (GTA)",
+   "page": "https://kick.com/peace_456/clips/clip_01M88Z2PVT0XVDQ3CXPNNSPRZY",
+   "video": "https://clips.kick.com/clips/94/clip_01M88Z2PVT0XVDQ3CXPNNSPRZY/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M88Z2PVT0XVDQ3CXPNNSPRZY",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "xmerghani",
+   "title": "motoruwa",
+   "views": 1256,
+   "per_h": 84,
+   "dur": 11,
+   "age_h": 14.9,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/xmerghani/clips/clip_01M89JSCHXPXSGNP3NGVYKY1YT",
+   "video": "https://clips.kick.com/clips/89/clip_01M89JSCHXPXSGNP3NGVYKY1YT/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M89JSCHXPXSGNP3NGVYKY1YT",
    "new": true
   },
   {
@@ -168,7 +140,7 @@
    "site": "GameSpot",
    "title": "PS5 And Xbox Series X|S Console Sales Surged Just Before GTA 6 Came Out",
    "page": "https://www.gamespot.com/articles/ps5-and-xbox-series-xs-console-sales-surged-just-before-gta-6-came-out/",
-   "age_h": 4.5,
+   "age_h": 13.6,
    "id": "n:ps5-and-xbox-series-x-s-console-sales-surged-just-before-gta",
    "sites": [
     "GameSpot",
@@ -179,68 +151,39 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "Max Payne Remake Development With Rockstar Is “Amazing” Says Remedy",
-   "page": "https://rockstarintel.com/max-payne-remake-development-with-rockstar-is-amazing-says-remedy/",
-   "age_h": 9.9,
-   "id": "n:max-payne-remake-development-with-rockstar-is-amazing-says-r",
-   "sites": [
-    "RockstarINTEL",
-    "Eurogamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
    "site": "PC Gamer",
-   "title": "Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competitors they've been slow to come back",
-   "page": "https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/",
-   "age_h": 17.0,
-   "id": "n:analyst-estimates-call-of-duty-lost-44-of-its-players-when-g",
+   "title": "All Missing Persons locations in GTA 6",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-missing-persons-locations/",
+   "age_h": 0.3,
+   "id": "n:all-missing-persons-locations-in-gta-6",
    "sites": [
-    "PC Gamer",
-    "Eurogamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "The difference between The Witcher 3 and Witcher 4 will be 'comparable' to that of GTA 5 and GTA 6, CD Projekt boss says: 'I mean, it's been 11 years'",
-   "page": "https://www.pcgamer.com/games/the-witcher/the-difference-between-the-witcher-3-and-witcher-4-will-be-comparable-to-that-of-gta-5-and-gta-6-cd-projekt-boss-says-i-mean-its-been-11-years/",
-   "age_h": 21.5,
-   "id": "n:the-difference-between-the-witcher-3-and-witcher-4-will-be-c",
-   "sites": [
-    "PC Gamer",
-    "Eurogamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "GTA 6 Boss Reveals How That Very Surprising Cameo Happened And What It Means For The Character",
-   "page": "https://kotaku.com/gta-6-boss-reveals-how-that-very-surprising-cameo-happened-and-what-it-means-for-the-character-2000758616",
-   "age_h": 0.5,
-   "id": "n:gta-6-boss-reveals-how-that-very-surprising-cameo-happened-a",
-   "sites": [
-    "Kotaku"
+    "PC Gamer"
    ],
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Kotaku",
-   "title": "Grand Theft Auto 6 Roasts Naughty Dog For Constantly Repackaging The Last Of Us",
-   "page": "https://kotaku.com/grand-theft-auto-6-last-of-us-reference-easter-egg-2001000427",
-   "age_h": 1.0,
-   "id": "n:grand-theft-auto-6-roasts-naughty-dog-for-constantly-repacka",
+   "site": "IGN",
+   "title": "Rockstar Explains Why it Added Consequences to GTA 6's Violence and Crimes",
+   "page": "https://www.ign.com/articles/rockstar-explains-why-it-added-consequences-to-gta-6s-violence-and-crimes",
+   "age_h": 5.1,
+   "id": "n:rockstar-explains-why-it-added-consequences-to-gta-6-s-viole",
    "sites": [
-    "Kotaku"
+    "IGN"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "IGN",
+   "title": "Spotify Reveals Massive Spike in Streams for Music Featured in GTA 6",
+   "page": "https://www.ign.com/articles/spotify-reveals-massive-spike-in-streams-for-music-featured-in-gta-6",
+   "age_h": 6.4,
+   "id": "n:spotify-reveals-massive-spike-in-streams-for-music-featured-",
+   "sites": [
+    "IGN"
    ],
    "new": true
   },
@@ -248,10 +191,10 @@
    "src": "news",
    "area": "gaming",
    "site": "Polygon",
-   "title": "All Key Lento standout vehicles in GTA 6",
-   "page": "https://www.polygon.com/gta-6-standout-vehicles-key-lento-locations-list-grand-theft-auto/",
-   "age_h": 1.2,
-   "id": "n:all-key-lento-standout-vehicles-in-gta-6",
+   "title": "How to get adrenaline in GTA 6",
+   "page": "https://www.polygon.com/gta-6-adrenaline-how-to-get/",
+   "age_h": 6.7,
+   "id": "n:how-to-get-adrenaline-in-gta-6",
    "sites": [
     "Polygon"
    ],
@@ -260,13 +203,65 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 Cooties Mission Walkthrough",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-cooties-mission-walkthrough/",
-   "age_h": 1.8,
-   "id": "n:gta-6-cooties-mission-walkthrough",
+   "site": "Kotaku",
+   "title": "With Grand Theft Auto 6, The Series Has Outgrown Some Of Its Joke Brand Names",
+   "page": "https://kotaku.com/with-grand-theft-auto-6-the-series-has-outgrown-some-of-its-joke-brand-names-2001000507",
+   "age_h": 6.8,
+   "id": "n:with-grand-theft-auto-6-the-series-has-outgrown-some-of-its-",
    "sites": [
-    "VGC"
+    "Kotaku"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "GTA 6 has weird purple streetlights because actual Florida screwed up its streetlights",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-has-weird-purple-streetlights-because-actual-florida-screwed-up-its-streetlights/",
+   "age_h": 7.1,
+   "id": "n:gta-6-has-weird-purple-streetlights-because-actual-florida-s",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "All Peewees Billboard locations in GTA 6",
+   "page": "https://www.polygon.com/gta-6-peewees-billboard-location-challenge-waink/",
+   "age_h": 7.4,
+   "id": "n:all-peewees-billboard-locations-in-gta-6",
+   "sites": [
+    "Polygon"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "30 Things You Might Have Missed in GTA 6",
+   "page": "https://insider-gaming.com/30-things-you-might-have-missed-in-gta-6/",
+   "age_h": 7.7,
+   "id": "n:30-things-you-might-have-missed-in-gta-6",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "GTA 6 vault: How to open them during big bank jobs",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-vault-how-to-open/",
+   "age_h": 8.1,
+   "id": "n:gta-6-vault-how-to-open-them-during-big-bank-jobs",
+   "sites": [
+    "PC Gamer"
    ],
    "new": true
   }
