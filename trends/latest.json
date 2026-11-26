@@ -1,21 +1,36 @@
 {
- "at": "2026-11-26T11:34:51+00:00",
+ "at": "2026-11-26T16:43:58+00:00",
  "errors": [
   "reddit r/LivestreamFail: HTTP 429",
   "reddit r/GTA6: HTTP 404",
-  "reddit r/GTA: HTTP 429",
-  "news RockstarINTEL: HTTP 500"
+  "reddit r/GTA: HTTP 404"
  ],
  "items": [
   {
    "src": "kick",
    "area": "irl",
+   "channel": "gmhikaru",
+   "title": "Gave himself 10 secs, messed up",
+   "views": 4042,
+   "per_h": 213,
+   "dur": 180,
+   "age_h": 19.0,
+   "category": "Chess",
+   "page": "https://kick.com/gmhikaru/clips/clip_01M8AAKHXTAF6H8AATDPTHK233",
+   "video": "https://clips.kick.com/clips/59/clip_01M8AAKHXTAF6H8AATDPTHK233/master.m3u8",
+   "mature": false,
+   "id": "k:clip_01M8AAKHXTAF6H8AATDPTHK233",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "captain-jack-live",
    "title": "🎰🔥 BIG SPINS, BIG VIBES! 💸",
-   "views": 3811,
-   "per_h": 176,
+   "views": 3870,
+   "per_h": 144,
    "dur": 47,
-   "age_h": 21.6,
+   "age_h": 26.8,
    "category": "Slots & Casino",
    "page": "https://kick.com/captain-jack-live/clips/clip_01M89FZMEP0JB17V1WMXN18GZK",
    "video": "https://clips.kick.com/clips/84/clip_01M89FZMEP0JB17V1WMXN18GZK/playlist.m3u8",
@@ -28,10 +43,10 @@
    "area": "irl",
    "channel": "captain-jack-live",
    "title": "🤑 Охота за заносами! 🎰💸",
-   "views": 3670,
-   "per_h": 170,
+   "views": 3687,
+   "per_h": 138,
    "dur": 82,
-   "age_h": 21.6,
+   "age_h": 26.8,
    "category": "Slots & Casino",
    "page": "https://kick.com/captain-jack-live/clips/clip_01M89FS543DFPQCX70YS4WKF1W",
    "video": "https://clips.kick.com/clips/15/clip_01M89FS543DFPQCX70YS4WKF1W/playlist.m3u8",
@@ -44,10 +59,10 @@
    "area": "irl",
    "channel": "robertovstheworld",
    "title": "EBOLA, MIAMI IS LIKE THAILAND",
-   "views": 2905,
-   "per_h": 99,
+   "views": 3664,
+   "per_h": 106,
    "dur": 180,
-   "age_h": 29.3,
+   "age_h": 34.5,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/robertovstheworld/clips/clip_01M88NCD91TN0YCN9XWGXAP920",
    "video": "https://clips.kick.com/clips/3f/clip_01M88NCD91TN0YCN9XWGXAP920/master.m3u8",
@@ -58,44 +73,12 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "triplex",
-   "title": "TRIPLEX DA TRAGO EXTRAÑO A WARENCITA ?????",
-   "views": 2665,
-   "per_h": 86,
-   "dur": 36,
-   "age_h": 30.9,
-   "category": "IRL",
-   "page": "https://kick.com/triplex/clips/clip_01M88FHDCV829TX3VRKG2H0MND",
-   "video": "https://clips.kick.com/clips/dd/clip_01M88FHDCV829TX3VRKG2H0MND/playlist.m3u8",
-   "mature": false,
-   "id": "k:clip_01M88FHDCV829TX3VRKG2H0MND",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "bykhay",
-   "title": "kasdjasd",
-   "views": 2127,
-   "per_h": 135,
-   "dur": 23,
-   "age_h": 15.7,
-   "category": "Just Chatting",
-   "page": "https://kick.com/bykhay/clips/clip_01M8A423MN2JYDZAP1VZ0XNM5D",
-   "video": "https://clips.kick.com/clips/f1/clip_01M8A423MN2JYDZAP1VZ0XNM5D/master.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8A423MN2JYDZAP1VZ0XNM5D",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "xmerghani",
    "title": "motoruwa",
-   "views": 2011,
-   "per_h": 97,
+   "views": 3006,
+   "per_h": 116,
    "dur": 11,
-   "age_h": 20.8,
+   "age_h": 25.9,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/xmerghani/clips/clip_01M89JSCHXPXSGNP3NGVYKY1YT",
    "video": "https://clips.kick.com/clips/89/clip_01M89JSCHXPXSGNP3NGVYKY1YT/playlist.m3u8",
@@ -106,33 +89,68 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "asmongold",
-   "title": "dgncdgn",
-   "views": 1727,
-   "per_h": 150,
-   "dur": 60,
-   "age_h": 11.5,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/asmongold/clips/clip_01M8AJRM2XDAMY4Z8WG535CBKY",
-   "video": "https://clips.kick.com/clips/9a/clip_01M8AJRM2XDAMY4Z8WG535CBKY/master.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8AJRM2XDAMY4Z8WG535CBKY",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "harry",
    "title": "Harry makes a deal for batteries",
-   "views": 1649,
-   "per_h": 236,
+   "views": 2315,
+   "per_h": 191,
    "dur": 136,
-   "age_h": 7.0,
+   "age_h": 12.1,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/harry/clips/clip_01M8B24RDMNJZTBPWJXHPPWVC1",
    "video": "https://clips.kick.com/clips/c0/clip_01M8B24RDMNJZTBPWJXHPPWVC1/master.m3u8",
    "mature": false,
    "id": "k:clip_01M8B24RDMNJZTBPWJXHPPWVC1",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "bykhay",
+   "title": "kasdjasd",
+   "views": 2176,
+   "per_h": 104,
+   "dur": 23,
+   "age_h": 20.9,
+   "category": "Just Chatting",
+   "page": "https://kick.com/bykhay/clips/clip_01M8A423MN2JYDZAP1VZ0XNM5D",
+   "video": "https://clips.kick.com/clips/f1/clip_01M8A423MN2JYDZAP1VZ0XNM5D/master.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8A423MN2JYDZAP1VZ0XNM5D",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "asmongold",
+   "title": "dgncdgn",
+   "views": 2052,
+   "per_h": 124,
+   "dur": 60,
+   "age_h": 16.6,
+   "category": "Grand Theft Auto VI (GTA)",
+   "page": "https://kick.com/asmongold/clips/clip_01M8AJRM2XDAMY4Z8WG535CBKY",
+   "video": "https://clips.kick.com/clips/9a/clip_01M8AJRM2XDAMY4Z8WG535CBKY/master.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8AJRM2XDAMY4Z8WG535CBKY",
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "Rockstar workers vote overwhelmingly against union recognition",
+   "page": "https://www.pcgamer.com/gaming-industry/rockstar-workers-vote-overwhelmingly-against-union-recognition/",
+   "age_h": 0.5,
+   "id": "n:rockstar-workers-vote-overwhelmingly-against-union-recogniti",
+   "sites": [
+    "PC Gamer",
+    "Insider Gaming",
+    "Eurogamer",
+    "RockstarINTEL",
+    "IGN",
+    "VGC",
+    "Kotaku"
+   ],
    "new": true
   },
   {
@@ -141,22 +159,35 @@
    "site": "Eurogamer",
    "title": "GTA 6 reinvigorates PlayStation 5 and Xbox Series S/X console sales in the US, even at their inflated prices",
    "page": "https://www.eurogamer.net/playstation-5-xbox-series-s-x-console-hardware-sales-gta-6",
-   "age_h": 1.9,
+   "age_h": 7.1,
    "id": "n:gta-6-reinvigorates-playstation-5-and-xbox-series-s-x-consol",
    "sites": [
     "Eurogamer",
     "GameSpot"
    ],
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6: All Secret Radio Stations and how to unlock them",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-secret-radio-stations-unlock/",
+   "age_h": 0.0,
+   "id": "n:gta-6-all-secret-radio-stations-and-how-to-unlock-them",
+   "sites": [
+    "VGC"
+   ],
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "How To Fix Weather Bug In GTA 6—Rain, Storms & More",
-   "page": "https://insider-gaming.com/fix-weather-bug-gta-6-rain-storms/",
-   "age_h": 0.5,
-   "id": "n:how-to-fix-weather-bug-in-gta-6-rain-storms-more",
+   "title": "All Mandy Scenes & Interactions in GTA 6",
+   "page": "https://insider-gaming.com/mandy-scenes-gta-6/",
+   "age_h": 0.1,
+   "id": "n:all-mandy-scenes-interactions-in-gta-6",
    "sites": [
     "Insider Gaming"
    ],
@@ -165,13 +196,65 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "Polygon",
-   "title": "20 Years Ago, The Sopranos PS2 Game Sank So GTA 6 Could Swim",
-   "page": "https://www.polygon.com/sopranos-road-to-respect-anniversary/",
+   "site": "VGC",
+   "title": "GTA 6 on Xbox One is a ‘remarkable feat’, according to analysis",
+   "page": "https://www.videogameschronicle.com/news/gta-6-on-xbox-one-is-a-remarkable-feat-according-to-analysis/",
+   "age_h": 0.2,
+   "id": "n:gta-6-on-xbox-one-is-a-remarkable-feat-according-to-analysis",
+   "sites": [
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "Aspects of GTA 6 are inspired by Red Dead Redemption 2's honor system because its player agency 'was a hard thing to ignore and walk away from'",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/aspects-of-gta-6-are-inspired-by-red-dead-redemption-2s-honor-system-because-its-player-agency-was-a-hard-thing-to-ignore-and-walk-away-from/",
+   "age_h": 0.3,
+   "id": "n:aspects-of-gta-6-are-inspired-by-red-dead-redemption-2-s-hon",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "Where to find GTA 6's UFO and alien",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto-6/gta-6-alien-ufo-location/",
+   "age_h": 0.3,
+   "id": "n:where-to-find-gta-6-s-ufo-and-alien",
+   "sites": [
+    "PC Gamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6 The Missing Link Walkthrough",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-the-missing-link-walkthrough/",
    "age_h": 0.6,
-   "id": "n:20-years-ago-the-sopranos-ps2-game-sank-so-gta-6-could-swim",
+   "id": "n:gta-6-the-missing-link-walkthrough",
    "sites": [
-    "Polygon"
+    "VGC"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "PC Gamer",
+   "title": "How to steal the Bravado Banshee in GTA 6",
+   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bravado-banshee-location/",
+   "age_h": 0.7,
+   "id": "n:how-to-steal-the-bravado-banshee-in-gta-6",
+   "sites": [
+    "PC Gamer"
    ],
    "new": true
   },
@@ -179,92 +262,14 @@
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "11 Hottest GTA 6 Characters—From Mandy to Andy and Beyond",
-   "page": "https://insider-gaming.com/11-hottest-gta-6-characters-from-mandy-to-andy-and-beyond/",
-   "age_h": 1.2,
-   "id": "n:11-hottest-gta-6-characters-from-mandy-to-andy-and-beyond",
+   "title": "GTA 6 is Reportedly the Biggest Physical Launch in the UK Since 2019",
+   "page": "https://insider-gaming.com/gta-6-biggest-physical-launch-uk/",
+   "age_h": 0.9,
+   "id": "n:gta-6-is-reportedly-the-biggest-physical-launch-in-the-uk-si",
    "sites": [
     "Insider Gaming"
    ],
    "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "All Missing Persons locations in GTA 6",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-missing-persons-locations/",
-   "age_h": 6.2,
-   "id": "n:all-missing-persons-locations-in-gta-6",
-   "sites": [
-    "PC Gamer"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "IGN",
-   "title": "Rockstar Explains Why it Added Consequences to GTA 6's Violence and Crimes",
-   "page": "https://www.ign.com/articles/rockstar-explains-why-it-added-consequences-to-gta-6s-violence-and-crimes",
-   "age_h": 11.0,
-   "id": "n:rockstar-explains-why-it-added-consequences-to-gta-6-s-viole",
-   "sites": [
-    "IGN"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "IGN",
-   "title": "Spotify Reveals Massive Spike in Streams for Music Featured in GTA 6",
-   "page": "https://www.ign.com/articles/spotify-reveals-massive-spike-in-streams-for-music-featured-in-gta-6",
-   "age_h": 12.3,
-   "id": "n:spotify-reveals-massive-spike-in-streams-for-music-featured-",
-   "sites": [
-    "IGN"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "How to get adrenaline in GTA 6",
-   "page": "https://www.polygon.com/gta-6-adrenaline-how-to-get/",
-   "age_h": 12.6,
-   "id": "n:how-to-get-adrenaline-in-gta-6",
-   "sites": [
-    "Polygon"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Kotaku",
-   "title": "With Grand Theft Auto 6, The Series Has Outgrown Some Of Its Joke Brand Names",
-   "page": "https://kotaku.com/with-grand-theft-auto-6-the-series-has-outgrown-some-of-its-joke-brand-names-2001000507",
-   "age_h": 12.7,
-   "id": "n:with-grand-theft-auto-6-the-series-has-outgrown-some-of-its-",
-   "sites": [
-    "Kotaku"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "GTA 6 has weird purple streetlights because actual Florida screwed up its streetlights",
-   "page": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-has-weird-purple-streetlights-because-actual-florida-screwed-up-its-streetlights/",
-   "age_h": 13.0,
-   "id": "n:gta-6-has-weird-purple-streetlights-because-actual-florida-s",
-   "sites": [
-    "PC Gamer"
-   ],
-   "new": false
   }
  ]
 }
