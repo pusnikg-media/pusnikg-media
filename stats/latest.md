@@ -1,16 +1,16 @@
-# Zahlen – Stand 26.11.2026 18:25 (Europe/Berlin)
+# Zahlen – Stand 26.11.2026 21:19 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 39.392 · Zuwachs 24 h: 64
+Posts gezählt: 80 · Views gesamt: 39.973 · Zuwachs 24 h: 72
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
-| 2026-11-26 | tiktok | GTA 5 vs GTA 6: thirteen years and three console | 68 | – | – | 0 |  |
-| 2026-11-26 | youtube | GTA 5 to GTA 6: 13 Years Later #shorts | 135 | – | – | 1 |  |
+| 2026-11-26 | tiktok | GTA 5 vs GTA 6: thirteen years and three console | 188 | – | – | 2 |  |
+| 2026-11-26 | youtube | GTA 5 to GTA 6: 13 Years Later #shorts | 588 | – | – | 10 |  |
 | 2026-11-25 | tiktok | GTA 6 radio debate: the radio is half of every G | 225 | 6 | 225 | 8 |  |
-| 2026-11-25 | youtube | GTA 6 Radio: On or Off? #shorts | 87 | 35 | 87 | 2 |  |
+| 2026-11-25 | youtube | GTA 6 Radio: On or Off? #shorts | 93 | 41 | 93 | 2 |  |
 | 2026-11-24 | tiktok | GTA 6 tips nobody asked for: close the guides an | 265 | 0 | 265 | 6 |  |
 | 2026-11-24 | youtube | GTA 6 Tip: Stop Using Guides #shorts | 323 | 5 | 318 | 3 |  |
 | 2026-11-23 | tiktok | GTA 6 map question: where in Leonida are you goi | 233 | 0 | 231 | 1 |  |
@@ -28,7 +28,7 @@ Posts gezählt: 80 · Views gesamt: 39.392 · Zuwachs 24 h: 64
 | 2026-11-19 | tiktok | GTA 6 release day is finally here after 13 years | 213 | 0 | 213 | 0 |  |
 | 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.574 | 2 | 2.963 | 47 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat fights an alligator in GTA 6 and Flori | 242 | 0 | 241 | 2 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 493 | 13 | 305 | 18 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 495 | 15 | 305 | 18 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat has waited 13 years to explore this GT | 220 | 0 | 211 | 16 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat spots the first baby he's ever seen in | 301 | 0 | 292 | 3 | Kai Cenat GTA 6 |
 
@@ -61,7 +61,7 @@ Posts gezählt: 20 · Views gesamt: 5.821 · Zuwachs 24 h: 0
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Kai Cenat GTA 6 | 8 | 11.796 | 6.574 | – |
+| Kai Cenat GTA 6 | 8 | 11.798 | 6.574 | – |
 | TJR | 18 | 4.970 | 748 | 0 von 18 |
 | Warzone S1 | 6 | 1.479 | 252 | – |
 | MW4 DMZ | 3 | 779 | 277 | – |
