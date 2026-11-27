@@ -1,20 +1,36 @@
 {
- "at": "2026-11-27T05:41:51+00:00",
+ "at": "2026-11-27T11:31:50+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 404",
-  "reddit r/GTA6: HTTP 429",
-  "reddit r/GTA: HTTP 429"
+  "reddit r/LivestreamFail: HTTP 429",
+  "reddit r/GTA6: HTTP 404",
+  "reddit r/GTA: HTTP 404"
  ],
  "items": [
   {
    "src": "kick",
    "area": "irl",
+   "channel": "traedakidd",
+   "title": "Live",
+   "views": 6958,
+   "per_h": 252,
+   "dur": 50,
+   "age_h": 27.6,
+   "category": "Just Chatting",
+   "page": "https://kick.com/traedakidd/clips/clip_01M8BDF182KQ1MBPCD5SMEDBGQ",
+   "video": "https://clips.kick.com/clips/9a/clip_01M8BDF182KQ1MBPCD5SMEDBGQ/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8BDF182KQ1MBPCD5SMEDBGQ",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "tjnv",
    "title": "i cant be a hostage, i am incredibley busy",
-   "views": 4679,
-   "per_h": 407,
+   "views": 5332,
+   "per_h": 306,
    "dur": 68,
-   "age_h": 11.5,
+   "age_h": 17.4,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/tjnv/clips/clip_01M8CGJK5XC83NW14KGQK6JNDJ",
    "video": "https://clips.kick.com/clips/7a/clip_01M8CGJK5XC83NW14KGQK6JNDJ/master.m3u8",
@@ -27,15 +43,31 @@
    "area": "irl",
    "channel": "biotox",
    "title": "Big Homie Bazin",
-   "views": 3288,
-   "per_h": 307,
+   "views": 3880,
+   "per_h": 234,
    "dur": 135,
-   "age_h": 10.7,
+   "age_h": 16.6,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/biotox/clips/clip_01M8CKFB8Q5YKCSQW5YZ96KGXX",
    "video": "https://clips.kick.com/clips/75/clip_01M8CKFB8Q5YKCSQW5YZ96KGXX/master.m3u8",
    "mature": true,
    "id": "k:clip_01M8CKFB8Q5YKCSQW5YZ96KGXX",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "traedakidd",
+   "title": "Traedakidd x deyadelarosa Sit Down.",
+   "views": 3610,
+   "per_h": 131,
+   "dur": 180,
+   "age_h": 27.6,
+   "category": "Just Chatting",
+   "page": "https://kick.com/traedakidd/clips/clip_01M8BDJ3QPX7H8MEXYC00XSY63",
+   "video": "https://clips.kick.com/clips/01/clip_01M8BDJ3QPX7H8MEXYC00XSY63/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8BDJ3QPX7H8MEXYC00XSY63",
    "new": true
   },
   {
@@ -43,10 +75,10 @@
    "area": "irl",
    "channel": "asmongold",
    "title": "dgncdgn",
-   "views": 3064,
-   "per_h": 104,
+   "views": 3305,
+   "per_h": 93,
    "dur": 60,
-   "age_h": 29.6,
+   "age_h": 35.4,
    "category": "Grand Theft Auto VI (GTA)",
    "page": "https://kick.com/asmongold/clips/clip_01M8AJRM2XDAMY4Z8WG535CBKY",
    "video": "https://clips.kick.com/clips/9a/clip_01M8AJRM2XDAMY4Z8WG535CBKY/master.m3u8",
@@ -57,12 +89,28 @@
   {
    "src": "kick",
    "area": "irl",
+   "channel": "traedakidd",
+   "title": "Good",
+   "views": 3010,
+   "per_h": 109,
+   "dur": 168,
+   "age_h": 27.6,
+   "category": "Just Chatting",
+   "page": "https://kick.com/traedakidd/clips/clip_01M8BDMHVCA1T21J4KDXMZS2TG",
+   "video": "https://clips.kick.com/clips/b3/clip_01M8BDMHVCA1T21J4KDXMZS2TG/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8BDMHVCA1T21J4KDXMZS2TG",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
    "channel": "harry",
    "title": "Harry makes a deal for batteries",
-   "views": 2896,
-   "per_h": 115,
+   "views": 2988,
+   "per_h": 97,
    "dur": 136,
-   "age_h": 25.1,
+   "age_h": 30.9,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/harry/clips/clip_01M8B24RDMNJZTBPWJXHPPWVC1",
    "video": "https://clips.kick.com/clips/c0/clip_01M8B24RDMNJZTBPWJXHPPWVC1/master.m3u8",
@@ -73,65 +121,17 @@
   {
    "src": "kick",
    "area": "irl",
-   "channel": "achtenwlodar",
-   "title": "co za swinia jebana",
-   "views": 1716,
-   "per_h": 130,
-   "dur": 30,
-   "age_h": 13.2,
-   "category": "Just Chatting",
-   "page": "https://kick.com/achtenwlodar/clips/clip_01M8CAW74V5AEZFYG3P2WFWNXJ",
-   "video": "https://clips.kick.com/clips/4a/clip_01M8CAW74V5AEZFYG3P2WFWNXJ/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8CAW74V5AEZFYG3P2WFWNXJ",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "kayzgamble",
-   "title": "1000x win 😚",
-   "views": 1571,
-   "per_h": 145,
-   "dur": 45,
-   "age_h": 10.8,
-   "category": "Slots & Casino",
-   "page": "https://kick.com/kayzgamble/clips/clip_01M8CK590G7KBQRXR7DKYHPR30",
-   "video": "https://clips.kick.com/clips/84/clip_01M8CK590G7KBQRXR7DKYHPR30/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8CK590G7KBQRXR7DKYHPR30",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "theozip",
-   "title": "g",
-   "views": 1435,
-   "per_h": 52,
-   "dur": 124,
+   "channel": "traedakidd",
+   "title": "New beginnings",
+   "views": 2279,
+   "per_h": 83,
+   "dur": 146,
    "age_h": 27.6,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/theozip/clips/clip_01M8ASQ4TPK9QZCPM0PMA4G8J1",
-   "video": "https://clips.kick.com/clips/51/clip_01M8ASQ4TPK9QZCPM0PMA4G8J1/playlist.m3u8",
+   "category": "Just Chatting",
+   "page": "https://kick.com/traedakidd/clips/clip_01M8BDK9WVK47NEXMDRBT7ARJQ",
+   "video": "https://clips.kick.com/clips/5d/clip_01M8BDK9WVK47NEXMDRBT7ARJQ/playlist.m3u8",
    "mature": true,
-   "id": "k:clip_01M8ASQ4TPK9QZCPM0PMA4G8J1",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "capped",
-   "title": "capped reaction",
-   "views": 1045,
-   "per_h": 36,
-   "dur": 76,
-   "age_h": 29.4,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/capped/clips/clip_01M8AKCHA7DQXRNXAW1XNR84Z5",
-   "video": "https://clips.kick.com/clips/ba/clip_01M8AKCHA7DQXRNXAW1XNR84Z5/master.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8AKCHA7DQXRNXAW1XNR84Z5",
+   "id": "k:clip_01M8BDK9WVK47NEXMDRBT7ARJQ",
    "new": true
   },
   {
@@ -140,7 +140,7 @@
    "site": "Eurogamer",
    "title": "GTA 6 causes surge in UK physical game sales, despite there being no disc in the box",
    "page": "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk",
-   "age_h": 12.2,
+   "age_h": 18.0,
    "id": "n:gta-6-causes-surge-in-uk-physical-game-sales-despite-there-b",
    "sites": [
     "Eurogamer",
@@ -155,40 +155,25 @@
    "site": "GameSpot",
    "title": "Rockstar Games Has A GTA 6 Hit On Its Hands, But Its Union Vote Is A Loss",
    "page": "https://www.gamespot.com/articles/rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vote-is-a-loss/",
-   "age_h": 12.6,
+   "age_h": 18.4,
    "id": "n:rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vo",
    "sites": [
     "GameSpot",
     "Eurogamer",
     "VGC"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Rockstar workers vote overwhelmingly against union recognition",
-   "page": "https://www.pcgamer.com/gaming-industry/rockstar-workers-vote-overwhelmingly-against-union-recognition/",
-   "age_h": 13.5,
-   "id": "n:rockstar-workers-vote-overwhelmingly-against-union-recogniti",
-   "sites": [
-    "PC Gamer",
-    "Insider Gaming",
-    "RockstarINTEL"
-   ],
    "new": false
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6 All Kitty Litter lab locations: Where to find all drug labs & North Balsero code",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-kitty-litter-lab-locations/",
-   "age_h": 6.3,
-   "id": "n:gta-6-all-kitty-litter-lab-locations-where-to-find-all-drug-",
+   "site": "Insider Gaming",
+   "title": "Where To Find Principe Emilio’s Lectro In GTA 6—Fastest Motorcycles Location & Stats",
+   "page": "https://insider-gaming.com/principe-emilios-lectro-gta-6/",
+   "age_h": 0.1,
+   "id": "n:where-to-find-principe-emilio-s-lectro-in-gta-6-fastest-moto",
    "sites": [
-    "VGC",
+    "Insider Gaming",
     "PC Gamer"
    ],
    "new": true
@@ -199,13 +184,13 @@
    "site": "PC Gamer",
    "title": "Microsoft's Github posts message celebrating efforts to port PlayStation 5 version of Grand Theft Auto 6 to PC, then quickly deletes it",
    "page": "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/",
-   "age_h": 7.2,
+   "age_h": 13.0,
    "id": "n:microsoft-s-github-posts-message-celebrating-efforts-to-port",
    "sites": [
     "PC Gamer",
     "Kotaku"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -213,65 +198,78 @@
    "site": "IGN",
    "title": "Lucia Actress Manni L. Perez Issues First Statement Since GTA 6 Launch",
    "page": "https://www.ign.com/articles/lucia-actress-manni-l-perez-issues-first-statement-since-gta-6-launch",
-   "age_h": 8.7,
+   "age_h": 14.5,
    "id": "n:lucia-actress-manni-l-perez-issues-first-statement-since-gta",
    "sites": [
     "IGN",
     "VGC"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "GTA: Boston Would Go Wicked Hard, Kid",
-   "page": "https://www.polygon.com/gta-6-boston-massachussetts/",
-   "age_h": 8.7,
-   "id": "n:gta-boston-would-go-wicked-hard-kid",
-   "sites": [
-    "Polygon"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "GTA VI Features a Hidden Memorial for Rockstar Developers’ Late Family Members",
-   "page": "https://rockstarintel.com/gta-vi-features-a-hidden-memorial-for-rockstar-developers-late-family-members/",
-   "age_h": 9.1,
-   "id": "n:gta-vi-features-a-hidden-memorial-for-rockstar-developers-la",
-   "sites": [
-    "RockstarINTEL"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "GTA VI Features a Previously Unreleased Song From D’Angelo",
-   "page": "https://rockstarintel.com/gta-vi-features-a-previously-unreleased-song-from-dangelo/",
-   "age_h": 9.2,
-   "id": "n:gta-vi-features-a-previously-unreleased-song-from-d-angelo",
-   "sites": [
-    "RockstarINTEL"
-   ],
    "new": false
   },
   {
    "src": "news",
    "area": "gaming",
+   "site": "Eurogamer",
+   "title": "Rockstar boss \"so grateful\" to have kept GTA 6's big prologue twist a secret - and reveals Tomás' story could have been very different",
+   "page": "https://www.eurogamer.net/gta-6-rockstar-debated-changing-jason-lucias-big-secret",
+   "age_h": 0.0,
+   "id": "n:rockstar-boss-so-grateful-to-have-kept-gta-6-s-big-prologue-",
+   "sites": [
+    "Eurogamer"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "When Will GTA 6 Online Come Out? GTA 6 Online Release Window",
+   "page": "https://insider-gaming.com/gta-6-online-multiplayer-release/",
+   "age_h": 0.1,
+   "id": "n:when-will-gta-6-online-come-out-gta-6-online-release-window",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
    "site": "RockstarINTEL",
-   "title": "Rockstar Developer Explains How Players Should Experience GTA VI",
-   "page": "https://rockstarintel.com/rockstar-developer-explains-how-players-should-experience-gta-vi/",
-   "age_h": 9.3,
-   "id": "n:rockstar-developer-explains-how-players-should-experience-gt",
+   "title": "GTA VI x GTA+ Screenshots Gallery",
+   "page": "https://rockstarintel.com/gta-vi-x-gta-screenshots-gallery/",
+   "age_h": 0.4,
+   "id": "n:gta-vi-x-gta-screenshots-gallery",
    "sites": [
     "RockstarINTEL"
    ],
-   "new": false
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "Where To Find Principe Burnished Alvino In GTA 6—Fastest Motorcycles Location & Stats",
+   "page": "https://insider-gaming.com/principe-burnished-alvino-gta-6/",
+   "age_h": 0.6,
+   "id": "n:where-to-find-principe-burnished-alvino-in-gta-6-fastest-mot",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "Working GTA VI Online Multiplayer Mod Even Includes Proximity Chat",
+   "page": "https://rockstarintel.com/working-gta-vi-online-multiplayer-mod-even-includes-proximity-chat/",
+   "age_h": 1.3,
+   "id": "n:working-gta-vi-online-multiplayer-mod-even-includes-proximit",
+   "sites": [
+    "RockstarINTEL"
+   ],
+   "new": true
   }
  ]
 }
