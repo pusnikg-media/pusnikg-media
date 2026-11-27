@@ -1,7 +1,7 @@
 {
- "at": "2026-11-27T11:31:50+00:00",
+ "at": "2026-11-27T16:44:54+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 429",
+  "reddit r/LivestreamFail: HTTP 404",
   "reddit r/GTA6: HTTP 404",
   "reddit r/GTA: HTTP 404"
  ],
@@ -11,26 +11,26 @@
    "area": "irl",
    "channel": "traedakidd",
    "title": "Live",
-   "views": 6958,
-   "per_h": 252,
+   "views": 7224,
+   "per_h": 220,
    "dur": 50,
-   "age_h": 27.6,
+   "age_h": 32.9,
    "category": "Just Chatting",
    "page": "https://kick.com/traedakidd/clips/clip_01M8BDF182KQ1MBPCD5SMEDBGQ",
    "video": "https://clips.kick.com/clips/9a/clip_01M8BDF182KQ1MBPCD5SMEDBGQ/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M8BDF182KQ1MBPCD5SMEDBGQ",
-   "new": true
+   "new": false
   },
   {
    "src": "kick",
    "area": "irl",
    "channel": "tjnv",
    "title": "i cant be a hostage, i am incredibley busy",
-   "views": 5332,
-   "per_h": 306,
+   "views": 5834,
+   "per_h": 258,
    "dur": 68,
-   "age_h": 17.4,
+   "age_h": 22.6,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/tjnv/clips/clip_01M8CGJK5XC83NW14KGQK6JNDJ",
    "video": "https://clips.kick.com/clips/7a/clip_01M8CGJK5XC83NW14KGQK6JNDJ/master.m3u8",
@@ -43,10 +43,10 @@
    "area": "irl",
    "channel": "biotox",
    "title": "Big Homie Bazin",
-   "views": 3880,
-   "per_h": 234,
+   "views": 4238,
+   "per_h": 194,
    "dur": 135,
-   "age_h": 16.6,
+   "age_h": 21.8,
    "category": "Grand Theft Auto V (GTA)",
    "page": "https://kick.com/biotox/clips/clip_01M8CKFB8Q5YKCSQW5YZ96KGXX",
    "video": "https://clips.kick.com/clips/75/clip_01M8CKFB8Q5YKCSQW5YZ96KGXX/master.m3u8",
@@ -59,31 +59,15 @@
    "area": "irl",
    "channel": "traedakidd",
    "title": "Traedakidd x deyadelarosa Sit Down.",
-   "views": 3610,
-   "per_h": 131,
+   "views": 3655,
+   "per_h": 111,
    "dur": 180,
-   "age_h": 27.6,
+   "age_h": 32.8,
    "category": "Just Chatting",
    "page": "https://kick.com/traedakidd/clips/clip_01M8BDJ3QPX7H8MEXYC00XSY63",
    "video": "https://clips.kick.com/clips/01/clip_01M8BDJ3QPX7H8MEXYC00XSY63/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M8BDJ3QPX7H8MEXYC00XSY63",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "asmongold",
-   "title": "dgncdgn",
-   "views": 3305,
-   "per_h": 93,
-   "dur": 60,
-   "age_h": 35.4,
-   "category": "Grand Theft Auto VI (GTA)",
-   "page": "https://kick.com/asmongold/clips/clip_01M8AJRM2XDAMY4Z8WG535CBKY",
-   "video": "https://clips.kick.com/clips/9a/clip_01M8AJRM2XDAMY4Z8WG535CBKY/master.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8AJRM2XDAMY4Z8WG535CBKY",
    "new": false
   },
   {
@@ -91,31 +75,15 @@
    "area": "irl",
    "channel": "traedakidd",
    "title": "Good",
-   "views": 3010,
-   "per_h": 109,
+   "views": 3053,
+   "per_h": 93,
    "dur": 168,
-   "age_h": 27.6,
+   "age_h": 32.8,
    "category": "Just Chatting",
    "page": "https://kick.com/traedakidd/clips/clip_01M8BDMHVCA1T21J4KDXMZS2TG",
    "video": "https://clips.kick.com/clips/b3/clip_01M8BDMHVCA1T21J4KDXMZS2TG/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M8BDMHVCA1T21J4KDXMZS2TG",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "harry",
-   "title": "Harry makes a deal for batteries",
-   "views": 2988,
-   "per_h": 97,
-   "dur": 136,
-   "age_h": 30.9,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/harry/clips/clip_01M8B24RDMNJZTBPWJXHPPWVC1",
-   "video": "https://clips.kick.com/clips/c0/clip_01M8B24RDMNJZTBPWJXHPPWVC1/master.m3u8",
-   "mature": false,
-   "id": "k:clip_01M8B24RDMNJZTBPWJXHPPWVC1",
    "new": false
   },
   {
@@ -123,55 +91,57 @@
    "area": "irl",
    "channel": "traedakidd",
    "title": "New beginnings",
-   "views": 2279,
-   "per_h": 83,
+   "views": 2305,
+   "per_h": 70,
    "dur": 146,
-   "age_h": 27.6,
+   "age_h": 32.8,
    "category": "Just Chatting",
    "page": "https://kick.com/traedakidd/clips/clip_01M8BDK9WVK47NEXMDRBT7ARJQ",
    "video": "https://clips.kick.com/clips/5d/clip_01M8BDK9WVK47NEXMDRBT7ARJQ/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M8BDK9WVK47NEXMDRBT7ARJQ",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "achtenwlodar",
+   "title": "co za swinia jebana",
+   "views": 2117,
+   "per_h": 87,
+   "dur": 30,
+   "age_h": 24.3,
+   "category": "Just Chatting",
+   "page": "https://kick.com/achtenwlodar/clips/clip_01M8CAW74V5AEZFYG3P2WFWNXJ",
+   "video": "https://clips.kick.com/clips/4a/clip_01M8CAW74V5AEZFYG3P2WFWNXJ/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8CAW74V5AEZFYG3P2WFWNXJ",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "sergioeleven",
+   "title": ",",
+   "views": 1158,
+   "per_h": 69,
+   "dur": 25,
+   "age_h": 16.7,
+   "category": "Pools, Hot Tubs & Bikinis",
+   "page": "https://kick.com/sergioeleven/clips/clip_01M8D4VT2JT7TZKPT7WJJKCDNM",
+   "video": "https://clips.kick.com/clips/6e/clip_01M8D4VT2JT7TZKPT7WJJKCDNM/master.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8D4VT2JT7TZKPT7WJJKCDNM",
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "GTA 6 causes surge in UK physical game sales, despite there being no disc in the box",
-   "page": "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk",
-   "age_h": 18.0,
-   "id": "n:gta-6-causes-surge-in-uk-physical-game-sales-despite-there-b",
-   "sites": [
-    "Eurogamer",
-    "RockstarINTEL",
-    "VGC"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "GameSpot",
-   "title": "Rockstar Games Has A GTA 6 Hit On Its Hands, But Its Union Vote Is A Loss",
-   "page": "https://www.gamespot.com/articles/rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vote-is-a-loss/",
-   "age_h": 18.4,
-   "id": "n:rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vo",
-   "sites": [
-    "GameSpot",
-    "Eurogamer",
-    "VGC"
-   ],
-   "new": false
-  },
-  {
-   "src": "news",
-   "area": "gaming",
    "site": "Insider Gaming",
-   "title": "Where To Find Principe Emilio’s Lectro In GTA 6—Fastest Motorcycles Location & Stats",
-   "page": "https://insider-gaming.com/principe-emilios-lectro-gta-6/",
-   "age_h": 0.1,
-   "id": "n:where-to-find-principe-emilio-s-lectro-in-gta-6-fastest-moto",
+   "title": "Where To Find Nagasaki Hung Carbon RS In GTA 6—Fastest Motorcycles Location & Stats",
+   "page": "https://insider-gaming.com/nagasaki-hung-carbon-rs-gta-6/",
+   "age_h": 5.0,
+   "id": "n:where-to-find-nagasaki-hung-carbon-rs-in-gta-6-fastest-motor",
    "sites": [
     "Insider Gaming",
     "PC Gamer"
@@ -184,7 +154,7 @@
    "site": "PC Gamer",
    "title": "Microsoft's Github posts message celebrating efforts to port PlayStation 5 version of Grand Theft Auto 6 to PC, then quickly deletes it",
    "page": "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/",
-   "age_h": 13.0,
+   "age_h": 18.3,
    "id": "n:microsoft-s-github-posts-message-celebrating-efforts-to-port",
    "sites": [
     "PC Gamer",
@@ -195,38 +165,39 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "IGN",
-   "title": "Lucia Actress Manni L. Perez Issues First Statement Since GTA 6 Launch",
-   "page": "https://www.ign.com/articles/lucia-actress-manni-l-perez-issues-first-statement-since-gta-6-launch",
-   "age_h": 14.5,
-   "id": "n:lucia-actress-manni-l-perez-issues-first-statement-since-gta",
+   "site": "Eurogamer",
+   "title": "GTA 6 causes surge in UK physical game sales, despite there being no disc in the box",
+   "page": "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk",
+   "age_h": 23.2,
+   "id": "n:gta-6-causes-surge-in-uk-physical-game-sales-despite-there-b",
    "sites": [
-    "IGN",
-    "VGC"
+    "Eurogamer",
+    "RockstarINTEL"
    ],
    "new": false
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "Eurogamer",
-   "title": "Rockstar boss \"so grateful\" to have kept GTA 6's big prologue twist a secret - and reveals Tomás' story could have been very different",
-   "page": "https://www.eurogamer.net/gta-6-rockstar-debated-changing-jason-lucias-big-secret",
-   "age_h": 0.0,
-   "id": "n:rockstar-boss-so-grateful-to-have-kept-gta-6-s-big-prologue-",
+   "site": "GameSpot",
+   "title": "Rockstar Games Has A GTA 6 Hit On Its Hands, But Its Union Vote Is A Loss",
+   "page": "https://www.gamespot.com/articles/rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vote-is-a-loss/",
+   "age_h": 23.7,
+   "id": "n:rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vo",
    "sites": [
+    "GameSpot",
     "Eurogamer"
    ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "When Will GTA 6 Online Come Out? GTA 6 Online Release Window",
-   "page": "https://insider-gaming.com/gta-6-online-multiplayer-release/",
-   "age_h": 0.1,
-   "id": "n:when-will-gta-6-online-come-out-gta-6-online-release-window",
+   "title": "How to Find and Complete Sound4Sound Studio Illegal Operation in GTA 6–All Key Valuables",
+   "page": "https://insider-gaming.com/gta-6-sound4sound-studio-all-key-valuables/",
+   "age_h": 0.3,
+   "id": "n:how-to-find-and-complete-sound4sound-studio-illegal-operatio",
    "sites": [
     "Insider Gaming"
    ],
@@ -235,11 +206,24 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "GTA VI x GTA+ Screenshots Gallery",
-   "page": "https://rockstarintel.com/gta-vi-x-gta-screenshots-gallery/",
+   "site": "Polygon",
+   "title": "All Randy's wish list car locations in GTA 6",
+   "page": "https://www.polygon.com/gta-6-randys-wish-list-cars-locations-how-to-get/",
    "age_h": 0.4,
-   "id": "n:gta-vi-x-gta-screenshots-gallery",
+   "id": "n:all-randy-s-wish-list-car-locations-in-gta-6",
+   "sites": [
+    "Polygon"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "GTA VI Hits 53 Million Copies Sold in Just 1 Week, Generating $4.7 Billion",
+   "page": "https://rockstarintel.com/gta-vi-hits-53-million-copies-sold-in-just-1-week-generating-4-7-billion/",
+   "age_h": 0.5,
+   "id": "n:gta-vi-hits-53-million-copies-sold-in-just-1-week-generating",
    "sites": [
     "RockstarINTEL"
    ],
@@ -249,10 +233,10 @@
    "src": "news",
    "area": "gaming",
    "site": "Insider Gaming",
-   "title": "Where To Find Principe Burnished Alvino In GTA 6—Fastest Motorcycles Location & Stats",
-   "page": "https://insider-gaming.com/principe-burnished-alvino-gta-6/",
+   "title": "How to Find and Complete Casa Guardia Illegal Operation in GTA 6—All Key Valuables",
+   "page": "https://insider-gaming.com/gta-6-casa-guardia-all-key-valuables/",
    "age_h": 0.6,
-   "id": "n:where-to-find-principe-burnished-alvino-in-gta-6-fastest-mot",
+   "id": "n:how-to-find-and-complete-casa-guardia-illegal-operation-in-g",
    "sites": [
     "Insider Gaming"
    ],
@@ -261,13 +245,26 @@
   {
    "src": "news",
    "area": "gaming",
-   "site": "RockstarINTEL",
-   "title": "Working GTA VI Online Multiplayer Mod Even Includes Proximity Chat",
-   "page": "https://rockstarintel.com/working-gta-vi-online-multiplayer-mod-even-includes-proximity-chat/",
-   "age_h": 1.3,
-   "id": "n:working-gta-vi-online-multiplayer-mod-even-includes-proximit",
+   "site": "IGN",
+   "title": "I Tried to Get Six Stars in GTA 6 With Just One Bullet and Broke the Game",
+   "page": "https://www.ign.com/articles/i-tried-to-get-six-stars-in-gta-6-with-just-one-bullet-and-broke-the-game",
+   "age_h": 0.7,
+   "id": "n:i-tried-to-get-six-stars-in-gta-6-with-just-one-bullet-and-b",
    "sites": [
-    "RockstarINTEL"
+    "IGN"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Polygon",
+   "title": "How to unlock hurricanes in GTA 6",
+   "page": "https://www.polygon.com/gta-6-hurricanes-how-to-unlock-freddies-mission/",
+   "age_h": 0.7,
+   "id": "n:how-to-unlock-hurricanes-in-gta-6",
+   "sites": [
+    "Polygon"
    ],
    "new": true
   }
