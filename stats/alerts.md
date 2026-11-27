@@ -1,6 +1,6 @@
-# Alarme – Stand 27.11.2026 13:17 (Europe/Berlin)
+# Alarme – Stand 27.11.2026 13:34 (Europe/Berlin)
 
-stand_utc: 2026-11-27T12:17:29Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-27T12:34:39Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
