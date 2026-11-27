@@ -1,16 +1,16 @@
-# Zahlen – Stand 27.11.2026 18:25 (Europe/Berlin)
+# Zahlen – Stand 27.11.2026 21:14 (Europe/Berlin)
 
 Öffentliche Zahlen der eigenen Posts, ohne Login gesammelt. `+24h` = Zuwachs seit der Messung vor etwa einem Tag, `24h` = Views einen Tag nach Veröffentlichung.
 
 ## Pusnik G
-Posts gezählt: 80 · Views gesamt: 38.986 · Zuwachs 24 h: 251
+Posts gezählt: 80 · Views gesamt: 39.824 · Zuwachs 24 h: 251
 
 | Datum | Plattform | Titel | Views | +24h | 24h | Likes | Kampagne |
 |---|---|---|---|---|---|---|---|
-| 2026-11-27 | tiktok | GTA protagonists ranked: Tommy, CJ, Niko, the GT | 67 | – | – | 0 |  |
-| 2026-11-27 | youtube | GTA Protagonists Ranked: Is CJ Still #1? #shorts | 76 | – | – | 1 |  |
+| 2026-11-27 | tiktok | GTA protagonists ranked: Tommy, CJ, Niko, the GT | 207 | – | – | 3 |  |
+| 2026-11-27 | youtube | GTA Protagonists Ranked: Is CJ Still #1? #shorts | 774 | – | – | 26 |  |
 | 2026-11-26 | tiktok | GTA 5 vs GTA 6: thirteen years and three console | 192 | 4 | 192 | 2 |  |
-| 2026-11-26 | youtube | GTA 5 to GTA 6: 13 Years Later #shorts | 866 | 278 | 866 | 9 |  |
+| 2026-11-26 | youtube | GTA 5 to GTA 6: 13 Years Later #shorts | 865 | 277 | 865 | 9 |  |
 | 2026-11-25 | tiktok | GTA 6 radio debate: the radio is half of every G | 226 | 1 | 225 | 8 |  |
 | 2026-11-25 | youtube | GTA 6 Radio: On or Off? #shorts | 128 | 35 | 93 | 2 |  |
 | 2026-11-24 | tiktok | GTA 6 tips nobody asked for: close the guides an | 266 | 1 | 265 | 6 |  |
@@ -30,7 +30,7 @@ Posts gezählt: 80 · Views gesamt: 38.986 · Zuwachs 24 h: 251
 | 2026-11-19 | tiktok | GTA 6 release day is finally here after 13 years | 213 | 0 | 213 | 0 |  |
 | 2026-11-19 | youtube | Kai Cenat fights an alligator in GTA 6 #shorts | 6.574 | 0 | 2.963 | 47 | Kai Cenat GTA 6 |
 | 2026-11-19 | tiktok | Kai Cenat fights an alligator in GTA 6 and Flori | 242 | 0 | 241 | 2 | Kai Cenat GTA 6 |
-| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 512 | 17 | 305 | 18 | Kai Cenat GTA 6 |
+| 2026-11-19 | tiktok | Kai Cenat picks the paint job for his GTA 6 car  | 513 | 18 | 305 | 18 | Kai Cenat GTA 6 |
 
 ## Pusnik IRL
 Posts gezählt: 20 · Views gesamt: 5.821 · Zuwachs 24 h: 0
@@ -61,7 +61,7 @@ Posts gezählt: 20 · Views gesamt: 5.821 · Zuwachs 24 h: 0
 ## Kampagnen
 | Kampagne | Clips | Views gesamt | bester Clip | über der Schwelle |
 |---|---|---|---|---|
-| Kai Cenat GTA 6 | 8 | 11.815 | 6.574 | – |
+| Kai Cenat GTA 6 | 8 | 11.816 | 6.574 | – |
 | TJR | 18 | 4.970 | 748 | 0 von 18 |
 | Warzone S1 | 6 | 1.480 | 252 | – |
 | MW4 DMZ | 3 | 779 | 277 | – |
