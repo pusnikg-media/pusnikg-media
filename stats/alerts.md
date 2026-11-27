@@ -1,11 +1,11 @@
-# Alarme – Stand 27.11.2026 21:14 (Europe/Berlin)
+# Alarme – Stand 27.11.2026 21:39 (Europe/Berlin)
 
-stand_utc: 2026-11-27T20:14:40Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
+stand_utc: 2026-11-27T20:39:19Z  (älter als ca. 15 h = Wächter tot, Alarmliste nicht vertrauen)
 
 Vom Wächter (3× täglich: 06:47, 12:37, 20:47 Berlin, 0 Credits). Nur offene Probleme. Gelöstes verschwindet von selbst.
 
 ## Daten veraltet oder nicht lesbar
-- trends/latest.json: reddit r/LivestreamFail: HTTP 404; reddit r/GTA6: HTTP 404; reddit r/GTA: HTTP 404
+- trends/latest.json: reddit r/LivestreamFail: HTTP 429; reddit r/GTA6: HTTP 429; reddit r/GTA: HTTP 429
 
 ## Repo wächst zu stark
 - Repo ist 5788 MB groß (Alarm ab 3500 MB; GitHub empfiehlt unter 5 GB). Livewatch-Rohdateien (clips/live-*/raw_*.mp4) wachsen mit.
