@@ -1,0 +1,104 @@
+{
+ "name": "pusnikg-2026-11-28-awards-ai",
+ "date": "2026-11-28",
+ "day": -9,
+ "script": [
+  "GTA 6 got eight Game Awards nominations before it even launched.",
+  "That's more than any other game this year, and fans hadn't even played it.",
+  "Now we're all playing it, so the hype finally has to hold up.",
+  "My take: it wins big, but a clean sweep of all eight is unlikely.",
+  "Which award do you think it loses?",
+  "Follow for more GTA 6."
+ ],
+ "shots": [
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/car09a.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/161885.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/380314.mp4",
+    "start": 1
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city02a.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/89894.mp4",
+    "start": 5
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach01a.mp4",
+    "start": 3
+   }
+  ],
+  [
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/beach03a.mp4",
+    "start": 4
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/380323.mp4",
+    "start": 1
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/1630.mp4",
+    "start": 3
+   },
+   {
+    "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/city04a.mp4",
+    "start": 2
+   }
+  ],
+  [
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/251448.mp4",
+    "start": 0.5
+   },
+   {
+    "url": "https://storage.orshot.com/stock/pixabay/video/149137.mp4",
+    "start": 5
+   }
+  ]
+ ],
+ "music": {
+  "url": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus06.m4a",
+  "start": 2,
+  "db": -9,
+  "title": "Aggressive mus06 (eigene Bibliothek)"
+ },
+ "hook_big": "8",
+ "hook_mid": "GAME AWARDS",
+ "hook_sub": "BEFORE IT WAS EVEN OUT",
+ "badge": "GTA 6 • WEEK 2",
+ "card": {
+  "line": 3,
+  "word": "sweep",
+  "top": "MY TAKE",
+  "big": "8/8?",
+  "bottom": "NOT HAPPENING"
+ },
+ "punch": [
+  "eight",
+  "fans",
+  "hype",
+  "sweep"
+ ],
+ "tiktok_lines": [
+  0,
+  1,
+  4,
+  5
+ ]
+}
