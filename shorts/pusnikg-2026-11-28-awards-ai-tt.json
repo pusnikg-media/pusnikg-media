@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 5.05s  dʒˌiːtˌiːˈeɪ sˈɪks ɡɑːt ˈeɪt ɡˈeɪm ɐwˈɔːɹdz nˌɑːmᵻnˈeɪʃənz bᵻfˌoːɹ ɪɾ ˈiːvən lˈɑːntʃt.\n1: 4.35s  ðæts mˈoːɹ ðɐn ˌɛni ˈʌðɚ ɡˈeɪm ðɪs jˈɪɹ, ænd fˈænz hˈædənt ˈiːvən plˈeɪd ɪt.\n2: 2.40s  wˌɪtʃ ɐwˈɔːɹd dˈuː juː θˈɪŋk ɪt lˈuːzᵻz?\n3: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 4 lines 14.17s",
+  "PREFLIGHT_OK 4 lines, 10 shots, 15.44 s\nGTA@0.23 6@0.58 got@1.25 eight@1.49 Game@1.76 Awards@2.01 nominations@2.32 before@2.78 it@3.44 even@3.59 launched.@3.81\nThat's@0.23 more@0.62 than@0.77 any@0.94 other@1.05 game@1.22 this@1.46 year,@1.67 and@2.23 fans@2.26 hadn't@2.43 even@2.93 played@3.04 it.@3.33\nWhich@0.22 award@0.54 do@0.76 you@1.08 think@1.17 it@1.36 loses?@1.51\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 4 lines\n\nTOTAL 15.435 shots 10 captions 9\nRENDER_OK /home/runner/work_pusnikg-2026-11-28-awards-ai-tt/pusnikg-2026-11-28-awards-ai-tt.mp4 15.43s",
+  "QA_OK 15.44s -13.9 LUFS frames: /home/runner/work_pusnikg-2026-11-28-awards-ai-tt/pusnikg-2026-11-28-awards-ai-tt_qa_0.png /home/runner/work_pusnikg-2026-11-28-awards-ai-tt/pusnikg-2026-11-28-awards-ai-tt_qa_mid.png /home/runner/work_pusnikg-2026-11-28-awards-ai-tt/pusnikg-2026-11-28-awards-ai-tt_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 15.44,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus06.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-28-awards-ai-tt.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-28-awards-ai-tt_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-28-awards-ai-tt_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-28-awards-ai-tt_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-28-awards-ai-tt",
+ "attempts": 1
+}
