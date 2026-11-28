@@ -1,4 +1,4 @@
-# Kampagnen-Radar – 28.11.2026 06:20 UTC
+# Kampagnen-Radar – 28.11.2026 12:07 UTC
 
 Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl nach festen Regeln – vor dem Beitritt das Briefing lesen. Beitreten kann nur Steven. NEW = seit dem letzten Lauf neu.
 
@@ -14,27 +14,27 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
 
 ## Pusnik G – beste offene Kampagnen (8 passen)
 
-- **BenDaDonnn x Puffco GTA 6** (Launch Clipping) – 1 $/1K, 7.6K $ frei, 300 $ in 24 h ausgezahlt, Auszahlung ab 2K Views, 169 Clipper, TT/IG/YT/X/facebook, Entertainment, seit 1 week ago
+- **BenDaDonnn x Puffco GTA 6** (Launch Clipping) – 1 $/1K, 7.5K $ frei, 300 $ in 24 h ausgezahlt, Auszahlung ab 2K Views, 169 Clipper, TT/IG/YT/X/facebook, Entertainment, seit 1 week ago
   Achtung: Material liegt bei (2 Dateien)
   Clip BenDaDonnn using PuffCo products while playing GTA 6!
   https://contentrewards.com/c/campaigns/bb66f9eb-b90e-4dd0-8cee-9f3cd566c9a0
-- **RoAutomation (Roblox)** (ClipMatrix) – 2 $/1K, 2.4K $ frei, 214 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 76 Clipper, TT/IG/YT, Roblox, seit yesterday
+- **RoAutomation (Roblox)** (ClipMatrix) – 2 $/1K, 2.4K $ frei, 230 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 76 Clipper, TT/IG/YT, Roblox, seit yesterday
   Achtung: Material liegt bei (4 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   RoAutomation is an all-in-one AI studio for making Roblox games. Its agents help you go from an idea to a playable game: plan it, build the world and game systems, make the UI and assets, playtest, prep the launch, and read your g
   https://contentrewards.com/c/campaigns/098c2c7a-a338-4638-a53f-3de82008151c
-- **$8,500 FaZe Tournament Clipping Campaign** (ClippedIn) – 2 $/1K, 5K $ frei, 100 $ in 24 h ausgezahlt, Auszahlung ab 5K Views, 26 Clipper, TT/IG/YT/X, Gaming, seit 1 week ago
+- **$8,500 FaZe Tournament Clipping Campaign** (ClippedIn) – 2 $/1K, 5K $ frei, 100 $ in 24 h ausgezahlt, Auszahlung ab 5K Views, 25 Clipper, TT/IG/YT/X, Gaming, seit 1 week ago
   Achtung: Publikum: 60 % USA/Tier 1 verlangt; Logo/Wasserzeichen Pflicht; Material liegt bei (3 Dateien)
   FaZe Flank Invitational (Call of Duty), live on Twitch Nov 10 to 12. Clip the draft, clutch plays and reactions from the official broadcast only. FaZe Flank logo on every clip, required caption tags, 60%+ US audience. $2 CPM, up t
   https://contentrewards.com/c/campaigns/200ea21b-be80-4db8-b552-8e32b148604e
-- **FR $7,000 BICHOU MIAMI GTA 6** (Burst Clipping) – 1 $/1K, 1.2K $ frei, 800 $ in 24 h ausgezahlt, Auszahlung ab 5K Views, 254 Clipper, TT/IG/YT/X, Kick, seit 1 week ago
+- **FR $7,000 BICHOU MIAMI GTA 6** (Burst Clipping) – 1 $/1K, 800 $ frei, 1.1K $ in 24 h ausgezahlt, Auszahlung ab 5K Views, 255 Clipper, TT/IG/YT/X, Kick, seit 1 week ago
   Achtung: Material liegt bei (2 Dateien)
   Clippe le contenu des streams de Bichou et gagne 1$ pour chaque 1000 vues.
   https://contentrewards.com/c/campaigns/f0b0fbac-c754-45e5-96f6-aef8796dac91
-- **HardcoreSMP Minecraft Clipping Campaign** (FableSMP) – 2 $/1K, 300 $ frei, 100 $ in 24 h ausgezahlt, Auszahlung ab 2K Views, 32 Clipper, TT/IG/YT, Minecraft, seit 4 weeks ago
+- **HardcoreSMP Minecraft Clipping Campaign** (FableSMP) – 2 $/1K, 400 $ frei, Auszahlung ab 2K Views, 31 Clipper, TT/IG/YT, Minecraft, seit 4 weeks ago
   Achtung: Material liegt bei (5 Dateien)
   Clip and edit videos for an upcoming Minecraft server called HardcoreSMP. Our brief is in the google doc.
   https://contentrewards.com/c/campaigns/5354eab8-c428-483f-9d34-09c8db7fc324
-- NEW **Roblox App Clipping | Rig Directors** (ClipScales) – 1 $/1K, 961 $ frei, Auszahlung ab 1K Views, 16 Clipper, TT/IG/YT, Gaming, seit 3 days ago
+- **Roblox App Clipping | Rig Directors** (ClipScales) – 1 $/1K, 912 $ frei, 49 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 20 Clipper, TT/IG/YT, Gaming, seit 3 days ago
   Achtung: Material liegt bei (1 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   Create short-form content clipping for Rig Directors, an AI animation tool for Roblox developers. Easy Virality. Earn Big.
   https://contentrewards.com/c/campaigns/bd74e532-4a7c-4da7-9d25-76a99142b79b
@@ -42,18 +42,22 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
   Achtung: Bewerbung/Vorab-Freigabe nötig; Material liegt bei (1 Dateien)
   Pushing clips of Lysium as Benji Ramos in NoPixel V or GTA VI clips or reaction to RP Moments. Find high energy, funny, unexpected, or story-driven moments with enough context to understand the scene. No drama bait. All clips requ
   https://contentrewards.com/c/campaigns/6d896f33-152f-42a9-92f4-662199228349
-- **AI Game Making Clipping | Nilo** (ClipScales) – 0.85–1 $/1K, 532 $ frei, 41 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 34 Clipper, TT/YT, Gaming, seit 1 week ago
+- **AI Game Making Clipping | Nilo** (ClipScales) – 0.85–1 $/1K, 517 $ frei, 39 $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 34 Clipper, TT/YT, Gaming, seit 1 week ago
   Achtung: Material liegt bei (2 Dateien)
   Create original, engaging short-form videos clipping Nilo, an AI that makes games. Easy Virality. Earn Big.
   https://contentrewards.com/c/campaigns/c62ae0ca-97b7-4038-9c20-d0016add93cc
 
-## Pusnik IRL – beste offene Kampagnen (22 passen)
+## Pusnik IRL – beste offene Kampagnen (23 passen)
 
 - **Dr. Guillaume Dulude - Psychology Clipping** (Clipping Culture, verifiziert) – 2 $/1K, 7.8K $ frei, 1.1K $ in 24 h ausgezahlt, Auszahlung ab 1K Views, 180 Clipper, TT/IG/YT, Entertainment, seit 6 days ago
   Achtung: Material liegt bei (1 Dateien)
   Clip Dr. Guillaume Dulude talking about psychology and human behavior. Use his talks, interviews, podcast moments, and lessons. Each clip should teach one clear idea. Make viewers want to follow Guillaume for more. Post on TikTok,
   https://contentrewards.com/c/campaigns/463491d6-3df2-4dd2-ae32-1d1d5d8b1735
-- **Lucas Clipping Cycle 2** (Lucas clipping) – 1 $/1K, 2K $ frei, 300 $ in 24 h ausgezahlt, Auszahlung ab 5K Views, 35 Clipper, TT/IG/YT, Fan Page, seit 2 months ago
+- **Michael Sartain's Clipping Army** (Michael Sartain's Clipper Army) – 1–2 $/1K, 3.2K $ frei, 200 $ in 24 h ausgezahlt, Auszahlung ab 9.5K Views, 34 Clipper, TT/IG/YT/X/facebook, Personal Brand, seit 3 months ago
+  Achtung: Material liegt bei (2 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
+  Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.
+  https://contentrewards.com/c/campaigns/86842687-ba2b-4638-a024-995dcf3d25a3
+- **Lucas Clipping Cycle 2** (Lucas clipping) – 1 $/1K, 1.9K $ frei, 300 $ in 24 h ausgezahlt, Auszahlung ab 5K Views, 35 Clipper, TT/IG/YT, Fan Page, seit 2 months ago
   Achtung: Material liegt bei (2 Dateien)
   Clippe Lucas - créateur lifestyle luxe & mindset (Dubaï). Transforme ses vlogs, ses rushs Cannes/Côte d'Azur et ses passages où il parle en clips courts pour TikTok, Insta & YT Shorts. Payé aux vues. Comptes dédiés à son image.
   https://contentrewards.com/c/campaigns/2ade1fa0-ef91-40c6-af02-6ec52d2f5685
@@ -61,18 +65,10 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
   Achtung: Material liegt bei (2 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   WK is Kuwait's #1 burger brand. Bold flavors, fresh ingredients, and content that makes people want to order right now. Cut the best moments, post them across your pages, and get paid per view.
   https://contentrewards.com/c/campaigns/816b45a1-dc3f-42b5-b41e-81a1ebf8360e
-- **Michael Sartain's Clipping Army** (Michael Sartain's Clipper Army) – 1–2 $/1K, 3.3K $ frei, 100 $ in 24 h ausgezahlt, Auszahlung ab 9.5K Views, 34 Clipper, TT/IG/YT/X/facebook, Personal Brand, seit 3 months ago
-  Achtung: Material liegt bei (2 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
-  Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.
-  https://contentrewards.com/c/campaigns/86842687-ba2b-4638-a024-995dcf3d25a3
 - **Hoodrich Clipping | $1.00 CPM** (Hype Media) – 1 $/1K, 4.4K $ frei, Auszahlung ab 1K Views, 15 Clipper, TT/IG/YT, Streamer, seit 1 month ago
   Achtung: Material liegt bei (3 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
   Clip Hoodrich’s streams into engaging short-form content about credit, funding, business, and entertaining stream moments. Earn $1.00 per 1,000 verified views.
   https://contentrewards.com/c/campaigns/60e19a6d-066c-4090-8728-02eb6bd789ef
-- **Ikee Motola Clipping | $2,300 budget | $2 CPM** (The Launch Company) – 1–2 $/1K, 1.5K $ frei, 189 $ in 24 h ausgezahlt, Auszahlung ab 1.5K Views, 24 Clipper, TT/IG/YT, Entertainment, seit 2 weeks ago
-  Achtung: Material liegt bei (3 Dateien); 1 Regel(n) erst nach Beitritt sichtbar
-  Ikee Motola (@notikee) is a streamer and digital creator with 365K+ followers across platforms, known for entertaining content, lifestyle, and fragrance brand. With his own fragrance brand and a growing online presence, he's launc
-  https://contentrewards.com/c/campaigns/fe4d1c34-4ed5-4895-9995-0d63bb5cb5a8
 - **Millionaire Hot Takes | Viral Clipping** (Crawford Legacy Group) – 2.75 $/1K, 300 $ frei, Auszahlung ab 9.1K Views, 47 Clipper, TT/IG, Content Creator, seit 2 months ago
   Achtung: Material liegt bei (4 Dateien)
   Get paid to make @CashOnlyJohn one of the most recognizable names in business, wealth, and entrepreneurship. We're rewarding creators who turn Jonathan Crawford's most powerful, entertaining, controversial, and attention-grabbing 
@@ -81,19 +77,16 @@ Automatisch von Content Rewards (öffentliche Seiten, ohne Login). Vorauswahl na
   Achtung: Material liegt bei (1 Dateien)
   We're looking for clippers who can take long form interviews and turn them into scroll stopping short form content. Strong hooks, bold captions, clean edits.
   https://contentrewards.com/c/campaigns/6fe4c1aa-c8ca-4836-836b-01ab2540b337
-- Pools (fester Topf, wird nach Views aufgeteilt – für kleine Konten unsicher): $30,000 LACY CLIPPING CAMPAIGN (25K $, 731 Clipper)
+- **Let Him Mansplain Podcast Clipping** (ClipLaunch, verifiziert) – 0.5–1 $/1K, 5.4K $ frei, Auszahlung ab 6K Views, 106 Clipper, TT/IG/YT, Podcasts, seit 3 weeks ago
+  Achtung: Material liegt bei (3 Dateien)
+  Clip for Let Him Mansplain, the weekly podcast asking where all the good men went! Host Lily Kate gets men to open up about dating and marriage from a Christian point of view. The goal is to help women find good men! Clip content 
+  https://contentrewards.com/c/campaigns/705f6e21-38af-408c-9e55-c77e4611bf09
 
-## Sonstige (weder Gaming noch Personen-Clips, 32 offen) – nur falls ein drittes Konto dazukommt
+## Sonstige (weder Gaming noch Personen-Clips, 33 offen) – nur falls ein drittes Konto dazukommt
 
 - eBay Live: Ovechkin, Bam Margera & Evan Mobley (TopDRWR Distribution) – 4 $/1K, 2.9K $ frei, Sports
 - Card Breaks with Emma Roberts | Fanatics Live (TopDRWR Distribution) – 4 $/1K, 3.9K $ frei, Sports
-- Daise — Dollfaces + Charm Bracelets Clipping (Clip Influence) – 2 $/1K, 7.3K $ frei, Entertainment
-- Jo Koy: Comedy Special (Eclipse) – 1.25 $/1K, 6.7K $ frei, Entertainment
-- Backyard Breaks [Clipping Campaign] (ClipHouse) – 2 $/1K, 4K $ frei, Sports
-- ForgeGUI [UNLIMITED] (BloxClips) – 1 $/1K, 15.7K $ frei, Technology
-
-## Neu, aber aussortiert
-
-- JONAS BROTHERS - Lincoln, Nebraska Tour (ClipHaus): Musik/UGC: song; Musik
-- DONN PERIGNON x Clip Loom (CLIP LOOM): Musik/UGC: music video; Musik
-- CoinPoker | Poker Highlights Only (Coin Group Media): gesperrt: poker; Rate 0.4 $ zu niedrig
+- [VIRAL] Slime Mart V3 Clipping (Clip Influence) – 1.5 $/1K, 16.3K $ frei, Entertainment
+- Daise — Dollfaces + Charm Bracelets Clipping (Clip Influence) – 2 $/1K, 7.2K $ frei, Entertainment
+- Jo Koy: Comedy Special (Eclipse) – 1.25 $/1K, 6.6K $ frei, Entertainment
+- Backyard Breaks [Clipping Campaign] (ClipHouse) – 2 $/1K, 3.7K $ frei, Sports

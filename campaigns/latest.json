@@ -1,17 +1,8 @@
 {
- "at": "2026-11-28T06:20:17+00:00",
+ "at": "2026-11-28T12:07:16+00:00",
  "errors": [],
  "new": [
-  "207e5f31-b800-4b65-a9ba-c63609ac26c0",
-  "2f4e4a26-0643-449f-80da-db22d0755d21",
-  "94a42668-3fd9-43a2-ad83-d1644cef6b81",
-  "98afe516-3a9d-405d-a76a-67375d3120a7",
-  "bd74e532-4a7c-4da7-9d25-76a99142b79b",
-  "c0023f72-0ea0-4603-b461-96d2452a43d7",
-  "c0a3e4fe-9112-49d5-aebe-d16fad9cd27d",
-  "c8bda3e4-2635-40a1-a21a-d034accc016a",
-  "cdf6dc09-a0ba-4fe8-8c6d-114773714557",
-  "e0f945c8-43f5-4901-99dc-a6a8238a7fb3"
+  "8a7a2555-6081-4910-8ab6-97995354a5ee"
  ],
  "items": [
   {
@@ -33,7 +24,7 @@
    "budget": 4000.0,
    "clippers": 14,
    "age": "4d",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -58,7 +49,7 @@
    "category": "Sports",
    "files": 4,
    "detail_at": "2026-11-27T06:23:17+00:00",
-   "paid_24h": 638.0,
+   "paid_24h": 637.0,
    "left": 2900.0,
    "views_needed": 2000,
    "account": "Sonstige",
@@ -90,7 +81,7 @@
    "budget": 4000.0,
    "clippers": 1,
    "age": "4d",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -116,7 +107,7 @@
    "files": 1,
    "hidden_rules": 1,
    "detail_at": "2026-11-27T06:23:17+00:00",
-   "paid_24h": 9.0,
+   "paid_24h": 5.0,
    "left": 3919.0,
    "views_needed": 2000,
    "account": "Sonstige",
@@ -127,6 +118,175 @@
     "1 Regel(n) erst nach Beitritt sichtbar"
    ],
    "score": 15.0,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "18496202-6029-4a29-a44c-9fc33678fcb9",
+   "url": "https://contentrewards.com/c/campaigns/18496202-6029-4a29-a44c-9fc33678fcb9",
+   "title": "Call of Duty MW4 (en Français)",
+   "brand": "French Clipping",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "x"
+   ],
+   "pool": false,
+   "rate": 2.0,
+   "rate_max": 3.0,
+   "spent": 16700.0,
+   "budget": 23000.0,
+   "clippers": 82,
+   "age": "3mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 2.0,
+     "min_payout": 2.0,
+     "max_payout": 350.0
+    },
+    "instagram": {
+     "rate": 2.0,
+     "min_payout": 2.0,
+     "max_payout": 350.0
+    },
+    "x": {
+     "rate": 3.0,
+     "min_payout": 6.0,
+     "max_payout": 350.0
+    }
+   },
+   "description": "Rejoins la campagne de clipping française officielle de Call of Duty MW4🔥 Poste des clips sur MW4, et gagne de l'argent 💸",
+   "status": "Accepting clips",
+   "launched": "3 months ago",
+   "category": "Entertainment",
+   "files": 2,
+   "detail_at": "2026-11-25T12:24:01+00:00",
+   "paid_24h": 300.0,
+   "left": 6300.0,
+   "views_needed": 1000,
+   "account": "Pusnik G",
+   "ok": false,
+   "why_not": [
+    "nicht englisch: french"
+   ],
+   "flags": [
+    "Material liegt bei (2 Dateien)"
+   ],
+   "score": 14.5,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-20T06:24:15+00:00",
+   "id": "ab601e43-9404-4375-8e1e-2b49db1aef26",
+   "url": "https://contentrewards.com/c/campaigns/ab601e43-9404-4375-8e1e-2b49db1aef26",
+   "title": "Mumford & Sons / Chris Stapleton Live Performance",
+   "brand": "The Clip Ship",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 2.0,
+   "rate_max": 2.0,
+   "spent": 1900.0,
+   "budget": 12400.0,
+   "clippers": 34,
+   "age": "1w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 2.0,
+     "min_payout": 3.5,
+     "max_payout": 600.0
+    },
+    "instagram": {
+     "rate": 2.0,
+     "min_payout": 3.5,
+     "max_payout": 600.0
+    },
+    "youtube": {
+     "rate": 2.0,
+     "min_payout": 3.5,
+     "max_payout": 600.0
+    }
+   },
+   "description": "Clip the live performance of Mumford & Sons and Chris Stapleton from the approved folder. Every clip should show that this crossover sounds even better live.",
+   "status": "Accepting clips",
+   "launched": "6 days ago",
+   "category": "Music",
+   "files": 2,
+   "detail_at": "2026-11-26T12:22:11+00:00",
+   "paid_24h": 200.0,
+   "left": 10500.0,
+   "views_needed": 1750,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "Musik"
+   ],
+   "flags": [
+    "Material liegt bei (2 Dateien)"
+   ],
+   "score": 14.0,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-28T06:20:17+00:00",
+   "id": "207e5f31-b800-4b65-a9ba-c63609ac26c0",
+   "url": "https://contentrewards.com/c/campaigns/207e5f31-b800-4b65-a9ba-c63609ac26c0",
+   "title": "[VIRAL] Slime Mart V3 Clipping",
+   "brand": "Clip Influence",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram"
+   ],
+   "pool": false,
+   "rate": 1.5,
+   "rate_max": 1.5,
+   "spent": 3700.0,
+   "budget": 20000.0,
+   "clippers": 64,
+   "age": "1d",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "instagram": {
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 300.0
+    },
+    "tiktok": {
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 300.0
+    }
+   },
+   "description": "Get paid $1.50/thousand views to clip for the [VIRAL] Slime Mart Clipping! Slime Mart is a super viral brand line, the goal behind this campaign is to get the most exposure possible. Create Viral clips and get paid for your views.",
+   "status": "Accepting clips",
+   "launched": "yesterday",
+   "category": "Entertainment",
+   "files": 3,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 800.0,
+   "left": 16300.0,
+   "views_needed": 1000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (3 Dateien)"
+   ],
+   "score": 14.0,
    "joined": null,
    "gone": false
   },
@@ -149,7 +309,7 @@
    "budget": 10500.0,
    "clippers": 180,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -192,10 +352,10 @@
   },
   {
    "first": "2026-11-16T07:48:38+00:00",
-   "id": "18496202-6029-4a29-a44c-9fc33678fcb9",
-   "url": "https://contentrewards.com/c/campaigns/18496202-6029-4a29-a44c-9fc33678fcb9",
-   "title": "Call of Duty MW4 (en Français)",
-   "brand": "French Clipping",
+   "id": "0afd04db-e183-4411-9957-0b890ef272b5",
+   "url": "https://contentrewards.com/c/campaigns/0afd04db-e183-4411-9957-0b890ef272b5",
+   "title": "Call of Duty MW4 عربي V2",
+   "brand": "Arabic Clipping",
    "verified": true,
    "platforms": [
     "tiktok",
@@ -203,49 +363,49 @@
     "x"
    ],
    "pool": false,
-   "rate": 2.0,
+   "rate": 1.0,
    "rate_max": 3.0,
-   "spent": 16600.0,
-   "budget": 23000.0,
-   "clippers": 82,
-   "age": "3mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "spent": 15200.0,
+   "budget": 26300.0,
+   "clippers": 108,
+   "age": "2mo",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
-     "rate": 2.0,
+     "rate": 1.0,
      "min_payout": 2.0,
-     "max_payout": 350.0
+     "max_payout": 300.0
     },
     "instagram": {
-     "rate": 2.0,
+     "rate": 1.0,
      "min_payout": 2.0,
-     "max_payout": 350.0
+     "max_payout": 150.0
     },
     "x": {
      "rate": 3.0,
      "min_payout": 6.0,
-     "max_payout": 350.0
+     "max_payout": 225.0
     }
    },
-   "description": "Rejoins la campagne de clipping française officielle de Call of Duty MW4🔥 Poste des clips sur MW4, et gagne de l'argent 💸",
+   "description": "🔥 Call of Duty MW4 انضم إلى حملة كليبينغ انشر مقاطع قصيرة عن اللعبة على حساباتك، واحصل على أرباح حسب عدد المشاهدات المحتوى جاهز عليك ان تقص و تنزل فقط",
    "status": "Accepting clips",
-   "launched": "3 months ago",
+   "launched": "2 months ago",
    "category": "Entertainment",
    "files": 2,
    "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 200.0,
-   "left": 6400.0,
-   "views_needed": 1000,
+   "paid_24h": 300.0,
+   "left": 11100.0,
+   "views_needed": 2000,
    "account": "Pusnik G",
    "ok": false,
    "why_not": [
-    "nicht englisch: french"
+    "nicht englisch: arabic"
    ],
    "flags": [
     "Material liegt bei (2 Dateien)"
    ],
-   "score": 13.6,
+   "score": 13.0,
    "joined": null,
    "gone": false
   },
@@ -263,11 +423,11 @@
    "pool": false,
    "rate": 2.0,
    "rate_max": 2.0,
-   "spent": 2700.0,
+   "spent": 2800.0,
    "budget": 10000.0,
    "clippers": 40,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -288,72 +448,13 @@
    "files": 3,
    "detail_at": "2026-11-25T12:24:01+00:00",
    "paid_24h": 100.0,
-   "left": 7300.0,
+   "left": 7200.0,
    "views_needed": 1000,
    "account": "Sonstige",
    "ok": true,
    "why_not": [],
    "flags": [
     "Material liegt bei (3 Dateien)"
-   ],
-   "score": 13.0,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-20T06:24:15+00:00",
-   "id": "ab601e43-9404-4375-8e1e-2b49db1aef26",
-   "url": "https://contentrewards.com/c/campaigns/ab601e43-9404-4375-8e1e-2b49db1aef26",
-   "title": "Mumford & Sons / Chris Stapleton Live Performance",
-   "brand": "The Clip Ship",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 2.0,
-   "rate_max": 2.0,
-   "spent": 1800.0,
-   "budget": 12400.0,
-   "clippers": 34,
-   "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 2.0,
-     "min_payout": 3.5,
-     "max_payout": 600.0
-    },
-    "instagram": {
-     "rate": 2.0,
-     "min_payout": 3.5,
-     "max_payout": 600.0
-    },
-    "youtube": {
-     "rate": 2.0,
-     "min_payout": 3.5,
-     "max_payout": 600.0
-    }
-   },
-   "description": "Clip the live performance of Mumford & Sons and Chris Stapleton from the approved folder. Every clip should show that this crossover sounds even better live.",
-   "status": "Accepting clips",
-   "launched": "6 days ago",
-   "category": "Music",
-   "files": 2,
-   "detail_at": "2026-11-26T12:22:11+00:00",
-   "paid_24h": 100.0,
-   "left": 10600.0,
-   "views_needed": 1750,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "Musik"
-   ],
-   "flags": [
-    "Material liegt bei (2 Dateien)"
    ],
    "score": 13.0,
    "joined": null,
@@ -372,11 +473,11 @@
    "pool": false,
    "rate": 1.25,
    "rate_max": 1.25,
-   "spent": 10800.0,
+   "spent": 10900.0,
    "budget": 17500.0,
    "clippers": 21,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -392,7 +493,7 @@
    "files": 2,
    "detail_at": "2026-11-26T12:22:11+00:00",
    "paid_24h": 800.0,
-   "left": 6700.0,
+   "left": 6600.0,
    "views_needed": 2000,
    "account": "Sonstige",
    "ok": true,
@@ -419,11 +520,11 @@
    "pool": false,
    "rate": 2.0,
    "rate_max": 2.0,
-   "spent": 96100.0,
+   "spent": 96400.0,
    "budget": 100100.0,
-   "clippers": 424,
+   "clippers": 426,
    "age": "5mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "youtube": {
@@ -449,8 +550,8 @@
    "files": 4,
    "hidden_rules": 2,
    "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 900.0,
-   "left": 4000.0,
+   "paid_24h": 400.0,
+   "left": 3700.0,
    "views_needed": 1500,
    "account": "Sonstige",
    "ok": true,
@@ -459,176 +560,7 @@
     "Material liegt bei (4 Dateien)",
     "2 Regel(n) erst nach Beitritt sichtbar"
    ],
-   "score": 12.2,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "0afd04db-e183-4411-9957-0b890ef272b5",
-   "url": "https://contentrewards.com/c/campaigns/0afd04db-e183-4411-9957-0b890ef272b5",
-   "title": "Call of Duty MW4 عربي V2",
-   "brand": "Arabic Clipping",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "x"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 3.0,
-   "spent": 15100.0,
-   "budget": 26300.0,
-   "clippers": 108,
-   "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 300.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 150.0
-    },
-    "x": {
-     "rate": 3.0,
-     "min_payout": 6.0,
-     "max_payout": 225.0
-    }
-   },
-   "description": "🔥 Call of Duty MW4 انضم إلى حملة كليبينغ انشر مقاطع قصيرة عن اللعبة على حساباتك، واحصل على أرباح حسب عدد المشاهدات المحتوى جاهز عليك ان تقص و تنزل فقط",
-   "status": "Accepting clips",
-   "launched": "2 months ago",
-   "category": "Entertainment",
-   "files": 2,
-   "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 200.0,
-   "left": 11200.0,
-   "views_needed": 2000,
-   "account": "Pusnik G",
-   "ok": false,
-   "why_not": [
-    "nicht englisch: arabic"
-   ],
-   "flags": [
-    "Material liegt bei (2 Dateien)"
-   ],
    "score": 12.0,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "1db63081-715e-4e04-9b11-fbc1d4e8e700",
-   "url": "https://contentrewards.com/c/campaigns/1db63081-715e-4e04-9b11-fbc1d4e8e700",
-   "title": "ForgeGUI [UNLIMITED]",
-   "brand": "BloxClips",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 232700.0,
-   "budget": 248400.0,
-   "clippers": 4400,
-   "age": "6mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 1.0,
-     "max_payout": 1000.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 1.0,
-     "max_payout": 1000.0
-    },
-    "youtube": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 500.0
-    }
-   },
-   "description": "Clip provided ForgeGUI footage into short-form content and get paid for the views you generate. ForgeGUI is an AI tool that helps Roblox developers create GUIs, models, thumbnails, scripts, and more.",
-   "status": "Accepting clips",
-   "launched": "6 months ago",
-   "category": "Technology",
-   "files": 2,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 1300.0,
-   "left": 15700.0,
-   "views_needed": 1000,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (2 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 11.1,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-28T06:20:17+00:00",
-   "id": "207e5f31-b800-4b65-a9ba-c63609ac26c0",
-   "url": "https://contentrewards.com/c/campaigns/207e5f31-b800-4b65-a9ba-c63609ac26c0",
-   "title": "[VIRAL] Slime Mart V3 Clipping",
-   "brand": "Clip Influence",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram"
-   ],
-   "pool": false,
-   "rate": 1.5,
-   "rate_max": 1.5,
-   "spent": 2870.0,
-   "budget": 20000.0,
-   "clippers": 52,
-   "age": "1d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "instagram": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 300.0
-    },
-    "tiktok": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 300.0
-    }
-   },
-   "description": "Get paid $1.50/thousand views to clip for the [VIRAL] Slime Mart Clipping! Slime Mart is a super viral brand line, the goal behind this campaign is to get the most exposure possible. Create Viral clips and get paid for your views.",
-   "status": "Accepting clips",
-   "launched": "yesterday",
-   "category": "Entertainment",
-   "files": 3,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 17130.0,
-   "views_needed": 1000,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (3 Dateien)"
-   ],
-   "score": 11.0,
    "joined": null,
    "gone": false
   },
@@ -647,11 +579,11 @@
    "pool": false,
    "rate": 1.5,
    "rate_max": 1.5,
-   "spent": 3018.0,
+   "spent": 3100.0,
    "budget": 40000.0,
-   "clippers": 149,
+   "clippers": 155,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -676,8 +608,8 @@
    "category": "Entertainment",
    "files": 1,
    "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 36982.0,
+   "paid_24h": 100.0,
+   "left": 36900.0,
    "views_needed": 1000,
    "account": "Sonstige",
    "ok": true,
@@ -685,7 +617,7 @@
    "flags": [
     "Material liegt bei (1 Dateien)"
    ],
-   "score": 11.0,
+   "score": 12.0,
    "joined": null,
    "gone": false
   },
@@ -708,7 +640,7 @@
    "budget": 4000.0,
    "clippers": 1900,
    "age": "6mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -734,7 +666,7 @@
    "files": 2,
    "hidden_rules": 4,
    "detail_at": "2026-11-25T18:04:33+00:00",
-   "paid_24h": 0,
+   "paid_24h": 100.0,
    "left": 1800.0,
    "views_needed": 2000,
    "account": "Sonstige",
@@ -744,7 +676,133 @@
     "Material liegt bei (2 Dateien)",
     "4 Regel(n) erst nach Beitritt sichtbar"
    ],
-   "score": 10.9,
+   "score": 11.9,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "1db63081-715e-4e04-9b11-fbc1d4e8e700",
+   "url": "https://contentrewards.com/c/campaigns/1db63081-715e-4e04-9b11-fbc1d4e8e700",
+   "title": "ForgeGUI [UNLIMITED]",
+   "brand": "BloxClips",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 232800.0,
+   "budget": 248400.0,
+   "clippers": 4400,
+   "age": "6mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 1.0,
+     "min_payout": 1.0,
+     "max_payout": 1000.0
+    },
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 1.0,
+     "max_payout": 1000.0
+    },
+    "youtube": {
+     "rate": 0.5,
+     "min_payout": 1.0,
+     "max_payout": 500.0
+    }
+   },
+   "description": "Clip provided ForgeGUI footage into short-form content and get paid for the views you generate. ForgeGUI is an AI tool that helps Roblox developers create GUIs, models, thumbnails, scripts, and more.",
+   "status": "Accepting clips",
+   "launched": "6 months ago",
+   "category": "Technology",
+   "files": 2,
+   "hidden_rules": 1,
+   "detail_at": "2026-11-25T12:24:01+00:00",
+   "paid_24h": 1100.0,
+   "left": 15600.0,
+   "views_needed": 1000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (2 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 11.1,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "188c3e39-7850-4896-94df-e7a5be0cfec3",
+   "url": "https://contentrewards.com/c/campaigns/188c3e39-7850-4896-94df-e7a5be0cfec3",
+   "title": "BOXABL",
+   "brand": "Clip Farm",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "x",
+    "facebook"
+   ],
+   "pool": false,
+   "rate": 0.5,
+   "rate_max": 1.0,
+   "spent": 27300.0,
+   "budget": 173000.0,
+   "clippers": 986,
+   "age": "4mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "youtube": {
+     "rate": 0.5,
+     "min_payout": 1.0,
+     "max_payout": 500.0
+    },
+    "tiktok": {
+     "rate": 0.5,
+     "min_payout": 1.0,
+     "max_payout": 500.0
+    },
+    "instagram": {
+     "rate": 0.5,
+     "min_payout": 1.0,
+     "max_payout": 500.0
+    },
+    "x": {
+     "rate": 0.5,
+     "min_payout": 1.0,
+     "max_payout": 500.0
+    }
+   },
+   "description": "Boxabl makes foldable homes. They have a 20x20 foot home called the Casita that ships flat and unfolds on-site. Cool product, cool factory, cool transformation. You're clipping from a list of pre-approved YouTube videos. The footage includes Boxabl factory tours, walkthroughs from major creators like Enes Yilmazer (15M views) and Orkun Isitmak (16.3M views), Elon Musk, Airrack, Faze Rug, and content featuring big-name talent who've worked with Boxabl. Your job is to clip the best moments and post to short-form (TikTok, Instagram Reels, YouTube Shorts, and X) to drive views and brand awareness. UGC IS ALLOWED",
+   "status": "Accepting clips",
+   "launched": "4 months ago",
+   "category": "Business",
+   "files": 2,
+   "hidden_rules": 1,
+   "detail_at": "2026-11-25T12:24:01+00:00",
+   "paid_24h": 200.0,
+   "left": 145700.0,
+   "views_needed": 2000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Bewerbung/Vorab-Freigabe nötig",
+    "Material liegt bei (2 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 11.0,
    "joined": null,
    "gone": false
   },
@@ -765,11 +823,11 @@
    "pool": false,
    "rate": 1.0,
    "rate_max": 1.0,
-   "spent": 2400.0,
+   "spent": 2500.0,
    "budget": 10000.0,
    "clippers": 169,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -805,7 +863,7 @@
    "files": 2,
    "detail_at": "2026-11-26T12:22:11+00:00",
    "paid_24h": 300.0,
-   "left": 7600.0,
+   "left": 7500.0,
    "views_needed": 2000,
    "account": "Pusnik G",
    "ok": true,
@@ -814,66 +872,6 @@
     "Material liegt bei (2 Dateien)"
    ],
    "score": 10.9,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-27T18:09:42+00:00",
-   "id": "3b30ef83-f6ec-4d93-b734-b4f90fb703a4",
-   "url": "https://contentrewards.com/c/campaigns/3b30ef83-f6ec-4d93-b734-b4f90fb703a4",
-   "title": "Dreamscape",
-   "brand": "BloxClips",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 1.3,
-   "rate_max": 1.3,
-   "spent": 1300.0,
-   "budget": 3200.0,
-   "clippers": 35,
-   "age": "3d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.3,
-     "up_to": true,
-     "min_payout": 1.0,
-     "max_payout": 200.0
-    },
-    "instagram": {
-     "rate": 1.3,
-     "up_to": true,
-     "min_payout": 1.0,
-     "max_payout": 200.0
-    },
-    "youtube": {
-     "rate": 1.3,
-     "up_to": true,
-     "min_payout": 1.0,
-     "max_payout": 200.0
-    }
-   },
-   "description": "Make short videos about Dreamscape, a Roblox action RPG where you fight monsters across 8 dream worlds, and get viewers to go play it.",
-   "status": "Accepting clips",
-   "launched": "2 days ago",
-   "category": "Roblox",
-   "files": 1,
-   "detail_at": "2026-11-27T18:09:42+00:00",
-   "paid_24h": 650.0,
-   "left": 1900.0,
-   "views_needed": 769,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (1 Dateien)"
-   ],
-   "score": 10.6,
    "joined": null,
    "gone": false
   },
@@ -895,7 +893,7 @@
    "budget": 1000.0,
    "clippers": 3,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -948,7 +946,7 @@
    "budget": 5300.0,
    "clippers": 50,
    "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -982,6 +980,202 @@
    "gone": false
   },
   {
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
+   "url": "https://contentrewards.com/c/campaigns/7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
+   "title": "Sabri Malle Clipping",
+   "brand": "Sabri Malle Clipping",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 0.2,
+   "rate_max": 1.0,
+   "spent": 5500.0,
+   "budget": 12000.0,
+   "clippers": 46,
+   "age": "2mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [
+    "✅ Publica mínimo 2 videos cortos al día en todas las redes",
+    "✅ Sabri tiene que aparecer hablando minimo un 75% del video.",
+    "✅ El video debe durar al menos 10 segundos",
+    "✅ sin marcas de agua",
+    "✅ No se permiten reacciones de otras personas (Solo Sabri puede aparecer)",
+    "✅ No está permitido hacer el mismo reel viral +1 vez (hay que variar)",
+    "✅ No puedes resubir videos editados por otro clipper de Sabri",
+    "✅ Es obligatorio subir los reels a instagram, tiktok y youtube shorts para poder monetizar.",
+    "✅ Los videos deben apuntar a tráfico Español (minimo 5%)",
+    "✅ Ganchos/videos con mujeres, cosas infantiles o cosas fuera de lo normal NO ESTÁN PERMITIDOS.",
+    "✅ Comparte tus publicaciones en el chat del equipo todos los días.",
+    "✅ No sigas a nadie en ninguna de tus cuentas, solo puedes seguir la cuenta principal: @",
+    "✅ Al subir un clip en instagram etiqueta la cuenta principal de Sabri,",
+    "hazlo así en la primera linea: Cuenta principal: @",
+    "✅ Al subir un clip en tiktok o Youtube Shorts, etiqueta la cuenta principal de Sabri,",
+    "hazlo así en la primera linea: Instagram: @",
+    "✅ Di \"Buenos Días\" en el chat de Whop cada mañana para mantenerte activo.",
+    "✅ Muestra actividad diaria y asiste a todas las llamadas que se hagan.",
+    "✅ Debes mantener tu perfil actualizado a cualquier novedad que se anuncie de manera oficial.",
+    "✅ Cada reel debe mantener un nivel mínimo de calidad, de lo contrario será rechazado"
+   ],
+   "platform_rates": {
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 100.0
+    },
+    "youtube": {
+     "rate": 0.2,
+     "min_payout": 3.0,
+     "max_payout": 30.0
+    },
+    "tiktok": {
+     "rate": 0.5,
+     "min_payout": 5.0,
+     "max_payout": 60.0
+    }
+   },
+   "description": "Gana dinero haciendo clips de Sabri Malle",
+   "status": "Accepting clips",
+   "launched": "2 months ago",
+   "category": "Lifestyle",
+   "files": 1,
+   "views": 22700000,
+   "detail_at": "2026-11-25T12:24:01+00:00",
+   "paid_24h": 500.0,
+   "left": 6500.0,
+   "views_needed": 5000,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "nicht englisch: español",
+    "Rate 0.2 $ zu niedrig"
+   ],
+   "flags": [
+    "Material liegt bei (1 Dateien)"
+   ],
+   "score": 10.4,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-27T18:09:42+00:00",
+   "id": "3b30ef83-f6ec-4d93-b734-b4f90fb703a4",
+   "url": "https://contentrewards.com/c/campaigns/3b30ef83-f6ec-4d93-b734-b4f90fb703a4",
+   "title": "Dreamscape",
+   "brand": "BloxClips",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 1.3,
+   "rate_max": 1.3,
+   "spent": 1500.0,
+   "budget": 3200.0,
+   "clippers": 35,
+   "age": "3d",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 1.3,
+     "up_to": true,
+     "min_payout": 1.0,
+     "max_payout": 200.0
+    },
+    "instagram": {
+     "rate": 1.3,
+     "up_to": true,
+     "min_payout": 1.0,
+     "max_payout": 200.0
+    },
+    "youtube": {
+     "rate": 1.3,
+     "up_to": true,
+     "min_payout": 1.0,
+     "max_payout": 200.0
+    }
+   },
+   "description": "Make short videos about Dreamscape, a Roblox action RPG where you fight monsters across 8 dream worlds, and get viewers to go play it.",
+   "status": "Accepting clips",
+   "launched": "2 days ago",
+   "category": "Roblox",
+   "files": 1,
+   "detail_at": "2026-11-27T18:09:42+00:00",
+   "paid_24h": 850.0,
+   "left": 1700.0,
+   "views_needed": 769,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (1 Dateien)"
+   ],
+   "score": 10.4,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-28T06:20:17+00:00",
+   "id": "c0023f72-0ea0-4603-b461-96d2452a43d7",
+   "url": "https://contentrewards.com/c/campaigns/c0023f72-0ea0-4603-b461-96d2452a43d7",
+   "title": "Kiki Kramer - Coal Hearts Edits and Music Video",
+   "brand": "Clipping Culture",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram"
+   ],
+   "pool": false,
+   "rate": 2.0,
+   "rate_max": 2.0,
+   "spent": 10100.0,
+   "budget": 10500.0,
+   "clippers": 60,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 2.0,
+     "up_to": true,
+     "min_payout": 2.0,
+     "max_payout": 600.0
+    },
+    "instagram": {
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 600.0
+    }
+   },
+   "description": "Create edits that match one of the approved content types below. Attach the official sound. Post to TikTok and/or Instagram Reels. Every edit must fit the song: upbeat, glittery, and edgy.",
+   "status": "Accepting clips",
+   "launched": "2 weeks ago",
+   "category": "Entertainment",
+   "by_country": "TikTok Pak, Ind, Ban Bangladesh, India, Pakistan Not paid Other countries $2.00/1K No country data Not paid",
+   "files": 1,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 900.0,
+   "left": 400.0,
+   "views_needed": 1000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Bezahlung hängt vom Zuschauerland ab (TikTok Pak, Ind, Ban Bangladesh, India, Pakistan Not paid Other countries $2.00/1K No coun)",
+    "Material liegt bei (1 Dateien)"
+   ],
+   "score": 10.3,
+   "joined": null,
+   "gone": false
+  },
+  {
    "first": "2026-11-25T12:24:01+00:00",
    "id": "098c2c7a-a338-4638-a53f-3de82008151c",
    "url": "https://contentrewards.com/c/campaigns/098c2c7a-a338-4638-a53f-3de82008151c",
@@ -996,11 +1190,11 @@
    "pool": false,
    "rate": 2.0,
    "rate_max": 2.0,
-   "spent": 562.0,
+   "spent": 589.0,
    "budget": 3000.0,
    "clippers": 76,
-   "age": "3d",
-   "last": "2026-11-28T06:20:17+00:00",
+   "age": "4d",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -1026,8 +1220,8 @@
    "files": 4,
    "hidden_rules": 1,
    "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 214.0,
-   "left": 2438.0,
+   "paid_24h": 230.0,
+   "left": 2411.0,
    "views_needed": 1000,
    "account": "Pusnik G",
    "ok": true,
@@ -1036,7 +1230,7 @@
     "Material liegt bei (4 Dateien)",
     "1 Regel(n) erst nach Beitritt sichtbar"
    ],
-   "score": 10.0,
+   "score": 10.1,
    "joined": null,
    "gone": false
   },
@@ -1056,11 +1250,11 @@
    "pool": false,
    "rate": 1.5,
    "rate_max": 1.5,
-   "spent": 1100.0,
+   "spent": 1200.0,
    "budget": 4000.0,
    "clippers": 116,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -1091,8 +1285,8 @@
    "files": 1,
    "hidden_rules": 1,
    "detail_at": "2026-11-26T06:19:19+00:00",
-   "paid_24h": 315.0,
-   "left": 2900.0,
+   "paid_24h": 378.0,
+   "left": 2800.0,
    "views_needed": 666,
    "account": "Sonstige",
    "ok": true,
@@ -1123,9 +1317,9 @@
    "rate_max": 2.0,
    "spent": 3500.0,
    "budget": 8500.0,
-   "clippers": 26,
+   "clippers": 25,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [
     "Only clip the official FaZe Flank Invitational broadcast (twitch.tv/faze, twitch.tv/zoomaa) or the players' own POV streams",
     "Keep the FaZe Flank Invitational logo on screen for the whole clip, never over the action",
@@ -1184,83 +1378,72 @@
   },
   {
    "first": "2026-11-16T07:48:38+00:00",
-   "id": "7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
-   "url": "https://contentrewards.com/c/campaigns/7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
-   "title": "Sabri Malle Clipping",
-   "brand": "Sabri Malle Clipping",
+   "id": "86842687-ba2b-4638-a024-995dcf3d25a3",
+   "url": "https://contentrewards.com/c/campaigns/86842687-ba2b-4638-a024-995dcf3d25a3",
+   "title": "Michael Sartain's Clipping Army",
+   "brand": "Michael Sartain's Clipper Army",
    "verified": false,
    "platforms": [
     "tiktok",
     "instagram",
-    "youtube"
+    "youtube",
+    "x",
+    "facebook"
    ],
    "pool": false,
-   "rate": 0.2,
-   "rate_max": 1.0,
-   "spent": 5000.0,
-   "budget": 12000.0,
-   "clippers": 44,
-   "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [
-    "✅ Publica mínimo 2 videos cortos al día en todas las redes",
-    "✅ Sabri tiene que aparecer hablando minimo un 75% del video.",
-    "✅ El video debe durar al menos 10 segundos",
-    "✅ sin marcas de agua",
-    "✅ No se permiten reacciones de otras personas (Solo Sabri puede aparecer)",
-    "✅ No está permitido hacer el mismo reel viral +1 vez (hay que variar)",
-    "✅ No puedes resubir videos editados por otro clipper de Sabri",
-    "✅ Es obligatorio subir los reels a instagram, tiktok y youtube shorts para poder monetizar.",
-    "✅ Los videos deben apuntar a tráfico Español (minimo 5%)",
-    "✅ Ganchos/videos con mujeres, cosas infantiles o cosas fuera de lo normal NO ESTÁN PERMITIDOS.",
-    "✅ Comparte tus publicaciones en el chat del equipo todos los días.",
-    "✅ No sigas a nadie en ninguna de tus cuentas, solo puedes seguir la cuenta principal: @",
-    "✅ Al subir un clip en instagram etiqueta la cuenta principal de Sabri,",
-    "hazlo así en la primera linea: Cuenta principal: @",
-    "✅ Al subir un clip en tiktok o Youtube Shorts, etiqueta la cuenta principal de Sabri,",
-    "hazlo así en la primera linea: Instagram: @",
-    "✅ Di \"Buenos Días\" en el chat de Whop cada mañana para mantenerte activo.",
-    "✅ Muestra actividad diaria y asiste a todas las llamadas que se hagan.",
-    "✅ Debes mantener tu perfil actualizado a cualquier novedad que se anuncie de manera oficial.",
-    "✅ Cada reel debe mantener un nivel mínimo de calidad, de lo contrario será rechazado"
-   ],
+   "rate": 1.0,
+   "rate_max": 2.0,
+   "spent": 16800.0,
+   "budget": 20000.0,
+   "clippers": 34,
+   "age": "3mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
    "platform_rates": {
-    "instagram": {
+    "tiktok": {
      "rate": 1.0,
-     "min_payout": 5.0,
+     "min_payout": 10.0,
      "max_payout": 100.0
     },
-    "youtube": {
-     "rate": 0.2,
-     "min_payout": 3.0,
-     "max_payout": 30.0
+    "x": {
+     "rate": 1.0,
+     "min_payout": 10.0,
+     "max_payout": 100.0
     },
-    "tiktok": {
-     "rate": 0.5,
-     "min_payout": 5.0,
-     "max_payout": 60.0
+    "instagram": {
+     "rate": 2.0,
+     "min_payout": 19.0,
+     "max_payout": 200.0
+    },
+    "youtube": {
+     "rate": 1.5,
+     "min_payout": 15.0,
+     "max_payout": 100.0
+    },
+    "facebook": {
+     "rate": 2.0,
+     "min_payout": 19.0,
+     "max_payout": 200.0
     }
    },
-   "description": "Gana dinero haciendo clips de Sabri Malle",
+   "description": "Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.",
    "status": "Accepting clips",
-   "launched": "2 months ago",
-   "category": "Lifestyle",
-   "files": 1,
-   "views": 22700000,
+   "launched": "3 months ago",
+   "category": "Personal Brand",
+   "files": 2,
+   "hidden_rules": 1,
    "detail_at": "2026-11-25T12:24:01+00:00",
    "paid_24h": 200.0,
-   "left": 7000.0,
-   "views_needed": 5000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "nicht englisch: español",
-    "Rate 0.2 $ zu niedrig"
-   ],
+   "left": 3200.0,
+   "views_needed": 9500,
+   "account": "Pusnik IRL",
+   "ok": true,
+   "why_not": [],
    "flags": [
-    "Material liegt bei (1 Dateien)"
+    "Material liegt bei (2 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
    ],
-   "score": 9.4,
+   "score": 9.5,
    "joined": null,
    "gone": false
   },
@@ -1279,11 +1462,11 @@
    "pool": false,
    "rate": 1.0,
    "rate_max": 1.0,
-   "spent": 276.0,
+   "spent": 277.0,
    "budget": 5000.0,
    "clippers": 26,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -1308,8 +1491,8 @@
    "category": "Music",
    "files": 1,
    "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 4724.0,
+   "paid_24h": 1.0,
+   "left": 4723.0,
    "views_needed": 1000,
    "account": "Sonstige",
    "ok": false,
@@ -1325,126 +1508,59 @@
    "gone": false
   },
   {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
-   "url": "https://contentrewards.com/c/campaigns/2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
-   "title": "Lucas Clipping Cycle 2",
-   "brand": "Lucas clipping",
-   "verified": false,
+   "first": "2026-11-28T06:20:17+00:00",
+   "id": "cdf6dc09-a0ba-4fe8-8c6d-114773714557",
+   "url": "https://contentrewards.com/c/campaigns/cdf6dc09-a0ba-4fe8-8c6d-114773714557",
+   "title": "Wiped Clipping",
+   "brand": "ClipUp Official",
+   "verified": true,
    "platforms": [
     "tiktok",
     "instagram",
     "youtube"
    ],
    "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 2900.0,
-   "budget": 4900.0,
-   "clippers": 35,
-   "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "rate": 2.0,
+   "rate_max": 2.0,
+   "spent": 823.0,
+   "budget": 2500.0,
+   "clippers": 29,
+   "age": "3w",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 150.0
+     "rate": 2.0,
+     "min_payout": 2.0,
+     "max_payout": 300.0
     },
     "instagram": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 150.0
+     "rate": 2.0,
+     "min_payout": 2.0,
+     "max_payout": 300.0
     },
     "youtube": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 150.0
+     "rate": 2.0,
+     "min_payout": 2.0,
+     "max_payout": 300.0
     }
    },
-   "description": "Clippe Lucas - créateur lifestyle luxe & mindset (Dubaï). Transforme ses vlogs, ses rushs Cannes/Côte d'Azur et ses passages où il parle en clips courts pour TikTok, Insta & YT Shorts. Payé aux vues. Comptes dédiés à son image.",
+   "description": "Quick and easy high cpm reposting campaign for Wiped the location app!",
    "status": "Accepting clips",
-   "launched": "2 months ago",
-   "category": "Fan Page",
+   "launched": "3 weeks ago",
+   "category": "Mobile App",
    "files": 2,
-   "detail_at": "2026-11-25T18:04:33+00:00",
-   "paid_24h": 300.0,
-   "left": 2000.0,
-   "views_needed": 5000,
-   "account": "Pusnik IRL",
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 10.0,
+   "left": 1677.0,
+   "views_needed": 1000,
+   "account": "Sonstige",
    "ok": true,
    "why_not": [],
    "flags": [
     "Material liegt bei (2 Dateien)"
    ],
    "score": 9.1,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "188c3e39-7850-4896-94df-e7a5be0cfec3",
-   "url": "https://contentrewards.com/c/campaigns/188c3e39-7850-4896-94df-e7a5be0cfec3",
-   "title": "BOXABL",
-   "brand": "Clip Farm",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube",
-    "x",
-    "facebook"
-   ],
-   "pool": false,
-   "rate": 0.5,
-   "rate_max": 1.0,
-   "spent": 27100.0,
-   "budget": 173000.0,
-   "clippers": 984,
-   "age": "4mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "youtube": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 500.0
-    },
-    "tiktok": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 500.0
-    },
-    "instagram": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 500.0
-    },
-    "x": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 500.0
-    }
-   },
-   "description": "Boxabl makes foldable homes. They have a 20x20 foot home called the Casita that ships flat and unfolds on-site. Cool product, cool factory, cool transformation. You're clipping from a list of pre-approved YouTube videos. The footage includes Boxabl factory tours, walkthroughs from major creators like Enes Yilmazer (15M views) and Orkun Isitmak (16.3M views), Elon Musk, Airrack, Faze Rug, and content featuring big-name talent who've worked with Boxabl. Your job is to clip the best moments and post to short-form (TikTok, Instagram Reels, YouTube Shorts, and X) to drive views and brand awareness. UGC IS ALLOWED",
-   "status": "Accepting clips",
-   "launched": "4 months ago",
-   "category": "Business",
-   "files": 2,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 0,
-   "left": 145900.0,
-   "views_needed": 2000,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Bewerbung/Vorab-Freigabe nötig",
-    "Material liegt bei (2 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 9.0,
    "joined": null,
    "gone": false
   },
@@ -1503,53 +1619,53 @@
    "gone": true
   },
   {
-   "first": "2026-11-28T06:20:17+00:00",
-   "id": "cdf6dc09-a0ba-4fe8-8c6d-114773714557",
-   "url": "https://contentrewards.com/c/campaigns/cdf6dc09-a0ba-4fe8-8c6d-114773714557",
-   "title": "Wiped Clipping",
-   "brand": "ClipUp Official",
-   "verified": true,
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
+   "url": "https://contentrewards.com/c/campaigns/2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
+   "title": "Lucas Clipping Cycle 2",
+   "brand": "Lucas clipping",
+   "verified": false,
    "platforms": [
     "tiktok",
     "instagram",
     "youtube"
    ],
    "pool": false,
-   "rate": 2.0,
-   "rate_max": 2.0,
-   "spent": 813.0,
-   "budget": 2500.0,
-   "clippers": 29,
-   "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 3000.0,
+   "budget": 4900.0,
+   "clippers": 35,
+   "age": "2mo",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
-     "rate": 2.0,
-     "min_payout": 2.0,
-     "max_payout": 300.0
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 150.0
     },
     "instagram": {
-     "rate": 2.0,
-     "min_payout": 2.0,
-     "max_payout": 300.0
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 150.0
     },
     "youtube": {
-     "rate": 2.0,
-     "min_payout": 2.0,
-     "max_payout": 300.0
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 150.0
     }
    },
-   "description": "Quick and easy high cpm reposting campaign for Wiped the location app!",
+   "description": "Clippe Lucas - créateur lifestyle luxe & mindset (Dubaï). Transforme ses vlogs, ses rushs Cannes/Côte d'Azur et ses passages où il parle en clips courts pour TikTok, Insta & YT Shorts. Payé aux vues. Comptes dédiés à son image.",
    "status": "Accepting clips",
-   "launched": "3 weeks ago",
-   "category": "Mobile App",
+   "launched": "2 months ago",
+   "category": "Fan Page",
    "files": 2,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 1687.0,
-   "views_needed": 1000,
-   "account": "Sonstige",
+   "detail_at": "2026-11-25T18:04:33+00:00",
+   "paid_24h": 300.0,
+   "left": 1900.0,
+   "views_needed": 5000,
+   "account": "Pusnik IRL",
    "ok": true,
    "why_not": [],
    "flags": [
@@ -1573,11 +1689,11 @@
    "pool": false,
    "rate": 1.5,
    "rate_max": 1.5,
-   "spent": 341.0,
+   "spent": 344.0,
    "budget": 1500.0,
    "clippers": 9,
    "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -1597,8 +1713,8 @@
    "category": "Music",
    "files": 3,
    "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 24.0,
-   "left": 1159.0,
+   "paid_24h": 25.0,
+   "left": 1156.0,
    "views_needed": 1000,
    "account": "Sonstige",
    "ok": false,
@@ -1631,7 +1747,7 @@
    "budget": 12300.0,
    "clippers": 62,
    "age": "4mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -1667,139 +1783,6 @@
    "gone": false
   },
   {
-   "first": "2026-11-25T06:19:38+00:00",
-   "id": "e621e0b4-fca8-4ff8-a655-d7a580568459",
-   "url": "https://contentrewards.com/c/campaigns/e621e0b4-fca8-4ff8-a655-d7a580568459",
-   "title": "Clips Lifestyle - 1$ por cada 1.000 visitas",
-   "brand": "Jesus Hernandez Clipping",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 5691.0,
-   "budget": 7000.0,
-   "clippers": 11,
-   "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [
-    "Jesus debe aparecer en minimo el 85% del video",
-    "El video debe durar minimo 15 segundos",
-    "Todas las publicacion deben poner: \"Sigueme en mi cuenta principal @jeesusdez\"",
-    "Content requirements",
-    "Minimum clip length",
-    "15s"
-   ],
-   "platform_rates": {
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 100.0
-    },
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 10.0,
-     "max_payout": 85.0
-    }
-   },
-   "description": "Clips Lifestyle",
-   "status": "Accepting clips",
-   "launched": "2 months ago",
-   "category": "Personal Brand",
-   "files": 3,
-   "hidden_rules": 0,
-   "views": 7400000,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 200.0,
-   "left": 1309.0,
-   "views_needed": 5000,
-   "account": "Pusnik IRL",
-   "ok": false,
-   "why_not": [
-    "nicht englisch: por cada"
-   ],
-   "flags": [
-    "Material liegt bei (3 Dateien)"
-   ],
-   "score": 8.7,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "86842687-ba2b-4638-a024-995dcf3d25a3",
-   "url": "https://contentrewards.com/c/campaigns/86842687-ba2b-4638-a024-995dcf3d25a3",
-   "title": "Michael Sartain's Clipping Army",
-   "brand": "Michael Sartain's Clipper Army",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube",
-    "x",
-    "facebook"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 2.0,
-   "spent": 16700.0,
-   "budget": 20000.0,
-   "clippers": 34,
-   "age": "3mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 10.0,
-     "max_payout": 100.0
-    },
-    "x": {
-     "rate": 1.0,
-     "min_payout": 10.0,
-     "max_payout": 100.0
-    },
-    "instagram": {
-     "rate": 2.0,
-     "min_payout": 19.0,
-     "max_payout": 200.0
-    },
-    "youtube": {
-     "rate": 1.5,
-     "min_payout": 15.0,
-     "max_payout": 100.0
-    },
-    "facebook": {
-     "rate": 2.0,
-     "min_payout": 19.0,
-     "max_payout": 200.0
-    }
-   },
-   "description": "Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.",
-   "status": "Accepting clips",
-   "launched": "3 months ago",
-   "category": "Personal Brand",
-   "files": 2,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 100.0,
-   "left": 3300.0,
-   "views_needed": 9500,
-   "account": "Pusnik IRL",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (2 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 8.6,
-   "joined": null,
-   "gone": false
-  },
-  {
    "first": "2026-11-24T06:18:36+00:00",
    "id": "93b81d7f-211f-4961-95c7-93b2b78f087d",
    "url": "https://contentrewards.com/c/campaigns/93b81d7f-211f-4961-95c7-93b2b78f087d",
@@ -1820,7 +1803,7 @@
    "budget": 5000.0,
    "clippers": 18,
    "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "x": {
@@ -1889,7 +1872,7 @@
    "budget": 2500.0,
    "clippers": 23,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -1947,7 +1930,7 @@
    "budget": 5000.0,
    "clippers": 15,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -2003,11 +1986,11 @@
    "pool": false,
    "rate": 1.0,
    "rate_max": 1.0,
-   "spent": 478.0,
+   "spent": 485.0,
    "budget": 10000.0,
    "clippers": 31,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -2039,7 +2022,7 @@
    "hidden_rules": 1,
    "detail_at": "2026-11-28T06:20:17+00:00",
    "paid_24h": 17.0,
-   "left": 9522.0,
+   "left": 9515.0,
    "views_needed": 2000,
    "account": "Sonstige",
    "ok": true,
@@ -2054,65 +2037,11 @@
    "gone": false
   },
   {
-   "first": "2026-11-28T06:20:17+00:00",
-   "id": "c0023f72-0ea0-4603-b461-96d2452a43d7",
-   "url": "https://contentrewards.com/c/campaigns/c0023f72-0ea0-4603-b461-96d2452a43d7",
-   "title": "Kiki Kramer - Coal Hearts Edits and Music Video",
-   "brand": "Clipping Culture",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram"
-   ],
-   "pool": false,
-   "rate": 2.0,
-   "rate_max": 2.0,
-   "spent": 9242.0,
-   "budget": 10500.0,
-   "clippers": 51,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 2.0,
-     "up_to": true,
-     "min_payout": 2.0,
-     "max_payout": 600.0
-    },
-    "instagram": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 600.0
-    }
-   },
-   "description": "Create edits that match one of the approved content types below. Attach the official sound. Post to TikTok and/or Instagram Reels. Every edit must fit the song: upbeat, glittery, and edgy.",
-   "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Entertainment",
-   "by_country": "TikTok Pak, Ind, Ban Bangladesh, India, Pakistan Not paid Other countries $2.00/1K No country data Not paid",
-   "files": 1,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 1258.0,
-   "views_needed": 1000,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Bezahlung hängt vom Zuschauerland ab (TikTok Pak, Ind, Ban Bangladesh, India, Pakistan Not paid Other countries $2.00/1K No coun)",
-    "Material liegt bei (1 Dateien)"
-   ],
-   "score": 8.1,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-24T18:10:27+00:00",
-   "id": "fe4d1c34-4ed5-4895-9995-0d63bb5cb5a8",
-   "url": "https://contentrewards.com/c/campaigns/fe4d1c34-4ed5-4895-9995-0d63bb5cb5a8",
-   "title": "Ikee Motola Clipping | $2,300 budget | $2 CPM",
-   "brand": "The Launch Company",
+   "first": "2026-11-25T18:04:33+00:00",
+   "id": "fb4b6ff1-4f22-446e-82d8-6bc9e2ba6278",
+   "url": "https://contentrewards.com/c/campaigns/fb4b6ff1-4f22-446e-82d8-6bc9e2ba6278",
+   "title": "$3,000 Rare Americans Lola Lee Campaign",
+   "brand": "ClippedIn",
    "verified": false,
    "platforms": [
     "tiktok",
@@ -2121,48 +2050,51 @@
    ],
    "pool": false,
    "rate": 1.0,
-   "rate_max": 2.0,
-   "spent": 815.0,
-   "budget": 2300.0,
-   "clippers": 24,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "rate_max": 1.0,
+   "spent": 1300.0,
+   "budget": 3000.0,
+   "clippers": 27,
+   "age": "1w",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
+    "tiktok": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 100.0
+    },
     "instagram": {
      "rate": 1.0,
      "min_payout": 2.0,
-     "max_payout": 50.0
-    },
-    "tiktok": {
-     "rate": 2.0,
-     "min_payout": 3.0,
-     "max_payout": 50.0
+     "max_payout": 100.0
     },
     "youtube": {
      "rate": 1.0,
-     "min_payout": 3.0,
-     "max_payout": 50.0
+     "min_payout": 2.0,
+     "max_payout": 100.0
     }
    },
-   "description": "Ikee Motola (@notikee) is a streamer and digital creator with 365K+ followers across platforms, known for entertaining content, lifestyle, and fragrance brand. With his own fragrance brand and a growing online presence, he's launching a clipping campaign to expand his reach and connect with a wide",
+   "description": "Rare Americans \"Lola Lee\" Sound Campaign. Anime, animation, film, TV or Rare Americans music video edits with a hook or lyrics on screen. Start the sound after 0:09 and mute all original audio. \"Lola Lee by Rare Americans\" in every caption. $1 CPM, up to $100 per clip. Full rules in the guidelines.",
    "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Entertainment",
-   "files": 3,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 189.0,
-   "left": 1485.0,
-   "views_needed": 1500,
-   "account": "Pusnik IRL",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (3 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
+   "launched": "5 days ago",
+   "category": "Music",
+   "files": 2,
+   "hidden_rules": 3,
+   "detail_at": "2026-11-25T18:04:33+00:00",
+   "paid_24h": 200.0,
+   "left": 1700.0,
+   "views_needed": 2000,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "Musik/UGC: music video",
+    "Musik"
    ],
-   "score": 7.9,
+   "flags": [
+    "Material liegt bei (2 Dateien)",
+    "3 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 8.1,
    "joined": null,
    "gone": false
   },
@@ -2184,7 +2116,7 @@
    "budget": 2300.0,
    "clippers": 47,
    "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [
     "@CashOnlyJon",
     "Up to $250 Per Reel + $1,000 Bonus",
@@ -2258,7 +2190,7 @@
    "budget": 1500.0,
    "clippers": 11,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -2313,7 +2245,7 @@
    "budget": 5000.0,
    "clippers": 86,
    "age": "4mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -2370,7 +2302,7 @@
    "budget": 10500.0,
    "clippers": 106,
    "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -2409,63 +2341,62 @@
    "gone": false
   },
   {
-   "first": "2026-11-19T18:10:58+00:00",
-   "id": "f0b0fbac-c754-45e5-96f6-aef8796dac91",
-   "url": "https://contentrewards.com/c/campaigns/f0b0fbac-c754-45e5-96f6-aef8796dac91",
-   "title": "FR $7,000 BICHOU MIAMI GTA 6",
-   "brand": "Burst Clipping",
+   "first": "2026-11-25T06:19:38+00:00",
+   "id": "e621e0b4-fca8-4ff8-a655-d7a580568459",
+   "url": "https://contentrewards.com/c/campaigns/e621e0b4-fca8-4ff8-a655-d7a580568459",
+   "title": "Clips Lifestyle - 1$ por cada 1.000 visitas",
+   "brand": "Jesus Hernandez Clipping",
    "verified": false,
    "platforms": [
     "tiktok",
-    "instagram",
-    "youtube",
-    "x"
+    "instagram"
    ],
    "pool": false,
    "rate": 1.0,
    "rate_max": 1.0,
-   "spent": 5800.0,
+   "spent": 5700.0,
    "budget": 7000.0,
-   "clippers": 254,
-   "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
+   "clippers": 11,
+   "age": "2mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [
+    "Jesus debe aparecer en minimo el 85% del video",
+    "El video debe durar minimo 15 segundos",
+    "Todas las publicacion deben poner: \"Sigueme en mi cuenta principal @jeesusdez\"",
+    "Content requirements",
+    "Minimum clip length",
+    "15s"
+   ],
    "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 75.0
-    },
     "instagram": {
      "rate": 1.0,
      "min_payout": 5.0,
-     "max_payout": 75.0
+     "max_payout": 100.0
     },
-    "youtube": {
+    "tiktok": {
      "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 75.0
-    },
-    "x": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 75.0
+     "min_payout": 10.0,
+     "max_payout": 85.0
     }
    },
-   "description": "Clippe le contenu des streams de Bichou et gagne 1$ pour chaque 1000 vues.",
+   "description": "Clips Lifestyle",
    "status": "Accepting clips",
-   "launched": "1 week ago",
-   "category": "Kick",
-   "files": 2,
-   "detail_at": "2026-11-26T12:22:11+00:00",
-   "paid_24h": 800.0,
-   "left": 1200.0,
+   "launched": "2 months ago",
+   "category": "Personal Brand",
+   "files": 3,
+   "hidden_rules": 0,
+   "views": 7400000,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 100.0,
+   "left": 1300.0,
    "views_needed": 5000,
-   "account": "Pusnik G",
-   "ok": true,
-   "why_not": [],
+   "account": "Pusnik IRL",
+   "ok": false,
+   "why_not": [
+    "nicht englisch: por cada"
+   ],
    "flags": [
-    "Material liegt bei (2 Dateien)"
+    "Material liegt bei (3 Dateien)"
    ],
    "score": 7.7,
    "joined": null,
@@ -2543,7 +2474,7 @@
    "budget": 1000.0,
    "clippers": 2,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -2580,6 +2511,69 @@
    "gone": false
   },
   {
+   "first": "2026-11-19T18:10:58+00:00",
+   "id": "f0b0fbac-c754-45e5-96f6-aef8796dac91",
+   "url": "https://contentrewards.com/c/campaigns/f0b0fbac-c754-45e5-96f6-aef8796dac91",
+   "title": "FR $7,000 BICHOU MIAMI GTA 6",
+   "brand": "Burst Clipping",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "x"
+   ],
+   "pool": false,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 6200.0,
+   "budget": 7000.0,
+   "clippers": 255,
+   "age": "1w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 75.0
+    },
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 75.0
+    },
+    "youtube": {
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 75.0
+    },
+    "x": {
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 75.0
+    }
+   },
+   "description": "Clippe le contenu des streams de Bichou et gagne 1$ pour chaque 1000 vues.",
+   "status": "Accepting clips",
+   "launched": "1 week ago",
+   "category": "Kick",
+   "files": 2,
+   "detail_at": "2026-11-26T12:22:11+00:00",
+   "paid_24h": 1100.0,
+   "left": 800.0,
+   "views_needed": 5000,
+   "account": "Pusnik G",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (2 Dateien)"
+   ],
+   "score": 7.5,
+   "joined": null,
+   "gone": false
+  },
+  {
    "first": "2026-11-16T07:48:38+00:00",
    "id": "4c7d1ede-2fca-406a-971d-f651880168aa",
    "url": "https://contentrewards.com/c/campaigns/4c7d1ede-2fca-406a-971d-f651880168aa",
@@ -2593,11 +2587,11 @@
    "pool": false,
    "rate": 1.5,
    "rate_max": 1.5,
-   "spent": 423.0,
+   "spent": 424.0,
    "budget": 1500.0,
    "clippers": 27,
    "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -2617,8 +2611,8 @@
    "category": "Music",
    "files": 2,
    "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 13.0,
-   "left": 1077.0,
+   "paid_24h": 10.0,
+   "left": 1076.0,
    "views_needed": 1000,
    "account": "Sonstige",
    "ok": false,
@@ -2629,16 +2623,67 @@
    "flags": [
     "Material liegt bei (2 Dateien)"
    ],
-   "score": 7.5,
+   "score": 7.4,
    "joined": null,
    "gone": false
   },
   {
-   "first": "2026-11-17T18:15:18+00:00",
-   "id": "5354eab8-c428-483f-9d34-09c8db7fc324",
-   "url": "https://contentrewards.com/c/campaigns/5354eab8-c428-483f-9d34-09c8db7fc324",
-   "title": "HardcoreSMP Minecraft Clipping Campaign",
-   "brand": "FableSMP",
+   "first": "2026-11-20T18:17:02+00:00",
+   "id": "586210f7-cf29-438c-886d-66f18f73839a",
+   "url": "https://contentrewards.com/c/campaigns/586210f7-cf29-438c-886d-66f18f73839a",
+   "title": "Trades By Sci",
+   "brand": "SCI’S CLIPPING TEAM",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram"
+   ],
+   "pool": false,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 1400.0,
+   "budget": 2000.0,
+   "clippers": 99,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 1.0,
+     "min_payout": 3.0,
+     "max_payout": 500.0
+    },
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 3.0,
+     "max_payout": 500.0
+    }
+   },
+   "description": "Welcome to the official Trades By Sci Clipping Team. Turn content into views and views into money. Clip the best moments, post consistently, and get rewarded for your work. Stay active. Stay creative. Get paid.",
+   "status": "Accepting clips",
+   "launched": "2 weeks ago",
+   "category": "Lifestyle",
+   "files": 1,
+   "detail_at": "2026-11-27T06:23:17+00:00",
+   "paid_24h": 300.0,
+   "left": 600.0,
+   "views_needed": 3000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (1 Dateien)"
+   ],
+   "score": 7.4,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-24T18:10:27+00:00",
+   "id": "fe4d1c34-4ed5-4895-9995-0d63bb5cb5a8",
+   "url": "https://contentrewards.com/c/campaigns/fe4d1c34-4ed5-4895-9995-0d63bb5cb5a8",
+   "title": "Ikee Motola Clipping | $2,300 budget | $2 CPM",
+   "brand": "The Launch Company",
    "verified": false,
    "platforms": [
     "tiktok",
@@ -2646,177 +2691,58 @@
     "youtube"
    ],
    "pool": false,
-   "rate": 2.0,
+   "rate": 1.0,
    "rate_max": 2.0,
-   "spent": 1200.0,
-   "budget": 1500.0,
-   "clippers": 32,
-   "age": "4w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "spent": 894.0,
+   "budget": 2300.0,
+   "clippers": 25,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 50.0
+    },
     "tiktok": {
      "rate": 2.0,
-     "min_payout": 4.0,
-     "max_payout": 100.0
-    },
-    "instagram": {
-     "rate": 2.0,
-     "min_payout": 4.0,
-     "max_payout": 100.0
+     "min_payout": 3.0,
+     "max_payout": 50.0
     },
     "youtube": {
-     "rate": 2.0,
-     "min_payout": 4.0,
-     "max_payout": 100.0
+     "rate": 1.0,
+     "min_payout": 3.0,
+     "max_payout": 50.0
     }
    },
-   "description": "Clip and edit videos for an upcoming Minecraft server called HardcoreSMP. Our brief is in the google doc.",
+   "description": "Ikee Motola (@notikee) is a streamer and digital creator with 365K+ followers across platforms, known for entertaining content, lifestyle, and fragrance brand. With his own fragrance brand and a growing online presence, he's launching a clipping campaign to expand his reach and connect with a wide",
    "status": "Accepting clips",
-   "launched": "4 weeks ago",
-   "category": "Minecraft",
-   "files": 5,
-   "detail_at": "2026-11-27T06:23:17+00:00",
-   "paid_24h": 100.0,
-   "left": 300.0,
-   "views_needed": 2000,
-   "account": "Pusnik G",
+   "launched": "2 weeks ago",
+   "category": "Entertainment",
+   "files": 3,
+   "hidden_rules": 1,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 145.0,
+   "left": 1406.0,
+   "views_needed": 1500,
+   "account": "Pusnik IRL",
    "ok": true,
    "why_not": [],
    "flags": [
-    "Material liegt bei (5 Dateien)"
+    "Material liegt bei (3 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
    ],
    "score": 7.3,
    "joined": null,
    "gone": false
   },
   {
-   "first": "2026-11-25T18:04:33+00:00",
-   "id": "fb4b6ff1-4f22-446e-82d8-6bc9e2ba6278",
-   "url": "https://contentrewards.com/c/campaigns/fb4b6ff1-4f22-446e-82d8-6bc9e2ba6278",
-   "title": "$3,000 Rare Americans Lola Lee Campaign",
-   "brand": "ClippedIn",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 1200.0,
-   "budget": 3000.0,
-   "clippers": 27,
-   "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 100.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 100.0
-    },
-    "youtube": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 100.0
-    }
-   },
-   "description": "Rare Americans \"Lola Lee\" Sound Campaign. Anime, animation, film, TV or Rare Americans music video edits with a hook or lyrics on screen. Start the sound after 0:09 and mute all original audio. \"Lola Lee by Rare Americans\" in every caption. $1 CPM, up to $100 per clip. Full rules in the guidelines.",
-   "status": "Accepting clips",
-   "launched": "5 days ago",
-   "category": "Music",
-   "files": 2,
-   "hidden_rules": 3,
-   "detail_at": "2026-11-25T18:04:33+00:00",
-   "paid_24h": 100.0,
-   "left": 1800.0,
-   "views_needed": 2000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "Musik/UGC: music video",
-    "Musik"
-   ],
-   "flags": [
-    "Material liegt bei (2 Dateien)",
-    "3 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 7.2,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-27T18:09:42+00:00",
-   "id": "b2c1b695-bbba-4267-9d19-79385f637ae4",
-   "url": "https://contentrewards.com/c/campaigns/b2c1b695-bbba-4267-9d19-79385f637ae4",
-   "title": "Sideline 3 (Extended Clipping Campaign)",
-   "brand": "Clouted",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 2200.0,
-   "budget": 2500.0,
-   "clippers": 149,
-   "age": "1d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 0.5,
-     "max_payout": 250.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 0.5,
-     "max_payout": 250.0
-    },
-    "youtube": {
-     "rate": 1.0,
-     "min_payout": 0.5,
-     "max_payout": 250.0
-    }
-   },
-   "description": "Movie + TV",
-   "status": "Accepting clips",
-   "launched": "today",
-   "category": "Movies & TV",
-   "files": 1,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-27T18:09:42+00:00",
-   "paid_24h": 1338.0,
-   "left": 300.0,
-   "views_needed": 500,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (1 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 7.2,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-27T06:23:17+00:00",
-   "id": "0d3ec947-b74d-47bc-98b3-b420caba97a4",
-   "url": "https://contentrewards.com/c/campaigns/0d3ec947-b74d-47bc-98b3-b420caba97a4",
-   "title": "Podcast Clipping | Patricia AI App",
-   "brand": "ClipScales",
+   "first": "2026-11-22T12:01:10+00:00",
+   "id": "76893dce-b122-4a37-8042-c8d7229d086d",
+   "url": "https://contentrewards.com/c/campaigns/76893dce-b122-4a37-8042-c8d7229d086d",
+   "title": "VAVADA",
+   "brand": "VAVADA",
    "verified": false,
    "platforms": [
     "tiktok",
@@ -2826,59 +2752,109 @@
     "facebook"
    ],
    "pool": false,
-   "rate": 1.5,
-   "rate_max": 1.5,
-   "spent": 296.0,
-   "budget": 1000.0,
-   "clippers": 54,
-   "age": "4d",
-   "last": "2026-11-28T06:20:17+00:00",
+   "rate": 0.5,
+   "rate_max": 0.5,
+   "spent": 3600.0,
+   "budget": 5000.0,
+   "clippers": 284,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 300.0
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 500.0
     },
     "instagram": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 300.0
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 500.0
     },
     "youtube": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 300.0
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 500.0
     },
     "facebook": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 300.0
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 500.0
     },
     "x": {
-     "rate": 1.5,
-     "min_payout": 1.5,
-     "max_payout": 300.0
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 500.0
     }
    },
-   "description": "Clip the Patricia Podcast, a podcast with the founder of the AI app. Easy Virality. Earn Big.",
+   "description": "VAVADA — Post Clips & Get Views Create and post engaging clips in English on your own account. Choose a format that works for your audience: sports, gaming, humour, highlights or other entertaining content.",
    "status": "Accepting clips",
-   "launched": "3 days ago",
-   "category": "Business Podcast",
+   "launched": "2 weeks ago",
+   "category": "Gambling",
    "files": 1,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-27T06:23:17+00:00",
-   "paid_24h": 146.0,
-   "left": 704.0,
+   "detail_at": "2026-11-25T12:24:01+00:00",
+   "paid_24h": 900.0,
+   "left": 1400.0,
    "views_needed": 1000,
-   "account": "Pusnik IRL",
+   "account": "Sonstige",
    "ok": true,
    "why_not": [],
    "flags": [
-    "Material liegt bei (1 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
+    "Material liegt bei (1 Dateien)"
    ],
-   "score": 7.1,
+   "score": 6.8,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-27T18:09:42+00:00",
+   "id": "676bb1fb-4273-4f30-ac1c-3aa7aadd8a12",
+   "url": "https://contentrewards.com/c/campaigns/676bb1fb-4273-4f30-ac1c-3aa7aadd8a12",
+   "title": "Luminess Viral Clipping",
+   "brand": "Bounty",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram"
+   ],
+   "pool": false,
+   "rate": 2.0,
+   "rate_max": 2.0,
+   "spent": 1300.0,
+   "budget": 3500.0,
+   "clippers": 26,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 2.0,
+     "min_payout": 2.0,
+     "max_payout": 350.0
+    },
+    "instagram": {
+     "rate": 2.0,
+     "min_payout": 2.0,
+     "max_payout": 350.0
+    }
+   },
+   "description": "Make glow up edits for Luminess, the airbrush makeup brand. Before and after footage from real women is provided, so you don't need to film yourself. Post videos on TikTok or Reels, slideshows on TikTok only. 40%+ USA audience. Formats are in the guide, top clippers join the private tier.",
+   "status": "Accepting clips",
+   "launched": "2 weeks ago",
+   "category": "Beauty Brand",
+   "files": 1,
+   "detail_at": "2026-11-27T18:09:42+00:00",
+   "paid_24h": 0,
+   "left": 2200.0,
+   "views_needed": 1000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Publikum: 40 % USA/Tier 1 verlangt",
+    "Material liegt bei (1 Dateien)"
+   ],
+   "score": 6.8,
    "joined": null,
    "gone": false
   },
@@ -2898,11 +2874,11 @@
    "pool": false,
    "rate": 0.7,
    "rate_max": 0.7,
-   "spent": 350200.0,
+   "spent": 350700.0,
    "budget": 353000.0,
    "clippers": 362,
    "age": "12mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [
     "Ne pas dénigrer l'image de Yomi Denzel et d'autres créateurs",
     "Content requirements",
@@ -2939,8 +2915,8 @@
    "hidden_rules": 0,
    "views": 722700000,
    "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 1200.0,
-   "left": 2800.0,
+   "paid_24h": 1000.0,
+   "left": 2300.0,
    "views_needed": 28571,
    "account": "Pusnik IRL",
    "ok": true,
@@ -2949,16 +2925,180 @@
     "erste Auszahlung erst ab 28.571 Views",
     "Material liegt bei (1 Dateien)"
    ],
-   "score": 7.0,
+   "score": 6.7,
    "joined": null,
    "gone": false
   },
   {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
-   "url": "https://contentrewards.com/c/campaigns/5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
-   "title": "Stream House LA Clipping| $4k Budget",
-   "brand": "Motion Clipping",
+   "first": "2026-11-28T06:20:17+00:00",
+   "id": "94a42668-3fd9-43a2-ad83-d1644cef6b81",
+   "url": "https://contentrewards.com/c/campaigns/94a42668-3fd9-43a2-ad83-d1644cef6b81",
+   "title": "CoinPoker | Poker Highlights Only",
+   "brand": "Coin Group Media",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "facebook"
+   ],
+   "pool": false,
+   "rate": 0.4,
+   "rate_max": 0.4,
+   "spent": 783.0,
+   "budget": 4000.0,
+   "clippers": 21,
+   "age": "1w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "instagram": {
+     "rate": 0.4,
+     "min_payout": 4.0,
+     "max_payout": 100.0
+    },
+    "facebook": {
+     "rate": 0.4,
+     "min_payout": 4.0,
+     "max_payout": 100.0
+    },
+    "tiktok": {
+     "rate": 0.4,
+     "min_payout": 4.0,
+     "max_payout": 100.0
+    },
+    "youtube": {
+     "rate": 0.4,
+     "min_payout": 4.0,
+     "max_payout": 100.0
+    }
+   },
+   "description": "CoinPoker | Poker Highlights Only - Poker highlights only. Submit highlights from actual live or online poker hands -Every clip must be with logo. - Logo deadline. The current CoinPoker logo is valid through November 30, 2026",
+   "status": "Accepting clips",
+   "launched": "1 week ago",
+   "category": "Poker",
+   "files": 2,
+   "hidden_rules": 1,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 28.0,
+   "left": 3217.0,
+   "views_needed": 10000,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "gesperrt: poker",
+    "Rate 0.4 $ zu niedrig"
+   ],
+   "flags": [
+    "Logo/Wasserzeichen Pflicht",
+    "Material liegt bei (2 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 6.7,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-25T06:19:38+00:00",
+   "id": "dc7183a8-7779-4b54-99a8-b7ac8c8452ec",
+   "url": "https://contentrewards.com/c/campaigns/dc7183a8-7779-4b54-99a8-b7ac8c8452ec",
+   "title": "$30,000 LACY CLIPPING CAMPAIGN",
+   "brand": "Reach",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "x"
+   ],
+   "pool": false,
+   "rate": null,
+   "rate_max": null,
+   "spent": null,
+   "budget": 25000.0,
+   "clippers": 872,
+   "age": "6d",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {},
+   "description": "Clip content from Lacy's social media accounts (TikTok, IG, YT) READ THE RULES AND REQUIREMENTS HERE: Campaign ending 21st of December.",
+   "status": "Accepting clips",
+   "launched": "6 days ago",
+   "category": "Streamer",
+   "files": 4,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 0,
+   "left": 25000.0,
+   "views_needed": null,
+   "account": "Pusnik IRL",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (4 Dateien)"
+   ],
+   "score": 6.6,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-27T12:19:00+00:00",
+   "id": "c1521700-4c0d-4ce3-986b-15bb3a7f94f6",
+   "url": "https://contentrewards.com/c/campaigns/c1521700-4c0d-4ce3-986b-15bb3a7f94f6",
+   "title": "Founding MENA (بودكاست)",
+   "brand": "Arabic Clipping",
+   "verified": true,
+   "platforms": [
+    "tiktok",
+    "instagram"
+   ],
+   "pool": false,
+   "rate": 0.75,
+   "rate_max": 2.5,
+   "spent": 2100.0,
+   "budget": 3000.0,
+   "clippers": 29,
+   "age": "1mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 0.75,
+     "min_payout": 0.75,
+     "max_payout": 100.0
+    },
+    "instagram": {
+     "rate": 2.5,
+     "min_payout": 2.5,
+     "max_payout": 500.0
+    }
+   },
+   "description": ":سوّ كليبات من البودكاست الجديد (Founding MENA) واربح 2$ على كل 1000 مشاهدة",
+   "status": "Accepting clips",
+   "launched": "1 month ago",
+   "category": "Podcasts",
+   "files": 2,
+   "detail_at": "2026-11-27T12:19:00+00:00",
+   "paid_24h": 100.0,
+   "left": 900.0,
+   "views_needed": 1000,
+   "account": "Pusnik IRL",
+   "ok": false,
+   "why_not": [
+    "nicht englisch: arabic"
+   ],
+   "flags": [
+    "Material liegt bei (2 Dateien)"
+   ],
+   "score": 6.6,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-17T18:15:18+00:00",
+   "id": "5354eab8-c428-483f-9d34-09c8db7fc324",
+   "url": "https://contentrewards.com/c/campaigns/5354eab8-c428-483f-9d34-09c8db7fc324",
+   "title": "HardcoreSMP Minecraft Clipping Campaign",
+   "brand": "FableSMP",
    "verified": false,
    "platforms": [
     "tiktok",
@@ -2966,58 +3106,56 @@
     "youtube"
    ],
    "pool": false,
-   "rate": 0.5,
-   "rate_max": 2.5,
-   "spent": 2400.0,
-   "budget": 4000.0,
-   "clippers": 303,
-   "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "rate": 2.0,
+   "rate_max": 2.0,
+   "spent": 1100.0,
+   "budget": 1500.0,
+   "clippers": 31,
+   "age": "4w",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
      "rate": 2.0,
-     "min_payout": 3.5,
-     "max_payout": 250.0
+     "min_payout": 4.0,
+     "max_payout": 100.0
     },
     "instagram": {
      "rate": 2.0,
-     "min_payout": 3.5,
-     "max_payout": 250.0
+     "min_payout": 4.0,
+     "max_payout": 100.0
     },
     "youtube": {
-     "rate": 0.5,
-     "min_payout": 1.2,
-     "max_payout": 175.0
+     "rate": 2.0,
+     "min_payout": 4.0,
+     "max_payout": 100.0
     }
    },
-   "description": "Clip for Stream House LA and post viral moments across Tiktok, Instagram and YT shorts and get paid",
+   "description": "Clip and edit videos for an upcoming Minecraft server called HardcoreSMP. Our brief is in the google doc.",
    "status": "Accepting clips",
-   "launched": "1 month ago",
-   "category": "Entertainment",
-   "files": 4,
-   "detail_at": "2026-11-25T18:04:33+00:00",
-   "paid_24h": 300.0,
-   "hidden_rules": 1,
-   "left": 1600.0,
-   "views_needed": 1750,
-   "account": "Pusnik IRL",
+   "launched": "4 weeks ago",
+   "category": "Minecraft",
+   "files": 5,
+   "detail_at": "2026-11-27T06:23:17+00:00",
+   "paid_24h": 0,
+   "left": 400.0,
+   "views_needed": 2000,
+   "account": "Pusnik G",
    "ok": true,
    "why_not": [],
    "flags": [
-    "Material liegt bei (4 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
+    "Material liegt bei (5 Dateien)"
    ],
-   "score": 6.9,
+   "score": 6.5,
    "joined": null,
    "gone": false
   },
   {
-   "first": "2026-11-22T12:01:10+00:00",
-   "id": "76893dce-b122-4a37-8042-c8d7229d086d",
-   "url": "https://contentrewards.com/c/campaigns/76893dce-b122-4a37-8042-c8d7229d086d",
-   "title": "VAVADA",
-   "brand": "VAVADA",
+   "first": "2026-11-27T06:23:17+00:00",
+   "id": "0d3ec947-b74d-47bc-98b3-b420caba97a4",
+   "url": "https://contentrewards.com/c/campaigns/0d3ec947-b74d-47bc-98b3-b420caba97a4",
+   "title": "Podcast Clipping | Patricia AI App",
+   "brand": "ClipScales",
    "verified": false,
    "platforms": [
     "tiktok",
@@ -3027,116 +3165,59 @@
     "facebook"
    ],
    "pool": false,
-   "rate": 0.5,
-   "rate_max": 0.5,
-   "spent": 3500.0,
-   "budget": 5000.0,
-   "clippers": 284,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "rate": 1.5,
+   "rate_max": 1.5,
+   "spent": 300.0,
+   "budget": 1000.0,
+   "clippers": 54,
+   "age": "4d",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
-     "rate": 0.5,
-     "min_payout": 0.5,
-     "max_payout": 500.0
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 300.0
     },
     "instagram": {
-     "rate": 0.5,
-     "min_payout": 0.5,
-     "max_payout": 500.0
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 300.0
     },
     "youtube": {
-     "rate": 0.5,
-     "min_payout": 0.5,
-     "max_payout": 500.0
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 300.0
     },
     "facebook": {
-     "rate": 0.5,
-     "min_payout": 0.5,
-     "max_payout": 500.0
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 300.0
     },
     "x": {
-     "rate": 0.5,
-     "min_payout": 0.5,
-     "max_payout": 500.0
+     "rate": 1.5,
+     "min_payout": 1.5,
+     "max_payout": 300.0
     }
    },
-   "description": "VAVADA — Post Clips & Get Views Create and post engaging clips in English on your own account. Choose a format that works for your audience: sports, gaming, humour, highlights or other entertaining content.",
+   "description": "Clip the Patricia Podcast, a podcast with the founder of the AI app. Easy Virality. Earn Big.",
    "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Gambling",
+   "launched": "3 days ago",
+   "category": "Business Podcast",
    "files": 1,
-   "detail_at": "2026-11-25T12:24:01+00:00",
-   "paid_24h": 800.0,
-   "left": 1500.0,
+   "hidden_rules": 1,
+   "detail_at": "2026-11-27T06:23:17+00:00",
+   "paid_24h": 93.0,
+   "left": 700.0,
    "views_needed": 1000,
-   "account": "Sonstige",
+   "account": "Pusnik IRL",
    "ok": true,
    "why_not": [],
    "flags": [
-    "Material liegt bei (1 Dateien)"
+    "Material liegt bei (1 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
    ],
-   "score": 6.9,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-26T18:10:21+00:00",
-   "id": "f583b069-ced7-49e5-9ed3-2d3a13d6df0c",
-   "url": "https://contentrewards.com/c/campaigns/f583b069-ced7-49e5-9ed3-2d3a13d6df0c",
-   "title": "BOBBY VAN RIPER GTA VI Clipping",
-   "brand": "Clipping Nation",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 1.5,
-   "rate_max": 1.5,
-   "spent": 769.0,
-   "budget": 1000.0,
-   "clippers": 69,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.5,
-     "min_payout": 2.25,
-     "max_payout": 150.0
-    },
-    "instagram": {
-     "rate": 1.5,
-     "min_payout": 2.25,
-     "max_payout": 150.0
-    },
-    "youtube": {
-     "rate": 1.5,
-     "min_payout": 2.25,
-     "max_payout": 150.0
-    }
-   },
-   "description": "Get paid to clip Bobby VanRiper's GTA VI content. ➡️",
-   "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Streamer",
-   "files": 2,
-   "detail_at": "2026-11-26T18:10:21+00:00",
-   "paid_24h": 175.0,
-   "left": 231.0,
-   "views_needed": 1500,
-   "account": "Pusnik G",
-   "ok": false,
-   "why_not": [
-    "nur noch 231 $ im Topf"
-   ],
-   "flags": [
-    "Material liegt bei (2 Dateien)"
-   ],
-   "score": 6.9,
+   "score": 6.5,
    "joined": null,
    "gone": false
   },
@@ -3157,9 +3238,9 @@
    "rate_max": 1.5,
    "spent": 3700.0,
    "budget": 4100.0,
-   "clippers": 33,
+   "clippers": 34,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -3200,191 +3281,6 @@
    "gone": false
   },
   {
-   "first": "2026-11-28T06:20:17+00:00",
-   "id": "94a42668-3fd9-43a2-ad83-d1644cef6b81",
-   "url": "https://contentrewards.com/c/campaigns/94a42668-3fd9-43a2-ad83-d1644cef6b81",
-   "title": "CoinPoker | Poker Highlights Only",
-   "brand": "Coin Group Media",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube",
-    "facebook"
-   ],
-   "pool": false,
-   "rate": 0.4,
-   "rate_max": 0.4,
-   "spent": 755.0,
-   "budget": 4000.0,
-   "clippers": 21,
-   "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "instagram": {
-     "rate": 0.4,
-     "min_payout": 4.0,
-     "max_payout": 100.0
-    },
-    "facebook": {
-     "rate": 0.4,
-     "min_payout": 4.0,
-     "max_payout": 100.0
-    },
-    "tiktok": {
-     "rate": 0.4,
-     "min_payout": 4.0,
-     "max_payout": 100.0
-    },
-    "youtube": {
-     "rate": 0.4,
-     "min_payout": 4.0,
-     "max_payout": 100.0
-    }
-   },
-   "description": "CoinPoker | Poker Highlights Only - Poker highlights only. Submit highlights from actual live or online poker hands -Every clip must be with logo. - Logo deadline. The current CoinPoker logo is valid through November 30, 2026",
-   "status": "Accepting clips",
-   "launched": "1 week ago",
-   "category": "Poker",
-   "files": 2,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 3245.0,
-   "views_needed": 10000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "gesperrt: poker",
-    "Rate 0.4 $ zu niedrig"
-   ],
-   "flags": [
-    "Logo/Wasserzeichen Pflicht",
-    "Material liegt bei (2 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 6.4,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
-   "url": "https://contentrewards.com/c/campaigns/e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
-   "title": "WatchMeWin Clipping Portugal",
-   "brand": "WMW CLIPPING PT",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 1800.0,
-   "budget": 2000.0,
-   "clippers": 22,
-   "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 1.0,
-     "max_payout": 50.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 1.0,
-     "max_payout": 50.0
-    }
-   },
-   "description": "Clipa e Ganha! 🎥💸",
-   "status": "Accepting clips",
-   "launched": "1 month ago",
-   "category": "Entertainment",
-   "files": 3,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-26T12:22:11+00:00",
-   "paid_24h": 200.0,
-   "left": 200.0,
-   "views_needed": 1000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "nur noch 200 $ im Topf"
-   ],
-   "flags": [
-    "Material liegt bei (3 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 6.3,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-16T07:48:38+00:00",
-   "id": "70314901-9544-4615-a37a-22e31f6b0014",
-   "url": "https://contentrewards.com/c/campaigns/70314901-9544-4615-a37a-22e31f6b0014",
-   "title": "Kamal Bilal Clipping - by Pervasive",
-   "brand": "Pervasive Clipping",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 1800.0,
-   "budget": 2000.0,
-   "clippers": 61,
-   "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 200.0
-    },
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 200.0
-    },
-    "youtube": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 200.0
-    }
-   },
-   "description": "Get paid to clip for Kamal Bilal. Join for free in Pervasive Community to access resources and campaigns:",
-   "status": "Accepting clips",
-   "launched": "1 month ago",
-   "category": "Lifestyle",
-   "files": 2,
-   "detail_at": "2026-11-25T18:04:33+00:00",
-   "paid_24h": 200.0,
-   "hidden_rules": 1,
-   "left": 200.0,
-   "views_needed": 2000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "nur noch 200 $ im Topf"
-   ],
-   "flags": [
-    "Material liegt bei (2 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 6.2,
-   "joined": null,
-   "gone": false
-  },
-  {
    "first": "2026-11-16T07:48:38+00:00",
    "id": "a696e6af-18aa-4320-a61e-32e3bcf40a44",
    "url": "https://contentrewards.com/c/campaigns/a696e6af-18aa-4320-a61e-32e3bcf40a44",
@@ -3404,7 +3300,7 @@
    "budget": 5000.0,
    "clippers": 27,
    "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -3469,7 +3365,7 @@
    "budget": 2000.0,
    "clippers": 8,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -3524,7 +3420,7 @@
    "budget": 20000.0,
    "clippers": 1600,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {},
    "description": "Get paid to clip the best/funniest moments from CORE content! ⬇️",
@@ -3565,7 +3461,7 @@
    "budget": 5000.0,
    "clippers": 17,
    "age": "3mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -3604,6 +3500,134 @@
    "gone": false
   },
   {
+   "first": "2026-11-28T12:07:16+00:00",
+   "id": "8a7a2555-6081-4910-8ab6-97995354a5ee",
+   "url": "https://contentrewards.com/c/campaigns/8a7a2555-6081-4910-8ab6-97995354a5ee",
+   "title": "Average Rob Clips",
+   "brand": "Humm Clipping",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "x",
+    "facebook"
+   ],
+   "pool": false,
+   "rate": 1.15,
+   "rate_max": 1.15,
+   "spent": 551.0,
+   "budget": 1116.0,
+   "clippers": 8,
+   "age": "2d",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "instagram": {
+     "rate": 1.15,
+     "min_payout": 4.6,
+     "max_payout": 115.0
+    },
+    "youtube": {
+     "rate": 1.15,
+     "min_payout": 4.6,
+     "max_payout": 115.0
+    },
+    "x": {
+     "rate": 1.15,
+     "min_payout": 4.6,
+     "max_payout": 115.0
+    },
+    "facebook": {
+     "rate": 1.15,
+     "min_payout": 4.6,
+     "max_payout": 115.0
+    },
+    "tiktok": {
+     "rate": 1.15,
+     "min_payout": 4.6,
+     "max_payout": 115.0
+    }
+   },
+   "description": "🎬 Average Rob, one of Belgium's biggest entertainment creators. Clip his content, post on TikTok / Instagram / YouTube / X. Paid per view, no fees. Clip, post, earn. All info in the \"clipper guidelines\" (must-read). Content in English.",
+   "status": "Accepting clips",
+   "launched": "2 days ago",
+   "category": "Entertainment",
+   "files": 3,
+   "detail_at": "2026-11-28T12:07:16+00:00",
+   "paid_24h": 0,
+   "left": 565.0,
+   "views_needed": 4000,
+   "account": "Pusnik IRL",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (3 Dateien)"
+   ],
+   "score": 6.0,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
+   "url": "https://contentrewards.com/c/campaigns/5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
+   "title": "Stream House LA Clipping| $4k Budget",
+   "brand": "Motion Clipping",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 0.5,
+   "rate_max": 2.5,
+   "spent": 2400.0,
+   "budget": 4000.0,
+   "clippers": 303,
+   "age": "1mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 2.0,
+     "min_payout": 3.5,
+     "max_payout": 250.0
+    },
+    "instagram": {
+     "rate": 2.0,
+     "min_payout": 3.5,
+     "max_payout": 250.0
+    },
+    "youtube": {
+     "rate": 0.5,
+     "min_payout": 1.2,
+     "max_payout": 175.0
+    }
+   },
+   "description": "Clip for Stream House LA and post viral moments across Tiktok, Instagram and YT shorts and get paid",
+   "status": "Accepting clips",
+   "launched": "1 month ago",
+   "category": "Entertainment",
+   "files": 4,
+   "detail_at": "2026-11-25T18:04:33+00:00",
+   "paid_24h": 200.0,
+   "hidden_rules": 1,
+   "left": 1600.0,
+   "views_needed": 1750,
+   "account": "Pusnik IRL",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (4 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 5.9,
+   "joined": null,
+   "gone": false
+  },
+  {
    "first": "2026-11-16T07:48:38+00:00",
    "id": "19859ab5-057c-4cff-847c-93155c896827",
    "url": "https://contentrewards.com/c/campaigns/19859ab5-057c-4cff-847c-93155c896827",
@@ -3622,7 +3646,7 @@
    "budget": 2500.0,
    "clippers": 122,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [
     "NEWEST EPISODE - CLIP THIS ONE:",
     "youtu.be/hfaCgw_alj0",
@@ -3691,11 +3715,11 @@
    "pool": false,
    "rate": 1.0,
    "rate_max": 1.0,
-   "spent": 39.0,
+   "spent": 88.0,
    "budget": 1000.0,
-   "clippers": 16,
+   "clippers": 20,
    "age": "3d",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -3721,8 +3745,8 @@
    "files": 1,
    "hidden_rules": 1,
    "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 961.0,
+   "paid_24h": 49.0,
+   "left": 912.0,
    "views_needed": 1000,
    "account": "Pusnik G",
    "ok": true,
@@ -3730,6 +3754,60 @@
    "flags": [
     "Material liegt bei (1 Dateien)",
     "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 5.9,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-23T06:30:26+00:00",
+   "id": "686f6547-172e-4b76-99be-c26eabd5a2cf",
+   "url": "https://contentrewards.com/c/campaigns/686f6547-172e-4b76-99be-c26eabd5a2cf",
+   "title": "GTA 6 x GTA Clipper Logo Campaign",
+   "brand": "GTA Clipper",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 0.5,
+   "rate_max": 0.5,
+   "spent": 875.0,
+   "budget": 1000.0,
+   "clippers": 52,
+   "age": "6d",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 0.5,
+     "min_payout": 5.0,
+     "max_payout": 200.0
+    },
+    "youtube": {
+     "rate": 0.5,
+     "min_payout": 5.0,
+     "max_payout": 200.0
+    }
+   },
+   "description": "Put the GTA Clipper logo on your GTA 6 clips and get paid $0.50 per 1,000 views from the US, UK, Canada and Australia, up to $200 per video. Clip any streamer. Join our Discord, post on TikTok or YouTube Shorts with the logo bottom-right and submit right after posting. Paid from 10,000 views.",
+   "status": "Accepting clips",
+   "launched": "4 days ago",
+   "category": "Gaming",
+   "files": 4,
+   "detail_at": "2026-11-26T12:22:11+00:00",
+   "paid_24h": 257.0,
+   "left": 125.0,
+   "views_needed": 10000,
+   "account": "Pusnik G",
+   "ok": false,
+   "why_not": [
+    "nur noch 125 $ im Topf"
+   ],
+   "flags": [
+    "Logo/Wasserzeichen Pflicht",
+    "Material liegt bei (4 Dateien)"
    ],
    "score": 5.7,
    "joined": null,
@@ -3793,6 +3871,69 @@
    "gone": true
   },
   {
+   "first": "2026-11-16T18:15:41+00:00",
+   "id": "796d5d55-c4ae-4172-9670-4afd85668a4d",
+   "url": "https://contentrewards.com/c/campaigns/796d5d55-c4ae-4172-9670-4afd85668a4d",
+   "title": "$6,000 Call It A Day & No Comfort Detours Clips",
+   "brand": "D&S Distribution & Seeding",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "x"
+   ],
+   "pool": false,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 5100.0,
+   "budget": 6000.0,
+   "clippers": 105,
+   "age": "1mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 100.0
+    },
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 100.0
+    },
+    "youtube": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 100.0
+    },
+    "x": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 100.0
+    }
+   },
+   "description": "Clip Call It A Day and No Comfort Detours, new and old episodes. Normal clean clips: one strong moment, a short title and captions. No meme edits needed. Post on TikTok, Reels and Shorts. $1.00 per 1K views, up to $100 a clip.",
+   "status": "Accepting clips",
+   "launched": "1 month ago",
+   "category": "Hip-Hop & Rap",
+   "files": 5,
+   "detail_at": "2026-11-26T12:22:11+00:00",
+   "paid_24h": 100.0,
+   "left": 900.0,
+   "views_needed": 2000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (5 Dateien)"
+   ],
+   "score": 5.6,
+   "joined": null,
+   "gone": false
+  },
+  {
    "first": "2026-11-17T06:21:27+00:00",
    "id": "bb11120c-865b-4d12-911f-aec4e701767c",
    "url": "https://contentrewards.com/c/campaigns/bb11120c-865b-4d12-911f-aec4e701767c",
@@ -3810,7 +3951,7 @@
    "budget": 1000.0,
    "clippers": 63,
    "age": "3mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -3846,53 +3987,61 @@
    "gone": false
   },
   {
-   "first": "2026-11-23T06:30:26+00:00",
-   "id": "686f6547-172e-4b76-99be-c26eabd5a2cf",
-   "url": "https://contentrewards.com/c/campaigns/686f6547-172e-4b76-99be-c26eabd5a2cf",
-   "title": "GTA 6 x GTA Clipper Logo Campaign",
-   "brand": "GTA Clipper",
+   "first": "2026-11-28T06:20:17+00:00",
+   "id": "c8bda3e4-2635-40a1-a21a-d034accc016a",
+   "url": "https://contentrewards.com/c/campaigns/c8bda3e4-2635-40a1-a21a-d034accc016a",
+   "title": "J2 Hundred Clipping  | $1,000 Budget!",
+   "brand": "MGCPM",
    "verified": false,
    "platforms": [
-    "tiktok",
-    "youtube"
+    "tiktok"
    ],
    "pool": false,
-   "rate": 0.5,
-   "rate_max": 0.5,
-   "spent": 867.0,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 327.0,
    "budget": 1000.0,
-   "clippers": 52,
-   "age": "6d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
+   "clippers": 15,
+   "age": "1d",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [
+    "Must use recent content linked (YouTube videos + Kick Streams)",
+    "Must use content no longer than 1 month old",
+    "Must use #j2hundred + #j2 on every post",
+    "Every caption must direct viewers to J2’s stream (see guide for examples)",
+    "Must mention J2’s name on any on screen text (J2 goes here…. For example)",
+    "Content/Captions mustn't tarnish his image( can’t make him look bad)",
+    "Must have US, UK, EUR, CAN, AUS or NZ audience",
+    "Creator requirements",
+    "An",
+    "experienced clipper",
+    "able to pull the best moments from",
+    "live streams",
+    "and",
+    "YouTube videos",
+    "and repurpose them as quality clips built for virality!"
+   ],
    "platform_rates": {
     "tiktok": {
-     "rate": 0.5,
-     "min_payout": 5.0,
-     "max_payout": 200.0
-    },
-    "youtube": {
-     "rate": 0.5,
-     "min_payout": 5.0,
-     "max_payout": 200.0
+     "rate": 1.0,
+     "min_payout": 1.2,
+     "max_payout": 80.0
     }
    },
-   "description": "Put the GTA Clipper logo on your GTA 6 clips and get paid $0.50 per 1,000 views from the US, UK, Canada and Australia, up to $200 per video. Clip any streamer. Join our Discord, post on TikTok or YouTube Shorts with the logo bottom-right and submit right after posting. Paid from 10,000 views.",
+   "description": "J2 Hundred one of the biggest streamers in the UK with over 4M+ followers across platforms! He streams on Kick and has some crazy content that’s perfect for short form. This campaign will be solely built around promoting those moments while following ALL campaign guidelines!",
    "status": "Accepting clips",
-   "launched": "4 days ago",
-   "category": "Gaming",
+   "launched": "yesterday",
+   "category": "Personal Brand",
    "files": 4,
-   "detail_at": "2026-11-26T12:22:11+00:00",
-   "paid_24h": 252.0,
-   "left": 133.0,
-   "views_needed": 10000,
-   "account": "Pusnik G",
-   "ok": false,
-   "why_not": [
-    "nur noch 133 $ im Topf"
-   ],
+   "views": 290900,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 36.0,
+   "left": 673.0,
+   "views_needed": 1200,
+   "account": "Pusnik IRL",
+   "ok": true,
+   "why_not": [],
    "flags": [
-    "Logo/Wasserzeichen Pflicht",
     "Material liegt bei (4 Dateien)"
    ],
    "score": 5.6,
@@ -3920,7 +4069,7 @@
    "budget": 9000.0,
    "clippers": 85,
    "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -3987,7 +4136,7 @@
    "budget": 2000.0,
    "clippers": 489,
    "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -4034,7 +4183,7 @@
    "budget": 3000.0,
    "clippers": 45,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -4094,7 +4243,7 @@
    "budget": 1000.0,
    "clippers": 65,
    "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -4124,7 +4273,7 @@
    "category": "Gaming",
    "files": 1,
    "detail_at": "2026-11-27T06:23:17+00:00",
-   "paid_24h": 16.0,
+   "paid_24h": 12.0,
    "left": 290.0,
    "views_needed": 1333,
    "account": "Pusnik G",
@@ -4134,60 +4283,6 @@
    ],
    "flags": [
     "Material liegt bei (1 Dateien)"
-   ],
-   "score": 5.4,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-24T06:18:36+00:00",
-   "id": "28e95189-4b8d-4ef7-9329-14b45dc3dc2d",
-   "url": "https://contentrewards.com/c/campaigns/28e95189-4b8d-4ef7-9329-14b45dc3dc2d",
-   "title": "Gavin Gambles Slots Reposting",
-   "brand": "Gavin Gambles",
-   "verified": false,
-   "platforms": [
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 729.0,
-   "budget": 1000.0,
-   "clippers": 51,
-   "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 75.0
-    },
-    "youtube": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 75.0
-    }
-   },
-   "description": "Repost Gavin Gambles' top slot shorts: jackpots, bonus rounds and big live reactions that already pulled 600K+ views. Light edits are welcome, like a new hook, captions, or a different crop. Real casino footage only. Tag @gavin.gambles in every post.",
-   "status": "Accepting clips",
-   "launched": "1 week ago",
-   "category": "Entertainment",
-   "files": 6,
-   "detail_at": "2026-11-27T06:23:17+00:00",
-   "paid_24h": 112.0,
-   "left": 271.0,
-   "views_needed": 2000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "gesperrt: casino",
-    "nur noch 271 $ im Topf"
-   ],
-   "flags": [
-    "Material liegt bei (6 Dateien)"
    ],
    "score": 5.4,
    "joined": null,
@@ -4212,7 +4307,7 @@
    "budget": 2100.0,
    "clippers": 109,
    "age": "3mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "youtube": {
@@ -4254,6 +4349,61 @@
   },
   {
    "first": "2026-11-16T07:48:38+00:00",
+   "id": "e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
+   "url": "https://contentrewards.com/c/campaigns/e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
+   "title": "WatchMeWin Clipping Portugal",
+   "brand": "WMW CLIPPING PT",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram"
+   ],
+   "pool": false,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 1800.0,
+   "budget": 2000.0,
+   "clippers": 22,
+   "age": "1mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 1.0,
+     "min_payout": 1.0,
+     "max_payout": 50.0
+    },
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 1.0,
+     "max_payout": 50.0
+    }
+   },
+   "description": "Clipa e Ganha! 🎥💸",
+   "status": "Accepting clips",
+   "launched": "1 month ago",
+   "category": "Entertainment",
+   "files": 3,
+   "hidden_rules": 1,
+   "detail_at": "2026-11-26T12:22:11+00:00",
+   "paid_24h": 100.0,
+   "left": 200.0,
+   "views_needed": 1000,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "nur noch 200 $ im Topf"
+   ],
+   "flags": [
+    "Material liegt bei (3 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 5.3,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-16T07:48:38+00:00",
    "id": "6d896f33-152f-42a9-92f4-662199228349",
    "url": "https://contentrewards.com/c/campaigns/6d896f33-152f-42a9-92f4-662199228349",
    "title": "Lysium/Benji Ramos Clips",
@@ -4272,7 +4422,7 @@
    "budget": 1000.0,
    "clippers": 93,
    "age": "2mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [
     "Give context to clips if possible.",
     "Give high energy moments but does not have to be loud=funny only situations.",
@@ -4330,64 +4480,114 @@
    "gone": false
   },
   {
-   "first": "2026-11-28T06:20:17+00:00",
-   "id": "c8bda3e4-2635-40a1-a21a-d034accc016a",
-   "url": "https://contentrewards.com/c/campaigns/c8bda3e4-2635-40a1-a21a-d034accc016a",
-   "title": "J2 Hundred Clipping  | $1,000 Budget!",
-   "brand": "MGCPM",
+   "first": "2026-11-17T12:08:28+00:00",
+   "id": "45508e74-e67d-4922-b89d-53dafe4cf70d",
+   "url": "https://contentrewards.com/c/campaigns/45508e74-e67d-4922-b89d-53dafe4cf70d",
+   "title": "Austin Millz Clips",
+   "brand": "Austin Millz",
    "verified": false,
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "instagram"
    ],
    "pool": false,
    "rate": 1.0,
    "rate_max": 1.0,
-   "spent": 291.0,
-   "budget": 1000.0,
-   "clippers": 15,
-   "age": "1d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [
-    "Must use recent content linked (YouTube videos + Kick Streams)",
-    "Must use content no longer than 1 month old",
-    "Must use #j2hundred + #j2 on every post",
-    "Every caption must direct viewers to J2’s stream (see guide for examples)",
-    "Must mention J2’s name on any on screen text (J2 goes here…. For example)",
-    "Content/Captions mustn't tarnish his image( can’t make him look bad)",
-    "Must have US, UK, EUR, CAN, AUS or NZ audience",
-    "Creator requirements",
-    "An",
-    "experienced clipper",
-    "able to pull the best moments from",
-    "live streams",
-    "and",
-    "YouTube videos",
-    "and repurpose them as quality clips built for virality!"
-   ],
+   "spent": 772.0,
+   "budget": 1500.0,
+   "clippers": 35,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
    "platform_rates": {
     "tiktok": {
      "rate": 1.0,
-     "min_payout": 1.2,
-     "max_payout": 80.0
+     "min_payout": 5.0,
+     "max_payout": 100.0
+    },
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 5.0,
+     "max_payout": 100.0
     }
    },
-   "description": "J2 Hundred one of the biggest streamers in the UK with over 4M+ followers across platforms! He streams on Kick and has some crazy content that’s perfect for short form. This campaign will be solely built around promoting those moments while following ALL campaign guidelines!",
+   "description": "Get paid to create viral clips from Austin Millz livestreams! Earn $1 per 1,000 views clipping Austin Millz streams 🚨 TOP PRIORITY: AUSTIN MILLZ × DJ SODA STREAM 🚨 The Austin Millz and DJ Soda livestream is the #1 priority for this campaign. Look at reference document for clipping content.",
    "status": "Accepting clips",
-   "launched": "yesterday",
-   "category": "Personal Brand",
-   "files": 4,
-   "views": 290900,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 709.0,
-   "views_needed": 1200,
+   "launched": "2 weeks ago",
+   "category": "Streamer",
+   "files": 1,
+   "detail_at": "2026-11-26T12:22:11+00:00",
+   "paid_24h": 47.0,
+   "left": 728.0,
+   "views_needed": 5000,
    "account": "Pusnik IRL",
    "ok": true,
    "why_not": [],
    "flags": [
-    "Material liegt bei (4 Dateien)"
+    "Material liegt bei (1 Dateien)"
    ],
-   "score": 5.3,
+   "score": 5.2,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "70314901-9544-4615-a37a-22e31f6b0014",
+   "url": "https://contentrewards.com/c/campaigns/70314901-9544-4615-a37a-22e31f6b0014",
+   "title": "Kamal Bilal Clipping - by Pervasive",
+   "brand": "Pervasive Clipping",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 1900.0,
+   "budget": 2000.0,
+   "clippers": 63,
+   "age": "1mo",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 200.0
+    },
+    "tiktok": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 200.0
+    },
+    "youtube": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 200.0
+    }
+   },
+   "description": "Get paid to clip for Kamal Bilal. Join for free in Pervasive Community to access resources and campaigns:",
+   "status": "Accepting clips",
+   "launched": "1 month ago",
+   "category": "Lifestyle",
+   "files": 2,
+   "detail_at": "2026-11-25T18:04:33+00:00",
+   "paid_24h": 100.0,
+   "hidden_rules": 1,
+   "left": 100.0,
+   "views_needed": 2000,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "nur noch 100 $ im Topf"
+   ],
+   "flags": [
+    "Material liegt bei (2 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 5.1,
    "joined": null,
    "gone": false
   },
@@ -4451,57 +4651,6 @@
    "gone": true
   },
   {
-   "first": "2026-11-17T12:08:28+00:00",
-   "id": "45508e74-e67d-4922-b89d-53dafe4cf70d",
-   "url": "https://contentrewards.com/c/campaigns/45508e74-e67d-4922-b89d-53dafe4cf70d",
-   "title": "Austin Millz Clips",
-   "brand": "Austin Millz",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 750.0,
-   "budget": 1500.0,
-   "clippers": 35,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 100.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 5.0,
-     "max_payout": 100.0
-    }
-   },
-   "description": "Get paid to create viral clips from Austin Millz livestreams! Earn $1 per 1,000 views clipping Austin Millz streams 🚨 TOP PRIORITY: AUSTIN MILLZ × DJ SODA STREAM 🚨 The Austin Millz and DJ Soda livestream is the #1 priority for this campaign. Look at reference document for clipping content.",
-   "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Streamer",
-   "files": 1,
-   "detail_at": "2026-11-26T12:22:11+00:00",
-   "paid_24h": 26.0,
-   "left": 750.0,
-   "views_needed": 5000,
-   "account": "Pusnik IRL",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (1 Dateien)"
-   ],
-   "score": 5.1,
-   "joined": null,
-   "gone": false
-  },
-  {
    "first": "2026-11-16T07:48:38+00:00",
    "id": "16a7f214-3e58-40e6-b4b1-b337a8dc71fc",
    "url": "https://contentrewards.com/c/campaigns/16a7f214-3e58-40e6-b4b1-b337a8dc71fc",
@@ -4520,7 +4669,7 @@
    "budget": 1500.0,
    "clippers": 29,
    "age": "8mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "youtube": {
@@ -4577,7 +4726,7 @@
    "budget": 2000.0,
    "clippers": 20,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -4620,6 +4769,127 @@
    "gone": false
   },
   {
+   "first": "2026-11-21T18:00:14+00:00",
+   "id": "079cf4a5-9629-4a7a-b4e8-ca33d5b40258",
+   "url": "https://contentrewards.com/c/campaigns/079cf4a5-9629-4a7a-b4e8-ca33d5b40258",
+   "title": "Pokemon Clipping !",
+   "brand": "Clipperazzi",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 0.8,
+   "rate_max": 1.3,
+   "spent": 901.0,
+   "budget": 1800.0,
+   "clippers": 30,
+   "age": "3w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 1.3,
+     "min_payout": 1.0,
+     "max_payout": 200.0
+    },
+    "instagram": {
+     "rate": 0.8,
+     "min_payout": 0.8,
+     "max_payout": 200.0
+    },
+    "youtube": {
+     "rate": 0.8,
+     "min_payout": 0.8,
+     "max_payout": 200.0
+    }
+   },
+   "description": "A campaign to clip content for an app that estimates Value of Pokemon Cards.",
+   "status": "Accepting clips",
+   "launched": "3 weeks ago",
+   "category": "Mobile App",
+   "files": 1,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 13.0,
+   "left": 899.0,
+   "views_needed": 769,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Material liegt bei (1 Dateien)"
+   ],
+   "score": 4.8,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-26T06:19:19+00:00",
+   "id": "a708a408-035f-4cdc-8ec5-67edbf5709f8",
+   "url": "https://contentrewards.com/c/campaigns/a708a408-035f-4cdc-8ec5-67edbf5709f8",
+   "title": "Viral Clips Logo Campaign",
+   "brand": "Lilia Clips",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "x"
+   ],
+   "pool": false,
+   "rate": 0.75,
+   "rate_max": 0.75,
+   "spent": 680.0,
+   "budget": 1000.0,
+   "clippers": 31,
+   "age": "4d",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "tiktok": {
+     "rate": 0.75,
+     "min_payout": 1.5,
+     "max_payout": 100.0
+    },
+    "instagram": {
+     "rate": 0.75,
+     "min_payout": 1.5,
+     "max_payout": 100.0
+    },
+    "youtube": {
+     "rate": 0.75,
+     "min_payout": 1.5,
+     "max_payout": 100.0
+    },
+    "x": {
+     "rate": 0.75,
+     "min_payout": 1.5,
+     "max_payout": 100.0
+    }
+   },
+   "description": "Viral Clips Logo Campaign",
+   "status": "Accepting clips",
+   "launched": "2 days ago",
+   "category": "Entertainment",
+   "files": 1,
+   "detail_at": "2026-11-26T06:19:19+00:00",
+   "paid_24h": 92.0,
+   "left": 320.0,
+   "views_needed": 2000,
+   "account": "Sonstige",
+   "ok": true,
+   "why_not": [],
+   "flags": [
+    "Logo/Wasserzeichen Pflicht",
+    "Material liegt bei (1 Dateien)"
+   ],
+   "score": 4.8,
+   "joined": null,
+   "gone": false
+  },
+  {
    "first": "2026-11-16T07:48:38+00:00",
    "id": "311ba494-5f1f-40d7-ade1-92607ba1df06",
    "url": "https://contentrewards.com/c/campaigns/311ba494-5f1f-40d7-ade1-92607ba1df06",
@@ -4637,7 +4907,7 @@
    "budget": 1100.0,
    "clippers": 17,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -4676,126 +4946,6 @@
    "gone": false
   },
   {
-   "first": "2026-11-16T18:15:41+00:00",
-   "id": "796d5d55-c4ae-4172-9670-4afd85668a4d",
-   "url": "https://contentrewards.com/c/campaigns/796d5d55-c4ae-4172-9670-4afd85668a4d",
-   "title": "$6,000 Call It A Day & No Comfort Detours Clips",
-   "brand": "D&S Distribution & Seeding",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube",
-    "x"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 5000.0,
-   "budget": 6000.0,
-   "clippers": 103,
-   "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 100.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 100.0
-    },
-    "youtube": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 100.0
-    },
-    "x": {
-     "rate": 1.0,
-     "min_payout": 2.0,
-     "max_payout": 100.0
-    }
-   },
-   "description": "Clip Call It A Day and No Comfort Detours, new and old episodes. Normal clean clips: one strong moment, a short title and captions. No meme edits needed. Post on TikTok, Reels and Shorts. $1.00 per 1K views, up to $100 a clip.",
-   "status": "Accepting clips",
-   "launched": "1 month ago",
-   "category": "Hip-Hop & Rap",
-   "files": 5,
-   "detail_at": "2026-11-26T12:22:11+00:00",
-   "paid_24h": 0,
-   "left": 1000.0,
-   "views_needed": 2000,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (5 Dateien)"
-   ],
-   "score": 4.7,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-21T18:00:14+00:00",
-   "id": "079cf4a5-9629-4a7a-b4e8-ca33d5b40258",
-   "url": "https://contentrewards.com/c/campaigns/079cf4a5-9629-4a7a-b4e8-ca33d5b40258",
-   "title": "Pokemon Clipping !",
-   "brand": "Clipperazzi",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 0.8,
-   "rate_max": 1.3,
-   "spent": 892.0,
-   "budget": 1800.0,
-   "clippers": 30,
-   "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.3,
-     "min_payout": 1.0,
-     "max_payout": 200.0
-    },
-    "instagram": {
-     "rate": 0.8,
-     "min_payout": 0.8,
-     "max_payout": 200.0
-    },
-    "youtube": {
-     "rate": 0.8,
-     "min_payout": 0.8,
-     "max_payout": 200.0
-    }
-   },
-   "description": "A campaign to clip content for an app that estimates Value of Pokemon Cards.",
-   "status": "Accepting clips",
-   "launched": "3 weeks ago",
-   "category": "Mobile App",
-   "files": 1,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 8.0,
-   "left": 908.0,
-   "views_needed": 769,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (1 Dateien)"
-   ],
-   "score": 4.7,
-   "joined": null,
-   "gone": false
-  },
-  {
    "first": "2026-11-24T12:21:05+00:00",
    "id": "ebc7dd27-5d08-4d06-86d5-659706286077",
    "url": "https://contentrewards.com/c/campaigns/ebc7dd27-5d08-4d06-86d5-659706286077",
@@ -4813,7 +4963,7 @@
    "budget": 2000.0,
    "clippers": 64,
    "age": "5mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -4862,11 +5012,11 @@
    "pool": false,
    "rate": 0.85,
    "rate_max": 1.0,
-   "spent": 468.0,
+   "spent": 483.0,
    "budget": 1000.0,
    "clippers": 34,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -4886,8 +5036,8 @@
    "category": "Gaming",
    "files": 2,
    "detail_at": "2026-11-26T18:10:21+00:00",
-   "paid_24h": 41.0,
-   "left": 532.0,
+   "paid_24h": 39.0,
+   "left": 517.0,
    "views_needed": 1000,
    "account": "Pusnik G",
    "ok": true,
@@ -4896,67 +5046,6 @@
     "Material liegt bei (2 Dateien)"
    ],
    "score": 4.7,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-26T06:19:19+00:00",
-   "id": "86e583eb-257c-4fef-8467-ce82c94ef4e5",
-   "url": "https://contentrewards.com/c/campaigns/86e583eb-257c-4fef-8467-ce82c94ef4e5",
-   "title": "RANZ KYLE x Clip Loom",
-   "brand": "CLIP LOOM",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "facebook"
-   ],
-   "pool": false,
-   "rate": 0.5,
-   "rate_max": 0.5,
-   "spent": 891.0,
-   "budget": 1000.0,
-   "clippers": 46,
-   "age": "6d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 50.0
-    },
-    "facebook": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 50.0
-    },
-    "instagram": {
-     "rate": 0.5,
-     "min_payout": 1.0,
-     "max_payout": 50.0
-    }
-   },
-   "description": "Your mission is to craft high-energy, slick, and high-retention short-form clips from Ranz Kyle official livestream. Focus on highlighting the iconic viral moments of each livestream.",
-   "status": "Accepting clips",
-   "launched": "4 days ago",
-   "category": "Entertainment",
-   "files": 1,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-26T06:19:19+00:00",
-   "paid_24h": 145.0,
-   "left": 109.0,
-   "views_needed": 2000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "nur noch 109 $ im Topf"
-   ],
-   "flags": [
-    "Material liegt bei (1 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 4.6,
    "joined": null,
    "gone": false
   },
@@ -4979,7 +5068,7 @@
    "budget": 1000.0,
    "clippers": 39,
    "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5038,7 +5127,7 @@
    "budget": 1000.0,
    "clippers": 28,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5080,107 +5169,6 @@
    "gone": false
   },
   {
-   "first": "2026-11-20T18:17:02+00:00",
-   "id": "586210f7-cf29-438c-886d-66f18f73839a",
-   "url": "https://contentrewards.com/c/campaigns/586210f7-cf29-438c-886d-66f18f73839a",
-   "title": "Trades By Sci",
-   "brand": "SCI’S CLIPPING TEAM",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram"
-   ],
-   "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 1300.0,
-   "budget": 2000.0,
-   "clippers": 99,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 1.0,
-     "min_payout": 3.0,
-     "max_payout": 500.0
-    },
-    "instagram": {
-     "rate": 1.0,
-     "min_payout": 3.0,
-     "max_payout": 500.0
-    }
-   },
-   "description": "Welcome to the official Trades By Sci Clipping Team. Turn content into views and views into money. Clip the best moments, post consistently, and get rewarded for your work. Stay active. Stay creative. Get paid.",
-   "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Lifestyle",
-   "files": 1,
-   "detail_at": "2026-11-27T06:23:17+00:00",
-   "paid_24h": 0,
-   "left": 700.0,
-   "views_needed": 3000,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Material liegt bei (1 Dateien)"
-   ],
-   "score": 4.5,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-25T06:19:38+00:00",
-   "id": "6e79148f-eac9-4ba0-8794-ea50f423a8bc",
-   "url": "https://contentrewards.com/c/campaigns/6e79148f-eac9-4ba0-8794-ea50f423a8bc",
-   "title": "The Hunting Wives - Syd Taylor - \"Heaven\"",
-   "brand": "Verge Records",
-   "verified": false,
-   "platforms": [
-    "tiktok"
-   ],
-   "pool": false,
-   "rate": 0.5,
-   "rate_max": 0.5,
-   "spent": 329.0,
-   "budget": 1000.0,
-   "clippers": 24,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 0.5,
-     "min_payout": 5.0,
-     "max_payout": 250.0
-    }
-   },
-   "description": "With the new season of The Hunting Wives just around the corner, you're putting together some of the steamiest and most exciting scenes from Season 1 and pairing them with a climactic song that brings the viewer to the edge of their seat.",
-   "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Music",
-   "files": 2,
-   "hidden_rules": 2,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 61.0,
-   "left": 671.0,
-   "views_needed": 10000,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "Musik/UGC: song",
-    "Musik"
-   ],
-   "flags": [
-    "Material liegt bei (2 Dateien)",
-    "2 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 4.5,
-   "joined": null,
-   "gone": false
-  },
-  {
    "first": "2026-11-25T06:19:38+00:00",
    "id": "8e776e0c-9225-4ec0-8dce-2beba746435b",
    "url": "https://contentrewards.com/c/campaigns/8e776e0c-9225-4ec0-8dce-2beba746435b",
@@ -5199,7 +5187,7 @@
    "budget": 1000.0,
    "clippers": 13,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5225,7 +5213,7 @@
    "files": 1,
    "hidden_rules": 1,
    "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 5.0,
+   "paid_24h": 0,
    "left": 568.0,
    "views_needed": 2999,
    "account": "Pusnik IRL",
@@ -5258,7 +5246,7 @@
    "budget": 1000.0,
    "clippers": 31,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -5299,6 +5287,59 @@
    "gone": false
   },
   {
+   "first": "2026-11-24T06:18:36+00:00",
+   "id": "28e95189-4b8d-4ef7-9329-14b45dc3dc2d",
+   "url": "https://contentrewards.com/c/campaigns/28e95189-4b8d-4ef7-9329-14b45dc3dc2d",
+   "title": "Gavin Gambles Slots Reposting",
+   "brand": "Gavin Gambles",
+   "verified": false,
+   "platforms": [
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 1.0,
+   "rate_max": 1.0,
+   "spent": 666.0,
+   "budget": 1000.0,
+   "clippers": 50,
+   "age": "1w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "instagram": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 75.0
+    },
+    "youtube": {
+     "rate": 1.0,
+     "min_payout": 2.0,
+     "max_payout": 75.0
+    }
+   },
+   "description": "Repost Gavin Gambles' top slot shorts: jackpots, bonus rounds and big live reactions that already pulled 600K+ views. Light edits are welcome, like a new hook, captions, or a different crop. Real casino footage only. Tag @gavin.gambles in every post.",
+   "status": "Accepting clips",
+   "launched": "1 week ago",
+   "category": "Entertainment",
+   "files": 6,
+   "detail_at": "2026-11-27T06:23:17+00:00",
+   "paid_24h": 0,
+   "left": 334.0,
+   "views_needed": 2000,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "gesperrt: casino"
+   ],
+   "flags": [
+    "Material liegt bei (6 Dateien)"
+   ],
+   "score": 4.3,
+   "joined": null,
+   "gone": false
+  },
+  {
    "first": "2026-11-24T18:10:27+00:00",
    "id": "6c0cb168-82d6-45ae-9e7c-b407aa1c6616",
    "url": "https://contentrewards.com/c/campaigns/6c0cb168-82d6-45ae-9e7c-b407aa1c6616",
@@ -5313,11 +5354,11 @@
    "pool": false,
    "rate": 0.5,
    "rate_max": 0.5,
-   "spent": 531.0,
+   "spent": 543.0,
    "budget": 1000.0,
    "clippers": 23,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5343,7 +5384,7 @@
    "files": 2,
    "detail_at": "2026-11-28T06:20:17+00:00",
    "paid_24h": 65.0,
-   "left": 469.0,
+   "left": 457.0,
    "views_needed": 1000,
    "account": "Sonstige",
    "ok": true,
@@ -5356,39 +5397,101 @@
    "gone": false
   },
   {
-   "first": "2026-11-28T06:20:17+00:00",
-   "id": "c0a3e4fe-9112-49d5-aebe-d16fad9cd27d",
-   "url": "https://contentrewards.com/c/campaigns/c0a3e4fe-9112-49d5-aebe-d16fad9cd27d",
-   "title": "Moose Toys - Gui Gui [8487]",
-   "brand": "TikCut",
+   "first": "2026-11-25T06:19:38+00:00",
+   "id": "6e79148f-eac9-4ba0-8794-ea50f423a8bc",
+   "url": "https://contentrewards.com/c/campaigns/6e79148f-eac9-4ba0-8794-ea50f423a8bc",
+   "title": "The Hunting Wives - Syd Taylor - \"Heaven\"",
+   "brand": "Verge Records",
    "verified": false,
    "platforms": [
     "tiktok"
    ],
    "pool": false,
-   "rate": 1.0,
-   "rate_max": 1.0,
-   "spent": 2762.0,
-   "budget": 3200.0,
-   "clippers": 123,
-   "age": "2d",
-   "last": "2026-11-28T06:20:17+00:00",
+   "rate": 0.5,
+   "rate_max": 0.5,
+   "spent": 331.0,
+   "budget": 1000.0,
+   "clippers": 24,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
-     "rate": 1.0,
-     "min_payout": 1.0,
-     "max_payout": 100.0
+     "rate": 0.5,
+     "min_payout": 5.0,
+     "max_payout": 250.0
     }
    },
-   "description": "Post clips of Moose Toys promoting the Gui Gui line from the Content Folder provided to TikTok.",
+   "description": "With the new season of The Hunting Wives just around the corner, you're putting together some of the steamiest and most exciting scenes from Season 1 and pairing them with a climactic song that brings the viewer to the edge of their seat.",
    "status": "Accepting clips",
-   "launched": "2 days ago",
-   "category": "Entertainment",
-   "files": 1,
+   "launched": "2 weeks ago",
+   "category": "Music",
+   "files": 2,
+   "hidden_rules": 2,
    "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 438.0,
+   "paid_24h": 36.0,
+   "left": 669.0,
+   "views_needed": 10000,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "Musik/UGC: song",
+    "Musik"
+   ],
+   "flags": [
+    "Material liegt bei (2 Dateien)",
+    "2 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 4.3,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-16T07:48:38+00:00",
+   "id": "6590957d-cd29-4135-8483-0cda5f6ed6a8",
+   "url": "https://contentrewards.com/c/campaigns/6590957d-cd29-4135-8483-0cda5f6ed6a8",
+   "title": "Once Upon a Time in Texas",
+   "brand": "Clouted",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 0.5,
+   "rate_max": 0.5,
+   "spent": 1551.0,
+   "budget": 2000.0,
+   "clippers": 370,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "instagram": {
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 250.0
+    },
+    "tiktok": {
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 250.0
+    },
+    "youtube": {
+     "rate": 0.5,
+     "min_payout": 0.5,
+     "max_payout": 250.0
+    }
+   },
+   "description": "Clipping Movie Campaign",
+   "status": "Accepting clips",
+   "launched": "2 weeks ago",
+   "category": "Movies & TV",
+   "files": 1,
+   "detail_at": "2026-11-28T12:07:16+00:00",
+   "paid_24h": 100.0,
+   "left": 449.0,
    "views_needed": 1000,
    "account": "Sonstige",
    "ok": true,
@@ -5396,7 +5499,7 @@
    "flags": [
     "Material liegt bei (1 Dateien)"
    ],
-   "score": 4.3,
+   "score": 4.2,
    "joined": null,
    "gone": false
   },
@@ -5418,7 +5521,7 @@
    "budget": 2700.0,
    "clippers": 14,
    "age": "8mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5468,11 +5571,11 @@
    "pool": false,
    "rate": 0.5,
    "rate_max": 0.5,
-   "spent": 403.0,
+   "spent": 409.0,
    "budget": 1000.0,
    "clippers": 137,
    "age": "1w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5498,7 +5601,7 @@
    "files": 4,
    "detail_at": "2026-11-28T06:20:17+00:00",
    "paid_24h": 77.0,
-   "left": 597.0,
+   "left": 591.0,
    "views_needed": 1000,
    "account": "Pusnik IRL",
    "ok": true,
@@ -5507,70 +5610,6 @@
     "Material liegt bei (4 Dateien)"
    ],
    "score": 4.2,
-   "joined": null,
-   "gone": false
-  },
-  {
-   "first": "2026-11-26T06:19:19+00:00",
-   "id": "a708a408-035f-4cdc-8ec5-67edbf5709f8",
-   "url": "https://contentrewards.com/c/campaigns/a708a408-035f-4cdc-8ec5-67edbf5709f8",
-   "title": "Viral Clips Logo Campaign",
-   "brand": "Lilia Clips",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube",
-    "x"
-   ],
-   "pool": false,
-   "rate": 0.75,
-   "rate_max": 0.75,
-   "spent": 668.0,
-   "budget": 1000.0,
-   "clippers": 31,
-   "age": "4d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "tiktok": {
-     "rate": 0.75,
-     "min_payout": 1.5,
-     "max_payout": 100.0
-    },
-    "instagram": {
-     "rate": 0.75,
-     "min_payout": 1.5,
-     "max_payout": 100.0
-    },
-    "youtube": {
-     "rate": 0.75,
-     "min_payout": 1.5,
-     "max_payout": 100.0
-    },
-    "x": {
-     "rate": 0.75,
-     "min_payout": 1.5,
-     "max_payout": 100.0
-    }
-   },
-   "description": "Viral Clips Logo Campaign",
-   "status": "Accepting clips",
-   "launched": "2 days ago",
-   "category": "Entertainment",
-   "files": 1,
-   "detail_at": "2026-11-26T06:19:19+00:00",
-   "paid_24h": 0,
-   "left": 332.0,
-   "views_needed": 2000,
-   "account": "Sonstige",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Logo/Wasserzeichen Pflicht",
-    "Material liegt bei (1 Dateien)"
-   ],
-   "score": 3.9,
    "joined": null,
    "gone": false
   },
@@ -5591,11 +5630,11 @@
    "pool": false,
    "rate": 0.75,
    "rate_max": 1.25,
-   "spent": 1733.0,
+   "spent": 1700.0,
    "budget": 2000.0,
    "clippers": 213,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "instagram": {
@@ -5632,18 +5671,79 @@
    "hidden_rules": 2,
    "detail_at": "2026-11-28T06:20:17+00:00",
    "paid_24h": 0,
-   "left": 267.0,
+   "left": 300.0,
    "views_needed": 2400,
    "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "nur noch 267 $ im Topf"
-   ],
+   "ok": true,
+   "why_not": [],
    "flags": [
     "Material liegt bei (1 Dateien)",
     "2 Regel(n) erst nach Beitritt sichtbar"
    ],
    "score": 3.7,
+   "joined": null,
+   "gone": false
+  },
+  {
+   "first": "2026-11-28T06:20:17+00:00",
+   "id": "e0f945c8-43f5-4901-99dc-a6a8238a7fb3",
+   "url": "https://contentrewards.com/c/campaigns/e0f945c8-43f5-4901-99dc-a6a8238a7fb3",
+   "title": "DONN PERIGNON x Clip Loom",
+   "brand": "CLIP LOOM",
+   "verified": false,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "pool": false,
+   "rate": 0.9,
+   "rate_max": 0.9,
+   "spent": 588.0,
+   "budget": 1400.0,
+   "clippers": 28,
+   "age": "2w",
+   "last": "2026-11-28T12:07:16+00:00",
+   "brief": [],
+   "platform_rates": {
+    "instagram": {
+     "rate": 0.9,
+     "min_payout": 0.45,
+     "max_payout": 150.0
+    },
+    "tiktok": {
+     "rate": 0.9,
+     "min_payout": 0.45,
+     "max_payout": 150.0
+    },
+    "youtube": {
+     "rate": 0.9,
+     "min_payout": 0.45,
+     "max_payout": 150.0
+    }
+   },
+   "description": "Turn Donn Perignon's music videos into viral US short-form clips. Hook viewers in the first 3 seconds using lyric overlays, aesthetic cuts, and our required formats. Post natively on Instagram targeting US Audience (40%). Drive watch time & keep audio clean!",
+   "status": "Accepting clips",
+   "launched": "2 weeks ago",
+   "category": "Music",
+   "files": 1,
+   "hidden_rules": 1,
+   "detail_at": "2026-11-28T06:20:17+00:00",
+   "paid_24h": 78.0,
+   "left": 812.0,
+   "views_needed": 500,
+   "account": "Sonstige",
+   "ok": false,
+   "why_not": [
+    "Musik/UGC: music video",
+    "Musik"
+   ],
+   "flags": [
+    "Publikum: 40 % USA/Tier 1 verlangt",
+    "Material liegt bei (1 Dateien)",
+    "1 Regel(n) erst nach Beitritt sichtbar"
+   ],
+   "score": 3.6,
    "joined": null,
    "gone": false
   },
@@ -5666,7 +5766,7 @@
    "budget": 1400.0,
    "clippers": 31,
    "age": "4mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "youtube": {
@@ -5724,7 +5824,7 @@
    "budget": 1000.0,
    "clippers": 51,
    "age": "3mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5776,7 +5876,7 @@
    "budget": 1000.0,
    "clippers": 154,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5791,7 +5891,7 @@
    "category": "Music",
    "files": 3,
    "detail_at": "2026-11-26T12:22:11+00:00",
-   "paid_24h": 1.0,
+   "paid_24h": 0,
    "left": 733.0,
    "views_needed": 4000,
    "account": "Sonstige",
@@ -5828,7 +5928,7 @@
    "budget": 1000.0,
    "clippers": 23,
    "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -5878,69 +5978,6 @@
    "gone": false
   },
   {
-   "first": "2026-11-28T06:20:17+00:00",
-   "id": "e0f945c8-43f5-4901-99dc-a6a8238a7fb3",
-   "url": "https://contentrewards.com/c/campaigns/e0f945c8-43f5-4901-99dc-a6a8238a7fb3",
-   "title": "DONN PERIGNON x Clip Loom",
-   "brand": "CLIP LOOM",
-   "verified": false,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": false,
-   "rate": 0.9,
-   "rate_max": 0.9,
-   "spent": 510.0,
-   "budget": 1350.0,
-   "clippers": 27,
-   "age": "2w",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {
-    "instagram": {
-     "rate": 0.9,
-     "min_payout": 0.45,
-     "max_payout": 150.0
-    },
-    "tiktok": {
-     "rate": 0.9,
-     "min_payout": 0.45,
-     "max_payout": 150.0
-    },
-    "youtube": {
-     "rate": 0.9,
-     "min_payout": 0.45,
-     "max_payout": 150.0
-    }
-   },
-   "description": "Turn Donn Perignon's music videos into viral US short-form clips. Hook viewers in the first 3 seconds using lyric overlays, aesthetic cuts, and our required formats. Post natively on Instagram targeting US Audience (40%). Drive watch time & keep audio clean!",
-   "status": "Accepting clips",
-   "launched": "2 weeks ago",
-   "category": "Music",
-   "files": 1,
-   "hidden_rules": 1,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": 840.0,
-   "views_needed": 500,
-   "account": "Sonstige",
-   "ok": false,
-   "why_not": [
-    "Musik/UGC: music video",
-    "Musik"
-   ],
-   "flags": [
-    "Publikum: 40 % USA/Tier 1 verlangt",
-    "Material liegt bei (1 Dateien)",
-    "1 Regel(n) erst nach Beitritt sichtbar"
-   ],
-   "score": 2.8,
-   "joined": null,
-   "gone": false
-  },
-  {
    "first": "2026-11-16T07:48:38+00:00",
    "id": "9efb4281-815f-49ed-85a7-de73c1fb87d8",
    "url": "https://contentrewards.com/c/campaigns/9efb4281-815f-49ed-85a7-de73c1fb87d8",
@@ -5960,7 +5997,7 @@
    "budget": 1000.0,
    "clippers": 58,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
@@ -6027,7 +6064,7 @@
    "budget": 9000.0,
    "clippers": 3700,
    "age": "3w",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {},
    "description": "Get paid to clip JasonTheWeen's content! twitch.tv/jasontheween tiktok.com/@jasontheween instagram.com/jasontheween",
@@ -6035,7 +6072,7 @@
    "launched": "3 weeks ago",
    "category": "Entertainment",
    "files": 4,
-   "detail_at": "2026-11-28T06:20:17+00:00",
+   "detail_at": "2026-11-28T12:07:16+00:00",
    "paid_24h": 0,
    "left": null,
    "views_needed": null,
@@ -6094,48 +6131,6 @@
    "gone": true
   },
   {
-   "first": "2026-11-25T06:19:38+00:00",
-   "id": "dc7183a8-7779-4b54-99a8-b7ac8c8452ec",
-   "url": "https://contentrewards.com/c/campaigns/dc7183a8-7779-4b54-99a8-b7ac8c8452ec",
-   "title": "$30,000 LACY CLIPPING CAMPAIGN",
-   "brand": "Reach",
-   "verified": true,
-   "platforms": [
-    "tiktok",
-    "instagram",
-    "youtube"
-   ],
-   "pool": true,
-   "rate": null,
-   "rate_max": null,
-   "spent": null,
-   "budget": 25000.0,
-   "clippers": 731,
-   "age": "6d",
-   "last": "2026-11-28T06:20:17+00:00",
-   "brief": [],
-   "platform_rates": {},
-   "description": "Clip content from Lacy's social media accounts (TikTok, IG, YT) READ THE RULES AND REQUIREMENTS HERE: Campaign ending 21st of December.",
-   "status": "Accepting clips",
-   "launched": "6 days ago",
-   "category": "Streamer",
-   "files": 4,
-   "detail_at": "2026-11-28T06:20:17+00:00",
-   "paid_24h": 0,
-   "left": null,
-   "views_needed": null,
-   "account": "Pusnik IRL",
-   "ok": true,
-   "why_not": [],
-   "flags": [
-    "Pool (Anteil nach Views, unsicher für kleine Konten)",
-    "Material liegt bei (4 Dateien)"
-   ],
-   "score": 2.0,
-   "joined": null,
-   "gone": false
-  },
-  {
    "first": "2026-11-16T07:48:38+00:00",
    "id": "bc8f7d6a-3a31-4a4a-88ea-bb88245e418e",
    "url": "https://contentrewards.com/c/campaigns/bc8f7d6a-3a31-4a4a-88ea-bb88245e418e",
@@ -6153,7 +6148,7 @@
    "budget": 5000.0,
    "clippers": 25,
    "age": "1mo",
-   "last": "2026-11-28T06:20:17+00:00",
+   "last": "2026-11-28T12:07:16+00:00",
    "brief": [],
    "platform_rates": {
     "tiktok": {
