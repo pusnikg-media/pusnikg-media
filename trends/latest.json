@@ -1,57 +1,25 @@
 {
- "at": "2026-11-27T20:34:43+00:00",
+ "at": "2026-11-28T05:37:20+00:00",
  "errors": [
-  "reddit r/LivestreamFail: HTTP 429",
-  "reddit r/GTA6: HTTP 429",
+  "reddit r/LivestreamFail: HTTP 404",
+  "reddit r/GTA6: HTTP 404",
   "reddit r/GTA: HTTP 429"
  ],
  "items": [
   {
    "src": "kick",
    "area": "irl",
-   "channel": "tjnv",
-   "title": "i cant be a hostage, i am incredibley busy",
-   "views": 6196,
-   "per_h": 235,
-   "dur": 68,
-   "age_h": 26.4,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/tjnv/clips/clip_01M8CGJK5XC83NW14KGQK6JNDJ",
-   "video": "https://clips.kick.com/clips/7a/clip_01M8CGJK5XC83NW14KGQK6JNDJ/master.m3u8",
-   "mature": false,
-   "id": "k:clip_01M8CGJK5XC83NW14KGQK6JNDJ",
-   "new": false
-  },
-  {
-   "src": "kick",
-   "area": "irl",
    "channel": "unqnanda1",
    "title": "HACKER IN LOBBY 🤬",
-   "views": 4795,
-   "per_h": 631,
+   "views": 4901,
+   "per_h": 295,
    "dur": 180,
-   "age_h": 7.6,
+   "age_h": 16.6,
    "category": "Battlegrounds Mobile India",
    "page": "https://kick.com/unqnanda1/clips/clip_01M8EHD4EBVWD2J4ZF0RY6P4F3",
    "video": "https://clips.kick.com/clips/bf/clip_01M8EHD4EBVWD2J4ZF0RY6P4F3/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M8EHD4EBVWD2J4ZF0RY6P4F3",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "biotox",
-   "title": "Big Homie Bazin",
-   "views": 4539,
-   "per_h": 177,
-   "dur": 135,
-   "age_h": 25.6,
-   "category": "Grand Theft Auto V (GTA)",
-   "page": "https://kick.com/biotox/clips/clip_01M8CKFB8Q5YKCSQW5YZ96KGXX",
-   "video": "https://clips.kick.com/clips/75/clip_01M8CKFB8Q5YKCSQW5YZ96KGXX/master.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8CKFB8Q5YKCSQW5YZ96KGXX",
    "new": false
   },
   {
@@ -59,63 +27,47 @@
    "area": "irl",
    "channel": "unqnanda1",
    "title": "Hacker IN LOBBY 😡 2 with Chicken Dinner",
-   "views": 4192,
-   "per_h": 559,
+   "views": 4243,
+   "per_h": 256,
    "dur": 180,
-   "age_h": 7.5,
+   "age_h": 16.6,
    "category": "Battlegrounds Mobile India",
    "page": "https://kick.com/unqnanda1/clips/clip_01M8EHHF59Q08KF74H73TSJ1MM",
    "video": "https://clips.kick.com/clips/17/clip_01M8EHHF59Q08KF74H73TSJ1MM/playlist.m3u8",
    "mature": true,
    "id": "k:clip_01M8EHHF59Q08KF74H73TSJ1MM",
-   "new": true
-  },
-  {
-   "src": "kick",
-   "area": "irl",
-   "channel": "achtenwlodar",
-   "title": "co za swinia jebana",
-   "views": 2269,
-   "per_h": 81,
-   "dur": 30,
-   "age_h": 28.1,
-   "category": "Just Chatting",
-   "page": "https://kick.com/achtenwlodar/clips/clip_01M8CAW74V5AEZFYG3P2WFWNXJ",
-   "video": "https://clips.kick.com/clips/4a/clip_01M8CAW74V5AEZFYG3P2WFWNXJ/playlist.m3u8",
-   "mature": true,
-   "id": "k:clip_01M8CAW74V5AEZFYG3P2WFWNXJ",
    "new": false
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "sergioeleven",
-   "title": "la cabra",
-   "views": 1285,
-   "per_h": 63,
-   "dur": 75,
-   "age_h": 20.3,
-   "category": "Pools, Hot Tubs & Bikinis",
-   "page": "https://kick.com/sergioeleven/clips/clip_01M8D5K6QHFSG2ZPFQX3D5AWNA",
-   "video": "https://clips.kick.com/clips/45/clip_01M8D5K6QHFSG2ZPFQX3D5AWNA/master.m3u8",
+   "channel": "misshenley",
+   "title": "GYATT over GTA",
+   "views": 3784,
+   "per_h": 467,
+   "dur": 27,
+   "age_h": 8.1,
+   "category": "Slots & Casino",
+   "page": "https://kick.com/misshenley/clips/clip_01M8FEFESJTB01DEDKNMHQWQBK",
+   "video": "https://clips.kick.com/clips/1c/clip_01M8FEFESJTB01DEDKNMHQWQBK/master.m3u8",
    "mature": true,
-   "id": "k:clip_01M8D5K6QHFSG2ZPFQX3D5AWNA",
+   "id": "k:clip_01M8FEFESJTB01DEDKNMHQWQBK",
    "new": true
   },
   {
    "src": "kick",
    "area": "irl",
-   "channel": "amadeuszferrari",
-   "title": "xd",
-   "views": 1253,
-   "per_h": 54,
-   "dur": 30,
-   "age_h": 23.3,
-   "category": "IRL",
-   "page": "https://kick.com/amadeuszferrari/clips/clip_01M8CVH8S9QVWXZ8T5S17A31AK",
-   "video": "https://clips.kick.com/clips/52/clip_01M8CVH8S9QVWXZ8T5S17A31AK/playlist.m3u8",
+   "channel": "misshenley",
+   "title": "2 tongue rings ufffffff",
+   "views": 3533,
+   "per_h": 436,
+   "dur": 22,
+   "age_h": 8.1,
+   "category": "Slots & Casino",
+   "page": "https://kick.com/misshenley/clips/clip_01M8FEQJ63Y7FYWZFQDGYARF1G",
+   "video": "https://clips.kick.com/clips/cb/clip_01M8FEQJ63Y7FYWZFQDGYARF1G/master.m3u8",
    "mature": true,
-   "id": "k:clip_01M8CVH8S9QVWXZ8T5S17A31AK",
+   "id": "k:clip_01M8FEQJ63Y7FYWZFQDGYARF1G",
    "new": true
   },
   {
@@ -123,44 +75,129 @@
    "area": "irl",
    "channel": "sergioeleven",
    "title": "s",
-   "views": 1109,
-   "per_h": 55,
+   "views": 2316,
+   "per_h": 79,
    "dur": 172,
-   "age_h": 20.3,
+   "age_h": 29.4,
    "category": "Pools, Hot Tubs & Bikinis",
    "page": "https://kick.com/sergioeleven/clips/clip_01M8D5M33YWHD2B9QV0ZKR6ETM",
    "video": "https://clips.kick.com/clips/b9/clip_01M8D5M33YWHD2B9QV0ZKR6ETM/master.m3u8",
    "mature": true,
    "id": "k:clip_01M8D5M33YWHD2B9QV0ZKR6ETM",
+   "new": false
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "lilkenji10",
+   "title": "forcing people from Tiktok to follow us on KICK 😭",
+   "views": 1852,
+   "per_h": 232,
+   "dur": 180,
+   "age_h": 8.0,
+   "category": "Just Chatting",
+   "page": "https://kick.com/lilkenji10/clips/clip_01M8FF525ZECWZ0385E82X723C",
+   "video": "https://clips.kick.com/clips/e2/clip_01M8FF525ZECWZ0385E82X723C/playlist.m3u8",
+   "mature": false,
+   "id": "k:clip_01M8FF525ZECWZ0385E82X723C",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "hazchiz",
+   "title": "WIN GATES 2500 $800",
+   "views": 1752,
+   "per_h": 501,
+   "dur": 93,
+   "age_h": 3.5,
+   "category": "Slots & Casino",
+   "page": "https://kick.com/hazchiz/clips/clip_01M8FYM5D340X5QVJWN057HFPQ",
+   "video": "https://clips.kick.com/clips/d2/clip_01M8FYM5D340X5QVJWN057HFPQ/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8FYM5D340X5QVJWN057HFPQ",
+   "new": true
+  },
+  {
+   "src": "kick",
+   "area": "irl",
+   "channel": "hazchiz",
+   "title": "WIN RULETA Y BACCARAT",
+   "views": 1747,
+   "per_h": 529,
+   "dur": 84,
+   "age_h": 3.3,
+   "category": "Slots & Casino",
+   "page": "https://kick.com/hazchiz/clips/clip_01M8FZ0MQ795Z386YF6AGVYY0D",
+   "video": "https://clips.kick.com/clips/00/clip_01M8FZ0MQ795Z386YF6AGVYY0D/playlist.m3u8",
+   "mature": true,
+   "id": "k:clip_01M8FZ0MQ795Z386YF6AGVYY0D",
    "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "PC Gamer",
-   "title": "Microsoft's Github posts message celebrating efforts to port PlayStation 5 version of Grand Theft Auto 6 to PC, then quickly deletes it",
-   "page": "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/",
-   "age_h": 22.1,
-   "id": "n:microsoft-s-github-posts-message-celebrating-efforts-to-port",
+   "site": "Insider Gaming",
+   "title": "GTA 6 Stash Bag Money Glitch—Duplication Trick To Make Millions",
+   "page": "https://insider-gaming.com/how-to-gta-6-money-glitch-stash-bag-duplication/",
+   "age_h": 5.7,
+   "id": "n:gta-6-stash-bag-money-glitch-duplication-trick-to-make-milli",
    "sites": [
-    "PC Gamer",
-    "Kotaku"
+    "Insider Gaming"
    ],
-   "new": false
+   "new": true
   },
   {
    "src": "news",
    "area": "gaming",
-   "site": "GameSpot",
-   "title": "Rockstar Games Has A GTA 6 Hit On Its Hands, But Its Union Vote Is A Loss",
-   "page": "https://www.gamespot.com/articles/rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vote-is-a-loss/",
-   "age_h": 27.5,
-   "id": "n:rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vo",
+   "site": "Insider Gaming",
+   "title": "GTA 6 Chapter 5 Mission List – Every Mission in GTA 6 Chapter 5 in Order",
+   "page": "https://insider-gaming.com/gta-6-chapter-5-mission-list-every-mission-in-gta-6-chapter-5-in-order/",
+   "age_h": 7.2,
+   "id": "n:gta-6-chapter-5-mission-list-every-mission-in-gta-6-chapter-",
    "sites": [
-    "GameSpot",
-    "Eurogamer"
+    "Insider Gaming"
    ],
-   "new": false
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "Insider Gaming",
+   "title": "How to Enter Cheat Codes in GTA 6—GTA 6 Cheat Code Guide",
+   "page": "https://insider-gaming.com/how-to-enter-cheats-in-gta-6/",
+   "age_h": 7.8,
+   "id": "n:how-to-enter-cheat-codes-in-gta-6-gta-6-cheat-code-guide",
+   "sites": [
+    "Insider Gaming"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "Rockstar Explains Why GTA VI Left Some Classic Features Behind",
+   "page": "https://rockstarintel.com/rockstar-explains-why-gta-vi-left-some-classic-features-behind/",
+   "age_h": 8.6,
+   "id": "n:rockstar-explains-why-gta-vi-left-some-classic-features-behi",
+   "sites": [
+    "RockstarINTEL"
+   ],
+   "new": true
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "RockstarINTEL",
+   "title": "How To Find The GTA VI Scarface Easter Egg & Unlock A Special Weapon",
+   "page": "https://rockstarintel.com/how-to-find-the-gta-vi-scarface-easter-egg-unlock-a-special-weapon/",
+   "age_h": 9.0,
+   "id": "n:how-to-find-the-gta-vi-scarface-easter-egg-unlock-a-special-",
+   "sites": [
+    "RockstarINTEL"
+   ],
+   "new": true
   },
   {
    "src": "news",
@@ -168,25 +205,12 @@
    "site": "VGC",
    "title": "GTA 6: All Unique Snapmatic Animal locations for Bret",
    "page": "https://www.videogameschronicle.com/guide/gta-6-all-unique-snapmatic-animal-locations-bret/",
-   "age_h": 0.5,
+   "age_h": 9.5,
    "id": "n:gta-6-all-unique-snapmatic-animal-locations-for-bret",
    "sites": [
     "VGC"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "Brainwashing Easter egg walkthrough in GTA 6",
-   "page": "https://www.polygon.com/gta-6-brainwashing-president-easter-egg-walkthrough/",
-   "age_h": 0.5,
-   "id": "n:brainwashing-easter-egg-walkthrough-in-gta-6",
-   "sites": [
-    "Polygon"
-   ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -194,25 +218,12 @@
    "site": "VGC",
    "title": "Grand Theft Auto 6 complete walkthrough hub",
    "page": "https://www.videogameschronicle.com/guide/grand-theft-auto-6-complete-walkthrough-hub/",
-   "age_h": 0.6,
+   "age_h": 9.6,
    "id": "n:grand-theft-auto-6-complete-walkthrough-hub",
    "sites": [
     "VGC"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "VGC",
-   "title": "GTA 6: Full Find Cars for Wyman mission walkthrough",
-   "page": "https://www.videogameschronicle.com/guide/gta-6-find-cars-wyman-mission-walkthrough/",
-   "age_h": 0.8,
-   "id": "n:gta-6-full-find-cars-for-wyman-mission-walkthrough",
-   "sites": [
-    "VGC"
-   ],
-   "new": true
+   "new": false
   },
   {
    "src": "news",
@@ -220,12 +231,25 @@
    "site": "PC Gamer",
    "title": "After falling in love with PS5 haptic feedback in GTA 6, I'm eyeing these Black Friday deals on DualSense controllers",
    "page": "https://www.pcgamer.com/hardware/controllers/after-falling-in-love-with-ps5-haptic-feedback-in-gta-6-im-eyeing-these-black-friday-deals-on-dualsense-controllers/",
-   "age_h": 0.9,
+   "age_h": 9.9,
    "id": "n:after-falling-in-love-with-ps5-haptic-feedback-in-gta-6-i-m-",
    "sites": [
     "PC Gamer"
    ],
-   "new": true
+   "new": false
+  },
+  {
+   "src": "news",
+   "area": "gaming",
+   "site": "VGC",
+   "title": "GTA 6: Full Find Cars for Wyman mission walkthrough",
+   "page": "https://www.videogameschronicle.com/guide/gta-6-find-cars-wyman-mission-walkthrough/",
+   "age_h": 9.9,
+   "id": "n:gta-6-full-find-cars-for-wyman-mission-walkthrough",
+   "sites": [
+    "VGC"
+   ],
+   "new": false
   },
   {
    "src": "news",
@@ -233,38 +257,12 @@
    "site": "Insider Gaming",
    "title": "Will GTA 6 Get a Story DLC? GTA 6 DLC Plans, Explained",
    "page": "https://insider-gaming.com/will-gta-6-get-story-dlc/",
-   "age_h": 1.0,
+   "age_h": 10.1,
    "id": "n:will-gta-6-get-a-story-dlc-gta-6-dlc-plans-explained",
    "sites": [
     "Insider Gaming"
    ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Insider Gaming",
-   "title": "What’s on the Hard Drive in GTA 6? GTA 6 Ending Explained",
-   "page": "https://insider-gaming.com/gta-6-hard-drive-ending/",
-   "age_h": 1.3,
-   "id": "n:what-s-on-the-hard-drive-in-gta-6-gta-6-ending-explained",
-   "sites": [
-    "Insider Gaming"
-   ],
-   "new": true
-  },
-  {
-   "src": "news",
-   "area": "gaming",
-   "site": "Polygon",
-   "title": "GTA 6 Officially Passes a Massive Sales Milestone Just 1 Week In",
-   "page": "https://www.polygon.com/gta-6-how-much-sold-week-one-rockstar-games/",
-   "age_h": 1.6,
-   "id": "n:gta-6-officially-passes-a-massive-sales-milestone-just-1-wee",
-   "sites": [
-    "Polygon"
-   ],
-   "new": true
+   "new": false
   }
  ]
 }
