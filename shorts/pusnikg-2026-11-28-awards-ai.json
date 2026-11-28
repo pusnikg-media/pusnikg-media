@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "log": [
+  "0: 5.05s  dʒˌiːtˌiːˈeɪ sˈɪks ɡɑːt ˈeɪt ɡˈeɪm ɐwˈɔːɹdz nˌɑːmᵻnˈeɪʃənz bᵻfˌoːɹ ɪɾ ˈiːvən lˈɑːntʃt.\n1: 4.35s  ðæts mˈoːɹ ðɐn ˌɛni ˈʌðɚ ɡˈeɪm ðɪs jˈɪɹ, ænd fˈænz hˈædənt ˈiːvən plˈeɪd ɪt.\n2: 3.83s  nˈaʊ wɪɹ ˈɔːl plˈeɪɪŋ ɪt, sˌoʊ ðə hˈaɪp fˈaɪnəli hɐz tə hˈoʊld ˈʌp.\n3: 4.38s  maɪ tˈeɪk: ɪt wˈɪnz bˈɪɡ, bˌʌt ɐ klˈiːn swˈiːp ʌv ˈɔːl ˈeɪt ɪz ʌnlˈaɪkli.\n4: 2.40s  wˌɪtʃ ɐwˈɔːɹd dˈuː juː θˈɪŋk ɪt lˈuːzᵻz?\n5: 2.38s  fˈɑːloʊ fɔːɹ mˈoːɹ dʒˌiːtˌiːˈeɪ sˈɪks.\nTTS_OK 6 lines 22.38s",
+  "ar,@1.67 and@2.23 fans@2.26 hadn't@2.43 even@2.93 played@3.04 it.@3.33\nNow@0.22 we're@0.55 all@0.77 playing@0.87 it,@1.14 so@1.54 the@1.60 hype@1.70 finally@1.85 has@2.31 to@2.60 hold@2.76 up.@2.95\nMy@0.22 take:@0.54 it@1.04 wins@1.10 big,@1.25 but@1.78 a@1.86 clean@1.92 sweep@2.18 of@2.49 all@2.75 eight@2.91 is@3.12 unlikely.@3.31\nWhich@0.22 award@0.54 do@0.76 you@1.08 think@1.17 it@1.36 loses?@1.51\nFollow@0.24 for@0.68 more@0.88 GTA@1.04 6.@1.23\nWORDS_OK 6 lines\n\nTOTAL 24.075 shots 14 captions 19\nRENDER_OK /home/runner/work_pusnikg-2026-11-28-awards-ai/pusnikg-2026-11-28-awards-ai.mp4 24.08s",
+  "QA_OK 24.07s -13.7 LUFS frames: /home/runner/work_pusnikg-2026-11-28-awards-ai/pusnikg-2026-11-28-awards-ai_qa_0.png /home/runner/work_pusnikg-2026-11-28-awards-ai/pusnikg-2026-11-28-awards-ai_qa_mid.png /home/runner/work_pusnikg-2026-11-28-awards-ai/pusnikg-2026-11-28-awards-ai_qa_end.png"
+ ],
+ "renderer": "v3 HyperFrames",
+ "seconds": 24.07,
+ "music": "https://github.com/pusnikg-media/pusnikg-media/releases/download/ai-library/mus06.m4a",
+ "urls": {
+  "video": "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/pusnikg-2026-11-28-awards-ai.mp4",
+  "pngs": [
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-28-awards-ai_qa_0.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-28-awards-ai_qa_mid.png",
+   "https://raw.githubusercontent.com/pusnikg-media/pusnikg-media/main/shorts/qa/pusnikg-2026-11-28-awards-ai_qa_end.png"
+  ]
+ },
+ "name": "pusnikg-2026-11-28-awards-ai",
+ "attempts": 1
+}
